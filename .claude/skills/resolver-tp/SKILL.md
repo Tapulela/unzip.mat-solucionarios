@@ -45,12 +45,20 @@ los items, los colores y el estilo de los desarrollos. El ejemplo completo está
    - Lo que no puedas verificar, avísalo al final.
 5. **Escribir `solucion.json`** con `meta.estado: "borrador"` y `meta.fuente`, que dice de
    dónde sale el enunciado.
-6. **Validar**: `node herramientas/validar.mjs ruta/a/solucion.json`. Corrige todos los
-   errores y también los avisos de estilo (signo `−` y no `-`, `·` y no `*`, superíndices
-   y no `^`, marcas dibujadas y no ✓/✗).
-7. **Contarle al usuario** qué ejercicios quedaron resueltos, cuáles verificaste y cómo,
-   y qué conviene revisar. Recuérdale que lo importe en la pizarra, lo corrija y guarde
-   junto al JSON el `.excalidraw` y el PDF exportado desde el panel de Hojas A4.
+6. **Validar**: con la herramienta MCP `validar_solucion` (servidor `unzip-mat`) o con
+   `node herramientas/validar.mjs ruta/a/solucion.json`. Corrige todos los errores y
+   también los avisos de estilo (signo `−` y no `-`, `·` y no `*`, superíndices y no
+   `^`, marcas dibujadas y no ✓/✗).
+7. **Mirar cómo queda.** Si el servidor MCP `unzip-mat` está disponible y la pizarra
+   está abierta, usa `dibujar_en_pizarra`: devuelve una imagen de cada hoja y los
+   avisos. Revisa las imágenes como lo haría un docente: renglones que se salen de la
+   hoja, notas que se pisan, una fracción o una llave cortada entre dos hojas, un
+   desarrollo difícil de seguir. Corrige el JSON y vuelve a dibujar; la versión nueva
+   reemplaza a la anterior. Si la pizarra no está abierta, sigue sin este paso y avisa.
+8. **Guardar** con `guardar_solucion` o escribiendo el archivo.
+9. **Contarle al usuario** qué ejercicios quedaron resueltos, cuáles verificaste y cómo,
+   y qué conviene revisar. Recuérdale que lo corrija en la pizarra y guarde junto al
+   JSON el `.excalidraw` y el PDF exportado desde el panel de Hojas A4.
 
 ## Reglas
 

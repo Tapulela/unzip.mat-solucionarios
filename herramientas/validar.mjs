@@ -7,6 +7,7 @@
 // Sale con código 1 si hay errores.
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const FORMATO = "unzip.mat/solucion@1";
 const GENERADORES = ["recta", "funcion", "tabla", "boole", "conjuntos", "relaciones", "estructuras", "combinatoria",
@@ -16,7 +17,7 @@ const COLORES = ["suma", "producto", "condicion", "caso", "a", "b", "c", "mal", 
   "naranja", "violeta", "celeste", "gris"];
 const ESTADOS = ["borrador", "revisado", "publicado"];
 
-function revisar(sol) {
+export function revisar(sol) {
   const errores = [], avisos = [];
   const err = (r, m) => errores.push(`${r}: ${m}`), av = (r, m) => avisos.push(`${r}: ${m}`);
   const color = (c, r) => {
@@ -112,7 +113,7 @@ function revisar(sol) {
   return { errores, avisos };
 }
 
-function buscar(dir) {
+export function buscar(dir) {
   const out = [];
   if (!fs.existsSync(dir)) return out;
   for (const d of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -123,18 +124,23 @@ function buscar(dir) {
   return out;
 }
 
-const raiz = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1")), "..");
-const rutas = process.argv.slice(2).length ? process.argv.slice(2) : buscar(path.join(raiz, "solucionarios"));
-let hayErrores = false;
-for (const ruta of rutas) {
-  let sol;
-  try { sol = JSON.parse(fs.readFileSync(ruta, "utf8")); }
-  catch (e) { console.log(`✗ ${ruta}\n    error: no es un JSON válido (${e.message})`); hayErrores = true; continue; }
-  const { errores, avisos } = revisar(sol);
-  console.log(`${errores.length ? "✗" : "✓"} ${ruta}${avisos.length ? ` (${avisos.length} avisos)` : ""}`);
-  errores.forEach((e) => console.log("    error: " + e));
-  avisos.forEach((a) => console.log("    aviso: " + a));
-  if (errores.length) hayErrores = true;
+export const GENERADORES_VALIDOS = GENERADORES;
+
+// solo cuando se ejecuta como programa (no cuando lo importa el servidor MCP)
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const raiz = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+  const rutas = process.argv.slice(2).length ? process.argv.slice(2) : buscar(path.join(raiz, "solucionarios"));
+  let hayErrores = false;
+  for (const ruta of rutas) {
+    let sol;
+    try { sol = JSON.parse(fs.readFileSync(ruta, "utf8")); }
+    catch (e) { console.log(`✗ ${ruta}\n    error: no es un JSON válido (${e.message})`); hayErrores = true; continue; }
+    const { errores, avisos } = revisar(sol);
+    console.log(`${errores.length ? "✗" : "✓"} ${ruta}${avisos.length ? ` (${avisos.length} avisos)` : ""}`);
+    errores.forEach((e) => console.log("    error: " + e));
+    avisos.forEach((a) => console.log("    aviso: " + a));
+    if (errores.length) hayErrores = true;
+  }
+  if (!rutas.length) console.log("No hay archivos solucion.json para revisar.");
+  process.exit(hayErrores ? 1 : 0);
 }
-if (!rutas.length) console.log("No hay archivos solucion.json para revisar.");
-process.exit(hayErrores ? 1 : 0);

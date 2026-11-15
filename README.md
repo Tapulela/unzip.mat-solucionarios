@@ -17,6 +17,7 @@ solucionarios/
     solucion.pdf        ← lista para imprimir
 FORMATO.md              ← cómo se escribe un solucion.json
 herramientas/validar.mjs
+mcp/servidor.mjs        ← servidor MCP (validar, guardar, dibujar en la pizarra)
 .claude/skills/resolver-tp/  ← skill para que Claude arme el borrador
 ```
 
@@ -34,6 +35,45 @@ herramientas/validar.mjs
 
 Si encontrás un error en un solucionario, abrí un issue con el TP, el ejercicio y qué
 está mal.
+
+## Servidor MCP
+
+`mcp/servidor.mjs` es un servidor [MCP](https://modelcontextprotocol.io) que le da a
+una IA estas herramientas:
+
+| Herramienta | Qué hace |
+|---|---|
+| `formato_solucion` | Devuelve `FORMATO.md` y el ejemplo completo. |
+| `validar_solucion` | Errores y avisos de estilo de una solución, sin dibujarla. |
+| `listar_solucionarios` / `leer_solucion` | Recorren el repositorio. |
+| `guardar_solucion` | Valida y guarda en `solucionarios/<ruta>/solucion.json`. No pisa un archivo que ya existe salvo que se le pida, y no hace commit. |
+| `dibujar_en_pizarra` | Dibuja la solución en la pizarra abierta y devuelve una imagen de cada hoja A4, más los avisos (renglones que se salen de la hoja). Si se vuelve a dibujar la misma solución, reemplaza la versión anterior. |
+| `ver_pizarra` | Imágenes de las hojas, por ejemplo para ver lo que el docente corrigió a mano. |
+| `estado_pizarra` | Qué hojas hay en la pizarra y de qué solución es cada una. |
+
+Para dibujar, la pizarra tiene que estar abierta con su servidor local (`node
+servidor.js` o «Iniciar pizarra.bat»). Si hay varias ventanas, dibuja en la que se usó
+por última vez. Si la pizarra no está en `http://127.0.0.1:3000`, se cambia con la
+variable `PIZARRA_URL`.
+
+**Instalar:** `npm install` en este repositorio. Requiere Node 18 o más nuevo.
+
+**Claude Code:** ya está configurado en `.mcp.json`. Al abrir Claude Code en esta
+carpeta, pregunta si querés habilitar el servidor `unzip-mat`.
+
+**Claude Desktop** (u otro cliente MCP): agregar en su configuración
+(`claude_desktop_config.json`), con la ruta donde clonaste el repositorio:
+
+```json
+{
+  "mcpServers": {
+    "unzip-mat": {
+      "command": "node",
+      "args": ["C:/ruta/a/unzip.mat-solucionarios/mcp/servidor.mjs"]
+    }
+  }
+}
+```
 
 ## Derechos
 
