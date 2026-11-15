@@ -1,0 +1,140 @@
+#!/usr/bin/env node
+// Revisa archivos solucion.json (formato unzip.mat/solucion@1) sin abrir la pizarra.
+//   node herramientas/validar.mjs                     → todos los de solucionarios/
+//   node herramientas/validar.mjs ruta/solucion.json  → solo esos
+// Errores: lo que la pizarra no puede importar. Avisos: lo que se importa pero no
+// sigue el estilo de los solucionarios (ver FORMATO.md).
+// Sale con código 1 si hay errores.
+import fs from "node:fs";
+import path from "node:path";
+
+const FORMATO = "unzip.mat/solucion@1";
+const GENERADORES = ["recta", "funcion", "tabla", "boole", "conjuntos", "relaciones", "estructuras", "combinatoria",
+  "mcm", "valorAbsoluto", "inecuaciones2", "racionales", "factorizacion", "raicesC", "complejos", "razonamientos",
+  "simpLogica", "simpBoole", "simpConjuntos", "plantillas"];
+const COLORES = ["suma", "producto", "condicion", "caso", "a", "b", "c", "mal", "tinta", "azul", "rojo", "verde",
+  "naranja", "violeta", "celeste", "gris"];
+const ESTADOS = ["borrador", "revisado", "publicado"];
+
+function revisar(sol) {
+  const errores = [], avisos = [];
+  const err = (r, m) => errores.push(`${r}: ${m}`), av = (r, m) => avisos.push(`${r}: ${m}`);
+  const color = (c, r) => {
+    if (c === undefined || c === null) return;
+    if (!(typeof c === "string" && (COLORES.includes(c.toLowerCase()) || /^#[0-9a-f]{3,8}$/i.test(c)))) av(r, `color desconocido «${c}» (se usa el de por defecto)`);
+  };
+  const texto = (s, r) => {
+    if (/[✓✔✗✘]/.test(s)) av(r, "las marcas ✓/✗ se dibujan: usar { \"marca\": \"ok\" } o { \"marca\": \"mal\" }");
+    if (/(^|[\s(=<>])-(?=\s*[\dA-Za-z(])/.test(s)) av(r, `«-» como signo menos: usar «−» (${JSON.stringify(s).slice(0, 50)})`);
+    if (/\*/.test(s)) av(r, "«*» para multiplicar: usar «·»");
+    if (/\^/.test(s)) av(r, "«^» para potencias: usar superíndices (x², x³, xⁿ)");
+  };
+  const items = (x, r) => {
+    if (x === undefined || x === null) return [];
+    return (Array.isArray(x) ? x : [x]).map((y, i) => item(y, Array.isArray(x) ? `${r}[${i}]` : r));
+  };
+  const item = (x, r) => {
+    if (typeof x === "string" || typeof x === "number") { texto(String(x), r); return { t: String(x) }; }
+    if (!x || typeof x !== "object") { err(r, "item inválido"); return {}; }
+    color(x.color, r + ".color");
+    if (typeof x.t === "string") { texto(x.t, r); return { t: x.t }; }
+    if (x.frac !== undefined) {
+      if (!Array.isArray(x.frac) || x.frac.length !== 2) { err(r, "«frac» tiene que ser [numerador, denominador]"); return {}; }
+      items(x.frac[0], r + ".frac[0]"); items(x.frac[1], r + ".frac[1]"); return {};
+    }
+    if (x.raiz !== undefined) { items(x.raiz, r + ".raiz"); return {}; }
+    if (x.marca !== undefined) { if (!["ok", "mal"].includes(x.marca)) err(r, "«marca» es \"ok\" o \"mal\""); return {}; }
+    if (x.sistema !== undefined) {
+      if (!Array.isArray(x.sistema)) err(r, "«sistema» es una lista de filas");
+      else x.sistema.forEach((f, i) => items(f, `${r}.sistema[${i}]`));
+      return {};
+    }
+    if (x.tabla !== undefined) {
+      if (!Array.isArray(x.tabla)) err(r, "«tabla» es una lista de filas");
+      else x.tabla.forEach((f, i) => (Array.isArray(f) ? f : [f]).forEach((c, j) => items(c, `${r}.tabla[${i}][${j}]`)));
+      return {};
+    }
+    err(r, `no se reconoce el item ${JSON.stringify(x).slice(0, 60)}`);
+    return {};
+  };
+  const renglon = (l, r, i, lista) => {
+    if (typeof l === "string" || Array.isArray(l)) l = { der: l };
+    if (!l || typeof l !== "object") { err(r, "renglón inválido"); return; }
+    for (const k of Object.keys(l)) {
+      if (!["izq", "rel", "der", "nota", "notaColor", "color", "caja", "llave", "rama", "marcar", "seccion", "libre"].includes(k)) av(r, `campo desconocido «${k}» (se ignora)`);
+    }
+    const der = items(l.der, r + ".der");
+    if (l.izq) texto(String(l.izq), r + ".izq");
+    if (l.nota) (Array.isArray(l.nota) ? l.nota : [l.nota]).forEach((n) => texto(String(n), r + ".nota"));
+    color(l.notaColor, r + ".notaColor"); color(l.color, r + ".color");
+    if (l.caja && l.caja !== true) color(l.caja, r + ".caja");
+    if (l.rama && !(i > 0 && lista.slice(0, i).reverse().find((x) => !(x && x.rama))?.llave)) {
+      av(r, "un renglón «rama» tiene que venir después de un renglón con «llave»");
+    }
+    if (l.marcar) {
+      const de = l.marcar.de | 0, a = l.marcar.a === undefined ? de : l.marcar.a | 0;
+      if (!der[de] || !der[a] || der[de].t === undefined || der[a].t === undefined) err(r + ".marcar", "«de» y «a» tienen que ser índices de textos de «der»");
+      color(l.marcar.color, r + ".marcar.color");
+    }
+  };
+  const bloques = (lista, r) => {
+    if (lista === undefined) return;
+    if (!Array.isArray(lista)) { err(r, "«bloques» tiene que ser una lista"); return; }
+    lista.forEach((b, i) => {
+      const rb = `${r}.bloques[${i}]`;
+      if (typeof b === "string") { texto(b, rb); return; }
+      if (!b || typeof b !== "object") { err(rb, "bloque inválido"); return; }
+      if (b.salto || b.espacio) return;
+      if (b.texto !== undefined) { texto(String(b.texto), rb); color(b.color, rb + ".color"); return; }
+      if (Array.isArray(b.pasos)) { b.pasos.forEach((l, j) => renglon(l, `${rb}.pasos[${j}]`, j, b.pasos)); return; }
+      if (b.generador) { if (!GENERADORES.includes(b.generador)) err(rb, `no existe el generador «${b.generador}»`); return; }
+      err(rb, "bloque sin «texto», «pasos», «generador», «salto» ni «espacio»");
+    });
+  };
+
+  if (!sol || typeof sol !== "object") { err("raíz", "no es un objeto"); return { errores, avisos }; }
+  if (sol.formato !== FORMATO) av("formato", `tendría que ser «${FORMATO}»`);
+  if (!sol.titulo) av("titulo", "falta el título");
+  const m = sol.meta || {};
+  if (!sol.meta) av("meta", "falta «meta» (materia, institucion, anio, tp, fuente, estado)");
+  else {
+    for (const k of ["materia", "institucion", "anio", "tp", "fuente"]) if (!m[k]) av("meta." + k, "falta");
+    if (!ESTADOS.includes(m.estado)) av("meta.estado", `tendría que ser ${ESTADOS.join(", ")}`);
+  }
+  if (!Array.isArray(sol.ejercicios)) err("ejercicios", "falta la lista de ejercicios");
+  else sol.ejercicios.forEach((ej, i) => {
+    const r = `ejercicios[${i}]`;
+    if (!ej.enunciado) av(r, "falta el enunciado");
+    bloques(ej.bloques, r);
+    (ej.items || []).forEach((it, j) => bloques(it.bloques, `${r}.items[${j}]`));
+    if (!ej.bloques && !ej.items) av(r, "no tiene ni bloques ni ítems");
+  });
+  return { errores, avisos };
+}
+
+function buscar(dir) {
+  const out = [];
+  if (!fs.existsSync(dir)) return out;
+  for (const d of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, d.name);
+    if (d.isDirectory()) out.push(...buscar(p));
+    else if (d.name === "solucion.json") out.push(p);
+  }
+  return out;
+}
+
+const raiz = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1")), "..");
+const rutas = process.argv.slice(2).length ? process.argv.slice(2) : buscar(path.join(raiz, "solucionarios"));
+let hayErrores = false;
+for (const ruta of rutas) {
+  let sol;
+  try { sol = JSON.parse(fs.readFileSync(ruta, "utf8")); }
+  catch (e) { console.log(`✗ ${ruta}\n    error: no es un JSON válido (${e.message})`); hayErrores = true; continue; }
+  const { errores, avisos } = revisar(sol);
+  console.log(`${errores.length ? "✗" : "✓"} ${ruta}${avisos.length ? ` (${avisos.length} avisos)` : ""}`);
+  errores.forEach((e) => console.log("    error: " + e));
+  avisos.forEach((a) => console.log("    aviso: " + a));
+  if (errores.length) hayErrores = true;
+}
+if (!rutas.length) console.log("No hay archivos solucion.json para revisar.");
+process.exit(hayErrores ? 1 : 0);
