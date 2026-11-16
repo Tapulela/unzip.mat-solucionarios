@@ -102,6 +102,20 @@ export function revisar(sol) {
     for (const k of ["materia", "institucion", "anio", "tp", "fuente"]) if (!m[k]) av("meta." + k, "falta");
     if (!ESTADOS.includes(m.estado)) av("meta.estado", `tendría que ser ${ESTADOS.join(", ")}`);
   }
+  for (const k of ["cabecera", "pie"]) if (sol[k] !== undefined && typeof sol[k] !== "string") err(k, "tiene que ser un texto (puede ser vacío)");
+  const est = sol.estilo || {};
+  const FUENTES = ["normal", "mano", "codigo"], TAMS = ["S", "M", "L", "XL"];
+  if (est.fuente !== undefined && !FUENTES.includes(est.fuente)) av("estilo.fuente", `tendría que ser ${FUENTES.join(", ")}`);
+  if (est.fuenteEnunciado !== undefined && !FUENTES.includes(est.fuenteEnunciado)) av("estilo.fuenteEnunciado", `tendría que ser ${FUENTES.join(", ")}`);
+  if (est.tam !== undefined && !TAMS.includes(est.tam)) av("estilo.tam", `tendría que ser ${TAMS.join(", ")}`);
+  if (est.tamEnunciado !== undefined && !TAMS.includes(est.tamEnunciado) && !(typeof est.tamEnunciado === "number" && est.tamEnunciado > 0))
+    av("estilo.tamEnunciado", `tendría que ser ${TAMS.join(", ")} o un número`);
+  if (est.continuacion !== undefined && typeof est.continuacion !== "boolean") av("estilo.continuacion", "tendría que ser true o false");
+  if (est.numeracion !== undefined) {
+    const nu = est.numeracion;
+    if (typeof nu !== "object" || Array.isArray(nu)) err("estilo.numeracion", "es un objeto { ejercicio, item }");
+    else for (const k of ["ejercicio", "item"]) if (nu[k] !== undefined && typeof nu[k] !== "string") err(`estilo.numeracion.${k}`, "tiene que ser un texto, por ejemplo «Ejercicio {n}:»");
+  }
   if (!Array.isArray(sol.ejercicios)) err("ejercicios", "falta la lista de ejercicios");
   else sol.ejercicios.forEach((ej, i) => {
     const r = `ejercicios[${i}]`;

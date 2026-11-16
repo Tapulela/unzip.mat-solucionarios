@@ -15,6 +15,11 @@ Antes de empezar, lee `FORMATO.md` (en la raíz del repositorio): ahí están lo
 los items, los colores y el estilo de los desarrollos. El ejemplo completo está en
 `solucionarios/_ejemplo/tp-ejemplo/solucion.json`.
 
+Lee también `REGLAS.md` (en la raíz): son los criterios que pidieron los docentes al
+revisar resoluciones anteriores (consigna y respuesta, numeración, tablas de verdad,
+nombres de las leyes…) y valen para todas. Si el usuario pide un criterio nuevo que
+sirve para otras resoluciones, agrégalo ahí.
+
 ## Pasos
 
 1. **Leer el enunciado completo.** Si es un PDF o una foto, transcribe cada ejercicio con

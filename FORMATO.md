@@ -33,10 +33,15 @@ se encarga la pizarra.
 | Campo | Qué es |
 |---|---|
 | `titulo`, `subtitulo` | Encabezado de la primera hoja. |
+| `cabecera`, `pie` | Texto de la cabecera y del pie de página de todas las hojas (puede tener `\n`). `{n}` es el número de hoja y `{total}` la cantidad de hojas: `"Hoja {n} de {total}"`. Un texto vacío deja la banda con su línea y sin texto. La cabecera y el pie son de toda la pizarra: si ya existen, la pizarra no los cambia. |
 | `meta` | Datos para el catálogo. La pizarra no los dibuja. `estado`: `borrador` (lo hizo una IA y nadie lo revisó), `revisado` o `publicado`. |
 | `estilo.fuente` | `normal` (Nunito), `mano` (Excalifont) o `codigo` (Cascadia). |
 | `estilo.tam` | Tamaño del texto: `S`, `M`, `L` o `XL`. Las notas salen un poco más chicas. |
 | `estilo.notas` | `false` para no dibujar las notas de los pasos. |
+| `estilo.fuenteEnunciado` | Fuente de la consigna (enunciados y su numeración): `normal`, `mano` o `codigo`. Si falta, es la de `estilo.fuente`. |
+| `estilo.tamEnunciado` | Tamaño del enunciado de cada ejercicio: `S`, `M`, `L`, `XL` o un número (`M` es 20 y `L` es 28). Si falta, es un tamaño de título. Los enunciados de los ítems van con `estilo.tam`. |
+| `estilo.numeracion` | Cómo se numera: `{ "ejercicio": "{n})", "item": "{i})" }` (lo que se usa si falta). `{n}` es el número del ejercicio e `{i}` el del ítem. Ejemplo: `{ "ejercicio": "Ejercicio {n}:", "item": "{n}.{i}" }` da «Ejercicio 4:», «4.a», «4.b». |
+| `estilo.continuacion` | `true` para avisar en gris, al pie de la hoja, cuando un ejercicio sigue en la hoja siguiente: «(Continúa en la siguiente hoja)», o «(Continúa la consigna en la siguiente hoja)» si se corta un enunciado. Un enunciado nunca se corta si entra en una hoja. |
 
 ## Ejercicios e ítems
 
@@ -65,6 +70,8 @@ se encarga la pizarra.
 | `{ "pasos": [ renglones ] }` | Un desarrollo paso a paso (ver abajo). |
 | `{ "generador": "recta", "op": { ... } }` | Un gráfico armado con un generador de la pizarra. Queda vinculado: al seleccionarlo se edita desde su panel. |
 | `{ "salto": true }` | Empieza una hoja nueva. |
+| `"unir": true` (en un bloque de texto) | El texto no se separa de lo que le sigue: si no entra, pasa a la hoja siguiente junto con el bloque de abajo. Sirve para «La tabla sigue:». |
+| `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. |
 | `{ "espacio": 2 }` | Deja lugar libre (en renglones), por ejemplo para completar a mano. |
 
 ### Renglones de `pasos`
