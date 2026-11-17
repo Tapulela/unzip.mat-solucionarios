@@ -73,6 +73,7 @@ se encarga la pizarra.
 | `{ "salto": true }` | Empieza una hoja nueva. |
 | `"unir": true` (en un bloque de texto) | El texto no se separa de lo que le sigue: si no entra, pasa a la hoja siguiente junto con el bloque de abajo. Sirve para «La tabla sigue:». |
 | `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. |
+| `"entero": true` (en un bloque de pasos) | El desarrollo no se parte entre dos hojas: si no entra al pie, pasa entero a la siguiente (si entra en una hoja). Los dibujos de los generadores ya se comportan así. |
 | `{ "espacio": 2 }` | Deja lugar libre (en renglones), por ejemplo para completar a mano. |
 
 ### Renglones de `pasos`

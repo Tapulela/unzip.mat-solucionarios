@@ -150,6 +150,46 @@ Se usa este `estilo` en todas las resoluciones:
   álgebra proposicional, razonamiento deductivo, mostrar que el bicondicional es una
   tautología. Si conviene, se dice por qué se eligió ese.
 
+## Relaciones binarias
+
+- **Qué se busca, en palabras simples**: antes de calcular, se dice qué pares forman la
+  relación con palabras de todos los días, por ejemplo «Todos los elementos del producto
+  cartesiano A × B donde la suma del primer elemento (x) más el segundo elemento (y) sea
+  menor o igual a 12».
+- **Propiedades que se analizan**: reflexiva, simétrica, antisimétrica y transitiva.
+  Arreflexiva, asimétrica y atransitiva se analizan solo si no se cumple la propiedad
+  correspondiente (si R es reflexiva, no se analiza si es arreflexiva), salvo que la
+  consigna la pida.
+- Se dice **arreflexiva**, nunca «irreflexiva».
+- **Análisis de una propiedad**: título «Análisis de la propiedad simétrica», después
+  «Definición general de simetría:» y la fórmula en un renglón aparte
+  («∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R», con R genérica), y «Definición aplicada en el
+  contexto de este ejercicio:» con la fórmula en otro renglón (con el conjunto y el
+  nombre de la relación del ejercicio). Los nombres: reflexividad, arreflexividad,
+  simetría, asimetría, antisimetría, transitividad, atransitividad. El condicional se
+  escribe «→»; «⇒» se usa para «reemplazando queda».
+- **La reflexividad se define con una implicación**: ∀x: x ∈ A → (x, x) ∈ R (y la
+  arreflexividad, ∀x: x ∈ A → (x, x) ∉ R). Cada caso evalúa también x ∈ A.
+- Cada caso evaluado va en su propio bloque de pasos con `"entero": true`, para que la
+  proposición y sus valores no queden en hojas distintas.
+- **Si la propiedad se cumple (sobre un conjunto finito)**: se evalúa caso por caso, como
+  en el pizarrón: «x = 1, y = 2 ⇒ (1, 2) ∈ R → (2, 1) ∈ R», debajo el valor de cada
+  parte centrado bajo ella (V en verde, F en rojo) con el conector, y debajo el
+  resultado bajo el conector principal. Con ∧ hay un renglón más (primero el valor del
+  ∧). Se muestran los dos primeros casos, «…» y el último caso, y la conclusión «De esta
+  forma se verifica la proposición para cada valor de x e y, por lo tanto R es
+  simétrica».
+- Una nota para el estudiante aclara que este método solo sirve cuando la relación es
+  sobre un conjunto finito y la propiedad se cumple en todos los casos.
+- **Si una propiedad no se cumple**: primero se dice que no se cumple y que se
+  demuestra con un contraejemplo; después el caso evaluado igual que los otros, con
+  valores explícitos de x, y (z) que dan F; y al final «Para x = 3 e y = 1 la proposición
+  es falsa, por lo tanto R no es simétrica».
+- Los valores se alinean con espacios calculados con el ancho de la fuente (Nunito M:
+  espacio 5,2, dígitos 12; ∈ ≈ 13,7, → ≈ 20,8, ⇒ ≈ 17,5, medidos en la pizarra).
+- En los dígrafos, la reflexividad se explica como «cada vértice tiene un lazo consigo
+  mismo».
+
 ## Conjuntos por extensión en varios renglones
 
 - Si un conjunto escrito por extensión ocupa más de un renglón, los renglones que
