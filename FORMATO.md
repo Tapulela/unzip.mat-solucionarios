@@ -42,6 +42,8 @@ se encarga la pizarra.
 | `estilo.tamEnunciado` | Tamaño del enunciado de cada ejercicio: `S`, `M`, `L`, `XL` o un número (`M` es 20 y `L` es 28). Si falta, es un tamaño de título. Los enunciados de los ítems van con `estilo.tam`. |
 | `estilo.numeracion` | Cómo se numera: `{ "ejercicio": "{n})", "item": "{i})" }` (lo que se usa si falta). `{n}` es el número del ejercicio e `{i}` el del ítem. Ejemplo: `{ "ejercicio": "Ejercicio {n}:", "item": "{n}.{i}" }` da «Ejercicio 4:», «4.a», «4.b». |
 | `estilo.sangriaEnunciado` | Dónde empiezan los renglones de la consigna después del primero: `"rotulo"` (debajo del texto, después de «Ejercicio 4:», lo que se usa si falta) o un número, la sangría medida desde el comienzo del rótulo (por ejemplo `24`). |
+| `estilo.margenes` | Márgenes de las hojas A4, en mm: `{ "sup": 10, "inf": 10, "ext": 10, "lomo": 15 }`. Al importar pasan al panel de Hojas A4 (valen para las hojas nuevas). Si falta, quedan los del panel. |
+| `estilo.dobleFaz` | `true` para que el lomo cambie de lado en las hojas pares (impresión de los dos lados). |
 | `estilo.continuacion` | `true` para avisar en gris, al pie de la hoja, cuando un ejercicio sigue en la hoja siguiente: «(Continúa en la siguiente hoja)», o «(Continúa la consigna en la siguiente hoja)» si se corta un enunciado. Un enunciado nunca se corta si entra en una hoja. |
 
 ## Ejercicios e ítems

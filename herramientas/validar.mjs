@@ -111,6 +111,15 @@ export function revisar(sol) {
   if (est.tamEnunciado !== undefined && !TAMS.includes(est.tamEnunciado) && !(typeof est.tamEnunciado === "number" && est.tamEnunciado > 0))
     av("estilo.tamEnunciado", `tendría que ser ${TAMS.join(", ")} o un número`);
   if (est.continuacion !== undefined && typeof est.continuacion !== "boolean") av("estilo.continuacion", "tendría que ser true o false");
+  if (est.margenes !== undefined) {
+    const m = est.margenes;
+    if (typeof m !== "object" || Array.isArray(m)) err("estilo.margenes", "es un objeto { sup, inf, ext, lomo } en mm");
+    else for (const k of Object.keys(m)) {
+      if (!["sup", "inf", "ext", "lomo"].includes(k)) av("estilo.margenes." + k, "solo valen sup, inf, ext y lomo");
+      else if (!(typeof m[k] === "number" && m[k] >= 0 && m[k] <= 80)) av("estilo.margenes." + k, "tendría que ser un número de 0 a 80 (mm)");
+    }
+  }
+  if (est.dobleFaz !== undefined && typeof est.dobleFaz !== "boolean") av("estilo.dobleFaz", "tendría que ser true o false");
   if (est.sangriaEnunciado !== undefined && est.sangriaEnunciado !== "rotulo" && !(typeof est.sangriaEnunciado === "number" && est.sangriaEnunciado >= 0))
     av("estilo.sangriaEnunciado", "tendría que ser «rotulo» o un número");
   if (est.numeracion !== undefined) {
