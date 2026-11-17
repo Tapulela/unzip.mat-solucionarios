@@ -16,6 +16,30 @@ documento.
 - Las explicaciones de apoyo (qué es una tautología, por qué se eligió un método,
   otra forma posible de escribir el resultado) van en **gris y chicas**
   (`"color": "gris", "tam": "S"`).
+- **Toda explicación de apoyo empieza con «Nota para el estudiante:»**, para que impresa
+  en blanco y negro se distinga de la consigna y de la respuesta.
+- Lo que es parte de la respuesta **no** es una nota: los pasos de una demostración
+  (la hipótesis, «sea x ∈ …», la conclusión), las justificaciones que pide la consigna
+  y los títulos de sus partes van en la respuesta, no en gris.
+- **Cada ítem con su respuesta.** Si una consigna enumera varios ítems en un renglón
+  («1) …, 2) …, 3) …»), no se copian todos juntos: cada ítem va en su propio renglón con
+  su respuesta al lado o debajo. Si el trabajo práctico los nombra con letras, cada
+  uno es un ítem del JSON. Los datos de la consigna (los conjuntos A, B, C…) van uno
+  por renglón, con un renglón libre entre ellos si son largos.
+- **Ejercicios en partes.** Si hay que probar o resolver dos cosas (por ejemplo
+  «C ⊂ A y A ≠ C»), cada una lleva un título («Primera parte: C ⊆ A») y termina con su
+  conclusión, de modo que se vea dónde empieza y dónde termina cada análisis.
+
+## Lenguaje
+
+- **Palabras antes que símbolos en el texto.** En las oraciones se escriben los
+  conectores con palabras («y», «porque», «dado que»), no con comas, dos puntos o
+  flechas. Los dos puntos después de una expresión («A ≠ C: 3 ∈ A…») se confunden con
+  «tal que» o «para todo»: se escribe «A ≠ C dado que 3 ∈ A…». El lenguaje formal de la
+  materia (∈, ⊆, ∪, ⇒, ¬…) sí se usa, porque es parte de lo que se aprende.
+- Tampoco «:» para dividir: se escribe «6 = 2 · 3» o «6 dividido 2».
+- **Abreviaturas parejas.** Si se abrevian nombres, todas las abreviaturas tienen la
+  misma cantidad de letras (Pr, In, Po; no P, I, Po).
 
 ## Interpretación literal (traducciones y lógica proposicional)
 
@@ -44,9 +68,16 @@ Se usa este `estilo` en todas las resoluciones:
   "fuenteEnunciado": "codigo",
   "tamEnunciado": 22,
   "numeracion": { "ejercicio": "Ejercicio {n}:", "item": "{n}.{i}" },
+  "sangriaEnunciado": 24,
   "continuacion": true
 }
 ```
+
+- Los renglones de la consigna que siguen al primero llevan una sangría chica (24), no
+  la del ancho de «Ejercicio 4:».
+- **Los datos de la consigna van en renglones separados**: si la consigna define dos o
+  más conjuntos o condiciones («A = … y B = …»), cada uno va en su renglón (`\n` en el
+  enunciado), en vez de seguir en prosa.
 
 - La consigna va en fuente de código (Cascadia), un poco más grande que el texto de la
   resolución (22 contra 20), pero no tamaño de título.
@@ -100,12 +131,39 @@ Se usa este `estilo` en todas las resoluciones:
 - En la nota de cada paso, el nombre de la ley y la ley escrita, por ejemplo
   «Ley de complemento: q ∨ ¬q ≡ V».
 
+## Nombres de las leyes del álgebra de conjuntos
+
+- La absorción se nombra siempre con su tipo: **absorción total**
+  (A ∪ (A ∩ B) = A, A ∩ (A ∪ B) = A) o **absorción parcial**
+  (A ∪ (Aᶜ ∩ B) = A ∪ B, A ∩ (Aᶜ ∪ B) = A ∩ B).
+
 ## Demostraciones
 
+- **Probar algo verdadero se hace con una demostración. Probar que algo es falso se
+  hace con un contraejemplo**, y solo si no hay uno posible, con una demostración
+  formal.
+- La demostración se escribe completa y como parte de la respuesta: la hipótesis es
+  un paso explícito («Hipótesis: A ⊆ C y B ⊆ C»), después «Sea x ∈ …», cada paso con la
+  definición o propiedad que usa, y al final la conclusión.
 - Si la consigna pide demostrar y hay varios métodos, se elige uno y se aclara en gris
   que existen otros, nombrándolos: tabla de verdad, simplificación con las leyes del
   álgebra proposicional, razonamiento deductivo, mostrar que el bicondicional es una
   tautología. Si conviene, se dice por qué se eligió ese.
+
+## Conjuntos por extensión en varios renglones
+
+- Si un conjunto escrito por extensión ocupa más de un renglón, los renglones que
+  siguen empiezan a la derecha de la llave de apertura, alineados con el primer
+  elemento (en el JSON: `"rel": ""` y un espacio delante del primer elemento).
+- Si los elementos tienen un orden elegido (por cantidad de elementos, de menor a
+  mayor), se dice en una nota cuál es.
+
+## Rectas reales
+
+- Se dibujan con el estilo de **líneas** (`"estilo": "lineas"`), no rayado: se imprimen
+  en blanco y negro.
+- Los números no se pueden pisar. Si dos extremos quedan muy cerca, se agranda la
+  recta (`"largo": "larga"`) o cada intervalo va a su propia altura.
 - Para decidir si un argumento es válido se arma la tabla de verdad de su forma
   [premisas] → conclusión: es válido si es tautología. Si es inválido, se muestra la
   fila que es contraejemplo y se nombra la falacia.
@@ -113,8 +171,39 @@ Se usa este `estilo` en todas las resoluciones:
 ## Resultados
 
 - El resultado final va en un recuadro y se escribe completo: «p ∧ q = F», no solo «F».
+- **El recuadro encierra la igualdad entera** («A = B», «A ∩ B = {1, 2}»), nunca solo el
+  miembro derecho o un símbolo. En el JSON, el renglón final lleva toda la igualdad en
+  `der` (sin `izq`); si el desarrollo terminó en «= …», se agrega un renglón final con
+  la igualdad completa.
 - En una evaluación con valores dados, cada paso hace una sola cosa (reemplazar, negar,
   resolver un paréntesis), con su nota.
+
+## Pasos de un desarrollo
+
+- **Una operación en los dos miembros se escribe en los dos, y en color en los dos**
+  (propiedad uniforme): «x² + 1 − 1 = 0 − 1», con los dos «− 1» en verde. Como `izq` no
+  admite colores, esos renglones van enteros en `der`, con `"rel": ""` y espacios
+  delante para que los «=» queden alineados.
+- **Definición y después reemplazo.** Si se usa una definición (A Δ B, A − B, Aᶜ), primero
+  se escribe la definición y en el renglón siguiente se reemplaza.
+- **Reemplazos alineados**: lo que se reemplaza se escribe en el renglón de abajo,
+  justo debajo de lo reemplazado, y lo demás queda igual. Si lo nuevo es más corto, se
+  agregan espacios para que lo que sigue no se corra; si es más largo, se alinea con el
+  signo igual. Para eso el desarrollo empieza con la expresión sola en un renglón
+  (`"rel": ""`) y los reemplazos van en el renglón «= …» de abajo. Los espacios se
+  calculan con el ancho real de la fuente (en Nunito tamaño M, un espacio mide 5,2 y
+  cada dígito 12).
+- **El signo igual alineado**: entre lo de la izquierda y el «=» no queda un hueco. Si
+  los miembros izquierdos tienen distinto largo, se tabula antes («   x = 6» debajo de
+  «23 = 17 + x»). Un rótulo («Rojas:») va en su propio renglón, no a la izquierda de la
+  igualdad.
+- **Un signo delante de una fracción dibujada lleva un espacio** (`"− "` antes del
+  item `frac`): pegado a la raya de fracción queda feo.
+- **Las cuentas simples no llevan nota** (sumar o restar números, «Sumar 3 + 9 + 5»). Sí
+  la llevan si la nota agrega una interpretación («Sumar todas las zonas», «Restar del
+  total»).
+- El complemento se plantea también por comprensión, negando la condición:
+  Bᶜ = {x ∈ ℝ : ¬(1 ≤ x)} = {x ∈ ℝ : 1 > x}.
 
 ## Circuitos
 

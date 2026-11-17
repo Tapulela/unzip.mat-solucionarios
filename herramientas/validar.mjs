@@ -10,7 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const FORMATO = "unzip.mat/solucion@1";
-const GENERADORES = ["recta", "funcion", "tabla", "boole", "conjuntos", "relaciones", "estructuras", "combinatoria",
+const GENERADORES = ["recta", "funcion", "tabla", "boole", "conjuntos", "venn", "relaciones", "estructuras", "combinatoria",
   "mcm", "valorAbsoluto", "inecuaciones2", "racionales", "factorizacion", "raicesC", "complejos", "razonamientos",
   "simpLogica", "simpBoole", "simpConjuntos", "plantillas"];
 const COLORES = ["suma", "producto", "condicion", "caso", "a", "b", "c", "mal", "tinta", "azul", "rojo", "verde",
@@ -111,6 +111,8 @@ export function revisar(sol) {
   if (est.tamEnunciado !== undefined && !TAMS.includes(est.tamEnunciado) && !(typeof est.tamEnunciado === "number" && est.tamEnunciado > 0))
     av("estilo.tamEnunciado", `tendría que ser ${TAMS.join(", ")} o un número`);
   if (est.continuacion !== undefined && typeof est.continuacion !== "boolean") av("estilo.continuacion", "tendría que ser true o false");
+  if (est.sangriaEnunciado !== undefined && est.sangriaEnunciado !== "rotulo" && !(typeof est.sangriaEnunciado === "number" && est.sangriaEnunciado >= 0))
+    av("estilo.sangriaEnunciado", "tendría que ser «rotulo» o un número");
   if (est.numeracion !== undefined) {
     const nu = est.numeracion;
     if (typeof nu !== "object" || Array.isArray(nu)) err("estilo.numeracion", "es un objeto { ejercicio, item }");
