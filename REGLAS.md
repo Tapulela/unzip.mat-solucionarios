@@ -146,7 +146,9 @@ Se usa este `estilo` en todas las resoluciones:
 
 - **Probar algo verdadero se hace con una demostración. Probar que algo es falso se
   hace con un contraejemplo**, y solo si no hay uno posible, con una demostración
-  formal.
+  formal. Excepción: en las propiedades que son una igualdad (estructuras
+  algebraicas), lo que no se cumple se muestra desarrollando los dos miembros hasta
+  ver que son distintos.
 - La demostración se escribe completa y como parte de la respuesta: la hipótesis es
   un paso explícito («Hipótesis: A ⊆ C y B ⊆ C»), después «Sea x ∈ …», cada paso con la
   definición o propiedad que usa, y al final la conclusión.
@@ -219,6 +221,50 @@ Se usa este `estilo` en todas las resoluciones:
   conmutativa y tiene neutro, pero no es grupo».
 - Los nombres que pide la consigna y no están en esta lista (anillo unitario, dominio
   de integridad) se usan igual, definidos en una nota para el estudiante.
+- **Cada propiedad en su sección**, con título («Análisis de la ley de composición
+  interna», «Análisis de la propiedad asociativa», «Análisis de la propiedad
+  conmutativa», «Análisis de la existencia de elemento neutro», «Análisis de la
+  existencia de elemento inverso», «Análisis de la propiedad distributiva»), y al
+  final de la sección su conclusión, para que se vea dónde termina una y empieza la
+  otra. Orden: L.C.I., asociativa, conmutativa, neutro, inverso, distributiva.
+- **Definición general y definición aplicada.** La definición general es la genérica,
+  con un conjunto A y una operación ∗ («∀a, b, c ∈ A: (a ∗ b) ∗ c = a ∗ (b ∗ c)»); en
+  una terna, + es la primera operación y ∗ la segunda («a ∗ (b + c) = (a ∗ b) + (a ∗ c)»).
+  Después va «Definición aplicada en el contexto de este ejercicio:» con el conjunto y
+  las operaciones del ejercicio.
+- **Miembro izquierdo y miembro derecho.** Si una propiedad es una igualdad, se
+  plantea la igualdad, y cada miembro se desarrolla en su propia sección, con el
+  título «Miembro izquierdo» o «Miembro derecho». Al final se comparan.
+- **Conmutativa**: definición, la ecuación, el desarrollo de cada miembro por separado
+  y, si se cumple, se reordena el miembro derecho hasta que quede igual al izquierdo.
+  No se empieza por un miembro para llegar al otro.
+- **Una propiedad que no se cumple se muestra desarrollando los dos miembros** hasta
+  ver que son distintos (no con un contraejemplo numérico): «a + 3b + 3c ≠ a + 3b + 9c».
+  Para el neutro o el inverso, se despeja y se muestra que el resultado depende del
+  elemento o no está en el conjunto.
+- **Neutro e inverso por derecha y por izquierda.** Se analiza primero por derecha
+  («Elemento neutro por derecha»). Por izquierda:
+  - neutro: si ∗ ya se probó conmutativa, se aclara que por eso no hace falta
+    analizarlo por izquierda; si no, se analiza en su propia sección;
+  - inverso: si ∗ ya se probó conmutativa o asociativa, se aclara que por esa
+    propiedad no hace falta analizarlo por izquierda; si no es ni conmutativa ni
+    asociativa, se dice que por eso hay que analizarlo, y se analiza en su propia
+    sección.
+  - Nunca «del otro lado»: se dice «analizando el elemento inverso por izquierda».
+- **Si algún elemento no tiene inverso, no se cumple la existencia de elemento
+  inverso**, y así se escribe en el resumen, aunque otros elementos sí lo tengan.
+- **Resumen de propiedades** al final de cada estudio de una estructura: cada
+  propiedad con su marca dibujada (✓ o ✗) y el nombre de la estructura en un recuadro.
+- **Tablas de doble entrada** (tabla de una operación): item `tabla` con
+  `"lineas": true`, para que tenga marco y grilla.
+
+## Consignas que no se pueden cumplir
+
+- No se reinterpreta la consigna, salvo que el error sea evidente y la corrección
+  también. Si se pide algo que no se puede hacer, se resuelve por qué no se puede:
+  por ejemplo, «no está definida la clase de equivalencia porque la relación no es de
+  equivalencia, ya que no cumple la propiedad simétrica», o «no se puede probar que ∗
+  es distributiva porque los dos miembros son distintos».
 
 ## Conjuntos por extensión en varios renglones
 
@@ -249,6 +295,10 @@ Se usa este `estilo` en todas las resoluciones:
   resolver un paréntesis), con su nota.
 
 ## Pasos de un desarrollo
+
+- **Nunca más de un paso por renglón**, en todos los temas: ni cadenas como
+  «(1 ∗ 1) ∗ 0 = 2 ∗ 0 = 4», ni dentro de un párrafo de texto. Cada igualdad del
+  desarrollo va en su propio renglón de `pasos`, con su nota.
 
 - **Una operación en los dos miembros se escribe en los dos, y en color en los dos**
   (propiedad uniforme): «x² + 1 − 1 = 0 − 1», con los dos «− 1» en verde. Como `izq` no

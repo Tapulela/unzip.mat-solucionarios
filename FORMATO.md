@@ -108,7 +108,7 @@ se encarga la pizarra.
 | raíz dibujada | `{ "raiz": radicando }`. En textos, `√25`, `√(a + b)` y `√[3]8` también se dibujan. |
 | marca dibujada | `{ "marca": "ok" }` (✓ verde) o `{ "marca": "mal" }` (✗ roja) |
 | sistema | `{ "sistema": [fila, fila] }`, con una llave a la izquierda |
-| tabla | `{ "tabla": [[celda, celda], [celda, celda]] }` |
+| tabla | `{ "tabla": [[celda, celda], [celda, celda]] }`. Con `"lineas": true` lleva marco y grilla, con una línea más gruesa después de la primera fila y de la primera columna (tabla de doble entrada). |
 
 Las potencias y los subíndices se escriben con caracteres Unicode: `x² x³ xⁿ x₁ x₂`. Los
 signos van con sus caracteres: `−` (menos), `·`, `±`, `≤`, `≥`, `≠`, `∈`, `∪`, `∩`, `⇔`,
