@@ -69,9 +69,14 @@ Se usa este `estilo` en todas las resoluciones:
   "tamEnunciado": 22,
   "numeracion": { "ejercicio": "Ejercicio {n}:", "item": "{n}.{i}" },
   "sangriaEnunciado": 24,
+  "margenes": { "sup": 10, "inf": 10, "ext": 10, "lomo": 15 },
+  "dobleFaz": true,
   "continuacion": true
 }
 ```
+
+- **Márgenes de las hojas**: lomo 15 mm, exterior 10 mm, superior 10 mm e inferior
+  10 mm, con doble faz (el lomo cambia de lado en las hojas pares).
 
 - Los renglones de la consigna que siguen al primero llevan una sangría chica (24), no
   la del ancho de «Ejercicio 4:».

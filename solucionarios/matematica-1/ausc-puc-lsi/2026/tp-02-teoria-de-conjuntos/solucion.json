@@ -19,6 +19,8 @@
   "tamEnunciado": 22,
   "numeracion": { "ejercicio": "Ejercicio {n}:", "item": "{n}.{i}" },
   "sangriaEnunciado": 24,
+  "margenes": { "sup": 10, "inf": 10, "ext": 10, "lomo": 15 },
+  "dobleFaz": true,
   "continuacion": true
  },
  "ejercicios": [
