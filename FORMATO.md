@@ -106,10 +106,10 @@ se encarga la pizarra.
 | texto | `"2x² − 2x − 12"` |
 | texto con color | `{ "t": "+ 1", "color": "suma" }` |
 | fracción | `{ "frac": [numerador, denominador] }`, donde cada uno es un item o una lista |
-| raíz dibujada | `{ "raiz": radicando }`. En textos, `√25`, `√(a + b)` y `√[3]8` también se dibujan. |
+| raíz dibujada | `{ "raiz": radicando }`, y con índice `{ "raiz": radicando, "indice": "n − 1" }` (más chico y arriba del gancho, para que no se lea como un producto). En textos, `√25`, `√(a + b)` y `√[3]8` también se dibujan. |
 | marca dibujada | `{ "marca": "ok" }` (✓ verde) o `{ "marca": "mal" }` (✗ roja) |
 | sistema | `{ "sistema": [fila, fila] }`, con una llave a la izquierda |
-| tabla | `{ "tabla": [[celda, celda], [celda, celda]] }`. Con `"lineas": true` lleva marco y grilla, con una línea más gruesa después de la primera fila y de la primera columna (tabla de doble entrada). |
+| tabla | `{ "tabla": [[celda, celda], [celda, celda]] }`. Con `"lineas": true` lleva marco y grilla, con una línea más gruesa después de la primera fila y de la primera columna (tabla de doble entrada). Las celdas van alineadas a la derecha; `"alinear"` cambia eso: `"izq"`, `"centro"` o `"der"` para toda la tabla, o una lista con una por columna (`["der", "centro", "centro"]`). |
 
 Las potencias y los subíndices se escriben con caracteres Unicode: `x² x³ xⁿ x₁ x₂`. Los
 signos van con sus caracteres: `−` (menos), `·`, `±`, `≤`, `≥`, `≠`, `∈`, `∪`, `∩`, `⇔`,

@@ -43,7 +43,11 @@ export function revisar(sol) {
       if (!Array.isArray(x.frac) || x.frac.length !== 2) { err(r, "«frac» tiene que ser [numerador, denominador]"); return {}; }
       items(x.frac[0], r + ".frac[0]"); items(x.frac[1], r + ".frac[1]"); return {};
     }
-    if (x.raiz !== undefined) { items(x.raiz, r + ".raiz"); return {}; }
+    if (x.raiz !== undefined) {
+      items(x.raiz, r + ".raiz");
+      if (x.indice !== undefined) texto(String(x.indice), r + ".indice");
+      return {};
+    }
     if (x.marca !== undefined) { if (!["ok", "mal"].includes(x.marca)) err(r, "«marca» es \"ok\" o \"mal\""); return {}; }
     if (x.sistema !== undefined) {
       if (!Array.isArray(x.sistema)) err(r, "«sistema» es una lista de filas");
@@ -53,6 +57,9 @@ export function revisar(sol) {
     if (x.tabla !== undefined) {
       if (!Array.isArray(x.tabla)) err(r, "«tabla» es una lista de filas");
       else x.tabla.forEach((f, i) => (Array.isArray(f) ? f : [f]).forEach((c, j) => items(c, `${r}.tabla[${i}][${j}]`)));
+      const AL = ["izq", "centro", "der"];
+      if (x.alinear !== undefined && !(Array.isArray(x.alinear) ? x.alinear : [x.alinear]).every((a) => AL.includes(a)))
+        av(r + ".alinear", "tiene que ser \"izq\", \"centro\" o \"der\" (o una lista, una por columna)");
       return {};
     }
     err(r, `no se reconoce el item ${JSON.stringify(x).slice(0, 60)}`);

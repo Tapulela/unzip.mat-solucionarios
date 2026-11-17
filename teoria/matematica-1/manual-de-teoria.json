@@ -1,0 +1,2847 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Matemática 1 — Manual de teoría",
+ "subtitulo": "Definiciones, propiedades y fórmulas para consultar",
+ "cabecera": "Matemática 1\nManual de teoría",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Manual de teoría",
+  "fuente": "Material complementario de Matemática 1 del Repo AUSC - LSI - PUC (Notion); Unidad 4: MATE_INICIAL V 2.1, capítulo XVII (Grafos)",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Unidad {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "enunciado": "Lógica proposicional y de predicados",
+   "bloques": [
+    {
+     "seccion": "Notación",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "V: verdadero    F: falso"
+        },
+        {
+         "rel": "",
+         "der": "T (o V): tautología, siempre verdadera"
+        },
+        {
+         "rel": "",
+         "der": "C (o F): contradicción, siempre falsa"
+        },
+        {
+         "rel": "",
+         "der": "K: contingencia, a veces verdadera y a veces falsa"
+        },
+        {
+         "rel": "",
+         "der": "≡: equivalencia lógica    ⇒: implicación lógica"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Clasificación de una fórmula",
+     "bloques": [
+      {
+       "texto": "Tautología: es verdadera para todos los valores de verdad de sus variables."
+      },
+      {
+       "texto": "Contradicción: es falsa para todos los valores de verdad de sus variables."
+      },
+      {
+       "texto": "Contingencia: no es tautología ni contradicción."
+      },
+      {
+       "texto": "Un razonamiento es válido si la forma [premisas] → conclusión es una tautología."
+      }
+     ]
+    },
+    {
+     "seccion": "Leyes del álgebra proposicional (equivalencias)",
+     "bloques": [
+      {
+       "seccion": "Involución o doble negación",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "¬(¬p) ≡ p"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Idempotencia",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∨ p ≡ p"
+          },
+          {
+           "rel": "",
+           "der": "p ∧ p ≡ p"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Conmutatividad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∨ q ≡ q ∨ p"
+          },
+          {
+           "rel": "",
+           "der": "p ∧ q ≡ q ∧ p"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Asociatividad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "(p ∨ q) ∨ r ≡ p ∨ (q ∨ r)"
+          },
+          {
+           "rel": "",
+           "der": "(p ∧ q) ∧ r ≡ p ∧ (q ∧ r)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Distributividad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "(p ∨ q) ∧ r ≡ (p ∧ r) ∨ (q ∧ r)"
+          },
+          {
+           "rel": "",
+           "der": "(p ∧ q) ∨ r ≡ (p ∨ r) ∧ (q ∨ r)"
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "Nota para el estudiante: sacar factor común, en el otro sentido, es la inversa distributiva.",
+         "color": "gris",
+         "tam": "S"
+        }
+       ]
+      },
+      {
+       "seccion": "Leyes de De Morgan",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "¬(p ∨ q) ≡ ¬p ∧ ¬q"
+          },
+          {
+           "rel": "",
+           "der": "¬(p ∧ q) ≡ ¬p ∨ ¬q"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Identidad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∧ V ≡ p"
+          },
+          {
+           "rel": "",
+           "der": "p ∨ F ≡ p"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Dominación",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∧ F ≡ F"
+          },
+          {
+           "rel": "",
+           "der": "p ∨ V ≡ V"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Complemento",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∧ ¬p ≡ F    (ley de contradicción)"
+          },
+          {
+           "rel": "",
+           "der": "p ∨ ¬p ≡ V    (ley de tercero excluido)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Absorción total",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∨ (p ∧ q) ≡ p"
+          },
+          {
+           "rel": "",
+           "der": "p ∧ (p ∨ q) ≡ p"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Absorción parcial",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∨ (¬p ∧ q) ≡ p ∨ q"
+          },
+          {
+           "rel": "",
+           "der": "p ∧ (¬p ∨ q) ≡ p ∧ q"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Condicional",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p → q ≡ ¬p ∨ q"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Bicondicional",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ↔ q ≡ (p → q) ∧ (q → p)"
+          },
+          {
+           "rel": "",
+           "der": "p ↔ q ≡ (¬p ∨ q) ∧ (¬q ∨ p)"
+          },
+          {
+           "rel": "",
+           "der": "p ↔ q ≡ (¬p ∧ ¬q) ∨ (p ∧ q)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Diferencia simétrica",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p Δ q ≡ ¬(p ↔ q)"
+          },
+          {
+           "rel": "",
+           "der": "p Δ q ≡ (p ∨ q) ∧ ¬(p ∧ q)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Otras leyes (implicaciones y equivalencias)",
+     "bloques": [
+      {
+       "seccion": "Adición",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ⇒ p ∨ q"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Simplificación",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "p ∧ q ⇒ p"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Exportación",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "[p → (q → r)] ⇔ [(p ∧ q) → r]"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Reducción al absurdo",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "(p → q) ⇔ [(p ∧ ¬q) → C]"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Contrarrecíproca",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "(p → q) ⇔ (¬q → ¬p)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Modus ponendo ponens",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "[(p → q) ∧ p] ⇒ q"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Modus tollendo tollens",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "[(p → q) ∧ ¬q] ⇒ ¬p"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Silogismo hipotético",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "[(p → q) ∧ (q → r)] ⇒ (p → r)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "enunciado": "Teoría de conjuntos",
+   "bloques": [
+    {
+     "seccion": "Conjuntos",
+     "bloques": [
+      {
+       "seccion": "Notación",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "U: conjunto universal    ∅: conjunto vacío"
+          },
+          {
+           "rel": "",
+           "der": "Aᶜ: complemento de A (también ¬A, A', Ā)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Leyes del álgebra de conjuntos",
+       "bloques": [
+        {
+         "seccion": "Involución",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "(Aᶜ)ᶜ = A"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Idempotencia",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A ∩ A = A"
+            },
+            {
+             "rel": "",
+             "der": "A ∪ A = A"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Conmutatividad",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A ∩ B = B ∩ A"
+            },
+            {
+             "rel": "",
+             "der": "A ∪ B = B ∪ A"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Asociatividad",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "(A ∩ B) ∩ C = A ∩ (B ∩ C)"
+            },
+            {
+             "rel": "",
+             "der": "(A ∪ B) ∪ C = A ∪ (B ∪ C)"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Distributividad",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "(A ∩ B) ∪ C = (A ∪ C) ∩ (B ∪ C)"
+            },
+            {
+             "rel": "",
+             "der": "(A ∪ B) ∩ C = (A ∩ C) ∪ (B ∩ C)"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Leyes de De Morgan",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ"
+            },
+            {
+             "rel": "",
+             "der": "(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Identidad",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A ∩ U = A"
+            },
+            {
+             "rel": "",
+             "der": "A ∪ ∅ = A"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Dominación",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A ∩ ∅ = ∅"
+            },
+            {
+             "rel": "",
+             "der": "A ∪ U = U"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Complemento",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A ∩ Aᶜ = ∅"
+            },
+            {
+             "rel": "",
+             "der": "A ∪ Aᶜ = U"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Complementación",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "Uᶜ = ∅"
+            },
+            {
+             "rel": "",
+             "der": "∅ᶜ = U"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Absorción total",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A ∩ (A ∪ B) = A"
+            },
+            {
+             "rel": "",
+             "der": "A ∪ (A ∩ B) = A"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Absorción parcial",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A ∩ (Aᶜ ∪ B) = A ∩ B"
+            },
+            {
+             "rel": "",
+             "der": "A ∪ (Aᶜ ∩ B) = A ∪ B"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Relaciones binarias",
+     "bloques": [
+      {
+       "seccion": "Relación binaria",
+       "bloques": [
+        {
+         "texto": "Una relación binaria R de A en B es cualquier subconjunto del producto cartesiano A × B."
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "R ⊆ A × B"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Propiedades de una relación R en A",
+       "bloques": [
+        {
+         "seccion": "Reflexiva",
+         "bloques": [
+          {
+           "texto": "Cada elemento está relacionado consigo mismo."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x: x ∈ A → (x, x) ∈ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Arreflexiva",
+         "bloques": [
+          {
+           "texto": "Ningún elemento está relacionado consigo mismo."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x: x ∈ A → (x, x) ∉ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Simétrica",
+         "bloques": [
+          {
+           "texto": "Si x está relacionado con y, también y con x."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Asimétrica",
+         "bloques": [
+          {
+           "texto": "Si x está relacionado con y, y no está relacionado con x."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Antisimétrica",
+         "bloques": [
+          {
+           "texto": "Si x está relacionado con y e y con x, son el mismo elemento."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y ∈ A: (x, y) ∈ R ∧ (y, x) ∈ R → x = y"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Transitiva",
+         "bloques": [
+          {
+           "texto": "Si x está relacionado con y e y con z, x está relacionado con z."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y, z ∈ A: (x, y) ∈ R ∧ (y, z) ∈ R → (x, z) ∈ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Relación de equivalencia",
+       "bloques": [
+        {
+         "texto": "Es reflexiva, simétrica y transitiva."
+        },
+        {
+         "seccion": "Clase de equivalencia de a",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "[a] = {x ∈ A / (a, x) ∈ R}"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Conjunto cociente",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "A/R = {[a] / a ∈ A}"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Relación de orden",
+       "bloques": [
+        {
+         "seccion": "Orden amplio",
+         "bloques": [
+          {
+           "texto": "Es reflexiva, antisimétrica y transitiva."
+          }
+         ]
+        },
+        {
+         "seccion": "Orden estricto",
+         "bloques": [
+          {
+           "texto": "Es arreflexiva, asimétrica y transitiva."
+          }
+         ]
+        },
+        {
+         "seccion": "Orden total",
+         "bloques": [
+          {
+           "texto": "Dos elementos distintos cualesquiera están relacionados."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y ∈ A: x ≠ y → (x, y) ∈ R ∨ (y, x) ∈ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Orden parcial",
+         "bloques": [
+          {
+           "texto": "Existen al menos dos elementos distintos que no están relacionados."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∃x, ∃y ∈ A / x ≠ y ∧ (x, y) ∉ R ∧ (y, x) ∉ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Aplicaciones (funciones)",
+     "bloques": [
+      {
+       "seccion": "Función inyectiva",
+       "bloques": [
+        {
+         "texto": "A cada imagen le corresponde un único elemento del dominio."
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "f es inyectiva ⇔ ∀a, b ∈ Dom(f): f(a) = f(b) → a = b"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Función sobreyectiva",
+       "bloques": [
+        {
+         "texto": "Todos los elementos del codominio son imagen de algún elemento."
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "f: A → B es sobreyectiva ⇔ Rango(f) = B"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Función biyectiva",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "f es biyectiva ⇔ f es inyectiva ∧ f es sobreyectiva"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Estructuras algebraicas",
+     "bloques": [
+      {
+       "seccion": "Propiedades de una operación ∗ sobre un conjunto A",
+       "bloques": [
+        {
+         "seccion": "Ley de composición interna (L.C.I.)",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y: x ∈ A ∧ y ∈ A → x ∗ y ∈ A"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Asociativa",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y, z ∈ A: x ∗ (y ∗ z) = (x ∗ y) ∗ z"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Conmutativa",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y ∈ A: x ∗ y = y ∗ x"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Existencia de elemento neutro",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∃e ∈ A / ∀x ∈ A: x ∗ e = e ∗ x = x"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Existencia de elemento inverso",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x ∈ A, ∃x' ∈ A / x ∗ x' = x' ∗ x = e"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Propiedad distributiva de ∗ (segunda ley) con respecto a + (primera ley)",
+       "bloques": [
+        {
+         "seccion": "Por izquierda",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀a, b, c ∈ A: a ∗ (b + c) = (a ∗ b) + (a ∗ c)"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Por derecha",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀a, b, c ∈ A: (b + c) ∗ a = (b ∗ a) + (c ∗ a)"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Par ordenado (A, ∗)",
+       "bloques": [
+        {
+         "seccion": "Monoide",
+         "bloques": [
+          {
+           "texto": "∗ es L.C.I."
+          }
+         ]
+        },
+        {
+         "seccion": "Semigrupo",
+         "bloques": [
+          {
+           "texto": "∗ es L.C.I. y asociativa."
+          }
+         ]
+        },
+        {
+         "seccion": "Grupo",
+         "bloques": [
+          {
+           "texto": "∗ es L.C.I., asociativa, con elemento neutro y con elemento inverso para todo elemento."
+          }
+         ]
+        },
+        {
+         "seccion": "Grupo abeliano",
+         "bloques": [
+          {
+           "texto": "Es grupo y además ∗ es conmutativa."
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Terna ordenada (A, +, ∗)",
+       "bloques": [
+        {
+         "seccion": "Anillo",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "(A, +) es grupo abeliano"
+            },
+            {
+             "rel": "",
+             "der": "(A, ∗) es semigrupo"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "∗ es distributiva con respecto a +, por izquierda y por derecha."
+          }
+         ]
+        },
+        {
+         "seccion": "Anillo abeliano (o conmutativo)",
+         "bloques": [
+          {
+           "texto": "Es anillo y además ∗ es conmutativa."
+          }
+         ]
+        },
+        {
+         "seccion": "Anillo unitario",
+         "bloques": [
+          {
+           "texto": "Es anillo y ∗ tiene elemento neutro."
+          }
+         ]
+        },
+        {
+         "seccion": "Anillo con división",
+         "bloques": [
+          {
+           "texto": "Es anillo unitario y todo elemento distinto del neutro de + tiene inverso para ∗."
+          }
+         ]
+        },
+        {
+         "seccion": "Cuerpo",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "(A, +) es grupo abeliano"
+            },
+            {
+             "rel": "",
+             "der": "(A − {e₊}, ∗) es grupo abeliano"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "∗ es distributiva con respecto a +, por izquierda y por derecha."
+          },
+          {
+           "texto": "Nota para el estudiante: e₊ es el neutro de +. Un anillo abeliano con división es un cuerpo.",
+           "color": "gris",
+           "tam": "S"
+          }
+         ]
+        },
+        {
+         "seccion": "Álgebra de Boole",
+         "bloques": [
+          {
+           "texto": "Su definición está en la Unidad 3."
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Inducción",
+     "bloques": [
+      {
+       "seccion": "Principio de inducción",
+       "bloques": [
+        {
+         "texto": "Una propiedad P(n) vale para todo natural n ≥ n₀ si se cumplen las dos condiciones:"
+        },
+        {
+         "seccion": "Paso base",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "P(n₀) es verdadera"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Paso inductivo",
+         "bloques": [
+          {
+           "texto": "Hipótesis: P(k) es verdadera. Tesis: P(k + 1) es verdadera."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀k ≥ n₀: P(k) → P(k + 1)"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "enunciado": "Álgebra de Boole",
+   "bloques": [
+    {
+     "seccion": "Definición",
+     "bloques": [
+      {
+       "texto": "La terna (A, +, ∗) es un álgebra de Boole si:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(A, +) es semigrupo conmutativo con unidad"
+        },
+        {
+         "rel": "",
+         "der": "(A, ∗) es semigrupo conmutativo con unidad"
+        },
+        {
+         "rel": "",
+         "der": "∀a ∈ A, ∃a' / a + a' = e∗"
+        },
+        {
+         "rel": "",
+         "der": "∀a ∈ A, ∃a' / a ∗ a' = e₊"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "La suma y el producto son distributivos, cada uno con respecto al otro."
+      },
+      {
+       "texto": "Nota para el estudiante: e₊ es el neutro de + (el 0) y e∗ es el neutro de ∗ (el 1).",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "seccion": "Notación",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "+: suma (o)    ·: producto (y)    A': complemento de A"
+        },
+        {
+         "rel": "",
+         "der": "0: neutro de la suma    1: neutro del producto"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Leyes",
+     "bloques": [
+      {
+       "seccion": "Involución",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A'' = A"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Idempotencia",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · A = A"
+          },
+          {
+           "rel": "",
+           "der": "A + A = A"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Conmutatividad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · B = B · A"
+          },
+          {
+           "rel": "",
+           "der": "A + B = B + A"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Asociatividad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "(A · B) · C = A · (B · C)"
+          },
+          {
+           "rel": "",
+           "der": "(A + B) + C = A + (B + C)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Distributividad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "(A · B) + C = (A + C) · (B + C)"
+          },
+          {
+           "rel": "",
+           "der": "(A + B) · C = (A · C) + (B · C)"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Leyes de De Morgan",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "(A · B)' = A' + B'"
+          },
+          {
+           "rel": "",
+           "der": "(A + B)' = A' · B'"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Identidad",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · 1 = A"
+          },
+          {
+           "rel": "",
+           "der": "A + 0 = A"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Elementos dominantes",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · 0 = 0"
+          },
+          {
+           "rel": "",
+           "der": "A + 1 = 1"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Complemento",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · A' = 0"
+          },
+          {
+           "rel": "",
+           "der": "A + A' = 1"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Absorción total",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · (A + B) = A"
+          },
+          {
+           "rel": "",
+           "der": "A + (A · B) = A"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Absorción parcial",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · (A' + B) = A · B"
+          },
+          {
+           "rel": "",
+           "der": "A + (A' · B) = A + B"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Teorema del consenso",
+     "bloques": [
+      {
+       "texto": "El término de consenso (B · C) se forma con lo que acompaña a A y a A' en los otros dos términos, y se puede eliminar."
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "A · B + A' · C + B · C = A · B + A' · C"
+        },
+        {
+         "rel": "",
+         "der": "(A + B) · (A' + C) · (B + C) = (A + B) · (A' + C)"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "seccion": "Simplificación (demostración de la primera forma)",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "A · B + A' · C + B · C"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "A · B + A' · C + B · C · ",
+            {
+             "t": "(A + A')",
+             "color": "producto"
+            }
+           ],
+           "nota": "Complemento: A + A' = 1",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "A · B + A' · C + ",
+            {
+             "t": "A · B · C + A' · B · C",
+             "color": "producto"
+            }
+           ],
+           "nota": "Distributividad",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "t": "A · B · (1 + C)",
+             "color": "producto"
+            },
+            " + ",
+            {
+             "t": "A' · C · (1 + B)",
+             "color": "producto"
+            }
+           ],
+           "nota": "Inversa distributiva",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "A · B · ",
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            " + A' · C · ",
+            {
+             "t": "1",
+             "color": "producto"
+            }
+           ],
+           "nota": "Elementos dominantes: 1 + C = 1",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": "A · B + A' · C",
+           "nota": "Identidad: A · 1 = A",
+           "notaColor": "producto"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "enunciado": "Grafos",
+   "bloques": [
+    {
+     "seccion": "Grafo",
+     "bloques": [
+      {
+       "texto": "Un grafo G(N, S) consta de un conjunto N de nodos (vértices o puntos) y un conjunto S de pares no ordenados de nodos distintos, llamados segmentos o aristas."
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "V: número de vértices    E: número de aristas"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "seccion": "Nodos adyacentes",
+       "bloques": [
+        {
+         "texto": "u y v son adyacentes si hay un segmento {u, v} ∈ S."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo finito",
+       "bloques": [
+        {
+         "texto": "Su conjunto de vértices es finito."
+        }
+       ]
+      },
+      {
+       "seccion": "Subgrafo",
+       "bloques": [
+        {
+         "texto": "G(N', S') con N' ⊆ N y S' ⊆ S, cuyos segmentos tienen sus extremos en N'."
+        }
+       ]
+      },
+      {
+       "seccion": "Subgrafo generado por N'",
+       "bloques": [
+        {
+         "texto": "Subgrafo que contiene todos los segmentos de S con extremos en N'."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Digrafo (grafo dirigido)",
+     "bloques": [
+      {
+       "texto": "A cada arista se le asigna un orden en sus extremos (se dibuja con una flecha): las aristas son pares ordenados."
+      },
+      {
+       "texto": "Una relación binaria R en un conjunto A es un digrafo: cada par (a, b) ∈ R es una flecha de a hacia b."
+      }
+     ]
+    },
+    {
+     "seccion": "Matriz de adyacencia",
+     "bloques": [
+      {
+       "texto": "Con los vértices v₁, …, vₙ, es la matriz M de n × n con:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "mᵢⱼ = 1 si hay una arista de vᵢ a vⱼ"
+        },
+        {
+         "rel": "",
+         "der": "mᵢⱼ = 0 si no la hay"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "En un grafo no dirigido es simétrica, y la suma de la fila de vᵢ es gr(vᵢ)."
+      },
+      {
+       "texto": "Nota para el estudiante: la matriz de adyacencia figura en el programa pero no en el libro; esta es su definición habitual.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "seccion": "Grado de un nodo",
+     "bloques": [
+      {
+       "texto": "Un segmento s es incidente en v si v es uno de sus extremos. El grado gr(v) es el número de segmentos que inciden en v."
+      },
+      {
+       "seccion": "Nodo aislado",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "gr(v) = 0"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Nodo par o impar",
+       "bloques": [
+        {
+         "texto": "Según que su grado sea par o impar."
+        }
+       ]
+      },
+      {
+       "seccion": "Teorema de los grados",
+       "bloques": [
+        {
+         "texto": "La suma de los grados de los nodos es el doble del número de aristas."
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "Σ gr(v) = 2E"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Tipos de grafos",
+     "bloques": [
+      {
+       "seccion": "Multigrafo",
+       "bloques": [
+        {
+         "texto": "Tiene varias aristas entre dos vértices (lados múltiples)."
+        }
+       ]
+      },
+      {
+       "seccion": "Pseudografo",
+       "bloques": [
+        {
+         "texto": "Tiene aristas cuyos dos extremos son el mismo vértice, llamadas lazos o bucles."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo simple",
+       "bloques": [
+        {
+         "texto": "No tiene lados múltiples ni lazos."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo regular",
+       "bloques": [
+        {
+         "texto": "Todos los vértices tienen el mismo grado k (grafo k-regular)."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo completo Kₙ",
+       "bloques": [
+        {
+         "texto": "Cada vértice es adyacente a todos los demás. Es (n − 1)-regular."
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            "E = ",
+            {
+             "frac": [
+              "n · (n − 1)",
+              "2"
+             ]
+            }
+           ]
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "K₁, un nodo aislado, es el grafo trivial."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo bipartito",
+       "bloques": [
+        {
+         "texto": "Sus nodos se pueden separar en dos conjuntos P y Q de modo que cada arista une un nodo de P con uno de Q (por ejemplo, K₂,₃)."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo plano",
+       "bloques": [
+        {
+         "texto": "Se puede dibujar en el plano sin que sus aristas se corten (por ejemplo, K₄)."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafos isomorfos",
+       "bloques": [
+        {
+         "texto": "G = (V, E) y G' = (V', E') son isomorfos si hay una biyección f: V → V' que conserva las adyacencias:"
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "{u, v} ∈ E ⇔ {f(u), f(v)} ∈ E'"
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "Nota para el estudiante: dos grafos isomorfos pueden tener dibujos que parecen distintos. La regularidad se conserva por isomorfismo.",
+         "color": "gris",
+         "tam": "S"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Conexidad",
+     "bloques": [
+      {
+       "seccion": "Camino",
+       "bloques": [
+        {
+         "texto": "Sucesión alternada de nodos y aristas v₀, e₁, v₁, …, eₙ, vₙ, donde cada eᵢ une vᵢ₋₁ con vᵢ. Su longitud es n, el número de aristas. Es cerrado si v₀ = vₙ."
+        }
+       ]
+      },
+      {
+       "seccion": "Sendero",
+       "bloques": [
+        {
+         "texto": "Camino en el que todas las aristas son distintas."
+        }
+       ]
+      },
+      {
+       "seccion": "Trayectoria",
+       "bloques": [
+        {
+         "texto": "Camino en el que todos los vértices son distintos."
+        }
+       ]
+      },
+      {
+       "seccion": "Ciclo",
+       "bloques": [
+        {
+         "texto": "Camino cerrado con todos sus vértices distintos, salvo v₀ = vₙ. Un ciclo de longitud k es un k-ciclo."
+        }
+       ]
+      },
+      {
+       "seccion": "Vértices conectados",
+       "bloques": [
+        {
+         "texto": "u y v están conectados si existe un camino entre ellos. «Estar conectado con» es una relación de equivalencia."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo conexo",
+       "bloques": [
+        {
+         "texto": "Hay un camino entre dos vértices cualesquiera. Si no, es desconexo."
+        }
+       ]
+      },
+      {
+       "seccion": "Componentes conexas",
+       "bloques": [
+        {
+         "texto": "Las clases de equivalencia de la relación «estar conectado con»."
+        }
+       ]
+      },
+      {
+       "seccion": "Puente o istmo",
+       "bloques": [
+        {
+         "texto": "Arista a de un grafo conexo tal que (V, E − {a}) no es conexo."
+        }
+       ]
+      },
+      {
+       "seccion": "Punto de corte",
+       "bloques": [
+        {
+         "texto": "Vértice v de un grafo conexo tal que al quitarlo (con sus aristas) el grafo deja de ser conexo."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Grafos eulerianos",
+     "bloques": [
+      {
+       "seccion": "Camino euleriano",
+       "bloques": [
+        {
+         "texto": "Recorre todas las aristas, cada una una sola vez."
+        }
+       ]
+      },
+      {
+       "seccion": "Circuito euleriano",
+       "bloques": [
+        {
+         "texto": "Camino euleriano cerrado."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo euleriano",
+       "bloques": [
+        {
+         "texto": "Grafo conexo que admite un circuito euleriano."
+        }
+       ]
+      },
+      {
+       "seccion": "Teorema de Euler",
+       "bloques": [
+        {
+         "texto": "Un grafo conexo es euleriano si y solo si todos sus vértices tienen grado par."
+        }
+       ]
+      },
+      {
+       "seccion": "Corolario",
+       "bloques": [
+        {
+         "texto": "Un grafo conexo admite un camino euleriano no cerrado si y solo si exactamente dos vértices tienen grado impar (el camino empieza en uno y termina en el otro)."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Grafos hamiltonianos",
+     "bloques": [
+      {
+       "seccion": "Camino hamiltoniano",
+       "bloques": [
+        {
+         "texto": "Camino que pasa por todos los vértices sin repetir ninguno."
+        }
+       ]
+      },
+      {
+       "seccion": "Ciclo hamiltoniano",
+       "bloques": [
+        {
+         "texto": "Camino hamiltoniano cerrado."
+        }
+       ]
+      },
+      {
+       "seccion": "Grafo hamiltoniano",
+       "bloques": [
+        {
+         "texto": "Grafo que contiene un ciclo hamiltoniano."
+        }
+       ]
+      },
+      {
+       "seccion": "Condición necesaria",
+       "bloques": [
+        {
+         "texto": "Si G es hamiltoniano, para todo subconjunto U no vacío de V, al quitar los vértices de U quedan a lo sumo |U| componentes conexas:"
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "c(G − U) ≤ |U|"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Propiedades",
+       "bloques": [
+        {
+         "texto": "Todo grafo completo (con n ≥ 3) es hamiltoniano."
+        },
+        {
+         "texto": "Un grafo con un punto de corte no es hamiltoniano."
+        }
+       ]
+      },
+      {
+       "seccion": "Teorema de Dirac",
+       "bloques": [
+        {
+         "texto": "Si G es simple, con V ≥ 3 vértices y gr(v) ≥ V/2 para todo vértice, entonces G es hamiltoniano."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Árboles",
+     "bloques": [
+      {
+       "seccion": "Árbol",
+       "bloques": [
+        {
+         "texto": "Grafo conexo sin ciclos: cada par de vértices distintos está unido por un único camino simple."
+        }
+       ]
+      },
+      {
+       "seccion": "Propiedades",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "E = V − 1"
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "Todo subgrafo conexo de un árbol es un árbol."
+        },
+        {
+         "texto": "Un vértice v de un árbol es punto de corte si y solo si gr(v) > 1."
+        }
+       ]
+      },
+      {
+       "seccion": "Árbol extendido (generador) de G",
+       "bloques": [
+        {
+         "texto": "Subgrafo de G que contiene todos sus vértices y es un árbol. G es conexo si y solo si tiene un árbol extendido; se obtiene quitando aristas que formen ciclos."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Grafos etiquetados",
+     "bloques": [
+      {
+       "seccion": "Grafo etiquetado",
+       "bloques": [
+        {
+         "texto": "Cada arista a tiene asignado un número, su longitud."
+        }
+       ]
+      },
+      {
+       "seccion": "Longitud de un camino",
+       "bloques": [
+        {
+         "texto": "La suma de las etiquetas de sus aristas."
+        }
+       ]
+      },
+      {
+       "seccion": "Distancia entre dos vértices",
+       "bloques": [
+        {
+         "texto": "La longitud del camino más corto entre ellos."
+        }
+       ]
+      },
+      {
+       "seccion": "Algoritmo de Dijkstra (distancia de x a y)",
+       "bloques": [
+        {
+         "texto": "1. L(x) = 0 y L(v) = ∞ para los demás vértices. T = V."
+        },
+        {
+         "texto": "2. Elegir el vértice v de T con L(v) mínima."
+        },
+        {
+         "texto": "3. Si v = y, la distancia es L(y) y termina."
+        },
+        {
+         "texto": "4. Para cada arista vw con w ∈ T: si L(w) > L(v) + d(vw), cambiar L(w) por L(v) + d(vw)."
+        },
+        {
+         "texto": "5. Quitar v de T y volver al paso 2."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "enunciado": "Sistemas numéricos",
+   "bloques": [
+    {
+     "seccion": "Sucesiones",
+     "bloques": [
+      {
+       "seccion": "Sucesión aritmética",
+       "bloques": [
+        {
+         "texto": "Cada término se obtiene sumando al anterior una constante d, llamada distancia (o diferencia)."
+        },
+        {
+         "seccion": "Término general",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "aₙ = a₁ + (n − 1) · d"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Término enésimo conociendo un término aₖ",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "aₙ = aₖ + (n − k) · d"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Suma de los primeros n términos",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "Sₙ = ",
+              {
+               "frac": [
+                "n · (a₁ + aₙ)",
+                "2"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Distancia",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "d = ",
+              {
+               "frac": [
+                "aₙ − a₁",
+                "n − 1"
+               ]
+              }
+             ]
+            },
+            {
+             "rel": "",
+             "der": [
+              "d = ",
+              {
+               "frac": [
+                "aₙ − aₖ",
+                "n − k"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Sucesión geométrica",
+       "bloques": [
+        {
+         "texto": "Cada término se obtiene multiplicando el anterior por una constante r, llamada razón."
+        },
+        {
+         "seccion": "Término general",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "aₙ = a₁ · rⁿ⁻¹"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Término enésimo conociendo un término aₖ",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "aₙ = aₖ · rⁿ⁻ᵏ"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Suma de los primeros n términos",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "Sₙ = ",
+              {
+               "frac": [
+                "a₁ · (rⁿ − 1)",
+                "r − 1"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Razón",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "r = ",
+              {
+               "raiz": [
+                {
+                 "frac": [
+                  "aₙ",
+                  "a₁"
+                 ]
+                }
+               ],
+               "indice": "n − 1"
+              }
+             ]
+            },
+            {
+             "rel": "",
+             "der": [
+              "r = ",
+              {
+               "raiz": [
+                {
+                 "frac": [
+                  "aₙ",
+                  "aₘ"
+                 ]
+                }
+               ],
+               "indice": "n − m"
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Valor absoluto",
+     "bloques": [
+      {
+       "seccion": "Casos (con b > 0)",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": {
+            "tabla": [
+             [
+              "Caso",
+              "Modelo",
+              "Solución"
+             ],
+             [
+              "1",
+              "|a| < b",
+              "−b < a < b"
+             ],
+             [
+              "2",
+              "|a| ≤ b",
+              "−b ≤ a ≤ b"
+             ],
+             [
+              "3",
+              "|a| > b",
+              "a < −b ∨ a > b"
+             ],
+             [
+              "4",
+              "|a| ≥ b",
+              "a ≤ −b ∨ a ≥ b"
+             ]
+            ],
+            "lineas": true,
+            "alinear": [
+             "der",
+             "der",
+             "centro"
+            ]
+           }
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Combinatoria: variaciones, permutaciones y combinaciones",
+     "bloques": [
+      {
+       "seccion": "¿Cuál usar?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden?"
+        },
+        {
+         "seccion": "Sí: variaciones o permutaciones",
+         "bloques": [
+          {
+           "texto": "Si se toman todos los elementos: permutaciones."
+          },
+          {
+           "texto": "Si no se toman todos: variaciones."
+          }
+         ]
+        },
+        {
+         "seccion": "No: combinaciones",
+         "bloques": [
+          {
+           "texto": "Si puede haber elementos repetidos: combinaciones con repetición."
+          },
+          {
+           "texto": "Si no: combinaciones ordinarias."
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Permutaciones",
+       "bloques": [
+        {
+         "seccion": "Ordinarias",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "Pₙ = n!"
+            },
+            {
+             "rel": "",
+             "der": [
+              "P(n, m) = ",
+              {
+               "frac": [
+                "n!",
+                "(n − m)!"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Con repetición",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "PR = ",
+              {
+               "frac": [
+                "n!",
+                "a! · b! · c! · …"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "Nota para el estudiante: a, b, c… son las veces que se repite cada elemento.",
+           "color": "gris",
+           "tam": "S"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Variaciones",
+       "bloques": [
+        {
+         "seccion": "Ordinarias",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "Vₙ,ₚ = ",
+              {
+               "frac": [
+                "n!",
+                "(n − p)!"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Con repetición",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "VRₙ,ₚ = nᵖ"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Combinaciones",
+       "bloques": [
+        {
+         "seccion": "Ordinarias",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "Cₙ,ₚ = ",
+              {
+               "frac": [
+                "n!",
+                "(n − p)! · p!"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Con repetición",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": [
+              "CRₘ,ₙ = ",
+              {
+               "frac": [
+                "(m + n − 1)!",
+                "(m − 1)! · n!"
+               ]
+              }
+             ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "enunciado": "Funciones",
+   "bloques": [
+    {
+     "seccion": "Función",
+     "bloques": [
+      {
+       "texto": "f: A → B es una función si a cada elemento de A le corresponde uno y solo un elemento de B (existencia y unicidad)."
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "∀x ∈ A, ∃! y ∈ B / f(x) = y"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "seccion": "Dominio",
+       "bloques": [
+        {
+         "texto": "Dom(f) = A, el conjunto de partida."
+        }
+       ]
+      },
+      {
+       "seccion": "Codominio",
+       "bloques": [
+        {
+         "texto": "B, el conjunto de llegada."
+        }
+       ]
+      },
+      {
+       "seccion": "Imagen de x",
+       "bloques": [
+        {
+         "texto": "f(x), el elemento de B que le corresponde a x."
+        }
+       ]
+      },
+      {
+       "seccion": "Rango",
+       "bloques": [
+        {
+         "texto": "El conjunto de todas las imágenes."
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "Rango(f) = {f(x) / x ∈ A}"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "Función par",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "f es par ⇔ ∀x ∈ Dom(f): f(x) = f(−x)"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Nota para el estudiante: su gráfico es simétrico respecto del eje vertical.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "seccion": "Función impar",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "f es impar ⇔ ∀x ∈ Dom(f): f(−x) = −f(x)"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Nota para el estudiante: su gráfico es simétrico respecto del origen.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "seccion": "Función creciente",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "f es creciente ⇔ ∀a, b ∈ Dom(f): a < b → f(a) < f(b)"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Función decreciente",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "f es decreciente ⇔ ∀a, b ∈ Dom(f): a < b → f(a) > f(b)"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Función inversa",
+     "bloques": [
+      {
+       "texto": "Si f: A → B es biyectiva, su inversa f⁻¹: B → A le asigna a cada imagen el elemento del que proviene."
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "f⁻¹(y) = x ⇔ f(x) = y"
+        },
+        {
+         "rel": "",
+         "der": "f ∘ f⁻¹ = f⁻¹ ∘ f = identidad"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "enunciado": "Números complejos",
+   "bloques": [
+    {
+     "seccion": "Forma binómica",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "z = a + bi"
+        },
+        {
+         "rel": "",
+         "der": "Re(z) = a    Im(z) = b    i² = −1"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Módulo",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "|z| = ",
+          {
+           "raiz": [
+            "a² + b²"
+           ]
+          }
+         ]
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Argumento θ según el cuadrante",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "α = arctg ",
+          {
+           "frac": [
+            "|b|",
+            "|a|"
+           ]
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": {
+          "tabla": [
+           [
+            "Cuadrante",
+            "Re(z)",
+            "Im(z)",
+            "θ"
+           ],
+           [
+            "I",
+            "+",
+            "+",
+            "α"
+           ],
+           [
+            "II",
+            "−",
+            "+",
+            "180° − α"
+           ],
+           [
+            "III",
+            "−",
+            "−",
+            "180° + α"
+           ],
+           [
+            "IV",
+            "+",
+            "−",
+            "360° − α"
+           ]
+          ],
+          "lineas": true
+         }
+        }
+       ],
+       "entero": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
