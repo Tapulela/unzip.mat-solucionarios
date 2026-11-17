@@ -1001,7 +1001,7 @@
    "enunciado": "Consideremos las operaciones:\nx ∗ y = x² + y² sobre ℝ\nx ∗ y = x + y + xy sobre ℚ − {−1}\nEstudiar las estructuras (ℝ, ∗) y (ℚ − {−1}, ∗).",
    "bloques": [
     {
-     "texto": "Nota para el estudiante: estudiar la estructura es analizar ley de composición interna, asociatividad, conmutatividad, neutro e inverso, y con eso decir qué estructura es.",
+     "texto": "Nota para el estudiante: estudiar la estructura es analizar ley de composición interna, asociatividad, conmutatividad, neutro e inverso, y con eso decir qué estructura es. Monoide: L.C.I. Semigrupo: L.C.I. y asociativa. Grupo: L.C.I., asociativa, neutro e inverso. Grupo abeliano: grupo y conmutativa.",
      "color": "gris",
      "tam": "S"
     },
@@ -1047,9 +1047,13 @@
      "color": "azul"
     },
     {
+     "texto": "∗ es ley de composición interna pero no es asociativa, así que no llega a semigrupo. Además es conmutativa.",
+     "color": "azul"
+    },
+    {
      "pasos": [
       {
-       "der": "(ℝ, ∗) es solo un grupoide conmutativo",
+       "der": "(ℝ, ∗) es un monoide",
        "color": "azul",
        "caja": "azul"
       }
@@ -2166,7 +2170,7 @@
    "enunciado": "Sea ℝ el conjunto de los números reales, se define la siguiente operación entre elementos de ℝ: a ⊙ b = ∛(a³ + b³)\nComprobar que (ℝ, ⊙) tiene estructura de grupo conmutativo.",
    "bloques": [
     {
-     "texto": "Nota para el estudiante: (G, ∗) es grupo conmutativo (abeliano) si ∗ es ley de composición interna, asociativa, tiene neutro, todo elemento tiene inverso y además es conmutativa.",
+     "texto": "Nota para el estudiante: un grupo conmutativo (grupo abeliano) es un grupo, o sea L.C.I., asociativa, con neutro y con inverso para todo elemento, en el que además la operación es conmutativa.",
      "color": "gris",
      "tam": "S"
     },
@@ -2340,7 +2344,7 @@
     {
      "pasos": [
       {
-       "der": "(ℝ, ⊙) es un grupo conmutativo",
+       "der": "(ℝ, ⊙) es un grupo abeliano (grupo conmutativo)",
        "color": "azul",
        "caja": "azul"
       }
@@ -2668,7 +2672,20 @@
      ]
     },
     {
-     "texto": "a y b tienen inverso (ellos mismos) y c no tiene. Por eso (S, ∗) no es grupo: es un monoide conmutativo.",
+     "texto": "a y b tienen inverso (ellos mismos) y c no tiene, así que (S, ∗) no es grupo. Es L.C.I. (la tabla solo da elementos de S) y asociativa:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(S, ∗) es un semigrupo",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Además ∗ es conmutativa y tiene neutro, pero no es grupo porque c no tiene inverso.",
      "color": "azul"
     }
    ]
@@ -3054,7 +3071,7 @@
        ]
       },
       {
-       "texto": "Nota para el estudiante: también es conmutativo: a + b + 1 = b + a + 1.",
+       "texto": "Nota para el estudiante: ∗ también es conmutativa (a + b + 1 = b + a + 1), así que (ℤ, ∗) es un grupo abeliano.",
        "color": "gris",
        "tam": "S"
       }
@@ -3326,7 +3343,7 @@
    "enunciado": "Demuestre que el trío (ℤ, +, ⊕) es un anillo donde + es la suma usual y a ⊕ b = 2ab.",
    "bloques": [
     {
-     "texto": "Nota para el estudiante: (A, +, ·) es un anillo si (A, +) es un grupo abeliano, · es ley de composición interna y asociativa, y · es distributiva con respecto de + a izquierda y a derecha.",
+     "texto": "Nota para el estudiante: (A, +, ·) es un anillo si (A, +) es un grupo abeliano, (A, ·) es un semigrupo (L.C.I. y asociativa) y · es distributiva con respecto de + por izquierda y por derecha.",
      "color": "gris",
      "tam": "S"
     },
@@ -3339,7 +3356,7 @@
      "color": "azul"
     },
     {
-     "texto": "Segunda parte: ⊕ es ley de composición interna y asociativa",
+     "texto": "Segunda parte: (ℤ, ⊕) es un semigrupo",
      "color": "azul"
     },
     {
@@ -3496,7 +3513,7 @@
      ]
     },
     {
-     "texto": "Nota para el estudiante: es un anillo conmutativo sin unidad: 2ae = a daría e = 1/2 ∉ ℤ.",
+     "texto": "Nota para el estudiante: como ⊕ es conmutativa (2ab = 2ba), es además un anillo abeliano. No tiene unidad: 2ae = a daría e = 1/2 ∉ ℤ.",
      "color": "gris",
      "tam": "S"
     }
@@ -3520,7 +3537,7 @@
      "color": "azul"
     },
     {
-     "texto": "Segunda parte: ∗ es ley de composición interna y asociativa",
+     "texto": "Segunda parte: (ℤ, ∗) es un semigrupo",
      "color": "azul"
     },
     {
@@ -3653,7 +3670,7 @@
      "tam": "S"
     },
     {
-     "texto": "Nota para el estudiante: (A, +, ·) es un anillo si (A, +) es un grupo abeliano, · es ley de composición interna y asociativa, y · es distributiva con respecto de + a izquierda y a derecha.",
+     "texto": "Nota para el estudiante: (A, +, ·) es un anillo si (A, +) es un grupo abeliano, (A, ·) es un semigrupo (L.C.I. y asociativa) y · es distributiva con respecto de + por izquierda y por derecha.",
      "color": "gris",
      "tam": "S"
     },
@@ -3666,7 +3683,7 @@
      "color": "azul"
     },
     {
-     "texto": "Segunda parte: · es ley de composición interna y asociativa",
+     "texto": "Segunda parte: (C, ·) es un semigrupo",
      "color": "azul"
     },
     {
@@ -3820,12 +3837,12 @@
      "color": "azul"
     },
     {
-     "texto": "Nota para el estudiante: un dominio de integridad es un anillo conmutativo, con unidad y sin divisores de cero: si x · y = 0, entonces x = 0 o y = 0.",
+     "texto": "Nota para el estudiante: un dominio de integridad es un anillo abeliano con unidad y sin divisores de cero: si x · y = 0, entonces x = 0 o y = 0.",
      "color": "gris",
      "tam": "S"
     },
     {
-     "texto": "Es conmutativo (se vio arriba) y tiene unidad (1, 0): (a, b) · (1, 0) = (a · 1 − b · 0, a · 0 + b · 1) = (a, b).",
+     "texto": "Es un anillo abeliano, porque · es conmutativa (se vio arriba), y tiene unidad (1, 0): (a, b) · (1, 0) = (a · 1 − b · 0, a · 0 + b · 1) = (a, b).",
      "color": "azul"
     },
     {

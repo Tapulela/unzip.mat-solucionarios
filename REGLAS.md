@@ -195,6 +195,31 @@ Se usa este `estilo` en todas las resoluciones:
 - En los dígrafos, la reflexividad se explica como «cada vértice tiene un lazo consigo
   mismo».
 
+## Estructuras algebraicas
+
+- **Nombres de las estructuras de la cátedra** (no se usan «grupoide», «magma» ni
+  «monoide» en el sentido de semigrupo con neutro):
+  - Par ordenado (A, ∗):
+    - **monoide**: ∗ es ley de composición interna (L.C.I.);
+    - **semigrupo**: L.C.I. y asociativa;
+    - **grupo**: L.C.I., asociativa, con neutro y con inverso para todo elemento;
+    - **grupo abeliano**: grupo y además conmutativa.
+  - Terna ordenada (A, +, ∗):
+    - **anillo**: (A, +) es grupo abeliano, (A, ∗) es semigrupo y la segunda ley es
+      distributiva con respecto a la primera, por izquierda y por derecha;
+    - **anillo abeliano**: anillo y además ∗ es conmutativa;
+    - **cuerpo**: (A, +) es grupo abeliano, (A − {e₊}, ∗) es grupo abeliano y ∗ es
+      distributiva con respecto a + por izquierda y por derecha;
+    - **álgebra de Boole**: (A, +) y (A, ∗) son semigrupos conmutativos con unidad,
+      todo elemento tiene complemento y cada operación es distributiva con respecto
+      a la otra.
+- Si una estructura cumple propiedades de más que su nombre (por ejemplo, un
+  semigrupo con neutro que no es grupo), se le da el nombre más alto que cumple y se
+  dicen aparte las propiedades que tiene de más: «(S, ∗) es un semigrupo; además es
+  conmutativa y tiene neutro, pero no es grupo».
+- Los nombres que pide la consigna y no están en esta lista (anillo unitario, dominio
+  de integridad) se usan igual, definidos en una nota para el estudiante.
+
 ## Conjuntos por extensión en varios renglones
 
 - Si un conjunto escrito por extensión ocupa más de un renglón, los renglones que
