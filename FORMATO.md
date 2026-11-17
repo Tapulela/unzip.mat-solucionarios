@@ -72,6 +72,7 @@ se encarga la pizarra.
 | `{ "texto": "...", "color": "gris", "tam": "S" }` | Un párrafo. Un `"..."` suelto también vale como texto. |
 | `{ "pasos": [ renglones ] }` | Un desarrollo paso a paso (ver abajo). |
 | `{ "generador": "recta", "op": { ... } }` | Un gráfico armado con un generador de la pizarra. Queda vinculado: al seleccionarlo se edita desde su panel. |
+| `{ "seccion": "Título", "bloques": [ ... ] }` | Una sección: el título subrayado (del tamaño del texto, en azul o en `color`) y sus bloques debajo, con sangría y una línea vertical a la izquierda que acompaña cada renglón, también si la sección sigue en otra hoja. Las secciones se pueden anidar. |
 | `{ "salto": true }` | Empieza una hoja nueva. |
 | `"unir": true` (en un bloque de texto) | El texto no se separa de lo que le sigue: si no entra, pasa a la hoja siguiente junto con el bloque de abajo. Sirve para «La tabla sigue:». |
 | `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. |

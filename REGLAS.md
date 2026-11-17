@@ -221,12 +221,19 @@ Se usa este `estilo` en todas las resoluciones:
   conmutativa y tiene neutro, pero no es grupo».
 - Los nombres que pide la consigna y no están en esta lista (anillo unitario, dominio
   de integridad) se usan igual, definidos en una nota para el estudiante.
-- **Cada propiedad en su sección**, con título («Análisis de la ley de composición
-  interna», «Análisis de la propiedad asociativa», «Análisis de la propiedad
-  conmutativa», «Análisis de la existencia de elemento neutro», «Análisis de la
-  existencia de elemento inverso», «Análisis de la propiedad distributiva»), y al
-  final de la sección su conclusión, para que se vea dónde termina una y empieza la
-  otra. Orden: L.C.I., asociativa, conmutativa, neutro, inverso, distributiva.
+- **Cada propiedad en su sección** (bloque `seccion`), con título («Análisis de la ley
+  de composición interna», «Análisis de la propiedad asociativa», «Análisis de la
+  propiedad conmutativa», «Análisis de la existencia de elemento neutro», «Análisis
+  de la existencia de elemento inverso», «Análisis de la propiedad distributiva»), y
+  al final de la sección su conclusión, para que se vea dónde termina una y empieza
+  la otra. Orden: L.C.I., asociativa, conmutativa, neutro, inverso, distributiva.
+- **Las secciones no se marcan con letra más grande**: el título va del tamaño del
+  texto, subrayado, y el contenido con sangría y una línea vertical a la izquierda
+  (eso lo dibuja el bloque `seccion`). Dentro de una propiedad, «Miembro izquierdo»,
+  «Miembro derecho», «Elemento neutro por derecha»… son secciones anidadas. Las
+  partes de un ejercicio («Primera parte: (ℤ, +) es un grupo abeliano») también.
+- **La comparación final de los dos miembros va en un solo renglón**
+  («a + b + c + ab = a + b + c + ab»), fuera de las secciones de los miembros.
 - **Definición general y definición aplicada.** La definición general es la genérica,
   con un conjunto A y una operación ∗ («∀a, b, c ∈ A: (a ∗ b) ∗ c = a ∗ (b ∗ c)»); en
   una terna, + es la primera operación y ∗ la segunda («a ∗ (b + c) = (a ∗ b) + (a ∗ c)»).

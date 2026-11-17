@@ -89,7 +89,13 @@ export function revisar(sol) {
       if (b.texto !== undefined) { texto(String(b.texto), rb); color(b.color, rb + ".color"); return; }
       if (Array.isArray(b.pasos)) { b.pasos.forEach((l, j) => renglon(l, `${rb}.pasos[${j}]`, j, b.pasos)); return; }
       if (b.generador) { if (!GENERADORES.includes(b.generador)) err(rb, `no existe el generador «${b.generador}»`); return; }
-      err(rb, "bloque sin «texto», «pasos», «generador», «salto» ni «espacio»");
+      if (b.seccion !== undefined) {
+        texto(String(b.seccion), rb + ".seccion"); color(b.color, rb + ".color");
+        if (!Array.isArray(b.bloques) || !b.bloques.length) av(rb, "una sección sin «bloques» queda vacía");
+        bloques(b.bloques, rb);
+        return;
+      }
+      err(rb, "bloque sin «texto», «pasos», «generador», «seccion», «salto» ni «espacio»");
     });
   };
 
