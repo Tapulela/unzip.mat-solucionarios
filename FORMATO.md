@@ -41,6 +41,7 @@ se encarga la pizarra.
 | `estilo.fuenteEnunciado` | Fuente de la consigna (enunciados y su numeración): `normal`, `mano` o `codigo`. Si falta, es la de `estilo.fuente`. |
 | `estilo.tamEnunciado` | Tamaño del enunciado de cada ejercicio: `S`, `M`, `L`, `XL` o un número (`M` es 20 y `L` es 28). Si falta, es un tamaño de título. Los enunciados de los ítems van con `estilo.tam`. |
 | `estilo.numeracion` | Cómo se numera: `{ "ejercicio": "{n})", "item": "{i})" }` (lo que se usa si falta). `{n}` es el número del ejercicio e `{i}` el del ítem. Ejemplo: `{ "ejercicio": "Ejercicio {n}:", "item": "{n}.{i}" }` da «Ejercicio 4:», «4.a», «4.b». |
+| `estilo.sangriaEnunciado` | Dónde empiezan los renglones de la consigna después del primero: `"rotulo"` (debajo del texto, después de «Ejercicio 4:», lo que se usa si falta) o un número, la sangría medida desde el comienzo del rótulo (por ejemplo `24`). |
 | `estilo.continuacion` | `true` para avisar en gris, al pie de la hoja, cuando un ejercicio sigue en la hoja siguiente: «(Continúa en la siguiente hoja)», o «(Continúa la consigna en la siguiente hoja)» si se corta un enunciado. Un enunciado nunca se corta si entra en una hoja. |
 
 ## Ejercicios e ítems
@@ -137,7 +138,7 @@ generadores de la pizarra):
 
 ## Generadores disponibles
 
-`recta`, `funcion`, `tabla`, `boole`, `conjuntos`, `relaciones`, `estructuras`,
+`recta`, `funcion`, `tabla`, `boole`, `conjuntos`, `venn`, `relaciones`, `estructuras`,
 `combinatoria`, `mcm`, `valorAbsoluto`, `inecuaciones2`, `racionales`, `factorizacion`,
 `raicesC`, `complejos`, `razonamientos`, `simpLogica`, `simpBoole`, `simpConjuntos` y
 `plantillas`. En `op` van las opciones del generador. Lo que no se pone queda como en el
@@ -150,6 +151,38 @@ Ejemplo, una recta real con un intervalo:
 { "generador": "recta", "op": { "filas": [{ "texto": "(−1, 2)", "color": "#1971c2" }],
   "mostrarUnion": false, "mostrarResultado": false, "titulos": false, "largo": "corta" } }
 ```
+
+Un diagrama de Venn (2 a 4 conjuntos) que calcula las zonas sin dato. Cada fila es un
+dato: `U = 38`, `|V| = 18`, `|A ∩ B| = 11` (incluye la zona común a todos), `solo R = 3`,
+`R ∩ A − V = 9`, `los tres = 5`, `ninguno = 0`, o el nombre de la variable de una zona
+(`solo V = v`). `mostrar` es `planteo` (datos y variables) o `resuelto`:
+
+```json
+{ "generador": "venn", "op": { "nombres": "V, R, A",
+  "filas": [{ "texto": "U = 38" }, { "texto": "|V| = 18" }, { "texto": "solo V = v" }],
+  "variables": "v, x, y, n", "mostrar": "planteo", "tamano": "chico", "textos": "debajo",
+  "trazos": "distintos", "datos": false, "referencias": false, "titulos": false } }
+```
+
+Más sobre `venn`:
+
+- Las filas pueden ser strings (`"filas": ["U = 38", "|V| = 18"]`). También entiende
+  `n(A) = 23`, cualquier expresión con `∪ ∩ − Δ '` (`|A ∪ B| = 30`, `(A ∪ B)' = 2`),
+  `solo A y B = 6` y `A y B pero no C = 6`. ∩ se resuelve antes que ∪, − y Δ.
+- `variables` nombra las zonas sin dato en este orden: primero las de un solo conjunto,
+  después las de dos, tres..., y al final la de afuera (`ninguno`). Si no alcanzan,
+  sigue con x₁, x₂...
+- Opciones: `nombres` (2 a 4), `mostrar` (`planteo` | `resuelto`), `tamano` (`chico` |
+  `medio` | `grande`), `tamTexto`, `fuente`, `cardinales` (`no` | `datos` | `todos`:
+  escribe `|A| = 23` en lugar del nombre), `trazos` (`distintos` | `iguales`), `colores`,
+  `datos` (lista de datos), `referencias` (qué zona es cada variable), `ecuaciones`
+  (las del planteo), `pasos` (cómo se calcula cada variable, solo en `resuelto`),
+  `variableYValor` (`x = 6` en la zona), `textos` (`derecha` | `debajo`; la resolución
+  va siempre debajo) y `titulos`.
+- Si los datos no cierran (una zona da negativa o no entera, una suma no coincide) o no
+  alcanzan, el importador lo avisa con la ruta del bloque.
+- Conviene `"titulos": false`: el título del generador puede quedar solo al pie de una
+  hoja, separado del diagrama.
 
 ## Reparto en hojas
 
