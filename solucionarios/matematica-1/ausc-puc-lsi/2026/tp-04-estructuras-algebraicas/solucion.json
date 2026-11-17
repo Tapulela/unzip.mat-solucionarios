@@ -585,7 +585,11 @@
        "pasos": [
         {
          "rel": "",
-         "der": "a + b + c + ab + ac + bc + abc = a + b + c + ab + ac + bc + abc"
+         "der": "a + b + c + ab + ac + bc + abc"
+        },
+        {
+         "rel": "=",
+         "der": "a + b + c + ab + ac + bc + abc"
         }
        ],
        "entero": true
@@ -2729,7 +2733,11 @@
      "pasos": [
       {
        "rel": "",
-       "der": "a + b + c − ab − ac − bc + abc = a + b + c − ab − ac − bc + abc"
+       "der": "a + b + c − ab − ac − bc + abc"
+      },
+      {
+       "rel": "=",
+       "der": "a + b + c − ab − ac − bc + abc"
       }
      ],
      "entero": true
@@ -3658,7 +3666,12 @@
      "pasos": [
       {
        "rel": "",
-       "der": "∀(a, b), (c, d), (e, f) ∈ ℚ × ℚ: (a, b) ⊕ ((c, d) ⊕ (e, f)) = ((a, b) ⊕ (c, d)) ⊕ (e, f)",
+       "der": "∀(a, b), (c, d), (e, f) ∈ ℚ × ℚ:",
+       "color": "azul"
+      },
+      {
+       "rel": "",
+       "der": "      (a, b) ⊕ ((c, d) ⊕ (e, f)) = ((a, b) ⊕ (c, d)) ⊕ (e, f)",
        "color": "azul"
       }
      ],
@@ -3900,7 +3913,12 @@
      "pasos": [
       {
        "rel": "",
-       "der": "∃(x, y) ∈ ℚ × ℚ / ∀(a, b) ∈ ℚ × ℚ: (a, b) ⊕ (x, y) = (x, y) ⊕ (a, b) = (a, b)",
+       "der": "∃(x, y) ∈ ℚ × ℚ / ∀(a, b) ∈ ℚ × ℚ:",
+       "color": "azul"
+      },
+      {
+       "rel": "",
+       "der": "      (a, b) ⊕ (x, y) = (x, y) ⊕ (a, b) = (a, b)",
        "color": "azul"
       }
      ],
@@ -4031,7 +4049,12 @@
      "pasos": [
       {
        "rel": "",
-       "der": "∀(a, b) ∈ ℚ × ℚ, ∃(x, y) ∈ ℚ × ℚ / (a, b) ⊕ (x, y) = (x, y) ⊕ (a, b) = (1, 0)",
+       "der": "∀(a, b) ∈ ℚ × ℚ, ∃(x, y) ∈ ℚ × ℚ /",
+       "color": "azul"
+      },
+      {
+       "rel": "",
+       "der": "      (a, b) ⊕ (x, y) = (x, y) ⊕ (a, b) = (1, 0)",
        "color": "azul"
       }
      ],
@@ -7856,7 +7879,11 @@
        "pasos": [
         {
          "rel": "",
-         "der": "2a + b + c + ab + ac + 1 = 2a + b + c + ab + ac + 1"
+         "der": "2a + b + c + ab + ac + 1"
+        },
+        {
+         "rel": "=",
+         "der": "2a + b + c + ab + ac + 1"
         }
        ],
        "entero": true
@@ -8005,7 +8032,7 @@
         {
          "rel": "=",
          "der": "2a + b + c + 2 + (a + b + 1)(a + c + 1)",
-         "nota": "Sumar los dos primeros paréntesis"
+         "nota": "Sumar"
         },
         {
          "rel": "=",
@@ -8038,7 +8065,11 @@
        "pasos": [
         {
          "rel": "",
-         "der": "a + b + c + bc + 1 ≠ a² + 4a + 2b + 2c + ab + ac + bc + 3"
+         "der": "a + b + c + bc + 1"
+        },
+        {
+         "rel": "≠",
+         "der": "a² + 4a + 2b + 2c + ab + ac + bc + 3"
         }
        ],
        "entero": true
@@ -8753,7 +8784,11 @@
      "pasos": [
       {
        "rel": "",
-       "der": "2x + y + z + xy + xz + 1 = 2x + y + z + xy + xz + 1"
+       "der": "2x + y + z + xy + xz + 1"
+      },
+      {
+       "rel": "=",
+       "der": "2x + y + z + xy + xz + 1"
       }
      ],
      "entero": true
@@ -8954,7 +8989,12 @@
      "pasos": [
       {
        "rel": "",
-       "der": "∀(a, b), (c, d): (a, b) ∈ C ∧ (c, d) ∈ C → (a, b) · (c, d) ∈ C",
+       "der": "∀(a, b), (c, d): (a, b) ∈ C ∧ (c, d) ∈ C",
+       "color": "azul"
+      },
+      {
+       "rel": "",
+       "der": "      → (a, b) · (c, d) ∈ C",
        "color": "azul"
       }
      ],
@@ -9293,7 +9333,7 @@
       {
        "rel": "=",
        "der": "(ac + ae − bd − bf, ad + af + bc + be)",
-       "nota": "Propiedad distributiva",
+       "nota": "Distributiva",
        "notaColor": "producto"
       }
      ],
