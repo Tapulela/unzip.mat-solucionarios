@@ -1,0 +1,3895 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — T.P. 4: Estructuras algebraicas",
+ "subtitulo": "Año 2026 · Cuatrimestre 2",
+ "cabecera": "Matemática 1\nT.P. 4 - Estructuras algebraicas - Año 2026 - Cuatrimestre 2",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "TP 4",
+  "fuente": "Trabajo Práctico: Estructuras Algebraicas, Matemática I, segunda cursada 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "enunciado": "Decida si las siguientes operaciones son o no ley de composición interna en el conjunto declarado.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: ∗ es ley de composición interna en A si para todo a, b ∈ A el resultado a ∗ b también está en A. Para probar que no lo es alcanza con un contraejemplo.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "∗: ℤ × ℤ → ℤ tal que a ∗ b = ab + 3",
+     "bloques": [
+      {
+       "texto": "Definición general de ley de composición interna:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b ∈ ℤ: a ∗ b ∈ ℤ",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para todo a, b ∈ ℤ, el producto ab es un número entero, y sumarle 3 da otro número entero, porque ℤ es cerrado para el producto y la suma.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "ab ∈ ℤ ⇒ ab + 3 ∈ ℤ",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ es ley de composición interna en ℤ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "∗ definida en ℤ − {0} tal que x ∗ y = x/y + 5",
+     "bloques": [
+      {
+       "texto": "Definición general de ley de composición interna:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b ∈ ℤ − {0}: a ∗ b ∈ ℤ − {0}",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "No se cumple. Se demuestra con un contraejemplo.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "x = 1, y = 2 ⇒ 1 ∗ 2 = ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " + 5"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            "11",
+            "2"
+           ]
+          },
+          " ∉ ℤ − {0}"
+         ],
+         "nota": "Sumar con denominador común 2",
+         "notaColor": "suma"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para x = 1 e y = 2 el resultado no es un número entero, por lo tanto ∗ no es ley de composición interna en ℤ − {0}.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ no es ley de composición interna en ℤ − {0}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "∘ definida en ℤ tal que a ∘ b = (a + b)²",
+     "bloques": [
+      {
+       "texto": "Definición general de ley de composición interna:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b ∈ ℤ: a ∘ b ∈ ℤ",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para todo a, b ∈ ℤ, la suma a + b es entera, y el cuadrado de un entero es el producto (a + b)·(a + b), que también es entero.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a + b ∈ ℤ ⇒ (a + b)² ∈ ℤ",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∘ es ley de composición interna en ℤ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "∗ definida en ℤ tal que a ∗ b = (a + b − 2)/3",
+     "bloques": [
+      {
+       "texto": "Definición general de ley de composición interna:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b ∈ ℤ: a ∗ b ∈ ℤ",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "No se cumple. Se demuestra con un contraejemplo.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "a = 1, b = 0 ⇒ 1 ∗ 0 = ",
+          {
+           "frac": [
+            "1 + 0 − 2",
+            "3"
+           ]
+          }
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          " ∉ ℤ"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para a = 1 y b = 0 el resultado no es un número entero, por lo tanto ∗ no es ley de composición interna en ℤ.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ no es ley de composición interna en ℤ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "enunciado": "Decida cuáles de las siguientes «leyes de composición internas» son asociativas.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "∗ definida en ℤ tal que a ∗ b = a + b + ab",
+     "bloques": [
+      {
+       "texto": "Definición general de asociatividad:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b, c ∈ ℤ: (a ∗ b) ∗ c = a ∗ (b ∗ c)",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Primer miembro:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(a ∗ b) ∗ c"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(a + b + ab)",
+           "color": "producto"
+          },
+          " ∗ c"
+         ],
+         "nota": "Definición de ∗ en a ∗ b",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(a + b + ab) + c + ",
+          {
+           "t": "(a + b + ab)c",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "a + b + ab + c + ",
+          {
+           "t": "ac + bc + abc",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "a + b + c + ab + ac + bc + abc",
+         "nota": "Ordenar los términos"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Segundo miembro:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∗ (b ∗ c)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "a ∗ ",
+          {
+           "t": "(b + c + bc)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∗ en b ∗ c",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "a + (b + c + bc) + ",
+          {
+           "t": "a(b + c + bc)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "a + b + c + bc + ",
+          {
+           "t": "ab + ac + abc",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "a + b + c + ab + ac + bc + abc",
+         "nota": "Ordenar los términos"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Los dos miembros dan lo mismo para todo a, b, c ∈ ℤ, por lo tanto ∗ es asociativa.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ es asociativa",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "∗ definida en ℝ tal que a ∗ b = a + 3b",
+     "bloques": [
+      {
+       "texto": "Definición general de asociatividad:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b, c ∈ ℝ: (a ∗ b) ∗ c = a ∗ (b ∗ c)",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "No se cumple. Se demuestra con un contraejemplo: a = 0, b = 0, c = 1.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(0 ∗ 0) ∗ 1"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(0 + 3 · 0)",
+           "color": "producto"
+          },
+          " ∗ 1"
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "0 ∗ 1"
+        },
+        {
+         "rel": "=",
+         "der": "0 + 3 · 1",
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "3"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "0 ∗ (0 ∗ 1)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "0 ∗ ",
+          {
+           "t": "(0 + 3 · 1)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "0 ∗ 3"
+        },
+        {
+         "rel": "=",
+         "der": "0 + 3 · 3",
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "9"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para a = 0, b = 0 y c = 1 queda (0 ∗ 0) ∗ 1 = 3 y 0 ∗ (0 ∗ 1) = 9, y 3 ≠ 9, por lo tanto ∗ no es asociativa.",
+       "color": "azul"
+      },
+      {
+       "texto": "Nota para el estudiante: en general (a ∗ b) ∗ c = a + 3b + 3c y a ∗ (b ∗ c) = a + 3b + 9c, que solo coinciden si c = 0.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ no es asociativa",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "enunciado": "Decida cuáles de las siguientes «leyes de composición internas» tienen neutro e para la operación binaria interna definida.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "∩: P(A) × P(A) → P(A) tal que (P, R) → P ∩ R, donde A es un conjunto y P(A) es la potencia de A.",
+     "bloques": [
+      {
+       "texto": "Definición general de elemento neutro:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∃e ∈ P(A), ∀a ∈ P(A): a ∩ e = e ∩ a = a",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Los elementos de P(A) son los subconjuntos de A. Buscamos un subconjunto E tal que P ∩ E = P para todo P ⊆ A. Probamos con E = A:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "P ⊆ A ⇒ P ∩ A = P",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": "A ∩ P = P ∩ A = P",
+         "nota": "La intersección es conmutativa",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Además A ∈ P(A), porque A ⊆ A. Por lo tanto el neutro de ∩ es el conjunto A.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "e = A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "∗ definida en ℚ⁺ tal que a ∗ b = ab/2",
+     "bloques": [
+      {
+       "texto": "Definición general de elemento neutro:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∃e ∈ ℚ⁺, ∀a ∈ ℚ⁺: a ∗ e = e ∗ a = a",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Planteamos a ∗ e = a y despejamos e:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∗ e = a"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "ae",
+             "color": "producto"
+            },
+            "2"
+           ]
+          },
+          " = a"
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "ae = a",
+          {
+           "t": " · 2",
+           "color": "producto"
+          }
+         ],
+         "nota": "Multiplicar por 2",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "e = ",
+          {
+           "frac": [
+            "2a",
+            {
+             "t": "a",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por a (a ≠ 0 en ℚ⁺)",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "e = 2"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Verificamos que también funciona del otro lado y que 2 ∈ ℚ⁺:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "2 ∗ a = ",
+          {
+           "frac": [
+            "2a",
+            "2"
+           ]
+          },
+          " = a"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "e = 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "∗ definida en ℝ tal que a ∗ b = a + b + 4",
+     "bloques": [
+      {
+       "texto": "Definición general de elemento neutro:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∃e ∈ ℝ, ∀a ∈ ℝ: a ∗ e = e ∗ a = a",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Planteamos a ∗ e = a y despejamos e:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∗ e = a"
+        },
+        {
+         "rel": "",
+         "der": {
+          "t": "a + e + 4 = a",
+          "color": "producto"
+         },
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "a + e + 4",
+          {
+           "t": " − a − 4",
+           "color": "producto"
+          },
+          " = a",
+          {
+           "t": " − a − 4",
+           "color": "producto"
+          }
+         ],
+         "nota": "Restar a + 4 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "e = −4"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Verificamos del otro lado: (−4) ∗ a = −4 + a + 4 = a. Además −4 ∈ ℝ.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "e = −4",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "∗ definida en ℝ tal que x ∗ y = xy + y",
+     "bloques": [
+      {
+       "texto": "Definición general de elemento neutro:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∃e ∈ ℝ, ∀a ∈ ℝ: a ∗ e = e ∗ a = a",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Primero buscamos un e que funcione a la izquierda, e ∗ y = y para todo y:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "e ∗ y = y"
+        },
+        {
+         "rel": "",
+         "der": {
+          "t": "ey + y = y",
+          "color": "producto"
+         },
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "ey + y",
+          {
+           "t": " − y",
+           "color": "producto"
+          },
+          " = y",
+          {
+           "t": " − y",
+           "color": "producto"
+          }
+         ],
+         "nota": "Restar y en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "ey = 0 para todo y ⇒ e = 0"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "El único candidato es e = 0, pero no funciona a la derecha. Contraejemplo con x = 2:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "2 ∗ 0 = 2 · 0 + 0 = 0 ≠ 2"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para x = 2 resulta 2 ∗ 0 ≠ 2, por lo tanto 0 no es neutro y ∗ no tiene elemento neutro.",
+       "color": "azul"
+      },
+      {
+       "texto": "Nota para el estudiante: 0 es solo neutro a izquierda. El neutro tiene que cumplir a ∗ e = e ∗ a = a de los dos lados.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ no tiene elemento neutro",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "enunciado": "Decida cuáles de las siguientes leyes de composición internas son conmutativas para la operación binaria interna definida.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "∗ definida en ℝ tal que a ∗ b = a + b + 3ab",
+     "bloques": [
+      {
+       "texto": "Definición general de conmutatividad:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b ∈ ℝ: a ∗ b = b ∗ a",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "b ∗ a"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "b + a + 3ba",
+          "color": "producto"
+         },
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "a + b + 3ab",
+         "nota": "Conmutatividad de + y · en ℝ"
+        },
+        {
+         "rel": "=",
+         "der": "a ∗ b",
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para todo a, b ∈ ℝ se cumple b ∗ a = a ∗ b, por lo tanto ∗ es conmutativa.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ es conmutativa",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "∗ definida en ℝ tal que a ∗ b = a − b + 2ab",
+     "bloques": [
+      {
+       "texto": "Definición general de conmutatividad:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b ∈ ℝ: a ∗ b = b ∗ a",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "No se cumple. Se demuestra con un contraejemplo: a = 1, b = 0.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "1 ∗ 0 = 1 − 0 + 2 · 1 · 0 = 1"
+        },
+        {
+         "rel": "",
+         "der": "0 ∗ 1 = 0 − 1 + 2 · 0 · 1 = −1"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para a = 1 y b = 0 queda 1 ∗ 0 = 1 y 0 ∗ 1 = −1, y 1 ≠ −1, por lo tanto ∗ no es conmutativa.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ no es conmutativa",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "enunciado": "Consideremos las operaciones:\nx ∗ y = x² + y² sobre ℝ\nx ∗ y = x + y + xy sobre ℚ − {−1}\nEstudiar las estructuras (ℝ, ∗) y (ℚ − {−1}, ∗).",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: estudiar la estructura es analizar ley de composición interna, asociatividad, conmutatividad, neutro e inverso, y con eso decir qué estructura es.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Primera parte: (ℝ, ∗) con x ∗ y = x² + y²",
+     "color": "azul"
+    },
+    {
+     "texto": "Ley de composición interna: x² y y² son reales, y su suma también. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Asociatividad: no se cumple. Contraejemplo con x = 1, y = 1, z = 0:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(1 ∗ 1) ∗ 0 = (1² + 1²) ∗ 0 = 2 ∗ 0 = 2² + 0² = 4"
+      },
+      {
+       "rel": "",
+       "der": "1 ∗ (1 ∗ 0) = 1 ∗ (1² + 0²) = 1 ∗ 1 = 1² + 1² = 2"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "4 ≠ 2, por lo tanto ∗ no es asociativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Conmutatividad: y ∗ x = y² + x² = x² + y² = x ∗ y. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Neutro: si existiera, con x = 0 quedaría 0 ∗ e = e² = 0, o sea e = 0. Pero 2 ∗ 0 = 2² + 0² = 4 ≠ 2. No tiene neutro.",
+     "color": "azul"
+    },
+    {
+     "texto": "Inverso: como no hay neutro, no hay elementos inversos.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(ℝ, ∗) es solo un grupoide conmutativo",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Segunda parte: (ℚ − {−1}, ∗) con x ∗ y = x + y + xy",
+     "color": "azul"
+    },
+    {
+     "texto": "Ley de composición interna: el resultado es racional. Falta ver que nunca da −1. Escribimos la operación como un producto:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "x ∗ y"
+      },
+      {
+       "rel": "=",
+       "der": "x + y + xy",
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(x + 1)(y + 1)",
+        {
+         "t": " − 1",
+         "color": "suma"
+        }
+       ],
+       "nota": "Sumar y restar 1, factorizar",
+       "notaColor": "suma"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Si x ≠ −1 e y ≠ −1, entonces x + 1 ≠ 0 e y + 1 ≠ 0, y su producto no es 0. Así x ∗ y ≠ 0 − 1 = −1. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Asociatividad: es la misma cuenta del ejercicio 2.a: los dos miembros dan x + y + z + xy + xz + yz + xyz. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Conmutatividad: y ∗ x = y + x + yx = x + y + xy = x ∗ y. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Neutro:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "x ∗ e = x"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "x + e + xe = x",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "e + xe = 0"
+       ],
+       "nota": "Restar x en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "e(1 + x)",
+         "color": "producto"
+        },
+        " = 0"
+       ],
+       "nota": "Factor común e",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "e = 0",
+       "nota": "1 + x ≠ 0 porque x ≠ −1"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Por la conmutatividad también 0 ∗ x = x, y 0 ∈ ℚ − {−1}. El neutro es e = 0.",
+     "color": "azul"
+    },
+    {
+     "texto": "Inverso:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "x ∗ x' = 0"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "x + x' + xx' = 0",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "x'(1 + x)",
+         "color": "producto"
+        },
+        " = −x"
+       ],
+       "nota": "Restar x y sacar factor común x'",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "x' = ",
+        {
+         "frac": [
+          "−x",
+          "1 + x"
+         ]
+        }
+       ],
+       "nota": "Dividir por 1 + x ≠ 0",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "x' es racional y no es −1, porque −x/(1 + x) = −1 daría −x = −1 − x, o sea 0 = −1, que es falso. Todo x tiene inverso.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(ℚ − {−1}, ∗) es un grupo abeliano",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "enunciado": "En T se define la ley de composición interna ∗ por a ∗ b = a + b − ab. Estudie la asociatividad, conmutatividad, elemento neutro y elemento inverso.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: el enunciado no dice qué conjunto es T. Se resuelve en ℝ.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Asociatividad",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "texto": "Definición general de asociatividad:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "der": "∀a, b, c ∈ ℝ: (a ∗ b) ∗ c = a ∗ (b ∗ c)",
+       "color": "azul"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a ∗ b) ∗ c"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "(a + b − ab)",
+         "color": "producto"
+        },
+        " ∗ c"
+       ],
+       "nota": "Definición de ∗ en a ∗ b",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(a + b − ab) + c − ",
+        {
+         "t": "(a + b − ab)c",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "a + b + c − ab − ac − bc + abc",
+       "nota": "Distributiva y ordenar"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ (b ∗ c)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "a ∗ ",
+        {
+         "t": "(b + c − bc)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗ en b ∗ c",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "a + (b + c − bc) − ",
+        {
+         "t": "a(b + c − bc)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "a + b + c − ab − ac − bc + abc",
+       "nota": "Distributiva y ordenar"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Los dos miembros son iguales, por lo tanto ∗ es asociativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Conmutatividad",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "texto": "Definición general de conmutatividad:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "der": "∀a, b ∈ ℝ: a ∗ b = b ∗ a",
+       "color": "azul"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "b ∗ a = b + a − ba = a + b − ab = a ∗ b"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Se cumple para todo a, b, por lo tanto ∗ es conmutativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento neutro",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ e = a"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "a + e − ae = a",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "e − ae = 0",
+       "nota": "Restar a en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "e(1 − a)",
+         "color": "producto"
+        },
+        " = 0 para todo a ⇒ e = 0"
+       ],
+       "nota": "Factor común e",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Verificación: a ∗ 0 = a + 0 − a · 0 = a, y 0 ∗ a = a por la conmutatividad. El neutro es e = 0.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento inverso",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ a' = 0"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "a + a' − aa' = 0",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "a'(1 − a)",
+         "color": "producto"
+        },
+        " = −a"
+       ],
+       "nota": "Restar a y sacar factor común a'",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "a' = ",
+        {
+         "frac": [
+          "−a",
+          "1 − a"
+         ]
+        },
+        " = ",
+        {
+         "frac": [
+          "a",
+          "a − 1"
+         ]
+        }
+       ],
+       "nota": "Dividir por 1 − a, si a ≠ 1",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Si a = 1 no hay inverso: 1 ∗ x = 1 + x − x = 1 ≠ 0 para todo x.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "∗ es asociativa, conmutativa y su neutro es e = 0",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": [
+        "Todo a ≠ 1 tiene inverso a' = ",
+        {
+         "frac": [
+          "a",
+          "a − 1"
+         ]
+        }
+       ],
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "enunciado": "En ℤ se define la operación binaria interna ∗ tal que a ∗ b = a + b². Estudie la asociatividad, conmutatividad, elemento neutro y elemento inverso.",
+   "bloques": [
+    {
+     "texto": "Asociatividad: no se cumple. Contraejemplo con a = 0, b = 1, c = 1:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(0 ∗ 1) ∗ 1 = (0 + 1²) ∗ 1 = 1 ∗ 1 = 1 + 1² = 2"
+      },
+      {
+       "rel": "",
+       "der": "0 ∗ (1 ∗ 1) = 0 ∗ (1 + 1²) = 0 ∗ 2 = 0 + 2² = 4"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "2 ≠ 4, por lo tanto ∗ no es asociativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Conmutatividad: no se cumple. Contraejemplo con a = 1, b = 2:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "1 ∗ 2 = 1 + 2² = 5"
+      },
+      {
+       "rel": "",
+       "der": "2 ∗ 1 = 2 + 1² = 3"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "5 ≠ 3, por lo tanto ∗ no es conmutativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento neutro:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ e = a"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "a + e² = a",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "e² = 0 ⇒ e = 0",
+       "nota": "Restar a en los dos miembros",
+       "notaColor": "suma"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "El único candidato es 0, pero no funciona a la izquierda. Contraejemplo con a = 2: 0 ∗ 2 = 0 + 2² = 4 ≠ 2. Por lo tanto ∗ no tiene neutro.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento inverso: como no hay neutro, no hay elementos inversos.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "∗ no es asociativa, ni conmutativa, ni tiene neutro",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "enunciado": "En ℚ × ℚ se define ⊕ por (a, b) ⊕ (c, d) = (ac, ad + b). Estudie la asociatividad, conmutatividad, elemento neutro y elemento inverso.",
+   "bloques": [
+    {
+     "texto": "Asociatividad",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "((a, b) ⊕ (c, d)) ⊕ (e, f)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "(ac, ad + b)",
+         "color": "producto"
+        },
+        " ⊕ (e, f)"
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(",
+        {
+         "t": "ace",
+         "color": "producto"
+        },
+        ", ",
+        {
+         "t": "acf + ad + b",
+         "color": "producto"
+        },
+        ")"
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a, b) ⊕ ((c, d) ⊕ (e, f))"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(a, b) ⊕ ",
+        {
+         "t": "(ce, cf + d)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(",
+        {
+         "t": "ace",
+         "color": "producto"
+        },
+        ", ",
+        {
+         "t": "a(cf + d) + b",
+         "color": "producto"
+        },
+        ")"
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "(ace, acf + ad + b)",
+       "nota": "Propiedad distributiva",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Los dos miembros son iguales, por lo tanto ⊕ es asociativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Conmutatividad: no se cumple. Contraejemplo con (1, 1) y (2, 0):",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(1, 1) ⊕ (2, 0) = (1 · 2, 1 · 0 + 1) = (2, 1)"
+      },
+      {
+       "rel": "",
+       "der": "(2, 0) ⊕ (1, 1) = (2 · 1, 2 · 1 + 0) = (2, 2)"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "(2, 1) ≠ (2, 2), por lo tanto ⊕ no es conmutativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento neutro: buscamos (x, y) tal que (a, b) ⊕ (x, y) = (a, b).",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a, b) ⊕ (x, y) = (a, b)"
+      },
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "(ax, ay + b)",
+         "color": "producto"
+        },
+        " = (a, b)"
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": {
+        "sistema": [
+         "ax = a  ⇒ x = 1",
+         "ay + b = b  ⇒ ay = 0 ⇒ y = 0"
+        ]
+       },
+       "nota": "Igualar componente a componente"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Verificamos del otro lado, porque ⊕ no es conmutativa: (1, 0) ⊕ (a, b) = (1 · a, 1 · b + 0) = (a, b). El neutro es (1, 0).",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento inverso: buscamos (x, y) tal que (a, b) ⊕ (x, y) = (1, 0).",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "(ax, ay + b)",
+         "color": "producto"
+        },
+        " = (1, 0)"
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": {
+        "sistema": [
+         "ax = 1",
+         "ay + b = 0"
+        ]
+       },
+       "nota": "Igualar componente a componente"
+      },
+      {
+       "rel": "",
+       "der": [
+        "x = ",
+        {
+         "frac": [
+          "1",
+          {
+           "t": "a",
+           "color": "producto"
+          }
+         ]
+        },
+        " (si a ≠ 0)"
+       ],
+       "nota": "Despejar x dividiendo por a",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "y = − ",
+        {
+         "frac": [
+          "b",
+          {
+           "t": "a",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "nota": "Despejar y: restar b y dividir por a",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Del otro lado: (1/a, −b/a) ⊕ (a, b) = (1, b/a − b/a) = (1, 0). Si a = 0 no hay inverso, porque la primera componente de (0, b) ⊕ (x, y) es 0 · x = 0 ≠ 1.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "⊕ es asociativa, no conmutativa, con neutro (1, 0)",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": [
+        "(a, b) con a ≠ 0 tiene inverso (",
+        {
+         "frac": [
+          "1",
+          "a"
+         ]
+        },
+        ", − ",
+        {
+         "frac": [
+          "b",
+          "a"
+         ]
+        },
+        ")"
+       ],
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 9,
+   "enunciado": "Sean ∗: ℝ⁺ × ℝ⁺ → ℝ⁺ tal que a ∗ b = bᵃ y ∇: ℝ⁺ × ℝ⁺ → ℝ⁺ tal que a ∇ b = a · b dos leyes de composición interna.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en el PDF la operación se lee a ∗ b = b · a, pero con eso ∗ sería el producto y no se cumpliría el ítem a. Se toma a ∗ b = bᵃ, que es lo que pide el ejercicio.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Pruebe que ∗ es distributiva por la izquierda con respecto de ∇.",
+     "bloques": [
+      {
+       "texto": "Definición general de distributividad a izquierda:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b, c ∈ ℝ⁺: a ∗ (b ∇ c) = (a ∗ b) ∇ (a ∗ c)",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∗ (b ∇ c)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "a ∗ ",
+          {
+           "t": "(b · c)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∇",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "(b · c)ᵃ",
+          "color": "producto"
+         },
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "bᵃ · cᵃ",
+         "nota": "Potencia de un producto",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(a ∗ b)",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "(a ∗ c)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "(a ∗ b) ∇ (a ∗ c)",
+         "nota": "Definición de ∇",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Se cumple para todo a, b, c ∈ ℝ⁺, por lo tanto ∗ es distributiva a izquierda respecto de ∇.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "a ∗ (b ∇ c) = (a ∗ b) ∇ (a ∗ c)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Pruebe que ∗ no es distributiva por la derecha con respecto de ∇.",
+     "bloques": [
+      {
+       "texto": "Definición general de distributividad a derecha:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b, c ∈ ℝ⁺: (b ∇ c) ∗ a = (b ∗ a) ∇ (c ∗ a)",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "No se cumple. Se demuestra con un contraejemplo: a = 2, b = 2, c = 3.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(2 ∇ 3) ∗ 2 = (2 · 3) ∗ 2 = 6 ∗ 2 = 2⁶ = 64"
+        },
+        {
+         "rel": "",
+         "der": "(2 ∗ 2) ∇ (3 ∗ 2) = 2² ∇ 2³ = 4 ∇ 8 = 4 · 8 = 32"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para a = 2, b = 2 y c = 3 queda 64 ≠ 32, por lo tanto ∗ no es distributiva a derecha respecto de ∇.",
+       "color": "azul"
+      },
+      {
+       "texto": "Nota para el estudiante: en general (b ∇ c) ∗ a = aᵇᶜ y (b ∗ a) ∇ (c ∗ a) = aᵇ · aᶜ = aᵇ⁺ᶜ, y bc ≠ b + c casi siempre.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(b ∇ c) ∗ a ≠ (b ∗ a) ∇ (c ∗ a)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 10,
+   "enunciado": "Considere la operación ∗ definida en ℝ por a ∗ b = a + b + 2ab tal que ∗ es asociativa y con neutro e = 0. ¿Qué elementos a ∈ ℝ tienen inverso a'?",
+   "bloques": [
+    {
+     "texto": "Definición general de elemento inverso:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "der": "∀a ∈ ℝ, ∃a' ∈ ℝ: a ∗ a' = a' ∗ a = e",
+       "color": "azul"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Buscamos a' tal que a ∗ a' = 0:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ a' = 0"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "a + a' + 2aa' = 0",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "a' + 2aa'",
+        " = ",
+        {
+         "t": "−a",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar a en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "a'(1 + 2a)",
+         "color": "producto"
+        },
+        " = −a"
+       ],
+       "nota": "Factor común a'",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "a' = ",
+        {
+         "frac": [
+          "−a",
+          "1 + 2a"
+         ]
+        }
+       ],
+       "nota": "Dividir por 1 + 2a, si a ≠ −1/2",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Como ∗ es conmutativa (a + b + 2ab = b + a + 2ba), también a' ∗ a = 0.",
+     "color": "azul"
+    },
+    {
+     "texto": "Si a = −1/2 no hay inverso:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": [
+        "(− ",
+        {
+         "frac": [
+          "1",
+          "2"
+         ]
+        },
+        ") ∗ x = − ",
+        {
+         "frac": [
+          "1",
+          "2"
+         ]
+        },
+        " + x + 2 · (− ",
+        {
+         "frac": [
+          "1",
+          "2"
+         ]
+        },
+        ")x = − ",
+        {
+         "frac": [
+          "1",
+          "2"
+         ]
+        },
+        " ≠ 0"
+       ]
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "der": [
+        "Todo a ∈ ℝ − {− ",
+        {
+         "frac": [
+          "1",
+          "2"
+         ]
+        },
+        "} tiene inverso a' = ",
+        {
+         "frac": [
+          "−a",
+          "1 + 2a"
+         ]
+        }
+       ],
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 11,
+   "enunciado": "Sea ℝ el conjunto de los números reales, se define la siguiente operación entre elementos de ℝ: a ⊙ b = ∛(a³ + b³)\nComprobar que (ℝ, ⊙) tiene estructura de grupo conmutativo.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: (G, ∗) es grupo conmutativo (abeliano) si ∗ es ley de composición interna, asociativa, tiene neutro, todo elemento tiene inverso y además es conmutativa.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Ley de composición interna: a³ + b³ es un número real y todo número real tiene raíz cúbica real. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Asociatividad",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a ⊙ b) ⊙ c"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "∛(",
+        {
+         "t": "(∛(a³ + b³))³",
+         "color": "producto"
+        },
+        " + c³)"
+       ],
+       "nota": "Definición de ⊙",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "∛(",
+        {
+         "t": "a³ + b³",
+         "color": "producto"
+        },
+        " + c³)"
+       ],
+       "nota": "(∛x)³ = x",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ⊙ (b ⊙ c)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "∛(a³ + ",
+        {
+         "t": "(∛(b³ + c³))³",
+         "color": "producto"
+        },
+        ")"
+       ],
+       "nota": "Definición de ⊙",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "∛(a³ + ",
+        {
+         "t": "b³ + c³",
+         "color": "producto"
+        },
+        ")"
+       ],
+       "nota": "(∛x)³ = x",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Los dos miembros son ∛(a³ + b³ + c³). Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento neutro",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ⊙ e = a"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "∛(a³ + e³) = a",
+        "color": "producto"
+       },
+       "nota": "Definición de ⊙",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "a³ + e³ = a³"
+       ],
+       "nota": "Elevar al cubo los dos miembros",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "e³ = 0 ⇒ e = 0",
+       "nota": "Restar a³ en los dos miembros",
+       "notaColor": "suma"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Por la conmutatividad (que se prueba abajo) también 0 ⊙ a = a. El neutro es e = 0.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento inverso",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ⊙ a' = 0"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "∛(a³ + a'³) = 0",
+        "color": "producto"
+       },
+       "nota": "Definición de ⊙",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "a³ + a'³ = 0",
+       "nota": "Elevar al cubo los dos miembros",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "a'³ = −a³ ⇒ a' = −a",
+       "nota": "Restar a³ y sacar raíz cúbica",
+       "notaColor": "suma"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Todo a ∈ ℝ tiene inverso −a ∈ ℝ.",
+     "color": "azul"
+    },
+    {
+     "texto": "Conmutatividad: b ⊙ a = ∛(b³ + a³) = ∛(a³ + b³) = a ⊙ b. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(ℝ, ⊙) es un grupo conmutativo",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 12,
+   "enunciado": "Sea (ℤ, ∗) tal que a ∗ b = a + b − 2, a, b ∈ ℤ. Demuestre que (ℤ, ∗) es grupo.",
+   "bloques": [
+    {
+     "texto": "Ley de composición interna: la suma y la resta de enteros son enteros, así que a + b − 2 ∈ ℤ. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Asociatividad",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a ∗ b) ∗ c"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "(a + b − 2)",
+         "color": "producto"
+        },
+        " ∗ c"
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(a + b − 2) + c",
+        {
+         "t": " − 2",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "a + b + c − 4"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ (b ∗ c)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "a ∗ ",
+        {
+         "t": "(b + c − 2)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "a + (b + c − 2)",
+        {
+         "t": " − 2",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "a + b + c − 4"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Los dos miembros son iguales. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento neutro",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ e = a"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "a + e − 2 = a",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "a + e − 2",
+        {
+         "t": " − a + 2",
+         "color": "suma"
+        },
+        " = a",
+        {
+         "t": " − a + 2",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar a y sumar 2 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "rel": "",
+       "der": "e = 2"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Del otro lado: 2 ∗ a = 2 + a − 2 = a. El neutro es e = 2 ∈ ℤ.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento inverso",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ a' = 2"
+      },
+      {
+       "rel": "",
+       "der": {
+        "t": "a + a' − 2 = 2",
+        "color": "producto"
+       },
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "a + a' − 2",
+        {
+         "t": " − a + 2",
+         "color": "suma"
+        },
+        " = 2",
+        {
+         "t": " − a + 2",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar a y sumar 2 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "rel": "",
+       "der": "a' = 4 − a"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Del otro lado: (4 − a) ∗ a = 4 − a + a − 2 = 2. Todo a ∈ ℤ tiene inverso 4 − a ∈ ℤ.",
+     "color": "azul"
+    },
+    {
+     "texto": "Nota para el estudiante: además a ∗ b = b ∗ a, así que (ℤ, ∗) es un grupo abeliano.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(ℤ, ∗) es un grupo",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 13,
+   "enunciado": "En el conjunto S = {a, b, c} se define ∗ por la siguiente tabla (abajo). Estudie la asociatividad, conmutatividad, elemento neutro y elemento inverso.",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": {
+        "tabla": [
+         [
+          "∗",
+          "a",
+          "b",
+          "c"
+         ],
+         [
+          "a",
+          "a",
+          "b",
+          "c"
+         ],
+         [
+          "b",
+          "b",
+          "a",
+          "c"
+         ],
+         [
+          "c",
+          "c",
+          "c",
+          "c"
+         ]
+        ]
+       }
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Conmutatividad: la tabla es simétrica respecto de la diagonal principal (a ∗ b = b ∗ a = b, a ∗ c = c ∗ a = c, b ∗ c = c ∗ b = c). Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento neutro: la fila y la columna de a repiten los encabezados (a ∗ x = x ∗ a = x para todo x). El neutro es e = a.",
+     "color": "azul"
+    },
+    {
+     "texto": "Asociatividad: se analizan las ternas (x, y, z) por casos.",
+     "color": "azul"
+    },
+    {
+     "texto": "Caso 1: alguno de los tres es c. Todo producto con c da c, así que los dos miembros dan c.",
+     "color": "azul"
+    },
+    {
+     "texto": "Caso 2: alguno es a y ninguno es c. Como a es neutro, los dos miembros dan el producto de los otros dos. Por ejemplo:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(b ∗ a) ∗ b = b ∗ b = a  y  b ∗ (a ∗ b) = b ∗ b = a"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Caso 3: x = y = z = b.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(b ∗ b) ∗ b = a ∗ b = b  y  b ∗ (b ∗ b) = b ∗ a = b"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "En todos los casos los dos miembros coinciden, por lo tanto ∗ es asociativa.",
+     "color": "azul"
+    },
+    {
+     "texto": "Elemento inverso: buscamos en cada fila el neutro a.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ∗ a = a ⇒ a' = a"
+      },
+      {
+       "rel": "",
+       "der": "b ∗ b = a ⇒ b' = b"
+      },
+      {
+       "rel": "",
+       "der": "c ∗ x = c ≠ a para todo x ⇒ c no tiene inverso"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "der": "∗ es asociativa, conmutativa, con neutro a",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "a y b tienen inverso (ellos mismos) y c no tiene. Por eso (S, ∗) no es grupo: es un monoide conmutativo.",
+     "color": "azul"
+    }
+   ]
+  },
+  {
+   "numero": 14,
+   "enunciado": "Sea (G, ·) el grupo generado por los elementos a y b tales que a² = b³ = e y a · b = b² · a",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Demostrar que a · b² = b · a y de esto deducir que G está formado por los elementos e, a, b, b², a · b y b · a",
+     "bloques": [
+      {
+       "texto": "Hipótesis: a² = e, b³ = e y a · b = b² · a.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a · b²"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(a · b)",
+           "color": "producto"
+          },
+          " · b"
+         ],
+         "nota": "Asociatividad",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(b² · a)",
+           "color": "producto"
+          },
+          " · b"
+         ],
+         "nota": "Hipótesis a · b = b² · a",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "b² · ",
+          {
+           "t": "(a · b)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Asociatividad",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "b² · ",
+          {
+           "t": "(b² · a)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Hipótesis a · b = b² · a",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "b⁴",
+           "color": "producto"
+          },
+          " · a"
+         ],
+         "nota": "Asociatividad",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "b³ · b",
+           "color": "producto"
+          },
+          " · a"
+         ],
+         "nota": "b⁴ = b³ · b",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "e",
+           "color": "producto"
+          },
+          " · b · a"
+         ],
+         "nota": "Hipótesis b³ = e",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "b · a",
+         "nota": "e es neutro"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "a · b² = b · a",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Todo elemento de G es un producto de aes y bes. Con a · b = b² · a y a · b² = b · a se puede pasar cada a a la derecha de las bes, y con a² = e y b³ = e los exponentes se reducen. Así todo elemento queda de la forma bᵏ · aʲ con k ∈ {0, 1, 2} y j ∈ {0, 1}:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "e, b, b², a, b · a, b² · a"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Como b² · a = a · b, los elementos son:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "G = {e, a, b, b², a · b, b · a}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: se toma, como dice el enunciado, que estos seis elementos son distintos (G es el grupo de las simetrías de un triángulo).",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Formar la tabla de operaciones del grupo",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: cada casilla es fila · columna. Se calcula con las reglas a² = e, b³ = e, a · b = b² · a y a · b² = b · a. Por ejemplo, b · (a · b) = b · b² · a = b³ · a = a.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": {
+          "tabla": [
+           [
+            "·",
+            "e",
+            "a",
+            "b",
+            "b²",
+            "a·b",
+            "b·a"
+           ],
+           [
+            "e",
+            "e",
+            "a",
+            "b",
+            "b²",
+            "a·b",
+            "b·a"
+           ],
+           [
+            "a",
+            "a",
+            "e",
+            "a·b",
+            "b·a",
+            "b",
+            "b²"
+           ],
+           [
+            "b",
+            "b",
+            "b·a",
+            "b²",
+            "e",
+            "a",
+            "a·b"
+           ],
+           [
+            "b²",
+            "b²",
+            "a·b",
+            "e",
+            "b",
+            "b·a",
+            "a"
+           ],
+           [
+            "a·b",
+            "a·b",
+            "b²",
+            "b·a",
+            "a",
+            "e",
+            "b"
+           ],
+           [
+            "b·a",
+            "b·a",
+            "b",
+            "a",
+            "a·b",
+            "b²",
+            "e"
+           ]
+          ]
+         }
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Determinar todos los subgrupos",
+     "bloques": [
+      {
+       "texto": "Por el teorema de Lagrange el orden de un subgrupo divide a 6: puede ser 1, 2, 3 o 6.",
+       "color": "azul"
+      },
+      {
+       "texto": "De la diagonal de la tabla: a · a = e, (a · b) · (a · b) = e y (b · a) · (b · a) = e, así que a, a · b y b · a tienen orden 2. b · b = b² y b² · b = e, así que b y b² tienen orden 3.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "Orden 1: {e}",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": "Orden 2: {e, a}, {e, a · b}, {e, b · a}",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": "Orden 3: {e, b, b²}",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": "Orden 6: G",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "G tiene 6 subgrupos",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 15,
+   "enunciado": "En ℤ se definen las operaciones binarias internas ∗ y ∘ por\na ∗ b = a + b + 1\na ∘ b = a + b + ab",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "¿Es el par (ℤ, ∗) un grupo?",
+     "bloques": [
+      {
+       "texto": "Ley de composición interna: a + b + 1 ∈ ℤ. Se cumple.",
+       "color": "azul"
+      },
+      {
+       "texto": "Asociatividad: (a ∗ b) ∗ c = (a + b + 1) + c + 1 = a + b + c + 2 y a ∗ (b ∗ c) = a + (b + c + 1) + 1 = a + b + c + 2. Se cumple.",
+       "color": "azul"
+      },
+      {
+       "texto": "Elemento neutro:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∗ e = a"
+        },
+        {
+         "rel": "",
+         "der": {
+          "t": "a + e + 1 = a",
+          "color": "producto"
+         },
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "e = −1",
+         "nota": "Restar a + 1 en los dos miembros",
+         "notaColor": "suma"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Del otro lado: (−1) ∗ a = −1 + a + 1 = a. El neutro es e = −1.",
+       "color": "azul"
+      },
+      {
+       "texto": "Elemento inverso:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∗ a' = −1"
+        },
+        {
+         "rel": "",
+         "der": {
+          "t": "a + a' + 1 = −1",
+          "color": "producto"
+         },
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "a' = −2 − a",
+         "nota": "Restar a + 1 en los dos miembros",
+         "notaColor": "suma"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Del otro lado: (−2 − a) ∗ a = −2 − a + a + 1 = −1. Todo a tiene inverso −2 − a ∈ ℤ.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(ℤ, ∗) es un grupo",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: también es conmutativo: a + b + 1 = b + a + 1.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "¿Es el par (ℤ, ∘) un grupo?",
+     "bloques": [
+      {
+       "texto": "∘ es ley de composición interna (a + b + ab ∈ ℤ), es asociativa (ejercicio 2.a) y su neutro es e = 0 (a + 0 + a · 0 = a). Falta ver el inverso:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∘ a' = 0"
+        },
+        {
+         "rel": "",
+         "der": {
+          "t": "a + a' + aa' = 0",
+          "color": "producto"
+         },
+         "nota": "Definición de ∘",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "a'(1 + a)",
+           "color": "producto"
+          },
+          " = −a"
+         ],
+         "nota": "Restar a y sacar factor común a'",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "a' = ",
+          {
+           "frac": [
+            "−a",
+            "1 + a"
+           ]
+          }
+         ],
+         "nota": "Dividir por 1 + a, si a ≠ −1",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "a' tiene que ser entero, y no lo es siempre. Contraejemplo con a = 1:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "a' = ",
+          {
+           "frac": [
+            "−1",
+            "1 + 1"
+           ]
+          },
+          " = − ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " ∉ ℤ"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "1 no tiene inverso en ℤ (solo 0 y −2 lo tienen), por lo tanto (ℤ, ∘) no es grupo.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(ℤ, ∘) no es un grupo",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "¿Es ∘ distributiva con respecto de ∗?",
+     "bloques": [
+      {
+       "texto": "Definición general de distributividad a izquierda:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b, c ∈ ℤ: a ∘ (b ∗ c) = (a ∘ b) ∗ (a ∘ c)",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a ∘ (b ∗ c)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "a ∘ ",
+          {
+           "t": "(b + c + 1)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "a + (b + c + 1) + ",
+          {
+           "t": "a(b + c + 1)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∘",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "2a + b + c + ab + ac + 1",
+         "nota": "Distributiva y ordenar"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(a ∘ b) ∗ (a ∘ c)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(a + b + ab)",
+           "color": "producto"
+          },
+          " ∗ ",
+          {
+           "t": "(a + c + ac)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∘",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(a + b + ab) + (a + c + ac)",
+          {
+           "t": " + 1",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de ∗",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "2a + b + c + ab + ac + 1",
+         "nota": "Ordenar los términos"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Los dos miembros son iguales, así que ∘ es distributiva a izquierda. Como ∘ es conmutativa (a + b + ab = b + a + ba), también lo es a derecha.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∘ es distributiva con respecto de ∗",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "¿Es ∗ distributiva con respecto de ∘?",
+     "bloques": [
+      {
+       "texto": "Definición general de distributividad a izquierda:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀a, b, c ∈ ℤ: a ∗ (b ∘ c) = (a ∗ b) ∘ (a ∗ c)",
+         "color": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "No se cumple. Se demuestra con un contraejemplo: a = 0, b = 0, c = 0.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "0 ∗ (0 ∘ 0) = 0 ∗ (0 + 0 + 0 · 0) = 0 ∗ 0 = 0 + 0 + 1 = 1"
+        },
+        {
+         "rel": "",
+         "der": "(0 ∗ 0) ∘ (0 ∗ 0) = 1 ∘ 1 = 1 + 1 + 1 · 1 = 3"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para a = b = c = 0 queda 1 ≠ 3, por lo tanto ∗ no es distributiva con respecto de ∘.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∗ no es distributiva con respecto de ∘",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 16,
+   "enunciado": "Demuestre que el trío (ℤ, +, ⊕) es un anillo donde + es la suma usual y a ⊕ b = 2ab.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: (A, +, ·) es un anillo si (A, +) es un grupo abeliano, · es ley de composición interna y asociativa, y · es distributiva con respecto de + a izquierda y a derecha.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Primera parte: (ℤ, +) es un grupo abeliano",
+     "color": "azul"
+    },
+    {
+     "texto": "La suma de enteros es entera, asociativa y conmutativa, el neutro es 0 y el inverso de a es −a. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Segunda parte: ⊕ es ley de composición interna y asociativa",
+     "color": "azul"
+    },
+    {
+     "texto": "2ab es entero si a y b son enteros.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a ⊕ b) ⊕ c"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "(2ab)",
+         "color": "producto"
+        },
+        " ⊕ c"
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": {
+        "t": "2 · (2ab) · c",
+        "color": "producto"
+       },
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "4abc"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ⊕ (b ⊕ c)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "a ⊕ ",
+        {
+         "t": "(2bc)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": {
+        "t": "2 · a · (2bc)",
+        "color": "producto"
+       },
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "4abc"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Los dos miembros son iguales. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Tercera parte: ⊕ es distributiva con respecto de +",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a ⊕ (b + c)"
+      },
+      {
+       "rel": "=",
+       "der": {
+        "t": "2a(b + c)",
+        "color": "producto"
+       },
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "2ab + 2ac",
+       "nota": "Distributiva en ℤ",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "(a ⊕ b) + (a ⊕ c)",
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(b + c) ⊕ a"
+      },
+      {
+       "rel": "=",
+       "der": {
+        "t": "2(b + c)a",
+        "color": "producto"
+       },
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "2ba + 2ca",
+       "nota": "Distributiva en ℤ",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "(b ⊕ a) + (c ⊕ a)",
+       "nota": "Definición de ⊕",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Se cumplen las tres partes.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(ℤ, +, ⊕) es un anillo",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: es un anillo conmutativo sin unidad: 2ae = a daría e = 1/2 ∉ ℤ.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 17,
+   "enunciado": "Se consideran en ℤ las operaciones: x ∘ y = x + y + 1 y x ∗ y = x + y + xy. Demuestre que (ℤ, ∘, ∗) es un anillo unitario.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: acá ∘ hace de «suma» y ∗ de «producto». Anillo unitario: anillo en el que el producto tiene neutro.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Primera parte: (ℤ, ∘) es un grupo abeliano",
+     "color": "azul"
+    },
+    {
+     "texto": "∘ es la operación ∗ del ejercicio 15.a: es ley de composición interna, asociativa, con neutro −1 y el inverso de x es −2 − x. Además y ∘ x = y + x + 1 = x ∘ y. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Segunda parte: ∗ es ley de composición interna y asociativa",
+     "color": "azul"
+    },
+    {
+     "texto": "x + y + xy ∈ ℤ, y la asociatividad es la del ejercicio 2.a. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Tercera parte: ∗ es distributiva con respecto de ∘",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "x ∗ (y ∘ z)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "x ∗ ",
+        {
+         "t": "(y + z + 1)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∘",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "x + (y + z + 1) + ",
+        {
+         "t": "x(y + z + 1)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "2x + y + z + xy + xz + 1",
+       "nota": "Distributiva y ordenar"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(x ∗ y) ∘ (x ∗ z)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "(x + y + xy)",
+         "color": "producto"
+        },
+        " ∘ ",
+        {
+         "t": "(x + z + xz)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∗",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(x + y + xy) + (x + z + xz)",
+        {
+         "t": " + 1",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ∘",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "2x + y + z + xy + xz + 1",
+       "nota": "Ordenar los términos"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Son iguales, así que se cumple a izquierda. Como ∗ es conmutativa (x + y + xy = y + x + yx), también a derecha.",
+     "color": "azul"
+    },
+    {
+     "texto": "Cuarta parte: ∗ tiene neutro",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "x ∗ 0 = x + 0 + x · 0 = x  y  0 ∗ x = 0 + x + 0 · x = x"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "El neutro de ∗ es 0. Se cumplen las cuatro partes.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(ℤ, ∘, ∗) es un anillo unitario",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 18,
+   "enunciado": "Demuestre que la terna (C, +, ·) donde (a, b) · (c, d) = (ac − bd, ad + bc) es un anillo ¿es de integridad?",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: se toma C = ℝ × ℝ con la suma componente a componente, (a, b) + (c, d) = (a + c, b + d). Es la forma de pares de los números complejos.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Nota para el estudiante: (A, +, ·) es un anillo si (A, +) es un grupo abeliano, · es ley de composición interna y asociativa, y · es distributiva con respecto de + a izquierda y a derecha.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Primera parte: (C, +) es un grupo abeliano",
+     "color": "azul"
+    },
+    {
+     "texto": "La suma se hace componente a componente con la suma de ℝ, así que es asociativa y conmutativa. El neutro es (0, 0) y el inverso de (a, b) es (−a, −b). Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Segunda parte: · es ley de composición interna y asociativa",
+     "color": "azul"
+    },
+    {
+     "texto": "ac − bd y ad + bc son reales. Para la asociatividad:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "((a, b) · (c, d)) · (e, f)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "(ac − bd, ad + bc)",
+         "color": "producto"
+        },
+        " · (e, f)"
+       ],
+       "nota": "Definición de ·",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "((ac − bd)e − (ad + bc)f,",
+       "nota": "Definición de ·",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "   (ac − bd)f + (ad + bc)e)"
+      },
+      {
+       "rel": "=",
+       "der": "(ace − bde − adf − bcf,",
+       "nota": "Distributiva",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "   acf − bdf + ade + bce)"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a, b) · ((c, d) · (e, f))"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(a, b) · ",
+        {
+         "t": "(ce − df, cf + de)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de ·",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "(a(ce − df) − b(cf + de),",
+       "nota": "Definición de ·",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "   a(cf + de) + b(ce − df))"
+      },
+      {
+       "rel": "=",
+       "der": "(ace − adf − bcf − bde,",
+       "nota": "Distributiva",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": "   acf + ade + bce − bdf)"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Las dos componentes tienen los mismos términos. Se cumple.",
+     "color": "azul"
+    },
+    {
+     "texto": "Tercera parte: · es distributiva con respecto de +",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(a, b) · ((c, d) + (e, f))"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(a, b) · ",
+        {
+         "t": "(c + e, d + f)",
+         "color": "producto"
+        }
+       ],
+       "nota": "Definición de +",
+       "notaColor": "suma"
+      },
+      {
+       "rel": "=",
+       "der": "(a(c + e) − b(d + f), a(d + f) + b(c + e))",
+       "nota": "Definición de ·",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "((ac − bd) + (ae − bf), (ad + bc) + (af + be))",
+       "nota": "Distributiva y agrupar",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "(a, b) · (c, d) + (a, b) · (e, f)",
+       "nota": "Definición de + y de ·",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "A derecha también se cumple porque · es conmutativa: (c, d) · (a, b) = (ca − db, cb + da) = (ac − bd, ad + bc).",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(C, +, ·) es un anillo",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "¿Es de integridad?",
+     "color": "azul"
+    },
+    {
+     "texto": "Nota para el estudiante: un dominio de integridad es un anillo conmutativo, con unidad y sin divisores de cero: si x · y = 0, entonces x = 0 o y = 0.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "Es conmutativo (se vio arriba) y tiene unidad (1, 0): (a, b) · (1, 0) = (a · 1 − b · 0, a · 0 + b · 1) = (a, b).",
+     "color": "azul"
+    },
+    {
+     "texto": "Sin divisores de cero: supongamos (a, b) · (c, d) = (0, 0) con (a, b) ≠ (0, 0), o sea a² + b² ≠ 0.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": {
+        "sistema": [
+         "ac − bd = 0",
+         "ad + bc = 0"
+        ]
+       },
+       "nota": "Definición de ·",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Multiplicamos la primera por a y la segunda por b, y sumamos:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "a²c − abd + abd + b²c = 0 ⇒ (a² + b²)c = 0 ⇒ c = 0"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Multiplicamos la primera por −b y la segunda por a, y sumamos:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "−abc + b²d + a²d + abc = 0 ⇒ (a² + b²)d = 0 ⇒ d = 0"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Entonces (c, d) = (0, 0), y no hay divisores de cero.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "(C, +, ·) es un dominio de integridad",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
