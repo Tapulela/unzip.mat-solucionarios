@@ -60,6 +60,15 @@ se encarga la pizarra.
 ```
 
 - `numero` es opcional: si falta, se numera 1, 2, 3… y los ítems a, b, c…
+- `marcador` (en un ejercicio, un ítem o una sección) agrega un marcador del PDF: el
+  índice que muestra el lector de PDF en su panel y que lleva a ese lugar. Vale `true`
+  (el título es el rótulo y el enunciado, por ejemplo «Unidad 1: Lógica
+  proposicional», o el título de la sección), un texto (el título) o
+  `{ "titulo": "...", "nivel": 2 }`, con nivel de 1 a 3 (por defecto, 1 en un
+  ejercicio, 2 en un ítem y en una sección, el nivel de anidamiento). Se dibuja en
+  violeta en el margen y no se imprime. El PDF que guarda «Imprimir / PDF» no trae
+  los marcadores: se agregan después con «Agregar marcadores a un PDF», en el panel
+  de Hojas A4.
 - `enunciado` es texto común y se corta en renglones solo. Conviene citar lo justo, o
   reescribirlo con tus palabras (ver «Derechos» en el README).
 - Un ejercicio puede tener `bloques` propios, `items`, o las dos cosas (primero van sus

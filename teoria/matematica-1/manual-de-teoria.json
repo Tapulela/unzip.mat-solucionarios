@@ -37,6 +37,7 @@
  },
  "ejercicios": [
   {
+   "marcador": true,
    "numero": 1,
    "enunciado": "Lógica proposicional y de predicados",
    "bloques": [
@@ -68,7 +69,10 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Clasificación de una fórmula",
@@ -85,7 +89,10 @@
       {
        "texto": "Un razonamiento es válido si la forma [premisas] → conclusión es una tautología."
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Leyes del álgebra proposicional (equivalencias)",
@@ -343,7 +350,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Otras leyes (implicaciones y equivalencias)",
@@ -460,11 +470,15 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     }
    ]
   },
   {
+   "marcador": true,
    "numero": 2,
    "enunciado": "Teoría de conjuntos",
    "bloques": [
@@ -706,7 +720,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Relaciones binarias",
@@ -926,7 +943,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Aplicaciones (funciones)",
@@ -979,7 +999,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Estructuras algebraicas",
@@ -1213,7 +1236,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Inducción",
@@ -1257,11 +1283,15 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     }
    ]
   },
   {
+   "marcador": true,
    "numero": 3,
    "enunciado": "Álgebra de Boole",
    "bloques": [
@@ -1300,7 +1330,10 @@
        "color": "gris",
        "tam": "S"
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Notación",
@@ -1318,7 +1351,10 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Leyes",
@@ -1517,7 +1553,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Teorema del consenso",
@@ -1615,11 +1654,15 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     }
    ]
   },
   {
+   "marcador": true,
    "numero": 4,
    "enunciado": "Grafos",
    "bloques": [
@@ -1670,7 +1713,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Digrafo (grafo dirigido)",
@@ -1681,7 +1727,10 @@
       {
        "texto": "Una relación binaria R en un conjunto A es un digrafo: cada par (a, b) ∈ R es una flecha de a hacia b."
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Matriz de adyacencia",
@@ -1710,7 +1759,10 @@
        "color": "gris",
        "tam": "S"
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Grado de un nodo",
@@ -1757,7 +1809,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Tipos de grafos",
@@ -1860,7 +1915,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Conexidad",
@@ -1937,7 +1995,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Grafos eulerianos",
@@ -1982,7 +2043,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Grafos hamiltonianos",
@@ -2047,7 +2111,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Árboles",
@@ -2088,7 +2155,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Grafos etiquetados",
@@ -2137,11 +2207,15 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     }
    ]
   },
   {
+   "marcador": true,
    "numero": 5,
    "enunciado": "Sistemas numéricos",
    "bloques": [
@@ -2342,7 +2416,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Valor absoluto",
@@ -2395,7 +2472,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Combinatoria: variaciones, permutaciones y combinaciones",
@@ -2578,11 +2658,15 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     }
    ]
   },
   {
+   "marcador": true,
    "numero": 6,
    "enunciado": "Funciones",
    "bloques": [
@@ -2642,7 +2726,10 @@
         }
        ]
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Función par",
@@ -2661,7 +2748,10 @@
        "color": "gris",
        "tam": "S"
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Función impar",
@@ -2680,7 +2770,10 @@
        "color": "gris",
        "tam": "S"
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Función creciente",
@@ -2694,7 +2787,10 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Función decreciente",
@@ -2708,7 +2804,10 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Función inversa",
@@ -2729,11 +2828,15 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     }
    ]
   },
   {
+   "marcador": true,
    "numero": 7,
    "enunciado": "Números complejos",
    "bloques": [
@@ -2753,7 +2856,10 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Módulo",
@@ -2774,7 +2880,10 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     },
     {
      "seccion": "Argumento θ según el cuadrante",
@@ -2839,7 +2948,10 @@
        ],
        "entero": true
       }
-     ]
+     ],
+     "marcador": {
+      "nivel": 2
+     }
     }
    ]
   }

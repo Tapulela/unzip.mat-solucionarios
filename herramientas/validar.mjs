@@ -85,6 +85,14 @@ export function revisar(sol) {
       color(l.marcar.color, r + ".marcar.color");
     }
   };
+  // marcador del PDF: true, un texto (el título) o { titulo, nivel } con nivel 1 a 3
+  const marcador = (m, r) => {
+    if (m === undefined || m === false || m === true) return;
+    if (typeof m === "string") { texto(m, r + ".marcador"); return; }
+    if (!m || typeof m !== "object" || Array.isArray(m)) { err(r + ".marcador", "es true, un texto o { titulo, nivel }"); return; }
+    if (m.titulo !== undefined) texto(String(m.titulo), r + ".marcador.titulo");
+    if (m.nivel !== undefined && ![1, 2, 3].includes(m.nivel)) av(r + ".marcador.nivel", "tendría que ser 1, 2 o 3");
+  };
   const bloques = (lista, r) => {
     if (lista === undefined) return;
     if (!Array.isArray(lista)) { err(r, "«bloques» tiene que ser una lista"); return; }
@@ -97,7 +105,7 @@ export function revisar(sol) {
       if (Array.isArray(b.pasos)) { b.pasos.forEach((l, j) => renglon(l, `${rb}.pasos[${j}]`, j, b.pasos)); return; }
       if (b.generador) { if (!GENERADORES.includes(b.generador)) err(rb, `no existe el generador «${b.generador}»`); return; }
       if (b.seccion !== undefined) {
-        texto(String(b.seccion), rb + ".seccion"); color(b.color, rb + ".color");
+        texto(String(b.seccion), rb + ".seccion"); color(b.color, rb + ".color"); marcador(b.marcador, rb);
         if (!Array.isArray(b.bloques) || !b.bloques.length) av(rb, "una sección sin «bloques» queda vacía");
         bloques(b.bloques, rb);
         return;
@@ -144,8 +152,9 @@ export function revisar(sol) {
   else sol.ejercicios.forEach((ej, i) => {
     const r = `ejercicios[${i}]`;
     if (!ej.enunciado) av(r, "falta el enunciado");
+    marcador(ej.marcador, r);
     bloques(ej.bloques, r);
-    (ej.items || []).forEach((it, j) => bloques(it.bloques, `${r}.items[${j}]`));
+    (ej.items || []).forEach((it, j) => { marcador(it.marcador, `${r}.items[${j}]`); bloques(it.bloques, `${r}.items[${j}]`); });
     if (!ej.bloques && !ej.items) av(r, "no tiene ni bloques ni ítems");
   });
   return { errores, avisos };
