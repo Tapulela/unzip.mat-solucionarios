@@ -1240,53 +1240,6 @@
      "marcador": {
       "nivel": 2
      }
-    },
-    {
-     "seccion": "Inducción",
-     "bloques": [
-      {
-       "seccion": "Principio de inducción",
-       "bloques": [
-        {
-         "texto": "Una propiedad P(n) vale para todo natural n ≥ n₀ si se cumplen las dos condiciones:"
-        },
-        {
-         "seccion": "Paso base",
-         "bloques": [
-          {
-           "pasos": [
-            {
-             "rel": "",
-             "der": "P(n₀) es verdadera"
-            }
-           ],
-           "entero": true
-          }
-         ]
-        },
-        {
-         "seccion": "Paso inductivo",
-         "bloques": [
-          {
-           "texto": "Hipótesis: P(k) es verdadera. Tesis: P(k + 1) es verdadera."
-          },
-          {
-           "pasos": [
-            {
-             "rel": "",
-             "der": "∀k ≥ n₀: P(k) → P(k + 1)"
-            }
-           ],
-           "entero": true
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "marcador": {
-      "nivel": 2
-     }
     }
    ]
   },
@@ -2650,6 +2603,53 @@
                ]
               }
              ]
+            }
+           ],
+           "entero": true
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "marcador": {
+      "nivel": 2
+     }
+    },
+    {
+     "seccion": "Inducción",
+     "bloques": [
+      {
+       "seccion": "Principio de inducción",
+       "bloques": [
+        {
+         "texto": "Una propiedad P(n) vale para todo natural n ≥ n₀ si se cumplen las dos condiciones:"
+        },
+        {
+         "seccion": "Paso base",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "P(n₀) es verdadera"
+            }
+           ],
+           "entero": true
+          }
+         ]
+        },
+        {
+         "seccion": "Paso inductivo",
+         "bloques": [
+          {
+           "texto": "Hipótesis: P(k) es verdadera. Tesis: P(k + 1) es verdadera."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀k ≥ n₀: P(k) → P(k + 1)"
             }
            ],
            "entero": true
