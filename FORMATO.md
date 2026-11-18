@@ -69,6 +69,10 @@ se encarga la pizarra.
   violeta en el margen y no se imprime. El PDF que guarda «Imprimir / PDF» no trae
   los marcadores: se agregan después con «Agregar marcadores a un PDF», en el panel
   de Hojas A4.
+- `"alLado": true` (en un ítem) lo pone a la derecha del ítem anterior, alineado arriba,
+  si los dos entran a lo ancho de la hoja (si no, va debajo, con un aviso). Sirve para
+  ítems angostos, como dos tablas de verdad chicas. Los dos quedan en la misma hoja y no
+  se parten. No se aplica a ítems con secciones o con gráficos de un generador.
 - `enunciado` es texto común y se corta en renglones solo. Conviene citar lo justo, o
   reescribirlo con tus palabras (ver «Derechos» en el README).
 - Un ejercicio puede tener `bloques` propios, `items`, o las dos cosas (primero van sus
@@ -84,7 +88,7 @@ se encarga la pizarra.
 | `{ "seccion": "Título", "bloques": [ ... ] }` | Una sección: el título subrayado (del tamaño del texto, en azul o en `color`) y sus bloques debajo, con sangría y una línea vertical a la izquierda que acompaña cada renglón, también si la sección sigue en otra hoja. Las secciones se pueden anidar. |
 | `{ "salto": true }` | Empieza una hoja nueva. |
 | `"unir": true` (en un bloque de texto) | El texto no se separa de lo que le sigue: si no entra, pasa a la hoja siguiente junto con el bloque de abajo. Sirve para «La tabla sigue:». |
-| `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. |
+| `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. Con `""` no se escribe ningún aviso (por ejemplo, si el bloque anterior ya termina con «(La tabla continúa)»). |
 | `"entero": true` (en un bloque de pasos) | El desarrollo no se parte entre dos hojas: si no entra al pie, pasa entero a la siguiente (si entra en una hoja). Los dibujos de los generadores ya se comportan así. |
 | `{ "espacio": 2 }` | Deja lugar libre (en renglones), por ejemplo para completar a mano. |
 
@@ -118,7 +122,7 @@ se encarga la pizarra.
 | raíz dibujada | `{ "raiz": radicando }`, y con índice `{ "raiz": radicando, "indice": "n − 1" }` (más chico y arriba del gancho, para que no se lea como un producto). En textos, `√25`, `√(a + b)` y `√[3]8` también se dibujan. |
 | marca dibujada | `{ "marca": "ok" }` (✓ verde) o `{ "marca": "mal" }` (✗ roja) |
 | sistema | `{ "sistema": [fila, fila] }`, con una llave a la izquierda |
-| tabla | `{ "tabla": [[celda, celda], [celda, celda]] }`. Con `"lineas": true` lleva marco y grilla, con una línea más gruesa después de la primera fila y de la primera columna (tabla de doble entrada). Las celdas van alineadas a la derecha; `"alinear"` cambia eso: `"izq"`, `"centro"` o `"der"` para toda la tabla, o una lista con una por columna (`["der", "centro", "centro"]`). |
+| tabla | `{ "tabla": [[celda, celda], [celda, celda]] }`. Con `"lineas": true` lleva marco y grilla (cada celda deja a lo sumo un carácter de margen a cada lado), con una línea más gruesa después de la primera fila y de la primera columna (tabla de doble entrada). Las celdas van alineadas a la derecha; `"alinear"` cambia eso: `"izq"`, `"centro"` o `"der"` para toda la tabla, o una lista con una por columna (`["der", "centro", "centro"]`). `"columnasFijas": 3` corre la línea gruesa vertical después de las tres primeras columnas (las de las variables en una tabla de verdad). |
 
 Las potencias y los subíndices se escriben con caracteres Unicode: `x² x³ xⁿ x₁ x₂`. Los
 signos van con sus caracteres: `−` (menos), `·`, `±`, `≤`, `≥`, `≠`, `∈`, `∪`, `∩`, `⇔`,

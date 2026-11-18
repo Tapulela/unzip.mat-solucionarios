@@ -60,6 +60,8 @@ export function revisar(sol) {
       const AL = ["izq", "centro", "der"];
       if (x.alinear !== undefined && !(Array.isArray(x.alinear) ? x.alinear : [x.alinear]).every((a) => AL.includes(a)))
         av(r + ".alinear", "tiene que ser \"izq\", \"centro\" o \"der\" (o una lista, una por columna)");
+      if (x.columnasFijas !== undefined && !(Number.isInteger(x.columnasFijas) && x.columnasFijas >= 1))
+        av(r + ".columnasFijas", "tiene que ser un número entero desde 1");
       return {};
     }
     err(r, `no se reconoce el item ${JSON.stringify(x).slice(0, 60)}`);
@@ -154,7 +156,11 @@ export function revisar(sol) {
     if (!ej.enunciado) av(r, "falta el enunciado");
     marcador(ej.marcador, r);
     bloques(ej.bloques, r);
-    (ej.items || []).forEach((it, j) => { marcador(it.marcador, `${r}.items[${j}]`); bloques(it.bloques, `${r}.items[${j}]`); });
+    (ej.items || []).forEach((it, j) => {
+      marcador(it.marcador, `${r}.items[${j}]`); bloques(it.bloques, `${r}.items[${j}]`);
+      if (it.alLado !== undefined && typeof it.alLado !== "boolean") av(`${r}.items[${j}].alLado`, "tendría que ser true o false");
+      if (it.alLado && j === 0) av(`${r}.items[${j}].alLado`, "el primer ítem no tiene un ítem anterior al que ponerse al lado");
+    });
     if (!ej.bloques && !ej.items) av(r, "no tiene ni bloques ni ítems");
   });
   return { errores, avisos };

@@ -123,10 +123,11 @@ Se usa este `estilo` en todas las resoluciones:
 - Primera fila con todo verdadero; valores V y F.
 - Debajo de la tabla, en azul: «fórmula: Tautología» (o Contingencia, o Contradicción),
   aunque la consigna no pida clasificar.
-- **Si la tabla no entra a lo ancho, sigue debajo** en otra tabla, que repite las
-  columnas de las variables. Antes de la segunda tabla va
-  `{ "texto": "Continuación de la tabla:", "color": "gris", "tam": "S", "unir": true,
-  "continua": "La tabla sigue en la siguiente hoja" }`.
+- **Si la tabla no entra a lo ancho, sigue debajo** (o en la hoja siguiente) en otra
+  tabla, que repite las columnas de las variables. Al pie de la tabla que se corta va,
+  en gris, «(La tabla continúa)», en el mismo bloque de pasos que la tabla. Antes de la
+  segunda tabla va `{ "texto": "Continuación de la tabla:", "color": "gris", "tam": "S",
+  "unir": true, "continua": "" }` (sin aviso de hoja: ya avisa el pie de la tabla).
 
 ## Nombres de las leyes del álgebra proposicional
 
@@ -338,3 +339,31 @@ Se usa este `estilo` en todas las resoluciones:
 - El circuito se dibuja con el generador `tabla` (`mostrarTabla: false`,
   `interruptores: true`). El generador escribe la fórmula arriba del circuito; si el
   circuito es parte de la consigna, ese texto hay que borrarlo a mano en la pizarra.
+
+## Álgebra de Boole
+
+- **Notación**: el complemento se escribe con prima (A', (A + B)'), porque la barra
+  arriba no se puede escribir en un renglón; se aclara una vez en una nota. El producto
+  va con punto y sin espacios (A·B'·C) y la suma con espacios (A·B + C).
+- **Tablas de verdad** con el item `tabla` de los pasos (no con el generador `tabla`, que
+  escribe ∧, ∨ y ¬): `"lineas": true`, `"alinear": "centro"` y `"columnasFijas"` con la
+  cantidad de variables, para que la línea gruesa quede después de ellas. Valores 0 y 1,
+  la primera fila con todo en 0 (así el número de cada fila es el del minitérmino), una
+  columna por subexpresión y la de la función en azul. Las celdas dejan a lo sumo el
+  ancho de un carácter de margen a cada lado (la tabla queda angosta). Si aun así no
+  entra a lo ancho, se parte como se explica en «Tablas de verdad».
+- **Simplificaciones**: un paso por renglón, lo que cambia en violeta y la nota con el
+  nombre de la ley y la ley escrita («Absorción parcial: A + A'·B = A + B»). Los nombres
+  son los del manual complementario: identidad, complemento, idempotencia,
+  conmutatividad, asociatividad, distributividad, inversa distributiva, De Morgan,
+  elementos dominantes, absorción total, absorción parcial, involución y teorema del
+  consenso.
+- **Forma estándar**: a cada producto que le falta una variable X se lo multiplica por
+  1 (identidad) y el 1 se cambia por X + X' (complemento); en un producto de sumas, se
+  suma 0 y se cambia por X·X'. Al final, la forma con Σm(…) o ΠM(…).
+- **Verificar una ecuación**: «Miembro izquierdo» y «Miembro derecho» en secciones, y la
+  comparación en un renglón. Si los miembros simplificados no son iguales, se escriben
+  los dos en forma estándar para mostrar que son distintos (no con un contraejemplo).
+- **Circuitos con compuertas**: se dibujan con el generador `boole` (solo `circuito`). El
+  generador escribe la ecuación arriba del circuito; si el circuito es parte de la
+  consigna, ese texto hay que borrarlo a mano en la pizarra.
