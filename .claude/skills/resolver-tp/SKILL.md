@@ -26,9 +26,11 @@ sirve para otras resoluciones, agrégalo ahí.
    cuidado: exponentes, signos, fracciones. Si algo no se lee bien, pregúntalo; no lo
    adivines.
 2. **Ubicar la carpeta**:
-   `solucionarios/<materia>/<institucion>/<año>/<tp>/solucion.json`, con nombres en
-   minúsculas, sin tildes y con guiones (`matematica-1/utn-frba/2026/tp-03-factorizacion`).
-   Si no sabes la materia, la institución o el año, pregunta.
+   `solucionarios/<materia>/<institucion>/<año> - cuatrimestre <n>/<tp>/solucion.json`,
+   con nombres en minúsculas, sin tildes y con guiones
+   (`matematica-1/utn-frba/2026 - cuatrimestre 2/tp-03-factorizacion`). La materia se
+   dicta una vez por cuatrimestre: la carpeta del año lleva el cuatrimestre.
+   Si no sabes la materia, la institución, el año o el cuatrimestre, pregunta.
 3. **Resolver cada ejercicio** como lo explicaría un docente en el pizarrón, para chicos
    que están aprendiendo:
    - una operación por renglón; con fracciones, primero el denominador común;

@@ -11,7 +11,7 @@ exporta a PDF.
 
 ```
 solucionarios/
-  <materia>/<institucion>/<año>/<tp>/
+  <materia>/<institucion>/<año> - cuatrimestre <n>/<tp>/
     solucion.json       ← la resolución (lo que se edita y se revisa)
     solucion.excalidraw ← cómo quedó en la pizarra, con las correcciones a mano
     solucion.pdf        ← lista para imprimir
