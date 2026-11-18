@@ -1,14 +1,14 @@
 {
  "formato": "unzip.mat/solucion@1",
- "titulo": "Matemática 1 — Manual de teoría",
+ "titulo": "Matemática 1 — Manual complementario",
  "subtitulo": "Definiciones, propiedades y fórmulas para consultar",
- "cabecera": "Matemática 1\nManual de teoría",
+ "cabecera": "Matemática 1\nManual complementario",
  "pie": "Hoja {n} de {total}",
  "meta": {
   "materia": "Matemática 1",
   "institucion": "AUSC-PUC-LSI",
   "anio": 2026,
-  "tp": "Manual de teoría",
+  "tp": "Manual complementario",
   "fuente": "Material complementario de Matemática 1 del Repo AUSC - LSI - PUC (Notion); Unidad 4: MATE_INICIAL V 2.1, capítulo XVII (Grafos)",
   "autores": [
    "unzip.mat"
@@ -849,6 +849,23 @@
            "entero": true
           }
          ]
+        },
+        {
+         "seccion": "Atransitiva",
+         "bloques": [
+          {
+           "texto": "Si x está relacionado con y e y con z, x no está relacionado con z."
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "∀x, y, z ∈ A: (x, y) ∈ R ∧ (y, z) ∈ R → (x, z) ∉ R"
+            }
+           ],
+           "entero": true
+          }
+         ]
         }
        ]
       },
@@ -1116,7 +1133,7 @@
        ]
       },
       {
-       "seccion": "Par ordenado (A, ∗)",
+       "seccion": "Posibles estructuras a partir de un par ordenado (A, ∗)",
        "bloques": [
         {
          "seccion": "Monoide",
@@ -1153,7 +1170,7 @@
        ]
       },
       {
-       "seccion": "Terna ordenada (A, +, ∗)",
+       "seccion": "Posibles estructuras a partir de una terna ordenada (A, +, ∗)",
        "bloques": [
         {
          "seccion": "Anillo",
@@ -1538,6 +1555,18 @@
           {
            "rel": "",
            "der": "A · B + A' · C + B · C"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "A · B + A' · C + B · C · ",
+            {
+             "t": "1",
+             "color": "producto"
+            }
+           ],
+           "nota": "Identidad: A · 1 = A",
+           "notaColor": "producto"
           },
           {
            "rel": "=",
@@ -2947,6 +2976,95 @@
         }
        ],
        "entero": true
+      }
+     ],
+     "marcador": {
+      "nivel": 2
+     }
+    },
+    {
+     "seccion": "Forma trigonométrica (polar)",
+     "bloques": [
+      {
+       "texto": "Con el módulo |z| y el argumento θ:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "z = |z| · (cos θ + i · sen θ)"
+        }
+       ],
+       "entero": true
+      }
+     ],
+     "marcador": {
+      "nivel": 2
+     }
+    },
+    {
+     "seccion": "Raíces enésimas",
+     "bloques": [
+      {
+       "texto": "Todo complejo z ≠ 0 tiene exactamente n raíces enésimas distintas w₀, w₁, …, wₙ₋₁ (wₖⁿ = z):"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "wₖ = ",
+          {
+           "raiz": [
+            "|z|"
+           ],
+           "indice": "n"
+          },
+          " · (cos ",
+          {
+           "frac": [
+            "θ + 360° · k",
+            "n"
+           ]
+          },
+          " + i · sen ",
+          {
+           "frac": [
+            "θ + 360° · k",
+            "n"
+           ]
+          },
+          ")"
+         ]
+        },
+        {
+         "rel": "",
+         "der": "k = 0, 1, 2, …, n − 1"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "seccion": "Cómo hallarlas",
+       "bloques": [
+        {
+         "texto": "1. Escribir z en forma trigonométrica: calcular |z| y θ."
+        },
+        {
+         "texto": "2. El módulo de todas las raíces es ⁿ√|z| (raíz real positiva)."
+        },
+        {
+         "texto": "3. Los argumentos son (θ + 360° · k) / n, para k = 0, 1, …, n − 1."
+        },
+        {
+         "texto": "4. Reemplazar cada argumento en la fórmula para obtener w₀, w₁, …, wₙ₋₁."
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: las n raíces están sobre una circunferencia de radio ⁿ√|z|, separadas 360°/n: son los vértices de un polígono regular de n lados. Con k ≥ n se repiten las mismas raíces.",
+       "color": "gris",
+       "tam": "S"
       }
      ],
      "marcador": {
