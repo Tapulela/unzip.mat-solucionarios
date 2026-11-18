@@ -106,9 +106,10 @@ Se usa este `estilo` en todas las resoluciones:
   siguiente).
 - Una nota gris que explica lo que viene abajo (una tabla, un desarrollo) lleva
   `"unir": true`, para que no quede sola al pie de una hoja.
-- Si un ejercicio sigue en la hoja siguiente, se avisa en gris al pie de la hoja
+- Si un ejercicio o un ítem sigue en la hoja siguiente, se avisa en gris al pie de la hoja
   (`estilo.continuacion`): «(Continúa en la siguiente hoja)» o «(Continúa la consigna en
-  la siguiente hoja)».
+  la siguiente hoja)». Si la hoja siguiente empieza un ejercicio o un ítem nuevo, no se
+  avisa: no hay nada que continúe.
 
 ## Tablas de verdad
 

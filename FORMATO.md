@@ -44,7 +44,7 @@ se encarga la pizarra.
 | `estilo.sangriaEnunciado` | Dónde empiezan los renglones de la consigna después del primero: `"rotulo"` (debajo del texto, después de «Ejercicio 4:», lo que se usa si falta) o un número, la sangría medida desde el comienzo del rótulo (por ejemplo `24`). |
 | `estilo.margenes` | Márgenes de las hojas A4, en mm: `{ "sup": 10, "inf": 10, "ext": 10, "lomo": 15 }`. Al importar pasan al panel de Hojas A4 (valen para las hojas nuevas). Si falta, quedan los del panel. |
 | `estilo.dobleFaz` | `true` para que el lomo cambie de lado en las hojas pares (impresión de los dos lados). |
-| `estilo.continuacion` | `true` para avisar en gris, al pie de la hoja, cuando un ejercicio sigue en la hoja siguiente: «(Continúa en la siguiente hoja)», o «(Continúa la consigna en la siguiente hoja)» si se corta un enunciado. Un enunciado nunca se corta si entra en una hoja. |
+| `estilo.continuacion` | `true` para avisar en gris, al pie de la hoja, cuando un ejercicio o un ítem sigue en la hoja siguiente: «(Continúa en la siguiente hoja)», o «(Continúa la consigna en la siguiente hoja)» si se corta un enunciado. Si la hoja siguiente empieza un ejercicio o un ítem nuevo, no se avisa. Un enunciado nunca se corta si entra en una hoja. |
 
 ## Ejercicios e ítems
 
