@@ -208,6 +208,11 @@ escala y el doble faz del panel de Hojas A4. Cada bloque se corta en renglones y
 renglones pasan a la hoja siguiente cuando no entran. Un título o un enunciado nunca
 queda solo al pie de una hoja.
 
+El dibujo de un generador no se parte si entra en una hoja. La excepción es la regla de
+los signos (`inecuaciones2` y `racionales`): se puede partir entre un caso y el
+siguiente, y la hoja nueva empieza repitiendo la cabecera (la inecuación con su llave
+y la regla de los signos).
+
 Si un renglón es más ancho que el área útil, al importar aparece un aviso. En ese caso
 conviene partir el paso, acortar la nota o usar `"tam": "S"`.
 

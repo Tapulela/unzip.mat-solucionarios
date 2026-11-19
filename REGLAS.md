@@ -104,6 +104,11 @@ Se usa este `estilo` en todas las resoluciones:
 
 - Una consigna no se corta entre dos hojas (la pizarra la pasa entera a la hoja
   siguiente).
+- No se dejan medias hojas en blanco por un dibujo de la regla de los signos
+  (generadores `inecuaciones2` y `racionales`): se parte entre un caso y el
+  siguiente, y arriba de la hoja nueva se repite la cabecera (la inecuación con
+  su llave y la regla, por ejemplo «+/+ ∨ −/−»), con el tallo de la llave bajando
+  hasta el caso. La pizarra lo hace sola al importar.
 - Una nota gris que explica lo que viene abajo (una tabla, un desarrollo) lleva
   `"unir": true`, para que no quede sola al pie de una hoja.
 - Si un ejercicio o un ítem sigue en la hoja siguiente, se avisa en gris al pie de la hoja
@@ -286,7 +291,8 @@ Se usa este `estilo` en todas las resoluciones:
 ## Rectas reales
 
 - Se dibujan con el estilo de **líneas** (`"estilo": "lineas"`), no rayado: se imprimen
-  en blanco y negro.
+  en blanco y negro. Lo mismo las rectas de cada caso en los generadores
+  `inecuaciones2`, `racionales` y `valorAbsoluto`: `"estiloRecta": "lineas"` en `op`.
 - Los números no se pueden pisar. Si dos extremos quedan muy cerca, se agranda la
   recta (`"largo": "larga"`) o cada intervalo va a su propia altura.
 - Para decidir si un argumento es válido se arma la tabla de verdad de su forma
