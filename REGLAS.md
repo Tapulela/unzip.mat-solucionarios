@@ -319,6 +319,11 @@ Se usa este `estilo` en todas las resoluciones:
   (propiedad uniforme): «x² + 1 − 1 = 0 − 1», con los dos «− 1» en verde. Como `izq` no
   admite colores, esos renglones van enteros en `der`, con `"rel": ""` y espacios
   delante para que los «=» queden alineados.
+- **Nunca se multiplica en cruz.** Para sacar los denominadores de una igualdad entre
+  fracciones se aplica la propiedad uniforme una vez por cada denominador: se
+  multiplican los dos miembros por el primer denominador (en color en los dos), se
+  simplifica, y después lo mismo con el otro. Si el denominador tiene una variable, se
+  aclara que no puede valer 0.
 - **Definición y después reemplazo.** Si se usa una definición (A Δ B, A − B, Aᶜ), primero
   se escribe la definición y en el renglón siguiente se reemplaza.
 - **Reemplazos alineados**: lo que se reemplaza se escribe en el renglón de abajo,
