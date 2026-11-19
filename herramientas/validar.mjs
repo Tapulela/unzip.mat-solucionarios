@@ -108,8 +108,20 @@ export function revisar(sol) {
         else if (i === 0 || b.seccion !== undefined) av(rb + ".alLado", "va al lado del bloque anterior de la misma lista (no en el primero ni en una sección)");
       }
       if (b.texto !== undefined) { texto(String(b.texto), rb); color(b.color, rb + ".color"); return; }
-      if (Array.isArray(b.pasos)) { b.pasos.forEach((l, j) => renglon(l, `${rb}.pasos[${j}]`, j, b.pasos)); return; }
-      if (b.generador) { if (!GENERADORES.includes(b.generador)) err(rb, `no existe el generador «${b.generador}»`); return; }
+      if (Array.isArray(b.pasos)) {
+        if (b.notas !== undefined && b.notas !== "arriba") av(rb + ".notas", "tendría que ser \"arriba\" (o no ponerse: van a la derecha)");
+        // la acción se anuncia antes de hacerse: el primer renglón no lleva nota
+        const r0 = b.pasos[0];
+        if (r0 && typeof r0 === "object" && !Array.isArray(r0) && r0.nota)
+          av(`${rb}.pasos[0].nota`, "el primer renglón no se anuncia: escribí primero la expresión sola y la acción en el renglón donde se hace");
+        b.pasos.forEach((l, j) => renglon(l, `${rb}.pasos[${j}]`, j, b.pasos));
+        return;
+      }
+      if (b.generador) {
+        if (!GENERADORES.includes(b.generador)) err(rb, `no existe el generador «${b.generador}»`);
+        if (b.partir !== undefined && typeof b.partir !== "boolean") av(rb + ".partir", "tendría que ser true o false");
+        return;
+      }
       if (b.seccion !== undefined) {
         texto(String(b.seccion), rb + ".seccion"); color(b.color, rb + ".color"); marcador(b.marcador, rb);
         if (!Array.isArray(b.bloques) || !b.bloques.length) av(rb, "una sección sin «bloques» queda vacía");

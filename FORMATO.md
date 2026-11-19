@@ -85,10 +85,12 @@ se encarga la pizarra.
 | `{ "texto": "...", "color": "gris", "tam": "S" }` | Un párrafo. Un `"..."` suelto también vale como texto. |
 | `{ "pasos": [ renglones ] }` | Un desarrollo paso a paso (ver abajo). |
 | `{ "generador": "recta", "op": { ... } }` | Un gráfico armado con un generador de la pizarra. Queda vinculado: al seleccionarlo se edita desde su panel. |
+| `"partir": true` (en un bloque de generador) | El dibujo se puede repartir entre hojas renglón por renglón, como un desarrollo, en vez de pasar entero a la hoja siguiente. Sirve para cálculos largos sin gráfico (las raíces n-ésimas de `raicesC`). Los títulos del cálculo no quedan solos al pie. La parte de cada hoja ya no se edita desde el panel. |
 | `{ "seccion": "Título", "bloques": [ ... ] }` | Una sección: el título subrayado (del tamaño del texto, en azul o en `color`) y sus bloques debajo, con sangría y una línea vertical a la izquierda que acompaña cada renglón, también si la sección sigue en otra hoja. Las secciones se pueden anidar. |
 | `{ "salto": true }` | Empieza una hoja nueva. |
 | `"unir": true` (en un bloque de texto) | El texto no se separa de lo que le sigue: si no entra, pasa a la hoja siguiente junto con el bloque de abajo. Sirve para «La tabla sigue:». |
 | `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. Con `""` no se escribe ningún aviso (por ejemplo, si el bloque anterior ya termina con «(La tabla continúa)»). |
+| `"notas": "arriba"` (en un bloque de pasos) | La nota de cada paso se escribe en su propio renglón, arriba del renglón donde se hace (y no a la derecha). Sirve para desarrollos angostos. Un bloque de pasos con `alLado` que no entra con las notas a la derecha se rehace solo con las notas arriba. |
 | `"entero": true` (en un bloque de pasos) | El desarrollo no se parte entre dos hojas: si no entra al pie, pasa entero a la siguiente (si entra en una hoja). Los dibujos de los generadores ya se comportan así. |
 | `{ "espacio": 2 }` | Deja lugar libre (en renglones), por ejemplo para completar a mano. |
 | `"alLado": true` (en cualquier bloque menos una sección) | El bloque va a la derecha del bloque anterior de la misma lista, alineado arriba; con `"centro"`, centrado en vertical. Los dos quedan juntos y no se parten entre hojas. Sirve para dos recuadros cortos en un renglón o para los resultados al lado de un gráfico. Si no entra a lo ancho, va debajo, con un aviso. |
@@ -104,7 +106,7 @@ se encarga la pizarra.
 | `izq` | Lo que va a la izquierda de la relación (`P(x)`, `x₁,₂`). Los `=` de un bloque quedan alineados. |
 | `rel` | La relación (`=`, `<`, `⇔`…). Si hay `izq` y falta `rel`, es `=`. Con `rel` y sin `izq` sale un renglón que sigue al anterior: `  = …`. Sin las dos, el renglón empieza en el margen. |
 | `der` | La expresión: un item o una lista de items. Un renglón que es solo un texto o una lista vale como `der`. |
-| `nota` | Qué se hace en **este** paso: un texto o una lista de renglones. Se dibuja a la derecha del renglón **anterior**, o sea, se anuncia antes de hacerlo. |
+| `nota` | Qué se hace en **este** paso: un texto o una lista de renglones. Se dibuja a la derecha del renglón **anterior** (o arriba de este renglón, con `"notas": "arriba"`), o sea, se anuncia antes de hacerlo. El primer renglón de un bloque no lleva nota: es la expresión de partida. |
 | `notaColor` | Color de la nota. Conviene que sea el mismo color de lo que cambia en el paso. |
 | `color` | Color de todo el renglón (por ejemplo, el resultado final). |
 | `caja` | Recuadro redondeado alrededor de la expresión: `true` o un color. |
@@ -162,6 +164,11 @@ generadores de la pizarra):
 `plantillas`. En `op` van las opciones del generador. Lo que no se pone queda como en el
 panel. La forma más fácil de averiguar las opciones es armar el gráfico en la pizarra,
 seleccionarlo y mirar `customData.pizarra.opciones` en el archivo `.excalidraw`.
+
+Las raíces n-ésimas (`raicesC`): cada fila es `{ "nombre": "w", "texto": "5 + 9i", "n": "3" }`.
+`"columnas": 2` escribe las raíces en dos columnas (la primera mitad a la izquierda); si
+no entran a lo ancho de la hoja, la pizarra las deja en una columna. `"grafico": false`
+para no dibujar el plano.
 
 Un gráfico de funciones (`funcion`): cada fila es una función de JavaScript
 (`"x => x**2 - 9"`; la potencia es `**` y un menos delante de una potencia va

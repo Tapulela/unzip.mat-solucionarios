@@ -104,6 +104,14 @@ Se usa este `estilo` en todas las resoluciones:
 
 - Una consigna no se corta entre dos hojas (la pizarra la pasa entera a la hoja
   siguiente).
+- **Los desarrollos algebraicos se parten entre hojas**: si un ejercicio no entra, se
+  escribe lo que entra, la hoja termina con «(Continúa en la siguiente hoja)» y los
+  pasos siguen en la otra. No es todo o nada: los bloques de pasos no llevan
+  `"entero": true` (salvo los casos que piden ir juntos, como cada caso evaluado de
+  una relación), así no quedan hojas casi vacías con solo una consigna.
+- **No dejar espacios en blanco**: solo pasa entero a la hoja siguiente lo que no se
+  puede partir (una consigna, un gráfico). Un cálculo largo de un generador lleva
+  `"partir": true`.
 - No se dejan medias hojas en blanco por un dibujo de la regla de los signos
   (generadores `inecuaciones2` y `racionales`): se parte entre un caso y el
   siguiente, y arriba de la hoja nueva se repite la cabecera (la inecuación con
@@ -310,6 +318,26 @@ Se usa este `estilo` en todas las resoluciones:
 - **Sin referencia** cuando la función por tramos ya está escrita arriba
   (`"referencia": false`): la referencia muestra el código (`sqrt(x)`, `-1`).
 
+## Números complejos
+
+- **Operación con gráfico: el gráfico a la izquierda y la resolución a la derecha.** Si
+  la consigna pide representar en el plano (de Argand), el bloque del generador
+  `complejos` va primero y el desarrollo, en un solo bloque de pasos, con
+  `"alLado": true`. Si el desarrollo no entra al lado con las notas a la derecha, las
+  notas van arriba de cada renglón: la acción en un renglón y la expresión
+  resultante en el de abajo (la pizarra lo hace sola).
+- El gráfico va antes que el desarrollo para que nunca quede separado de su ítem (si
+  va después, puede caer en la hoja del ítem siguiente).
+- Si al lado del gráfico va un desarrollo largo, al lado va solo la primera parte (por
+  ejemplo, el paréntesis) y el resto sigue debajo, en un bloque que se puede partir
+  entre hojas: así el bloque del gráfico entra en lo que queda de la hoja.
+- **Raíces n-ésimas** con el generador `raicesC`, con `"partir": true` (el cálculo se
+  reparte entre hojas, sin dejar hojas a medio llenar) y `"columnas": 2` (las raíces en
+  dos columnas, si entran a lo ancho).
+- Cociente: se multiplica arriba y abajo por el conjugado del denominador; arriba, la
+  distributiva y abajo (c + di)(c − di) = c² + d²; después i² = −1, agrupar y separar
+  la parte real y la imaginaria.
+
 ## Aprovechar el espacio
 
 - **Recuadros cortos en un mismo renglón**: dos resultados que se leen juntos («f
@@ -329,6 +357,13 @@ Se usa este `estilo` en todas las resoluciones:
   resolver un paréntesis), con su nota.
 
 ## Pasos de un desarrollo
+
+- **Primero la acción y después la expresión donde se hace.** La nota anuncia el paso:
+  va al lado del renglón anterior (o arriba del renglón, si las notas van arriba) y la
+  expresión de abajo muestra el resultado. Por eso el desarrollo empieza con la
+  operación sola («z₁ + z₂», sin nota), y en el renglón siguiente se reemplaza
+  («= (4 + 5i) + (3 − 2i)», con la nota «Reemplazar»). Nunca una nota al lado de la
+  expresión donde ya se hizo lo que dice.
 
 - **Nunca más de un paso por renglón**, en todos los temas: ni cadenas como
   «(1 ∗ 1) ∗ 0 = 2 ∗ 0 = 4», ni dentro de un párrafo de texto. Cada igualdad del
