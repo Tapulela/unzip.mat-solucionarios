@@ -230,6 +230,11 @@ los signos (`inecuaciones2` y `racionales`): se puede partir entre un caso y el
 siguiente, y la hoja nueva empieza repitiendo la cabecera (la inecuación con su llave
 y la regla de los signos).
 
+Un gráfico que se extiende a la izquierda de su lugar (por ejemplo, un plano complejo con la
+parte negativa del eje real) se corre a la derecha hasta alinearse con el rótulo de su ítem,
+para no salirse del área útil. Si un bloque con `alLado` no entra con la separación de siempre,
+se prueba con la mitad. Las líneas verticales de las secciones nunca se salen del área útil.
+
 Si un renglón es más ancho que el área útil, al importar aparece un aviso. En ese caso
 conviene partir el paso, acortar la nota o usar `"tam": "S"`.
 
