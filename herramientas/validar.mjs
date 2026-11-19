@@ -111,6 +111,7 @@ export function revisar(sol, opc = {}) {
       if (b.texto !== undefined) { texto(String(b.texto), rb); color(b.color, rb + ".color"); return; }
       if (Array.isArray(b.pasos)) {
         if (b.notas !== undefined && b.notas !== "arriba") av(rb + ".notas", "tendría que ser \"arriba\" (o no ponerse: van a la derecha)");
+        if (b.tam !== undefined && !TAMS.includes(b.tam)) av(rb + ".tam", `tendría que ser ${TAMS.join(", ")}`);
         // la acción se anuncia antes de hacerse: el primer renglón no lleva nota
         const r0 = b.pasos[0];
         if (r0 && typeof r0 === "object" && !Array.isArray(r0) && r0.nota)

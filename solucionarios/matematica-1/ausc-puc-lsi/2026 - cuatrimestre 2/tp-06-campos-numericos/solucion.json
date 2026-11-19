@@ -3865,11 +3865,51 @@
             "t": "Paso 3: Probar para n = k + 1",
             "color": "azul"
            }
-          },
+          }
+         ],
+         "entero": true,
+         "unir": true
+        },
+        {
+         "pasos": [
           {
            "rel": "",
            "der": [
-            "Objetivo: ",
+            " ",
+            {
+             "frac": [
+              "1",
+              "1 · 3"
+             ]
+            },
+            " + … + ",
+            {
+             "frac": [
+              "1",
+              "(2k − 1)(2k + 1)"
+             ]
+            },
+            " ",
+            " + ",
+            {
+             "frac": [
+              "1",
+              [
+               "(2",
+               {
+                "t": "(k + 1)",
+                "color": "producto"
+               },
+               " − 1)(2",
+               {
+                "t": "(k + 1)",
+                "color": "producto"
+               },
+               " + 1)"
+              ]
+             ]
+            },
+            " = ",
             {
              "frac": [
               {
@@ -3886,12 +3926,10 @@
               ]
              ]
             }
-           ],
-           "nota": "Reemplazar n = k + 1",
-           "notaColor": "producto"
+           ]
           }
          ],
-         "entero": true
+         "tam": "S"
         },
         {
          "pasos": [
@@ -4253,11 +4291,24 @@
             "t": "Paso 3: Probar para n = k + 1",
             "color": "azul"
            }
-          },
+          }
+         ],
+         "entero": true,
+         "unir": true
+        },
+        {
+         "pasos": [
           {
            "rel": "",
            "der": [
-            "Objetivo: ",
+            "1 + r + r² + … + rᵏ⁻¹",
+            " + r",
+            {
+             "t": "⁽ᵏ⁺¹⁾",
+             "color": "producto"
+            },
+            "⁻¹",
+            " = ",
             {
              "frac": [
               [
@@ -4271,12 +4322,9 @@
               "r − 1"
              ]
             }
-           ],
-           "nota": "Reemplazar n = k + 1",
-           "notaColor": "producto"
+           ]
           }
-         ],
-         "entero": true
+         ]
         },
         {
          "pasos": [
@@ -4618,11 +4666,24 @@
             "t": "Paso 3: Probar para n = k + 1",
             "color": "azul"
            }
-          },
+          }
+         ],
+         "entero": true,
+         "unir": true
+        },
+        {
+         "pasos": [
           {
            "rel": "",
            "der": [
-            "Objetivo: ",
+            "1² + 2² + 3² + … + k²",
+            " + ",
+            {
+             "t": "(k + 1)",
+             "color": "producto"
+            },
+            "²",
+            " = ",
             {
              "frac": [
               [
@@ -4645,12 +4706,10 @@
               "6"
              ]
             }
-           ],
-           "nota": "Reemplazar n = k + 1",
-           "notaColor": "producto"
+           ]
           }
          ],
-         "entero": true
+         "tam": "S"
         },
         {
          "pasos": [
@@ -5056,11 +5115,24 @@
           "t": "Paso 3: Probar para n = k + 1",
           "color": "azul"
          }
-        },
+        }
+       ],
+       "entero": true,
+       "unir": true
+      },
+      {
+       "pasos": [
         {
          "rel": "",
          "der": [
-          "Objetivo: ",
+          "1³ + 2³ + 3³ + … + k³",
+          " + ",
+          {
+           "t": "(k + 1)",
+           "color": "producto"
+          },
+          "³",
+          " = ",
           {
            "frac": [
             [
@@ -5078,12 +5150,10 @@
             "4"
            ]
           }
-         ],
-         "nota": "Reemplazar n = k + 1",
-         "notaColor": "producto"
+         ]
         }
        ],
-       "entero": true
+       "tam": "S"
       },
       {
        "pasos": [
@@ -5484,11 +5554,50 @@
           "t": "Paso 3: Probar para n = k + 1",
           "color": "azul"
          }
-        },
+        }
+       ],
+       "entero": true,
+       "unir": true
+      },
+      {
+       "pasos": [
         {
          "rel": "",
          "der": [
-          "Objetivo: ",
+          " ",
+          {
+           "frac": [
+            "1",
+            "1 · 2"
+           ]
+          },
+          " + … + ",
+          {
+           "frac": [
+            "1",
+            "k(k + 1)"
+           ]
+          },
+          " ",
+          " + ",
+          {
+           "frac": [
+            "1",
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             "(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1)"
+            ]
+           ]
+          },
+          " = ",
           {
            "frac": [
             {
@@ -5504,12 +5613,10 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar n = k + 1",
-         "notaColor": "producto"
+         ]
         }
        ],
-       "entero": true
+       "tam": "S"
       },
       {
        "pasos": [

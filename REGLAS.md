@@ -155,7 +155,8 @@ Se usa este `estilo` en todas las resoluciones:
 
 - La absorción se nombra siempre con su tipo: **absorción total**
   (A ∪ (A ∩ B) = A, A ∩ (A ∪ B) = A) o **absorción parcial**
-  (A ∪ (Aᶜ ∩ B) = A ∪ B, A ∩ (Aᶜ ∪ B) = A ∩ B).
+  (A ∪ (Aᶜ ∩ B) = A ∪ B, A ∩ (Aᶜ ∪ B) = A ∩ B). Vale igual en lógica proposicional
+  ((p ∨ q) ∧ p ≡ p es absorción total) y en álgebra de Boole: nunca «absorción» sola.
 
 ## Demostraciones
 
@@ -171,6 +172,12 @@ Se usa este `estilo` en todas las resoluciones:
   que existen otros, nombrándolos: tabla de verdad, simplificación con las leyes del
   álgebra proposicional, razonamiento deductivo, mostrar que el bicondicional es una
   tautología. Si conviene, se dice por qué se eligió ese.
+- **Inducción, paso 3**: la primera expresión del paso 3 es la igualdad completa para
+  n = k + 1, con el objetivo escrito como miembro derecho («1 + … + (k + 1)² =
+  (k + 1)(k + 2)(2k + 3)/6»), no un «Objetivo: …» aparte. Si no entra a lo ancho, ese
+  renglón va más chico (un bloque de pasos con `"tam": "S"`, y el título «Paso 3» con
+  `"unir": true` para que no quede separado). Después se desarrolla el miembro
+  izquierdo, aplicando la hipótesis de inducción, hasta llegar al derecho.
 
 ## Relaciones binarias
 
@@ -315,6 +322,12 @@ Se usa este `estilo` en todas las resoluciones:
 - **Lo que acompaña al gráfico va a su lado**: los resultados cortos (Dom, Im,
   intervalos de crecimiento) van a la derecha del gráfico con `"alLado": "centro"`
   en el bloque del recuadro (o `true` para alinearlo arriba).
+- **Paridad**: para ver si una función es par (o impar) se escribe la ecuación de la
+  definición, f(−x) = f(x) (o f(−x) = −f(x)), se reemplaza en los dos miembros y se
+  opera en los dos hasta ver que son iguales (✓). No se parte de f(−x) para llegar a
+  f(x). Si no son iguales para todo x, se dice por qué y se da un contraejemplo.
+- **Valor absoluto**: se dice de qué es «lo de adentro»: «lo de adentro del valor
+  absoluto».
 - **Sin referencia** cuando la función por tramos ya está escrita arriba
   (`"referencia": false`): la referencia muestra el código (`sqrt(x)`, `-1`).
 

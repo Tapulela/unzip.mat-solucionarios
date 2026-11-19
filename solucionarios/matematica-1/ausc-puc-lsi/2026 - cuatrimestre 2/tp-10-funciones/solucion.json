@@ -105,8 +105,7 @@
          "rel": "",
          "der": "a = b"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "Como m(a) = m(b) implica a = b, m es inyectiva.",
@@ -167,8 +166,7 @@
           }
          ]
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "Para cualquier y ∈ ℝ, x = y dividido 2 es un número real. Verificación:"
@@ -287,8 +285,7 @@
          "rel": "",
          "der": "a = b"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "Nota para el estudiante: en ℝ, la raíz cúbica de un número es única (no aparece ± como en la raíz cuadrada), por eso ∛(a³) = a para todo a ∈ ℝ.",
@@ -342,8 +339,7 @@
           }
          ]
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "La raíz cúbica existe para todo y ∈ ℝ, también para los negativos (por ejemplo ∛(−8) = −2). Verificación:"
@@ -695,8 +691,7 @@
          "nota": "Cancelar −3 + 3",
          "notaColor": "suma"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
@@ -785,8 +780,7 @@
          "nota": "Simplificar el 4",
          "notaColor": "producto"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
@@ -857,8 +851,7 @@
          "nota": "Quitar el paréntesis",
          "notaColor": "producto"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
@@ -936,8 +929,7 @@
          "rel": "=",
          "der": "−2"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "f(−1) = −2 y f(1) = 0, entonces f(−1) ≠ f(1) y f no es par.",
@@ -1014,8 +1006,7 @@
           }
          ]
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
@@ -1144,8 +1135,7 @@
           }
          ]
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "El vértice es V = (−1/2, −9/4). Las raíces son x = −2 y x = 1, porque x² + x − 2 = (x + 2)(x − 1).",
@@ -1166,7 +1156,7 @@
         "xMax": "3",
         "yAuto": false,
         "yMin": "-3",
-        "yMax": "5",
+        "yMax": "4",
         "tamano": "mini",
         "escalaIgual": false,
         "tamNumeros": "S",
@@ -1176,7 +1166,7 @@
         "cuadrada": true,
         "soloEnteros": true,
         "ocultarNumeros": false,
-        "referencia": true,
+        "referencia": false,
         "posReferencia": "arriba",
         "marcarExtremos": true,
         "titulos": false
@@ -1298,8 +1288,7 @@
        "rel": "",
        "der": "x ≠ 1"
       }
-     ],
-     "entero": true
+     ]
     },
     {
      "pasos": [
@@ -1384,8 +1373,7 @@
          "rel": "",
          "der": "x ≥ 2"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
@@ -1432,8 +1420,7 @@
          "rel": "",
          "der": "f(x) ≥ 7"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "El valor 7 se alcanza en x = 2, porque f(2) = 7 + √0 = 7."
@@ -1510,8 +1497,7 @@
          "rel": "",
          "der": "t ≥ 5"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
@@ -1577,8 +1563,7 @@
          "rel": "",
          "der": "x ≠ −9"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
@@ -1758,56 +1743,59 @@
       {
        "pasos": [
         {
-         "izq": "f(−x)",
-         "der": [
-          "(",
-          {
-           "t": "−x",
-           "color": "producto"
-          },
-          ")² − |",
-          {
-           "t": "−x",
-           "color": "producto"
-          },
-          "|"
-         ]
+         "rel": "",
+         "der": "f(−x) = f(x)"
         },
         {
-         "rel": "=",
+         "rel": "",
+         "der": [
+          {
+           "t": "(−x)² − |−x|",
+           "color": "producto"
+          },
+          " = ",
+          {
+           "t": "x² − |x|",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
          "der": [
           {
            "t": "x²",
            "color": "producto"
           },
-          " − |−x|"
+          " − |−x| = x² − |x|"
          ],
          "nota": "(−x)² = x²",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
+         "rel": "",
          "der": [
           "x² − ",
           {
            "t": "|x|",
            "color": "producto"
+          },
+          " = x² − |x| ",
+          {
+           "marca": "ok"
           }
          ],
          "nota": "|−x| = |x|",
          "notaColor": "producto"
-        },
-        {
-         "rel": "=",
-         "der": "f(x)"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
         {
-         "der": "f(−x) = f(x), entonces f es par",
+         "der": "f(−x) = f(x) para todo x ∈ ℝ, entonces f es par",
          "color": "azul",
          "caja": "azul"
         }
@@ -1823,66 +1811,54 @@
       {
        "pasos": [
         {
-         "izq": "g(−x)",
-         "der": {
-          "frac": [
-           [
-            "3 · (",
-            {
-             "t": "−x",
-             "color": "producto"
-            },
-            ")"
-           ],
-           [
-            "(",
-            {
-             "t": "−x",
-             "color": "producto"
-            },
-            ")² + 1"
-           ]
-          ]
-         }
+         "rel": "",
+         "der": "g(−x) = −g(x)"
         },
         {
-         "rel": "=",
-         "der": {
-          "frac": [
-           {
-            "t": "−3x",
-            "color": "producto"
-           },
-           "(−x)² + 1"
-          ]
-         },
-         "nota": "3 · (−x) = −3x",
-         "notaColor": "producto"
-        },
-        {
-         "rel": "=",
-         "der": {
-          "frac": [
-           "−3x",
-           [
-            {
-             "t": "x²",
-             "color": "producto"
-            },
-            " + 1"
-           ]
-          ]
-         },
-         "nota": "(−x)² = x²",
-         "notaColor": "producto"
-        },
-        {
-         "rel": "=",
+         "rel": "",
          "der": [
           {
-           "t": "− ",
-           "color": "producto"
+           "frac": [
+            {
+             "t": "3 · (−x)",
+             "color": "producto"
+            },
+            {
+             "t": "(−x)² + 1",
+             "color": "producto"
+            }
+           ]
           },
+          " = − ",
+          {
+           "frac": [
+            {
+             "t": "3x",
+             "color": "producto"
+            },
+            {
+             "t": "x² + 1",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Reemplazar en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "−3x",
+             "color": "producto"
+            },
+            "(−x)² + 1"
+           ]
+          },
+          " = − ",
           {
            "frac": [
             "3x",
@@ -1890,20 +1866,68 @@
            ]
           }
          ],
-         "nota": "Sacar el signo − de la fracción",
+         "nota": "3 · (−x) = −3x",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": "−g(x)"
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "−3x",
+            [
+             {
+              "t": "x²",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          },
+          " = − ",
+          {
+           "frac": [
+            "3x",
+            "x² + 1"
+           ]
+          }
+         ],
+         "nota": "(−x)² = x²",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "−3x",
+            "x² + 1"
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            {
+             "t": "−3x",
+             "color": "producto"
+            },
+            "x² + 1"
+           ]
+          },
+          " ",
+          {
+           "marca": "ok"
+          }
+         ],
+         "nota": "Pasar el signo − al numerador",
+         "notaColor": "producto"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "pasos": [
         {
-         "der": "g(−x) = −g(x), entonces g es impar",
+         "der": "g(−x) = −g(x) para todo x ∈ ℝ, entonces g es impar",
          "color": "azul",
          "caja": "azul"
         }
@@ -1917,135 +1941,303 @@
      "enunciado": "h(x) = (x² + 2)/(x − 7)",
      "bloques": [
       {
-       "texto": "Se busca un contraejemplo con x = 1 y x = −1:"
-      },
-      {
-       "pasos": [
+       "seccion": "¿Es par?",
+       "bloques": [
         {
-         "izq": "h(1)",
-         "der": {
-          "frac": [
-           "1² + 2",
-           "1 − 7"
-          ]
-         }
-        },
-        {
-         "rel": "=",
-         "der": {
-          "frac": [
-           "3",
-           "−6"
-          ]
-         }
-        },
-        {
-         "rel": "=",
-         "der": [
-          "− ",
+         "pasos": [
           {
-           "frac": [
-            "1",
-            "2"
+           "rel": "",
+           "der": "h(−x) = h(x)"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "frac": [
+              {
+               "t": "(−x)² + 2",
+               "color": "producto"
+              },
+              {
+               "t": "−x − 7",
+               "color": "producto"
+              }
+             ]
+            },
+            " = ",
+            {
+             "frac": [
+              {
+               "t": "x² + 2",
+               "color": "producto"
+              },
+              {
+               "t": "x − 7",
+               "color": "producto"
+              }
+             ]
+            }
+           ],
+           "nota": "Reemplazar en los dos miembros",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "frac": [
+              [
+               {
+                "t": "x²",
+                "color": "producto"
+               },
+               " + 2"
+              ],
+              "−x − 7"
+             ]
+            },
+            " = ",
+            {
+             "frac": [
+              "x² + 2",
+              "x − 7"
+             ]
+            }
+           ],
+           "nota": "(−x)² = x²",
+           "notaColor": "producto"
+          }
+         ]
+        },
+        {
+         "texto": "Los numeradores son iguales, pero los denominadores solo coinciden si −x − 7 = x − 7, es decir, si x = 0: la igualdad no vale para todo x del dominio. Por ejemplo, con x = 1 y x = −1:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "izq": "h(1)",
+           "der": {
+            "frac": [
+             "1² + 2",
+             "1 − 7"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             "3",
+             "−6"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": [
+            "− ",
+            {
+             "frac": [
+              "1",
+              "2"
+             ]
+            }
            ]
           }
          ]
-        }
-       ],
-       "entero": true
-      },
-      {
-       "pasos": [
-        {
-         "izq": "h(−1)",
-         "der": {
-          "frac": [
-           "(−1)² + 2",
-           "−1 − 7"
-          ]
-         }
         },
         {
-         "rel": "=",
-         "der": {
-          "frac": [
-           "3",
-           "−8"
-          ]
-         }
-        },
-        {
-         "rel": "=",
-         "der": [
-          "− ",
+         "pasos": [
           {
-           "frac": [
-            "3",
-            "8"
+           "izq": "h(−1)",
+           "der": {
+            "frac": [
+             "(−1)² + 2",
+             "−1 − 7"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             "3",
+             "−8"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": [
+            "− ",
+            {
+             "frac": [
+              "3",
+              "8"
+             ]
+            }
            ]
           }
          ]
-        }
-       ],
-       "entero": true
-      },
-      {
-       "pasos": [
+        },
         {
-         "rel": "",
-         "der": [
-          "h(−1) = − ",
+         "pasos": [
           {
-           "frac": [
-            "3",
-            "8"
+           "rel": "",
+           "der": [
+            "h(−1) = − ",
+            {
+             "frac": [
+              "3",
+              "8"
+             ]
+            },
+            " ≠ − ",
+            {
+             "frac": [
+              "1",
+              "2"
+             ]
+            },
+            " = h(1)"
            ]
-          },
-          " ≠ − ",
-          {
-           "frac": [
-            "1",
-            "2"
-           ]
-          },
-          " = h(1)"
-         ]
-        }
-       ],
-       "entero": true
-      },
-      {
-       "texto": "Como h(−1) ≠ h(1), h no es par.",
-       "color": "azul"
-      },
-      {
-       "pasos": [
+          }
+         ],
+         "entero": true
+        },
         {
-         "rel": "",
-         "der": [
-          "h(−1) = − ",
-          {
-           "frac": [
-            "3",
-            "8"
-           ]
-          },
-          " ≠ ",
-          {
-           "frac": [
-            "1",
-            "2"
-           ]
-          },
-          " = −h(1)"
-         ]
+         "texto": "Como h(−1) ≠ h(1), h no es par.",
+         "color": "azul"
         }
-       ],
-       "entero": true
+       ]
       },
       {
-       "texto": "Como h(−1) ≠ −h(1), h no es impar.",
-       "color": "azul"
+       "seccion": "¿Es impar?",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "h(−x) = −h(x)"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "frac": [
+              {
+               "t": "(−x)² + 2",
+               "color": "producto"
+              },
+              {
+               "t": "−x − 7",
+               "color": "producto"
+              }
+             ]
+            },
+            " = − ",
+            {
+             "frac": [
+              {
+               "t": "x² + 2",
+               "color": "producto"
+              },
+              {
+               "t": "x − 7",
+               "color": "producto"
+              }
+             ]
+            }
+           ],
+           "nota": "Reemplazar en los dos miembros",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "frac": [
+              [
+               {
+                "t": "x²",
+                "color": "producto"
+               },
+               " + 2"
+              ],
+              "−x − 7"
+             ]
+            },
+            " = − ",
+            {
+             "frac": [
+              "x² + 2",
+              "x − 7"
+             ]
+            }
+           ],
+           "nota": "(−x)² = x²",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "frac": [
+              "x² + 2",
+              "−x − 7"
+             ]
+            },
+            " = ",
+            {
+             "frac": [
+              "x² + 2",
+              {
+               "t": "−x + 7",
+               "color": "producto"
+              }
+             ]
+            }
+           ],
+           "nota": "Pasar el signo − al denominador",
+           "notaColor": "producto"
+          }
+         ]
+        },
+        {
+         "texto": "Los numeradores son iguales y nunca valen 0 (x² + 2 > 0), pero los denominadores son distintos para todo x (−x − 7 ≠ −x + 7): la igualdad no se cumple. Por ejemplo, con x = 1:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            "h(−1) = − ",
+            {
+             "frac": [
+              "3",
+              "8"
+             ]
+            },
+            " ≠ ",
+            {
+             "frac": [
+              "1",
+              "2"
+             ]
+            },
+            " = −h(1)"
+           ]
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "Como h(−1) ≠ −h(1), h no es impar.",
+         "color": "azul"
+        }
+       ]
       },
       {
        "pasos": [
@@ -2120,8 +2312,7 @@
        "nota": "(√x)² = x, porque x ≥ 0",
        "notaColor": "producto"
       }
-     ],
-     "entero": true
+     ]
     },
     {
      "texto": "Dominio: x tiene que estar en el dominio de f, que es [0, +∞), y f(x) tiene que estar en el dominio de g, que es ℝ (esto se cumple siempre)."
@@ -2248,8 +2439,7 @@
          "nota": "Agrupar términos semejantes",
          "notaColor": "suma"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "Es un polinomio, y g y f están definidas en todo ℝ."
@@ -2318,8 +2508,7 @@
          "der": "x² − 2x + 3",
          "nota": "Quitar el paréntesis"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "Es un polinomio, y f y g están definidas en todo ℝ."
@@ -2384,8 +2573,7 @@
           " = 2   (x = 3 excluido: ○)"
          ]
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "generador": "funcion",
@@ -2493,8 +2681,7 @@
          "rel": "",
          "der": "2 en todo (4, +∞)   (x = 4 excluido: ○)"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "generador": "funcion",
@@ -2585,7 +2772,7 @@
      "enunciado": "y = |−2x − 2|",
      "bloques": [
       {
-       "texto": "Se busca dónde lo de adentro es mayor o igual que 0:"
+       "texto": "Se busca dónde lo de adentro del valor absoluto es mayor o igual que 0:"
       },
       {
        "pasos": [
@@ -2647,11 +2834,10 @@
          "rel": "",
          "der": "x ≤ −1"
         }
-       ],
-       "entero": true
+       ]
       },
       {
-       "texto": "Si x ≤ −1, y = −2x − 2. Si x > −1, lo de adentro es negativo y se le cambia el signo:"
+       "texto": "Si x ≤ −1, y = −2x − 2. Si x > −1, lo de adentro del valor absoluto es negativo y se le cambia el signo:"
       },
       {
        "pasos": [
@@ -2716,7 +2902,7 @@
         "xMax": "3",
         "yAuto": false,
         "yMin": "-1",
-        "yMax": "7",
+        "yMax": "5",
         "tamano": "mini",
         "escalaIgual": false,
         "tamNumeros": "S",
@@ -2755,7 +2941,7 @@
      "enunciado": "y = |x² − 9|",
      "bloques": [
       {
-       "texto": "Se busca dónde lo de adentro es mayor o igual que 0:"
+       "texto": "Se busca dónde lo de adentro del valor absoluto es mayor o igual que 0:"
       },
       {
        "pasos": [
@@ -2809,11 +2995,10 @@
          "rel": "",
          "der": "x ≤ −3  ∨  x ≥ 3"
         }
-       ],
-       "entero": true
+       ]
       },
       {
-       "texto": "Si x ≤ −3 o x ≥ 3, y = x² − 9. Si −3 < x < 3, lo de adentro es negativo y se le cambia el signo:"
+       "texto": "Si x ≤ −3 o x ≥ 3, y = x² − 9. Si −3 < x < 3, lo de adentro del valor absoluto es negativo y se le cambia el signo:"
       },
       {
        "pasos": [
