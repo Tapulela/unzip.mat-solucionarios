@@ -13,7 +13,7 @@ import { fileURLToPath } from "node:url";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
-import { revisar, buscar } from "../herramientas/validar.mjs";
+import { revisar, buscar, revisarCuadernillo, completarCuadernillo } from "../herramientas/validar.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CARPETA = path.join(RAIZ, "solucionarios");
@@ -26,7 +26,8 @@ const error = (t) => ({ content: [{ type: "text", text: t }], isError: true });
 // ruta relativa a solucionarios/ → ruta absoluta del solucion.json (sin salirse de la carpeta)
 function rutaSolucion(rel) {
   let r = String(rel || "").replace(/\\/g, "/").replace(/^\/+/, "").replace(/^solucionarios\//, "");
-  if (!r.endsWith("solucion.json")) r = r.replace(/\/+$/, "") + "/solucion.json";
+  // un cuadernillo se pide por su archivo (…/cuadernillo.json)
+  if (!r.endsWith("solucion.json") && !r.endsWith("cuadernillo.json")) r = r.replace(/\/+$/, "") + "/solucion.json";
   const abs = path.resolve(CARPETA, r);
   if (!abs.startsWith(CARPETA + path.sep)) throw new Error(`La ruta «${rel}» se sale de solucionarios/`);
   return abs;
@@ -44,10 +45,15 @@ function obtenerSolucion({ solucion, ruta }) {
   if (ruta) {
     const abs = rutaSolucion(ruta);
     if (!fs.existsSync(abs)) throw new Error(`No existe ${relativa(abs)}`);
-    return JSON.parse(fs.readFileSync(abs, "utf8"));
+    const sol = JSON.parse(fs.readFileSync(abs, "utf8"));
+    // un cuadernillo trae sus trabajos prácticos por ruta: se copian adentro
+    return Array.isArray(sol.partes) ? completarCuadernillo(sol, path.dirname(abs)) : sol;
   }
   throw new Error("Pasá «solucion» (el JSON) o «ruta» (la carpeta dentro de solucionarios/)");
 }
+
+// valida una solución o un cuadernillo
+const validar = (sol) => (Array.isArray(sol && sol.partes) ? revisarCuadernillo(sol) : revisar(sol));
 
 function informe({ errores, avisos }) {
   const l = [];
@@ -88,9 +94,9 @@ function conImagenes(lineas, imagenes) {
 const server = new McpServer({ name: "unzip-mat-solucionarios", version: "1.0.0" });
 
 const SolucionArg = z.union([z.string(), z.record(z.string(), z.unknown())])
-  .describe("La solución en formato unzip.mat/solucion@1 (objeto o texto JSON)");
+  .describe("La solución en formato unzip.mat/solucion@1, o un cuadernillo unzip.mat/cuadernillo@1 (objeto o texto JSON)");
 const RutaArg = z.string()
-  .describe("Carpeta dentro de solucionarios/, por ejemplo «matematica-1/utn-frba/2026/tp-03» (o la ruta a su solucion.json)");
+  .describe("Carpeta dentro de solucionarios/, por ejemplo «matematica-1/utn-frba/2026/tp-03» (o la ruta a su solucion.json, o a un cuadernillo.json)");
 
 server.registerTool("formato_solucion", {
   title: "Formato de las soluciones",
@@ -109,7 +115,7 @@ server.registerTool("validar_solucion", {
   inputSchema: { solucion: SolucionArg.optional(), ruta: RutaArg.optional() },
   annotations: { readOnlyHint: true },
 }, async (args) => {
-  try { return texto(informe(revisar(obtenerSolucion(args)))); }
+  try { return texto(informe(validar(obtenerSolucion(args)))); }
   catch (e) { return error(e.message); }
 });
 
@@ -167,7 +173,7 @@ server.registerTool("guardar_solucion", {
 
 server.registerTool("dibujar_en_pizarra", {
   title: "Dibujar en la pizarra",
-  description: "Manda la solución a la pizarra abierta (la ventana que se usó por última vez), que la dibuja en hojas A4 nuevas. Por defecto reemplaza lo que se haya dibujado antes de la misma solución (misma meta) y devuelve una imagen de cada hoja, para revisar cómo quedó: renglones que se salen, notas que se pisan, saltos de hoja. Los avisos de la respuesta dicen qué renglones son más anchos que la hoja.",
+  description: "Manda la solución (o un cuadernillo completo: carátula, índice y los trabajos prácticos, con una cabecera por parte) a la pizarra abierta (la ventana que se usó por última vez), que la dibuja en hojas A4 nuevas. Por defecto reemplaza lo que se haya dibujado antes de la misma solución (misma meta) y devuelve una imagen de cada hoja, para revisar cómo quedó: renglones que se salen, notas que se pisan, saltos de hoja. Los avisos de la respuesta dicen qué renglones son más anchos que la hoja.",
   inputSchema: {
     solucion: SolucionArg.optional(),
     ruta: RutaArg.optional(),
@@ -178,7 +184,7 @@ server.registerTool("dibujar_en_pizarra", {
 }, async (args) => {
   try {
     const sol = obtenerSolucion(args);
-    const v = revisar(sol);
+    const v = validar(sol);
     if (v.errores.length) return error("No se dibujó: la solución tiene errores.\n" + informe(v));
     const r = await pedirAPizarra("importar", {
       solucion: sol, reemplazar: args.reemplazar !== false, ver: args.ver !== false, ancho: args.ancho || 800,

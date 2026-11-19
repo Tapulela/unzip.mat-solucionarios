@@ -17,7 +17,8 @@ const COLORES = ["suma", "producto", "condicion", "caso", "a", "b", "c", "mal", 
   "naranja", "violeta", "celeste", "gris"];
 const ESTADOS = ["borrador", "revisado", "publicado"];
 
-export function revisar(sol) {
+// opc.parte: es una parte de texto de un cuadernillo (no se pide «meta» ni «ejercicios»)
+export function revisar(sol, opc = {}) {
   const errores = [], avisos = [];
   const err = (r, m) => errores.push(`${r}: ${m}`), av = (r, m) => avisos.push(`${r}: ${m}`);
   const color = (c, r) => {
@@ -128,15 +129,21 @@ export function revisar(sol) {
         bloques(b.bloques, rb);
         return;
       }
-      err(rb, "bloque sin «texto», «pasos», «generador», «seccion», «salto» ni «espacio»");
+      if (b.qr !== undefined) {
+        if (typeof b.qr !== "string" || !/^https?:\/\/\S+$/.test(b.qr)) err(rb + ".qr", "tiene que ser una dirección que empiece con https://");
+        for (const k of ["lado", "ancho"]) if (b[k] !== undefined && !(typeof b[k] === "number" && b[k] > 0)) av(`${rb}.${k}`, "tendría que ser un número positivo");
+        return;
+      }
+      err(rb, "bloque sin «texto», «pasos», «generador», «seccion», «qr», «salto» ni «espacio»");
     });
   };
 
   if (!sol || typeof sol !== "object") { err("raíz", "no es un objeto"); return { errores, avisos }; }
-  if (sol.formato !== FORMATO) av("formato", `tendría que ser «${FORMATO}»`);
-  if (!sol.titulo) av("titulo", "falta el título");
+  if (!opc.parte && sol.formato !== FORMATO) av("formato", `tendría que ser «${FORMATO}»`);
+  if (!opc.parte && !sol.titulo) av("titulo", "falta el título");
   const m = sol.meta || {};
-  if (!sol.meta) av("meta", "falta «meta» (materia, institucion, anio, tp, fuente, estado)");
+  if (opc.parte && !sol.meta) { /* una parte de texto no tiene meta */ }
+  else if (!sol.meta) av("meta", "falta «meta» (materia, institucion, anio, tp, fuente, estado)");
   else {
     for (const k of ["materia", "institucion", "anio", "tp", "fuente"]) if (!m[k]) av("meta." + k, "falta");
     if (!ESTADOS.includes(m.estado)) av("meta.estado", `tendría que ser ${ESTADOS.join(", ")}`);
@@ -166,7 +173,9 @@ export function revisar(sol) {
     if (typeof nu !== "object" || Array.isArray(nu)) err("estilo.numeracion", "es un objeto { ejercicio, item }");
     else for (const k of ["ejercicio", "item"]) if (nu[k] !== undefined && typeof nu[k] !== "string") err(`estilo.numeracion.${k}`, "tiene que ser un texto, por ejemplo «Ejercicio {n}:»");
   }
-  if (!Array.isArray(sol.ejercicios)) err("ejercicios", "falta la lista de ejercicios");
+  // bloques sueltos antes de los ejercicios (el texto de una introducción)
+  if (sol.bloques !== undefined) bloques(sol.bloques, "raíz");
+  if (!Array.isArray(sol.ejercicios)) { if (!opc.parte) err("ejercicios", "falta la lista de ejercicios"); }
   else sol.ejercicios.forEach((ej, i) => {
     const r = `ejercicios[${i}]`;
     if (!ej.enunciado) av(r, "falta el enunciado");
@@ -182,13 +191,89 @@ export function revisar(sol) {
   return { errores, avisos };
 }
 
+// ---------------------------------------------------------- cuadernillos
+// Un cuadernillo (unzip.mat/cuadernillo@1) junta en un solo juego de hojas una
+// carátula, partes de texto, un índice y los trabajos prácticos (ver FORMATO.md).
+// Las partes «solucion» traen la solución adentro («solucion») o la ruta a su
+// solucion.json, relativa a la carpeta del cuadernillo («ruta»).
+export const FORMATO_CUADERNILLO = "unzip.mat/cuadernillo@1";
+const TIPOS_PARTE = ["caratula", "texto", "indice", "solucion"];
+const tipoParte = (p) => p.tipo || (p.solucion || p.ruta ? "solucion" : "texto");
+
+// el cuadernillo con cada «ruta» reemplazada por su solución (lo que lee la pizarra)
+export function completarCuadernillo(c, carpeta) {
+  return { ...c, partes: (c.partes || []).map((p) => {
+    if (!p || typeof p !== "object" || p.solucion || !p.ruta) return p;
+    const abs = path.resolve(carpeta, p.ruta);
+    if (!fs.existsSync(abs)) throw new Error(`No existe ${p.ruta} (desde ${carpeta})`);
+    const { ruta, ...resto } = p;
+    return { tipo: "solucion", ...resto, solucion: JSON.parse(fs.readFileSync(abs, "utf8")) };
+  }) };
+}
+
+export function revisarCuadernillo(c, carpeta) {
+  const errores = [], avisos = [];
+  const err = (r, m) => errores.push(`${r}: ${m}`), av = (r, m) => avisos.push(`${r}: ${m}`);
+  if (!c || typeof c !== "object") { err("raíz", "no es un objeto"); return { errores, avisos }; }
+  if (c.formato !== FORMATO_CUADERNILLO) av("formato", `tendría que ser «${FORMATO_CUADERNILLO}»`);
+  if (!c.titulo) av("titulo", "falta el título (es el nombre de la pizarra y del PDF)");
+  for (const k of ["cabecera", "pie"]) if (c[k] !== undefined && typeof c[k] !== "string") err(k, "tiene que ser un texto (puede ser vacío)");
+  const est = c.estilo || {};
+  if (est.partesEnImpar !== undefined && typeof est.partesEnImpar !== "boolean") av("estilo.partesEnImpar", "tendría que ser true o false");
+  if (!Array.isArray(c.partes) || !c.partes.length) { err("partes", "falta la lista de partes"); return { errores, avisos }; }
+  let indices = 0;
+  c.partes.forEach((p, i) => {
+    const r = `partes[${i}]`;
+    if (!p || typeof p !== "object") { err(r, "parte inválida"); return; }
+    const tipo = tipoParte(p);
+    if (!TIPOS_PARTE.includes(tipo)) { err(r + ".tipo", `tiene que ser ${TIPOS_PARTE.join(", ")}`); return; }
+    if (p.cabecera !== undefined && typeof p.cabecera !== "string") err(r + ".cabecera", "tiene que ser un texto");
+    if (p.marcador !== undefined && typeof p.marcador !== "boolean" && typeof p.marcador !== "string") err(r + ".marcador", "es true, false o un texto");
+    for (const k of ["enIndice", "sinCabecera", "impar"]) if (p[k] !== undefined && typeof p[k] !== "boolean") av(`${r}.${k}`, "tendría que ser true o false");
+    if (tipo === "caratula") {
+      if (!p.titulo) av(r, "una carátula sin título");
+      if (p.lineas !== undefined && !Array.isArray(p.lineas)) err(r + ".lineas", "es una lista de textos");
+      return;
+    }
+    if (tipo === "indice") {
+      indices++;
+      if (p.niveles !== undefined && ![1, 2, 3, 4].includes(p.niveles)) av(r + ".niveles", "tendría que ser 1, 2, 3 o 4");
+      return;
+    }
+    if (tipo === "texto") {
+      if (!p.titulo) av(r, "una parte sin título no tiene marcador ni entrada en el índice");
+      const v = revisar({ titulo: p.titulo, bloques: p.bloques || [], estilo: est }, { parte: true });
+      v.errores.forEach((e) => errores.push(`${r}.${e}`)); v.avisos.forEach((a) => avisos.push(`${r}.${a}`));
+      return;
+    }
+    let sol = p.solucion;
+    if (!sol && p.ruta) {
+      const abs = path.resolve(carpeta || ".", p.ruta);
+      if (!fs.existsSync(abs)) { err(r + ".ruta", `no existe ${p.ruta}`); return; }
+      try { sol = JSON.parse(fs.readFileSync(abs, "utf8")); } catch (e) { err(r + ".ruta", `${p.ruta} no es un JSON válido`); return; }
+    }
+    if (!sol) { err(r, "falta «solucion» o «ruta»"); return; }
+    if (p.marcadores !== undefined) {
+      const mk = p.marcadores;
+      if (!mk || typeof mk !== "object" || Array.isArray(mk)) err(r + ".marcadores", "es un objeto { ejercicio, item } con plantillas como «{rotulo}»");
+      else for (const k of Object.keys(mk)) {
+        if (!["ejercicio", "item"].includes(k) || typeof mk[k] !== "string") err(`${r}.marcadores.${k}`, "solo valen «ejercicio» e «item», con un texto");
+      }
+    }
+    // los avisos de estilo de cada trabajo práctico salen al validar su solucion.json
+    revisar(sol).errores.forEach((e) => errores.push(`${r}.solucion.${e}`));
+  });
+  if (indices > 1) av("partes", "hay más de un índice");
+  return { errores, avisos };
+}
+
 export function buscar(dir) {
   const out = [];
   if (!fs.existsSync(dir)) return out;
   for (const d of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, d.name);
     if (d.isDirectory()) out.push(...buscar(p));
-    else if (d.name === "solucion.json") out.push(p);
+    else if (d.name === "solucion.json" || d.name === "cuadernillo.json") out.push(p);
   }
   return out;
 }
@@ -204,7 +289,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     let sol;
     try { sol = JSON.parse(fs.readFileSync(ruta, "utf8")); }
     catch (e) { console.log(`✗ ${ruta}\n    error: no es un JSON válido (${e.message})`); hayErrores = true; continue; }
-    const { errores, avisos } = revisar(sol);
+    const { errores, avisos } = Array.isArray(sol.partes) ? revisarCuadernillo(sol, path.dirname(path.resolve(ruta))) : revisar(sol);
     console.log(`${errores.length ? "✗" : "✓"} ${ruta}${avisos.length ? ` (${avisos.length} avisos)` : ""}`);
     errores.forEach((e) => console.log("    error: " + e));
     avisos.forEach((a) => console.log("    aviso: " + a));

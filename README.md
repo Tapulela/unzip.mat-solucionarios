@@ -15,8 +15,12 @@ solucionarios/
     solucion.json       ← la resolución (lo que se edita y se revisa)
     solucion.excalidraw ← cómo quedó en la pizarra, con las correcciones a mano
     solucion.pdf        ← lista para imprimir
-FORMATO.md              ← cómo se escribe un solucion.json
+  <materia>/<institucion>/<año> - cuatrimestre <n>/cuadernillo.json
+                        ← todos los TP juntos: carátula, índice, cabecera por TP
+FORMATO.md              ← cómo se escribe un solucion.json (y un cuadernillo)
 herramientas/validar.mjs
+herramientas/armar-cuadernillo.mjs ← arma el cuadernillo para importarlo
+herramientas/pdf-cuadernillo.mjs   ← genera el PDF del cuadernillo (con marcadores y enlaces)
 mcp/servidor.mjs        ← servidor MCP (validar, guardar, dibujar en la pizarra)
 .claude/skills/resolver-tp/  ← skill para que Claude arme el borrador
 ```

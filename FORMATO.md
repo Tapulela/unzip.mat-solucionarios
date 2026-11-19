@@ -88,6 +88,7 @@ se encarga la pizarra.
 | `"partir": true` (en un bloque de generador) | El dibujo se puede repartir entre hojas renglón por renglón, como un desarrollo, en vez de pasar entero a la hoja siguiente. Sirve para cálculos largos sin gráfico (las raíces n-ésimas de `raicesC`). Los títulos del cálculo no quedan solos al pie. La parte de cada hoja ya no se edita desde el panel. |
 | `{ "seccion": "Título", "bloques": [ ... ] }` | Una sección: el título subrayado (del tamaño del texto, en azul o en `color`) y sus bloques debajo, con sangría y una línea vertical a la izquierda que acompaña cada renglón, también si la sección sigue en otra hoja. Las secciones se pueden anidar. |
 | `{ "salto": true }` | Empieza una hoja nueva. |
+| `{ "qr": "https://…", "titulo": "…" }` | Un código QR dibujado (con cuadraditos de la pizarra, nítido al imprimir), con el título arriba y la dirección escrita abajo, centrados en una columna de media hoja: dos QR van lado a lado con `alLado`. En el PDF, la columna entera es un enlace a la dirección. `lado` (por defecto 200) y `ancho` cambian el tamaño del código y de la columna. |
 | `"unir": true` (en un bloque de texto) | El texto no se separa de lo que le sigue: si no entra, pasa a la hoja siguiente junto con el bloque de abajo. Sirve para «La tabla sigue:». |
 | `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. Con `""` no se escribe ningún aviso (por ejemplo, si el bloque anterior ya termina con «(La tabla continúa)»). |
 | `"notas": "arriba"` (en un bloque de pasos) | La nota de cada paso se escribe en su propio renglón, arriba del renglón donde se hace (y no a la derecha). Sirve para desarrollos angostos. Un bloque de pasos con `alLado` que no entra con las notas a la derecha se rehace solo con las notas arriba. |
@@ -234,3 +235,79 @@ conviene partir el paso, acortar la nota o usar `"tam": "S"`.
 
 Un ejemplo completo está en
 [`solucionarios/_ejemplo/tp-ejemplo/solucion.json`](solucionarios/_ejemplo/tp-ejemplo/solucion.json).
+
+## Cuadernillo completo (`unzip.mat/cuadernillo@1`)
+
+Un `cuadernillo.json` junta en un solo juego de hojas, listo para imprimir y encuadernar,
+una carátula, partes de texto, un índice y los trabajos prácticos ya resueltos, en orden.
+Cada parte empieza en una hoja nueva. El de Matemática 1 está en
+[`solucionarios/matematica-1/ausc-puc-lsi/2026 - cuatrimestre 2/cuadernillo.json`](solucionarios/matematica-1/ausc-puc-lsi/2026%20-%20cuatrimestre%202/cuadernillo.json).
+
+```json
+{
+  "formato": "unzip.mat/cuadernillo@1",
+  "titulo": "Solucionario Matemática 1 — Año 2026 · Cuatrimestre 2",
+  "cabecera": "Matemática 1\nSolucionario de los trabajos prácticos",
+  "pie": "Hoja {n} de {total}",
+  "meta": { "...": "como en una solución" },
+  "estilo": { "margenes": { "sup": 10, "inf": 10, "ext": 10, "lomo": 15 }, "dobleFaz": true, "partesEnImpar": true },
+  "partes": [
+    { "tipo": "caratula", "antetitulo": "Matemática 1", "titulo": "Solucionario…", "subtitulo": "Año 2026", "lineas": ["…"], "pie": "…" },
+    { "tipo": "texto", "titulo": "Introducción", "bloques": [ ... ] },
+    { "tipo": "indice", "titulo": "Contenido", "niveles": 2 },
+    { "tipo": "texto", "titulo": "A tener en cuenta", "bloques": [ ... ] },
+    { "ruta": "tp-01-logica-proposicional/solucion.json", "marcador": "T.P. 1: Lógica proposicional" }
+  ]
+}
+```
+
+| Campo | Qué es |
+|---|---|
+| `cabecera`, `pie` | Los generales: valen para las partes que no traen la suya (introducción, índice…). |
+| `estilo` | El de las partes de texto y del índice, y lo que no definan las soluciones. `partesEnImpar: true` (con `dobleFaz`) hace empezar cada parte en una hoja impar: si hace falta, deja una hoja en blanco antes, sin cabecera ni pie. |
+| `partes[].tipo` | `caratula`, `texto`, `indice` o `solucion` (si falta: `solucion` si trae `ruta` o `solucion`, si no `texto`). |
+| `caratula` | `antetitulo`, `titulo`, `subtitulo`, `lineas` (lista) y `pie` (abajo de todo), centrados. La hoja no lleva cabecera, pie ni número. |
+| `texto` | `titulo` (con el mismo encabezado que una solución), `subtitulo` y `bloques` (los mismos bloques de los ejercicios). |
+| `indice` | Los marcadores de las partes que van en el índice, hasta el nivel `niveles` (por defecto 2: partes y trabajos prácticos en el nivel 1, ejercicios en el 2), con línea de puntos y número de hoja. No incluye la carátula ni a sí mismo. |
+| `solucion` | Un trabajo práctico: `ruta` (su `solucion.json`, relativa a la carpeta del cuadernillo) o `solucion` (el objeto). Lleva **su propia cabecera** (`cabecera` de la solución, o `cabecera` de la parte), que vale desde su primera hoja. Su `titulo`, `estilo` y numeración son los de la solución. |
+| `partes[].marcador` | Título del marcador de la parte (nivel 1). Si falta, el título de la parte; en una solución conviene uno corto («T.P. 1: Lógica proposicional»). `false`: sin marcador. |
+| `partes[].marcadores` | Solo en una solución: plantillas de los marcadores de sus ejercicios e ítems (nivel 2 y 3). `{rotulo}` es el rótulo sin los dos puntos («Ejercicio 4», «4.a») y `{enunciado}`, el primer renglón de la consigna. Por defecto `{ "ejercicio": "{rotulo}" }`: todos los ejercicios con marcador, aunque la solución no lo tenga. Por ejemplo, `{ "ejercicio": "{rotulo}: {enunciado}", "item": "{rotulo}" }`. |
+| `partes[].enIndice` | `false` para que una parte no figure en el índice (sigue teniendo marcador). |
+| `partes[].sinCabecera` | `true`: las hojas de la parte no llevan cabecera, pie ni número (por ejemplo, la hoja de enlaces del reverso de la carátula). |
+| `partes[].impar` | `false`: la parte sigue en la hoja que toque aunque haya `partesEnImpar` (así la hoja de enlaces queda en el reverso de la carátula). |
+
+**Armarlo.** La pizarra no lee archivos del disco, así que los trabajos prácticos se
+copian adentro antes de importarlo:
+
+```
+node herramientas/armar-cuadernillo.mjs "solucionarios/…/cuadernillo.json"
+```
+
+valida y escribe al lado `cuadernillo.armado.json` (no va al repositorio), que se importa
+con «Importar solución (.json)». Con el servidor MCP alcanza con
+`dibujar_en_pizarra` y la ruta del `cuadernillo.json`.
+
+**PDF automático.** Con la pizarra local abierta (su servidor, no hace falta el navegador):
+
+```
+node herramientas/pdf-cuadernillo.mjs "solucionarios/…/cuadernillo.json" salida.pdf
+```
+
+abre Chrome (o Edge) sin ventana y con un perfil aparte, importa el cuadernillo, lo imprime
+a PDF y le agrega los marcadores y los enlaces. Tarda unos minutos con todos los TP.
+
+**Publicarlo.** El QR del cuadernillo apunta a la release `cuadernillo-matematica-1-2026-c2`
+del repositorio, archivo `Solucionario-Matematica-1-2026-C2.pdf`. Para publicar una versión
+nueva se reemplaza ese archivo en la misma release (`gh release upload … --clobber`): así el
+QR impreso sigue llevando a la última versión.
+
+**PDF con índice y marcadores, a mano.** «Imprimir / PDF» (los números de hoja del índice se
+actualizan solos antes de imprimir, por si se agregaron hojas a mano) y después, en el
+panel de Hojas A4, «Agregar marcadores y enlaces a un PDF…» con ese PDF: cada renglón del
+índice pasa a ser un enlace a su hoja, y el panel de marcadores del lector muestra las
+partes, los trabajos prácticos y sus ejercicios.
+
+**Cabeceras.** En la pizarra, cada cabecera de una parte es un marco «Cabecera · T.P. 1…»
+arriba de la primera hoja de la parte; se corrige como la general. En el panel de Hojas
+A4, «Cabecera nueva desde esta hoja» agrega otra a mano, y «Sin cabecera en esta hoja»
+saca la cabecera, el pie y el número de una hoja.
