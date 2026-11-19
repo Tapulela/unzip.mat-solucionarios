@@ -1,0 +1,2926 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — T.P. 10: Funciones",
+ "subtitulo": "Año 2026 · Cuatrimestre 2",
+ "cabecera": "Matemática 1\nT.P. 10 - Funciones - Año 2026 - Cuatrimestre 2",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "TP 10",
+  "fuente": "Trabajo Práctico: Funciones, Matemática I, segunda cursada 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "marcador": true,
+   "enunciado": "Determinar si la función m(x) = 2x es inyectiva o sobreyectiva.",
+   "bloques": [
+    {
+     "texto": "Se considera m: ℝ → ℝ (el dominio y el codominio son los números reales)."
+    },
+    {
+     "seccion": "Análisis de la inyectividad",
+     "bloques": [
+      {
+       "texto": "Definición: m es inyectiva si ∀a, b ∈ ℝ: m(a) = m(b) → a = b."
+      },
+      {
+       "texto": "Sean a, b ∈ ℝ tales que m(a) = m(b):"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "m(a) = m(b)"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "2a",
+           "color": "producto"
+          },
+          " = ",
+          {
+           "t": "2b",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar en m(x) = 2x",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "2a",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "2b",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir los dos miembros por 2",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "a = b"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Como m(a) = m(b) implica a = b, m es inyectiva.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "seccion": "Análisis de la sobreyectividad",
+     "bloques": [
+      {
+       "texto": "Definición: m es sobreyectiva si ∀y ∈ ℝ, ∃x ∈ ℝ tal que m(x) = y."
+      },
+      {
+       "texto": "Sea y ∈ ℝ. Se busca x tal que m(x) = y:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "2x = y"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "2x",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "y",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir los dos miembros por 2",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            "y",
+            "2"
+           ]
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Para cualquier y ∈ ℝ, x = y dividido 2 es un número real. Verificación:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "m(",
+          {
+           "frac": [
+            "y",
+            "2"
+           ]
+          },
+          ") = 2 · ",
+          {
+           "frac": [
+            "y",
+            "2"
+           ]
+          }
+         ]
+        },
+        {
+         "rel": "",
+         "der": [
+          "m(",
+          {
+           "frac": [
+            "y",
+            "2"
+           ]
+          },
+          ") = y"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Todo y ∈ ℝ es imagen de algún x ∈ ℝ, entonces m es sobreyectiva.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "m(x) = 2x es inyectiva y sobreyectiva (biyectiva)",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ],
+     "entero": true
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "marcador": true,
+   "enunciado": "Determinar si la función f(x) = x³ es inyectiva, sobreyectiva o biyectiva.",
+   "bloques": [
+    {
+     "texto": "Se considera f: ℝ → ℝ."
+    },
+    {
+     "seccion": "Análisis de la inyectividad",
+     "bloques": [
+      {
+       "texto": "Definición: f es inyectiva si ∀a, b ∈ ℝ: f(a) = f(b) → a = b."
+      },
+      {
+       "texto": "Sean a, b ∈ ℝ tales que f(a) = f(b):"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "f(a) = f(b)"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "a³",
+           "color": "producto"
+          },
+          " = ",
+          {
+           "t": "b³",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar en f(x) = x³",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "raiz": "a³",
+           "indice": "3"
+          },
+          " = ",
+          {
+           "raiz": "b³",
+           "indice": "3"
+          }
+         ],
+         "nota": "Raíz cúbica en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "a = b"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Nota para el estudiante: en ℝ, la raíz cúbica de un número es única (no aparece ± como en la raíz cuadrada), por eso ∛(a³) = a para todo a ∈ ℝ.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Como f(a) = f(b) implica a = b, f es inyectiva.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "seccion": "Análisis de la sobreyectividad",
+     "bloques": [
+      {
+       "texto": "Definición: f es sobreyectiva si ∀y ∈ ℝ, ∃x ∈ ℝ tal que f(x) = y."
+      },
+      {
+       "texto": "Sea y ∈ ℝ. Se busca x tal que f(x) = y:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "x³ = y"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "raiz": "x³",
+           "indice": "3"
+          },
+          " = ",
+          {
+           "raiz": "y",
+           "indice": "3"
+          }
+         ],
+         "nota": "Raíz cúbica en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "raiz": "y",
+           "indice": "3"
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "La raíz cúbica existe para todo y ∈ ℝ, también para los negativos (por ejemplo ∛(−8) = −2). Verificación:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "f(",
+          {
+           "raiz": "y",
+           "indice": "3"
+          },
+          ") = (",
+          {
+           "raiz": "y",
+           "indice": "3"
+          },
+          ")³"
+         ]
+        },
+        {
+         "rel": "",
+         "der": [
+          "f(",
+          {
+           "raiz": "y",
+           "indice": "3"
+          },
+          ") = y"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Todo y ∈ ℝ es imagen de algún x ∈ ℝ, entonces f es sobreyectiva.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "f es inyectiva y sobreyectiva, por lo tanto es biyectiva.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "f(x) = x³ es biyectiva",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ],
+     "entero": true
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "marcador": true,
+   "enunciado": "Obtener la inversa de la función f(x) = −4x + 3, y graficar la función f y su inversa. Verificá con la función compuesta.",
+   "bloques": [
+    {
+     "seccion": "Cálculo de la inversa",
+     "bloques": [
+      {
+       "texto": "Se escribe y = f(x), se intercambian x e y, y se despeja y."
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "y = −4x + 3"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "x",
+           "color": "producto"
+          },
+          " = −4",
+          {
+           "t": "y",
+           "color": "producto"
+          },
+          " + 3"
+         ],
+         "nota": "Intercambiar x e y",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x",
+          {
+           "t": " − 3",
+           "color": "suma"
+          },
+          " = −4y + 3",
+          {
+           "t": " − 3",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 3 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "x − 3 = −4y"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "x − 3",
+            {
+             "t": "−4",
+             "color": "producto"
+            }
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "−4y",
+            {
+             "t": "−4",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir los dos miembros por −4",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "x − 3",
+            "−4"
+           ]
+          },
+          " = y"
+         ]
+        },
+        {
+         "rel": "",
+         "der": [
+          "y = ",
+          {
+           "frac": [
+            "x − 3",
+            "−4"
+           ]
+          }
+         ],
+         "nota": "Escribir la igualdad al revés"
+        },
+        {
+         "rel": "",
+         "der": [
+          "y = ",
+          {
+           "frac": [
+            {
+             "t": "3 − x",
+             "color": "producto"
+            },
+            {
+             "t": "4",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Multiplicar numerador y",
+          "denominador por −1"
+         ],
+         "notaColor": "producto"
+        }
+       ],
+       "entero": false
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "f⁻¹(x) = ",
+          {
+           "frac": [
+            "3 − x",
+            "4"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Gráfico de f y de f⁻¹",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: los gráficos de f y de f⁻¹ son simétricos respecto de la recta y = x (en gris). El punto (0, 3) de f se refleja en el punto (3, 0) de f⁻¹.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "funcion",
+       "op": {
+        "filas": [
+         {
+          "nombre": "f",
+          "texto": "x => -4*x + 3",
+          "color": "#1971c2",
+          "puntos": "0, 1"
+         },
+         {
+          "nombre": "f⁻¹",
+          "texto": "x => (3 - x)/4",
+          "color": "#e03131",
+          "puntos": "3, -1"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => x",
+          "color": "#868e96"
+         }
+        ],
+        "xMin": "-3",
+        "xMax": "5",
+        "yAuto": false,
+        "yMin": "-3",
+        "yMax": "5",
+        "tamano": "mini",
+        "escalaIgual": true,
+        "tamNumeros": "S",
+        "fuente": "normal",
+        "grosor": "normal",
+        "cuadricula": true,
+        "cuadrada": true,
+        "soloEnteros": true,
+        "ocultarNumeros": false,
+        "referencia": true,
+        "posReferencia": "arriba",
+        "marcarExtremos": true,
+        "titulos": false
+       }
+      }
+     ]
+    },
+    {
+     "seccion": "Verificación con la función compuesta",
+     "bloques": [
+      {
+       "texto": "Si f⁻¹ es la inversa de f, entonces (f ∘ f⁻¹)(x) = x y (f⁻¹ ∘ f)(x) = x."
+      },
+      {
+       "pasos": [
+        {
+         "izq": "(f ∘ f⁻¹)(x)",
+         "der": "f(f⁻¹(x))"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "f(",
+          {
+           "frac": [
+            {
+             "t": "3 − x",
+             "color": "producto"
+            },
+            {
+             "t": "4",
+             "color": "producto"
+            }
+           ]
+          },
+          ")"
+         ],
+         "nota": "Reemplazar f⁻¹(x)",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "−4",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "frac": [
+            "3 − x",
+            "4"
+           ]
+          },
+          {
+           "t": " + 3",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar en f(x) = −4x + 3",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "−(3 − x)",
+           "color": "producto"
+          },
+          " + 3"
+         ],
+         "nota": "Simplificar el 4",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "−3 + x",
+           "color": "producto"
+          },
+          " + 3"
+         ],
+         "nota": "Quitar el paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "x",
+          "color": "suma"
+         },
+         "nota": "Cancelar −3 + 3",
+         "notaColor": "suma"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "(f ∘ f⁻¹)(x) = x",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "(f⁻¹ ∘ f)(x)",
+         "der": "f⁻¹(f(x))"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "f⁻¹(",
+          {
+           "t": "−4x + 3",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar f(x)",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           [
+            "3 − (",
+            {
+             "t": "−4x + 3",
+             "color": "producto"
+            },
+            ")"
+           ],
+           "4"
+          ]
+         },
+         "nota": "Reemplazar en f⁻¹(x)",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           [
+            "3 ",
+            {
+             "t": "+ 4x − 3",
+             "color": "producto"
+            }
+           ],
+           "4"
+          ]
+         },
+         "nota": "Quitar el paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "4x",
+            "color": "suma"
+           },
+           "4"
+          ]
+         },
+         "nota": "Cancelar 3 − 3",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "x",
+          "color": "producto"
+         },
+         "nota": "Simplificar el 4",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "(f⁻¹ ∘ f)(x) = x",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Las dos compuestas dan x, entonces la función hallada es la inversa de f.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "marcador": true,
+   "enunciado": "Si f(x) = x² + x − 2. Calcular f(−x) y −f(x), decir si es par o impar, determinar los intervalos de crecimiento o decrecimiento, rango e imagen.",
+   "bloques": [
+    {
+     "seccion": "Cálculo de f(−x)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "f(−x)",
+         "der": [
+          "(",
+          {
+           "t": "−x",
+           "color": "producto"
+          },
+          ")² + (",
+          {
+           "t": "−x",
+           "color": "producto"
+          },
+          ") − 2"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "x²",
+           "color": "producto"
+          },
+          " + (−x) − 2"
+         ],
+         "nota": "(−x)² = x²",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "x² ",
+          {
+           "t": "− x",
+           "color": "producto"
+          },
+          " − 2"
+         ],
+         "nota": "Quitar el paréntesis",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "f(−x) = x² − x − 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Cálculo de −f(x)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "−f(x)",
+         "der": "−(x² + x − 2)"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "−x² − x + 2",
+          "color": "producto"
+         },
+         "nota": "Distribuir el signo −",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "−f(x) = −x² − x + 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Paridad",
+     "bloques": [
+      {
+       "texto": "f es par si f(−x) = f(x) para todo x del dominio, e impar si f(−x) = −f(x) para todo x del dominio."
+      },
+      {
+       "texto": "Se busca un contraejemplo con x = 1 y x = −1:"
+      },
+      {
+       "pasos": [
+        {
+         "izq": "f(1)",
+         "der": "1² + 1 − 2"
+        },
+        {
+         "rel": "=",
+         "der": "0"
+        },
+        {
+         "izq": "f(−1)",
+         "der": "(−1)² + (−1) − 2"
+        },
+        {
+         "rel": "=",
+         "der": "1 − 1 − 2"
+        },
+        {
+         "rel": "=",
+         "der": "−2"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "f(−1) = −2 y f(1) = 0, entonces f(−1) ≠ f(1) y f no es par.",
+       "color": "azul"
+      },
+      {
+       "texto": "−f(1) = 0 y f(−1) = −2, entonces f(−1) ≠ −f(1) y f no es impar.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "f no es par ni impar",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Intervalos de crecimiento y decrecimiento",
+     "bloques": [
+      {
+       "texto": "f es una parábola con a = 1, b = 1 y c = −2. Como a = 1 > 0, abre hacia arriba: decrece hasta el vértice y crece desde el vértice."
+      },
+      {
+       "pasos": [
+        {
+         "izq": "xᵥ",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "b",
+            "2a"
+           ]
+          }
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            [
+             "2 · ",
+             {
+              "t": "1",
+              "color": "producto"
+             }
+            ]
+           ]
+          }
+         ],
+         "nota": "Reemplazar a = 1 y b = 1",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "yᵥ",
+         "der": [
+          "f(− ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          ")"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(− ",
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          },
+          ")² + (− ",
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          },
+          ") − 2"
+         ],
+         "nota": "Reemplazar en f(x)",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            {
+             "t": "4",
+             "color": "producto"
+            }
+           ]
+          },
+          " − ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " − 2"
+         ],
+         "nota": "Resolver la potencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            "1",
+            "4"
+           ]
+          },
+          " − ",
+          {
+           "frac": [
+            {
+             "t": "2",
+             "color": "suma"
+            },
+            {
+             "t": "4",
+             "color": "suma"
+            }
+           ]
+          },
+          " − ",
+          {
+           "frac": [
+            {
+             "t": "8",
+             "color": "suma"
+            },
+            {
+             "t": "4",
+             "color": "suma"
+            }
+           ]
+          }
+         ],
+         "nota": "Denominador común 4",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "9",
+            "4"
+           ]
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "El vértice es V = (−1/2, −9/4). Las raíces son x = −2 y x = 1, porque x² + x − 2 = (x + 2)(x − 1).",
+       "unir": true
+      },
+      {
+       "generador": "funcion",
+       "op": {
+        "filas": [
+         {
+          "nombre": "f",
+          "texto": "x => x**2 + x - 2",
+          "color": "#1971c2",
+          "puntos": "-2, -1/2, 1"
+         }
+        ],
+        "xMin": "-4",
+        "xMax": "3",
+        "yAuto": false,
+        "yMin": "-3",
+        "yMax": "5",
+        "tamano": "mini",
+        "escalaIgual": false,
+        "tamNumeros": "S",
+        "fuente": "normal",
+        "grosor": "normal",
+        "cuadricula": true,
+        "cuadrada": true,
+        "soloEnteros": true,
+        "ocultarNumeros": false,
+        "referencia": true,
+        "posReferencia": "arriba",
+        "marcarExtremos": true,
+        "titulos": false
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "f decrece en (−∞, − ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          ")"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        },
+        {
+         "der": [
+          "f crece en (− ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          ", +∞)"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "seccion": "Rango e imagen",
+     "bloques": [
+      {
+       "texto": "El dominio es ℝ, porque f es un polinomio. Como la parábola abre hacia arriba, el menor valor de f es yᵥ = −9/4 y toma todos los valores mayores."
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom f = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "Rango f = Imagen f = [− ",
+          {
+           "frac": [
+            "9",
+            "4"
+           ]
+          },
+          ", +∞)"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      },
+      {
+       "texto": "Nota para el estudiante: rango e imagen son dos nombres del mismo conjunto: todos los valores que toma f(x).",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "marcador": true,
+   "enunciado": "Encontrar el dominio de la función siguiente:\nh(x) = (x² + 5)/(x − 1)",
+   "bloques": [
+    {
+     "texto": "Un cociente no está definido cuando el denominador vale 0. El numerador x² + 5 está definido para todo x."
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "x − 1 ≠ 0"
+      },
+      {
+       "rel": "",
+       "der": [
+        "x − 1",
+        {
+         "t": " + 1",
+         "color": "suma"
+        },
+        " ≠ 0",
+        {
+         "t": " + 1",
+         "color": "suma"
+        }
+       ],
+       "nota": "Sumar 1 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "rel": "",
+       "der": "x ≠ 1"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "der": "Dom h = ℝ − {1}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ],
+     "entero": true
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "marcador": true,
+   "enunciado": "Determinar el dominio y el rango de la función f(x) = 7 + √(3x − 6).",
+   "bloques": [
+    {
+     "seccion": "Dominio",
+     "bloques": [
+      {
+       "texto": "La raíz cuadrada solo está definida en ℝ si el radicando es mayor o igual que 0:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "3x − 6 ≥ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          "3x − 6",
+          {
+           "t": " + 6",
+           "color": "suma"
+          },
+          " ≥ 0",
+          {
+           "t": " + 6",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 6 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "3x ≥ 6"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "3x",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          },
+          " ≥ ",
+          {
+           "frac": [
+            "6",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir por 3 (positivo, no",
+          "cambia la desigualdad)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "x ≥ 2"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom f = [2, +∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Rango",
+     "bloques": [
+      {
+       "texto": "Cuando x recorre [2, +∞), la raíz √(3x − 6) toma todos los valores mayores o iguales que 0:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "√(3x − 6) ≥ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "7 + ",
+           "color": "suma"
+          },
+          "√(3x − 6) ≥ ",
+          {
+           "t": "7 + ",
+           "color": "suma"
+          },
+          "0"
+         ],
+         "nota": "Sumar 7 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "f(x) ≥ 7"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "El valor 7 se alcanza en x = 2, porque f(2) = 7 + √0 = 7."
+      },
+      {
+       "pasos": [
+        {
+         "der": "Rango f = [7, +∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "marcador": true,
+   "enunciado": "Identifique el dominio de las siguientes funciones:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "y = 4x² + 7x − 19",
+     "bloques": [
+      {
+       "texto": "Es un polinomio: se puede calcular para cualquier número real x."
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "y = √(t − 5)",
+     "bloques": [
+      {
+       "texto": "El radicando tiene que ser mayor o igual que 0:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "t − 5 ≥ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          "t − 5",
+          {
+           "t": " + 5",
+           "color": "suma"
+          },
+          " ≥ 0",
+          {
+           "t": " + 5",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 5 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "t ≥ 5"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom = [5, +∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "y = 6/(x(x + 9))",
+     "bloques": [
+      {
+       "texto": "El denominador no puede valer 0. Un producto es distinto de 0 cuando cada factor es distinto de 0:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "x · (x + 9) ≠ 0"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "x ≠ 0"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "x + 9 ≠ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x + 9",
+          {
+           "t": " − 9",
+           "color": "suma"
+          },
+          " ≠ 0",
+          {
+           "t": " − 9",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 9 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "x ≠ −9"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom = ℝ − {−9, 0}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "marcador": true,
+   "enunciado": "Encontrar el dominio y el rango de la siguiente función definida por secciones:",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "izq": "f(x)",
+       "der": {
+        "sistema": [
+         "x²,      si −2 ≤ x < 0",
+         "x − 1,   si 0 ≤ x ≤ 2",
+         "√x,      si 2 < x ≤ 4"
+        ]
+       }
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Nota para el estudiante: en la fórmula del enunciado el primer tramo se lee x³, pero el gráfico que acompaña la consigna pasa por (−2, 4) y queda por encima del eje x, que corresponde a x² (con x³ sería f(−2) = −8). Se resuelve con x², la función del gráfico.",
+     "color": "gris",
+     "tam": "S",
+     "unir": true
+    },
+    {
+     "generador": "funcion",
+     "op": {
+      "filas": [
+       {
+        "nombre": "f",
+        "texto": "x => x**2",
+        "color": "#1971c2",
+        "dominio": "[-2, 0)"
+       },
+       {
+        "nombre": "f",
+        "texto": "x => x - 1",
+        "color": "#1971c2",
+        "dominio": "[0, 2]"
+       },
+       {
+        "nombre": "f",
+        "texto": "x => sqrt(x)",
+        "color": "#1971c2",
+        "dominio": "(2, 4]"
+       }
+      ],
+      "xMin": "-3",
+      "xMax": "5",
+      "yAuto": false,
+      "yMin": "-2",
+      "yMax": "5",
+      "tamano": "mini",
+      "escalaIgual": false,
+      "tamNumeros": "S",
+      "fuente": "normal",
+      "grosor": "normal",
+      "cuadricula": true,
+      "cuadrada": true,
+      "soloEnteros": true,
+      "ocultarNumeros": false,
+      "referencia": false,
+      "posReferencia": "arriba",
+      "marcarExtremos": true,
+      "titulos": false
+     }
+    },
+    {
+     "seccion": "Dominio",
+     "bloques": [
+      {
+       "texto": "El dominio es la unión de los intervalos de las tres secciones:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "[−2, 0) ∪ [0, 2] ∪ (2, 4]"
+        },
+        {
+         "rel": "=",
+         "der": "[−2, 4]"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom f = [−2, 4]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "seccion": "Rango",
+     "bloques": [
+      {
+       "texto": "Se busca qué valores toma cada sección:"
+      },
+      {
+       "texto": "x² con −2 ≤ x < 0: baja desde f(−2) = 4 hasta acercarse a 0, sin llegar (x = 0 no está). Toma los valores de (0, 4]."
+      },
+      {
+       "texto": "x − 1 con 0 ≤ x ≤ 2: sube desde f(0) = −1 hasta f(2) = 1. Toma los valores de [−1, 1]."
+      },
+      {
+       "texto": "√x con 2 < x ≤ 4: sube desde √2 ≈ 1,41 (sin llegar) hasta f(4) = 2. Toma los valores de (√2, 2]."
+      },
+      {
+       "texto": "El rango es la unión:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(0, 4] ∪ [−1, 1] ∪ (√2, 2]"
+        },
+        {
+         "rel": "=",
+         "der": "[−1, 4]"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Rango f = [−1, 4]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 9,
+   "marcador": true,
+   "enunciado": "Determine si las siguientes funciones son par, impar o ninguna de las dos.",
+   "bloques": [
+    {
+     "texto": "f es par si f(−x) = f(x) para todo x del dominio, e impar si f(−x) = −f(x) para todo x del dominio."
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "f(x) = x² − |x|",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "f(−x)",
+         "der": [
+          "(",
+          {
+           "t": "−x",
+           "color": "producto"
+          },
+          ")² − |",
+          {
+           "t": "−x",
+           "color": "producto"
+          },
+          "|"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "x²",
+           "color": "producto"
+          },
+          " − |−x|"
+         ],
+         "nota": "(−x)² = x²",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "x² − ",
+          {
+           "t": "|x|",
+           "color": "producto"
+          }
+         ],
+         "nota": "|−x| = |x|",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "f(x)"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "f(−x) = f(x), entonces f es par",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "g(x) = 3x/(x² + 1)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "g(−x)",
+         "der": {
+          "frac": [
+           [
+            "3 · (",
+            {
+             "t": "−x",
+             "color": "producto"
+            },
+            ")"
+           ],
+           [
+            "(",
+            {
+             "t": "−x",
+             "color": "producto"
+            },
+            ")² + 1"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "−3x",
+            "color": "producto"
+           },
+           "(−x)² + 1"
+          ]
+         },
+         "nota": "3 · (−x) = −3x",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "−3x",
+           [
+            {
+             "t": "x²",
+             "color": "producto"
+            },
+            " + 1"
+           ]
+          ]
+         },
+         "nota": "(−x)² = x²",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "− ",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "3x",
+            "x² + 1"
+           ]
+          }
+         ],
+         "nota": "Sacar el signo − de la fracción",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "−g(x)"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "g(−x) = −g(x), entonces g es impar",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "h(x) = (x² + 2)/(x − 7)",
+     "bloques": [
+      {
+       "texto": "Se busca un contraejemplo con x = 1 y x = −1:"
+      },
+      {
+       "pasos": [
+        {
+         "izq": "h(1)",
+         "der": {
+          "frac": [
+           "1² + 2",
+           "1 − 7"
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "3",
+           "−6"
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "h(−1)",
+         "der": {
+          "frac": [
+           "(−1)² + 2",
+           "−1 − 7"
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "3",
+           "−8"
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "3",
+            "8"
+           ]
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "h(−1) = − ",
+          {
+           "frac": [
+            "3",
+            "8"
+           ]
+          },
+          " ≠ − ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " = h(1)"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Como h(−1) ≠ h(1), h no es par.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "h(−1) = − ",
+          {
+           "frac": [
+            "3",
+            "8"
+           ]
+          },
+          " ≠ ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " = −h(1)"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Como h(−1) ≠ −h(1), h no es impar.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "h no es par ni impar",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Nota para el estudiante: también se ve mirando el dominio, ℝ − {7}: −7 está en el dominio y 7 no, así que no puede cumplirse h(−x) = h(x) ni h(−x) = −h(x) para todo x.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 10,
+   "marcador": true,
+   "enunciado": "Si f(x) = √x y g(x) = x² − 5, calcular (g ∘ f) y su dominio.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: (g ∘ f)(x) = g(f(x)): primero se aplica f y al resultado se le aplica g.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "(g ∘ f)(x)",
+       "der": "g(f(x))"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "g(",
+        {
+         "t": "√x",
+         "color": "producto"
+        },
+        ")"
+       ],
+       "nota": "Reemplazar f(x) = √x",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(",
+        {
+         "t": "√x",
+         "color": "producto"
+        },
+        ")² − 5"
+       ],
+       "nota": "Reemplazar en g(x) = x² − 5",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "x",
+         "color": "producto"
+        },
+        " − 5"
+       ],
+       "nota": "(√x)² = x, porque x ≥ 0",
+       "notaColor": "producto"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Dominio: x tiene que estar en el dominio de f, que es [0, +∞), y f(x) tiene que estar en el dominio de g, que es ℝ (esto se cumple siempre)."
+    },
+    {
+     "pasos": [
+      {
+       "der": "(g ∘ f)(x) = x − 5",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "der": "Dom (g ∘ f) = [0, +∞)",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ],
+     "entero": true,
+     "alLado": true
+    },
+    {
+     "texto": "Nota para el estudiante: aunque x − 5 se puede calcular para todo x, la compuesta solo existe donde existe √x, por eso el dominio es [0, +∞) y no ℝ.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 11,
+   "marcador": true,
+   "enunciado": "Sean f(x) = x² − 2x y g(x) = x + 3. Encontrar las funciones compuestas (a) (f ∘ g)(x) y (b) (g ∘ f)(x), y sus dominios.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(f ∘ g)(x)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "(f ∘ g)(x)",
+         "der": "f(g(x))"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "f(",
+          {
+           "t": "x + 3",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar g(x) = x + 3",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "x + 3",
+           "color": "producto"
+          },
+          ")²",
+          " − 2 · (",
+          {
+           "t": "x + 3",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar en f(x) = x² − 2x",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(x + 3)²",
+          " − 2 · (x + 3)"
+         ],
+         "marcar": {
+          "de": 0,
+          "a": 0,
+          "texto": [
+           "Cuadrado de un binomio:",
+           "(u + v)² = u² + 2uv + v²"
+          ],
+          "color": "producto"
+         }
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "x² + 6x + 9",
+           "color": "producto"
+          },
+          " − 2 · (x + 3)"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          "x² + 6x + 9 ",
+          {
+           "t": "− 2x − 6",
+           "color": "producto"
+          }
+         ],
+         "nota": "Distribuir −2",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "x² + 4x + 3",
+          "color": "suma"
+         },
+         "nota": "Agrupar términos semejantes",
+         "notaColor": "suma"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Es un polinomio, y g y f están definidas en todo ℝ."
+      },
+      {
+       "pasos": [
+        {
+         "der": "(f ∘ g)(x) = x² + 4x + 3",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom (f ∘ g) = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": true
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(g ∘ f)(x)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "(g ∘ f)(x)",
+         "der": "g(f(x))"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "g(",
+          {
+           "t": "x² − 2x",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar f(x) = x² − 2x",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "x² − 2x",
+           "color": "producto"
+          },
+          ") + 3"
+         ],
+         "nota": "Reemplazar en g(x) = x + 3",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "x² − 2x + 3",
+         "nota": "Quitar el paréntesis"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Es un polinomio, y f y g están definidas en todo ℝ."
+      },
+      {
+       "pasos": [
+        {
+         "der": "(g ∘ f)(x) = x² − 2x + 3",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom (g ∘ f) = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 12,
+   "marcador": true,
+   "enunciado": "Representa estas funciones e indica el dominio de cada una de ellas:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "y = 3 − 2x,  si x ≤ 2\ny = −1,  si 2 < x ≤ 3\ny = (x + 1)/2,  si x > 3",
+     "bloques": [
+      {
+       "texto": "Valores en los extremos de cada sección (● incluido, ○ excluido):"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "3 − 2 · 2 = −1   (x = 2 incluido: ●)"
+        },
+        {
+         "rel": "",
+         "der": "−1 en todo (2, 3]   (x = 3 incluido: ●)"
+        },
+        {
+         "rel": "",
+         "der": [
+          "",
+          {
+           "frac": [
+            "3 + 1",
+            "2"
+           ]
+          },
+          " = 2   (x = 3 excluido: ○)"
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "generador": "funcion",
+       "op": {
+        "filas": [
+         {
+          "nombre": "y",
+          "texto": "x => -1",
+          "color": "#1971c2",
+          "dominio": "2 < x <= 3"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => 3 - 2*x",
+          "color": "#1971c2",
+          "dominio": "x <= 2"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => (x + 1)/2",
+          "color": "#1971c2",
+          "dominio": "x > 3"
+         }
+        ],
+        "xMin": "-2",
+        "xMax": "7",
+        "yAuto": false,
+        "yMin": "-3",
+        "yMax": "8",
+        "tamano": "mini",
+        "escalaIgual": false,
+        "tamNumeros": "S",
+        "fuente": "normal",
+        "grosor": "normal",
+        "cuadricula": true,
+        "cuadrada": true,
+        "soloEnteros": true,
+        "ocultarNumeros": false,
+        "referencia": false,
+        "posReferencia": "arriba",
+        "marcarExtremos": true,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "El dominio es la unión de los intervalos de las secciones:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(−∞, 2] ∪ (2, 3] ∪ (3, +∞)"
+        },
+        {
+         "rel": "=",
+         "der": "ℝ"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "y = −x/3,  si x ≤ 0\ny = √x,  si 0 < x ≤ 4\ny = 2,  si x > 4",
+     "bloques": [
+      {
+       "texto": "Valores en los extremos de cada sección (● incluido, ○ excluido):"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "0",
+            "3"
+           ]
+          },
+          " = 0   (x = 0 incluido: ●)"
+         ]
+        },
+        {
+         "rel": "",
+         "der": "√0 = 0   (x = 0 excluido: ○)"
+        },
+        {
+         "rel": "",
+         "der": "√4 = 2   (x = 4 incluido: ●)"
+        },
+        {
+         "rel": "",
+         "der": "2 en todo (4, +∞)   (x = 4 excluido: ○)"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "generador": "funcion",
+       "op": {
+        "filas": [
+         {
+          "nombre": "y",
+          "texto": "x => 2",
+          "color": "#1971c2",
+          "dominio": "x > 4"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => sqrt(x)",
+          "color": "#1971c2",
+          "dominio": "0 < x <= 4"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => -x/3",
+          "color": "#1971c2",
+          "dominio": "x <= 0"
+         }
+        ],
+        "xMin": "-6",
+        "xMax": "8",
+        "yAuto": false,
+        "yMin": "-1",
+        "yMax": "4",
+        "tamano": "mini",
+        "escalaIgual": false,
+        "tamNumeros": "S",
+        "fuente": "normal",
+        "grosor": "normal",
+        "cuadricula": true,
+        "cuadrada": true,
+        "soloEnteros": true,
+        "ocultarNumeros": false,
+        "referencia": false,
+        "posReferencia": "arriba",
+        "marcarExtremos": true,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "El dominio es la unión de los intervalos de las secciones:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "(−∞, 0] ∪ (0, 4] ∪ (4, +∞)"
+        },
+        {
+         "rel": "=",
+         "der": "ℝ"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 13,
+   "marcador": true,
+   "enunciado": "Representa y define como función \"a trozos\" en cada caso, su dominio e imagen:",
+   "bloques": [
+    {
+     "texto": "Definición del valor absoluto: |u| = u si u ≥ 0, y |u| = −u si u < 0."
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "y = |−2x − 2|",
+     "bloques": [
+      {
+       "texto": "Se busca dónde lo de adentro es mayor o igual que 0:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "−2x − 2 ≥ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          "−2x − 2",
+          {
+           "t": " + 2",
+           "color": "suma"
+          },
+          " ≥ 0",
+          {
+           "t": " + 2",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 2 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "−2x ≥ 2"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "−2x",
+            {
+             "t": "−2",
+             "color": "producto"
+            }
+           ]
+          },
+          " ≤ ",
+          {
+           "frac": [
+            "2",
+            {
+             "t": "−2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir por −2 (negativo:",
+          "cambia la desigualdad)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "x ≤ −1"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Si x ≤ −1, y = −2x − 2. Si x > −1, lo de adentro es negativo y se le cambia el signo:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "−(−2x − 2)"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "2x + 2",
+          "color": "producto"
+         },
+         "nota": "Distribuir el signo −",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "y = ",
+          {
+           "sistema": [
+            "−2x − 2,   si x ≤ −1",
+            "2x + 2,     si x > −1"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "El dominio es ℝ. El menor valor es 0, en x = −1, y a partir de ahí toma todos los valores positivos.",
+       "unir": true
+      },
+      {
+       "generador": "funcion",
+       "op": {
+        "filas": [
+         {
+          "nombre": "y",
+          "texto": "x => 2*x + 2",
+          "color": "#e03131",
+          "dominio": "x > -1",
+          "puntos": "1"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => -2*x - 2",
+          "color": "#1971c2",
+          "dominio": "x <= -1",
+          "puntos": "-3"
+         }
+        ],
+        "xMin": "-4",
+        "xMax": "3",
+        "yAuto": false,
+        "yMin": "-1",
+        "yMax": "7",
+        "tamano": "mini",
+        "escalaIgual": false,
+        "tamNumeros": "S",
+        "fuente": "normal",
+        "grosor": "normal",
+        "cuadricula": true,
+        "cuadrada": true,
+        "soloEnteros": true,
+        "ocultarNumeros": false,
+        "referencia": false,
+        "posReferencia": "arriba",
+        "marcarExtremos": true,
+        "titulos": false
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        },
+        {
+         "der": "Im = [0, +∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "y = |x² − 9|",
+     "bloques": [
+      {
+       "texto": "Se busca dónde lo de adentro es mayor o igual que 0:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "x² − 9 ≥ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x² − 9",
+          {
+           "t": " + 9",
+           "color": "suma"
+          },
+          " ≥ 0",
+          {
+           "t": " + 9",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 9 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "x² ≥ 9"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "√(x²)",
+           "color": "producto"
+          },
+          " ≥ ",
+          {
+           "t": "√9",
+           "color": "producto"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": "|x| ≥ 3",
+         "nota": "√(x²) = |x|"
+        },
+        {
+         "rel": "",
+         "der": "x ≤ −3  ∨  x ≥ 3"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Si x ≤ −3 o x ≥ 3, y = x² − 9. Si −3 < x < 3, lo de adentro es negativo y se le cambia el signo:"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "−(x² − 9)"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "−x² + 9",
+          "color": "producto"
+         },
+         "nota": "Distribuir el signo −",
+         "notaColor": "producto"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "y = ",
+          {
+           "sistema": [
+            "x² − 9,      si x ≤ −3",
+            "−x² + 9,   si −3 < x < 3",
+            "x² − 9,      si x ≥ 3"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "El dominio es ℝ. El menor valor es 0, en x = −3 y en x = 3. Las secciones de afuera crecen sin límite, así que toma todos los valores positivos.",
+       "unir": true
+      },
+      {
+       "generador": "funcion",
+       "op": {
+        "filas": [
+         {
+          "nombre": "y",
+          "texto": "x => 9 - x**2",
+          "color": "#e03131",
+          "dominio": "-3 < x < 3",
+          "puntos": "0"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => x**2 - 9",
+          "color": "#1971c2",
+          "dominio": "x <= -3",
+          "puntos": "-4"
+         },
+         {
+          "nombre": "y",
+          "texto": "x => x**2 - 9",
+          "color": "#1971c2",
+          "dominio": "x >= 3",
+          "puntos": "4"
+         }
+        ],
+        "xMin": "-5",
+        "xMax": "5",
+        "yAuto": false,
+        "yMin": "-1",
+        "yMax": "12",
+        "tamano": "mini",
+        "escalaIgual": false,
+        "tamNumeros": "S",
+        "fuente": "normal",
+        "grosor": "normal",
+        "cuadricula": true,
+        "cuadrada": true,
+        "soloEnteros": true,
+        "ocultarNumeros": false,
+        "referencia": false,
+        "posReferencia": "arriba",
+        "marcarExtremos": true,
+        "titulos": false
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "Dom = ℝ",
+         "color": "azul",
+         "caja": "azul"
+        },
+        {
+         "der": "Im = [0, +∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true,
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

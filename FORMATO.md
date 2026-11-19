@@ -91,6 +91,7 @@ se encarga la pizarra.
 | `"continua": "..."` (en cualquier bloque) | Con `estilo.continuacion`, el aviso que se escribe si la hoja se corta justo antes de este bloque. Por ejemplo, `"La tabla sigue en la siguiente hoja"`. Con `""` no se escribe ningún aviso (por ejemplo, si el bloque anterior ya termina con «(La tabla continúa)»). |
 | `"entero": true` (en un bloque de pasos) | El desarrollo no se parte entre dos hojas: si no entra al pie, pasa entero a la siguiente (si entra en una hoja). Los dibujos de los generadores ya se comportan así. |
 | `{ "espacio": 2 }` | Deja lugar libre (en renglones), por ejemplo para completar a mano. |
+| `"alLado": true` (en cualquier bloque menos una sección) | El bloque va a la derecha del bloque anterior de la misma lista, alineado arriba; con `"centro"`, centrado en vertical. Los dos quedan juntos y no se parten entre hojas. Sirve para dos recuadros cortos en un renglón o para los resultados al lado de un gráfico. Si no entra a lo ancho, va debajo, con un aviso. |
 
 ### Renglones de `pasos`
 
@@ -161,6 +162,14 @@ generadores de la pizarra):
 `plantillas`. En `op` van las opciones del generador. Lo que no se pone queda como en el
 panel. La forma más fácil de averiguar las opciones es armar el gráfico en la pizarra,
 seleccionarlo y mirar `customData.pizarra.opciones` en el archivo `.excalidraw`.
+
+Un gráfico de funciones (`funcion`): cada fila es una función de JavaScript
+(`"x => x**2 - 9"`; la potencia es `**` y un menos delante de una potencia va
+como `9 - x**2`, no `-x**2`), con `dominio` (`"x <= 2"`, `"(2, 4]"`) para una
+función por tramos (el mismo `nombre` en cada tramo) y `puntos` para marcar
+valores. `tamano`: `mini` (unos 360 de ancho), `chico`, `medio` o `grande`.
+Con `marcarExtremos` dibuja ● y ○ en los extremos de cada tramo; donde se tocan
+dos tramos, el que se escribe después queda arriba.
 
 Ejemplo, una recta real con un intervalo:
 

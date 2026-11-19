@@ -299,6 +299,25 @@ Se usa este `estilo` en todas las resoluciones:
   [premisas] → conclusión: es válido si es tautología. Si es inválido, se muestra la
   fila que es contraejemplo y se nombra la falacia.
 
+## Gráficos de funciones
+
+- **Gráficos chicos**: el generador `funcion` va con `"tamano": "mini"` (unos 360 de
+  ancho con los números), no a todo el ancho de la hoja. `"chico"` solo si la curva
+  necesita más detalle.
+- **Lo que acompaña al gráfico va a su lado**: los resultados cortos (Dom, Im,
+  intervalos de crecimiento) van a la derecha del gráfico con `"alLado": "centro"`
+  en el bloque del recuadro (o `true` para alinearlo arriba).
+- **Sin referencia** cuando la función por tramos ya está escrita arriba
+  (`"referencia": false`): la referencia muestra el código (`sqrt(x)`, `-1`).
+
+## Aprovechar el espacio
+
+- **Recuadros cortos en un mismo renglón**: dos resultados que se leen juntos («f
+  decrece en …» y «f crece en …», «Dom = ℝ» e «Im = …») van uno al lado del otro, con
+  `"alLado": true` en el segundo.
+- No se dejan medias hojas en blanco: si un gráfico no entra al pie, se achica o se
+  pone al lado del texto antes de pasarlo entero a la hoja siguiente.
+
 ## Resultados
 
 - El resultado final va en un recuadro y se escribe completo: «p ∧ q = F», no solo «F».

@@ -103,6 +103,10 @@ export function revisar(sol) {
       if (typeof b === "string") { texto(b, rb); return; }
       if (!b || typeof b !== "object") { err(rb, "bloque inválido"); return; }
       if (b.salto || b.espacio) return;
+      if (b.alLado !== undefined) {
+        if (b.alLado !== true && b.alLado !== "centro") av(rb + ".alLado", "tendría que ser true o \"centro\"");
+        else if (i === 0 || b.seccion !== undefined) av(rb + ".alLado", "va al lado del bloque anterior de la misma lista (no en el primero ni en una sección)");
+      }
       if (b.texto !== undefined) { texto(String(b.texto), rb); color(b.color, rb + ".color"); return; }
       if (Array.isArray(b.pasos)) { b.pasos.forEach((l, j) => renglon(l, `${rb}.pasos[${j}]`, j, b.pasos)); return; }
       if (b.generador) { if (!GENERADORES.includes(b.generador)) err(rb, `no existe el generador «${b.generador}»`); return; }
