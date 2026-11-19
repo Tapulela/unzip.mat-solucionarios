@@ -902,42 +902,330 @@
      "seccion": "Paridad",
      "bloques": [
       {
-       "texto": "f es par si f(−x) = f(x) para todo x del dominio, e impar si f(−x) = −f(x) para todo x del dominio."
-      },
-      {
-       "texto": "Se busca un contraejemplo con x = 1 y x = −1:"
-      },
-      {
-       "pasos": [
+       "seccion": "¿Es par?",
+       "bloques": [
         {
-         "izq": "f(1)",
-         "der": "1² + 1 − 2"
+         "texto": "Definición general de función par:",
+         "color": "azul",
+         "unir": true
         },
         {
-         "rel": "=",
-         "der": "0"
+         "texto": " ∀x: x ∈ Dom f → f(−x) = f(x)",
+         "color": "azul"
         },
         {
-         "izq": "f(−1)",
-         "der": "(−1)² + (−1) − 2"
+         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "color": "azul",
+         "unir": true
         },
         {
-         "rel": "=",
-         "der": "1 − 1 − 2"
+         "texto": " ∀x: x ∈ ℝ → f(−x) = f(x)",
+         "color": "azul"
         },
         {
-         "rel": "=",
-         "der": "−2"
+         "texto": "Se reemplaza en los dos miembros de la igualdad:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "f(−x) = f(x)"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "x² − x − 2",
+             "color": "producto"
+            },
+            " = ",
+            {
+             "t": "x² + x − 2",
+             "color": "producto"
+            }
+           ],
+           "nota": "Reemplazar f(−x) y f(x)",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "x² − x − 2 ",
+            {
+             "t": "− x²",
+             "color": "suma"
+            },
+            " = x² + x − 2 ",
+            {
+             "t": "− x²",
+             "color": "suma"
+            }
+           ],
+           "nota": "Restar x² en los dos miembros",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "",
+           "der": "−x − 2 = x − 2"
+          },
+          {
+           "rel": "",
+           "der": [
+            "−x − 2 ",
+            {
+             "t": "+ 2",
+             "color": "suma"
+            },
+            " = x − 2 ",
+            {
+             "t": "+ 2",
+             "color": "suma"
+            }
+           ],
+           "nota": "Sumar 2 en los dos miembros",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "",
+           "der": "−x = x"
+          }
+         ]
+        },
+        {
+         "texto": "Solo se cumple si −x = x, es decir, si x = 0, y no para todo x del dominio."
+        },
+        {
+         "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "izq": "f(1)",
+           "der": "1² + 1 − 2"
+          },
+          {
+           "rel": "=",
+           "der": "0"
+          },
+          {
+           "izq": "f(−1)",
+           "der": "(−1)² + (−1) − 2"
+          },
+          {
+           "rel": "=",
+           "der": "1 − 1 − 2"
+          },
+          {
+           "rel": "=",
+           "der": "−2"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": {
+            "tabla": [
+             [
+              "x = 1 ⇒ ",
+              "1 ∈ ℝ",
+              " → ",
+              "f(−1) = f(1)"
+             ],
+             [
+              "",
+              "",
+              "",
+              "−2 = 0"
+             ],
+             [
+              "",
+              {
+               "t": "V",
+               "color": "verde"
+              },
+              "→",
+              {
+               "t": "F",
+               "color": "rojo"
+              }
+             ],
+             [
+              "",
+              "",
+              {
+               "t": "F",
+               "color": "rojo"
+              },
+              ""
+             ]
+            ],
+            "alinear": "centro"
+           }
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "Para x = 1 la proposición es falsa, por lo tanto f no es par.",
+         "color": "azul"
         }
        ]
       },
       {
-       "texto": "f(−1) = −2 y f(1) = 0, entonces f(−1) ≠ f(1) y f no es par.",
-       "color": "azul"
-      },
-      {
-       "texto": "−f(1) = 0 y f(−1) = −2, entonces f(−1) ≠ −f(1) y f no es impar.",
-       "color": "azul"
+       "seccion": "¿Es impar?",
+       "bloques": [
+        {
+         "texto": "Definición general de función impar:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "texto": " ∀x: x ∈ Dom f → f(−x) = −f(x)",
+         "color": "azul"
+        },
+        {
+         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "texto": " ∀x: x ∈ ℝ → f(−x) = −f(x)",
+         "color": "azul"
+        },
+        {
+         "texto": "Se reemplaza en los dos miembros de la igualdad:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "f(−x) = −f(x)"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "x² − x − 2",
+             "color": "producto"
+            },
+            " = ",
+            {
+             "t": "−x² − x + 2",
+             "color": "producto"
+            }
+           ],
+           "nota": "Reemplazar f(−x) y −f(x)",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "x² − x − 2 ",
+            {
+             "t": "+ x",
+             "color": "suma"
+            },
+            " = −x² − x + 2 ",
+            {
+             "t": "+ x",
+             "color": "suma"
+            }
+           ],
+           "nota": "Sumar x en los dos miembros",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "",
+           "der": "x² − 2 = −x² + 2"
+          },
+          {
+           "rel": "",
+           "der": [
+            "x² − 2 ",
+            {
+             "t": "+ x²",
+             "color": "suma"
+            },
+            " = −x² + 2 ",
+            {
+             "t": "+ x²",
+             "color": "suma"
+            }
+           ],
+           "nota": "Sumar x² en los dos miembros",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "",
+           "der": "2x² − 2 = 2"
+          }
+         ]
+        },
+        {
+         "texto": "Solo se cumple si 2x² − 2 = 2, es decir, si x² = 2, y no para todo x del dominio."
+        },
+        {
+         "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": {
+            "tabla": [
+             [
+              "x = 1 ⇒ ",
+              "1 ∈ ℝ",
+              " → ",
+              "f(−1) = −f(1)"
+             ],
+             [
+              "",
+              "",
+              "",
+              "−2 = 0"
+             ],
+             [
+              "",
+              {
+               "t": "V",
+               "color": "verde"
+              },
+              "→",
+              {
+               "t": "F",
+               "color": "rojo"
+              }
+             ],
+             [
+              "",
+              "",
+              {
+               "t": "F",
+               "color": "rojo"
+              },
+              ""
+             ]
+            ],
+            "alinear": "centro"
+           }
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "Para x = 1 la proposición es falsa, por lo tanto f no es impar.",
+         "color": "azul"
+        }
+       ]
       },
       {
        "pasos": [
@@ -1212,7 +1500,326 @@
      "seccion": "Rango e imagen",
      "bloques": [
       {
-       "texto": "El dominio es ℝ, porque f es un polinomio. Como la parábola abre hacia arriba, el menor valor de f es yᵥ = −9/4 y toma todos los valores mayores."
+       "texto": "El dominio es ℝ, porque f es un polinomio."
+      },
+      {
+       "texto": "Para hallar el rango se busca el dominio de la relación inversa: se despeja x en función de y, y se ve para qué valores de y existe x (dentro del dominio de f).",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "y = x² + x − 2"
+        },
+        {
+         "rel": "",
+         "der": [
+          "y ",
+          {
+           "t": "− y",
+           "color": "suma"
+          },
+          " = x² + x − 2 ",
+          {
+           "t": "− y",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar y en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "0 = x² + x − 2 − y"
+        },
+        {
+         "rel": "",
+         "der": "x² + x − 2 − y = 0",
+         "nota": "Escribir la igualdad al revés",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x² + x + ",
+          {
+           "t": "(−2 − y)",
+           "color": "producto"
+          },
+          " = 0"
+         ],
+         "nota": "Agrupar el término independiente",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Es una ecuación cuadrática en x, con a = 1, b = 1 y c = −2 − y:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            [
+             "−b ± ",
+             {
+              "raiz": "b² − 4ac"
+             }
+            ],
+            "2a"
+           ]
+          }
+         ]
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            [
+             {
+              "t": "−1",
+              "color": "producto"
+             },
+             " ± ",
+             {
+              "raiz": [
+               {
+                "t": "1",
+                "color": "producto"
+               },
+               "² − 4 · ",
+               {
+                "t": "1",
+                "color": "producto"
+               },
+               " · ",
+               {
+                "t": "(−2 − y)",
+                "color": "producto"
+               }
+              ]
+             }
+            ],
+            [
+             "2 · ",
+             {
+              "t": "1",
+              "color": "producto"
+             }
+            ]
+           ]
+          }
+         ],
+         "nota": "Reemplazar a, b y c",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            [
+             "−1 ± ",
+             {
+              "raiz": [
+               {
+                "t": "1",
+                "color": "producto"
+               },
+               " − 4 · 1 · (−2 − y)"
+              ]
+             }
+            ],
+            "2 · 1"
+           ]
+          }
+         ],
+         "nota": "Resolver la potencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            [
+             "−1 ± ",
+             {
+              "raiz": [
+               "1 − ",
+               {
+                "t": "4",
+                "color": "producto"
+               },
+               " · (−2 − y)"
+              ]
+             }
+            ],
+            "2 · 1"
+           ]
+          }
+         ],
+         "nota": "Resolver 4 · 1",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            [
+             "−1 ± ",
+             {
+              "raiz": "1 − 4 · (−2 − y)"
+             }
+            ],
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Resolver 2 · 1",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            [
+             "−1 ± ",
+             {
+              "raiz": [
+               "1 ",
+               {
+                "t": "+ 8 + 4y",
+                "color": "producto"
+               }
+              ]
+             }
+            ],
+            "2"
+           ]
+          }
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            [
+             "−1 ± ",
+             {
+              "raiz": [
+               {
+                "t": "9",
+                "color": "suma"
+               },
+               " + 4y"
+              ]
+             }
+            ],
+            "2"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "La raíz cuadrada solo está definida en ℝ si el radicando es mayor o igual que 0:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "9 + 4y ≥ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          "9 + 4y ",
+          {
+           "t": "− 9",
+           "color": "suma"
+          },
+          " ≥ 0 ",
+          {
+           "t": "− 9",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 9 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "4y ≥ −9"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "4y",
+            {
+             "t": "4",
+             "color": "producto"
+            }
+           ]
+          },
+          " ≥ ",
+          {
+           "frac": [
+            "−9",
+            {
+             "t": "4",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir por 4 (positivo, no",
+          "cambia la desigualdad)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "y ≥ − ",
+          {
+           "frac": [
+            "9",
+            "4"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Para cada y ≥ −9/4 hay un x real, y todo x real está en el dominio de f. El dominio de la relación inversa es [−9/4, +∞), y ese es el rango de f."
       },
       {
        "pasos": [
@@ -1391,39 +1998,198 @@
      "seccion": "Rango",
      "bloques": [
       {
-       "texto": "Cuando x recorre [2, +∞), la raíz √(3x − 6) toma todos los valores mayores o iguales que 0:"
+       "texto": "Para hallar el rango se busca el dominio de la relación inversa: se despeja x en función de y, y se ve para qué valores de y existe x (dentro del dominio de f).",
+       "unir": true
       },
       {
        "pasos": [
         {
          "rel": "",
-         "der": "√(3x − 6) ≥ 0"
+         "der": [
+          "y = 7 + ",
+          {
+           "raiz": "3x − 6"
+          }
+         ]
         },
         {
          "rel": "",
          "der": [
+          "y ",
           {
-           "t": "7 + ",
+           "t": "− 7",
            "color": "suma"
           },
-          "√(3x − 6) ≥ ",
+          " = 7 + ",
           {
-           "t": "7 + ",
+           "raiz": "3x − 6"
+          },
+          " ",
+          {
+           "t": "− 7",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 7 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": [
+          "y − 7 = ",
+          {
+           "raiz": "3x − 6"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Una raíz cuadrada nunca es negativa: para que exista x, el miembro izquierdo tampoco puede serlo.",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "y − 7 ≥ 0"
+        },
+        {
+         "rel": "",
+         "der": [
+          "y − 7 ",
+          {
+           "t": "+ 7",
            "color": "suma"
           },
-          "0"
+          " ≥ 0 ",
+          {
+           "t": "+ 7",
+           "color": "suma"
+          }
          ],
          "nota": "Sumar 7 en los dos miembros",
          "notaColor": "suma"
         },
         {
          "rel": "",
-         "der": "f(x) ≥ 7"
+         "der": "y ≥ 7"
         }
        ]
       },
       {
-       "texto": "El valor 7 se alcanza en x = 2, porque f(2) = 7 + √0 = 7."
+       "texto": "Con y ≥ 7 se sigue despejando x:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "y − 7 = ",
+          {
+           "raiz": "3x − 6"
+          }
+         ]
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "(y − 7)²",
+           "color": "producto"
+          },
+          " = ",
+          {
+           "t": "(",
+           "color": "producto"
+          },
+          {
+           "raiz": "3x − 6"
+          },
+          {
+           "t": ")²",
+           "color": "producto"
+          }
+         ],
+         "nota": "Elevar al cuadrado los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "(y − 7)² = ",
+          {
+           "t": "3x − 6",
+           "color": "producto"
+          }
+         ],
+         "nota": "(√u)² = u, porque u ≥ 0",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "(y − 7)² ",
+          {
+           "t": "+ 6",
+           "color": "suma"
+          },
+          " = 3x − 6 ",
+          {
+           "t": "+ 6",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 6 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "(y − 7)² + 6 = 3x"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "(y − 7)² + 6",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "3x",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por 3 en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "(y − 7)² + 6",
+            "3"
+           ]
+          },
+          " = x"
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Para todo y ≥ 7 este x existe y es mayor o igual que 2, así que está en el dominio de f. El dominio de la relación inversa es [7, +∞), y ese es el rango de f."
       },
       {
        "pasos": [
@@ -1684,16 +2450,382 @@
      "seccion": "Rango",
      "bloques": [
       {
-       "texto": "Se busca qué valores toma cada sección:"
+       "texto": "Se busca el dominio de la relación inversa en cada sección: se despeja x en función de y y se reemplaza en la condición de x de la sección."
       },
       {
-       "texto": "x² con −2 ≤ x < 0: baja desde f(−2) = 4 hasta acercarse a 0, sin llegar (x = 0 no está). Toma los valores de (0, 4]."
+       "seccion": "Sección x², con −2 ≤ x < 0",
+       "bloques": [
+        {
+         "texto": "Como y = x², y ≥ 0:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "y = x²"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "√y",
+             "color": "producto"
+            },
+            " = ",
+            {
+             "t": "√(x²)",
+             "color": "producto"
+            }
+           ],
+           "nota": "Raíz cuadrada en los dos miembros",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "√y = ",
+            {
+             "t": "|x|",
+             "color": "producto"
+            }
+           ],
+           "nota": "√(x²) = |x|",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "√y = ",
+            {
+             "t": "−x",
+             "color": "producto"
+            }
+           ],
+           "nota": "Como x < 0, |x| = −x",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "√y ",
+            {
+             "t": "· (−1)",
+             "color": "producto"
+            },
+            " = −x ",
+            {
+             "t": "· (−1)",
+             "color": "producto"
+            }
+           ],
+           "nota": "Multiplicar por −1 en los dos miembros",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": "−√y = x"
+          }
+         ]
+        },
+        {
+         "texto": "Se reemplaza x en la condición de la sección:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "−2 ≤ x < 0"
+          },
+          {
+           "rel": "",
+           "der": [
+            "−2 ≤ ",
+            {
+             "t": "−√y",
+             "color": "producto"
+            },
+            " < 0"
+           ],
+           "nota": "Reemplazar x = −√y",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "−2 ",
+            {
+             "t": "· (−1)",
+             "color": "producto"
+            },
+            " ≥ −√y ",
+            {
+             "t": "· (−1)",
+             "color": "producto"
+            },
+            " > 0 ",
+            {
+             "t": "· (−1)",
+             "color": "producto"
+            }
+           ],
+           "nota": [
+            "Multiplicar por −1 (negativo:",
+            "cambian las desigualdades)"
+           ],
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": "2 ≥ √y > 0"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "2²",
+             "color": "producto"
+            },
+            " ≥ ",
+            {
+             "t": "(√y)²",
+             "color": "producto"
+            },
+            " > ",
+            {
+             "t": "0²",
+             "color": "producto"
+            }
+           ],
+           "nota": [
+            "Elevar al cuadrado (los tres",
+            "miembros son positivos o 0)"
+           ],
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": "4 ≥ y > 0"
+          }
+         ]
+        },
+        {
+         "texto": "Toma los valores de (0, 4]."
+        }
+       ]
       },
       {
-       "texto": "x − 1 con 0 ≤ x ≤ 2: sube desde f(0) = −1 hasta f(2) = 1. Toma los valores de [−1, 1]."
+       "seccion": "Sección x − 1, con 0 ≤ x ≤ 2",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "y = x − 1"
+          },
+          {
+           "rel": "",
+           "der": [
+            "y ",
+            {
+             "t": "+ 1",
+             "color": "suma"
+            },
+            " = x − 1 ",
+            {
+             "t": "+ 1",
+             "color": "suma"
+            }
+           ],
+           "nota": "Sumar 1 en los dos miembros",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "",
+           "der": "y + 1 = x"
+          }
+         ]
+        },
+        {
+         "texto": "Se reemplaza x en la condición de la sección:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "0 ≤ x ≤ 2"
+          },
+          {
+           "rel": "",
+           "der": [
+            "0 ≤ ",
+            {
+             "t": "y + 1",
+             "color": "producto"
+            },
+            " ≤ 2"
+           ],
+           "nota": "Reemplazar x = y + 1",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "0 ",
+            {
+             "t": "− 1",
+             "color": "suma"
+            },
+            " ≤ y + 1 ",
+            {
+             "t": "− 1",
+             "color": "suma"
+            },
+            " ≤ 2 ",
+            {
+             "t": "− 1",
+             "color": "suma"
+            }
+           ],
+           "nota": "Restar 1 en los tres miembros",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "",
+           "der": "−1 ≤ y ≤ 1"
+          }
+         ]
+        },
+        {
+         "texto": "Toma los valores de [−1, 1]."
+        }
+       ]
       },
       {
-       "texto": "√x con 2 < x ≤ 4: sube desde √2 ≈ 1,41 (sin llegar) hasta f(4) = 2. Toma los valores de (√2, 2]."
+       "seccion": "Sección √x, con 2 < x ≤ 4",
+       "bloques": [
+        {
+         "texto": "Como y = √x, y ≥ 0:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "y = √x"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "y²",
+             "color": "producto"
+            },
+            " = ",
+            {
+             "t": "(√x)²",
+             "color": "producto"
+            }
+           ],
+           "nota": "Elevar al cuadrado los dos miembros",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "y² = ",
+            {
+             "t": "x",
+             "color": "producto"
+            }
+           ],
+           "nota": "(√x)² = x, porque x ≥ 0",
+           "notaColor": "producto"
+          }
+         ]
+        },
+        {
+         "texto": "Se reemplaza x en la condición de la sección:",
+         "unir": true
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "2 < x ≤ 4"
+          },
+          {
+           "rel": "",
+           "der": [
+            "2 < ",
+            {
+             "t": "y²",
+             "color": "producto"
+            },
+            " ≤ 4"
+           ],
+           "nota": "Reemplazar x = y²",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "√2",
+             "color": "producto"
+            },
+            " < ",
+            {
+             "t": "√(y²)",
+             "color": "producto"
+            },
+            " ≤ ",
+            {
+             "t": "√4",
+             "color": "producto"
+            }
+           ],
+           "nota": "Raíz cuadrada en los tres miembros",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "√2 < ",
+            {
+             "t": "|y|",
+             "color": "producto"
+            },
+            " ≤ ",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ],
+           "nota": "√(y²) = |y| y √4 = 2",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "",
+           "der": [
+            "√2 < ",
+            {
+             "t": "y",
+             "color": "producto"
+            },
+            " ≤ 2"
+           ],
+           "nota": "Como y ≥ 0, |y| = y",
+           "notaColor": "producto"
+          }
+         ]
+        },
+        {
+         "texto": "Toma los valores de (√2, 2]."
+        }
+       ]
       },
       {
        "texto": "El rango es la unión:"
@@ -1944,6 +3076,28 @@
        "seccion": "¿Es par?",
        "bloques": [
         {
+         "texto": "Definición general de función par:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "texto": " ∀x: x ∈ Dom f → f(−x) = f(x)",
+         "color": "azul"
+        },
+        {
+         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "texto": " ∀x: x ∈ ℝ − {7} → h(−x) = h(x)",
+         "color": "azul"
+        },
+        {
+         "texto": "Se reemplaza en los dos miembros de la igualdad:",
+         "unir": true
+        },
+        {
          "pasos": [
           {
            "rel": "",
@@ -2010,7 +3164,15 @@
          ]
         },
         {
-         "texto": "Los numeradores son iguales, pero los denominadores solo coinciden si −x − 7 = x − 7, es decir, si x = 0: la igualdad no vale para todo x del dominio. Por ejemplo, con x = 1 y x = −1:",
+         "texto": "Los numeradores son iguales, pero los denominadores solo coinciden si −x − 7 = x − 7, es decir, si x = 0, y no para todo x del dominio."
+        },
+        {
+         "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "texto": "Se calculan h(1) y h(−1):",
          "unir": true
         },
         {
@@ -2085,29 +3247,50 @@
          "pasos": [
           {
            "rel": "",
-           "der": [
-            "h(−1) = − ",
-            {
-             "frac": [
-              "3",
-              "8"
+           "der": {
+            "tabla": [
+             [
+              "x = 1 ⇒ ",
+              "1 ∈ ℝ − {7}",
+              " → ",
+              "h(−1) = h(1)"
+             ],
+             [
+              "",
+              "",
+              "",
+              "−3/8 = −1/2"
+             ],
+             [
+              "",
+              {
+               "t": "V",
+               "color": "verde"
+              },
+              "→",
+              {
+               "t": "F",
+               "color": "rojo"
+              }
+             ],
+             [
+              "",
+              "",
+              {
+               "t": "F",
+               "color": "rojo"
+              },
+              ""
              ]
-            },
-            " ≠ − ",
-            {
-             "frac": [
-              "1",
-              "2"
-             ]
-            },
-            " = h(1)"
-           ]
+            ],
+            "alinear": "centro"
+           }
           }
          ],
          "entero": true
         },
         {
-         "texto": "Como h(−1) ≠ h(1), h no es par.",
+         "texto": "Para x = 1 la proposición es falsa, por lo tanto h no es par.",
          "color": "azul"
         }
        ]
@@ -2115,6 +3298,28 @@
       {
        "seccion": "¿Es impar?",
        "bloques": [
+        {
+         "texto": "Definición general de función impar:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "texto": " ∀x: x ∈ Dom f → f(−x) = −f(x)",
+         "color": "azul"
+        },
+        {
+         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "color": "azul",
+         "unir": true
+        },
+        {
+         "texto": " ∀x: x ∈ ℝ − {7} → h(−x) = −h(x)",
+         "color": "azul"
+        },
+        {
+         "texto": "Se reemplaza en los dos miembros de la igualdad:",
+         "unir": true
+        },
         {
          "pasos": [
           {
@@ -2205,36 +3410,61 @@
          ]
         },
         {
-         "texto": "Los numeradores son iguales y nunca valen 0 (x² + 2 > 0), pero los denominadores son distintos para todo x (−x − 7 ≠ −x + 7): la igualdad no se cumple. Por ejemplo, con x = 1:",
+         "texto": "Los numeradores son iguales y nunca valen 0 (x² + 2 > 0), pero los denominadores son distintos para todo x (−x − 7 ≠ −x + 7)."
+        },
+        {
+         "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
+         "color": "azul",
          "unir": true
         },
         {
          "pasos": [
           {
            "rel": "",
-           "der": [
-            "h(−1) = − ",
-            {
-             "frac": [
-              "3",
-              "8"
+           "der": {
+            "tabla": [
+             [
+              "x = 1 ⇒ ",
+              "1 ∈ ℝ − {7}",
+              " → ",
+              "h(−1) = −h(1)"
+             ],
+             [
+              "",
+              "",
+              "",
+              "−3/8 = 1/2"
+             ],
+             [
+              "",
+              {
+               "t": "V",
+               "color": "verde"
+              },
+              "→",
+              {
+               "t": "F",
+               "color": "rojo"
+              }
+             ],
+             [
+              "",
+              "",
+              {
+               "t": "F",
+               "color": "rojo"
+              },
+              ""
              ]
-            },
-            " ≠ ",
-            {
-             "frac": [
-              "1",
-              "2"
-             ]
-            },
-            " = −h(1)"
-           ]
+            ],
+            "alinear": "centro"
+           }
           }
          ],
          "entero": true
         },
         {
-         "texto": "Como h(−1) ≠ −h(1), h no es impar.",
+         "texto": "Para x = 1 la proposición es falsa, por lo tanto h no es impar.",
          "color": "azul"
         }
        ]
@@ -2876,8 +4106,95 @@
        "entero": true
       },
       {
-       "texto": "El dominio es ℝ. El menor valor es 0, en x = −1, y a partir de ahí toma todos los valores positivos.",
+       "texto": "El dominio es ℝ: el valor absoluto está definido para todo número real."
+      },
+      {
+       "texto": "Para hallar la imagen se busca el dominio de la relación inversa: se despeja x en función de y, y se ve para qué valores de y existe x (dentro del dominio de la función).",
        "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "y = |−2x − 2|"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "−2x − 2 = ±y",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Definición de valor absoluto",
+          "(con y ≥ 0)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "−2x − 2 ",
+          {
+           "t": "+ 2",
+           "color": "suma"
+          },
+          " = ±y ",
+          {
+           "t": "+ 2",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 2 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "−2x = ±y + 2"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "−2x",
+            {
+             "t": "−2",
+             "color": "producto"
+            }
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "±y + 2",
+            {
+             "t": "−2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por −2 en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x = ",
+          {
+           "frac": [
+            "±y + 2",
+            "−2"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Para cada y ≥ 0 hay un x real, y todo x real está en el dominio. Un valor absoluto nunca es negativo, así que no hay x para y < 0. El dominio de la relación inversa es [0, +∞), y esa es la imagen."
       },
       {
        "generador": "funcion",
@@ -3038,8 +4355,85 @@
        "entero": true
       },
       {
-       "texto": "El dominio es ℝ. El menor valor es 0, en x = −3 y en x = 3. Las secciones de afuera crecen sin límite, así que toma todos los valores positivos.",
+       "texto": "El dominio es ℝ: el valor absoluto está definido para todo número real."
+      },
+      {
+       "texto": "Para hallar la imagen se busca el dominio de la relación inversa: se despeja x en función de y, y se ve para qué valores de y existe x (dentro del dominio de la función).",
        "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "y = |x² − 9|"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "x² − 9 = ±y",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Definición de valor absoluto",
+          "(con y ≥ 0)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          "x² − 9 ",
+          {
+           "t": "+ 9",
+           "color": "suma"
+          },
+          " = ±y ",
+          {
+           "t": "+ 9",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 9 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "",
+         "der": "x² = 9 ± y"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "√(x²)",
+           "color": "producto"
+          },
+          " = ",
+          {
+           "t": "√(9 ± y)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "|x|",
+           "color": "producto"
+          },
+          " = √(9 ± y)"
+         ],
+         "nota": "√(x²) = |x|",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Con el signo +, 9 + y ≥ 0 para todo y ≥ 0, así que siempre hay un x. Un valor absoluto nunca es negativo, así que no hay x para y < 0. El dominio de la relación inversa es [0, +∞), y esa es la imagen."
       },
       {
        "generador": "funcion",

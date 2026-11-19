@@ -326,6 +326,18 @@ Se usa este `estilo` en todas las resoluciones:
   definición, f(−x) = f(x) (o f(−x) = −f(x)), se reemplaza en los dos miembros y se
   opera en los dos hasta ver que son iguales (✓). No se parte de f(−x) para llegar a
   f(x). Si no son iguales para todo x, se dice por qué y se da un contraejemplo.
+- **Contraejemplo de paridad, como en relaciones binarias**: «Definición general de
+  función par:» con ∀x: x ∈ Dom f → f(−x) = f(x), «Definición aplicada en el contexto
+  de este ejercicio:» con el dominio y el nombre de la función, «La propiedad no se
+  cumple. Lo demostramos con un contraejemplo…», el caso evaluado («x = 1 ⇒ 1 ∈ ℝ →
+  f(−1) = f(1)», debajo los valores, V y F debajo de cada parte y el resultado F
+  debajo del →) y al final «Para x = 1 la proposición es falsa, por lo tanto f no es
+  par».
+- **Rango (o imagen) con el dominio de la relación inversa**: se despeja x en función
+  de y, un paso por renglón, y se ve para qué valores de y existe x dentro del dominio
+  de la función (radicandos ≥ 0, denominadores ≠ 0, la condición de x de cada
+  sección, un valor absoluto o una raíz nunca negativos). Ese dominio de la relación
+  inversa es el rango. No se deduce mirando el gráfico.
 - **Valor absoluto**: se dice de qué es «lo de adentro»: «lo de adentro del valor
   absoluto».
 - **Sin referencia** cuando la función por tramos ya está escrita arriba
@@ -381,6 +393,13 @@ Se usa este `estilo` en todas las resoluciones:
 - **Nunca más de un paso por renglón**, en todos los temas: ni cadenas como
   «(1 ∗ 1) ∗ 0 = 2 ∗ 0 = 4», ni dentro de un párrafo de texto. Cada igualdad del
   desarrollo va en su propio renglón de `pasos`, con su nota.
+- **Factor común en su propio renglón**: al sacar factor común, lo de adentro del
+  paréntesis queda sin resolver («90 · (1 + 7) − 702») y se resuelve en el renglón
+  siguiente («90 · 8 − 702»). Lo mismo con la distributiva, el signo − delante de un
+  paréntesis y el cambio de orden de los términos (propiedad conmutativa): cada uno
+  es un renglón.
+- **Identidad de Bézout**: el cálculo va en su propia sección, «Identidad de
+  Bézout», separada de la del máximo común divisor, así queda claro dónde empieza.
 
 - **Una operación en los dos miembros se escribe en los dos, y en color en los dos**
   (propiedad uniforme): «x² + 1 − 1 = 0 − 1», con los dos «− 1» en verde. Como `izq` no

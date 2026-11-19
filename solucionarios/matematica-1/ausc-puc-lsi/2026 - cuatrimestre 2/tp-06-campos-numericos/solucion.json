@@ -1168,169 +1168,215 @@
        "seccion": "792 y 702",
        "bloques": [
         {
-         "pasos": [
+         "seccion": "Máximo común divisor",
+         "bloques": [
           {
-           "rel": "",
-           "der": "792 = 702 · 1 + 90"
+           "pasos": [
+            {
+             "rel": "",
+             "der": "792 = 702 · 1 + 90"
+            },
+            {
+             "rel": "",
+             "der": "702 = 90 · 7 + 72"
+            },
+            {
+             "rel": "",
+             "der": "90 = 72 · 1 + 18"
+            },
+            {
+             "rel": "",
+             "der": "72 = 18 · 4 + 0"
+            }
+           ],
+           "entero": true
           },
           {
-           "rel": "",
-           "der": "702 = 90 · 7 + 72"
+           "texto": "El último resto distinto de 0 es 18."
           },
           {
-           "rel": "",
-           "der": "90 = 72 · 1 + 18"
-          },
-          {
-           "rel": "",
-           "der": "72 = 18 · 4 + 0"
-          }
-         ],
-         "entero": true
-        },
-        {
-         "texto": "El último resto distinto de 0 es 18."
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "MCD(792, 702) = 18",
-           "caja": "azul",
-           "color": "azul"
+           "pasos": [
+            {
+             "rel": "",
+             "der": "MCD(792, 702) = 18",
+             "caja": "azul",
+             "color": "azul"
+            }
+           ]
           }
          ]
         },
         {
-         "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
-         "unir": true
-        },
-        {
-         "pasos": [
+         "seccion": "Identidad de Bézout",
+         "bloques": [
           {
-           "rel": "",
-           "der": "90 = 792 − 702 · 1"
+           "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
+           "unir": true
           },
           {
-           "rel": "",
-           "der": "72 = 702 − 90 · 7"
-          },
-          {
-           "rel": "",
-           "der": "18 = 90 − 72 · 1"
-          }
-         ],
-         "entero": true
-        },
-        {
-         "texto": "Se parte del MCD y se reemplazan los restos, de abajo hacia arriba:",
-         "unir": true
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "18 = 90 − 72"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "90 − ",
+           "pasos": [
             {
-             "t": "(702 − 90 · 7)",
-             "color": "producto"
+             "rel": "",
+             "der": "90 = 792 − 702 · 1"
+            },
+            {
+             "rel": "",
+             "der": "72 = 702 − 90 · 7"
+            },
+            {
+             "rel": "",
+             "der": "18 = 90 − 72 · 1"
             }
            ],
-           "nota": "Reemplazar 72",
-           "notaColor": "producto"
+           "entero": true
           },
           {
-           "rel": "=",
-           "der": [
-            "90 − 702 ",
+           "texto": "Se parte del MCD y se reemplazan los restos, de abajo hacia arriba:",
+           "unir": true
+          },
+          {
+           "pasos": [
             {
-             "t": "+ 90 · 7",
-             "color": "producto"
+             "rel": "",
+             "der": "18 = 90 − 72"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "90 − ",
+              {
+               "t": "(702 − 90 · 7)",
+               "color": "producto"
+              },
+              ""
+             ],
+             "nota": "Reemplazar 72",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "90 ",
+              {
+               "t": "− 702 + 90 · 7",
+               "color": "producto"
+              }
+             ],
+             "nota": "Distribuir el signo −",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "90 ",
+              {
+               "t": "+ 90 · 7",
+               "color": "producto"
+              },
+              " − 702"
+             ],
+             "nota": "Propiedad conmutativa",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "90 · (1 + 7)",
+               "color": "producto"
+              },
+              " − 702"
+             ],
+             "nota": "Factor común 90",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "90 · ",
+              {
+               "t": "8",
+               "color": "suma"
+              },
+              " − 702"
+             ]
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "(792 − 702)",
+               "color": "producto"
+              },
+              " · 8",
+              " − 702"
+             ],
+             "nota": "Reemplazar 90",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "792 · 8 − 702 · 8",
+               "color": "producto"
+              },
+              " − 702"
+             ],
+             "nota": "Propiedad distributiva",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "792 · 8 − ",
+              {
+               "t": "702 · (8 + 1)",
+               "color": "producto"
+              }
+             ],
+             "nota": "Factor común 702",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "792 · 8 − 702 · ",
+              {
+               "t": "9",
+               "color": "suma"
+              }
+             ]
+            },
+            {
+             "rel": "",
+             "der": "18 = 792 · 8 + 702 · (−9)",
+             "caja": "azul",
+             "color": "azul"
             }
-           ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
+           ]
           },
           {
-           "rel": "=",
-           "der": [
+           "texto": "Verificación:"
+          },
+          {
+           "pasos": [
             {
-             "t": "90 · 8",
-             "color": "producto"
+             "rel": "",
+             "der": "792 · 8 + 702 · (−9)"
             },
-            " − 702"
-           ],
-           "nota": "Factor común 90",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
             {
-             "t": "(792 − 702)",
-             "color": "producto"
+             "rel": "=",
+             "der": "6336 − 6318"
             },
-            " · 8 − 702"
-           ],
-           "nota": "Reemplazar 90",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
             {
-             "t": "792 · 8 − 702 · 8",
-             "color": "producto"
-            },
-            " − 702"
-           ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "792 · 8 ",
-            {
-             "t": "− 702 · 9",
-             "color": "producto"
-            }
-           ],
-           "nota": "Factor común 702",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "",
-           "der": "18 = 792 · 8 + 702 · (−9)",
-           "caja": "azul",
-           "color": "azul"
-          }
-         ]
-        },
-        {
-         "texto": "Verificación:"
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "792 · 8 + 702 · (−9)"
-          },
-          {
-           "rel": "=",
-           "der": "6336 − 6318"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "18 ",
-            {
-             "marca": "ok"
+             "rel": "=",
+             "der": [
+              "18 ",
+              {
+               "marca": "ok"
+              }
+             ]
             }
            ]
           }
@@ -1342,170 +1388,228 @@
        "seccion": "2024 y 1196",
        "bloques": [
         {
-         "pasos": [
+         "seccion": "Máximo común divisor",
+         "bloques": [
           {
-           "rel": "",
-           "der": "2024 = 1196 · 1 + 828"
+           "pasos": [
+            {
+             "rel": "",
+             "der": "2024 = 1196 · 1 + 828"
+            },
+            {
+             "rel": "",
+             "der": "1196 = 828 · 1 + 368"
+            },
+            {
+             "rel": "",
+             "der": "828 = 368 · 2 + 92"
+            },
+            {
+             "rel": "",
+             "der": "368 = 92 · 4 + 0"
+            }
+           ],
+           "entero": true
           },
           {
-           "rel": "",
-           "der": "1196 = 828 · 1 + 368"
+           "texto": "El último resto distinto de 0 es 92."
           },
           {
-           "rel": "",
-           "der": "828 = 368 · 2 + 92"
-          },
-          {
-           "rel": "",
-           "der": "368 = 92 · 4 + 0"
-          }
-         ],
-         "entero": true
-        },
-        {
-         "texto": "El último resto distinto de 0 es 92."
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "MCD(2024, 1196) = 92",
-           "caja": "azul",
-           "color": "azul"
+           "pasos": [
+            {
+             "rel": "",
+             "der": "MCD(2024, 1196) = 92",
+             "caja": "azul",
+             "color": "azul"
+            }
+           ]
           }
          ]
         },
         {
-         "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
-         "unir": true
-        },
-        {
-         "pasos": [
+         "seccion": "Identidad de Bézout",
+         "bloques": [
           {
-           "rel": "",
-           "der": "828 = 2024 − 1196 · 1"
+           "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
+           "unir": true
           },
           {
-           "rel": "",
-           "der": "368 = 1196 − 828 · 1"
-          },
-          {
-           "rel": "",
-           "der": "92 = 828 − 368 · 2"
-          }
-         ],
-         "entero": true
-        },
-        {
-         "texto": "Se parte del MCD y se reemplazan los restos, de abajo hacia arriba:",
-         "unir": true
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "92 = 828 − 368 · 2"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "828 − ",
+           "pasos": [
             {
-             "t": "(1196 − 828)",
-             "color": "producto"
+             "rel": "",
+             "der": "828 = 2024 − 1196 · 1"
             },
-            " · 2"
-           ],
-           "nota": "Reemplazar 368",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "828 ",
             {
-             "t": "− 1196 · 2 + 828 · 2",
-             "color": "producto"
+             "rel": "",
+             "der": "368 = 1196 − 828 · 1"
+            },
+            {
+             "rel": "",
+             "der": "92 = 828 − 368 · 2"
             }
            ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
+           "entero": true
           },
           {
-           "rel": "=",
-           "der": [
+           "texto": "Se parte del MCD y se reemplazan los restos, de abajo hacia arriba:",
+           "unir": true
+          },
+          {
+           "pasos": [
             {
-             "t": "828 · 3",
-             "color": "producto"
+             "rel": "",
+             "der": "92 = 828 − 368 · 2"
             },
-            " − 1196 · 2"
-           ],
-           "nota": "Factor común 828",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
             {
-             "t": "(2024 − 1196)",
-             "color": "producto"
+             "rel": "=",
+             "der": [
+              "828 − ",
+              {
+               "t": "(1196 − 828)",
+               "color": "producto"
+              },
+              " · 2"
+             ],
+             "nota": "Reemplazar 368",
+             "notaColor": "producto"
             },
-            " · 3 − 1196 · 2"
-           ],
-           "nota": "Reemplazar 828",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
             {
-             "t": "2024 · 3 − 1196 · 3",
-             "color": "producto"
+             "rel": "=",
+             "der": [
+              "828 − (",
+              {
+               "t": "1196 · 2 − 828 · 2",
+               "color": "producto"
+              },
+              ")"
+             ],
+             "nota": "Propiedad distributiva",
+             "notaColor": "producto"
             },
-            " − 1196 · 2"
-           ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "2024 · 3 ",
             {
-             "t": "− 1196 · 5",
-             "color": "producto"
+             "rel": "=",
+             "der": [
+              "828 ",
+              {
+               "t": "− 1196 · 2 + 828 · 2",
+               "color": "producto"
+              }
+             ],
+             "nota": "Distribuir el signo −",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "828 ",
+              {
+               "t": "+ 828 · 2",
+               "color": "producto"
+              },
+              " − 1196 · 2"
+             ],
+             "nota": "Propiedad conmutativa",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "828 · (1 + 2)",
+               "color": "producto"
+              },
+              " − 1196 · 2"
+             ],
+             "nota": "Factor común 828",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "828 · ",
+              {
+               "t": "3",
+               "color": "suma"
+              },
+              " − 1196 · 2"
+             ]
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "(2024 − 1196)",
+               "color": "producto"
+              },
+              " · 3",
+              " − 1196 · 2"
+             ],
+             "nota": "Reemplazar 828",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "2024 · 3 − 1196 · 3",
+               "color": "producto"
+              },
+              " − 1196 · 2"
+             ],
+             "nota": "Propiedad distributiva",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "2024 · 3 − ",
+              {
+               "t": "1196 · (3 + 2)",
+               "color": "producto"
+              }
+             ],
+             "nota": "Factor común 1196",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "2024 · 3 − 1196 · ",
+              {
+               "t": "5",
+               "color": "suma"
+              }
+             ]
+            },
+            {
+             "rel": "",
+             "der": "92 = 2024 · 3 + 1196 · (−5)",
+             "caja": "azul",
+             "color": "azul"
             }
-           ],
-           "nota": "Factor común 1196",
-           "notaColor": "producto"
+           ]
           },
           {
-           "rel": "",
-           "der": "92 = 2024 · 3 + 1196 · (−5)",
-           "caja": "azul",
-           "color": "azul"
-          }
-         ]
-        },
-        {
-         "texto": "Verificación:"
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "2024 · 3 + 1196 · (−5)"
+           "texto": "Verificación:"
           },
           {
-           "rel": "=",
-           "der": "6072 − 5980"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "92 ",
+           "pasos": [
             {
-             "marca": "ok"
+             "rel": "",
+             "der": "2024 · 3 + 1196 · (−5)"
+            },
+            {
+             "rel": "=",
+             "der": "6072 − 5980"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "92 ",
+              {
+               "marca": "ok"
+              }
+             ]
             }
            ]
           }
@@ -1517,259 +1621,376 @@
        "seccion": "4524 y 3002",
        "bloques": [
         {
-         "pasos": [
+         "seccion": "Máximo común divisor",
+         "bloques": [
           {
-           "rel": "",
-           "der": "4524 = 3002 · 1 + 1522"
-          },
-          {
-           "rel": "",
-           "der": "3002 = 1522 · 1 + 1480"
-          },
-          {
-           "rel": "",
-           "der": "1522 = 1480 · 1 + 42"
-          },
-          {
-           "rel": "",
-           "der": "1480 = 42 · 35 + 10"
-          },
-          {
-           "rel": "",
-           "der": "42 = 10 · 4 + 2"
-          },
-          {
-           "rel": "",
-           "der": "10 = 2 · 5 + 0"
-          }
-         ],
-         "entero": true
-        },
-        {
-         "texto": "El último resto distinto de 0 es 2."
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "MCD(4524, 3002) = 2",
-           "caja": "azul",
-           "color": "azul"
-          }
-         ]
-        },
-        {
-         "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
-         "unir": true
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "1522 = 4524 − 3002 · 1"
-          },
-          {
-           "rel": "",
-           "der": "1480 = 3002 − 1522 · 1"
-          },
-          {
-           "rel": "",
-           "der": "42 = 1522 − 1480 · 1"
-          },
-          {
-           "rel": "",
-           "der": "10 = 1480 − 42 · 35"
-          },
-          {
-           "rel": "",
-           "der": "2 = 42 − 10 · 4"
-          }
-         ],
-         "entero": true
-        },
-        {
-         "texto": "Se parte del MCD y se reemplazan los restos, de abajo hacia arriba:",
-         "unir": true
-        },
-        {
-         "pasos": [
-          {
-           "rel": "",
-           "der": "2 = 42 − 10 · 4"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "42 − ",
+           "pasos": [
             {
-             "t": "(1480 − 42 · 35)",
-             "color": "producto"
+             "rel": "",
+             "der": "4524 = 3002 · 1 + 1522"
             },
-            " · 4"
-           ],
-           "nota": "Reemplazar 10",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "42 ",
             {
-             "t": "− 1480 · 4 + 42 · 140",
-             "color": "producto"
+             "rel": "",
+             "der": "3002 = 1522 · 1 + 1480"
+            },
+            {
+             "rel": "",
+             "der": "1522 = 1480 · 1 + 42"
+            },
+            {
+             "rel": "",
+             "der": "1480 = 42 · 35 + 10"
+            },
+            {
+             "rel": "",
+             "der": "42 = 10 · 4 + 2"
+            },
+            {
+             "rel": "",
+             "der": "10 = 2 · 5 + 0"
             }
            ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
+           "entero": true
           },
           {
-           "rel": "=",
-           "der": [
-            {
-             "t": "42 · 141",
-             "color": "producto"
-            },
-            " − 1480 · 4"
-           ],
-           "nota": "Factor común 42",
-           "notaColor": "producto"
+           "texto": "El último resto distinto de 0 es 2."
           },
           {
-           "rel": "=",
-           "der": [
+           "pasos": [
             {
-             "t": "(1522 − 1480)",
-             "color": "producto"
-            },
-            " · 141 − 1480 · 4"
-           ],
-           "nota": "Reemplazar 42",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            {
-             "t": "1522 · 141 − 1480 · 141",
-             "color": "producto"
-            },
-            " − 1480 · 4"
-           ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "1522 · 141 ",
-            {
-             "t": "− 1480 · 145",
-             "color": "producto"
+             "rel": "",
+             "der": "MCD(4524, 3002) = 2",
+             "caja": "azul",
+             "color": "azul"
             }
-           ],
-           "nota": "Factor común 1480",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "1522 · 141 − ",
-            {
-             "t": "(3002 − 1522)",
-             "color": "producto"
-            },
-            " · 145"
-           ],
-           "nota": "Reemplazar 1480",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "1522 · 141 ",
-            {
-             "t": "− 3002 · 145 + 1522 · 145",
-             "color": "producto"
-            }
-           ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            {
-             "t": "1522 · 286",
-             "color": "producto"
-            },
-            " − 3002 · 145"
-           ],
-           "nota": "Factor común 1522",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            {
-             "t": "(4524 − 3002)",
-             "color": "producto"
-            },
-            " · 286 − 3002 · 145"
-           ],
-           "nota": "Reemplazar 1522",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            {
-             "t": "4524 · 286 − 3002 · 286",
-             "color": "producto"
-            },
-            " − 3002 · 145"
-           ],
-           "nota": "Propiedad distributiva",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "4524 · 286 ",
-            {
-             "t": "− 3002 · 431",
-             "color": "producto"
-            }
-           ],
-           "nota": "Factor común 3002",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "",
-           "der": "2 = 4524 · 286 + 3002 · (−431)",
-           "caja": "azul",
-           "color": "azul"
+           ]
           }
          ]
         },
         {
-         "texto": "Verificación:"
-        },
-        {
-         "pasos": [
+         "seccion": "Identidad de Bézout",
+         "bloques": [
           {
-           "rel": "",
-           "der": "4524 · 286 + 3002 · (−431)"
+           "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
+           "unir": true
           },
           {
-           "rel": "=",
-           "der": "1293864 − 1293862"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "2 ",
+           "pasos": [
             {
-             "marca": "ok"
+             "rel": "",
+             "der": "1522 = 4524 − 3002 · 1"
+            },
+            {
+             "rel": "",
+             "der": "1480 = 3002 − 1522 · 1"
+            },
+            {
+             "rel": "",
+             "der": "42 = 1522 − 1480 · 1"
+            },
+            {
+             "rel": "",
+             "der": "10 = 1480 − 42 · 35"
+            },
+            {
+             "rel": "",
+             "der": "2 = 42 − 10 · 4"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "Se parte del MCD y se reemplazan los restos, de abajo hacia arriba:",
+           "unir": true
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "2 = 42 − 10 · 4"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "42 − ",
+              {
+               "t": "(1480 − 42 · 35)",
+               "color": "producto"
+              },
+              " · 4"
+             ],
+             "nota": "Reemplazar 10",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "42 − (",
+              {
+               "t": "1480 · 4 − 42 · 35 · 4",
+               "color": "producto"
+              },
+              ")"
+             ],
+             "nota": "Propiedad distributiva",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "42 − (1480 · 4 − 42 · ",
+              {
+               "t": "140",
+               "color": "producto"
+              },
+              ")"
+             ]
+            },
+            {
+             "rel": "=",
+             "der": [
+              "42 ",
+              {
+               "t": "− 1480 · 4 + 42 · 140",
+               "color": "producto"
+              }
+             ],
+             "nota": "Distribuir el signo −",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "42 ",
+              {
+               "t": "+ 42 · 140",
+               "color": "producto"
+              },
+              " − 1480 · 4"
+             ],
+             "nota": "Propiedad conmutativa",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "42 · (1 + 140)",
+               "color": "producto"
+              },
+              " − 1480 · 4"
+             ],
+             "nota": "Factor común 42",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "42 · ",
+              {
+               "t": "141",
+               "color": "suma"
+              },
+              " − 1480 · 4"
+             ]
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "(1522 − 1480)",
+               "color": "producto"
+              },
+              " · 141",
+              " − 1480 · 4"
+             ],
+             "nota": "Reemplazar 42",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "1522 · 141 − 1480 · 141",
+               "color": "producto"
+              },
+              " − 1480 · 4"
+             ],
+             "nota": "Propiedad distributiva",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "1522 · 141 − ",
+              {
+               "t": "1480 · (141 + 4)",
+               "color": "producto"
+              }
+             ],
+             "nota": "Factor común 1480",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "1522 · 141 − 1480 · ",
+              {
+               "t": "145",
+               "color": "suma"
+              }
+             ]
+            },
+            {
+             "rel": "=",
+             "der": [
+              "1522 · 141 − ",
+              {
+               "t": "(3002 − 1522)",
+               "color": "producto"
+              },
+              " · 145"
+             ],
+             "nota": "Reemplazar 1480",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "1522 · 141 − (",
+              {
+               "t": "3002 · 145 − 1522 · 145",
+               "color": "producto"
+              },
+              ")"
+             ],
+             "nota": "Propiedad distributiva",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "1522 · 141 ",
+              {
+               "t": "− 3002 · 145 + 1522 · 145",
+               "color": "producto"
+              }
+             ],
+             "nota": "Distribuir el signo −",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "1522 · 141 ",
+              {
+               "t": "+ 1522 · 145",
+               "color": "producto"
+              },
+              " − 3002 · 145"
+             ],
+             "nota": "Propiedad conmutativa",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "1522 · (141 + 145)",
+               "color": "producto"
+              },
+              " − 3002 · 145"
+             ],
+             "nota": "Factor común 1522",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "1522 · ",
+              {
+               "t": "286",
+               "color": "suma"
+              },
+              " − 3002 · 145"
+             ]
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "(4524 − 3002)",
+               "color": "producto"
+              },
+              " · 286",
+              " − 3002 · 145"
+             ],
+             "nota": "Reemplazar 1522",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "4524 · 286 − 3002 · 286",
+               "color": "producto"
+              },
+              " − 3002 · 145"
+             ],
+             "nota": "Propiedad distributiva",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "4524 · 286 − ",
+              {
+               "t": "3002 · (286 + 145)",
+               "color": "producto"
+              }
+             ],
+             "nota": "Factor común 3002",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "4524 · 286 − 3002 · ",
+              {
+               "t": "431",
+               "color": "suma"
+              }
+             ]
+            },
+            {
+             "rel": "",
+             "der": "2 = 4524 · 286 + 3002 · (−431)",
+             "caja": "azul",
+             "color": "azul"
+            }
+           ]
+          },
+          {
+           "texto": "Verificación:"
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "4524 · 286 + 3002 · (−431)"
+            },
+            {
+             "rel": "=",
+             "der": "1293864 − 1293862"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "2 ",
+              {
+               "marca": "ok"
+              }
+             ]
             }
            ]
           }
@@ -1894,11 +2115,12 @@
           {
            "rel": "=",
            "der": [
-            "814 ",
+            "814 − (",
             {
-             "t": "− 1210 · 2 + 814 · 2",
+             "t": "1210 · 2 − 814 · 2",
              "color": "producto"
-            }
+            },
+            ")"
            ],
            "nota": "Propiedad distributiva",
            "notaColor": "producto"
@@ -1906,8 +2128,33 @@
           {
            "rel": "=",
            "der": [
+            "814 ",
             {
-             "t": "814 · 3",
+             "t": "− 1210 · 2 + 814 · 2",
+             "color": "producto"
+            }
+           ],
+           "nota": "Distribuir el signo −",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "814 ",
+            {
+             "t": "+ 814 · 2",
+             "color": "producto"
+            },
+            " − 1210 · 2"
+           ],
+           "nota": "Propiedad conmutativa",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "t": "814 · (1 + 2)",
              "color": "producto"
             },
             " − 1210 · 2"
@@ -1918,11 +2165,23 @@
           {
            "rel": "=",
            "der": [
+            "814 · ",
+            {
+             "t": "3",
+             "color": "suma"
+            },
+            " − 1210 · 2"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": [
             {
              "t": "(2024 − 1210)",
              "color": "producto"
             },
-            " · 3 − 1210 · 2"
+            " · 3",
+            " − 1210 · 2"
            ],
            "nota": "Reemplazar 814",
            "notaColor": "producto"
@@ -1942,14 +2201,24 @@
           {
            "rel": "=",
            "der": [
-            "2024 · 3 ",
+            "2024 · 3 − ",
             {
-             "t": "− 1210 · 5",
+             "t": "1210 · (3 + 2)",
              "color": "producto"
             }
            ],
            "nota": "Factor común 1210",
            "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "2024 · 3 − 1210 · ",
+            {
+             "t": "5",
+             "color": "suma"
+            }
+           ]
           },
           {
            "rel": "=",
@@ -1967,11 +2236,12 @@
           {
            "rel": "=",
            "der": [
-            "2024 · 3 ",
+            "2024 · 3 − (",
             {
-             "t": "− 3234 · 5 + 2024 · 5",
+             "t": "3234 · 5 − 2024 · 5",
              "color": "producto"
-            }
+            },
+            ")"
            ],
            "nota": "Propiedad distributiva",
            "notaColor": "producto"
@@ -1979,14 +2249,50 @@
           {
            "rel": "=",
            "der": [
+            "2024 · 3 ",
             {
-             "t": "2024 · 8",
+             "t": "− 3234 · 5 + 2024 · 5",
+             "color": "producto"
+            }
+           ],
+           "nota": "Distribuir el signo −",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "2024 · 3 ",
+            {
+             "t": "+ 2024 · 5",
+             "color": "producto"
+            },
+            " − 3234 · 5"
+           ],
+           "nota": "Propiedad conmutativa",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "t": "2024 · (3 + 5)",
              "color": "producto"
             },
             " − 3234 · 5"
            ],
            "nota": "Factor común 2024",
            "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "2024 · ",
+            {
+             "t": "8",
+             "color": "suma"
+            },
+            " − 3234 · 5"
+           ]
           },
           {
            "rel": "",
@@ -2687,11 +2993,11 @@
        "tam": "S"
       },
       {
-       "texto": "Columna 1:",
-       "unir": true
-      },
-      {
        "pasos": [
+        {
+         "rel": "",
+         "der": "Columna 1:"
+        },
         {
          "rel": "",
          "der": {
@@ -2791,14 +3097,15 @@
          }
         }
        ],
+       "tam": "S",
        "entero": true
       },
       {
-       "texto": "Columna 2:",
-       "unir": true
-      },
-      {
        "pasos": [
+        {
+         "rel": "",
+         "der": "Columna 2:"
+        },
         {
          "rel": "",
          "der": {
@@ -2898,14 +3205,16 @@
          }
         }
        ],
-       "entero": true
-      },
-      {
-       "texto": "Columna 3:",
-       "unir": true
+       "tam": "S",
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
+        {
+         "rel": "",
+         "der": "Columna 3:"
+        },
         {
          "rel": "",
          "der": {
@@ -3005,6 +3314,7 @@
          }
         }
        ],
+       "tam": "S",
        "entero": true
       },
       {
