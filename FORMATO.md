@@ -96,7 +96,7 @@ se encarga la pizarra.
 | `"unir": true` (en un bloque de pasos) | Como en un texto: el bloque no se separa del siguiente (por ejemplo, el título «Paso 3» de la ecuación que va abajo, más chica). |
 | `"entero": true` (en un bloque de pasos) | El desarrollo no se parte entre dos hojas: si no entra al pie, pasa entero a la siguiente (si entra en una hoja). Los dibujos de los generadores ya se comportan así. |
 | `{ "espacio": 2 }` | Deja lugar libre (en renglones), por ejemplo para completar a mano. |
-| `"alLado": true` (en cualquier bloque menos una sección) | El bloque va a la derecha del bloque anterior de la misma lista, alineado arriba; con `"centro"`, centrado en vertical. Los dos quedan juntos y no se parten entre hojas. Sirve para dos recuadros cortos en un renglón o para los resultados al lado de un gráfico. Si no entra a lo ancho, va debajo, con un aviso. |
+| `"alLado": true` (en cualquier bloque) | El bloque va a la derecha del bloque anterior de la misma lista, alineado arriba; con `"centro"`, centrado en vertical. Los dos quedan juntos y no se parten entre hojas. Sirve para dos recuadros cortos en un renglón o para los resultados al lado de un gráfico. En una sección, la sección entera (título, línea y contenido) va a la derecha de la sección anterior, por ejemplo «Miembro izquierdo» y «Miembro derecho»; las dos no pueden tener otras secciones adentro. Si no entra a lo ancho, va debajo, con un aviso. |
 
 ### Renglones de `pasos`
 

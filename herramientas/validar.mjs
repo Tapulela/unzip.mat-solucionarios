@@ -106,7 +106,13 @@ export function revisar(sol, opc = {}) {
       if (b.salto || b.espacio) return;
       if (b.alLado !== undefined) {
         if (b.alLado !== true && b.alLado !== "centro") av(rb + ".alLado", "tendría que ser true o \"centro\"");
-        else if (i === 0 || b.seccion !== undefined) av(rb + ".alLado", "va al lado del bloque anterior de la misma lista (no en el primero ni en una sección)");
+        else if (i === 0) av(rb + ".alLado", "va al lado del bloque anterior de la misma lista (no en el primero)");
+        else if (b.seccion !== undefined) {
+          // una sección va al lado de la sección anterior, y ninguna de las dos lleva secciones adentro
+          const ant = lista[i - 1], conSecciones = (s) => (s.bloques || []).some((x) => x && x.seccion !== undefined);
+          if (!ant || ant.seccion === undefined) av(rb + ".alLado", "una sección va al lado de la sección anterior (el bloque anterior no es una sección)");
+          else if (conSecciones(ant) || conSecciones(b)) av(rb + ".alLado", "dos secciones van lado a lado solo si no tienen secciones adentro");
+        }
       }
       if (b.texto !== undefined) { texto(String(b.texto), rb); color(b.color, rb + ".color"); return; }
       if (Array.isArray(b.pasos)) {
