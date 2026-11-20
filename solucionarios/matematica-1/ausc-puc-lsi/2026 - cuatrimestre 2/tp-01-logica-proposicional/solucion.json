@@ -25,7 +25,12 @@
    "ejercicio": "Ejercicio {n}:",
    "item": "{n}.{i}"
   },
-  "margenes": { "sup": 10, "inf": 10, "ext": 10, "lomo": 15 },
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
   "dobleFaz": true,
   "continuacion": true
  },
@@ -539,7 +544,8 @@
        "texto": "Clara no juega tenis.",
        "color": "azul"
       }
-     ]
+     ],
+     "alLado": true
     },
     {
      "numero": "3",
@@ -649,7 +655,7 @@
            "color": "producto"
           }
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -688,7 +694,7 @@
            "color": "producto"
           }
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -703,7 +709,8 @@
         }
        ]
       }
-     ]
+     ],
+     "alLado": true
     },
     {
      "numero": "3",
@@ -727,7 +734,7 @@
            "color": "producto"
           }
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -767,7 +774,7 @@
            "color": "producto"
           }
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -820,7 +827,7 @@
           },
           ")"
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -877,7 +884,7 @@
            "color": "producto"
           }
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -941,7 +948,7 @@
            "color": "producto"
           }
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -956,7 +963,8 @@
         }
        ]
       }
-     ]
+     ],
+     "alLado": true
     },
     {
      "numero": "8",
@@ -992,7 +1000,7 @@
           },
           ")"
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -1053,7 +1061,7 @@
            "color": "producto"
           }
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -1133,7 +1141,7 @@
           },
           ")"
          ],
-         "nota": "Reemplazar los valores",
+         "nota": "Reemplazar",
          "notaColor": "producto"
         },
         {
@@ -1746,7 +1754,8 @@
        "texto": "p ∧ q: Contingencia",
        "color": "azul"
       }
-     ]
+     ],
+     "alLado": true
     },
     {
      "numero": "3",
@@ -1830,7 +1839,8 @@
        "texto": "¬¬p: Contingencia",
        "color": "azul"
       }
-     ]
+     ],
+     "alLado": true
     },
     {
      "numero": "5",
@@ -2200,7 +2210,8 @@
        "texto": "p ∧ (q ∨ r): Contingencia",
        "color": "azul"
       }
-     ]
+     ],
+     "alLado": true
     },
     {
      "numero": "12",

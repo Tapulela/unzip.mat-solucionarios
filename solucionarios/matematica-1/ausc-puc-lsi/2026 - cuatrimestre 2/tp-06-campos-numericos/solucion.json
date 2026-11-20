@@ -200,7 +200,8 @@
            "nota": "Simplificar por 3",
            "notaColor": "producto"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
        ]
       },
@@ -233,9 +234,11 @@
            "nota": "Simplificar por 5",
            "notaColor": "producto"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "seccion": "√8",
@@ -829,7 +832,8 @@
            "rel": "",
            "der": "c = 55"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
        ]
       },
@@ -876,9 +880,11 @@
            "rel": "",
            "der": "v = 35"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "seccion": "Lo que pagó Carla",
@@ -1091,7 +1097,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "seccion": "Caramelos de naranja",
@@ -1127,7 +1134,8 @@
            "rel": "",
            "der": "n = 180"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
        ]
       },
@@ -1142,12 +1150,14 @@
            "caja": "azul",
            "color": "azul"
           }
-         ]
+         ],
+         "notas": "arriba"
         },
         {
          "texto": "El cociente es 36 y el resto es 0."
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "texto": "Con los caramelos de naranja se pueden armar 36 paquetitos de 5 y no sobra ninguno.",
@@ -3731,7 +3741,8 @@
            "nota": "5² = 5 · 5",
            "notaColor": "producto"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
        ]
       },
@@ -3774,9 +3785,11 @@
            "rel": "=",
            "der": "−22"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "seccion": "Tercer término",
@@ -3820,7 +3833,8 @@
            "nota": "Neutro del producto: 1 · 5 = 5",
            "notaColor": "producto"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
        ]
       },
@@ -3849,9 +3863,11 @@
            "rel": "=",
            "der": "8"
           }
-         ]
+         ],
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [

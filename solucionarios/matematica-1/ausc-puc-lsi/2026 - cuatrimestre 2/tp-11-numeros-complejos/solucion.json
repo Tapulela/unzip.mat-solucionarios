@@ -420,17 +420,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 + 5i) + (3 − 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₂"
         },
         {
          "rel": "=",
@@ -510,17 +504,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₂ + z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(3 − 2i) + (−2 + 3i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₂ + z₃"
         },
         {
          "rel": "=",
@@ -600,17 +588,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ − z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 + 5i) − (1 + i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ − z₄"
         },
         {
          "rel": "=",
@@ -693,17 +675,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₃ + z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−2 + 3i) + (1 + i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₃ + z₄"
         },
         {
          "rel": "=",
@@ -783,17 +759,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ − z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 + 5i) − (−2 + 3i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ − z₃"
         },
         {
          "rel": "=",
@@ -979,17 +949,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₄ − z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 + 5i) + (1 + i) − (3 − 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₄ − z₂"
         },
         {
          "rel": "=",
@@ -1137,19 +1101,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ − (z₄ − z₂) + z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 + 5i) − (−2 + 3i) + (−2 + 3i)"
          ],
-         "nota": [
-          "Reemplazar z₄ − z₂ = −2 + 3i"
-         ],
-         "notaColor": "producto"
+         "izq": "z₁ − (z₄ − z₂) + z₃"
         },
         {
          "rel": "=",
@@ -1204,17 +1160,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(3 + 2i) · (−2 + 4i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₂"
         },
         {
          "rel": "=",
@@ -1275,17 +1225,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₃ · z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(1 − i) · (−2 − 5i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₃ · z₄"
         },
         {
          "rel": "=",
@@ -1346,17 +1290,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(3 + 2i) · (−2 − 5i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₄"
         },
         {
          "rel": "=",
@@ -1417,17 +1355,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "i · z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "i · (−2 + 4i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "i · z₂"
         },
         {
          "rel": "=",
@@ -1477,17 +1409,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "i · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "i · (1 − i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "i · z₃"
         },
         {
          "rel": "=",
@@ -1571,17 +1497,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "i³ · z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−i) · (−2 − 5i)"
          ],
-         "nota": "Reemplazar i³ = −i",
-         "notaColor": "producto"
+         "izq": "i³ · z₄"
         },
         {
          "rel": "=",
@@ -1631,20 +1551,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "(z₁ · z₂) · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−14 + 8i) · (1 − i)"
          ],
-         "nota": [
-          "Reemplazar z₁ · z₂ = −14 + 8i",
-          "(ítem 3.a) y z₃ = 1 − i"
-         ],
-         "notaColor": "producto"
+         "izq": "(z₁ · z₂) · z₃"
         },
         {
          "rel": "=",
@@ -1705,17 +1616,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₁"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(3 + 2i) · (3 + 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₁"
         },
         {
          "rel": "=",
@@ -1783,11 +1688,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ : z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -1801,8 +1701,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ : z₂"
         },
         {
          "rel": "=",
@@ -1965,11 +1864,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₃ : z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -1983,8 +1877,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₃ : z₄"
         },
         {
          "rel": "=",
@@ -2153,11 +2046,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₃ : z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -2171,8 +2059,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₃ : z₂"
         },
         {
          "rel": "=",
@@ -2342,11 +2229,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₄ : z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -2360,8 +2242,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₄ : z₃"
         },
         {
          "rel": "=",
@@ -2530,11 +2411,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₂ : z₁"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -2548,8 +2424,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₂ : z₁"
         },
         {
          "rel": "=",
@@ -2748,17 +2623,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(6 + 8i) · (−1 + i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₂"
         },
         {
          "rel": "=",
@@ -2809,11 +2678,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₂ : z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -2827,11 +2691,7 @@
            ]
           }
          ],
-         "nota": [
-          "Reemplazar z₁ · z₂ = −14 − 2i",
-          "y z₃ = 5 − 12i"
-         ],
-         "notaColor": "producto"
+         "izq": "z₁ · z₂ : z₃"
         },
         {
          "rel": "=",
@@ -3010,11 +2870,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₂ : z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -3028,8 +2883,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₂ : z₄"
         },
         {
          "rel": "=",
@@ -3175,11 +3029,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₂ : z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(6 + 8i) + (− ",
@@ -3198,11 +3047,7 @@
           },
           "i)"
          ],
-         "nota": [
-          "Reemplazar z₁ y",
-          "z₂ : z₄ = el cociente"
-         ],
-         "notaColor": "producto"
+         "izq": "z₁ + z₂ : z₄"
         },
         {
          "rel": "=",
@@ -3347,17 +3192,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₄ · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−1 − 2i) · (5 − 12i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₄ · z₃"
         },
         {
          "rel": "=",
@@ -3408,11 +3247,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₄ · z₃ + z₂ : z₁"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−29 + 2i) + (",
@@ -3431,8 +3265,7 @@
           },
           "i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₄ · z₃ + z₂ : z₁"
         },
         {
          "rel": "=",
@@ -4060,17 +3893,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ − z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−3 + 4i) − (5 − 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ − z₂"
         },
         {
          "rel": "=",
@@ -4108,11 +3935,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "(z₁ − z₂) · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−8 + 6i) · ",
@@ -4123,8 +3945,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "(z₁ − z₂) · z₃"
         },
         {
          "rel": "=",
@@ -4155,17 +3976,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−3 + 4i) · 7i"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₄"
         },
         {
          "rel": "=",
@@ -4202,11 +4017,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₃ · z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -4217,8 +4027,7 @@
           },
           " · 7i"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₃ · z₄"
         },
         {
          "rel": "=",
@@ -4242,11 +4051,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₄ + z₃ · z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−28 − 21i) + ",
@@ -4258,8 +4062,7 @@
           },
           "i"
          ],
-         "nota": "Reemplazar los productos",
-         "notaColor": "producto"
+         "izq": "z₁ · z₄ + z₃ · z₄"
         },
         {
          "rel": "=",
@@ -4357,17 +4160,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "5 · z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "5 · (5 − 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "5 · z₂"
         },
         {
          "rel": "=",
@@ -4385,20 +4182,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₄ − 5z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−3 + 4i) + 7i − (25 − 10i)"
          ],
-         "nota": [
-          "Reemplazar z₁, z₄",
-          "y 5z₂ = 25 − 10i"
-         ],
-         "notaColor": "producto"
+         "izq": "z₁ + z₄ − 5z₂"
         },
         {
          "rel": "=",
@@ -4536,11 +4324,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₃⁻¹"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−3 + 4i) + ",
@@ -4551,8 +4334,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₃⁻¹"
         },
         {
          "rel": "=",
@@ -4649,11 +4431,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₂⁻¹"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -4663,8 +4440,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₂⁻¹"
         },
         {
          "rel": "=",
@@ -4814,17 +4590,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z̄₁ · z̄₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−3 − 4i) · (5 + 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z̄₁ · z̄₂"
         },
         {
          "rel": "=",
@@ -4916,17 +4686,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−3 + 4i) + (5 − 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₂"
         },
         {
          "rel": "=",
@@ -5130,11 +4894,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁⁻¹"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -5146,8 +4905,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁⁻¹"
         },
         {
          "rel": "=",
@@ -5252,11 +5010,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁⁻¹ · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(− ",
@@ -5281,8 +5034,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁⁻¹ · z₃"
         },
         {
          "rel": "=",
@@ -5344,12 +5096,8 @@
             "z₁",
             "z₂"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -5360,9 +5108,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -5541,11 +5287,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "2 · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "2 · ",
@@ -5556,8 +5297,7 @@
            ]
           }
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "2 · z₃"
         },
         {
          "rel": "=",
@@ -5572,17 +5312,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "2 · z₃ + z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "3 + 7i"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "2 · z₃ + z₄"
         }
        ]
       },
@@ -5598,12 +5332,8 @@
             "z₁",
             "2 · z₃ + z₄"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -5614,12 +5344,7 @@
             ]
            ]
           }
-         ],
-         "nota": [
-          "Reemplazar z₁ y",
-          "2 · z₃ + z₄ = 3 + 7i"
-         ],
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -6719,6 +6444,9 @@
        "texto": "Parte real a = 2 y parte imaginaria b = 2."
       },
       {
+       "texto": "Como a > 0 y b > 0, z está en el primer cuadrante y φ = α."
+      },
+      {
        "pasos": [
         {
          "izq": "|z|",
@@ -6751,9 +6479,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b > 0, z está en el primer cuadrante y φ = α."
       },
       {
        "pasos": [
@@ -6800,7 +6525,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -6864,7 +6590,8 @@
          "color": "azul",
          "caja": "azul"
         }
-       ]
+       ],
+       "alLado": true
       }
      ]
     },
@@ -6874,6 +6601,9 @@
      "bloques": [
       {
        "texto": "Parte real a = −2 y parte imaginaria b = 2."
+      },
+      {
+       "texto": "Como a < 0 y b > 0, z está en el segundo cuadrante y φ = π − α."
       },
       {
        "pasos": [
@@ -6908,9 +6638,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b > 0, z está en el segundo cuadrante y φ = π − α."
       },
       {
        "pasos": [
@@ -6989,7 +6716,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -7065,6 +6793,9 @@
        "texto": "Parte real a = 2 y parte imaginaria b = −2."
       },
       {
+       "texto": "Como a > 0 y b < 0, z está en el cuarto cuadrante y φ = 2π − α."
+      },
+      {
        "pasos": [
         {
          "izq": "|z|",
@@ -7097,9 +6828,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b < 0, z está en el cuarto cuadrante y φ = 2π − α."
       },
       {
        "pasos": [
@@ -7178,7 +6906,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -7318,7 +7047,8 @@
          "color": "azul",
          "caja": "azul"
         }
-       ]
+       ],
+       "alLado": true
       }
      ]
     },
@@ -7328,6 +7058,9 @@
      "bloques": [
       {
        "texto": "Parte real a = −2 y parte imaginaria b = −2."
+      },
+      {
+       "texto": "Como a < 0 y b < 0, z está en el tercer cuadrante y φ = π + α."
       },
       {
        "pasos": [
@@ -7362,9 +7095,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b < 0, z está en el tercer cuadrante y φ = π + α."
       },
       {
        "pasos": [
@@ -7443,7 +7173,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -7658,7 +7389,8 @@
          "color": "azul",
          "caja": "azul"
         }
-       ]
+       ],
+       "alLado": true
       }
      ]
     },
@@ -7668,6 +7400,9 @@
      "bloques": [
       {
        "texto": "Parte real a = √3 y parte imaginaria b = 1."
+      },
+      {
+       "texto": "Como a > 0 y b > 0, z está en el primer cuadrante y φ = α."
       },
       {
        "pasos": [
@@ -7702,9 +7437,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b > 0, z está en el primer cuadrante y φ = α."
       },
       {
        "pasos": [
@@ -7745,7 +7477,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -7809,7 +7542,8 @@
          "color": "azul",
          "caja": "azul"
         }
-       ]
+       ],
+       "alLado": true
       }
      ]
     }
@@ -7938,6 +7672,9 @@
        "texto": "Parte real a = −2 y parte imaginaria b = −5. Módulo:"
       },
       {
+       "texto": "Como a < 0 y b < 0, el número está en el tercer cuadrante."
+      },
+      {
        "pasos": [
         {
          "izq": "ρ",
@@ -7964,9 +7701,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b < 0, el número está en el tercer cuadrante."
       },
       {
        "pasos": [
@@ -8023,7 +7757,8 @@
           "248,20°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -8049,6 +7784,9 @@
      "bloques": [
       {
        "texto": "Parte real a = −2 y parte imaginaria b = −2."
+      },
+      {
+       "texto": "El par (−2; −2) es el complejo −2 − 2i. Como a < 0 y b < 0, está en el tercer cuadrante y φ = π + α."
       },
       {
        "pasos": [
@@ -8083,9 +7821,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "El par (−2; −2) es el complejo −2 − 2i. Como a < 0 y b < 0, está en el tercer cuadrante y φ = π + α."
       },
       {
        "pasos": [
@@ -8164,7 +7899,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -8240,6 +7976,9 @@
        "texto": "Parte real a = √3 y parte imaginaria b = √3."
       },
       {
+       "texto": "El par (√3, √3) es el complejo √3 + √3 i. Como a > 0 y b > 0, está en el primer cuadrante y φ = α."
+      },
+      {
        "pasos": [
         {
          "izq": "|z|",
@@ -8266,9 +8005,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "El par (√3, √3) es el complejo √3 + √3 i. Como a > 0 y b > 0, está en el primer cuadrante y φ = α."
       },
       {
        "pasos": [
@@ -8315,7 +8051,8 @@
           }
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -8379,7 +8116,8 @@
          "color": "azul",
          "caja": "azul"
         }
-       ]
+       ],
+       "alLado": true
       }
      ]
     }
@@ -8404,17 +8142,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₂ − z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−2 + i) + (3 + 5i) − (4 − i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₂ − z₃"
         },
         {
          "rel": "=",
@@ -8475,17 +8207,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z̄₂ − z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−2 + i) + (3 − 5i) − (4 − i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z̄₂ − z₃"
         },
         {
          "rel": "=",
@@ -8552,17 +8278,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z̄₁ − z̄₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−2 − i) − (4 + i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z̄₁ − z̄₃"
         },
         {
          "rel": "=",
@@ -8610,17 +8330,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "5 · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "5 · (4 − i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "5 · z₃"
         },
         {
          "rel": "=",
@@ -8651,17 +8365,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−2 + i) + (3 + 5i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₂"
         },
         {
          "rel": "=",
@@ -8696,20 +8404,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "(z₁ + z₂) · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(1 + 6i) · (4 − i)"
          ],
-         "nota": [
-          "Reemplazar z₁ + z₂ = 1 + 6i",
-          "y z₃ = 4 − i"
-         ],
-         "notaColor": "producto"
+         "izq": "(z₁ + z₂) · z₃"
         },
         {
          "rel": "=",
@@ -8792,17 +8491,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "−z₁ + z̄₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "−(−2 + i) + (3 − 5i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "−z₁ + z̄₂"
         },
         {
          "rel": "=",
@@ -8840,17 +8533,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z̄₁ − z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−2 − i) − (4 − i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z̄₁ − z₃"
         },
         {
          "rel": "=",
@@ -8888,17 +8575,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "(−z₁ + z̄₂) · (z̄₁ − z₃)"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(5 − 6i) · (−6)"
          ],
-         "nota": "Reemplazar los paréntesis",
-         "notaColor": "producto"
+         "izq": "(−z₁ + z̄₂) · (z̄₁ − z₃)"
         },
         {
          "rel": "=",
@@ -8929,17 +8610,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−2 + i) · (3 + 5i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₂"
         },
         {
          "rel": "=",
@@ -8990,20 +8665,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₂ − z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(−11 − 7i) − (4 − i)"
          ],
-         "nota": [
-          "Reemplazar z₁ · z₂ = −11 − 7i",
-          "y z₃ = 4 − i"
-         ],
-         "notaColor": "producto"
+         "izq": "z₁ · z₂ − z₃"
         },
         {
          "rel": "=",
@@ -9142,12 +8808,8 @@
             "z₂",
             "z₁"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -9158,9 +8820,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -9331,12 +8991,8 @@
             "z₁",
             "z₃"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -9347,9 +9003,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -9530,12 +9184,8 @@
             "z₃",
             "z₂"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -9546,9 +9196,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -9721,12 +9369,8 @@
             "z₂",
             "z₃"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -9737,9 +9381,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -9909,12 +9551,8 @@
             "z̄₃",
             "z̄₂"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -9925,9 +9563,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -10100,12 +9736,8 @@
             "1",
             "z₁"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -10116,9 +9748,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -10857,18 +10487,11 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
-          "z₁ · z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(2 − i) · (−4)"
          ],
-         "nota": "Reemplazar (z₂ = −4)",
-         "notaColor": "producto"
+         "izq": "z₁ · z₂"
         },
         {
          "rel": "=",
@@ -10900,12 +10523,6 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
-          "z₁ + z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(2 − i) + (",
@@ -10924,8 +10541,7 @@
           },
           "i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₃"
         },
         {
          "rel": "=",
@@ -11060,12 +10676,6 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
-          "z₁ · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(2 − i) · (",
@@ -11084,8 +10694,7 @@
           },
           "i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₃"
         },
         {
          "rel": "=",
@@ -11890,17 +11499,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ + z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(3 + 2i) + (4 − 3i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ + z₂"
         },
         {
          "rel": "=",
@@ -11941,7 +11544,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b < 0, el número está en el cuarto cuadrante."
       },
       {
        "pasos": [
@@ -11970,9 +11576,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b < 0, el número está en el cuarto cuadrante."
       },
       {
        "pasos": [
@@ -12029,7 +11632,8 @@
           "351,87°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -12051,11 +11655,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₄ − z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(",
@@ -12074,8 +11673,7 @@
           },
           "i) − (−2 − 7i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₄ − z₃"
         },
         {
          "rel": "=",
@@ -12209,7 +11807,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -12257,9 +11858,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -12334,7 +11932,8 @@
           "72,87°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -12356,17 +11955,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "3 · z₁"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "3 · (3 + 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "3 · z₁"
         },
         {
          "rel": "=",
@@ -12381,20 +11974,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "3z₁ − z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(9 + 6i) − (−2 − 7i)"
          ],
-         "nota": [
-          "Reemplazar 3z₁ = 9 + 6i",
-          "y z₃ = −2 − 7i"
-         ],
-         "notaColor": "producto"
+         "izq": "3z₁ − z₃"
         },
         {
          "rel": "=",
@@ -12438,7 +12022,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -12467,9 +12054,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -12518,7 +12102,8 @@
           "49,76°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -12540,11 +12125,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₂ · z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 − 3i) · (",
@@ -12563,8 +12143,7 @@
           },
           "i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₂ · z₄"
         },
         {
          "rel": "=",
@@ -12750,7 +12329,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -12798,9 +12380,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -12875,7 +12454,8 @@
           "22,87°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -12903,12 +12483,8 @@
             "z₁",
             "z₃"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -12919,9 +12495,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -13087,7 +12661,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a < 0 y b > 0, el número está en el segundo cuadrante."
       },
       {
        "pasos": [
@@ -13135,9 +12712,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b > 0, el número está en el segundo cuadrante."
       },
       {
        "pasos": [
@@ -13220,7 +12794,8 @@
           "139,64°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -13251,19 +12826,14 @@
       {
        "pasos": [
         {
-         "rel": "",
          "der": [
           {
            "frac": [
             "z₃",
             "z₄"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             "−2 − 7i",
@@ -13285,9 +12855,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -13503,11 +13071,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₃ : z₄ + z₁"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(− ",
@@ -13526,8 +13089,7 @@
           },
           "i) + (3 + 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₃ : z₄ + z₁"
         },
         {
          "rel": "=",
@@ -13660,7 +13222,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a < 0 y b < 0, el número está en el tercer cuadrante."
       },
       {
        "pasos": [
@@ -13708,9 +13273,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b < 0, el número está en el tercer cuadrante."
       },
       {
        "pasos": [
@@ -13793,7 +13355,8 @@
           "185,37°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -13818,17 +13381,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(3 + 2i) · (−2 − 7i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₃"
         },
         {
          "rel": "=",
@@ -13879,20 +13436,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "(z₁ · z₃) − z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(8 − 25i) − (4 − 3i)"
          ],
-         "nota": [
-          "Reemplazar z₁ · z₃ = 8 − 25i",
-          "y z₂ = 4 − 3i"
-         ],
-         "notaColor": "producto"
+         "izq": "(z₁ · z₃) − z₂"
         },
         {
          "rel": "=",
@@ -13936,7 +13484,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b < 0, el número está en el cuarto cuadrante."
       },
       {
        "pasos": [
@@ -13965,9 +13516,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b < 0, el número está en el cuarto cuadrante."
       },
       {
        "pasos": [
@@ -14024,7 +13572,8 @@
           "280,30°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -14066,12 +13615,8 @@
             "z₁",
             "z₃"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -14082,9 +13627,7 @@
             ]
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -14270,7 +13813,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b < 0, el número está en el cuarto cuadrante."
       },
       {
        "pasos": [
@@ -14318,9 +13864,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b < 0, el número está en el cuarto cuadrante."
       },
       {
        "pasos": [
@@ -14403,7 +13946,8 @@
           "307,87°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -14425,17 +13969,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₂ + z₄"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 + 5i) + (1 − 5i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₂ + z₄"
         },
         {
          "rel": "=",
@@ -14529,11 +14067,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "−z₆ − z₂"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "−(− ",
@@ -14545,8 +14078,7 @@
           },
           " + 3i) − (4 + 5i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "−z₆ − z₂"
         },
         {
          "rel": "=",
@@ -14653,7 +14185,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a < 0 y b < 0, el número está en el tercer cuadrante."
       },
       {
        "pasos": [
@@ -14694,9 +14229,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b < 0, el número está en el tercer cuadrante."
       },
       {
        "pasos": [
@@ -14774,7 +14306,8 @@
           "244,16°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -14796,17 +14329,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₂ + z₃"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(4 + 5i) + (6 + 2i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₂ + z₃"
         },
         {
          "rel": "=",
@@ -14847,7 +14374,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -14876,9 +14406,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -14927,7 +14454,8 @@
           "34,99°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -14949,11 +14477,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₄ · z₆"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(1 − 5i) · (− ",
@@ -14965,8 +14488,7 @@
           },
           " + 3i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₄ · z₆"
         },
         {
          "rel": "=",
@@ -15128,7 +14650,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -15176,9 +14701,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a > 0 y b > 0, el número está en el primer cuadrante."
       },
       {
        "pasos": [
@@ -15253,7 +14775,8 @@
           "13,70°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -15275,17 +14798,11 @@
       {
        "pasos": [
         {
-         "der": [
-          "z₁ · z₅"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           "(3 − 2i) · (−2 − i)"
          ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         "izq": "z₁ · z₅"
         },
         {
          "rel": "=",
@@ -15342,7 +14859,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a < 0 y b > 0, el número está en el segundo cuadrante."
       },
       {
        "pasos": [
@@ -15371,9 +14891,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b > 0, el número está en el segundo cuadrante."
       },
       {
        "pasos": [
@@ -15430,7 +14947,8 @@
           "172,87°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -15452,19 +14970,14 @@
       {
        "pasos": [
         {
-         "rel": "",
          "der": [
           {
            "frac": [
             "z₆",
             "z₄"
            ]
-          }
-         ]
-        },
-        {
-         "rel": "=",
-         "der": [
+          },
+          " = ",
           {
            "frac": [
             [
@@ -15480,9 +14993,7 @@
             "1 − 5i"
            ]
           }
-         ],
-         "nota": "Reemplazar",
-         "notaColor": "producto"
+         ]
         },
         {
          "rel": "=",
@@ -15733,7 +15244,10 @@
        ]
       },
       {
-       "texto": "Forma polar del resultado. Módulo:"
+       "texto": "Forma polar del resultado."
+      },
+      {
+       "texto": "Como a < 0 y b > 0, el número está en el segundo cuadrante."
       },
       {
        "pasos": [
@@ -15781,9 +15295,6 @@
          ]
         }
        ]
-      },
-      {
-       "texto": "Como a < 0 y b > 0, el número está en el segundo cuadrante."
       },
       {
        "pasos": [
@@ -15866,7 +15377,8 @@
           "171,08°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -16105,6 +15617,9 @@
        "texto": "Módulo de la base:"
       },
       {
+       "texto": "Argumento de la base (primer cuadrante, porque a > 0 y b > 0):"
+      },
+      {
        "pasos": [
         {
          "izq": "ρ",
@@ -16176,9 +15691,6 @@
        ]
       },
       {
-       "texto": "Argumento de la base (primer cuadrante, porque a > 0 y b > 0):"
-      },
-      {
        "pasos": [
         {
          "izq": "φ",
@@ -16229,7 +15741,8 @@
           "37,87°"
          ]
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "texto": "Potencia por De Moivre, [ρ; φ]ⁿ = [ρⁿ; n · φ]:"
@@ -16529,11 +16042,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -16542,7 +16050,8 @@
             "2 − 3i"
            ]
           }
-         ]
+         ],
+         "izq": "z"
         },
         {
          "rel": "=",
@@ -17143,11 +16652,6 @@
       {
        "pasos": [
         {
-         "der": [
-          "z"
-         ]
-        },
-        {
          "rel": "=",
          "der": [
           {
@@ -17156,7 +16660,8 @@
             "−1 − i"
            ]
           }
-         ]
+         ],
+         "izq": "z"
         },
         {
          "rel": "=",

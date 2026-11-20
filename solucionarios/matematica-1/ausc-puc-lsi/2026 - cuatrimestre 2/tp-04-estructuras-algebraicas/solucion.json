@@ -45,7 +45,7 @@
      "enunciado": "∗: ℤ × ℤ → ℤ tal que a ∗ b = ab + 3",
      "bloques": [
       {
-       "texto": "Definición general de ley de composición interna:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -57,10 +57,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -72,7 +73,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -110,7 +112,7 @@
      "enunciado": "∗ definida en ℤ − {0} tal que x ∗ y = x/y + 5",
      "bloques": [
       {
-       "texto": "Definición general de ley de composición interna:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -122,10 +124,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -137,7 +140,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -248,7 +252,7 @@
      "enunciado": "∘ definida en ℤ tal que a ∘ b = (a + b)²",
      "bloques": [
       {
-       "texto": "Definición general de ley de composición interna:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -260,10 +264,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -275,7 +280,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -319,7 +325,7 @@
      "enunciado": "∗ definida en ℤ tal que a ∗ b = (a + b − 2)/3",
      "bloques": [
       {
-       "texto": "Definición general de ley de composición interna:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -331,10 +337,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -346,7 +353,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -432,7 +440,7 @@
      "enunciado": "∗ definida en ℤ tal que a ∗ b = a + b + ab",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -444,10 +452,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -459,7 +468,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -517,7 +527,8 @@
            "nota": "Ordenar los términos"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -577,9 +588,11 @@
            "nota": "Ordenar los términos"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -611,7 +624,7 @@
      "enunciado": "∗ definida en ℝ tal que a ∗ b = a + 3b",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -623,10 +636,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -638,7 +652,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -686,7 +701,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -729,9 +745,11 @@
            "nota": "Quitar el paréntesis"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -769,7 +787,7 @@
      "enunciado": "∩: P(A) × P(A) → P(A) tal que (P, R) → P ∩ R, donde A es un conjunto y P(A) es la potencia de A.",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -781,10 +799,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -796,7 +815,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Los elementos de P(A) son los subconjuntos de A. Probamos con E = A.",
@@ -842,7 +862,7 @@
      "enunciado": "∗ definida en ℚ⁺ tal que a ∗ b = ab/2",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -854,10 +874,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -869,7 +890,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -1064,7 +1086,7 @@
      "enunciado": "∗ definida en ℝ tal que a ∗ b = a + b + 4",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -1076,10 +1098,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -1091,7 +1114,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -1200,7 +1224,7 @@
      "enunciado": "∗ definida en ℝ tal que x ∗ y = xy + y",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -1212,10 +1236,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -1227,7 +1252,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -1309,7 +1335,7 @@
      "enunciado": "∗ definida en ℝ tal que a ∗ b = a + b + 3ab",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -1321,10 +1347,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -1336,7 +1363,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -1354,7 +1382,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -1379,9 +1408,11 @@
            "nota": "Conmutatividad de + y · en ℝ"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -1413,7 +1444,7 @@
      "enunciado": "∗ definida en ℝ tal que a ∗ b = a − b + 2ab",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -1425,10 +1456,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -1440,7 +1472,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -1458,7 +1491,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -1483,9 +1517,11 @@
            "nota": "Conmutatividad de + y · en ℝ"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -1530,7 +1566,7 @@
        "seccion": "Análisis de la ley de composición interna",
        "bloques": [
         {
-         "texto": "Definición general de ley de composición interna:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -1542,10 +1578,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -1557,7 +1594,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "pasos": [
@@ -1584,7 +1622,7 @@
        "seccion": "Análisis de la propiedad asociativa",
        "bloques": [
         {
-         "texto": "Definición general de asociatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -1596,10 +1634,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -1611,7 +1650,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -1659,7 +1699,8 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -1709,9 +1750,11 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -1732,7 +1775,7 @@
        "seccion": "Análisis de la propiedad conmutativa",
        "bloques": [
         {
-         "texto": "Definición general de conmutatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -1744,10 +1787,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -1759,7 +1803,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -1804,7 +1849,8 @@
            ],
            "entero": true
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -1825,7 +1871,7 @@
        "seccion": "Análisis de la existencia de elemento neutro",
        "bloques": [
         {
-         "texto": "Definición general de elemento neutro:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -1837,10 +1883,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -1852,7 +1899,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Elemento neutro por derecha",
@@ -1996,7 +2044,7 @@
        "seccion": "Análisis de la ley de composición interna",
        "bloques": [
         {
-         "texto": "Definición general de ley de composición interna:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -2008,10 +2056,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -2074,7 +2123,7 @@
        "seccion": "Análisis de la propiedad asociativa",
        "bloques": [
         {
-         "texto": "Definición general de asociatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -2086,10 +2135,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -2101,7 +2151,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "texto": "Es la misma operación del ejercicio 2.a: los dos miembros dan x + y + z + xy + xz + yz + xyz. Se cumple.",
@@ -2113,7 +2164,7 @@
        "seccion": "Análisis de la propiedad conmutativa",
        "bloques": [
         {
-         "texto": "Definición general de conmutatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -2125,10 +2176,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -2140,7 +2192,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -2158,7 +2211,8 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -2183,9 +2237,11 @@
              "nota": "Conmutatividad de + y ·"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -2206,7 +2262,7 @@
        "seccion": "Análisis de la existencia de elemento neutro",
        "bloques": [
         {
-         "texto": "Definición general de elemento neutro:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -2218,10 +2274,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -2233,7 +2290,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Elemento neutro por derecha",
@@ -2308,7 +2366,7 @@
        "seccion": "Análisis de la existencia de elemento inverso",
        "bloques": [
         {
-         "texto": "Definición general de elemento inverso:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -2320,10 +2378,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -2335,7 +2394,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Elemento inverso por derecha",
@@ -2563,7 +2623,7 @@
      "seccion": "Análisis de la propiedad asociativa",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -2575,10 +2635,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -2590,7 +2651,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -2731,7 +2793,7 @@
      "seccion": "Análisis de la propiedad conmutativa",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -2743,10 +2805,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -2758,7 +2821,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -2803,7 +2867,8 @@
          ],
          "entero": true
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -2824,7 +2889,7 @@
      "seccion": "Análisis de la existencia de elemento neutro",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -2836,10 +2901,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -2851,7 +2917,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -2949,7 +3016,7 @@
      "seccion": "Análisis de la existencia de elemento inverso",
      "bloques": [
       {
-       "texto": "Definición general de elemento inverso:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -2961,10 +3028,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -2976,7 +3044,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento inverso por derecha",
@@ -3179,7 +3248,7 @@
      "seccion": "Análisis de la propiedad asociativa",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -3191,10 +3260,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -3206,7 +3276,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -3254,7 +3325,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -3297,9 +3369,11 @@
            "nota": "Quitar el paréntesis"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -3320,7 +3394,7 @@
      "seccion": "Análisis de la propiedad conmutativa",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -3332,10 +3406,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -3347,7 +3422,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -3392,7 +3468,8 @@
          ],
          "entero": true
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -3413,7 +3490,7 @@
      "seccion": "Análisis de la existencia de elemento neutro",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -3425,10 +3502,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -3440,7 +3518,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -3614,7 +3693,7 @@
      "seccion": "Análisis de la propiedad asociativa",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -3626,7 +3705,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Definición aplicada en el contexto de este ejercicio:",
@@ -3694,7 +3774,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -3743,9 +3824,11 @@
            "nota": "Quitar el paréntesis"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -3766,7 +3849,7 @@
      "seccion": "Análisis de la propiedad conmutativa",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -3778,10 +3861,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -3793,7 +3877,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -3811,7 +3896,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -3836,9 +3922,11 @@
            "nota": "Conmutatividad del producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -3859,7 +3947,7 @@
      "seccion": "Análisis de la existencia de elemento neutro",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -3871,7 +3959,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Definición aplicada en el contexto de este ejercicio:",
@@ -3994,7 +4083,7 @@
      "seccion": "Análisis de la existencia de elemento inverso",
      "bloques": [
       {
-       "texto": "Definición general de elemento inverso:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -4006,7 +4095,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Definición aplicada en el contexto de este ejercicio:",
@@ -4207,7 +4297,7 @@
      "enunciado": "Pruebe que ∗ es distributiva por la izquierda con respecto de ∇.",
      "bloques": [
       {
-       "texto": "Definición general de distributividad por izquierda:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -4219,10 +4309,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4234,7 +4325,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Nota para el estudiante: en la definición general + es la primera operación y ∗ la segunda. Acá ∇ ocupa el lugar de +.",
@@ -4359,7 +4451,7 @@
      "enunciado": "Pruebe que ∗ no es distributiva por la derecha con respecto de ∇",
      "bloques": [
       {
-       "texto": "Definición general de distributividad por derecha:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -4371,10 +4463,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4386,7 +4479,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -4426,7 +4520,8 @@
            "nota": "Asociatividad del producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -4472,9 +4567,11 @@
            "nota": "Asociatividad y conmutatividad del producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -4508,7 +4605,7 @@
    "enunciado": "Considere la operación ∗ definida en ℝ por a ∗ b = a + b + 2ab tal que ∗ es asociativa y con neutro e = 0. ¿Qué elementos a ∈ ℝ tienen inverso a'?",
    "bloques": [
     {
-     "texto": "Definición general de elemento inverso:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
@@ -4520,10 +4617,11 @@
        "color": "azul"
       }
      ],
-     "entero": true
+     "entero": true,
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
@@ -4535,7 +4633,8 @@
        "color": "azul"
       }
      ],
-     "entero": true
+     "entero": true,
+     "alLado": true
     },
     {
      "seccion": "Elemento inverso por derecha",
@@ -4733,7 +4832,7 @@
      "seccion": "Análisis de la ley de composición interna",
      "bloques": [
       {
-       "texto": "Definición general de ley de composición interna:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -4745,10 +4844,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4760,7 +4860,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -4787,7 +4888,7 @@
      "seccion": "Análisis de la propiedad asociativa",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -4799,10 +4900,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4814,7 +4916,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -4864,7 +4967,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -4916,9 +5020,11 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -4939,7 +5045,7 @@
      "seccion": "Análisis de la propiedad conmutativa",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -4951,10 +5057,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4966,7 +5073,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -4984,7 +5092,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -5009,9 +5118,11 @@
            "nota": "Conmutatividad de la suma"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -5032,7 +5143,7 @@
      "seccion": "Análisis de la existencia de elemento neutro",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5044,10 +5155,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5059,7 +5171,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -5127,7 +5240,7 @@
      "seccion": "Análisis de la existencia de elemento inverso",
      "bloques": [
       {
-       "texto": "Definición general de elemento inverso:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5139,10 +5252,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5154,7 +5268,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento inverso por derecha",
@@ -5293,7 +5408,7 @@
      "seccion": "Análisis de la ley de composición interna",
      "bloques": [
       {
-       "texto": "Definición general de ley de composición interna:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5305,10 +5420,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5320,7 +5436,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -5347,7 +5464,7 @@
      "seccion": "Análisis de la propiedad asociativa",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5359,10 +5476,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5374,7 +5492,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Miembro izquierdo",
@@ -5419,7 +5538,8 @@
            "der": "a + b + c − 4"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -5466,9 +5586,11 @@
            "der": "a + b + c − 4"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -5489,7 +5611,7 @@
      "seccion": "Análisis de la propiedad conmutativa",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5501,10 +5623,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5516,7 +5639,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Nota para el estudiante: la consigna no pide la conmutatividad, pero se analiza porque simplifica el estudio del neutro.",
@@ -5539,7 +5663,8 @@
            "notaColor": "producto"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -5564,9 +5689,11 @@
            "nota": "Conmutatividad de la suma"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -5587,7 +5714,7 @@
      "seccion": "Análisis de la existencia de elemento neutro",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5599,10 +5726,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5614,7 +5742,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -5671,7 +5800,7 @@
      "seccion": "Análisis de la existencia de elemento inverso",
      "bloques": [
       {
-       "texto": "Definición general de elemento inverso:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5683,10 +5812,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5698,7 +5828,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento inverso por derecha",
@@ -5872,7 +6003,7 @@
      "seccion": "Análisis de la propiedad asociativa",
      "bloques": [
       {
-       "texto": "Definición general de asociatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -5884,10 +6015,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -5899,7 +6031,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Se analizan las ternas (x, y, z) por casos.",
@@ -5959,7 +6092,8 @@
          ],
          "entero": true
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "texto": "Caso 3: x = y = z = b.",
@@ -6011,7 +6145,8 @@
          ],
          "entero": true
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "texto": "En todos los casos los dos miembros son iguales, por lo tanto ∗ es asociativa.",
@@ -6023,7 +6158,7 @@
      "seccion": "Análisis de la propiedad conmutativa",
      "bloques": [
       {
-       "texto": "Definición general de conmutatividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -6035,10 +6170,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -6050,7 +6186,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Comparamos cada par de casillas simétricas respecto de la diagonal principal:",
@@ -6083,7 +6220,7 @@
      "seccion": "Análisis de la existencia de elemento neutro",
      "bloques": [
       {
-       "texto": "Definición general de elemento neutro:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -6095,10 +6232,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -6110,7 +6248,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento neutro por derecha",
@@ -6152,7 +6291,7 @@
      "seccion": "Análisis de la existencia de elemento inverso",
      "bloques": [
       {
-       "texto": "Definición general de elemento inverso:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -6164,10 +6303,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -6179,7 +6319,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "seccion": "Elemento inverso por derecha",
@@ -6643,7 +6784,7 @@
        "seccion": "Análisis de la ley de composición interna",
        "bloques": [
         {
-         "texto": "Definición general de ley de composición interna:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -6655,10 +6796,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -6670,7 +6812,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "pasos": [
@@ -6697,7 +6840,7 @@
        "seccion": "Análisis de la propiedad asociativa",
        "bloques": [
         {
-         "texto": "Definición general de asociatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -6709,10 +6852,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -6724,7 +6868,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -6769,7 +6914,8 @@
              "der": "a + b + c + 2"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -6816,9 +6962,11 @@
              "der": "a + b + c + 2"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -6839,7 +6987,7 @@
        "seccion": "Análisis de la propiedad conmutativa",
        "bloques": [
         {
-         "texto": "Definición general de conmutatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -6851,10 +6999,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -6866,7 +7015,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -6884,7 +7034,8 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -6909,9 +7060,11 @@
              "nota": "Conmutatividad de la suma"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -6932,7 +7085,7 @@
        "seccion": "Análisis de la existencia de elemento neutro",
        "bloques": [
         {
-         "texto": "Definición general de elemento neutro:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -6944,10 +7097,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -6959,7 +7113,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Elemento neutro por derecha",
@@ -7016,7 +7171,7 @@
        "seccion": "Análisis de la existencia de elemento inverso",
        "bloques": [
         {
-         "texto": "Definición general de elemento inverso:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -7028,10 +7183,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -7043,7 +7199,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Elemento inverso por derecha",
@@ -7175,7 +7332,7 @@
        "seccion": "Análisis de la ley de composición interna",
        "bloques": [
         {
-         "texto": "Definición general de ley de composición interna:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -7187,10 +7344,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -7202,7 +7360,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "pasos": [
@@ -7229,7 +7388,7 @@
        "seccion": "Análisis de la propiedad asociativa",
        "bloques": [
         {
-         "texto": "Definición general de asociatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -7241,10 +7400,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -7256,7 +7416,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "texto": "Es la misma operación del ejercicio 2.a: los dos miembros dan a + b + c + ab + ac + bc + abc. Se cumple.",
@@ -7268,7 +7429,7 @@
        "seccion": "Análisis de la propiedad conmutativa",
        "bloques": [
         {
-         "texto": "Definición general de conmutatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -7280,10 +7441,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -7295,7 +7457,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -7313,7 +7476,8 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -7338,9 +7502,11 @@
              "nota": "Conmutatividad de + y ·"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -7361,7 +7527,7 @@
        "seccion": "Análisis de la existencia de elemento neutro",
        "bloques": [
         {
-         "texto": "Definición general de elemento neutro:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -7373,10 +7539,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -7388,7 +7555,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Elemento neutro por derecha",
@@ -7486,7 +7654,7 @@
        "seccion": "Análisis de la existencia de elemento inverso",
        "bloques": [
         {
-         "texto": "Definición general de elemento inverso:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -7498,10 +7666,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -7513,7 +7682,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Elemento inverso por derecha",
@@ -7675,7 +7845,7 @@
      "enunciado": "¿Es ∘ distributiva con respecto de ∗?",
      "bloques": [
       {
-       "texto": "Definición general de distributividad por izquierda:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -7687,10 +7857,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -7702,7 +7873,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Nota para el estudiante: en la definición general + es la primera operación y ∗ la segunda. Acá ∗ ocupa el lugar de + y ∘ el de ∗.",
@@ -7765,7 +7937,8 @@
            "nota": "Agrupar los términos"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
        ]
       },
@@ -7817,9 +7990,11 @@
            "nota": "Agrupar los términos"
           }
          ],
-         "entero": true
+         "entero": true,
+         "notas": "arriba"
         }
-       ]
+       ],
+       "alLado": true
       },
       {
        "pasos": [
@@ -7855,7 +8030,7 @@
      "enunciado": "¿Es ∗ distributiva con respecto de ∘?",
      "bloques": [
       {
-       "texto": "Definición general de distributividad por izquierda:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
@@ -7867,10 +8042,11 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -7882,7 +8058,8 @@
          "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Nota para el estudiante: acá ∘ ocupa el lugar de + y ∗ el de ∗.",
@@ -8055,7 +8232,7 @@
        "seccion": "Análisis de la ley de composición interna",
        "bloques": [
         {
-         "texto": "Definición general de ley de composición interna:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8067,10 +8244,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -8082,7 +8260,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "pasos": [
@@ -8109,7 +8288,7 @@
        "seccion": "Análisis de la propiedad asociativa",
        "bloques": [
         {
-         "texto": "Definición general de asociatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8121,10 +8300,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -8136,7 +8316,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -8175,7 +8356,8 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -8216,9 +8398,11 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -8244,7 +8428,7 @@
        "seccion": "Análisis de la propiedad distributiva por izquierda",
        "bloques": [
         {
-         "texto": "Definición general de distributividad por izquierda:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8256,10 +8440,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -8271,7 +8456,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -8298,7 +8484,8 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -8328,9 +8515,11 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -8351,7 +8540,7 @@
        "seccion": "Análisis de la propiedad distributiva por derecha",
        "bloques": [
         {
-         "texto": "Definición general de distributividad por derecha:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8363,10 +8552,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -8378,7 +8568,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -8410,7 +8601,8 @@
              "nota": "Conmutatividad del producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -8445,9 +8637,11 @@
              "nota": "Conmutatividad del producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -8568,7 +8762,7 @@
        "seccion": "Análisis de la propiedad distributiva por izquierda",
        "bloques": [
         {
-         "texto": "Definición general de distributividad por izquierda:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8580,10 +8774,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -8595,7 +8790,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -8737,7 +8933,7 @@
        "seccion": "Análisis de la existencia de elemento neutro",
        "bloques": [
         {
-         "texto": "Definición general de elemento neutro:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8749,10 +8945,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -8764,7 +8961,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "texto": "En el ejercicio 15.b se obtuvo e = 0. Lo verificamos por derecha:",
@@ -8889,7 +9087,7 @@
        "seccion": "Análisis de la ley de composición interna",
        "bloques": [
         {
-         "texto": "Definición general de ley de composición interna:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8901,7 +9099,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "texto": "Definición aplicada en el contexto de este ejercicio:",
@@ -8948,7 +9147,7 @@
        "seccion": "Análisis de la propiedad asociativa",
        "bloques": [
         {
-         "texto": "Definición general de asociatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -8960,10 +9159,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -8975,7 +9175,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -9025,7 +9226,8 @@
              "der": "   acf + ade + bce − bdf)"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -9077,9 +9279,11 @@
              "der": "   acf − bdf + ade + bce)"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "texto": "Las dos componentes tienen los mismos términos en los dos miembros, así que son iguales. · es asociativa y (C, ·) es un semigrupo.",
@@ -9091,7 +9295,7 @@
        "seccion": "Análisis de la propiedad conmutativa",
        "bloques": [
         {
-         "texto": "Definición general de conmutatividad:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -9103,10 +9307,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -9118,7 +9323,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",
@@ -9136,7 +9342,8 @@
              "notaColor": "producto"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
          ]
         },
@@ -9161,9 +9368,11 @@
              "nota": "Conmutatividad de + y · en ℝ"
             }
            ],
-           "entero": true
+           "entero": true,
+           "notas": "arriba"
           }
-         ]
+         ],
+         "alLado": true
         },
         {
          "pasos": [
@@ -9189,7 +9398,7 @@
        "seccion": "Análisis de la propiedad distributiva por izquierda",
        "bloques": [
         {
-         "texto": "Definición general de distributividad por izquierda:",
+         "texto": "Definición general:",
          "color": "azul",
          "unir": true
         },
@@ -9201,10 +9410,11 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Definición aplicada en el contexto de este ejercicio:",
+         "texto": "Definición aplicada:",
          "color": "azul",
          "unir": true
         },
@@ -9216,7 +9426,8 @@
            "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
          "seccion": "Miembro izquierdo",

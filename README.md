@@ -17,10 +17,6 @@ solucionarios/
     solucion.pdf        ← lista para imprimir
   <materia>/<institucion>/<año> - cuatrimestre <n>/cuadernillo.json
                         ← todos los TP juntos: carátula, índice, cabecera por TP
-  <materia>/<institucion>/<año> - cuatrimestre <n> - optimizado/
-                        ← la versión que ahorra hojas (dos columnas, rótulos más
-                          cortos); su cuadernillo.json usa los TP optimizados y,
-                          para los que no se tocaron, los de la carpeta original
 FORMATO.md              ← cómo se escribe un solucion.json (y un cuadernillo)
 herramientas/validar.mjs
 herramientas/armar-cuadernillo.mjs ← arma el cuadernillo para importarlo

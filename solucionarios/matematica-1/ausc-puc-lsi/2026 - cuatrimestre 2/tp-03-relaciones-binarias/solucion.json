@@ -498,22 +498,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de reflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -577,7 +579,8 @@
        ]
       }
      ],
-     "entero": true
+     "entero": true,
+     "alLado": true
     },
     {
      "pasos": [
@@ -687,22 +690,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de asimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -876,22 +881,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de simetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -1065,16 +1072,17 @@
      "unir": true
     },
     {
-     "texto": "Definición general de transitividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
@@ -1322,22 +1330,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de reflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R1",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R1",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -1401,7 +1411,8 @@
          ]
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -1462,22 +1473,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de simetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R1 → (y, x) ∈ R1",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R1 → (y, x) ∈ R1",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -1602,22 +1615,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de antisimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R1 ∧ (y, x) ∈ R1] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R1 ∧ (y, x) ∈ R1] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -1799,16 +1814,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de transitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -2016,22 +2032,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de reflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R2",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R2",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -2089,22 +2107,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de arreflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R2",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R2",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -2162,22 +2182,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de simetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R2 → (y, x) ∈ R2",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R2 → (y, x) ∈ R2",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -2302,22 +2324,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de antisimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R2 ∧ (y, x) ∈ R2] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R2 ∧ (y, x) ∈ R2] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -2394,16 +2418,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de transitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -2486,16 +2511,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de atransitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -2598,22 +2624,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de reflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R3",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R3",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -2671,22 +2699,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de arreflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R3",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R3",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -2750,7 +2780,8 @@
          ]
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -2811,22 +2842,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de simetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R3 → (y, x) ∈ R3",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R3 → (y, x) ∈ R3",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -2884,22 +2917,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de asimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R3 → (y, x) ∉ R3",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R3 → (y, x) ∉ R3",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -3024,22 +3059,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de antisimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R3 ∧ (y, x) ∈ R3] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R3 ∧ (y, x) ∈ R3] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -3221,16 +3258,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de transitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -3438,22 +3476,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de reflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R4",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R4",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -3511,22 +3551,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de arreflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R4",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R4",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -3584,22 +3626,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de simetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R4 → (y, x) ∈ R4",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R4 → (y, x) ∈ R4",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -3657,22 +3701,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de asimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R4 → (y, x) ∉ R4",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R4 → (y, x) ∉ R4",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -3730,22 +3776,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de antisimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R4 ∧ (y, x) ∈ R4] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R4 ∧ (y, x) ∈ R4] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -3927,16 +3975,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de transitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4144,22 +4193,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de reflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R5",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R5",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -4217,22 +4268,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de arreflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R5",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R5",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -4290,22 +4343,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de simetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R5 → (y, x) ∈ R5",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R5 → (y, x) ∈ R5",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -4430,22 +4485,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de antisimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R5 ∧ (y, x) ∈ R5] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R5 ∧ (y, x) ∈ R5] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -4522,16 +4579,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de transitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4614,16 +4672,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de atransitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -4773,22 +4832,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de reflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {a, b, c, d, e, f, g} → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {a, b, c, d, e, f, g} → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -4846,22 +4907,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de arreflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {a, b, c, d, e, f, g} → (x, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {a, b, c, d, e, f, g} → (x, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -4925,7 +4988,8 @@
        ]
       }
      ],
-     "entero": true
+     "entero": true,
+     "alLado": true
     },
     {
      "pasos": [
@@ -4986,22 +5050,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de simetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {a, b, c, d, e, f, g}: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {a, b, c, d, e, f, g}: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -5059,22 +5125,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de asimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {a, b, c, d, e, f, g}: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {a, b, c, d, e, f, g}: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -5199,16 +5267,17 @@
      "unir": true
     },
     {
-     "texto": "Definición general de antisimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
@@ -5396,16 +5465,17 @@
      "unir": true
     },
     {
-     "texto": "Definición general de transitividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
@@ -5488,16 +5558,17 @@
      "unir": true
     },
     {
-     "texto": "Definición general de atransitividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
@@ -5754,22 +5825,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de reflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -5833,7 +5906,8 @@
        ]
       }
      ],
-     "entero": true
+     "entero": true,
+     "alLado": true
     },
     {
      "pasos": [
@@ -5894,22 +5968,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de simetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -5967,22 +6043,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de asimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -6040,22 +6118,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de antisimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul"
+     "texto": "∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -6237,16 +6317,17 @@
      "unir": true
     },
     {
-     "texto": "Definición general de transitividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
@@ -6503,22 +6584,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de reflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {1, 2, 3} → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {1, 2, 3} → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -6576,22 +6659,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de arreflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {1, 2, 3} → (x, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {1, 2, 3} → (x, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -6649,22 +6734,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de simetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {1, 2, 3}: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {1, 2, 3}: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -6789,22 +6876,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de antisimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul"
+     "texto": "∀x, y ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -6881,22 +6970,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de transitividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -6973,22 +7064,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de atransitividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -7122,22 +7215,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de reflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {a, b, c} → (x, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {a, b, c} → (x, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -7195,22 +7290,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de arreflexividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ A → (x, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x: x ∈ {a, b, c} → (x, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x: x ∈ {a, b, c} → (x, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -7268,22 +7365,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de simetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {a, b, c}: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {a, b, c}: (x, y) ∈ R → (y, x) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -7341,22 +7440,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de asimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {a, b, c}: (x, y) ∈ R → (y, x) ∉ R",
-     "color": "azul"
+     "texto": "∀x, y ∈ {a, b, c}: (x, y) ∈ R → (y, x) ∉ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -7414,22 +7515,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de antisimetría:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul"
+     "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y ∈ {a, b, c}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul"
+     "texto": "∀x, y ∈ {a, b, c}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -7611,22 +7714,24 @@
      "unir": true
     },
     {
-     "texto": "Definición general de transitividad:",
+     "texto": "Definición general:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
-     "texto": "Definición aplicada en el contexto de este ejercicio:",
+     "texto": "Definición aplicada:",
      "color": "azul",
      "unir": true
     },
     {
-     "texto": "      ∀x, y, z ∈ {a, b, c}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul"
+     "texto": "∀x, y, z ∈ {a, b, c}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+     "color": "azul",
+     "alLado": true
     },
     {
      "pasos": [
@@ -7869,22 +7974,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de reflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3} → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3} → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -7948,7 +8055,8 @@
          ]
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -8009,22 +8117,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de simetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3}: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3}: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -8149,22 +8259,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de antisimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -8241,22 +8353,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de transitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ {1, 2, 3}: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -8508,22 +8622,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de reflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -8581,22 +8697,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de arreflexividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ A → (x, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ A → (x, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x: x ∈ {1, 2, 3, 4} → (x, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -8660,7 +8778,8 @@
          ]
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
@@ -8721,22 +8840,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de simetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
        "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, un caso en el que la proposición es falsa:",
@@ -8794,22 +8915,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de asimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: (x, y) ∈ R → (y, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∉ R",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: (x, y) ∈ R → (y, x) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -8934,22 +9057,24 @@
        "unir": true
       },
       {
-       "texto": "Definición general de antisimetría:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ A: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul"
+       "texto": "∀x, y ∈ {1, 2, 3, 4}: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
+       "color": "azul",
+       "alLado": true
       },
       {
        "pasos": [
@@ -9131,16 +9256,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de transitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
@@ -9223,16 +9349,17 @@
        "unir": true
       },
       {
-       "texto": "Definición general de atransitividad:",
+       "texto": "Definición general:",
        "color": "azul",
        "unir": true
       },
       {
-       "texto": "      ∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul"
+       "texto": "∀x, y, z ∈ A: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
+       "color": "azul",
+       "alLado": true
       },
       {
-       "texto": "Definición aplicada en el contexto de este ejercicio:",
+       "texto": "Definición aplicada:",
        "color": "azul",
        "unir": true
       },
