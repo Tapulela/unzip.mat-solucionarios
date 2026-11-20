@@ -433,10 +433,14 @@ texto «Reemplazando la factorización, la inecuación queda:».
 
 - **Primero la acción y después la expresión donde se hace.** La nota anuncia el paso:
   va al lado del renglón anterior (o arriba del renglón, si las notas van arriba) y la
-  expresión de abajo muestra el resultado. Por eso el desarrollo empieza con la
-  operación sola («z₁ + z₂», sin nota), y en el renglón siguiente se reemplaza
-  («= (4 + 5i) + (3 − 2i)», con la nota «Reemplazar»). Nunca una nota al lado de la
-  expresión donde ya se hizo lo que dice.
+  expresión de abajo muestra el resultado. Nunca una nota al lado de la expresión
+  donde ya se hizo lo que dice.
+- **El primer renglón es la operación igualada a su reemplazo**: «z₁ + z₂ = (4 + 5i) +
+  (3 − 2i)», sin nota (el reemplazo se ve en el mismo renglón), y los pasos siguen
+  abajo con «= …». En el JSON, la operación va en `izq` y el reemplazo en `der`; si la
+  operación lleva una fracción dibujada (no entra en `izq`), va toda en `der`:
+  `[{ "frac": ["z₁", "z₃"] }, " = ", { "frac": [...] }]`. No se hace cuando el primer
+  renglón ya son números (no hay nada que reemplazar).
 
 - **Nunca más de un paso por renglón**, en todos los temas: ni cadenas como
   «(1 ∗ 1) ∗ 0 = 2 ∗ 0 = 4», ni dentro de un párrafo de texto. Cada igualdad del
