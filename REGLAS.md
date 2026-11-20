@@ -183,7 +183,8 @@ Se usa este `estilo` en todas las resoluciones:
   factorización se hace como parte de la resolución, no se da hecha ni se deja para una
   nota: el desarrollo se corta en ese renglón, va un texto («Para factorizar 2k² + 3k + 1
   se buscan sus raíces con la fórmula cuadrática:» o «… se completa el cuadrado:») y un
-  bloque de pasos con `"entero": true` con la factorización completa, y después el
+  bloque de pasos con la factorización completa (sin `"entero"`: ocupa casi una hoja, y
+  si no se puede partir deja hojas a medio llenar), y después el
   desarrollo sigue repitiendo el renglón cortado y «= …» con la nota «Reemplazar la
   factorización». Con la **fórmula cuadrática**: identificar a, b y c, la fórmula con
   los valores, las cuentas, las dos raíces (llave y ramas k₁, k₂) y la forma

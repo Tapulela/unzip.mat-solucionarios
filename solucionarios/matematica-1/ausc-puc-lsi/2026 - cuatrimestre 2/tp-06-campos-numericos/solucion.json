@@ -4482,7 +4482,10 @@
              }
             ]
            },
-           "nota": "Resolver la potencia y las multiplicaciones",
+           "nota": [
+            "Resolver la potencia",
+            "y las multiplicaciones"
+           ],
            "notaColor": "producto"
           },
           {
@@ -4616,8 +4619,7 @@
            "notaColor": "producto",
            "caja": "azul"
           }
-         ],
-         "entero": true
+         ]
         },
         {
          "texto": "Nota para el estudiante: también se puede factorizar completando el cuadrado. Verificación: (2k + 1)(k + 1) = 2k² + 2k + k + 1 = 2k² + 3k + 1.",
@@ -5512,7 +5514,10 @@
              }
             ]
            },
-           "nota": "Resolver la potencia y las multiplicaciones",
+           "nota": [
+            "Resolver la potencia",
+            "y las multiplicaciones"
+           ],
            "notaColor": "producto"
           },
           {
@@ -5646,8 +5651,7 @@
            "notaColor": "producto",
            "caja": "azul"
           }
-         ],
-         "entero": true
+         ]
         },
         {
          "texto": "Nota para el estudiante: también se puede factorizar completando el cuadrado. Verificación: (2k + 3)(k + 2) = 2k² + 4k + 3k + 6 = 2k² + 7k + 6.",
@@ -6177,8 +6181,7 @@
          "notaColor": "suma",
          "caja": "azul"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "Nota para el estudiante: también se puede factorizar con la fórmula cuadrática (tiene una raíz doble, k = −2). Verificación: (k + 2)² = k² + 2 · 2 · k + 2² = k² + 4k + 4.",
@@ -6765,8 +6768,7 @@
          "notaColor": "suma",
          "caja": "azul"
         }
-       ],
-       "entero": true
+       ]
       },
       {
        "texto": "Nota para el estudiante: también se puede factorizar con la fórmula cuadrática (tiene una raíz doble, k = −1). Verificación: (k + 1)² = k² + 2 · 1 · k + 1² = k² + 2k + 1.",
