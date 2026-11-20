@@ -147,7 +147,7 @@
    "marcador": "T.P. 5: Álgebra de Boole"
   },
   {
-   "ruta": "../2026 - cuatrimestre 2/tp-06-campos-numericos/solucion.json",
+   "ruta": "tp-06-campos-numericos/solucion.json",
    "marcador": "T.P. 6: Campos numéricos",
    "marcadores": {
     "ejercicio": "{rotulo}: {enunciado}",
