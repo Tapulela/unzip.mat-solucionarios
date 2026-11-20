@@ -178,6 +178,21 @@ Se usa este `estilo` en todas las resoluciones:
   renglón va más chico (un bloque de pasos con `"tam": "S"`, y el título «Paso 3» con
   `"unir": true` para que no quede separado). Después se desarrolla el miembro
   izquierdo, aplicando la hipótesis de inducción, hasta llegar al derecho.
+- **Inducción, factorizar un polinomio de segundo grado**: si en el paso 3 aparece un
+  polinomio de segundo grado que hay que factorizar (2k² + 3k + 1, k² + 4k + 4…), la
+  factorización se hace como parte de la resolución, no se da hecha ni se deja para una
+  nota: el desarrollo se corta en ese renglón, va un texto («Para factorizar 2k² + 3k + 1
+  se buscan sus raíces con la fórmula cuadrática:» o «… se completa el cuadrado:») y un
+  bloque de pasos con `"entero": true` con la factorización completa, y después el
+  desarrollo sigue repitiendo el renglón cortado y «= …» con la nota «Reemplazar la
+  factorización». Con la **fórmula cuadrática**: identificar a, b y c, la fórmula con
+  los valores, las cuentas, las dos raíces (llave y ramas k₁, k₂) y la forma
+  factorizada a(k − k₁)(k − k₂), distribuyendo a si hace falta (2(k + 1/2) = 2k + 1).
+  **Completando el cuadrado**: escribir el término lineal como 2 · m · k, sumar y
+  restar m², cuadrado de un binomio y resolver lo que queda. Cuando es un trinomio
+  cuadrado perfecto conviene completar el cuadrado; si no, la fórmula cuadrática.
+  Debajo, en gris, que también se puede por el otro método y la verificación
+  (desarrollar el producto y volver al polinomio).
 
 ## Relaciones binarias
 
