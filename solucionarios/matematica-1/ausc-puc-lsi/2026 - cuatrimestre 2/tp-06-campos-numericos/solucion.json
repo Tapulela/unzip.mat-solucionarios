@@ -3324,131 +3324,36 @@
       {
        "pasos": [
         {
-         "der": [
-          {
-           "tabla": [
-            [
-             "28",
-             "20",
-             "10",
-             "−2"
-            ],
-            [
-             {
-              "t": "D",
-              "color": "azul"
-             },
-             {
-              "t": "I",
-              "color": "azul"
-             },
-             {
-              "t": "E",
-              "color": "azul"
-             },
-             {
-              "t": "Z",
-              "color": "azul"
-             }
-            ]
+         "der": {
+          "tabla": [
+           [
+            "28",
+            "20",
+            "10",
+            "−2"
            ],
-           "lineas": true,
-           "alinear": "centro"
-          },
-          " ",
-          {
-           "tabla": [
-            [
-             "4",
-             "21",
-             "−6",
-             "−23",
-             "1",
-             "−12",
-             "−1"
-            ],
-            [
-             {
-              "t": "T",
-              "color": "azul"
-             },
-             {
-              "t": "A",
-              "color": "azul"
-             },
-             {
-              "t": "N",
-              "color": "azul"
-             },
-             {
-              "t": "Q",
-              "color": "azul"
-             },
-             {
-              "t": "U",
-              "color": "azul"
-             },
-             {
-              "t": "E",
-              "color": "azul"
-             },
-             {
-              "t": "S",
-              "color": "azul"
-             }
-            ]
-           ],
-           "lineas": true,
-           "alinear": "centro"
-          },
-          " ",
-          {
-           "tabla": [
-            [
-             "−19"
-            ],
-            [
-             {
-              "t": "Y",
-              "color": "azul"
-             }
-            ]
-           ],
-           "lineas": true,
-           "alinear": "centro"
-          },
-          " ",
-          {
-           "tabla": [
-            [
-             "−4",
-             "15",
-             "12",
-             "−8"
-            ],
-            [
-             {
-              "t": "S",
-              "color": "azul"
-             },
-             {
-              "t": "E",
-              "color": "azul"
-             },
-             {
-              "t": "I",
-              "color": "azul"
-             },
-             {
-              "t": "S",
-              "color": "azul"
-             }
-            ]
-           ],
-           "lineas": true,
-           "alinear": "centro"
-          }
-         ]
+           [
+            {
+             "t": "D",
+             "color": "azul"
+            },
+            {
+             "t": "I",
+             "color": "azul"
+            },
+            {
+             "t": "E",
+             "color": "azul"
+            },
+            {
+             "t": "Z",
+             "color": "azul"
+            }
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
         }
        ],
        "tam": "S"
@@ -3456,123 +3361,248 @@
       {
        "pasos": [
         {
-         "der": [
-          {
-           "tabla": [
-            [
-             "−5",
-             "−17",
-             "−15",
-             "0",
-             "9",
-             "−9",
-             "−7"
-            ],
-            [
-             {
-              "t": "A",
-              "color": "azul"
-             },
-             {
-              "t": "V",
-              "color": "azul"
-             },
-             {
-              "t": "I",
-              "color": "azul"
-             },
-             {
-              "t": "O",
-              "color": "azul"
-             },
-             {
-              "t": "N",
-              "color": "azul"
-             },
-             {
-              "t": "E",
-              "color": "azul"
-             },
-             {
-              "t": "S",
-              "color": "azul"
-             }
-            ]
+         "der": {
+          "tabla": [
+           [
+            "4",
+            "21",
+            "−6",
+            "−23",
+            "1",
+            "−12",
+            "−1"
            ],
-           "lineas": true,
-           "alinear": "centro"
-          },
-          " ",
-          {
-           "tabla": [
-            [
-             "−8",
-             "−24"
-            ],
-            [
-             {
-              "t": "S",
-              "color": "azul"
-             },
-             {
-              "t": "E",
-              "color": "azul"
-             }
-            ]
+           [
+            {
+             "t": "T",
+             "color": "azul"
+            },
+            {
+             "t": "A",
+             "color": "azul"
+            },
+            {
+             "t": "N",
+             "color": "azul"
+            },
+            {
+             "t": "Q",
+             "color": "azul"
+            },
+            {
+             "t": "U",
+             "color": "azul"
+            },
+            {
+             "t": "E",
+             "color": "azul"
+            },
+            {
+             "t": "S",
+             "color": "azul"
+            }
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ],
+       "tam": "S",
+       "alLado": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "−19"
            ],
-           "lineas": true,
-           "alinear": "centro"
-          },
-          " ",
-          {
-           "tabla": [
-            [
-             "2",
-             "−33",
-             "−10",
-             "8",
-             "−33",
-             "6",
-             "−3"
-            ],
-            [
-             {
-              "t": "A",
-              "color": "azul"
-             },
-             {
-              "t": "C",
-              "color": "azul"
-             },
-             {
-              "t": "E",
-              "color": "azul"
-             },
-             {
-              "t": "R",
-              "color": "azul"
-             },
-             {
-              "t": "C",
-              "color": "azul"
-             },
-             {
-              "t": "A",
-              "color": "azul"
-             },
-             {
-              "t": "N",
-              "color": "azul"
-             }
-            ]
+           [
+            {
+             "t": "Y",
+             "color": "azul"
+            }
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ],
+       "tam": "S",
+       "alLado": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "−4",
+            "15",
+            "12",
+            "−8"
            ],
-           "lineas": true,
-           "alinear": "centro"
-          }
-         ]
+           [
+            {
+             "t": "S",
+             "color": "azul"
+            },
+            {
+             "t": "E",
+             "color": "azul"
+            },
+            {
+             "t": "I",
+             "color": "azul"
+            },
+            {
+             "t": "S",
+             "color": "azul"
+            }
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
         }
        ],
        "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "−5",
+            "−17",
+            "−15",
+            "0",
+            "9",
+            "−9",
+            "−7"
+           ],
+           [
+            {
+             "t": "A",
+             "color": "azul"
+            },
+            {
+             "t": "V",
+             "color": "azul"
+            },
+            {
+             "t": "I",
+             "color": "azul"
+            },
+            {
+             "t": "O",
+             "color": "azul"
+            },
+            {
+             "t": "N",
+             "color": "azul"
+            },
+            {
+             "t": "E",
+             "color": "azul"
+            },
+            {
+             "t": "S",
+             "color": "azul"
+            }
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ],
+       "tam": "S",
+       "alLado": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "−8",
+            "−24"
+           ],
+           [
+            {
+             "t": "S",
+             "color": "azul"
+            },
+            {
+             "t": "E",
+             "color": "azul"
+            }
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ],
+       "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "2",
+            "−33",
+            "−10",
+            "8",
+            "−33",
+            "6",
+            "−3"
+           ],
+           [
+            {
+             "t": "A",
+             "color": "azul"
+            },
+            {
+             "t": "C",
+             "color": "azul"
+            },
+            {
+             "t": "E",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "C",
+             "color": "azul"
+            },
+            {
+             "t": "A",
+             "color": "azul"
+            },
+            {
+             "t": "N",
+             "color": "azul"
+            }
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ],
+       "tam": "S",
+       "alLado": true
       },
       {
        "texto": "Nota para el estudiante: ninguna operación da −5. La palabra «_VIONES» indica que es la A; seguramente la operación de la A era 35 : (−7) = −5 y no (−35) : (−7) = 5.",
@@ -4389,7 +4419,7 @@
          ]
         },
         {
-         "texto": "Para factorizar 2k² + 3k + 1 se buscan sus raíces con la fórmula cuadrática:",
+         "texto": "Para factorizar 2k² + 3k + 1 se aplica descomposición: el término lineal se arma con a y c (b = a + c, 3 = 2 + 1):",
          "unir": true
         },
         {
@@ -4398,229 +4428,72 @@
            "der": "2k² + 3k + 1"
           },
           {
+           "rel": "=",
            "der": [
-            "a = ",
+            "2k² ",
             {
-             "t": "2",
-             "color": "a"
+             "t": "+ (2 + 1)k",
+             "color": "suma"
             },
-            "    b = ",
-            {
-             "t": "3",
-             "color": "b"
-            },
-            "    c = ",
-            {
-             "t": "1",
-             "color": "c"
-            }
+            " + 1"
            ],
-           "nota": "Identificar a, b y c"
+           "nota": "Escribir 3k como (2 + 1)k",
+           "notaColor": "suma"
           },
           {
-           "izq": "k₁,₂",
-           "der": {
-            "frac": [
-             [
-              "−",
-              {
-               "t": "3",
-               "color": "b"
-              },
-              " ± ",
-              {
-               "raiz": [
-                {
-                 "t": "3",
-                 "color": "b"
-                },
-                "² − 4 · ",
-                {
-                 "t": "2",
-                 "color": "a"
-                },
-                " · ",
-                {
-                 "t": "1",
-                 "color": "c"
-                }
-               ]
-              }
-             ],
-             [
-              "2 · ",
-              {
-               "t": "2",
-               "color": "a"
-              }
-             ]
-            ]
-           },
-           "nota": [
-            "Fórmula cuadrática:",
-            "k₁,₂ = (−b ± √(b² − 4ac)) / 2a"
-           ]
+           "rel": "=",
+           "der": [
+            "2k² ",
+            {
+             "t": "+ 2k + k",
+             "color": "suma"
+            },
+            " + 1"
+           ],
+           "nota": "Aplicar la propiedad distributiva",
+           "notaColor": "suma"
           },
           {
-           "izq": "k₁,₂",
-           "der": {
-            "frac": [
-             [
-              "−3 ± ",
-              {
-               "raiz": {
-                "t": "9 − 8",
-                "color": "producto"
-               }
-              }
-             ],
-             {
-              "t": "4",
-              "color": "producto"
-             }
-            ]
-           },
-           "nota": [
-            "Resolver la potencia",
-            "y las multiplicaciones"
+           "rel": "=",
+           "der": [
+            {
+             "t": "2k(k + 1)",
+             "color": "producto"
+            },
+            " + k + 1"
            ],
+           "nota": "Sacar factor común 2k",
            "notaColor": "producto"
           },
           {
-           "izq": "k₁,₂",
-           "der": {
-            "frac": [
-             [
-              "−3 ± ",
-              {
-               "raiz": {
-                "t": "1",
-                "color": "suma"
-               }
-              }
-             ],
-             "4"
-            ]
-           },
-           "nota": "Resolver la resta",
-           "notaColor": "suma"
-          },
-          {
-           "izq": "k₁,₂",
-           "der": {
-            "frac": [
-             [
-              "−3 ± ",
-              {
-               "t": "1",
-               "color": "producto"
-              }
-             ],
-             "4"
-            ]
-           },
-           "nota": "√1 = 1",
-           "notaColor": "producto",
-           "llave": true
-          },
-          {
-           "rama": "k₁",
+           "rel": "=",
            "der": [
+            "2k(k + 1) ",
             {
-             "frac": [
-              "−3 + 1",
-              "4"
-             ]
-            },
-            " = ",
-            {
-             "frac": [
-              "−2",
-              "4"
-             ]
-            },
-            " = −",
-            {
-             "frac": [
-              "1",
-              "2"
-             ]
+             "t": "+ 1(k + 1)",
+             "color": "producto"
             }
            ],
-           "nota": "Calcular las dos raíces",
-           "notaColor": "suma"
-          },
-          {
-           "rama": "k₂",
-           "der": [
-            {
-             "frac": [
-              "−3 − 1",
-              "4"
-             ]
-            },
-            " = ",
-            {
-             "frac": [
-              "−4",
-              "4"
-             ]
-            },
-            " = −1"
-           ]
-          },
-          {
-           "seccion": true,
-           "der": "Forma factorizada: a(k − k₁)(k − k₂)"
-          },
-          {
-           "izq": "2k² + 3k + 1",
-           "der": [
-            {
-             "t": "2",
-             "color": "a"
-            },
-            "(k − (−",
-            {
-             "frac": [
-              "1",
-              "2"
-             ]
-            },
-            "))(k − (−1))"
-           ],
-           "nota": "Reemplazar a, k₁ y k₂",
+           "nota": "Sacar factor común 1",
            "notaColor": "producto"
           },
           {
-           "izq": "2k² + 3k + 1",
+           "rel": "=",
            "der": [
-            "2(k + ",
             {
-             "frac": [
-              "1",
-              "2"
-             ]
+             "t": "(k + 1)",
+             "color": "producto"
             },
-            ")(k + 1)"
+            "(2k + 1)"
            ],
-           "nota": "Resolver los signos",
-           "notaColor": "suma"
-          },
-          {
-           "izq": "2k² + 3k + 1",
-           "der": "(2k + 1)(k + 1)",
-           "nota": [
-            "Distribuir el 2 en el primer factor:",
-            "2(k + 1/2) = 2k + 1"
-           ],
+           "nota": "Sacar factor común (k + 1)",
            "notaColor": "producto",
            "caja": "azul"
           }
          ]
         },
         {
-         "texto": "Nota para el estudiante: también se puede factorizar completando el cuadrado. Verificación: (2k + 1)(k + 1) = 2k² + 2k + k + 1 = 2k² + 3k + 1.",
+         "texto": "Nota para el estudiante: también se puede factorizar con la fórmula cuadrática o completando el cuadrado. Verificación: (k + 1)(2k + 1) = 2k² + k + 2k + 1 = 2k² + 3k + 1.",
          "color": "gris",
          "tam": "S"
         },
@@ -4655,7 +4528,10 @@
              ]
             }
            ],
-           "nota": "Reemplazar la factorización",
+           "nota": [
+            "Reemplazar la factorización",
+            "(k + 1)(2k + 1) = (2k + 1)(k + 1)"
+           ],
            "notaColor": "producto"
           },
           {
@@ -6106,27 +5982,13 @@
          "der": "k² + 4k + 4"
         },
         {
+         "rel": "=",
          "der": [
-          "a² = k²   ⇒   a = ",
           {
            "t": "k",
            "color": "a"
-          }
-         ],
-         "nota": "Buscar las bases de los dos cuadrados"
-        },
-        {
-         "der": [
-          "b² = 4   ⇒   b = ",
-          {
-           "t": "2",
-           "color": "b"
-          }
-         ]
-        },
-        {
-         "der": [
-          "2 · a · b = 2 · ",
+          },
+          "² + 2 · ",
           {
            "t": "k",
            "color": "a"
@@ -6136,18 +5998,18 @@
            "t": "2",
            "color": "b"
           },
-          " = 4k ",
+          " + ",
           {
-           "marca": "ok"
-          }
+           "t": "2",
+           "color": "b"
+          },
+          "²"
          ],
-         "nota": [
-          "Verificar el doble producto",
-          "(tiene que dar el término del medio)"
-         ]
+         "nota": "Reescribir como a² + 2ab + b²",
+         "notaColor": "producto"
         },
         {
-         "izq": "k² + 4k + 4",
+         "rel": "=",
          "der": [
           "(",
           {
@@ -6162,7 +6024,7 @@
           ")²"
          ],
          "nota": [
-          "Trinomio cuadrado perfecto:",
+          "Trinomio cuadrado perfecto con a = k y b = 2:",
           "a² + 2ab + b² = (a + b)²"
          ],
          "notaColor": "producto",
@@ -6682,27 +6544,13 @@
          "der": "k² + 2k + 1"
         },
         {
+         "rel": "=",
          "der": [
-          "a² = k²   ⇒   a = ",
           {
            "t": "k",
            "color": "a"
-          }
-         ],
-         "nota": "Buscar las bases de los dos cuadrados"
-        },
-        {
-         "der": [
-          "b² = 1   ⇒   b = ",
-          {
-           "t": "1",
-           "color": "b"
-          }
-         ]
-        },
-        {
-         "der": [
-          "2 · a · b = 2 · ",
+          },
+          "² + 2 · ",
           {
            "t": "k",
            "color": "a"
@@ -6712,18 +6560,18 @@
            "t": "1",
            "color": "b"
           },
-          " = 2k ",
+          " + ",
           {
-           "marca": "ok"
-          }
+           "t": "1",
+           "color": "b"
+          },
+          "²"
          ],
-         "nota": [
-          "Verificar el doble producto",
-          "(tiene que dar el término del medio)"
-         ]
+         "nota": "Reescribir como a² + 2ab + b²",
+         "notaColor": "producto"
         },
         {
-         "izq": "k² + 2k + 1",
+         "rel": "=",
          "der": [
           "(",
           {
@@ -6738,7 +6586,7 @@
           ")²"
          ],
          "nota": [
-          "Trinomio cuadrado perfecto:",
+          "Trinomio cuadrado perfecto con a = k y b = 1:",
           "a² + 2ab + b² = (a + b)²"
          ],
          "notaColor": "producto",

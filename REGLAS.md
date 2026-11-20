@@ -191,20 +191,41 @@ Se usa este `estilo` en todas las resoluciones:
   los valores, las cuentas, las dos raíces (llave y ramas k₁, k₂) y la forma
   factorizada a(k − k₁)(k − k₂), distribuyendo a si hace falta (2(k + 1/2) = 2k + 1).
   **Completando el cuadrado**: escribir el término lineal como 2 · m · k, sumar y
-  restar m², cuadrado de un binomio y resolver lo que queda. Si es un trinomio
-  cuadrado perfecto se aplica eso (ver abajo); si no, la fórmula cuadrática.
+  restar m², cuadrado de un binomio y resolver lo que queda. El orden para elegir el
+  método está abajo («Factorizar un polinomio de segundo grado»).
   Debajo, en gris, que también se puede por los otros métodos y la verificación
   (desarrollar el producto y volver al polinomio).
-- **Trinomio cuadrado perfecto**: siempre que se pueda aplicar (en cualquier ejercicio,
-  no solo de inducción), se factoriza con trinomio cuadrado perfecto y no con la
-  fórmula cuadrática ni completando el cuadrado. Pasos: el polinomio solo; «a² = k²  ⇒
-  a = k» y «b² = 4  ⇒  b = 2» (nota «Buscar las bases de los dos cuadrados»); el doble
-  producto «2 · a · b = 2 · k · 2 = 4k ✓» (nota «Verificar el doble producto», que
-  tiene que dar el término del medio); y la forma factorizada «k² + 4k + 4 = (k + 2)²»
-  en un recuadro, con la nota «Trinomio cuadrado perfecto: a² + 2ab + b² = (a + b)²»
-  (o (a − b)² si el término del medio es negativo). a y b en los colores `a` y `b`.
-  La fórmula va en la nota y no en un renglón propio: una línea larga sin `izq` corre
-  todas las notas del bloque hacia la derecha y se salen de la hoja.
+
+## Factorizar un polinomio de segundo grado
+
+Vale en cualquier ejercicio, no solo de inducción. Se usa el primer método que se pueda
+aplicar, en este orden:
+
+1. **Trinomio cuadrado perfecto** (k² + 4k + 4). Dos pasos: reescribir el polinomio
+   como a² + 2ab + b² («= k² + 2 · k · 2 + 2²», nota «Reescribir como a² + 2ab + b²»),
+   y la forma factorizada «= (k + 2)²» en un recuadro, con la nota «Trinomio cuadrado
+   perfecto con a = k y b = 2: a² + 2ab + b² = (a + b)²» (o (a − b)² si el término del
+   medio es negativo). a y b en los colores `a` y `b`. Nada más: sin buscar las bases
+   ni verificar el doble producto aparte. Texto antes: «Para factorizar k² + 4k + 4 se
+   aplica trinomio cuadrado perfecto:».
+2. **Descomposición, caso 1**: ax² + bx + c con b = a + c o b = −(a + c)
+   (2k² + 3k + 1, x² − 2x − 3). El nombre «caso 1» es el de la filmina de la cátedra
+   (y del generador de factorización de la pizarra), no de una bibliografía. Texto
+   antes: «Para factorizar 2k² + 3k + 1 se aplica descomposición: el término lineal se
+   arma con a y c (b = a + c, 3 = 2 + 1):». Pasos: el polinomio; reescribir el término
+   lineal como suma o resta de a y c («= 2k² + (2 + 1)k + 1», nota «Escribir 3k como
+   (2 + 1)k»); aplicar la distributiva («= 2k² + 2k + k + 1»); sacar factor común en el
+   primer grupo («= 2k(k + 1) + k + 1»), en el segundo («= 2k(k + 1) + 1(k + 1)», el 1
+   se escribe) y el binomio común («= (k + 1)(2k + 1)», en un recuadro).
+3. **Fórmula cuadrática**, en los demás casos (o completar el cuadrado).
+
+En todos estos desarrollos, una fórmula va en la nota y no en un renglón propio:
+una línea larga sin `izq` corre todas las notas del bloque hacia la derecha y se salen
+de la hoja. Si el ejercicio usa un generador que factoriza solo (`inecuaciones2` lo
+hace siempre con la fórmula cuadrática), la factorización por los métodos 1 o 2 se
+escribe antes en un bloque de pasos, en el mismo tamaño que el generador, y al
+generador se le pasa la inecuación ya factorizada («(x + 1)(x − 3) < 0»), con el
+texto «Reemplazando la factorización, la inecuación queda:».
 
 ## Relaciones binarias
 
