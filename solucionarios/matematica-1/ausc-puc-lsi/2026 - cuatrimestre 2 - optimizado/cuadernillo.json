@@ -1,0 +1,174 @@
+{
+ "formato": "unzip.mat/cuadernillo@1",
+ "titulo": "Solucionario Matemática 1 — Año 2026 · Cuatrimestre 2",
+ "cabecera": "Matemática 1\nSolucionario de los trabajos prácticos - Año 2026 - Cuatrimestre 2",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Cuadernillo completo",
+  "fuente": "Trabajos prácticos de Matemática I, segunda cursada 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true,
+  "partesEnImpar": true
+ },
+ "partes": [
+  {
+   "tipo": "caratula",
+   "antetitulo": "Matemática 1",
+   "titulo": "Solucionario de los trabajos prácticos",
+   "subtitulo": "Año 2026 · Cuatrimestre 2",
+   "lineas": [
+    "Trabajos prácticos 1 a 11, resueltos paso a paso"
+   ],
+   "pie": "AUSC - PUC - LSI"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Enlaces",
+   "sinCabecera": true,
+   "impar": false,
+   "enIndice": false,
+   "bloques": [
+    {
+     "texto": "La versión digital de este cuadernillo y los proyectos con los que se armó. En el PDF, cada código también se puede tocar.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "espacio": 1
+    },
+    {
+     "qr": "https://github.com/Tapulela/unzip.mat-solucionarios/releases/download/cuadernillo-matematica-1-2026-c2/Solucionario-Matematica-1-2026-C2.pdf",
+     "titulo": "Cuadernillo en PDF (última versión)"
+    },
+    {
+     "qr": "https://github.com/Tapulela/unzip.mat-solucionarios",
+     "titulo": "Repositorio del solucionario",
+     "alLado": true
+    },
+    {
+     "espacio": 1
+    },
+    {
+     "qr": "https://tapulela.github.io/unzip.mat/",
+     "titulo": "Pizarra unzip.mat en línea"
+    },
+    {
+     "qr": "https://github.com/Tapulela/unzip.mat",
+     "titulo": "Repositorio de la pizarra",
+     "alLado": true
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Presentación",
+   "bloques": [
+    "En matemática no alcanza con llegar al resultado correcto: también importa cómo se escribe, cómo se justifica cada paso y qué se considera una respuesta completa. Cada cátedra tiene sus criterios, y conocerlos es parte de aprobar la materia.",
+    "Este cuadernillo reúne las resoluciones de los trabajos prácticos de Matemática 1 siguiendo los criterios de evaluación vigentes al momento de escribirlo. La idea es que sirva como guía para resolver los ejercicios de la forma en que se los espera en la cursada y en los exámenes.",
+    "Algunas cosas a tener en cuenta:",
+    "•  No es un material oficial de la cátedra.",
+    "•  Puede contener errores. Se agradece el aviso de cualquier error o sugerencia.",
+    "•  Los criterios pueden cambiar de un cuatrimestre a otro. Ante una duda, vale lo que indique el docente del curso.",
+    "•  Se aprovecha más si cada ejercicio se intenta resolver primero sin ayuda y la respuesta se consulta después.",
+    "Mientras no exista un solucionario oficial, se espera que este trabajo sirva de apoyo.",
+    {
+     "espacio": 1
+    },
+    "De estudiantes para estudiantes."
+   ]
+  },
+  {
+   "tipo": "indice",
+   "titulo": "Contenido",
+   "niveles": 3
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Introducción",
+   "bloques": [
+    "Cada trabajo práctico empieza en una hoja nueva y lleva su propia cabecera. En cada ejercicio se copia primero la consigna y debajo va la respuesta, paso a paso.",
+    {
+     "seccion": "Cómo leer las resoluciones",
+     "bloques": [
+      "Cada paso se anuncia antes de hacerlo: la nota a la derecha de un renglón dice qué se hace para llegar al renglón siguiente.",
+      "Las cuentas se hacen de a una. Lo que cambia en un paso va en color, y su nota en el mismo color: verde para sumar o restar, violeta para multiplicar, dividir, sacar factor común o reemplazar.",
+      "Las respuestas van en azul y el resultado final, en un recuadro.",
+      "Las explicaciones de apoyo van en gris, más chicas, y empiezan con «Nota para el estudiante:»."
+     ]
+    },
+    {
+     "seccion": "Cómo encontrar un ejercicio",
+     "bloques": [
+      "En el índice («Contenido») están los trabajos prácticos y sus ejercicios con el número de hoja. En el PDF, cada renglón del índice es un enlace a su hoja, y el panel de marcadores del lector lleva a cada parte, trabajo práctico y ejercicio."
+     ]
+    }
+   ]
+  },
+  {
+   "ruta": "tp-01-logica-proposicional/solucion.json",
+   "marcador": "T.P. 1: Lógica proposicional"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-02-teoria-de-conjuntos/solucion.json",
+   "marcador": "T.P. 2: Teoría de conjuntos"
+  },
+  {
+   "ruta": "tp-03-relaciones-binarias/solucion.json",
+   "marcador": "T.P. 3: Relaciones binarias"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-04-estructuras-algebraicas/solucion.json",
+   "marcador": "T.P. 4: Estructuras algebraicas"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-05-algebra-de-boole/solucion.json",
+   "marcador": "T.P. 5: Álgebra de Boole"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-06-campos-numericos/solucion.json",
+   "marcador": "T.P. 6: Campos numéricos",
+   "marcadores": {
+    "ejercicio": "{rotulo}: {enunciado}",
+    "item": "{rotulo}"
+   }
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-07-desigualdades/solucion.json",
+   "marcador": "T.P. 7: Desigualdades"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-08-sucesiones-aritmeticas-y-geometricas/solucion.json",
+   "marcador": "T.P. 8: Sucesiones aritméticas y geométricas"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-09-combinatoria/solucion.json",
+   "marcador": "T.P. 9: Combinatoria"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-10-funciones/solucion.json",
+   "marcador": "T.P. 10: Funciones"
+  },
+  {
+   "ruta": "../2026 - cuatrimestre 2/tp-11-numeros-complejos/solucion.json",
+   "marcador": "T.P. 11: Números complejos"
+  }
+ ]
+}
