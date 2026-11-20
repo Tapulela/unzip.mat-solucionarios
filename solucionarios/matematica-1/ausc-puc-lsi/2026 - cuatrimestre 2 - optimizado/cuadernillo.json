@@ -93,12 +93,15 @@
      "espacio": 1
     },
     "De estudiantes para estudiantes."
-   ]
+   ],
+   "enIndice": false
   },
   {
    "tipo": "indice",
    "titulo": "Contenido",
-   "niveles": 3
+   "niveles": 3,
+   "impar": false,
+   "compacto": true
   },
   {
    "tipo": "texto",
@@ -120,7 +123,8 @@
       "En el índice («Contenido») están los trabajos prácticos y sus ejercicios con el número de hoja. En el PDF, cada renglón del índice es un enlace a su hoja, y el panel de marcadores del lector lleva a cada parte, trabajo práctico y ejercicio."
      ]
     }
-   ]
+   ],
+   "impar": false
   },
   {
    "ruta": "tp-01-logica-proposicional/solucion.json",

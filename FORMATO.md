@@ -282,6 +282,7 @@ Cada parte empieza en una hoja nueva. El de Matemática 1 está en
 | `partes[].enIndice` | `false` para que una parte no figure en el índice (sigue teniendo marcador). |
 | `partes[].sinCabecera` | `true`: las hojas de la parte no llevan cabecera, pie ni número (por ejemplo, la hoja de enlaces del reverso de la carátula). |
 | `partes[].impar` | `false`: la parte sigue en la hoja que toque aunque haya `partesEnImpar` (así la hoja de enlaces queda en el reverso de la carátula). |
+| `partes[].compacto` | Solo en el índice: `true` junta más los renglones, para que entre en una hoja menos. |
 
 **Armarlo.** La pizarra no lee archivos del disco, así que los trabajos prácticos se
 copian adentro antes de importarlo:
