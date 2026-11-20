@@ -182,7 +182,8 @@ Se usa este `estilo` en todas las resoluciones:
   polinomio de segundo grado que hay que factorizar (2k² + 3k + 1, k² + 4k + 4…), la
   factorización se hace como parte de la resolución, no se da hecha ni se deja para una
   nota: el desarrollo se corta en ese renglón, va un texto («Para factorizar 2k² + 3k + 1
-  se buscan sus raíces con la fórmula cuadrática:» o «… se completa el cuadrado:») y un
+  se buscan sus raíces con la fórmula cuadrática:», «Para factorizar k² + 4k + 4 se
+  aplica trinomio cuadrado perfecto:» o «… se completa el cuadrado:») y un
   bloque de pasos con la factorización completa (sin `"entero"`: ocupa casi una hoja, y
   si no se puede partir deja hojas a medio llenar), y después el
   desarrollo sigue repitiendo el renglón cortado y «= …» con la nota «Reemplazar la
@@ -190,10 +191,20 @@ Se usa este `estilo` en todas las resoluciones:
   los valores, las cuentas, las dos raíces (llave y ramas k₁, k₂) y la forma
   factorizada a(k − k₁)(k − k₂), distribuyendo a si hace falta (2(k + 1/2) = 2k + 1).
   **Completando el cuadrado**: escribir el término lineal como 2 · m · k, sumar y
-  restar m², cuadrado de un binomio y resolver lo que queda. Cuando es un trinomio
-  cuadrado perfecto conviene completar el cuadrado; si no, la fórmula cuadrática.
-  Debajo, en gris, que también se puede por el otro método y la verificación
+  restar m², cuadrado de un binomio y resolver lo que queda. Si es un trinomio
+  cuadrado perfecto se aplica eso (ver abajo); si no, la fórmula cuadrática.
+  Debajo, en gris, que también se puede por los otros métodos y la verificación
   (desarrollar el producto y volver al polinomio).
+- **Trinomio cuadrado perfecto**: siempre que se pueda aplicar (en cualquier ejercicio,
+  no solo de inducción), se factoriza con trinomio cuadrado perfecto y no con la
+  fórmula cuadrática ni completando el cuadrado. Pasos: el polinomio solo; «a² = k²  ⇒
+  a = k» y «b² = 4  ⇒  b = 2» (nota «Buscar las bases de los dos cuadrados»); el doble
+  producto «2 · a · b = 2 · k · 2 = 4k ✓» (nota «Verificar el doble producto», que
+  tiene que dar el término del medio); y la forma factorizada «k² + 4k + 4 = (k + 2)²»
+  en un recuadro, con la nota «Trinomio cuadrado perfecto: a² + 2ab + b² = (a + b)²»
+  (o (a − b)² si el término del medio es negativo). a y b en los colores `a` y `b`.
+  La fórmula va en la nota y no en un renglón propio: una línea larga sin `izq` corre
+  todas las notas del bloque hacia la derecha y se salen de la hoja.
 
 ## Relaciones binarias
 
