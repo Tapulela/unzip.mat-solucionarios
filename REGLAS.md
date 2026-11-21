@@ -239,10 +239,11 @@ texto «Reemplazando la factorización, la inecuación queda:».
   consigna la pida.
 - Se dice **arreflexiva**, nunca «irreflexiva».
 - **Análisis de una propiedad**: título «Análisis de la propiedad simétrica», después
-  «Definición general de simetría:» y la fórmula en un renglón aparte
-  («∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R», con R genérica), y «Definición aplicada en el
-  contexto de este ejercicio:» con la fórmula en otro renglón (con el conjunto y el
-  nombre de la relación del ejercicio). Los nombres: reflexividad, arreflexividad,
+  «Definición general:» con la fórmula en el mismo renglón
+  («∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R», con R genérica), y «Definición aplicada:» con
+  la fórmula en el mismo renglón (con el conjunto y el nombre de la relación del
+  ejercicio). En el JSON, el rótulo lleva `"unir": true` y la fórmula, `"alLado": true`.
+  Los nombres de las propiedades: reflexividad, arreflexividad,
   simetría, asimetría, antisimetría, transitividad, atransitividad. El condicional se
   escribe «→»; «⇒» se usa para «reemplazando queda».
 - **La reflexividad se define con una implicación**: ∀x: x ∈ A → (x, x) ∈ R (y la
@@ -307,8 +308,8 @@ texto «Reemplazando la factorización, la inecuación queda:».
 - **Definición general y definición aplicada.** La definición general es la genérica,
   con un conjunto A y una operación ∗ («∀a, b, c ∈ A: (a ∗ b) ∗ c = a ∗ (b ∗ c)»); en
   una terna, + es la primera operación y ∗ la segunda («a ∗ (b + c) = (a ∗ b) + (a ∗ c)»).
-  Después va «Definición aplicada en el contexto de este ejercicio:» con el conjunto y
-  las operaciones del ejercicio.
+  Después va «Definición aplicada:» con el conjunto y las operaciones del ejercicio.
+  Los dos rótulos llevan la fórmula en el mismo renglón, como en relaciones binarias.
 - **Miembro izquierdo y miembro derecho.** Si una propiedad es una igualdad, se
   plantea la igualdad, y cada miembro se desarrolla en su propia sección, con el
   título «Miembro izquierdo» o «Miembro derecho». Al final se comparan.
@@ -374,9 +375,9 @@ texto «Reemplazando la factorización, la inecuación queda:».
   definición, f(−x) = f(x) (o f(−x) = −f(x)), se reemplaza en los dos miembros y se
   opera en los dos hasta ver que son iguales (✓). No se parte de f(−x) para llegar a
   f(x). Si no son iguales para todo x, se dice por qué y se da un contraejemplo.
-- **Contraejemplo de paridad, como en relaciones binarias**: «Definición general de
-  función par:» con ∀x: x ∈ Dom f → f(−x) = f(x), «Definición aplicada en el contexto
-  de este ejercicio:» con el dominio y el nombre de la función, «La propiedad no se
+- **Contraejemplo de paridad, como en relaciones binarias**: «Definición general:» con
+  ∀x: x ∈ Dom f → f(−x) = f(x) en el mismo renglón, «Definición aplicada:» con el
+  dominio y el nombre de la función, «La propiedad no se
   cumple. Lo demostramos con un contraejemplo…», el caso evaluado («x = 1 ⇒ 1 ∈ ℝ →
   f(−1) = f(1)», debajo los valores, V y F debajo de cada parte y el resultado F
   debajo del →) y al final «Para x = 1 la proposición es falsa, por lo tanto f no es
@@ -413,11 +414,34 @@ texto «Reemplazando la factorización, la inecuación queda:».
 
 ## Aprovechar el espacio
 
+El solucionario se arma desde el principio para ocupar pocas hojas: lo angosto va en
+dos columnas, con `"alLado": true` en el segundo bloque (o en la segunda sección). Si
+algo no entra a lo ancho, la pizarra lo deja debajo con un aviso; en ese caso se
+vuelve a una columna.
+
 - **Recuadros cortos en un mismo renglón**: dos resultados que se leen juntos («f
   decrece en …» y «f crece en …», «Dom = ℝ» e «Im = …») van uno al lado del otro, con
-  `"alLado": true` en el segundo.
+  `"alLado": true` en el segundo. Los recuadros de resultado seguidos van de a dos.
+- **Ítems y casos angostos, de a dos**: dos ítems seguidos con desarrollos cortos
+  (3.1 y 3.2), los casos de una variable (x = 1, x = 2), los valores absolutos de un
+  ejercicio y las secciones paralelas («Miembro izquierdo» y «Miembro derecho»,
+  la generatriz de dos números, dos figuras) van uno al lado del otro.
+- **Notas arriba en las dos columnas**: si un bloque de pasos al lado de otro no
+  entra con las notas a la derecha, va con `"notas": "arriba"`. En dos secciones
+  lado a lado, las dos llevan las notas arriba, así se leen igual.
+- **Módulo y argumento lado a lado** (números complejos): la frase del cuadrante va
+  antes y debajo, el cálculo del módulo (ρ o |z|) a la izquierda y el del argumento
+  (α, φ) a la derecha.
+- **La recta numérica al lado del resultado**: el gráfico de la solución va a la
+  derecha del recuadro «S = …», con `"alLado": "centro"` (centrado en vertical).
+- **Rótulos cortos**: «Reemplazar» (no «Reemplazar los valores»), «Definición general:»
+  y «Definición aplicada:» con la fórmula en el mismo renglón, «Forma polar del
+  resultado.» (sin «Módulo:»). El rótulo no repite lo que ya dice el título.
 - No se dejan medias hojas en blanco: si un gráfico no entra al pie, se achica o se
   pone al lado del texto antes de pasarlo entero a la hoja siguiente.
+- **Cuadernillo sin hojas en blanco en los preliminares**: el Contenido va al dorso
+  de la Presentación y la Introducción al dorso del índice (`"impar": false`), y el
+  índice va compacto (`"compacto": true`).
 
 ## Resultados
 
