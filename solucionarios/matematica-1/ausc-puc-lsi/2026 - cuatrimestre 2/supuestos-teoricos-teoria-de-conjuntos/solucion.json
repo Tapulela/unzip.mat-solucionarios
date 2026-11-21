@@ -1,0 +1,2824 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — Supuestos teóricos: Teoría de conjuntos",
+ "subtitulo": "Año 2026 · Cuatrimestres 1 y 2",
+ "cabecera": "Matemática 1\nSupuestos teóricos - Teoría de conjuntos - Año 2026 - Cuatrimestres 1 y 2",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Supuestos teóricos de Teoría de conjuntos",
+  "fuente": "Supuestos Teóricos de Teoría de Conjuntos, Matemática I (FCEQyN-UNaM, 2019), usados como supuestos teóricos en los cuatrimestres 1 y 2 de 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "enunciado": "Enumera cinco elementos de cada uno de los siguientes conjuntos:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}. Cada conjunto tiene infinitos elementos; se dan cinco de ellos.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "{n | n es natural y n es divisible por 5}",
+     "bloques": [
+      {
+       "texto": "Son los múltiplos naturales de 5, n = 5k con k ∈ ℕ.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "5, 10, 15, 20, 25",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "{1/n | n es primo}",
+     "bloques": [
+      {
+       "texto": "Se toman los primeros primos, 2, 3, 5, 7 y 11, y se calcula 1/n para cada uno.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "1",
+            "5"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "1",
+            "7"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "1",
+            "11"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "{2ⁿ | n es natural}",
+     "bloques": [
+      {
+       "texto": "Se reemplaza n por 1, 2, 3, 4 y 5 y se obtiene 2¹, 2², 2³, 2⁴ y 2⁵.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "2, 4, 8, 16, 32",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{r | r es racional y 0 < r < 1}",
+     "bloques": [
+      {
+       "texto": "Son las fracciones positivas menores que 1, por ejemplo las que tienen el numerador menor que el denominador.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "2",
+            "3"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "1",
+            "4"
+           ]
+          },
+          ",  ",
+          {
+           "frac": [
+            "3",
+            "4"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "enunciado": "Describe por comprensión los siguientes conjuntos:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "El conjunto de todos los enteros que pueden ser escritos como suma de cuadrados de dos enteros.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "{n ∈ ℤ : n = a² + b², con a, b ∈ ℤ}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: por ejemplo 5 = 1² + 2² y 0 = 0² + 0² están en el conjunto. El 3 no está.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "El conjunto de todos los enteros menores que 1000 que son cuadrados perfectos.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "{n ∈ ℤ : n < 1000 y n = k², con k ∈ ℤ}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: por extensión es {0, 1, 4, 9, …, 961}, porque 31² = 961 y 32² = 1024.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "El conjunto de todos los números que son múltiplos enteros de 13.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "{x ∈ ℤ : x = 13k, con k ∈ ℤ}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{a, e, i, o, u}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "{x : x es una vocal}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "enunciado": "Si de un conjunto se pueden obtener 16 subconjuntos, entonces ¿por cuántos elementos está formado el conjunto?",
+   "bloques": [
+    {
+     "texto": "Un conjunto A con n elementos tiene 2ⁿ subconjuntos, o sea, |P(A)| = 2ⁿ.",
+     "color": "azul"
+    },
+    {
+     "texto": "Para despejar n, que está en el exponente, se aplica en los dos miembros la función inversa de 2ˣ, que es log₂.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "          2ⁿ = 16"
+      },
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "log₂(",
+         "color": "producto"
+        },
+        "2ⁿ",
+        {
+         "t": ")",
+         "color": "producto"
+        },
+        " = ",
+        {
+         "t": "log₂(",
+         "color": "producto"
+        },
+        "16",
+        {
+         "t": ")",
+         "color": "producto"
+        }
+       ],
+       "nota": "Aplicar log₂ en los dos miembros",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "            ",
+        {
+         "t": "n",
+         "color": "producto"
+        },
+        " = log₂(16)"
+       ],
+       "nota": [
+        "log₂ es la inversa de 2ˣ:",
+        "log₂(2ⁿ) = n"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "rel": "",
+       "der": [
+        "            n = ",
+        {
+         "t": "4",
+         "color": "producto"
+        }
+       ],
+       "nota": [
+        "log₂(16) = 4",
+        "porque 2⁴ = 16"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "seccion": true,
+       "der": "|A| = 4",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "El conjunto está formado por 4 elementos.",
+     "color": "azul"
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "enunciado": "Si X = {1, 2, 3, 4} liste los elementos de cada uno de los siguientes conjuntos:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: los elementos de estos conjuntos son subconjuntos de X. Se ordenan por cantidad de elementos y, a igual cantidad, de menor a mayor.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "{A | A ⊆ X y A tiene 2 elementos}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "{{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4}}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: son 6 subconjuntos, la cantidad de formas de elegir 2 elementos entre 4.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "{A | A ⊆ X y A tiene 1 elemento}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "{{1}, {2}, {3}, {4}}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "{A | A es subconjunto propio de X}",
+     "bloques": [
+      {
+       "texto": "A es subconjunto propio de X si A ⊆ X y A ≠ X. Son todos los subconjuntos de X menos el mismo X, o sea 2⁴ − 1 = 15.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "{∅, {1}, {2}, {3}, {4}, {1, 2}, {1, 3}, {1, 4},",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": " {2, 3}, {2, 4}, {3, 4}, {1, 2, 3}, {1, 2, 4},",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": " {1, 3, 4}, {2, 3, 4}}",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{A | A ⊆ X y 1 ∈ A}",
+     "bloques": [
+      {
+       "texto": "A tiene al 1 y cualquier elección de 2, 3 y 4, así que son 2³ = 8 subconjuntos.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "{{1}, {1, 2}, {1, 3}, {1, 4},",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": " {1, 2, 3}, {1, 2, 4}, {1, 3, 4}, {1, 2, 3, 4}}",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "enunciado": "Si el conjunto A tiene 5 elementos, el conjunto B tiene 3 elementos, y además se sabe que (A ∩ B) tiene 2 elementos entonces, ¿cuál es la cardinalidad de (A ∪ B)?",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: al sumar |A| + |B|, los elementos de A ∩ B se cuentan dos veces. Por eso se restan una vez.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "|A ∪ B|",
+       "der": "|A| + |B| − |A ∩ B|"
+      },
+      {
+       "rel": "=",
+       "der": [
+        {
+         "t": "5",
+         "color": "producto"
+        },
+        "    + ",
+        {
+         "t": "3",
+         "color": "producto"
+        },
+        "   − ",
+        {
+         "t": "2",
+         "color": "producto"
+        }
+       ],
+       "nota": "Reemplazar",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "6"
+      },
+      {
+       "seccion": true,
+       "der": "|A ∪ B| = 6",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "enunciado": "Dado que el conjunto A está definido como:\nA = {(a, b) | a ∈ ℕ, b ∈ ℕ y a + b = 12}\nEntonces, ¿cuál es la cardinalidad del conjunto A?",
+   "bloques": [
+    {
+     "texto": "Para cada a, el segundo elemento es b = 12 − a, que tiene que ser natural (b ≥ 1). Entonces a ≤ 11, y a puede valer 1, 2, …, 11.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "A",
+       "der": "{(1, 11), (2, 10), (3, 9), (4, 8), (5, 7), (6, 6),"
+      },
+      {
+       "rel": "",
+       "der": "     (7, 5), (8, 4), (9, 3), (10, 2), (11, 1)}"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "|A| = 11",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: se toma ℕ = {1, 2, 3, …}, como en toda la materia.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "enunciado": "Determine cuál(es) de las siguientes proposiciones es (son) falsas:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: U es el conjunto universal y A′ es el complemento de A respecto de U.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "∅′ = U",
+     "bloques": [
+      {
+       "texto": "Verdadera. Lo demostramos:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x ∈ ∅′"
+        },
+        {
+         "rel": "⇔",
+         "der": "x ∈ U  ∧  x ∉ ∅",
+         "nota": "Definición de complemento"
+        },
+        {
+         "rel": "⇔",
+         "der": "x ∈ U  ∧  V",
+         "nota": "x ∉ ∅ es siempre verdadero"
+        },
+        {
+         "rel": "⇔",
+         "der": "x ∈ U",
+         "nota": "Ley de identidad"
+        }
+       ]
+      },
+      {
+       "texto": "Entonces ∅′ y U tienen los mismos elementos, ∅′ = U.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A ∩ A′ = U",
+     "bloques": [
+      {
+       "texto": "Falsa. La ley de complemento establece que A ∩ A′ = ∅, y ∅ ≠ U.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "A ∪ A′ = U",
+     "bloques": [
+      {
+       "texto": "Verdadera. Es la ley de complemento.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "La única proposición falsa es la b)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "enunciado": "Si el conjunto A está dado por:\nA = {p ∈ ℕ | p es número primo y 1 < p < 10}\nsi U = ℕ, entonces A′ = ?",
+   "bloques": [
+    {
+     "texto": "Los primos mayores que 1 y menores que 10 son 2, 3, 5 y 7.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "A",
+       "der": "{2, 3, 5, 7}"
+      }
+     ]
+    },
+    {
+     "texto": "El complemento se plantea negando la condición:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "A′",
+       "der": "{n ∈ ℕ : ¬(n es primo ∧ 1 < n < 10)}"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "{n ∈ ℕ : ",
+        {
+         "t": "n no es primo ∨ n ≤ 1 ∨ n ≥ 10",
+         "color": "producto"
+        },
+        "}"
+       ],
+       "nota": "Ley de De Morgan",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "{1, 4, 6, 8, 9, 10, 11, 12, 13, …}"
+      },
+      {
+       "seccion": true,
+       "der": "A′ = ℕ − {2, 3, 5, 7} = {1, 4, 6, 8, 9, 10, 11, …}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: desde el 10 están todos los naturales, también los primos 11, 13, 17…, porque cumplen n ≥ 10.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 9,
+   "enunciado": "Si M y N son dos conjuntos con tres elementos cada uno. ¿Cuál de las siguientes afirmaciones es (son) siempre verdadera(s)?",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: para ver que una afirmación no es siempre verdadera alcanza con un contraejemplo, dos conjuntos de tres elementos para los que falla.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "M = N",
+     "bloques": [
+      {
+       "texto": "No es siempre verdadera. Contraejemplo: M = {1, 2, 3} y N = {4, 5, 6}. Los dos tienen tres elementos y M ≠ N porque 1 ∈ M y 1 ∉ N.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "M ∪ N tiene 6 elementos",
+     "bloques": [
+      {
+       "texto": "No es siempre verdadera. Contraejemplo: M = N = {1, 2, 3}. Entonces M ∪ N = {1, 2, 3}, que tiene 3 elementos. Solo tiene 6 si M ∩ N = ∅.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "M − N = ∅",
+     "bloques": [
+      {
+       "texto": "No es siempre verdadera. Contraejemplo: M = {1, 2, 3} y N = {4, 5, 6}. Entonces M − N = {1, 2, 3} ≠ ∅.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Ninguna de las tres es siempre verdadera",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 10,
+   "enunciado": "Si A ∪ B = U, entonces, es siempre verdadero que:",
+   "bloques": [
+    {
+     "texto": "Para los contraejemplos de a), b) y c) usamos U = {1, 2} y A = B = U, que cumplen la hipótesis porque A ∪ B = {1, 2} = U.",
+     "color": "azul"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "B = A′",
+     "bloques": [
+      {
+       "texto": "No es siempre verdadero. Con el contraejemplo, A′ = ∅ y B = {1, 2}, así que B ≠ A′.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "B = A − B",
+     "bloques": [
+      {
+       "texto": "No es siempre verdadero. Con el contraejemplo, A − B = {1, 2} − {1, 2} = ∅ y B = {1, 2}, así que B ≠ A − B.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "A ∩ B = ∅",
+     "bloques": [
+      {
+       "texto": "No es siempre verdadero. Con el contraejemplo, A ∩ B = {1, 2} ≠ ∅.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "(A ∪ B)′ = ∅",
+     "bloques": [
+      {
+       "texto": "Es siempre verdadero. Lo demostramos:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(A ∪ B)′"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "U",
+           "color": "producto"
+          },
+          "′"
+         ],
+         "nota": "Hipótesis: A ∪ B = U",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "∅",
+         "nota": "Ley de complemento"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∪ B)′ = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Solo d) es siempre verdadero",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 11,
+   "enunciado": "Mostrar que los siguientes conjuntos son vacíos",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en cada paso se aplica una sola ley; lo que cambia va en violeta.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(A ∪ B)′ ∩ (C ∪ B′)′",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(A ∪ B)′ ∩ (C ∪ B′)′"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A′ ∩ B′)",
+           "color": "producto"
+          },
+          " ∩ (C ∪ B′)′"
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A′ ∩ B′) ∩ ",
+          {
+           "t": "(C′ ∩ B′′)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A′ ∩ B′) ∩ (C′ ∩ ",
+          {
+           "t": "B",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A′ ∩ B′ ∩ C′ ∩ B",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A′ ∩ ",
+          {
+           "t": "C′ ∩ B′",
+           "color": "producto"
+          },
+          " ∩ B"
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A′ ∩ C′ ∩ ",
+          {
+           "t": "(B′ ∩ B)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A′ ∩ C′ ∩ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∪ B)′ ∩ (C ∪ B′)′ = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A ∩ [B′ ∪ (C ∩ A′)′]′",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "A ∩ [B′ ∪ (C ∩ A′)′]′"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ [B′ ∪ ",
+          {
+           "t": "(C′ ∪ A′′)",
+           "color": "producto"
+          },
+          "]′"
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ [B′ ∪ (C′ ∪ ",
+          {
+           "t": "A",
+           "color": "producto"
+          },
+          ")]′"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ [",
+          {
+           "t": "B′ ∪ C′ ∪ A",
+           "color": "producto"
+          },
+          "]′"
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "(B′′ ∩ C′′ ∩ A′)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ (",
+          {
+           "t": "B",
+           "color": "producto"
+          },
+          " ∩ ",
+          {
+           "t": "C",
+           "color": "producto"
+          },
+          " ∩ A′)"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∩ B ∩ C ∩ A′",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "A′ ∩ B ∩ C",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ A′)",
+           "color": "producto"
+          },
+          " ∩ B ∩ C"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          },
+          " ∩ B ∩ C"
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "A ∩ [B′ ∪ (C ∩ A′)′]′ = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 12,
+   "enunciado": "Utilizando las propiedades de asociatividad, conmutatividad y distributividad de la unión y la intersección, y las Leyes de Morgan, compruebe las siguientes identidades. Ilustre cada caso con un diagrama de Venn. Recuerde que A − B = A ∩ Bᶜ.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en cada ítem se parte de un miembro y se aplica una ley por paso hasta llegar al otro. En el diagrama de Venn las regiones se numeran (R₁, R₂, …) y cada conjunto se escribe como la unión de las regiones que ocupa: si los dos miembros ocupan las mismas regiones, la identidad se ve en el dibujo.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(Aᶜ ∩ B)ᶜ = A ∪ Bᶜ",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(Aᶜ ∩ B)ᶜ"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "Aᶜᶜ ∪ Bᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A",
+           "color": "producto"
+          },
+          " ∪ Bᶜ"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(Aᶜ ∩ B)ᶜ = A ∪ Bᶜ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "A y B = R₃",
+         "ninguno = R₄"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "Aᶜ ∩ B",
+         "der": "R₂"
+        },
+        {
+         "izq": "(Aᶜ ∩ B)ᶜ",
+         "der": "R₁ ∪ R₃ ∪ R₄"
+        },
+        {
+         "izq": "A",
+         "der": "R₁ ∪ R₃"
+        },
+        {
+         "izq": "Bᶜ",
+         "der": "R₁ ∪ R₄"
+        },
+        {
+         "izq": "A ∪ Bᶜ",
+         "der": "R₁ ∪ R₃ ∪ R₄"
+        }
+       ],
+       "alLado": "centro"
+      },
+      {
+       "texto": "Los dos miembros ocupan las regiones R₁, R₃ y R₄.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A ∩ (B ∪ A)ᶜ = ∅",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "A ∩ (B ∪ A)ᶜ"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "(Bᶜ ∩ Aᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∩ Bᶜ ∩ Aᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "Aᶜ ∩ Bᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Aᶜ)",
+           "color": "producto"
+          },
+          " ∩ Bᶜ"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          },
+          " ∩ Bᶜ"
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "A ∩ (B ∪ A)ᶜ = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "A y B = R₃",
+         "ninguno = R₄"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A",
+         "der": "R₁ ∪ R₃"
+        },
+        {
+         "izq": "B ∪ A",
+         "der": "R₁ ∪ R₂ ∪ R₃"
+        },
+        {
+         "izq": "(B ∪ A)ᶜ",
+         "der": "R₄"
+        },
+        {
+         "izq": "A ∩ (B ∪ A)ᶜ",
+         "der": "∅"
+        }
+       ],
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "(A − B) − C = (A − C) − (B − C)",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: acá conviene partir del miembro derecho, que es el más largo, y llegar al izquierdo.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "(A − C) − (B − C)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Cᶜ)",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "(B ∩ Cᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ) ",
+          {
+           "t": "∩ (B ∩ Cᶜ)ᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ) ∩ ",
+          {
+           "t": "(Bᶜ ∪ Cᶜᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ) ∩ (Bᶜ ∪ ",
+          {
+           "t": "C",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "[(A ∩ Cᶜ) ∩ Bᶜ] ∪ [(A ∩ Cᶜ) ∩ C]",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Cᶜ ∩ Bᶜ)",
+           "color": "producto"
+          },
+          " ∪ ",
+          {
+           "t": "(A ∩ Cᶜ ∩ C)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ ∩ Bᶜ) ∪ (A ∩ ",
+          {
+           "t": "(Cᶜ ∩ C)",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ ∩ Bᶜ) ∪ (A ∩ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ ∩ Bᶜ) ∪ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∩ Cᶜ ∩ Bᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de identidad",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "Bᶜ ∩ Cᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Bᶜ)",
+           "color": "producto"
+          },
+          " ∩ Cᶜ"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A − B)",
+           "color": "producto"
+          },
+          " ∩ Cᶜ"
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A − B) − C",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A − B) − C = (A − C) − (B − C)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B, C",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "solo C = R₃",
+         "A y B pero no C = R₄",
+         "A y C pero no B = R₅",
+         "B y C pero no A = R₆",
+         "los tres = R₇",
+         "ninguno = R₈"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A − B",
+         "der": "R₁ ∪ R₅"
+        },
+        {
+         "izq": "(A − B) − C",
+         "der": "R₁"
+        },
+        {
+         "izq": "A − C",
+         "der": "R₁ ∪ R₄"
+        },
+        {
+         "izq": "B − C",
+         "der": "R₂ ∪ R₄"
+        },
+        {
+         "izq": "(A − C) − (B − C)",
+         "der": "R₁"
+        }
+       ],
+       "alLado": "centro"
+      },
+      {
+       "texto": "Los dos miembros ocupan solo la región R₁.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "(A ∩ B) ∪ (A ∩ Bᶜ) = A",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(A ∩ B) ∪ (A ∩ Bᶜ)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∩ (B ∪ Bᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Inversa distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "U",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de identidad",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∩ B) ∪ (A ∩ Bᶜ) = A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "A y B = R₃",
+         "ninguno = R₄"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A ∩ B",
+         "der": "R₃"
+        },
+        {
+         "izq": "A ∩ Bᶜ",
+         "der": "R₁"
+        },
+        {
+         "izq": "(A ∩ B) ∪ (A ∩ Bᶜ)",
+         "der": "R₁ ∪ R₃"
+        },
+        {
+         "izq": "A",
+         "der": "R₁ ∪ R₃"
+        }
+       ],
+       "alLado": "centro"
+      },
+      {
+       "texto": "Los dos miembros ocupan las regiones R₁ y R₃.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "(A ∪ B) ∩ (A ∪ Bᶜ) = A",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(A ∪ B) ∩ (A ∪ Bᶜ)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∪ (B ∩ Bᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Inversa distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∪ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de identidad",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∪ B) ∩ (A ∪ Bᶜ) = A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "A y B = R₃",
+         "ninguno = R₄"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A ∪ B",
+         "der": "R₁ ∪ R₂ ∪ R₃"
+        },
+        {
+         "izq": "A ∪ Bᶜ",
+         "der": "R₁ ∪ R₃ ∪ R₄"
+        },
+        {
+         "izq": "(A ∪ B) ∩ (A ∪ Bᶜ)",
+         "der": "R₁ ∪ R₃"
+        },
+        {
+         "izq": "A",
+         "der": "R₁ ∪ R₃"
+        }
+       ],
+       "alLado": "centro"
+      },
+      {
+       "texto": "Los dos miembros ocupan las regiones R₁ y R₃.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 13,
+   "enunciado": "Simplifique la expresión de modo que A, B y C aparezcan a lo sumo una vez:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: se trabaja sobre la expresión completa, con una ley por paso. Como las expresiones son largas, cada ley se escribe arriba del renglón donde se aplica.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "((Aᶜ ∪ Cᶜ) ∩ B)ᶜ ∪ (A ∪ (C ∩ B)ᶜ ∪ C)ᶜ",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "((Aᶜ ∪ Cᶜ) ∩ B)ᶜ ∪ (A ∪ (C ∩ B)ᶜ ∪ C)ᶜ"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "((Aᶜ ∪ Cᶜ)ᶜ ∪ Bᶜ)",
+           "color": "producto"
+          },
+          " ∪ (A ∪ (C ∩ B)ᶜ ∪ C)ᶜ"
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "(Aᶜᶜ ∩ Cᶜᶜ)",
+           "color": "producto"
+          },
+          " ∪ Bᶜ) ∪ (A ∪ (C ∩ B)ᶜ ∪ C)ᶜ"
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((",
+          {
+           "t": "A",
+           "color": "producto"
+          },
+          " ∩ ",
+          {
+           "t": "C",
+           "color": "producto"
+          },
+          ") ∪ Bᶜ) ∪ (A ∪ (C ∩ B)ᶜ ∪ C)ᶜ"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((A ∩ C) ∪ Bᶜ) ∪ ",
+          {
+           "t": "(Aᶜ ∩ (C ∩ B)ᶜᶜ ∩ Cᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((A ∩ C) ∪ Bᶜ) ∪ (Aᶜ ∩ ",
+          {
+           "t": "(C ∩ B)",
+           "color": "producto"
+          },
+          " ∩ Cᶜ)"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((A ∩ C) ∪ Bᶜ) ∪ (",
+          {
+           "t": "Aᶜ ∩ C ∩ B ∩ Cᶜ",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((A ∩ C) ∪ Bᶜ) ∪ (Aᶜ ∩ ",
+          {
+           "t": "B ∩ C",
+           "color": "producto"
+          },
+          " ∩ Cᶜ)"
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((A ∩ C) ∪ Bᶜ) ∪ (Aᶜ ∩ B ∩ ",
+          {
+           "t": "(C ∩ Cᶜ)",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((A ∩ C) ∪ Bᶜ) ∪ (Aᶜ ∩ B ∩ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "((A ∩ C) ∪ Bᶜ) ∪ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ C) ∪ Bᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de identidad",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "((Aᶜ ∪ Cᶜ) ∩ B)ᶜ ∪ (A ∪ (C ∩ B)ᶜ ∪ C)ᶜ = (A ∩ C) ∪ Bᶜ",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "notas": "arriba"
+      },
+      {
+       "texto": "Nota para el estudiante: en (A ∩ C) ∪ Bᶜ cada conjunto aparece una sola vez.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(A ∪ (B ∪ C)ᶜ)ᶜ ∩ (Aᶜ ∪ (B ∩ C)ᶜ)ᶜ",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(A ∪ (B ∪ C)ᶜ)ᶜ ∩ (Aᶜ ∪ (B ∩ C)ᶜ)ᶜ"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(Aᶜ ∩ (B ∪ C)ᶜᶜ)",
+           "color": "producto"
+          },
+          " ∩ (Aᶜ ∪ (B ∩ C)ᶜ)ᶜ"
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(Aᶜ ∩ ",
+          {
+           "t": "(B ∪ C)",
+           "color": "producto"
+          },
+          ") ∩ (Aᶜ ∪ (B ∩ C)ᶜ)ᶜ"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(Aᶜ ∩ (B ∪ C)) ∩ ",
+          {
+           "t": "(Aᶜᶜ ∩ (B ∩ C)ᶜᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(Aᶜ ∩ (B ∪ C)) ∩ (",
+          {
+           "t": "A",
+           "color": "producto"
+          },
+          " ∩ ",
+          {
+           "t": "(B ∩ C)",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "Aᶜ ∩ (B ∪ C) ∩ A ∩ B ∩ C",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "Aᶜ ∩ ",
+          {
+           "t": "A ∩ (B ∪ C)",
+           "color": "producto"
+          },
+          " ∩ B ∩ C"
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(Aᶜ ∩ A)",
+           "color": "producto"
+          },
+          " ∩ (B ∪ C) ∩ B ∩ C"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          },
+          " ∩ (B ∪ C) ∩ B ∩ C"
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∪ (B ∪ C)ᶜ)ᶜ ∩ (Aᶜ ∪ (B ∩ C)ᶜ)ᶜ = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "notas": "arriba"
+      },
+      {
+       "texto": "Nota para el estudiante: en ∅ no aparece ningún conjunto, así que se cumple «a lo sumo una vez». El resultado dice que la expresión es vacía para cualquier A, B y C.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 14,
+   "enunciado": "Demostrar las siguientes igualdades e ilustrarlas con diagramas de Venn:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: se usa A − B = A ∩ Bᶜ y las mismas leyes del ejercicio 12. Las regiones del diagrama se numeran como allí.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(A − C) ∪ (B − C) = (A ∪ B) − C",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(A − C) ∪ (B − C)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Cᶜ)",
+           "color": "producto"
+          },
+          " ∪ ",
+          {
+           "t": "(B ∩ Cᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∪ B) ∩ Cᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Inversa distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∪ B) − C",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A − C) ∪ (B − C) = (A ∪ B) − C",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B, C",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "solo C = R₃",
+         "A y B pero no C = R₄",
+         "A y C pero no B = R₅",
+         "B y C pero no A = R₆",
+         "los tres = R₇",
+         "ninguno = R₈"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A − C",
+         "der": "R₁ ∪ R₄"
+        },
+        {
+         "izq": "B − C",
+         "der": "R₂ ∪ R₄"
+        },
+        {
+         "izq": "(A − C) ∪ (B − C)",
+         "der": "R₁ ∪ R₂ ∪ R₄"
+        },
+        {
+         "izq": "A ∪ B",
+         "der": "R₁ ∪ R₂ ∪ R₄ ∪ R₅ ∪ R₆ ∪ R₇"
+        },
+        {
+         "izq": "(A ∪ B) − C",
+         "der": "R₁ ∪ R₂ ∪ R₄"
+        }
+       ],
+       "alLado": "centro",
+       "tam": "S"
+      },
+      {
+       "texto": "Los dos miembros ocupan las regiones R₁, R₂ y R₄.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(A − B) ∩ (A − C) = A − (B ∪ C)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(A − B) ∩ (A − C)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Bᶜ)",
+           "color": "producto"
+          },
+          " ∩ ",
+          {
+           "t": "(A ∩ Cᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∩ Bᶜ ∩ A ∩ Cᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "A ∩ Bᶜ",
+           "color": "producto"
+          },
+          " ∩ Cᶜ"
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ A)",
+           "color": "producto"
+          },
+          " ∩ Bᶜ ∩ Cᶜ"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A",
+           "color": "producto"
+          },
+          " ∩ Bᶜ ∩ Cᶜ"
+         ],
+         "nota": "Ley de idempotencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "(Bᶜ ∩ Cᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "(B ∪ C)ᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A − (B ∪ C)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A − B) ∩ (A − C) = A − (B ∪ C)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B, C",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "solo C = R₃",
+         "A y B pero no C = R₄",
+         "A y C pero no B = R₅",
+         "B y C pero no A = R₆",
+         "los tres = R₇",
+         "ninguno = R₈"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A − B",
+         "der": "R₁ ∪ R₅"
+        },
+        {
+         "izq": "A − C",
+         "der": "R₁ ∪ R₄"
+        },
+        {
+         "izq": "(A − B) ∩ (A − C)",
+         "der": "R₁"
+        },
+        {
+         "izq": "B ∪ C",
+         "der": "R₂ ∪ R₃ ∪ R₄ ∪ R₅ ∪ R₆ ∪ R₇"
+        },
+        {
+         "izq": "A − (B ∪ C)",
+         "der": "R₁"
+        }
+       ],
+       "alLado": "centro",
+       "tam": "S"
+      },
+      {
+       "texto": "Los dos miembros ocupan solo la región R₁.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "(A − C) − (B − C) = (A − B) − C",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: es la identidad del ejercicio 12.c con los miembros intercambiados; el desarrollo es el mismo.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "(A − C) − (B − C)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Cᶜ)",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "(B ∩ Cᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ) ",
+          {
+           "t": "∩ (B ∩ Cᶜ)ᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ) ∩ ",
+          {
+           "t": "(Bᶜ ∪ Cᶜᶜ)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de De Morgan",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ) ∩ (Bᶜ ∪ ",
+          {
+           "t": "C",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Ley de involución",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "[(A ∩ Cᶜ) ∩ Bᶜ] ∪ [(A ∩ Cᶜ) ∩ C]",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Cᶜ ∩ Bᶜ)",
+           "color": "producto"
+          },
+          " ∪ ",
+          {
+           "t": "(A ∩ Cᶜ ∩ C)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ ∩ Bᶜ) ∪ (A ∩ ",
+          {
+           "t": "(Cᶜ ∩ C)",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ ∩ Bᶜ) ∪ (A ∩ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(A ∩ Cᶜ ∩ Bᶜ) ∪ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∩ Cᶜ ∩ Bᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de identidad",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "Bᶜ ∩ Cᶜ",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Bᶜ)",
+           "color": "producto"
+          },
+          " ∩ Cᶜ"
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A − B)",
+           "color": "producto"
+          },
+          " ∩ Cᶜ"
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A − B) − C",
+           "color": "producto"
+          }
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A − C) − (B − C) = (A − B) − C",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B, C",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "solo C = R₃",
+         "A y B pero no C = R₄",
+         "A y C pero no B = R₅",
+         "B y C pero no A = R₆",
+         "los tres = R₇",
+         "ninguno = R₈"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A − C",
+         "der": "R₁ ∪ R₄"
+        },
+        {
+         "izq": "B − C",
+         "der": "R₂ ∪ R₄"
+        },
+        {
+         "izq": "(A − C) − (B − C)",
+         "der": "R₁"
+        },
+        {
+         "izq": "A − B",
+         "der": "R₁ ∪ R₅"
+        },
+        {
+         "izq": "(A − B) − C",
+         "der": "R₁"
+        }
+       ],
+       "alLado": "centro"
+      },
+      {
+       "texto": "Los dos miembros ocupan solo la región R₁.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "(A − B) ∩ B = ∅",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(A − B) ∩ B"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(A ∩ Bᶜ)",
+           "color": "producto"
+          },
+          " ∩ B"
+         ],
+         "nota": "Definición de diferencia",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "A ∩ Bᶜ ∩ B",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: quitar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "(Bᶜ ∩ B)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad asociativa: agregar paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "A ∩ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de complemento",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ],
+         "nota": "Ley de dominación",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "(A − B) ∩ B = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ilustración con un diagrama de Venn (regiones numeradas):",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "venn",
+       "op": {
+        "mostrar": "planteo",
+        "tamano": "chico",
+        "textos": "debajo",
+        "trazos": "distintos",
+        "datos": false,
+        "referencias": false,
+        "ecuaciones": false,
+        "titulos": false,
+        "colores": false,
+        "nombres": "A, B",
+        "filas": [
+         "solo A = R₁",
+         "solo B = R₂",
+         "A y B = R₃",
+         "ninguno = R₄"
+        ]
+       }
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A − B",
+         "der": "R₁"
+        },
+        {
+         "izq": "B",
+         "der": "R₂ ∪ R₃"
+        },
+        {
+         "izq": "(A − B) ∩ B",
+         "der": "∅"
+        }
+       ],
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

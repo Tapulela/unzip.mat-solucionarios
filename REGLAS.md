@@ -157,6 +157,29 @@ Se usa este `estilo` en todas las resoluciones:
   (A ∪ (A ∩ B) = A, A ∩ (A ∪ B) = A) o **absorción parcial**
   (A ∪ (Aᶜ ∩ B) = A ∪ B, A ∩ (Aᶜ ∪ B) = A ∩ B). Vale igual en lógica proposicional
   ((p ∨ q) ∧ p ≡ p es absorción total) y en álgebra de Boole: nunca «absorción» sola.
+- **En las simplificaciones de conjuntos la nota lleva solo el nombre de la ley**, sin
+  escribirla: «Ley de De Morgan» (nunca «De Morgan» solo), «Ley de involución», «Ley de
+  complemento», «Ley de identidad», «Ley de idempotencia», «Ley de dominación» (no
+  «elementos dominantes»), «Propiedad conmutativa», «Propiedad distributiva»,
+  «Inversa distributiva», «Definición de diferencia».
+- **La propiedad asociativa dice qué hace con los paréntesis**: «Propiedad asociativa:
+  quitar paréntesis», «… agregar paréntesis» o «… agregar y quitar paréntesis». Para
+  reagrupar se quitan los paréntesis, se reordena (conmutativa) y se agregan donde hacen
+  falta, un paso por renglón.
+- **Una sola expresión**: una simplificación se hace sobre la expresión completa, sin
+  separarla en términos que se simplifican aparte. Si la expresión es larga y la nota no
+  entra a la derecha, el bloque va con `"notas": "arriba"` (la ley arriba y la expresión
+  abajo).
+- **Si lo que se pregunta es directamente una ley, alcanza con nombrarla**: «A ∪ A′ = U»
+  es verdadera porque es la ley de complemento, y «A ∩ A′ = U» es falsa porque la ley de
+  complemento establece que A ∩ A′ = ∅. No hace falta demostración ni contraejemplo.
+
+## Ecuaciones exponenciales
+
+- Para despejar una incógnita del exponente (2ⁿ = 16) se aplica en los dos miembros la
+  función inversa, el logaritmo en la base de la potencia (log₂), y se usa
+  log₂(2ⁿ) = n. No se igualan exponentes por tener la misma base: el estudiante aprende a
+  despejar con funciones.
 
 ## Demostraciones
 
