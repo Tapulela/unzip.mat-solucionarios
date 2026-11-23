@@ -170,6 +170,11 @@ Se usa este `estilo` en todas las resoluciones:
   separarla en términos que se simplifican aparte. Si la expresión es larga y la nota no
   entra a la derecha, el bloque va con `"notas": "arriba"` (la ley arriba y la expresión
   abajo).
+- **Antes de aplicar la ley de De Morgan, la inecuación doble se reescribe como
+  conjunción**: en ¬(n es primo ∧ 1 < n < 10) primero va un renglón
+  «{n ∈ ℕ : ¬(n es primo ∧ 1 < n ∧ n < 10)}» con la nota «Inecuación doble como
+  conjunción», y recién en el renglón siguiente la «Ley de De Morgan»
+  (n no es primo ∨ n ≤ 1 ∨ n ≥ 10). Así cada desigualdad que se niega está escrita sola.
 - **Si lo que se pregunta es directamente una ley, alcanza con nombrarla**: «A ∪ A′ = U»
   es verdadera porque es la ley de complemento, y «A ∩ A′ = U» es falsa porque la ley de
   complemento establece que A ∩ A′ = ∅. No hace falta demostración ni contraejemplo.

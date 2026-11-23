@@ -654,6 +654,19 @@
       {
        "rel": "=",
        "der": [
+        "{n ∈ ℕ : ¬(n es primo ∧ ",
+        {
+         "t": "1 < n ∧ n < 10",
+         "color": "producto"
+        },
+        ")}"
+       ],
+       "nota": "Inecuación doble como conjunción",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": [
         "{n ∈ ℕ : ",
         {
          "t": "n no es primo ∨ n ≤ 1 ∨ n ≥ 10",
