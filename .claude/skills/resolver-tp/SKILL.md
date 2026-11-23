@@ -51,7 +51,9 @@ sirve para otras resoluciones, agrégalo ahí.
    - Si una verificación no cierra, corrige el desarrollo, no la verificación.
    - Lo que no puedas verificar, avísalo al final.
 5. **Escribir `solucion.json`** con `meta.estado: "borrador"` y `meta.fuente`, que dice de
-   dónde sale el enunciado.
+   dónde sale el enunciado. **Siempre con marcadores del PDF** (`marcador`) en cada
+   ejercicio, cada ítem y las secciones principales, como dice «Marcadores del PDF» en
+   `REGLAS.md`.
 6. **Validar**: con la herramienta MCP `validar_solucion` (servidor `unzip-mat`) o con
    `node herramientas/validar.mjs ruta/a/solucion.json`. Corrige todos los errores y
    también los avisos de estilo (signo `−` y no `-`, `·` y no `*`, superíndices y no

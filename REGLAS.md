@@ -92,6 +92,19 @@ Se usa este `estilo` en todas las resoluciones:
   de izquierda a derecha y de arriba hacia abajo). En `items[].numero` va la letra o el
   número tal como figura en el trabajo práctico.
 
+## Marcadores del PDF
+
+- **Toda resolución lleva marcadores** (`marcador`), para navegar el PDF desde el panel
+  del lector:
+  - cada ejercicio, nivel 1, con un título corto: «Ejercicio 5: Estructuras (ℝ, ∗) y
+    (ℚ − {−1}, ∗)», no la consigna entera;
+  - cada ítem, nivel 2: «1.a: a ∗ b = ab + 2 en ℤ» (el rótulo y lo que lo distingue);
+  - en un ejercicio sin ítems, sus secciones principales (las partes, los «Análisis de…»),
+    nivel 2, con el título de la sección;
+  - dentro de un ítem, las secciones principales que se buscan por separado, nivel 3.
+- No se marcan las secciones de detalle («Miembro izquierdo», «Demostración», «Elemento
+  neutro por derecha»): llenan el panel sin ayudar a encontrar nada.
+
 ## Cabecera y pie de página
 
 - Toda resolución lleva cabecera y pie (`cabecera` y `pie` en la raíz del JSON).
