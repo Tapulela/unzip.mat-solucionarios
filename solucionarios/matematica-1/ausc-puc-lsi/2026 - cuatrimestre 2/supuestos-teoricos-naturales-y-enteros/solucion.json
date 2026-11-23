@@ -1,0 +1,945 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — Supuestos teóricos: Números naturales y enteros",
+ "subtitulo": "Año 2026 · Cuatrimestres 1 y 2",
+ "cabecera": "Matemática 1\nSupuestos teóricos - Naturales y enteros - Año 2026 - Cuatrimestres 1 y 2",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Supuestos teóricos de Números naturales y enteros",
+  "fuente": "Supuestos teóricos de números N y Z, Matemática I (FCEQyN-UNaM, 2019, Prof. Marta Rivero), usados como supuestos teóricos en los cuatrimestres 1 y 2 de 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "enunciado": "¿Se puede afirmar que todo número natural tiene un antecesor? ¿Por qué? Ejemplificar.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}. El antecesor de n es n − 1, y n tiene antecesor en ℕ si n − 1 ∈ ℕ.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "der": "No: no todo número natural tiene antecesor.",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "El 1 es el primer elemento de ℕ, y su antecesor sería 1 − 1 = 0, que no es un número natural. Todos los demás naturales sí tienen antecesor.",
+     "color": "azul"
+    },
+    {
+     "texto": "Ejemplos:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "antecesor de 5",
+       "rel": "=",
+       "der": "5 − 1"
+      },
+      {
+       "rel": "=",
+       "der": "4 ∈ ℕ",
+       "color": "azul"
+      },
+      {
+       "izq": "antecesor de 1",
+       "rel": "=",
+       "der": "1 − 1",
+       "seccion": true
+      },
+      {
+       "rel": "=",
+       "der": "0 ∉ ℕ",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "enunciado": "¿Se puede afirmar que todo número natural tiene un sucesor? ¿Por qué? Ejemplificar.",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "der": "Sí: todo número natural tiene sucesor.",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "El sucesor de n es n + 1, y n + 1 es natural porque la suma de dos números naturales es siempre un número natural (ley de cierre de la suma en ℕ). Por eso ℕ no tiene último elemento.",
+     "color": "azul"
+    },
+    {
+     "texto": "Ejemplos:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "sucesor de 1",
+       "rel": "=",
+       "der": "1 + 1"
+      },
+      {
+       "rel": "=",
+       "der": "2 ∈ ℕ",
+       "color": "azul"
+      },
+      {
+       "izq": "sucesor de 99",
+       "rel": "=",
+       "der": "99 + 1",
+       "seccion": true
+      },
+      {
+       "rel": "=",
+       "der": "100 ∈ ℕ",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "enunciado": "Completar:",
+   "items": [
+    {
+     "numero": 1,
+     "enunciado": "La suma de dos números enteros da siempre un número ……… Dar dos ejemplos.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "La suma de dos números enteros da siempre un número entero.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Es la ley de cierre de la suma en ℤ: la suma es ley de composición interna en ℤ.",
+       "color": "azul"
+      },
+      {
+       "texto": "Ejemplos:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "5 + (−8)",
+         "rel": "=",
+         "der": "−3 ∈ ℤ"
+        },
+        {
+         "izq": "(−4) + (−6)",
+         "rel": "=",
+         "der": "−10 ∈ ℤ"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": 2,
+     "enunciado": "La multiplicación de dos números enteros da siempre un número ……… Dar ejemplos.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "La multiplicación de dos números enteros da siempre un número entero.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Es la ley de cierre del producto en ℤ: el producto es ley de composición interna en ℤ.",
+       "color": "azul"
+      },
+      {
+       "texto": "Ejemplos:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "(−3) · 7",
+         "rel": "=",
+         "der": "−21 ∈ ℤ"
+        },
+        {
+         "izq": "(−2) · (−5)",
+         "rel": "=",
+         "der": "10 ∈ ℤ"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "enunciado": "Decir si las siguientes afirmaciones son verdaderas o falsas:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "La suma de dos números naturales es siempre un número natural.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Verdadera.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Es la ley de cierre de la suma en ℕ: si a ∈ ℕ y b ∈ ℕ, entonces a + b ∈ ℕ. Por ejemplo, 3 + 5 = 8 ∈ ℕ.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "La diferencia de dos números naturales es siempre un número natural.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Lo demostramos con un contraejemplo: a = 3 y b = 5.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "a − b",
+         "rel": "=",
+         "der": "3 − 5"
+        },
+        {
+         "rel": "=",
+         "der": "−2"
+        },
+        {
+         "der": [
+          "−2 ∉ ℕ  ",
+          {
+           "marca": "mal"
+          }
+         ],
+         "seccion": true
+        }
+       ]
+      },
+      {
+       "texto": "Para a = 3 y b = 5 la diferencia no es un número natural, por lo tanto la afirmación es falsa.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "El conjunto de los números naturales carece de primer elemento.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "El 1 es el primer elemento de ℕ: 1 ∈ ℕ y 1 ≤ n para todo n ∈ ℕ.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "enunciado": "Determinar el valor de verdad de las afirmaciones siguientes:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: positivo significa mayor que 0 y negativo, menor que 0. El 0 no es positivo ni negativo.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "0 es el menor de los enteros positivos.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "El 0 no es un entero positivo, porque 0 no es mayor que 0. Los enteros positivos son {1, 2, 3, …} y el menor de ellos es el 1.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "1 es el menor de los racionales positivos.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Lo demostramos con un contraejemplo: ½ es un racional positivo y es menor que 1.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " ∈ ℚ,   ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " > 0   y   ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " < 1"
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "En realidad no existe un racional positivo menor que todos: si q es racional positivo, q dividido 2 también lo es y es menor que q.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "El conjunto de racionales negativos tiene un elemento máximo.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Si q es un racional negativo cualquiera, q dividido 2 también es racional y negativo, y es mayor que q (está más cerca del 0). Por ejemplo:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "q = −1   ⇒   ",
+          {
+           "frac": [
+            "q",
+            "2"
+           ]
+          },
+          " = −",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          "   y   −1 < −",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " < 0"
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Para cualquier racional negativo hay otro racional negativo mayor, por lo tanto ninguno es el máximo. El 0 tampoco, porque no es negativo.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "0 es el menor de los enteros no negativos.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Verdadera.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Los enteros no negativos son {0, 1, 2, 3, …}: el 0 pertenece al conjunto y 0 ≤ n para todo entero n no negativo.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "0 es el mayor de los racionales que no son positivos.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Verdadera.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Los racionales que no son positivos son los q ∈ ℚ con q ≤ 0. El 0 pertenece a ese conjunto (es racional y 0 ≤ 0) y todos los demás son menores o iguales que 0.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "Entre 5 y 6 no hay números enteros.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Verdadera.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "5 y 6 son enteros consecutivos: 6 es el sucesor de 5. No existe ningún entero n con 5 < n < 6 (entre ellos solo hay números no enteros, como 5,5).",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "enunciado": "Responder:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si m = 14, ¿cómo pueden representarse los números 13, 15 y 16 en términos de m?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "13",
+         "rel": "=",
+         "der": "14 − 1"
+        },
+        {
+         "rel": "=",
+         "der": "m − 1"
+        },
+        {
+         "izq": "15",
+         "rel": "=",
+         "der": "14 + 1",
+         "seccion": true
+        },
+        {
+         "rel": "=",
+         "der": "m + 1"
+        },
+        {
+         "izq": "16",
+         "rel": "=",
+         "der": "14 + 2",
+         "seccion": true
+        },
+        {
+         "rel": "=",
+         "der": "m + 2"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "13 = m − 1,   15 = m + 1   y   16 = m + 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Sea n un número par cualquiera, ¿cuál es el siguiente entero par? ¿Cuál el anterior?",
+     "bloques": [
+      {
+       "texto": "Los números pares van de 2 en 2, así que se suma o se resta 2.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "El siguiente entero par es n + 2 y el anterior es n − 2.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: por ejemplo, si n = 8, el siguiente par es 10 y el anterior es 6.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Si x representa cualquier entero impar, ¿cuál es el siguiente entero impar? ¿Cuál el anterior?",
+     "bloques": [
+      {
+       "texto": "Los números impares también van de 2 en 2.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "El siguiente entero impar es x + 2 y el anterior es x − 2.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: por ejemplo, si x = 7, el siguiente impar es 9 y el anterior es 5.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si x es cualquier entero par, ¿x + 1 es un entero par o impar? ¿Y x − 1?",
+     "bloques": [
+      {
+       "texto": "Si x es par, x = 2k con k ∈ ℤ.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "x + 1",
+         "rel": "=",
+         "der": "2k + 1"
+        },
+        {
+         "izq": "x − 1",
+         "rel": "=",
+         "der": "2k − 1",
+         "seccion": true
+        },
+        {
+         "rel": "=",
+         "der": [
+          "2k ",
+          {
+           "t": "− 2 + 2",
+           "color": "suma"
+          },
+          " − 1"
+         ],
+         "nota": "Sumar y restar 2",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "2(k − 1)",
+           "color": "producto"
+          },
+          " + 2 − 1"
+         ],
+         "nota": [
+          "Sacar factor común 2",
+          "en 2k − 2"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "2(k − 1) + 1"
+        }
+       ]
+      },
+      {
+       "texto": "Los dos tienen la forma 2 · (entero) + 1, porque k y k − 1 son enteros.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x + 1 es impar y x − 1 es impar.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Si x es cualquier entero, ¿2x es par o impar? ¿Y 2x − 1? ¿Y 2x + 1?",
+     "bloques": [
+      {
+       "texto": "2x es el doble de un entero, así que es par. 2x − 1 es el entero anterior a un par y 2x + 1 es el siguiente: los dos son impares (2x − 1 = 2(x − 1) + 1).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "2x es par, 2x − 1 es impar y 2x + 1 es impar.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: por ejemplo, con x = 3: 2x = 6, 2x − 1 = 5 y 2x + 1 = 7.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "enunciado": "Indicar si las siguientes afirmaciones son verdaderas o falsas. Justificar la respuesta proponiendo un contraejemplo, en caso de ser falsa, o enunciando las propiedades aplicadas, en caso de ser verdadera.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "si a = −2 y b = 0, entonces a : b = 0",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Con a = −2 y b = 0, a dividido b es −2 dividido 0, y la división por 0 no está definida: no existe ningún número c tal que 0 · c = −2, porque 0 · c = 0 para todo c.",
+       "color": "azul"
+      },
+      {
+       "texto": "Por lo tanto a dividido b no da 0: no da ningún número.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(−a) × (−b) = −(a . b)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Lo demostramos con un contraejemplo: a = 2 y b = 3.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "(−a) · (−b)",
+         "rel": "=",
+         "der": "(−2) · (−3)"
+        },
+        {
+         "rel": "=",
+         "der": "6"
+        },
+        {
+         "izq": "−(a · b)",
+         "rel": "=",
+         "der": "−(2 · 3)",
+         "seccion": true
+        },
+        {
+         "rel": "=",
+         "der": "−6"
+        },
+        {
+         "der": [
+          "6 ≠ −6  ",
+          {
+           "marca": "mal"
+          }
+         ],
+         "seccion": true
+        }
+       ]
+      },
+      {
+       "texto": "Para a = 2 y b = 3 los dos miembros son distintos, por lo tanto la afirmación es falsa. Por la regla de los signos, lo correcto es (−a) · (−b) = a · b.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "el cociente entre un número y su opuesto es igual a −1",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Lo demostramos con un contraejemplo: el número 0, cuyo opuesto es −0 = 0. El cociente entre 0 y su opuesto es 0 dividido 0, que no está definido, así que no es igual a −1.",
+       "color": "azul"
+      },
+      {
+       "texto": "Nota para el estudiante: para todo número a ≠ 0 la afirmación sí vale: a dividido (−a) = −(a dividido a) = −1, por la regla de los signos y porque a dividido a = 1.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "a + (−b + c) = a − b + c",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Verdadera.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "a + (−b + c)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(a + (−b))",
+           "color": "suma"
+          },
+          " + c"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "agregar y quitar paréntesis"
+         ],
+         "notaColor": "suma"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(a − b)",
+           "color": "suma"
+          },
+          " + c"
+         ],
+         "nota": [
+          "Definición de resta:",
+          "a + (−b) = a − b"
+         ],
+         "notaColor": "suma"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "a − b + c",
+           "color": "suma"
+          }
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "quitar paréntesis"
+         ],
+         "notaColor": "suma"
+        },
+        {
+         "der": "a + (−b + c) = a − b + c",
+         "color": "azul",
+         "caja": "azul",
+         "seccion": true
+        }
+       ]
+      },
+      {
+       "texto": "Se aplicaron la propiedad asociativa de la suma y la definición de resta (sumar el opuesto).",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "el inverso de 2 es −1/2",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Falsa.",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "El inverso de 2 es el número que multiplicado por 2 da 1 (el neutro del producto). Lo demostramos con un contraejemplo: el producto de 2 por −½ no da 1.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": [
+          "2 · (−",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          ")"
+         ],
+         "rel": "=",
+         "der": "−1"
+        },
+        {
+         "der": [
+          "−1 ≠ 1  ",
+          {
+           "marca": "mal"
+          }
+         ],
+         "seccion": true
+        }
+       ]
+      },
+      {
+       "texto": "El inverso de 2 es ½, porque 2 · ½ = 1. El número −½ es el opuesto del inverso de 2.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
