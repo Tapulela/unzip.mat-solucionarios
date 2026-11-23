@@ -1,0 +1,1452 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — Supuestos teóricos: Números reales",
+ "subtitulo": "Año 2026 · Cuatrimestres 1 y 2",
+ "cabecera": "Matemática 1\nSupuestos teóricos - Números reales - Año 2026 - Cuatrimestres 1 y 2",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Supuestos teóricos de Números reales",
+  "fuente": "Supuestos teóricos de Números Reales, Matemática I (FCEQyN-UNaM, 2019), usados como supuestos teóricos en los cuatrimestres 1 y 2 de 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "enunciado": "Como vimos anteriormente, el sucesor inmediato de un número natural n es n + 1, por ejemplo el sucesor inmediato de 5 es 5 + 1 = 6. Si consideramos el conjunto de los racionales, ¿se puede decir cuál es el sucesor inmediato de ½?",
+   "bloques": [
+    {
+     "texto": "No se puede: en ℚ el ½ no tiene sucesor inmediato. Lo demostramos por el absurdo.",
+     "color": "azul"
+    },
+    {
+     "texto": "Supongamos que q es el sucesor inmediato de ½, es decir, q ∈ ℚ, q > ½ y no hay ningún racional entre ½ y q.",
+     "color": "azul"
+    },
+    {
+     "texto": "Se toma el promedio de ½ y q:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "m",
+       "rel": "=",
+       "der": [
+        {
+         "frac": [
+          [
+           {
+            "frac": [
+             "1",
+             "2"
+            ]
+           },
+           " + q"
+          ],
+          "2"
+         ]
+        }
+       ],
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "m es racional, porque la suma de racionales es racional y el cociente de racionales (con divisor distinto de 0) también.",
+     "color": "azul"
+    },
+    {
+     "texto": "Ahora se prueba que m está entre ½ y q.",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "seccion": "m es mayor que ½",
+     "bloques": [
+      {
+       "notas": "arriba",
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": "q"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          {
+           "t": " + ",
+           "color": "suma"
+          },
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "suma"
+            },
+            {
+             "t": "2",
+             "color": "suma"
+            }
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "suma"
+            },
+            {
+             "t": "2",
+             "color": "suma"
+            }
+           ]
+          },
+          {
+           "t": " + ",
+           "color": "suma"
+          },
+          "q"
+         ],
+         "nota": "Sumar ½ en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "1",
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " + q"
+         ]
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            [
+             {
+              "frac": [
+               "1",
+               "2"
+              ]
+             },
+             " + q"
+            ],
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por 2 los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": "m",
+         "nota": "Reemplazar por m",
+         "notaColor": "producto"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "m es menor que q",
+     "alLado": true,
+     "bloques": [
+      {
+       "notas": "arriba",
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": "q"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          {
+           "t": " + q",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "q",
+          {
+           "t": " + q",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar q en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " + q"
+         ],
+         "rel": "<",
+         "der": "2q"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            [
+             {
+              "frac": [
+               "1",
+               "2"
+              ]
+             },
+             " + q"
+            ],
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            "2q",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por 2 los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "m",
+         "rel": "<",
+         "der": "q",
+         "nota": "Reemplazar por m y simplificar",
+         "notaColor": "producto"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "texto": "Entonces m ∈ ℚ y ½ < m < q. Entre ½ y q hay otro racional, lo que contradice la suposición. Como esto pasa con cualquier q > ½, no existe el sucesor inmediato de ½ en ℚ.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "½ no tiene sucesor inmediato en ℚ",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: es la propiedad de densidad de ℚ: entre dos racionales distintos siempre hay otro racional (y por lo tanto infinitos). ℕ y ℤ, en cambio, son discretos: cada elemento tiene un sucesor inmediato.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "enunciado": "¿Se puede determinar cuántos números racionales hay entre 1/5 y 2?",
+   "bloques": [
+    {
+     "texto": "No se puede dar una cantidad: entre 1/5 y 2 hay infinitos números racionales, por la propiedad de densidad de ℚ.",
+     "color": "azul"
+    },
+    {
+     "texto": "Para mostrarlo se construyen infinitos de ellos, uno para cada n ∈ ℕ:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "rₙ",
+       "rel": "=",
+       "der": [
+        {
+         "frac": [
+          "1",
+          "5"
+         ]
+        },
+        " + ",
+        {
+         "frac": [
+          "1",
+          "n"
+         ]
+        }
+       ],
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "rₙ es racional porque es suma de racionales. Para cualquier n ∈ ℕ se cumple 0 < 1/n ≤ 1:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "0",
+       "rel": "<",
+       "der": [
+        {
+         "frac": [
+          "1",
+          "n"
+         ]
+        },
+        "  ≤  1"
+       ]
+      },
+      {
+       "izq": [
+        {
+         "frac": [
+          {
+           "t": "1",
+           "color": "suma"
+          },
+          {
+           "t": "5",
+           "color": "suma"
+          }
+         ]
+        },
+        {
+         "t": " + ",
+         "color": "suma"
+        },
+        "0"
+       ],
+       "rel": "<",
+       "der": [
+        {
+         "frac": [
+          {
+           "t": "1",
+           "color": "suma"
+          },
+          {
+           "t": "5",
+           "color": "suma"
+          }
+         ]
+        },
+        {
+         "t": " + ",
+         "color": "suma"
+        },
+        {
+         "frac": [
+          "1",
+          "n"
+         ]
+        },
+        "  ≤  ",
+        {
+         "frac": [
+          {
+           "t": "1",
+           "color": "suma"
+          },
+          {
+           "t": "5",
+           "color": "suma"
+          }
+         ]
+        },
+        {
+         "t": " + ",
+         "color": "suma"
+        },
+        "1"
+       ],
+       "nota": "Sumar 1/5 en los tres miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": [
+        {
+         "frac": [
+          "1",
+          "5"
+         ]
+        }
+       ],
+       "rel": "<",
+       "der": [
+        {
+         "frac": [
+          "1",
+          "5"
+         ]
+        },
+        " + ",
+        {
+         "frac": [
+          "1",
+          "n"
+         ]
+        },
+        "  ≤  ",
+        {
+         "frac": [
+          "6",
+          "5"
+         ]
+        }
+       ]
+      },
+      {
+       "izq": [
+        {
+         "frac": [
+          "1",
+          "5"
+         ]
+        }
+       ],
+       "rel": "<",
+       "der": [
+        "rₙ  ≤  ",
+        {
+         "frac": [
+          "6",
+          "5"
+         ]
+        },
+        "  <  2"
+       ],
+       "nota": "Reemplazar por rₙ; además 6/5 < 2",
+       "notaColor": "producto"
+      }
+     ]
+    },
+    {
+     "texto": "Cada rₙ está entre 1/5 y 2, y para distintos valores de n se obtienen racionales distintos (1/n cambia con n). Por ejemplo:",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "n = 1  ⇒  r₁",
+       "rel": "=",
+       "der": [
+        {
+         "frac": [
+          "1",
+          "5"
+         ]
+        },
+        " + 1 = ",
+        {
+         "frac": [
+          "6",
+          "5"
+         ]
+        }
+       ]
+      },
+      {
+       "izq": "n = 2  ⇒  r₂",
+       "rel": "=",
+       "der": [
+        {
+         "frac": [
+          "1",
+          "5"
+         ]
+        },
+        " + ",
+        {
+         "frac": [
+          "1",
+          "2"
+         ]
+        },
+        " = ",
+        {
+         "frac": [
+          "7",
+          "10"
+         ]
+        }
+       ]
+      },
+      {
+       "izq": "n = 3  ⇒  r₃",
+       "rel": "=",
+       "der": [
+        {
+         "frac": [
+          "1",
+          "5"
+         ]
+        },
+        " + ",
+        {
+         "frac": [
+          "1",
+          "3"
+         ]
+        },
+        " = ",
+        {
+         "frac": [
+          "8",
+          "15"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "Entre 1/5 y 2 hay infinitos números racionales",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "enunciado": "Decir si las siguientes afirmaciones son verdaderas o falsas. En caso de ser verdaderas, mencionar las propiedades utilizadas.",
+   "items": [
+    {
+     "numero": "1",
+     "enunciado": "(1/a) · a = 1 para todo a real.",
+     "bloques": [
+      {
+       "texto": "La afirmación es falsa. Lo demostramos con un contraejemplo: a = 0.",
+       "color": "azul"
+      },
+      {
+       "texto": "0 ∈ ℝ, pero 1/0 no está definido, porque el 0 no tiene inverso multiplicativo: no existe ningún real b con 0 · b = 1, dado que 0 · b = 0 para todo b ∈ ℝ.",
+       "color": "azul"
+      },
+      {
+       "texto": "Para a = 0 la expresión (1/a) · a no tiene sentido, por lo tanto la afirmación no vale para todo a real.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "«(1/a) · a = 1 para todo a real» es falsa",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: la propiedad del inverso multiplicativo dice que (1/a) · a = 1 para todo a real distinto de 0.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "2",
+     "enunciado": "Existe un número real x para el cual √5/π + x = 0.",
+     "bloques": [
+      {
+       "texto": "La afirmación es verdadera. √5/π es un número real (es el cociente de dos reales y π ≠ 0), así que tiene opuesto. Se despeja x:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          " + x"
+         ],
+         "rel": "=",
+         "der": "0"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          " + x",
+          {
+           "t": " + (− ",
+           "color": "suma"
+          },
+          {
+           "frac": [
+            {
+             "t": "√5",
+             "color": "suma"
+            },
+            {
+             "t": "π",
+             "color": "suma"
+            }
+           ]
+          },
+          {
+           "t": ")",
+           "color": "suma"
+          }
+         ],
+         "rel": "=",
+         "der": [
+          "0",
+          {
+           "t": " + (− ",
+           "color": "suma"
+          },
+          {
+           "frac": [
+            {
+             "t": "√5",
+             "color": "suma"
+            },
+            {
+             "t": "π",
+             "color": "suma"
+            }
+           ]
+          },
+          {
+           "t": ")",
+           "color": "suma"
+          }
+         ],
+         "nota": [
+          "Sumar el opuesto de √5/π",
+          "en los dos miembros (uniforme)"
+         ],
+         "notaColor": "suma"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          " + (− ",
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          ") + x"
+         ],
+         "rel": "=",
+         "der": [
+          "0 + (− ",
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          ")"
+         ],
+         "nota": "Propiedad conmutativa de la suma",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "0 + x",
+         "rel": "=",
+         "der": [
+          "0 + (− ",
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          ")"
+         ],
+         "nota": "Opuesto (inverso aditivo): a + (−a) = 0",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": "=",
+         "der": [
+          "− ",
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          }
+         ],
+         "nota": "Elemento neutro de la suma: 0 + a = a",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Verificación:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          " + (− ",
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          },
+          ")"
+         ],
+         "rel": "=",
+         "der": [
+          "0  ",
+          {
+           "marca": "ok"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "Es verdadera, con x = − ",
+          {
+           "frac": [
+            "√5",
+            "π"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Propiedades utilizadas: L.C.I. del cociente en ℝ (con divisor no nulo), existencia del opuesto, propiedad uniforme, propiedad conmutativa y elemento neutro de la suma.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "3",
+     "enunciado": "El cuadrado de un número racional negativo es un racional positivo.",
+     "bloques": [
+      {
+       "texto": "La afirmación es verdadera. Lo demostramos.",
+       "color": "azul"
+      },
+      {
+       "texto": "Hipótesis: q ∈ ℚ y q < 0.",
+       "color": "azul"
+      },
+      {
+       "texto": "Tesis: q² ∈ ℚ y q² > 0.",
+       "color": "azul"
+      },
+      {
+       "texto": "Primera parte: q² es racional",
+       "color": "azul"
+      },
+      {
+       "texto": "→ q es racional, por hipótesis.",
+       "color": "azul"
+      },
+      {
+       "texto": "→ q² = q · q es racional, porque el producto de racionales es racional (el producto es ley de composición interna en ℚ).",
+       "color": "azul"
+      },
+      {
+       "texto": "Segunda parte: q² es positivo",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "notas": "arriba",
+       "pasos": [
+        {
+         "izq": "q",
+         "rel": "<",
+         "der": "0"
+        },
+        {
+         "izq": [
+          "q",
+          {
+           "t": " · q",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "0",
+          {
+           "t": " · q",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Multiplicar por q < 0 los dos miembros:",
+          "cambia el sentido de la desigualdad"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "q²",
+         "rel": ">",
+         "der": "0",
+         "nota": [
+          "q · q = q² y 0 · q = 0",
+          "(el 0 es absorbente)"
+         ],
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Por lo tanto q² ∈ ℚ y q² > 0. Queda demostrado que el cuadrado de un racional negativo es un racional positivo.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "La afirmación es verdadera",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Propiedades utilizadas: L.C.I. del producto en ℚ, monotonía del producto (multiplicar por un negativo cambia el sentido de la desigualdad) y el 0 como elemento absorbente del producto.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "4",
+     "enunciado": "Existen infinitos números racionales comprendidos entre 0 y ½.",
+     "bloques": [
+      {
+       "texto": "La afirmación es verdadera, por la propiedad de densidad de ℚ. Se muestran infinitos de ellos, los racionales 1/n con n ∈ ℕ y n ≥ 3:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "izq": "n",
+         "rel": "≥",
+         "der": "3"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            {
+             "t": "n",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": "≤",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "1",
+             "color": "producto"
+            },
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Tomar el inverso de los dos miembros",
+          "(son positivos: cambia el sentido)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "n"
+           ]
+          }
+         ],
+         "rel": "≤",
+         "der": [
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          "  <  ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Además 1/n > 0 porque n > 0. Entonces 0 < 1/n < ½ para cada n ≥ 3, y distintos n dan racionales distintos: 1/3, 1/4, 1/5, 1/6, …",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "La afirmación es verdadera",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Propiedades utilizadas: densidad de ℚ (entre dos racionales distintos hay infinitos racionales), L.C.I. del cociente en ℚ y monotonía.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "enunciado": "Determinar el conjunto de los números naturales que satisfacen −3 ≤ x < 7.",
+   "bloques": [
+    {
+     "texto": "Se buscan los x ∈ ℕ que son mayores o iguales que −3 y menores que 7. Todos los naturales son mayores que −3, así que la condición que limita es x < 7.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "A",
+       "rel": "=",
+       "der": "{x ∈ ℕ : −3 ≤ x < 7}"
+      },
+      {
+       "rel": "=",
+       "der": "{1, 2, 3, 4, 5, 6}"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "A = {1, 2, 3, 4, 5, 6}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}. El 7 no está porque la desigualdad x < 7 es estricta.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "enunciado": "Determinar el conjunto de los números enteros que satisfacen −e ≤ x ≤ e.",
+   "bloques": [
+    {
+     "texto": "El número e es irracional y vale aproximadamente 2,718, así que −e ≈ −2,718. Los enteros que están entre −2,718 y 2,718 son −2, −1, 0, 1 y 2 (el 3 y el −3 quedan afuera).",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "B",
+       "rel": "=",
+       "der": "{x ∈ ℤ : −e ≤ x ≤ e}"
+      },
+      {
+       "rel": "=",
+       "der": "{−2, −1, 0, 1, 2}"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "B = {−2, −1, 0, 1, 2}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: e es la base de los logaritmos naturales, e = 2,71828… Aunque las desigualdades son ≤, ni e ni −e son enteros, así que no se agregan.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "enunciado": "Expresar el subconjunto de los números reales que satisface las condiciones siguientes como un intervalo o unión de intervalos:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: una «y» es una conjunción: se toman los x que cumplen las dos condiciones, es decir, la intersección de los intervalos. Una «o» es una disyunción: se toman los x que cumplen al menos una, es decir, la unión.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "x ≥ 4 y x < 5",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "S",
+         "rel": "=",
+         "der": "{x ∈ ℝ : x ≥ 4 ∧ x < 5}"
+        },
+        {
+         "rel": "=",
+         "der": "[4, ∞) ∩ (−∞, 5)",
+         "nota": "Cada condición como intervalo"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = [4, 5)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "alLado": "centro",
+       "op": {
+        "filas": [
+         {
+          "texto": "[4, ∞)",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "(−∞, 5)",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "interseccion",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "x < 2 y x ≥ −3",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "S",
+         "rel": "=",
+         "der": "{x ∈ ℝ : x < 2 ∧ x ≥ −3}"
+        },
+        {
+         "rel": "=",
+         "der": "(−∞, 2) ∩ [−3, ∞)",
+         "nota": "Cada condición como intervalo"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = [−3, 2)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "alLado": "centro",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 2)",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "[−3, ∞)",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "interseccion",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "x > −5 o x < −6",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "S",
+         "rel": "=",
+         "der": "{x ∈ ℝ : x > −5 ∨ x < −6}"
+        },
+        {
+         "rel": "=",
+         "der": "(−5, ∞) ∪ (−∞, −6)",
+         "nota": "Cada condición como intervalo"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, −6) ∪ (−5, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "alLado": "centro",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, −6) ∪ (−5, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: los dos intervalos no se tocan (entre −6 y −5 no hay ningún x que cumpla), así que la unión no se puede escribir como un solo intervalo. Se escribe de izquierda a derecha.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "x ≠ −1",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "S",
+         "rel": "=",
+         "der": "{x ∈ ℝ : x ≠ −1}"
+        },
+        {
+         "rel": "=",
+         "der": "{x ∈ ℝ : x < −1 ∨ x > −1}",
+         "nota": "Distinto de −1: menor o mayor que −1"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, −1) ∪ (−1, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "alLado": "centro",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, −1) ∪ (−1, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: también se escribe S = ℝ − {−1}.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "x > −2",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "S",
+         "rel": "=",
+         "der": "{x ∈ ℝ : x > −2}"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−2, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "alLado": "centro",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−2, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "x < 2 o x ≥ 4",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "S",
+         "rel": "=",
+         "der": "{x ∈ ℝ : x < 2 ∨ x ≥ 4}"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 2) ∪ [4, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "alLado": "centro",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 2) ∪ [4, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
