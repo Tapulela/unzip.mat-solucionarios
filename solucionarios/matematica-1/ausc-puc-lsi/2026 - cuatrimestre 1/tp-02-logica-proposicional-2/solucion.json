@@ -1,0 +1,4751 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — T.P. 2: Lógica proposicional 2",
+ "subtitulo": "Año 2026 · Cuatrimestre 1",
+ "cabecera": "Matemática 1\nT.P. 2 - Lógica proposicional 2 - Año 2026 - Cuatrimestre 1",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "TP 2",
+  "fuente": "TP 2: Lógica proposicional 2, Matemática I AUSC-LSI-PUC, primer cuatrimestre 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "marcador": true,
+   "enunciado": "Arme las tablas de verdad y clasifique como tautología, contradicción y contingencia los siguientes esquemas compuestos:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: un esquema es tautología si la última columna tiene solo V, contradicción si tiene solo F, y contingencia si tiene V y F.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "[(p ∧ q) → q] ∨ p",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∧ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p ∧ q) → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "[(p ∧ q) → q] ∨ p",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[(p ∧ q) → q] ∨ p: Tautología",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(p → q) ∧ p",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p → q) ∧ p",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p → q) ∧ p: Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "p → (p ∨ q)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∨ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p → (p ∨ q)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "p → (p ∨ q): Tautología",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "¬(p ∧ q) ∨ p",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∧ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(p ∧ q)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(p ∧ q) ∨ p",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "¬(p ∧ q) ∨ p: Tautología",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "[(p → ¬q) ∨ p] → q",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p → ¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p → ¬q) ∨ p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "[(p → ¬q) ∨ p] → q",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[(p → ¬q) ∨ p] → q: Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "¬p ∧ ¬(p ∧ q)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p ∧ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(p ∧ q)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p ∧ ¬(p ∧ q)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "¬p ∧ ¬(p ∧ q): Contingencia",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "marcador": true,
+   "enunciado": "Si p y q son proposiciones falsa y verdadera respectivamente, halle el valor de verdad de las siguientes proposiciones:",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "der": "p = F  y  q = V",
+       "color": "azul"
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "p ∧ (p → q)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "p ∧ (p → q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∧ (",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " → ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F ∧ V",
+         "nota": "F → V es V"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": "F ∧ V es F"
+        },
+        {
+         "der": "p ∧ (p → q) = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(p ∧ q) → p",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ q) → p"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") → ",
+          {
+           "t": "F",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F → F",
+         "nota": "F ∧ V es F"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "F → F es V"
+        },
+        {
+         "der": "(p ∧ q) → p = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "p ∨ (p → q)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "p ∨ (p → q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∨ (",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " → ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F ∨ V",
+         "nota": "F → V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "F ∨ V es V"
+        },
+        {
+         "der": "p ∨ (p → q) = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "(p ∨ q) ↔ [p ∨ (p → q)]",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ∨ q) ↔ [p ∨ (p → q)]"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") ↔ [",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∨ (",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " → ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")]"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V ↔ [F ∨ (F → V)]",
+         "nota": "F ∨ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V ↔ (F ∨ V)",
+         "nota": "F → V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V ↔ V",
+         "nota": "F ∨ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": [
+          "↔ es V si los dos",
+          "valen igual"
+         ]
+        },
+        {
+         "der": "(p ∨ q) ↔ [p ∨ (p → q)] = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "marcador": true,
+   "enunciado": "Si p = V, q = V, r = F. Halle el valor de verdad de los siguientes esquemas moleculares:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(p ∨ q) → (¬p ∧ r)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ∨ q) → (¬p ∧ r)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") → (¬",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V → (¬V ∧ F)",
+         "nota": "V ∨ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V → (F ∧ F)",
+         "nota": "Negar: ¬V = F"
+        },
+        {
+         "rel": "=",
+         "der": "V → F",
+         "nota": "F ∧ F es F"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": [
+          "→ es F sólo si",
+          "V → F"
+         ]
+        },
+        {
+         "der": "(p ∨ q) → (¬p ∧ r) = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "¬r ∧ [p → (r ∨ q)]",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "¬r ∧ [p → (r ∨ q)]"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "¬",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∧ [",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " → (",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")]"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V ∧ [V → (F ∨ V)]",
+         "nota": "Negar: ¬F = V"
+        },
+        {
+         "rel": "=",
+         "der": "V ∧ (V → V)",
+         "nota": "F ∨ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V ∧ V",
+         "nota": "V → V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "V ∧ V es V"
+        },
+        {
+         "der": "¬r ∧ [p → (r ∨ q)] = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "p ∨ q → r",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: sin paréntesis, los conectores se resuelven en este orden: ¬, ∧, ∨, → y ↔. Por eso p ∨ q → r se lee (p ∨ q) → r.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "der": "p ∨ q → r"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(p ∨ q)",
+           "color": "producto"
+          },
+          " → r"
+         ],
+         "nota": [
+          "∨ se resuelve",
+          "antes que →"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") → ",
+          {
+           "t": "F",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V → F",
+         "nota": "V ∨ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": [
+          "→ es F sólo si",
+          "V → F"
+         ]
+        },
+        {
+         "der": "p ∨ q → r = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": ")[(p ∧ q) → (q ∨ r)] ↔ ¬p",
+     "bloques": [
+      {
+       "texto": "La consigna tiene un paréntesis de más al comienzo, «)», que no cierra ningún paréntesis abierto, así que la expresión no está bien escrita. Se lo quita y se resuelve [(p ∧ q) → (q ∨ r)] ↔ ¬p.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "[(p ∧ q) → (q ∨ r)] ↔ ¬p"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "[(",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") → (",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ")] ↔ ¬",
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "[V → (V ∨ F)] ↔ ¬V",
+         "nota": "V ∧ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "(V → V) ↔ ¬V",
+         "nota": "V ∨ F es V"
+        },
+        {
+         "rel": "=",
+         "der": "V ↔ ¬V",
+         "nota": "V → V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V ↔ F",
+         "nota": "Negar: ¬V = F"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": [
+          "↔ es F si los dos",
+          "valen distinto"
+         ]
+        },
+        {
+         "der": "[(p ∧ q) → (q ∨ r)] ↔ ¬p = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "(p ↔ ¬q) → r",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ↔ ¬q) → r"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ↔ ¬",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") → ",
+          {
+           "t": "F",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "(V ↔ F) → F",
+         "nota": "Negar: ¬V = F"
+        },
+        {
+         "rel": "=",
+         "der": "F → F",
+         "nota": "V ↔ F es F"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "F → F es V"
+        },
+        {
+         "der": "(p ↔ ¬q) → r = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "(¬p ∨ q) → (¬r ∧ q)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(¬p ∨ q) → (¬r ∧ q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(¬",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") → (¬",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "(F ∨ V) → (¬F ∧ V)",
+         "nota": "Negar: ¬V = F"
+        },
+        {
+         "rel": "=",
+         "der": "(F ∨ V) → (V ∧ V)",
+         "nota": "Negar: ¬F = V"
+        },
+        {
+         "rel": "=",
+         "der": "V → (V ∧ V)",
+         "nota": "F ∨ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V → V",
+         "nota": "V ∧ V es V"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "V → V es V"
+        },
+        {
+         "der": "(¬p ∨ q) → (¬r ∧ q) = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "marcador": true,
+   "enunciado": "Determine el valor de verdad pedido en cada caso.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si la proposición p → (¬p ∨ q) es falsa, determine el valor de verdad de ¬(p ∨ q).",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "p → (¬p ∨ q) = F"
+        },
+        {
+         "der": "p = V  y  ¬p ∨ q = F",
+         "nota": [
+          "→ es F sólo si",
+          "V → F"
+         ]
+        },
+        {
+         "der": "¬p = F  y  q = F",
+         "nota": [
+          "∨ es F sólo si",
+          "las dos son F"
+         ]
+        },
+        {
+         "der": "p = V  y  q = F",
+         "color": "azul",
+         "nota": "Se juntan los valores"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "¬(p ∨ q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "¬(",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "¬V",
+         "nota": "V ∨ F es V"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": "Negar: ¬V = F"
+        },
+        {
+         "der": "¬(p ∨ q) = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Si la proposición (p ∧ q) → (q → r) es falsa, determine el valor de p ∨ r.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ q) → (q → r) = F"
+        },
+        {
+         "der": "p ∧ q = V  y  q → r = F",
+         "nota": [
+          "→ es F sólo si",
+          "V → F"
+         ]
+        },
+        {
+         "der": "p = V,  q = V  y  q → r = F",
+         "nota": [
+          "∧ es V sólo si",
+          "las dos son V"
+         ]
+        },
+        {
+         "der": "p = V,  q = V  y  r = F",
+         "color": "azul",
+         "nota": [
+          "q → r = F sólo si",
+          "q = V y r = F"
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "p ∨ r"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "F",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "V ∨ F es V"
+        },
+        {
+         "der": "p ∨ r = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "marcador": true,
+   "enunciado": "Formaliza los siguientes razonamientos. ¿Son tautologías, contradicciones o indeterminaciones (contingencias)?",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si tengo razón, entonces estoy loco. Pero si estoy loco, entonces tengo razón. Por tanto, no estoy loco.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: tengo razón",
+         "color": "azul"
+        },
+        {
+         "der": "    q: estoy loco",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Premisas:  p → q,   q → p",
+         "color": "azul"
+        },
+        {
+         "der": "Conclusión:  ¬q",
+         "color": "azul"
+        },
+        {
+         "der": "Forma:  [(p → q) ∧ (q → p)] → ¬q",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: se arma la tabla de verdad de la forma [premisas] → conclusión. El razonamiento es válido si es una tautología.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q → p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p → q) ∧ (q → p)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "[(p → q) ∧ (q → p)] → ¬q",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[(p → q) ∧ (q → p)] → ¬q: Contingencia",
+       "color": "azul"
+      },
+      {
+       "texto": "El razonamiento no es válido, porque en la fila p = V, q = V las premisas son verdaderas y la conclusión ¬q es falsa.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Contingencia: el razonamiento no es válido",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Si tengo razón, entonces estoy loco. Pero si estoy loco, entonces tengo razón. Por tanto, no tengo razón.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: tengo razón",
+         "color": "azul"
+        },
+        {
+         "der": "    q: estoy loco",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Premisas:  p → q,   q → p",
+         "color": "azul"
+        },
+        {
+         "der": "Conclusión:  ¬p",
+         "color": "azul"
+        },
+        {
+         "der": "Forma:  [(p → q) ∧ (q → p)] → ¬p",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: se arma la tabla de verdad de la forma [premisas] → conclusión. El razonamiento es válido si es una tautología.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q → p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p → q) ∧ (q → p)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "[(p → q) ∧ (q → p)] → ¬p",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[(p → q) ∧ (q → p)] → ¬p: Contingencia",
+       "color": "azul"
+      },
+      {
+       "texto": "El razonamiento no es válido, porque en la fila p = V, q = V las premisas son verdaderas y la conclusión ¬p es falsa.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Contingencia: el razonamiento no es válido",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "A menos que me equivoque, estoy loco. Pero si estoy loco, tengo que estar equivocado. Por tanto, estoy equivocado.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: me equivoco",
+         "color": "azul"
+        },
+        {
+         "der": "    q: estoy loco",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Premisas:  ¬p → q,   q → p",
+         "color": "azul"
+        },
+        {
+         "der": "Conclusión:  p",
+         "color": "azul"
+        },
+        {
+         "der": "Forma:  [(¬p → q) ∧ (q → p)] → p",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: «A menos que me equivoque, estoy loco» significa «si no me equivoco, entonces estoy loco»: ¬p → q. «Me equivoco» y «estar equivocado» son la misma proposición p.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Nota para el estudiante: se arma la tabla de verdad de la forma [premisas] → conclusión. El razonamiento es válido si es una tautología.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q → p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(¬p → q) ∧ (q → p)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "[(¬p → q) ∧ (q → p)] → p",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[(¬p → q) ∧ (q → p)] → p: Tautología",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Tautología: el razonamiento es válido",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si tengo razón, entonces tú estás loco. Si yo estoy loco, no tengo razón. Si tú eres un loco, tengo razón. Por tanto, no estamos los dos locos al mismo tiempo.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: tengo razón",
+         "color": "azul"
+        },
+        {
+         "der": "    q: tú estás loco",
+         "color": "azul"
+        },
+        {
+         "der": "    r: yo estoy loco",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Premisas:  p → q,   r → ¬p,   q → p",
+         "color": "azul"
+        },
+        {
+         "der": "Conclusión:  ¬(r ∧ q)",
+         "color": "azul"
+        },
+        {
+         "der": "Forma:  [(p → q) ∧ (r → ¬p) ∧ (q → p)] → ¬(r ∧ q)",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: «no estamos los dos locos al mismo tiempo» niega que tú y yo estemos locos a la vez: ¬(r ∧ q).",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Nota para el estudiante: se arma la tabla de verdad de la forma [premisas] → conclusión. El razonamiento es válido si es una tautología.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "r → ¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q → p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "r ∧ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(r ∧ q)",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 3,
+        "nombres": "p, q, r",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(La tabla continúa)",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Continuación de la tabla:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true,
+       "continua": ""
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "(p → q) ∧ (r → ¬p)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p → q) ∧ (r → ¬p) ∧ (q → p)",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 3,
+        "nombres": "p, q, r",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(La tabla continúa)",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Continuación de la tabla:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true,
+       "continua": ""
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "[(p → q) ∧ (r → ¬p) ∧ (q → p)] → ¬(r ∧ q)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 3,
+        "nombres": "p, q, r",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[(p → q) ∧ (r → ¬p) ∧ (q → p)] → ¬(r ∧ q): Tautología",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Tautología: el razonamiento es válido",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Si la prima de Mayra no quiere cenar, entonces come su empanada. Si come su empanada, no le dan torta. La prima de Mayra no quiere cenar y se retira de la mesa. Por lo tanto no le dan torta.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: la prima de Mayra quiere cenar",
+         "color": "azul"
+        },
+        {
+         "der": "    q: la prima de Mayra come su empanada",
+         "color": "azul"
+        },
+        {
+         "der": "    r: a la prima de Mayra le dan torta",
+         "color": "azul"
+        },
+        {
+         "der": "    s: la prima de Mayra se retira de la mesa",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Premisas:  ¬p → q,   q → ¬r,   ¬p ∧ s",
+         "color": "azul"
+        },
+        {
+         "der": "Conclusión:  ¬r",
+         "color": "azul"
+        },
+        {
+         "der": "Forma:  [(¬p → q) ∧ (q → ¬r) ∧ (¬p ∧ s)] → ¬r",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: se arma la tabla de verdad de la forma [premisas] → conclusión. El razonamiento es válido si es una tautología.",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬r",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q → ¬r",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p ∧ s",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 4,
+        "nombres": "p, q, r, s",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(La tabla continúa)",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Continuación de la tabla:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true,
+       "continua": ""
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "(¬p → q) ∧ (q → ¬r)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(¬p → q) ∧ (q → ¬r) ∧ (¬p ∧ s)",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 4,
+        "nombres": "p, q, r, s",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(La tabla continúa)",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Continuación de la tabla:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true,
+       "continua": ""
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "[(¬p → q) ∧ (q → ¬r) ∧ (¬p ∧ s)] → ¬r",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 4,
+        "nombres": "p, q, r, s",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[(¬p → q) ∧ (q → ¬r) ∧ (¬p ∧ s)] → ¬r: Tautología",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Tautología: el razonamiento es válido",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "marcador": true,
+   "enunciado": "Confeccione la tabla de verdad de las siguientes proposiciones compuestas",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en el trabajo práctico la negación se escribe −, el condicional ⇒, el bicondicional ⇔ y la disyunción excluyente Δ. Acá se escriben ¬, →, ↔ y ⊻, como en el resto de la materia. p ⊻ q es verdadera cuando p y q valen distinto.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(p → q) ∧ (q ↔ ¬p)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q ↔ ¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p → q) ∧ (q ↔ ¬p)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p → q) ∧ (q ↔ ¬p): Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(p ∧ ¬q) ∨ (¬p ↔ q)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p ∧ ¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p ↔ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p ∧ ¬q) ∨ (¬p ↔ q)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p ∧ ¬q) ∨ (¬p ↔ q): Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "(p ∧ q) ↔ (¬p ∨ q)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∧ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p ∨ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p ∧ q) ↔ (¬p ∨ q)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p ∧ q) ↔ (¬p ∨ q): Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "p → ¬(q ⊻ ¬p)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q ⊻ ¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(q ⊻ ¬p)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p → ¬(q ⊻ ¬p)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "p → ¬(q ⊻ ¬p): Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "p ⊻ (¬q → p)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q → p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p ⊻ (¬q → p)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "p ⊻ (¬q → p): Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "(p ∧ q) ↔ ¬q",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∧ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p ∧ q) ↔ ¬q",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p ∧ q) ↔ ¬q: Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "g",
+     "enunciado": "(p ∨ q) ↔ (¬p ∧ ¬q)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∨ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬p ∧ ¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p ∨ q) ↔ (¬p ∧ ¬q)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p ∨ q) ↔ (¬p ∧ ¬q): Contradicción",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "h",
+     "enunciado": "(p → q) ↔ (¬q ∧ p)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p → q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q ∧ p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p → q) ↔ (¬q ∧ p)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p → q) ↔ (¬q ∧ p): Contradicción",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "i",
+     "enunciado": "[p → (q ∨ ¬p)] → ¬q",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "q ∨ ¬p",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p → (q ∨ ¬p)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "[p → (q ∨ ¬p)] → ¬q",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "[p → (q ∨ ¬p)] → ¬q: Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "j",
+     "enunciado": "¬(p ∨ q) ↔ (p ∧ ¬q)",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∨ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(p ∨ q)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p ∧ ¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(p ∨ q) ↔ (p ∧ ¬q)",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "¬(p ∨ q) ↔ (p ∧ ¬q): Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "k",
+     "enunciado": "¬(p → ¬q) ⊻ p",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "p → ¬q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(p → ¬q)",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "¬(p → ¬q) ⊻ p",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "¬(p → ¬q) ⊻ p: Contingencia",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "l",
+     "enunciado": "(p ∧ q) → q",
+     "bloques": [
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "p ∧ q",
+          "color": "#1e1e1e"
+         },
+         {
+          "texto": "(p ∧ q) → q",
+          "color": "#1971c2"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "valores": "VF",
+        "primero": "V",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "lineasFilas": true,
+        "colorResultado": true,
+        "clasificar": false,
+        "ocultar": false,
+        "mostrarTabla": true,
+        "simplificar": false,
+        "interruptores": false,
+        "titulos": false
+       }
+      },
+      {
+       "texto": "(p ∧ q) → q: Tautología",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "marcador": true,
+   "enunciado": "Niegue y transforme usando leyes lógicas la proposición compuesta ¬p ∧ (q → r)",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "der": "Negación:",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "¬[¬p ∧ (q → r)]"
+      },
+      {
+       "rel": "≡",
+       "der": [
+        {
+         "t": "¬¬p ∨ ¬(q → r)",
+         "color": "producto"
+        }
+       ],
+       "nota": [
+        "Ley de De Morgan:",
+        "¬(a ∧ b) ≡ ¬a ∨ ¬b"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "rel": "≡",
+       "der": [
+        {
+         "t": "p",
+         "color": "producto"
+        },
+        " ∨ ¬(q → r)"
+       ],
+       "nota": [
+        "Ley de involución:",
+        "¬¬a ≡ a"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "rel": "≡",
+       "der": [
+        "p ∨ ¬(",
+        {
+         "t": "¬q ∨ r",
+         "color": "producto"
+        },
+        ")"
+       ],
+       "nota": [
+        "Ley del condicional:",
+        "a → b ≡ ¬a ∨ b"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "rel": "≡",
+       "der": [
+        "p ∨ ",
+        {
+         "t": "(¬¬q ∧ ¬r)",
+         "color": "producto"
+        }
+       ],
+       "nota": [
+        "Ley de De Morgan:",
+        "¬(a ∨ b) ≡ ¬a ∧ ¬b"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "rel": "≡",
+       "der": [
+        "p ∨ (",
+        {
+         "t": "q",
+         "color": "producto"
+        },
+        " ∧ ¬r)"
+       ],
+       "nota": [
+        "Ley de involución:",
+        "¬¬a ≡ a"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "der": "¬[¬p ∧ (q → r)] ≡ p ∨ (q ∧ ¬r)",
+       "caja": "azul",
+       "color": "azul"
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(p ∨ q) → ¬r",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Negación:",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "¬[(p ∨ q) → ¬r]"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "¬[",
+          {
+           "t": "¬(p ∨ q) ∨ ¬r",
+           "color": "producto"
+          },
+          "]"
+         ],
+         "nota": [
+          "Ley del condicional:",
+          "a → b ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬¬(p ∨ q) ∧ ¬¬r",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de De Morgan:",
+          "¬(a ∨ b) ≡ ¬a ∧ ¬b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "(p ∨ q)",
+           "color": "producto"
+          },
+          " ∧ ¬¬r"
+         ],
+         "nota": [
+          "Ley de involución:",
+          "¬¬a ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∨ q) ∧ ",
+          {
+           "t": "r",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de involución:",
+          "¬¬a ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "¬[(p ∨ q) → ¬r] ≡ (p ∨ q) ∧ r",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(p ∧ q) → r",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Negación:",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "¬[(p ∧ q) → r]"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "¬[",
+          {
+           "t": "¬(p ∧ q) ∨ r",
+           "color": "producto"
+          },
+          "]"
+         ],
+         "nota": [
+          "Ley del condicional:",
+          "a → b ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬¬(p ∧ q) ∧ ¬r",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de De Morgan:",
+          "¬(a ∨ b) ≡ ¬a ∧ ¬b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "(p ∧ q)",
+           "color": "producto"
+          },
+          " ∧ ¬r"
+         ],
+         "nota": [
+          "Ley de involución:",
+          "¬¬a ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "p ∧ q",
+           "color": "producto"
+          },
+          " ∧ ¬r"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "quitar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "¬[(p ∧ q) → r] ≡ p ∧ q ∧ ¬r",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "p ∨ ¬(q → r)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Negación:",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "¬[p ∨ ¬(q → r)]"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬p ∧ ¬¬(q → r)",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de De Morgan:",
+          "¬(a ∨ b) ≡ ¬a ∧ ¬b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "¬p ∧ ",
+          {
+           "t": "(q → r)",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de involución:",
+          "¬¬a ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "¬p ∧ (",
+          {
+           "t": "¬q ∨ r",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": [
+          "Ley del condicional:",
+          "a → b ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "¬[p ∨ ¬(q → r)] ≡ ¬p ∧ (¬q ∨ r)",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: p ∨ ¬(q → r) es la negación de ¬p ∧ (q → r), la proposición del enunciado. Por eso, al negarla, se vuelve a ella.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "marcador": true,
+   "enunciado": "Responda cada pregunta. En todos los casos justifique su respuesta.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si el valor de verdad de p → q es verdadero ¿puede determinar el valor de verdad de ¬p ∨ (p → q)?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "¬p ∨ (p → q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "¬p ∨ ",
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Reemplazar",
+          "p → q = V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": [
+          "Ley de dominación:",
+          "a ∨ V ≡ V"
+         ]
+        },
+        {
+         "der": "¬p ∨ (p → q) = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Sí, se puede determinar: es verdadero, sin importar el valor de p.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Si el valor de verdad de (p ⊻ q) → p es falso ¿puede determinar el valor de verdad de q?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ⊻ q) → p = F"
+        },
+        {
+         "der": "p ⊻ q = V  y  p = F",
+         "nota": [
+          "→ es F sólo si",
+          "V → F"
+         ]
+        },
+        {
+         "der": "q = V",
+         "nota": [
+          "⊻ es V si valen",
+          "distinto, y p = F"
+         ]
+        },
+        {
+         "der": "q = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Sí, se puede determinar: q es verdadera.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Si p ∧ ¬q es verdadero ¿se puede determinar el valor de verdad de (p ∧ q) ↔ (p ∨ q)?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "p ∧ ¬q = V"
+        },
+        {
+         "der": "p = V  y  ¬q = V",
+         "nota": [
+          "∧ es V sólo si",
+          "las dos son V"
+         ]
+        },
+        {
+         "der": "p = V  y  q = F",
+         "color": "azul",
+         "nota": "¬q = V ⇒ q = F"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ q) ↔ (p ∨ q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ") ↔ (",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F ↔ (V ∨ F)",
+         "nota": "V ∧ F es F"
+        },
+        {
+         "rel": "=",
+         "der": "F ↔ V",
+         "nota": "V ∨ F es V"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": [
+          "↔ es F si los dos",
+          "valen distinto"
+         ]
+        },
+        {
+         "der": "(p ∧ q) ↔ (p ∨ q) = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Sí, se puede determinar: es falso.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si ¬p ∧ ¬q es verdadero ¿se puede determinar el valor de verdad de (p ∧ q) ↔ (p ∨ q)?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "¬p ∧ ¬q = V"
+        },
+        {
+         "der": "¬p = V  y  ¬q = V",
+         "nota": [
+          "∧ es V sólo si",
+          "las dos son V"
+         ]
+        },
+        {
+         "der": "p = F  y  q = F",
+         "color": "azul",
+         "nota": "Negar los dos"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ q) ↔ (p ∨ q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ") ↔ (",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F ↔ (F ∨ F)",
+         "nota": "F ∧ F es F"
+        },
+        {
+         "rel": "=",
+         "der": "F ↔ F",
+         "nota": "F ∨ F es F"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": [
+          "↔ es V si los dos",
+          "valen igual"
+         ]
+        },
+        {
+         "der": "(p ∧ q) ↔ (p ∨ q) = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Sí, se puede determinar: es verdadero.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Halle el valor de verdad de (p ∧ ¬q) → (q ∨ ¬p) si q es verdad.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ ¬q) → (q ∨ ¬p)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(p ∧ ¬",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") → (",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ¬p)"
+         ],
+         "nota": [
+          "Reemplazar",
+          "q = V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(p ∧ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ") → (V ∨ ¬p)"
+         ],
+         "nota": "Negar: ¬V = F",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " → (V ∨ ¬p)"
+         ],
+         "nota": [
+          "Ley de dominación:",
+          "a ∧ F ≡ F"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "F → ",
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de dominación:",
+          "V ∨ a ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "F → V es V"
+        },
+        {
+         "der": "(p ∧ ¬q) → (q ∨ ¬p) = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Es verdadera, cualquiera sea el valor de p.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "Halle el valor de verdad de (p → q) ∧ (p ∧ ¬q) si q es verdad.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p → q) ∧ (p ∧ ¬q)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(p → ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ") ∧ (p ∧ ¬",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": [
+          "Reemplazar",
+          "q = V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(p → V) ∧ (p ∧ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Negar: ¬V = F",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "(p → V) ∧ ",
+          {
+           "t": "F",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de dominación:",
+          "a ∧ F ≡ F"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": [
+          "Ley de dominación:",
+          "a ∧ F ≡ F"
+         ]
+        },
+        {
+         "der": "(p → q) ∧ (p ∧ ¬q) = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Es falsa, cualquiera sea el valor de p.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 9,
+   "marcador": true,
+   "enunciado": "Simplifique las siguientes expresiones:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(p ∨ q) → (¬p ∧ q)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ∨ q) → (¬p ∧ q)"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬(p ∨ q) ∨",
+           "color": "producto"
+          },
+          " (¬p ∧ q)"
+         ],
+         "nota": [
+          "Ley del condicional:",
+          "a → b ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "(¬p ∧ ¬q)",
+           "color": "producto"
+          },
+          " ∨ (¬p ∧ q)"
+         ],
+         "nota": [
+          "Ley de De Morgan:",
+          "¬(p ∨ q) ≡ ¬p ∧ ¬q"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬p ∧ (¬q ∨ q)",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Inversa distributiva:",
+          "(a ∧ b) ∨ (a ∧ c) ≡ a ∧ (b ∨ c)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "¬p ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "¬q ∨ q ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬p",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "a ∧ V ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "(p ∨ q) → (¬p ∧ q) ≡ ¬p",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "[(p ∧ q) ∨ r] ∧ ¬q",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "[(p ∧ q) ∨ r] ∧ ¬q"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "[(p ∧ q) ∧ ¬q] ∨ (r ∧ ¬q)",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Propiedad distributiva:",
+          "(a ∨ b) ∧ c ≡ (a ∧ c) ∨ (b ∧ c)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "(p ∧ q ∧ ¬q)",
+           "color": "producto"
+          },
+          " ∨ (r ∧ ¬q)"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "quitar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[p ∧ ",
+          {
+           "t": "(q ∧ ¬q)",
+           "color": "producto"
+          },
+          "] ∨ (r ∧ ¬q)"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "agregar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∧ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          ") ∨ (r ∧ ¬q)"
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "q ∧ ¬q ≡ F"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∨ (r ∧ ¬q)"
+         ],
+         "nota": [
+          "Ley de dominación:",
+          "a ∧ F ≡ F"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "r ∧ ¬q",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "F ∨ a ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "[(p ∧ q) ∨ r] ∧ ¬q ≡ r ∧ ¬q",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "[(p → q) → q] → (p ∨ q)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "[(p → q) → q] → (p ∨ q)"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[",
+          {
+           "t": "(¬p ∨ q)",
+           "color": "producto"
+          },
+          " → q] → (p ∨ q)"
+         ],
+         "nota": [
+          "Ley del condicional:",
+          "a → b ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[",
+          {
+           "t": "¬(¬p ∨ q) ∨ q",
+           "color": "producto"
+          },
+          "] → (p ∨ q)"
+         ],
+         "nota": [
+          "Ley del condicional:",
+          "a → b ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[",
+          {
+           "t": "(¬¬p ∧ ¬q)",
+           "color": "producto"
+          },
+          " ∨ q] → (p ∨ q)"
+         ],
+         "nota": [
+          "Ley de De Morgan:",
+          "¬(a ∨ b) ≡ ¬a ∧ ¬b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[(",
+          {
+           "t": "p",
+           "color": "producto"
+          },
+          " ∧ ¬q) ∨ q] → (p ∨ q)"
+         ],
+         "nota": [
+          "Ley de involución:",
+          "¬¬a ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[",
+          {
+           "t": "(p ∨ q) ∧ (¬q ∨ q)",
+           "color": "producto"
+          },
+          "] → (p ∨ q)"
+         ],
+         "nota": [
+          "Propiedad distributiva:",
+          "(a ∧ b) ∨ c ≡ (a ∨ c) ∧ (b ∨ c)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[(p ∨ q) ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          "] → (p ∨ q)"
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "¬q ∨ q ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "(p ∨ q)",
+           "color": "producto"
+          },
+          " → (p ∨ q)"
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "a ∧ V ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬(p ∨ q) ∨",
+           "color": "producto"
+          },
+          " (p ∨ q)"
+         ],
+         "nota": [
+          "Ley del condicional:",
+          "a → b ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "¬a ∨ a ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "[(p → q) → q] → (p ∨ q) ≡ V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "La expresión es una tautología.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 10,
+   "marcador": true,
+   "enunciado": "Determinar el valor de verdad de las siguientes proposiciones:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: para probar que un «para todo» es falso alcanza con un contraejemplo; para probar que un «existe» es verdadero alcanza con un ejemplo. Un «existe» falso se prueba mostrando que ningún valor lo cumple.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "∀x ∈ ℕ, x + 2 ≥ 5",
+     "bloques": [
+      {
+       "texto": "La proposición es falsa. Se demuestra con un contraejemplo:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x = 1  ⇒  1 + 2 ≥ 5"
+        },
+        {
+         "der": "                 3 ≥ 5"
+        },
+        {
+         "der": "3 ≥ 5 es falsa",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Para x = 1 la proposición es falsa, por lo tanto no se cumple para todo x natural.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀x ∈ ℕ, x + 2 ≥ 5 es falsa",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "∃x ∈ ℕ / x + 5 = 0",
+     "bloques": [
+      {
+       "texto": "Se resuelve la ecuación para ver si alguna solución es un número natural:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "izq": "x + 5",
+         "rel": "=",
+         "der": "0"
+        },
+        {
+         "der": [
+          "x + 5 ",
+          {
+           "t": "− 5",
+           "color": "suma"
+          },
+          " = 0 ",
+          {
+           "t": "− 5",
+           "color": "suma"
+          }
+         ],
+         "nota": [
+          "Restar 5 en los",
+          "dos miembros"
+         ],
+         "notaColor": "suma"
+        },
+        {
+         "izq": "x",
+         "rel": "=",
+         "der": "−5"
+        }
+       ]
+      },
+      {
+       "texto": "La única solución es x = −5 y −5 ∉ ℕ, por lo tanto ningún número natural cumple x + 5 = 0.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∃x ∈ ℕ / x + 5 = 0 es falsa",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "∀x ∈ ℚ, x² ≥ 9",
+     "bloques": [
+      {
+       "texto": "La proposición es falsa. Se demuestra con un contraejemplo:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x = 0  ⇒  0² ≥ 9"
+        },
+        {
+         "der": "               0 ≥ 9"
+        },
+        {
+         "der": "0 ≥ 9 es falsa",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Para x = 0 (que es racional) la proposición es falsa, por lo tanto no se cumple para todo x racional.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀x ∈ ℚ, x² ≥ 9 es falsa",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si x ∈ ℝ, x² > 0",
+     "bloques": [
+      {
+       "texto": "«Si x ∈ ℝ, x² > 0» dice que todo número real tiene cuadrado positivo: ∀x ∈ ℝ, x² > 0. Es falsa y se demuestra con un contraejemplo:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x = 0  ⇒  0² > 0"
+        },
+        {
+         "der": "               0 > 0"
+        },
+        {
+         "der": "0 > 0 es falsa",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Para x = 0 la proposición es falsa, por lo tanto no se cumple para todo x real.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀x ∈ ℝ, x² > 0 es falsa",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "∀x ∈ ℝ, x⁰ = 1",
+     "bloques": [
+      {
+       "texto": "La proposición es falsa. Se demuestra con un contraejemplo:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x = 0  ⇒  0⁰ = 1"
+        }
+       ]
+      },
+      {
+       "texto": "0⁰ es una expresión indeterminada (no está definida), así que 0⁰ = 1 no es verdadera. Para x = 0 la proposición es falsa, por lo tanto no se cumple para todo x real.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀x ∈ ℝ, x⁰ = 1 es falsa",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: x⁰ = 1 vale para todo x ≠ 0.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "∃x ∈ ℝ / x⁻¹ = 1/x",
+     "bloques": [
+      {
+       "texto": "La proposición es verdadera. Para probar que existe, alcanza con un valor de x que la cumpla:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "x = 2  ⇒  2⁻¹ = ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ]
+        },
+        {
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ],
+         "nota": [
+          "Definición de",
+          "potencia de exponente −1"
+         ]
+        },
+        {
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " es verdadera"
+         ],
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "∃x ∈ ℝ / x⁻¹ = 1/x es verdadera",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: la igualdad vale para todo x ≠ 0.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "g",
+     "enunciado": "∀x ∈ ℝ / (x² − 4)/(x + 2) = x − 2",
+     "bloques": [
+      {
+       "texto": "La proposición es falsa. Se demuestra con un contraejemplo:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "x = −2  ⇒  ",
+          {
+           "frac": [
+            "(−2)² − 4",
+            "−2 + 2"
+           ]
+          },
+          " = −2 − 2"
+         ]
+        },
+        {
+         "der": [
+          "               ",
+          {
+           "frac": [
+            "4 − 4",
+            "0"
+           ]
+          },
+          " = −4"
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "La división por 0 no está definida, así que para x = −2 el miembro izquierdo no existe y la igualdad es falsa. Por lo tanto no se cumple para todo x real.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∀x ∈ ℝ / (x² − 4)/(x + 2) = x − 2 es falsa",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: la igualdad vale para todo x ≠ −2, porque x² − 4 = (x − 2)(x + 2).",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "h",
+     "enunciado": "∃x ∈ ℝ / x² − 9 = 0",
+     "bloques": [
+      {
+       "texto": "La proposición es verdadera. Para probar que existe, alcanza con un valor de x que la cumpla:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x = 3  ⇒  3² − 9 = 0"
+        },
+        {
+         "der": "               9 − 9 = 0"
+        },
+        {
+         "der": "                     0 = 0"
+        },
+        {
+         "der": "0 = 0 es verdadera",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "∃x ∈ ℝ / x² − 9 = 0 es verdadera",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 11,
+   "marcador": true,
+   "enunciado": "Simbolizar el siguiente circuito:",
+   "bloques": [
+    {
+     "generador": "tabla",
+     "op": {
+      "filas": [
+       {
+        "texto": "(¬p ∧ ¬q) ∨ q",
+        "color": "#1e1e1e"
+       }
+      ],
+      "nVars": 2,
+      "nombres": "p, q",
+      "tamTexto": "M",
+      "fuente": "normal",
+      "intermedias": false,
+      "colorResultado": true,
+      "clasificar": false,
+      "mostrarTabla": false,
+      "simplificar": false,
+      "interruptores": true,
+      "diseno": "abierto",
+      "circuitoDe": "original",
+      "titulos": false
+     }
+    },
+    {
+     "texto": "¬p y ¬q están en serie (∧), y esa rama está en paralelo (∨) con q.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "Fórmula:  (¬p ∧ ¬q) ∨ q",
+       "caja": "azul",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: en serie se escribe ∧ (pasa corriente si los dos están cerrados) y en paralelo ∨ (pasa si alguno está cerrado).",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 12,
+   "marcador": true,
+   "enunciado": "Simplificar los siguientes circuitos",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Simplificar el circuito.",
+     "bloques": [
+      {
+       "texto": "Circuito de la consigna:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "q ∧ [(q ∨ ¬p) ∨ (¬q ∨ p)] ∧ ¬p",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      },
+      {
+       "texto": "q en serie con dos bloques en paralelo (q ∥ ¬p y ¬q ∥ p) y en serie con ¬p.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "q ∧ [(q ∨ ¬p) ∨ (¬q ∨ p)] ∧ ¬p"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "q ∧ ",
+          {
+           "t": "(q ∨ ¬p ∨ ¬q ∨ p)",
+           "color": "producto"
+          },
+          " ∧ ¬p"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "quitar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "q ∧ (q ∨ ",
+          {
+           "t": "¬q ∨ ¬p",
+           "color": "producto"
+          },
+          " ∨ p) ∧ ¬p"
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "q ∧ [",
+          {
+           "t": "(q ∨ ¬q)",
+           "color": "producto"
+          },
+          " ∨ ¬p ∨ p] ∧ ¬p"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "agregar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "q ∧ (",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ ¬p ∨ p) ∧ ¬p"
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "q ∨ ¬q ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "q ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∧ ¬p"
+         ],
+         "nota": [
+          "Ley de dominación:",
+          "V ∨ a ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "q ∧ ¬p",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "a ∧ V ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "q ∧ [(q ∨ ¬p) ∨ (¬q ∨ p)] ∧ ¬p ≡ q ∧ ¬p",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Circuito simplificado:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "q ∧ ¬p",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Simplificar el circuito.",
+     "bloques": [
+      {
+       "texto": "Circuito de la consigna:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "(p ∧ q) ∨ [¬p ∧ (¬q ∨ p ∨ q)]",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      },
+      {
+       "texto": "p y q en serie, en paralelo con la rama de ¬p en serie con el bloque ¬q ∥ p ∥ q.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ q) ∨ [¬p ∧ (¬q ∨ p ∨ q)]"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∧ q) ∨ [¬p ∧ (¬q ∨ ",
+          {
+           "t": "q ∨ p",
+           "color": "producto"
+          },
+          ")]"
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∧ q) ∨ [¬p ∧ (",
+          {
+           "t": "(¬q ∨ q)",
+           "color": "producto"
+          },
+          " ∨ p)]"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "agregar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∧ q) ∨ [¬p ∧ (",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ p)]"
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "¬q ∨ q ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∧ q) ∨ (¬p ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": [
+          "Ley de dominación:",
+          "V ∨ a ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∧ q) ∨ ",
+          {
+           "t": "¬p",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "a ∧ V ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬p ∨ (p ∧ q)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬p ∨ q",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Absorción parcial:",
+          "¬a ∨ (a ∧ b) ≡ ¬a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "(p ∧ q) ∨ [¬p ∧ (¬q ∨ p ∨ q)] ≡ ¬p ∨ q",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Circuito simplificado:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬p ∨ q",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Simplificar el circuito.",
+     "bloques": [
+      {
+       "texto": "Circuito de la consigna:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "(p ∧ q) ∨ [(¬p ∨ r) ∧ ¬q]",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 3,
+        "nombres": "p, q, r",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      },
+      {
+       "texto": "p y q en serie, en paralelo con la rama del bloque ¬p ∥ r en serie con ¬q.",
+       "color": "azul"
+      },
+      {
+       "texto": "El circuito no se puede simplificar: ninguna ley reduce la cantidad de interruptores (tiene 5 y no hay un circuito equivalente con menos).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ q) ∨ [(¬p ∨ r) ∧ ¬q]",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: aplicando la distributiva se obtiene (p ∧ q) ∨ (¬p ∧ ¬q) ∨ (¬q ∧ r), que tiene 6 interruptores: no es más simple.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Simplificar el circuito.",
+     "bloques": [
+      {
+       "texto": "Circuito de la consigna:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "[p ∨ q ∨ (¬q ∧ ¬p)] ∧ ¬p",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      },
+      {
+       "texto": "p, q y la rama ¬q – ¬p en paralelo, y ese bloque en serie con ¬p.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "[p ∨ q ∨ (¬q ∧ ¬p)] ∧ ¬p"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[p ∨ ",
+          {
+           "t": "(q ∨ (¬q ∧ ¬p))",
+           "color": "producto"
+          },
+          "] ∧ ¬p"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "agregar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[p ∨ (",
+          {
+           "t": "q ∨ ¬p",
+           "color": "producto"
+          },
+          ")] ∧ ¬p"
+         ],
+         "nota": [
+          "Absorción parcial:",
+          "a ∨ (¬a ∧ b) ≡ a ∨ b"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "(p ∨ q ∨ ¬p)",
+           "color": "producto"
+          },
+          " ∧ ¬p"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "quitar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(p ∨ ",
+          {
+           "t": "¬p ∨ q",
+           "color": "producto"
+          },
+          ") ∧ ¬p"
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[",
+          {
+           "t": "(p ∨ ¬p)",
+           "color": "producto"
+          },
+          " ∨ q] ∧ ¬p"
+         ],
+         "nota": [
+          "Propiedad asociativa:",
+          "agregar paréntesis"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∨ q) ∧ ¬p"
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "p ∨ ¬p ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∧ ¬p"
+         ],
+         "nota": [
+          "Ley de dominación:",
+          "V ∨ a ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "¬p",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "V ∧ a ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "[p ∨ q ∨ (¬q ∧ ¬p)] ∧ ¬p ≡ ¬p",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Circuito simplificado:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "¬p",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Simplificar el circuito.",
+     "bloques": [
+      {
+       "texto": "Circuito de la consigna:",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "[(q ∧ ¬p) ∨ (¬q ∧ q)] ∧ (¬q ∨ q)",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      },
+      {
+       "texto": "El bloque (q – ¬p) ∥ (¬q – q) en serie con el bloque ¬q ∥ q.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "[(q ∧ ¬p) ∨ (¬q ∧ q)] ∧ (¬q ∨ q)"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "[(q ∧ ¬p) ∨ ",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          "] ∧ (¬q ∨ q)"
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "¬q ∧ q ≡ F"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "(q ∧ ¬p)",
+           "color": "producto"
+          },
+          " ∧ (¬q ∨ q)"
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "a ∨ F ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          "(q ∧ ¬p) ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de complemento:",
+          "¬q ∨ q ≡ V"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": [
+          {
+           "t": "q ∧ ¬p",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "Ley de identidad:",
+          "a ∧ V ≡ a"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "der": "[(q ∧ ¬p) ∨ (¬q ∧ q)] ∧ (¬q ∨ q) ≡ q ∧ ¬p",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Circuito simplificado:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "generador": "tabla",
+       "op": {
+        "filas": [
+         {
+          "texto": "q ∧ ¬p",
+          "color": "#1e1e1e"
+         }
+        ],
+        "nVars": 2,
+        "nombres": "p, q",
+        "tamTexto": "M",
+        "fuente": "normal",
+        "intermedias": false,
+        "colorResultado": true,
+        "clasificar": false,
+        "mostrarTabla": false,
+        "simplificar": false,
+        "interruptores": true,
+        "diseno": "abierto",
+        "circuitoDe": "original",
+        "titulos": false
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
