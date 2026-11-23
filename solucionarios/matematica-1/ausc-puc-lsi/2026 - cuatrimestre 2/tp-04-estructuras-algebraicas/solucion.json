@@ -77,23 +77,68 @@
        "alLado": true
       },
       {
+       "texto": "Es decir:",
+       "color": "azul",
+       "unir": true
+      },
+      {
        "pasos": [
         {
          "rel": "",
-         "der": "a ∗ b"
-        },
-        {
-         "rel": "=",
-         "der": "ab + 3",
-         "nota": "Definición de ∗",
-         "notaColor": "producto"
+         "der": "∀a, b: a ∈ ℤ ∧ b ∈ ℤ → ab + 3 ∈ ℤ",
+         "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "ab es entero porque el producto de enteros es entero, y ab + 3 es entero porque la suma de enteros es entera.",
+       "texto": "La propiedad se cumple y debe demostrarse.",
        "color": "azul"
+      },
+      {
+       "seccion": "Demostración",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "der": "Hipótesis:  a ∈ ℤ  y  b ∈ ℤ",
+           "color": "azul"
+          },
+          {
+           "der": "Tesis:  ab + 3 ∈ ℤ",
+           "color": "azul"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "a ∗ b"
+          },
+          {
+           "rel": "=",
+           "der": "ab + 3",
+           "nota": "Definición de ∗",
+           "notaColor": "producto"
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "ab ∈ ℤ porque el producto de enteros es entero.",
+         "color": "azul"
+        },
+        {
+         "texto": "ab + 3 ∈ ℤ porque la suma de enteros es entera.",
+         "color": "azul"
+        },
+        {
+         "texto": "Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de composición interna en ℤ.",
+         "color": "azul"
+        }
+       ]
       },
       {
        "pasos": [
@@ -284,29 +329,74 @@
        "alLado": true
       },
       {
+       "texto": "Es decir:",
+       "color": "azul",
+       "unir": true
+      },
+      {
        "pasos": [
         {
          "rel": "",
-         "der": "a ∘ b"
-        },
-        {
-         "rel": "=",
-         "der": "(a + b)²",
-         "nota": "Definición de ∘",
-         "notaColor": "producto"
-        },
-        {
-         "rel": "=",
-         "der": "(a + b) · (a + b)",
-         "nota": "Definición de potencia",
-         "notaColor": "producto"
+         "der": "∀a, b: a ∈ ℤ ∧ b ∈ ℤ → (a + b)² ∈ ℤ",
+         "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "a + b es entero porque la suma de enteros es entera, y (a + b) · (a + b) es entero porque el producto de enteros es entero.",
+       "texto": "La propiedad se cumple y debe demostrarse.",
        "color": "azul"
+      },
+      {
+       "seccion": "Demostración",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "der": "Hipótesis:  a ∈ ℤ  y  b ∈ ℤ",
+           "color": "azul"
+          },
+          {
+           "der": "Tesis:  (a + b)² ∈ ℤ",
+           "color": "azul"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "a ∘ b"
+          },
+          {
+           "rel": "=",
+           "der": "(a + b)²",
+           "nota": "Definición de ∘",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": "(a + b) · (a + b)",
+           "nota": "Definición de potencia",
+           "notaColor": "producto"
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "a + b ∈ ℤ porque la suma de enteros es entera.",
+         "color": "azul"
+        },
+        {
+         "texto": "(a + b) · (a + b) ∈ ℤ porque el producto de enteros es entero.",
+         "color": "azul"
+        },
+        {
+         "texto": "Por lo tanto a ∘ b ∈ ℤ. Queda demostrado que ∘ es ley de composición interna en ℤ.",
+         "color": "azul"
+        }
+       ]
       },
       {
        "pasos": [
@@ -1598,23 +1688,68 @@
          "alLado": true
         },
         {
+         "texto": "Es decir:",
+         "color": "azul",
+         "unir": true
+        },
+        {
          "pasos": [
           {
            "rel": "",
-           "der": "x ∗ y"
-          },
-          {
-           "rel": "=",
-           "der": "x² + y²",
-           "nota": "Definición de ∗",
-           "notaColor": "producto"
+           "der": "∀x, y: x ∈ ℝ ∧ y ∈ ℝ → x² + y² ∈ ℝ",
+           "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "x² e y² son reales, y su suma también. Se cumple.",
+         "texto": "La propiedad se cumple y debe demostrarse.",
          "color": "azul"
+        },
+        {
+         "seccion": "Demostración",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "der": "Hipótesis:  x ∈ ℝ  y  y ∈ ℝ",
+             "color": "azul"
+            },
+            {
+             "der": "Tesis:  x² + y² ∈ ℝ",
+             "color": "azul"
+            }
+           ]
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "x ∗ y"
+            },
+            {
+             "rel": "=",
+             "der": "x² + y²",
+             "nota": "Definición de ∗",
+             "notaColor": "producto"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "x² = x · x ∈ ℝ e y² = y · y ∈ ℝ porque el producto de reales es real.",
+           "color": "azul"
+          },
+          {
+           "texto": "x² + y² ∈ ℝ porque la suma de reales es real.",
+           "color": "azul"
+          },
+          {
+           "texto": "Por lo tanto x ∗ y ∈ ℝ. Queda demostrado que ∗ es ley de composición interna en ℝ. Se cumple.",
+           "color": "azul"
+          }
+         ]
         }
        ]
       },
@@ -2075,47 +2210,107 @@
          "entero": true
         },
         {
+         "texto": "Es decir:",
+         "color": "azul",
+         "unir": true
+        },
+        {
          "pasos": [
           {
            "rel": "",
-           "der": "x ∗ y"
-          },
-          {
-           "rel": "=",
-           "der": "x + y + xy",
-           "nota": "Definición de ∗",
-           "notaColor": "producto"
-          },
-          {
-           "rel": "=",
-           "der": [
-            "x + y + xy",
-            {
-             "t": " + 1 − 1",
-             "color": "suma"
-            }
-           ],
-           "nota": "Sumar y restar 1",
-           "notaColor": "suma"
-          },
-          {
-           "rel": "=",
-           "der": [
-            {
-             "t": "(x + 1)(y + 1)",
-             "color": "producto"
-            },
-            " − 1"
-           ],
-           "nota": "Factorizar x + y + xy + 1",
-           "notaColor": "producto"
+           "der": "∀x, y: x ∈ ℚ − {−1} ∧ y ∈ ℚ − {−1} → x + y + xy ∈ ℚ − {−1}",
+           "color": "azul"
           }
          ],
          "entero": true
         },
         {
-         "texto": "El resultado es racional. Si x ≠ −1 e y ≠ −1, entonces x + 1 ≠ 0 e y + 1 ≠ 0, así que (x + 1)(y + 1) ≠ 0 y x ∗ y ≠ −1. Se cumple.",
+         "texto": "La propiedad se cumple y debe demostrarse.",
          "color": "azul"
+        },
+        {
+         "seccion": "Demostración",
+         "bloques": [
+          {
+           "texto": "Demostrar que ∗ es ley de composición interna en ℚ − {−1} equivale a demostrar que x + y + xy es racional y distinto de −1.",
+           "color": "azul"
+          },
+          {
+           "pasos": [
+            {
+             "der": "Hipótesis:  x ∈ ℚ,  x ≠ −1,  y ∈ ℚ  e  y ≠ −1",
+             "color": "azul"
+            },
+            {
+             "der": "Tesis:  x + y + xy ∈ ℚ  y  x + y + xy ≠ −1",
+             "color": "azul"
+            }
+           ]
+          },
+          {
+           "texto": "x + y + xy ∈ ℚ porque el producto y la suma de racionales son racionales.",
+           "color": "azul"
+          },
+          {
+           "texto": "Falta ver que es distinto de −1. Para eso se escribe x ∗ y de otra forma:",
+           "color": "azul"
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "x ∗ y"
+            },
+            {
+             "rel": "=",
+             "der": "x + y + xy",
+             "nota": "Definición de ∗",
+             "notaColor": "producto"
+            },
+            {
+             "rel": "=",
+             "der": [
+              "x + y + xy",
+              {
+               "t": " + 1 − 1",
+               "color": "suma"
+              }
+             ],
+             "nota": "Sumar y restar 1",
+             "notaColor": "suma"
+            },
+            {
+             "rel": "=",
+             "der": [
+              {
+               "t": "(x + 1)(y + 1)",
+               "color": "producto"
+              },
+              " − 1"
+             ],
+             "nota": "Factorizar x + y + xy + 1",
+             "notaColor": "producto"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "x + 1 ≠ 0 porque x ≠ −1, e y + 1 ≠ 0 porque y ≠ −1.",
+           "color": "azul"
+          },
+          {
+           "texto": "(x + 1)(y + 1) ≠ 0 porque el producto de dos números distintos de cero es distinto de cero.",
+           "color": "azul"
+          },
+          {
+           "texto": "(x + 1)(y + 1) − 1 ≠ −1 porque (x + 1)(y + 1) ≠ 0.",
+           "color": "azul"
+          },
+          {
+           "texto": "Por lo tanto x ∗ y ∈ ℚ y x ∗ y ≠ −1, es decir, x ∗ y ∈ ℚ − {−1}. Queda demostrado que ∗ es ley de composición interna en ℚ − {−1}. Se cumple.",
+           "color": "azul"
+          }
+         ]
         }
        ]
       },
@@ -4864,23 +5059,72 @@
        "alLado": true
       },
       {
+       "texto": "Es decir:",
+       "color": "azul",
+       "unir": true
+      },
+      {
        "pasos": [
         {
          "rel": "",
-         "der": "a ⊙ b"
-        },
-        {
-         "rel": "=",
-         "der": "∛(a³ + b³)",
-         "nota": "Definición de ⊙",
-         "notaColor": "producto"
+         "der": "∀a, b: a ∈ ℝ ∧ b ∈ ℝ → ∛(a³ + b³) ∈ ℝ",
+         "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "a³ + b³ es un número real y todo número real tiene raíz cúbica real. Se cumple.",
+       "texto": "La propiedad se cumple y debe demostrarse.",
        "color": "azul"
+      },
+      {
+       "seccion": "Demostración",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "der": "Hipótesis:  a ∈ ℝ  y  b ∈ ℝ",
+           "color": "azul"
+          },
+          {
+           "der": "Tesis:  ∛(a³ + b³) ∈ ℝ",
+           "color": "azul"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "a ⊙ b"
+          },
+          {
+           "rel": "=",
+           "der": "∛(a³ + b³)",
+           "nota": "Definición de ⊙",
+           "notaColor": "producto"
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "a³ ∈ ℝ y b³ ∈ ℝ porque el producto de reales es real.",
+         "color": "azul"
+        },
+        {
+         "texto": "a³ + b³ ∈ ℝ porque la suma de reales es real.",
+         "color": "azul"
+        },
+        {
+         "texto": "∛(a³ + b³) ∈ ℝ porque todo número real tiene raíz cúbica real.",
+         "color": "azul"
+        },
+        {
+         "texto": "Por lo tanto a ⊙ b ∈ ℝ. Queda demostrado que ⊙ es ley de composición interna en ℝ. Se cumple.",
+         "color": "azul"
+        }
+       ]
       }
      ]
     },
@@ -5440,23 +5684,68 @@
        "alLado": true
       },
       {
+       "texto": "Es decir:",
+       "color": "azul",
+       "unir": true
+      },
+      {
        "pasos": [
         {
          "rel": "",
-         "der": "a ∗ b"
-        },
-        {
-         "rel": "=",
-         "der": "a + b − 2",
-         "nota": "Definición de ∗",
-         "notaColor": "producto"
+         "der": "∀a, b: a ∈ ℤ ∧ b ∈ ℤ → a + b − 2 ∈ ℤ",
+         "color": "azul"
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
-       "texto": "La suma y la resta de enteros dan enteros, así que a + b − 2 ∈ ℤ. Se cumple.",
+       "texto": "La propiedad se cumple y debe demostrarse.",
        "color": "azul"
+      },
+      {
+       "seccion": "Demostración",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "der": "Hipótesis:  a ∈ ℤ  y  b ∈ ℤ",
+           "color": "azul"
+          },
+          {
+           "der": "Tesis:  a + b − 2 ∈ ℤ",
+           "color": "azul"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": "a ∗ b"
+          },
+          {
+           "rel": "=",
+           "der": "a + b − 2",
+           "nota": "Definición de ∗",
+           "notaColor": "producto"
+          }
+         ],
+         "entero": true
+        },
+        {
+         "texto": "a + b ∈ ℤ porque la suma de enteros es entera.",
+         "color": "azul"
+        },
+        {
+         "texto": "a + b − 2 ∈ ℤ porque la resta de enteros es entera.",
+         "color": "azul"
+        },
+        {
+         "texto": "Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de composición interna en ℤ. Se cumple.",
+         "color": "azul"
+        }
+       ]
       }
      ]
     },
@@ -6816,23 +7105,68 @@
          "alLado": true
         },
         {
+         "texto": "Es decir:",
+         "color": "azul",
+         "unir": true
+        },
+        {
          "pasos": [
           {
            "rel": "",
-           "der": "a ∗ b"
-          },
-          {
-           "rel": "=",
-           "der": "a + b + 1",
-           "nota": "Definición de ∗",
-           "notaColor": "producto"
+           "der": "∀a, b: a ∈ ℤ ∧ b ∈ ℤ → a + b + 1 ∈ ℤ",
+           "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "La suma de enteros es entera, así que a + b + 1 ∈ ℤ. Se cumple.",
+         "texto": "La propiedad se cumple y debe demostrarse.",
          "color": "azul"
+        },
+        {
+         "seccion": "Demostración",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "der": "Hipótesis:  a ∈ ℤ  y  b ∈ ℤ",
+             "color": "azul"
+            },
+            {
+             "der": "Tesis:  a + b + 1 ∈ ℤ",
+             "color": "azul"
+            }
+           ]
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "a ∗ b"
+            },
+            {
+             "rel": "=",
+             "der": "a + b + 1",
+             "nota": "Definición de ∗",
+             "notaColor": "producto"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "a + b ∈ ℤ porque la suma de enteros es entera.",
+           "color": "azul"
+          },
+          {
+           "texto": "a + b + 1 ∈ ℤ porque la suma de enteros es entera.",
+           "color": "azul"
+          },
+          {
+           "texto": "Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de composición interna en ℤ. Se cumple.",
+           "color": "azul"
+          }
+         ]
         }
        ]
       },
@@ -7364,23 +7698,68 @@
          "alLado": true
         },
         {
+         "texto": "Es decir:",
+         "color": "azul",
+         "unir": true
+        },
+        {
          "pasos": [
           {
            "rel": "",
-           "der": "a ∘ b"
-          },
-          {
-           "rel": "=",
-           "der": "a + b + ab",
-           "nota": "Definición de ∘",
-           "notaColor": "producto"
+           "der": "∀a, b: a ∈ ℤ ∧ b ∈ ℤ → a + b + ab ∈ ℤ",
+           "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "Sumas y productos de enteros dan enteros. Se cumple.",
+         "texto": "La propiedad se cumple y debe demostrarse.",
          "color": "azul"
+        },
+        {
+         "seccion": "Demostración",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "der": "Hipótesis:  a ∈ ℤ  y  b ∈ ℤ",
+             "color": "azul"
+            },
+            {
+             "der": "Tesis:  a + b + ab ∈ ℤ",
+             "color": "azul"
+            }
+           ]
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "a ∘ b"
+            },
+            {
+             "rel": "=",
+             "der": "a + b + ab",
+             "nota": "Definición de ∘",
+             "notaColor": "producto"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "ab ∈ ℤ porque el producto de enteros es entero.",
+           "color": "azul"
+          },
+          {
+           "texto": "a + b + ab ∈ ℤ porque la suma de enteros es entera.",
+           "color": "azul"
+          },
+          {
+           "texto": "Por lo tanto a ∘ b ∈ ℤ. Queda demostrado que ∘ es ley de composición interna en ℤ. Se cumple.",
+           "color": "azul"
+          }
+         ]
         }
        ]
       },
@@ -8264,23 +8643,68 @@
          "alLado": true
         },
         {
+         "texto": "Es decir:",
+         "color": "azul",
+         "unir": true
+        },
+        {
          "pasos": [
           {
            "rel": "",
-           "der": "a ⊕ b"
-          },
-          {
-           "rel": "=",
-           "der": "2ab",
-           "nota": "Definición de ⊕",
-           "notaColor": "producto"
+           "der": "∀a, b: a ∈ ℤ ∧ b ∈ ℤ → 2ab ∈ ℤ",
+           "color": "azul"
           }
          ],
-         "entero": true
+         "entero": true,
+         "alLado": true
         },
         {
-         "texto": "2ab es entero porque el producto de enteros es entero. Se cumple.",
+         "texto": "La propiedad se cumple y debe demostrarse.",
          "color": "azul"
+        },
+        {
+         "seccion": "Demostración",
+         "bloques": [
+          {
+           "pasos": [
+            {
+             "der": "Hipótesis:  a ∈ ℤ  y  b ∈ ℤ",
+             "color": "azul"
+            },
+            {
+             "der": "Tesis:  2ab ∈ ℤ",
+             "color": "azul"
+            }
+           ]
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "a ⊕ b"
+            },
+            {
+             "rel": "=",
+             "der": "2ab",
+             "nota": "Definición de ⊕",
+             "notaColor": "producto"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "ab ∈ ℤ porque el producto de enteros es entero.",
+           "color": "azul"
+          },
+          {
+           "texto": "2ab = 2 · ab ∈ ℤ porque el producto de enteros es entero.",
+           "color": "azul"
+          },
+          {
+           "texto": "Por lo tanto a ⊕ b ∈ ℤ. Queda demostrado que ⊕ es ley de composición interna en ℤ. Se cumple.",
+           "color": "azul"
+          }
+         ]
         }
        ]
       },
@@ -9123,23 +9547,80 @@
          "entero": true
         },
         {
+         "texto": "Es decir:",
+         "color": "azul",
+         "unir": true
+        },
+        {
          "pasos": [
           {
            "rel": "",
-           "der": "(a, b) · (c, d)"
+           "der": "∀(a, b), (c, d): (a, b) ∈ C ∧ (c, d) ∈ C",
+           "color": "azul"
           },
           {
-           "rel": "=",
-           "der": "(ac − bd, ad + bc)",
-           "nota": "Definición de ·",
-           "notaColor": "producto"
+           "rel": "",
+           "der": "      → (ac − bd, ad + bc) ∈ C",
+           "color": "azul"
           }
          ],
          "entero": true
         },
         {
-         "texto": "ac − bd y ad + bc son reales. Se cumple.",
+         "texto": "La propiedad se cumple y debe demostrarse.",
          "color": "azul"
+        },
+        {
+         "seccion": "Demostración",
+         "bloques": [
+          {
+           "texto": "Como C = ℝ × ℝ, demostrar que · es ley de composición interna en C equivale a demostrar que las dos componentes del resultado son números reales.",
+           "color": "azul"
+          },
+          {
+           "pasos": [
+            {
+             "der": "Hipótesis:  a, b, c, d ∈ ℝ",
+             "color": "azul"
+            },
+            {
+             "der": "Tesis:  ac − bd ∈ ℝ  y  ad + bc ∈ ℝ",
+             "color": "azul"
+            }
+           ]
+          },
+          {
+           "pasos": [
+            {
+             "rel": "",
+             "der": "(a, b) · (c, d)"
+            },
+            {
+             "rel": "=",
+             "der": "(ac − bd, ad + bc)",
+             "nota": "Definición de ·",
+             "notaColor": "producto"
+            }
+           ],
+           "entero": true
+          },
+          {
+           "texto": "ac, bd, ad y bc son reales porque el producto de reales es real.",
+           "color": "azul"
+          },
+          {
+           "texto": "ac − bd ∈ ℝ porque la resta de reales es real.",
+           "color": "azul"
+          },
+          {
+           "texto": "ad + bc ∈ ℝ porque la suma de reales es real.",
+           "color": "azul"
+          },
+          {
+           "texto": "Por lo tanto (a, b) · (c, d) ∈ C. Queda demostrado que · es ley de composición interna en C. Se cumple.",
+           "color": "azul"
+          }
+         ]
         }
        ]
       },

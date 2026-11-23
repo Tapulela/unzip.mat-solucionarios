@@ -333,6 +333,26 @@ texto «Reemplazando la factorización, la inecuación queda:».
   una terna, + es la primera operación y ∗ la segunda («a ∗ (b + c) = (a ∗ b) + (a ∗ c)»).
   Después va «Definición aplicada:» con el conjunto y las operaciones del ejercicio.
   Los dos rótulos llevan la fórmula en el mismo renglón, como en relaciones binarias.
+- **Ley de composición interna que se cumple: se demuestra** (como en la resolución de
+  la cátedra de 2024). Después de las dos definiciones:
+  1. «Es decir:» y la definición aplicada con la operación reemplazada por su
+     definición («∀a, b: a ∈ ℤ ∧ b ∈ ℤ → ab + 3 ∈ ℤ»), en el mismo renglón.
+  2. «La propiedad se cumple y debe demostrarse.»
+  3. Una sección «Demostración» con, en orden:
+     - si el conjunto se define por una condición (ℚ − {−1}, los pares, ℝ × ℝ), qué
+       equivale a demostrar, en palabras: «Demostrar que ∗ es ley de composición
+       interna en ℚ − {−1} equivale a demostrar que x + y + xy es racional y distinto
+       de −1»;
+     - «Hipótesis:» y «Tesis:», cada una en su renglón;
+     - el desarrollo de a ∗ b, con la definición en la nota;
+     - **una justificación por renglón**, de adentro hacia afuera, cada una con la
+       propiedad que la sostiene: «ab ∈ ℤ porque el producto de enteros es entero.»,
+       «ab + 3 ∈ ℤ porque la suma de enteros es entera.» No se juntan en una sola
+       oración ni se resumen («sumas y productos de enteros dan enteros»);
+     - la conclusión: «Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de
+       composición interna en ℤ.» (dentro de un estudio de estructura, con «Se
+       cumple.» al final).
+  Lo que no se cumple sigue siendo un contraejemplo.
 - **Miembro izquierdo y miembro derecho.** Si una propiedad es una igualdad, se
   plantea la igualdad, y cada miembro se desarrolla en su propia sección, con el
   título «Miembro izquierdo» o «Miembro derecho». Al final se comparan.
