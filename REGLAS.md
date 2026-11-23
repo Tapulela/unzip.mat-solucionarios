@@ -280,6 +280,23 @@ texto «Reemplazando la factorización, la inecuación queda:».
   Los nombres de las propiedades: reflexividad, arreflexividad,
   simetría, asimetría, antisimetría, transitividad, atransitividad. El condicional se
   escribe «→»; «⇒» se usa para «reemplazando queda».
+- **Definición aplicada con la condición reemplazada**: debajo de «Definición aplicada:» se
+  escribe una vez más la misma proposición, con el cuantificador, pero reemplazando cada
+  «(x, y) ∈ R» por la condición que define a R (con los valores que correspondan:
+  «(y, x) ∈ R₁» pasa a «y ≤ x»; «∉» pasa a la negación de la condición). Por ejemplo,
+  para R₁ = {(a, b) | a ≤ b}: «∀x, y, z ∈ ℤ: [x ≤ y ∧ y ≤ z] → x ≤ z». Las variables
+  van en color (x violeta, y naranja, z verde) para seguir cada reemplazo. Si la
+  condición tiene ∨ o ∧, se encierra entre paréntesis. Si la relación está dada por
+  extensión (una lista de pares), no hay condición y este renglón no va.
+- **Si el reemplazo no entra en un renglón**, se escribe en columnas, como en el
+  pizarrón: el cuantificador a la izquierda y cada condición en su propia columna,
+  partida en dos o más renglones, con los conectores (∧, →) entre las columnas:
+
+  ```
+  ∀x, y, z ∈ ℕ:  y es múl-   ∧  z es múl-   →  z es múl-
+                 tiplo de x     tiplo de y      tiplo de x
+  ```
+
 - **La reflexividad se define con una implicación**: ∀x: x ∈ A → (x, x) ∈ R (y la
   arreflexividad, ∀x: x ∈ A → (x, x) ∉ R). Cada caso evalúa también x ∈ A.
 - Cada caso evaluado va en su propio bloque de pasos con `"entero": true`, para que la
