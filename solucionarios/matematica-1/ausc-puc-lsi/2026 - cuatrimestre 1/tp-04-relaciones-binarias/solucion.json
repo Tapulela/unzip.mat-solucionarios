@@ -732,8 +732,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∈ R₁",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -832,8 +881,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₁ → (y, x) ∈ R₁",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -969,8 +1091,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₁ → (y, x) ∉ R₁",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -1106,8 +1301,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: [(x, y) ∈ R₁ ∧ (y, x) ∈ R₁] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -1246,8 +1526,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₁ ∧ (y, z) ∈ R₁] → (x, z) ∈ R₁",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -1446,8 +1831,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∈ R₂",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -1567,8 +2001,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∉ R₂",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -1667,8 +2150,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₂ → (y, x) ∈ R₂",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -1804,8 +2360,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₂ → (y, x) ∉ R₂",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -1928,8 +2557,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: [(x, y) ∈ R₂ ∧ (y, x) ∈ R₂] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -2073,8 +2787,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₂ ∧ (y, z) ∈ R₂] → (x, z) ∈ R₂",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -2273,8 +3092,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∈ R₃",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -2397,8 +3265,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₃ → (y, x) ∈ R₃",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -2561,8 +3502,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: [(x, y) ∈ R₃ ∧ (y, x) ∈ R₃] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -2765,8 +3791,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₃ ∧ (y, z) ∈ R₃] → (x, z) ∈ R₃",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -3026,8 +4157,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∈ R₄",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -3126,8 +4306,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₄ → (y, x) ∈ R₄",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -3246,8 +4499,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: [(x, y) ∈ R₄ ∧ (y, x) ∈ R₄] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -3378,8 +4716,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₄ ∧ (y, z) ∈ R₄] → (x, z) ∈ R₄",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₄",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -3574,8 +5017,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∈ R₅",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -3699,8 +5191,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∉ R₅",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -3807,8 +5348,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₅ → (y, x) ∈ R₅",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -3948,8 +5562,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₅ → (y, x) ∉ R₅",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -4080,8 +5767,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: [(x, y) ∈ R₅ ∧ (y, x) ∈ R₅] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -4220,8 +5992,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₅ ∧ (y, z) ∈ R₅] → (x, z) ∈ R₅",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -4403,8 +6280,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₅ ∧ (y, z) ∈ R₅] → (x, z) ∉ R₅",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₅",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -4607,8 +6589,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∈ R₆",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -4732,8 +6763,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℤ → (x, x) ∉ R₆",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℤ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -4857,8 +6937,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: (x, y) ∈ R₆ → (y, x) ∈ R₆",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -4985,8 +7138,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℤ: [(x, y) ∈ R₆ ∧ (y, x) ∈ R₆] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -5157,8 +7395,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₆ ∧ (y, z) ∈ R₆] → (x, z) ∈ R₆",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -5340,8 +7683,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℤ: [(x, y) ∈ R₆ ∧ (y, z) ∈ R₆] → (x, z) ∉ R₆",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℤ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₆",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -14433,8 +16881,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -14558,8 +17051,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -14683,8 +17221,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -14811,8 +17418,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -14983,8 +17675,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -15167,8 +17960,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -15385,8 +18279,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -15509,8 +18448,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -15673,8 +18681,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -15877,8 +18970,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -16120,8 +19314,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -16228,8 +19467,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -16356,8 +19664,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -16528,8 +19921,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -16718,8 +20212,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -16839,8 +20378,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -16960,8 +20544,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -17097,8 +20750,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -17234,8 +20956,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -17378,8 +21185,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -17558,8 +21466,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -17772,8 +21781,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -17876,8 +21930,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -17996,8 +22119,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -18160,8 +22368,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -18332,8 +22641,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -18538,8 +22948,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -18659,8 +23114,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -18780,8 +23280,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -18900,8 +23469,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -19064,8 +23718,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -19236,8 +23991,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -19442,8 +24298,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -19559,8 +24460,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -19676,8 +24622,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -19801,8 +24816,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -19926,8 +25010,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -20042,8 +25211,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -20204,8 +25474,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -20329,8 +25644,53 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ ℝ → (x, x) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ℝ → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -20454,8 +25814,77 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -20578,8 +26007,93 @@
        "unir": true
       },
       {
-       "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " = ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -20750,8 +26264,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -20934,8 +26549,109 @@
        "unir": true
       },
       {
-       "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": " ∈ ℝ: [(",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": " ∧ (",
+           "color": "azul"
+          },
+          {
+           "t": "y",
+           "color": "naranja"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "] → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "z",
+           "color": "verde"
+          },
+          {
+           "t": ") ∉ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -21252,8 +26968,65 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ A → (x, x) ∈ R₂",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "A",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "₂",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -21399,8 +27172,65 @@
        "unir": true
       },
       {
-       "texto": "∀x: x ∈ A → (x, x) ∈ R₃",
-       "color": "azul",
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "t": "∀",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ": ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": " ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "A",
+           "color": "azul"
+          },
+          {
+           "t": " → (",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ", ",
+           "color": "azul"
+          },
+          {
+           "t": "x",
+           "color": "violeta"
+          },
+          {
+           "t": ") ∈ ",
+           "color": "azul"
+          },
+          {
+           "t": "R",
+           "color": "azul"
+          },
+          {
+           "t": "₃",
+           "color": "azul"
+          }
+         ]
+        }
+       ],
        "alLado": true
       },
       {
@@ -22496,8 +28326,53 @@
      "unir": true
     },
     {
-     "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-     "color": "azul",
+     "pasos": [
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "∀",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ": ",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": " ∈ ℝ → (",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        }
+       ]
+      }
+     ],
      "alLado": true
     },
     {
@@ -22604,8 +28479,77 @@
      "unir": true
     },
     {
-     "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-     "color": "azul",
+     "pasos": [
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "∀",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": " ∈ ℝ: (",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        },
+        {
+         "t": " → (",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        }
+       ]
+      }
+     ],
      "alLado": true
     },
     {
@@ -22736,8 +28680,93 @@
      "unir": true
     },
     {
-     "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-     "color": "azul",
+     "pasos": [
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "∀",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": " ∈ ℝ: [(",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        },
+        {
+         "t": " ∧ (",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        },
+        {
+         "t": "] → ",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": " = ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        }
+       ]
+      }
+     ],
      "alLado": true
     },
     {
@@ -22908,8 +28937,109 @@
      "unir": true
     },
     {
-     "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-     "color": "azul",
+     "pasos": [
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "∀",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "z",
+         "color": "verde"
+        },
+        {
+         "t": " ∈ ℝ: [(",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        },
+        {
+         "t": " ∧ (",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "z",
+         "color": "verde"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        },
+        {
+         "t": "] → (",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "z",
+         "color": "verde"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        }
+       ]
+      }
+     ],
      "alLado": true
     },
     {
@@ -23092,8 +29222,109 @@
      "unir": true
     },
     {
-     "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-     "color": "azul",
+     "pasos": [
+      {
+       "rel": "",
+       "der": [
+        {
+         "t": "∀",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "z",
+         "color": "verde"
+        },
+        {
+         "t": " ∈ ℝ: [(",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        },
+        {
+         "t": " ∧ (",
+         "color": "azul"
+        },
+        {
+         "t": "y",
+         "color": "naranja"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "z",
+         "color": "verde"
+        },
+        {
+         "t": ") ∈ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        },
+        {
+         "t": "] → (",
+         "color": "azul"
+        },
+        {
+         "t": "x",
+         "color": "violeta"
+        },
+        {
+         "t": ", ",
+         "color": "azul"
+        },
+        {
+         "t": "z",
+         "color": "verde"
+        },
+        {
+         "t": ") ∉ ",
+         "color": "azul"
+        },
+        {
+         "t": "R",
+         "color": "azul"
+        }
+       ]
+      }
+     ],
      "alLado": true
     },
     {
@@ -23710,8 +29941,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℝ → (x, x) ∈ R₁",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℝ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -23818,8 +30098,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: (x, y) ∈ R₁ → (y, x) ∈ R₁",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -23959,8 +30312,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: (x, y) ∈ R₁ → (y, x) ∉ R₁",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -24100,8 +30526,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R₁ ∧ (y, x) ∈ R₁] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -24272,8 +30783,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℝ: [(x, y) ∈ R₁ ∧ (y, z) ∈ R₁] → (x, z) ∈ R₁",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -24466,8 +31082,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℝ: [(x, y) ∈ R₁ ∧ (y, z) ∈ R₁] → (x, z) ∉ R₁",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₁",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -24681,8 +31402,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℝ → (x, x) ∈ R₂",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℝ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -24806,8 +31576,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℝ → (x, x) ∉ R₂",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℝ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -24931,8 +31750,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: (x, y) ∈ R₂ → (y, x) ∈ R₂",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -25059,8 +31951,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R₂ ∧ (y, x) ∈ R₂] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -25231,8 +32208,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℝ: [(x, y) ∈ R₂ ∧ (y, z) ∈ R₂] → (x, z) ∈ R₂",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -25414,8 +32496,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℝ: [(x, y) ∈ R₂ ∧ (y, z) ∈ R₂] → (x, z) ∉ R₂",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₂",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -25629,8 +32816,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℝ → (x, x) ∈ R₃",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℝ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -25754,8 +32990,57 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℝ → (x, x) ∉ R₃",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℝ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -25879,8 +33164,81 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: (x, y) ∈ R₃ → (y, x) ∈ R₃",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃ → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -26007,8 +33365,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R₃ ∧ (y, x) ∈ R₃] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -26184,8 +33627,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℝ: [(x, y) ∈ R₃ ∧ (y, z) ∈ R₃] → (x, z) ∈ R₃",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -26372,8 +33920,113 @@
          "unir": true
         },
         {
-         "texto": "      ∀x, y, z ∈ ℝ: [(x, y) ∈ R₃ ∧ (y, z) ∈ R₃] → (x, z) ∉ R₃",
-         "color": "azul"
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃ ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "₃",
+             "color": "azul"
+            }
+           ]
+          }
+         ]
         },
         {
          "pasos": [
@@ -26613,8 +34266,53 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℝ → (x, x) ∈ R",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℝ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -26794,8 +34492,53 @@
          "unir": true
         },
         {
-         "texto": "∀x: x ∈ ℝ → (x, x) ∉ R",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ": ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " ∈ ℝ → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -26985,8 +34728,77 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∈ R",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": " → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -27282,8 +35094,77 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: (x, y) ∈ R → (y, x) ∉ R",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": " → (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -27574,8 +35455,93 @@
          "unir": true
         },
         {
-         "texto": "∀x, y ∈ ℝ: [(x, y) ∈ R ∧ (y, x) ∈ R] → x = y",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": " ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "] → ",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": " = ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -27911,8 +35877,109 @@
          "unir": true
         },
         {
-         "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∈ R",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": " ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {
@@ -28323,8 +36390,109 @@
          "unir": true
         },
         {
-         "texto": "∀x, y, z ∈ ℝ: [(x, y) ∈ R ∧ (y, z) ∈ R] → (x, z) ∉ R",
-         "color": "azul",
+         "pasos": [
+          {
+           "rel": "",
+           "der": [
+            {
+             "t": "∀",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": " ∈ ℝ: [(",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": " ∧ (",
+             "color": "azul"
+            },
+            {
+             "t": "y",
+             "color": "naranja"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∈ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            },
+            {
+             "t": "] → (",
+             "color": "azul"
+            },
+            {
+             "t": "x",
+             "color": "violeta"
+            },
+            {
+             "t": ", ",
+             "color": "azul"
+            },
+            {
+             "t": "z",
+             "color": "verde"
+            },
+            {
+             "t": ") ∉ ",
+             "color": "azul"
+            },
+            {
+             "t": "R",
+             "color": "azul"
+            }
+           ]
+          }
+         ],
          "alLado": true
         },
         {

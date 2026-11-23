@@ -285,7 +285,9 @@ texto «Reemplazando la factorización, la inecuación queda:».
   «(x, y) ∈ R» por la condición que define a R (con los valores que correspondan:
   «(y, x) ∈ R₁» pasa a «y ≤ x»; «∉» pasa a la negación de la condición). Por ejemplo,
   para R₁ = {(a, b) | a ≤ b}: «∀x, y, z ∈ ℤ: [x ≤ y ∧ y ≤ z] → x ≤ z». Las variables
-  van en color (x violeta, y naranja, z verde) para seguir cada reemplazo. Si la
+  van en color (x violeta, y naranja, z verde) **desde la definición aplicada**: ya en
+  ese renglón, y en el del reemplazo, con los mismos colores, para seguir cada variable
+  de uno al otro (la definición general queda sin colores). Si la
   condición tiene ∨ o ∧, se encierra entre paréntesis. Si la relación está dada por
   extensión (una lista de pares), no hay condición y este renglón no va.
 - **Si el reemplazo no entra en un renglón**, se escribe en columnas, como en el
