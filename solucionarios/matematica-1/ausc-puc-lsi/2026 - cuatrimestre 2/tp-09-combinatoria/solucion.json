@@ -582,7 +582,8 @@
       },
       {
        "texto": "Se pueden sentar de 720 formas.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -840,7 +841,8 @@
       },
       {
        "texto": "Se pueden ordenar de 36 formas.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       },
       {
        "texto": "Nota para el estudiante: se supone que todos los libros son distintos.",
@@ -993,7 +995,8 @@
       },
       {
        "texto": "Se pueden formar 60 números.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -1109,7 +1112,8 @@
       },
       {
        "texto": "Hay 336 podios posibles.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -1235,7 +1239,8 @@
       },
       {
        "texto": "Hay 358.800 contraseñas posibles.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     }
@@ -1408,7 +1413,8 @@
       },
       {
        "texto": "Se pueden formar 35 grupos.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -1549,7 +1555,8 @@
       },
       {
        "texto": "Se juegan 15 partidos.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -1690,7 +1697,8 @@
       },
       {
        "texto": "Hay 210 formas de elegir las preguntas.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     }
@@ -1838,7 +1846,8 @@
       },
       {
        "texto": "Hay 1.140 comités posibles.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -2128,7 +2137,8 @@
       },
       {
        "texto": "Hay 528 comités con 2 varones y 1 mujer.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -2319,7 +2329,8 @@
       },
       {
        "texto": "Hay 920 comités con al menos 1 mujer.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       },
       {
        "texto": "Nota para el estudiante: también se puede sumar caso por caso. Con 1 mujer hay 528 comités, con 2 mujeres hay C₈,₂ · C₁₂,₁ = 28 · 12 = 336 y con 3 mujeres hay C₈,₃ = 56. La suma 528 + 336 + 56 da 920, lo mismo que antes.",
@@ -2432,7 +2443,8 @@
       },
       {
        "texto": "MISIONES tiene 10.080 anagramas.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     },
@@ -2526,7 +2538,8 @@
       },
       {
        "texto": "1.260 anagramas empiezan con M.",
-       "color": "azul"
+       "color": "azul",
+       "alLado": "centro"
       }
      ]
     }
@@ -2678,7 +2691,8 @@
     },
     {
      "texto": "Se pueden ordenar de 72 formas.",
-     "color": "azul"
+     "color": "azul",
+     "alLado": "centro"
     }
    ]
   },
@@ -2820,7 +2834,8 @@
     },
     {
      "texto": "Hay 120 combinaciones posibles.",
-     "color": "azul"
+     "color": "azul",
+     "alLado": "centro"
     }
    ]
   }

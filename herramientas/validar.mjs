@@ -227,6 +227,7 @@ export function revisarCuadernillo(c, carpeta) {
   for (const k of ["cabecera", "pie"]) if (c[k] !== undefined && typeof c[k] !== "string") err(k, "tiene que ser un texto (puede ser vacío)");
   const est = c.estilo || {};
   if (est.partesEnImpar !== undefined && typeof est.partesEnImpar !== "boolean") av("estilo.partesEnImpar", "tendría que ser true o false");
+  if (est.escala !== undefined && !(typeof est.escala === "number" && est.escala >= 0.5 && est.escala <= 1)) av("estilo.escala", "tendría que ser un número de 0.5 a 1 (0.8 = hojas al 80 %)");
   if (!Array.isArray(c.partes) || !c.partes.length) { err("partes", "falta la lista de partes"); return { errores, avisos }; }
   let indices = 0;
   c.partes.forEach((p, i) => {

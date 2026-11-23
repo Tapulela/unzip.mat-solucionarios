@@ -271,7 +271,7 @@ Cada parte empieza en una hoja nueva. El de Matemática 1 está en
 | Campo | Qué es |
 |---|---|
 | `cabecera`, `pie` | Los generales: valen para las partes que no traen la suya (introducción, índice…). |
-| `estilo` | El de las partes de texto y del índice, y lo que no definan las soluciones. `partesEnImpar: true` (con `dobleFaz`) hace empezar cada parte en una hoja impar: si hace falta, deja una hoja en blanco antes, sin cabecera ni pie. |
+| `estilo` | El de las partes de texto y del índice, y lo que no definan las soluciones. `partesEnImpar: true` (con `dobleFaz`) hace empezar cada parte en una hoja impar: si hace falta, deja una hoja en blanco antes, sin cabecera ni pie. `escala` (de 0.5 a 1, por defecto 1) es la escala de las hojas con la que `pdf-cuadernillo.mjs` arma el PDF: con 0.8 todo se imprime al 80 % y entra más por hoja (el área útil pasa de 699 a 874 de ancho). Para revisarlo en la pizarra con el mismo reparto, el panel de Hojas A4 tiene que estar en esa escala. |
 | `partes[].tipo` | `caratula`, `texto`, `indice` o `solucion` (si falta: `solucion` si trae `ruta` o `solucion`, si no `texto`). |
 | `caratula` | `antetitulo`, `titulo`, `subtitulo`, `lineas` (lista) y `pie` (abajo de todo), centrados. La hoja no lleva cabecera, pie ni número. |
 | `texto` | `titulo` (con el mismo encabezado que una solución), `subtitulo` y `bloques` (los mismos bloques de los ejercicios). |

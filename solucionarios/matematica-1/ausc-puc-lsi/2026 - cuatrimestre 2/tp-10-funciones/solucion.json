@@ -601,7 +601,8 @@
         "titulos": false
        }
       }
-     ]
+     ],
+     "alLado": true
     },
     {
      "seccion": "Verificación con la función compuesta",

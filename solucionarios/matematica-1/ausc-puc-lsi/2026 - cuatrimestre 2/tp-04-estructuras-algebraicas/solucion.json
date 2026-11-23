@@ -127,12 +127,16 @@
          "entero": true
         },
         {
-         "texto": "ab ∈ ℤ porque el producto de enteros es entero.",
-         "color": "azul"
-        },
-        {
-         "texto": "ab + 3 ∈ ℤ porque la suma de enteros es entera.",
-         "color": "azul"
+         "pasos": [
+          {
+           "der": "ab ∈ ℤ porque el producto de enteros es entero.",
+           "color": "azul"
+          },
+          {
+           "der": "ab + 3 ∈ ℤ porque la suma de enteros es entera.",
+           "color": "azul"
+          }
+         ]
         },
         {
          "texto": "Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de composición interna en ℤ.",
@@ -385,12 +389,16 @@
          "entero": true
         },
         {
-         "texto": "a + b ∈ ℤ porque la suma de enteros es entera.",
-         "color": "azul"
-        },
-        {
-         "texto": "(a + b) · (a + b) ∈ ℤ porque el producto de enteros es entero.",
-         "color": "azul"
+         "pasos": [
+          {
+           "der": "a + b ∈ ℤ porque la suma de enteros es entera.",
+           "color": "azul"
+          },
+          {
+           "der": "(a + b) · (a + b) ∈ ℤ porque el producto de enteros es entero.",
+           "color": "azul"
+          }
+         ]
         },
         {
          "texto": "Por lo tanto a ∘ b ∈ ℤ. Queda demostrado que ∘ es ley de composición interna en ℤ.",
@@ -1738,12 +1746,16 @@
            "entero": true
           },
           {
-           "texto": "x² = x · x ∈ ℝ e y² = y · y ∈ ℝ porque el producto de reales es real.",
-           "color": "azul"
-          },
-          {
-           "texto": "x² + y² ∈ ℝ porque la suma de reales es real.",
-           "color": "azul"
+           "pasos": [
+            {
+             "der": "x² = x · x ∈ ℝ e y² = y · y ∈ ℝ porque el producto de reales es real.",
+             "color": "azul"
+            },
+            {
+             "der": "x² + y² ∈ ℝ porque la suma de reales es real.",
+             "color": "azul"
+            }
+           ]
           },
           {
            "texto": "Por lo tanto x ∗ y ∈ ℝ. Queda demostrado que ∗ es ley de composición interna en ℝ. Se cumple.",
@@ -5109,16 +5121,20 @@
          "entero": true
         },
         {
-         "texto": "a³ ∈ ℝ y b³ ∈ ℝ porque el producto de reales es real.",
-         "color": "azul"
-        },
-        {
-         "texto": "a³ + b³ ∈ ℝ porque la suma de reales es real.",
-         "color": "azul"
-        },
-        {
-         "texto": "∛(a³ + b³) ∈ ℝ porque todo número real tiene raíz cúbica real.",
-         "color": "azul"
+         "pasos": [
+          {
+           "der": "a³ ∈ ℝ y b³ ∈ ℝ porque el producto de reales es real.",
+           "color": "azul"
+          },
+          {
+           "der": "a³ + b³ ∈ ℝ porque la suma de reales es real.",
+           "color": "azul"
+          },
+          {
+           "der": "∛(a³ + b³) ∈ ℝ porque todo número real tiene raíz cúbica real.",
+           "color": "azul"
+          }
+         ]
         },
         {
          "texto": "Por lo tanto a ⊙ b ∈ ℝ. Queda demostrado que ⊙ es ley de composición interna en ℝ. Se cumple.",
@@ -5734,12 +5750,16 @@
          "entero": true
         },
         {
-         "texto": "a + b ∈ ℤ porque la suma de enteros es entera.",
-         "color": "azul"
-        },
-        {
-         "texto": "a + b − 2 ∈ ℤ porque la resta de enteros es entera.",
-         "color": "azul"
+         "pasos": [
+          {
+           "der": "a + b ∈ ℤ porque la suma de enteros es entera.",
+           "color": "azul"
+          },
+          {
+           "der": "a + b − 2 ∈ ℤ porque la resta de enteros es entera.",
+           "color": "azul"
+          }
+         ]
         },
         {
          "texto": "Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de composición interna en ℤ. Se cumple.",
@@ -7155,12 +7175,16 @@
            "entero": true
           },
           {
-           "texto": "a + b ∈ ℤ porque la suma de enteros es entera.",
-           "color": "azul"
-          },
-          {
-           "texto": "a + b + 1 ∈ ℤ porque la suma de enteros es entera.",
-           "color": "azul"
+           "pasos": [
+            {
+             "der": "a + b ∈ ℤ porque la suma de enteros es entera.",
+             "color": "azul"
+            },
+            {
+             "der": "a + b + 1 ∈ ℤ porque la suma de enteros es entera.",
+             "color": "azul"
+            }
+           ]
           },
           {
            "texto": "Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de composición interna en ℤ. Se cumple.",
@@ -7748,12 +7772,16 @@
            "entero": true
           },
           {
-           "texto": "ab ∈ ℤ porque el producto de enteros es entero.",
-           "color": "azul"
-          },
-          {
-           "texto": "a + b + ab ∈ ℤ porque la suma de enteros es entera.",
-           "color": "azul"
+           "pasos": [
+            {
+             "der": "ab ∈ ℤ porque el producto de enteros es entero.",
+             "color": "azul"
+            },
+            {
+             "der": "a + b + ab ∈ ℤ porque la suma de enteros es entera.",
+             "color": "azul"
+            }
+           ]
           },
           {
            "texto": "Por lo tanto a ∘ b ∈ ℤ. Queda demostrado que ∘ es ley de composición interna en ℤ. Se cumple.",
@@ -8693,12 +8721,16 @@
            "entero": true
           },
           {
-           "texto": "ab ∈ ℤ porque el producto de enteros es entero.",
-           "color": "azul"
-          },
-          {
-           "texto": "2ab = 2 · ab ∈ ℤ porque el producto de enteros es entero.",
-           "color": "azul"
+           "pasos": [
+            {
+             "der": "ab ∈ ℤ porque el producto de enteros es entero.",
+             "color": "azul"
+            },
+            {
+             "der": "2ab = 2 · ab ∈ ℤ porque el producto de enteros es entero.",
+             "color": "azul"
+            }
+           ]
           },
           {
            "texto": "Por lo tanto a ⊕ b ∈ ℤ. Queda demostrado que ⊕ es ley de composición interna en ℤ. Se cumple.",
@@ -9605,16 +9637,20 @@
            "entero": true
           },
           {
-           "texto": "ac, bd, ad y bc son reales porque el producto de reales es real.",
-           "color": "azul"
-          },
-          {
-           "texto": "ac − bd ∈ ℝ porque la resta de reales es real.",
-           "color": "azul"
-          },
-          {
-           "texto": "ad + bc ∈ ℝ porque la suma de reales es real.",
-           "color": "azul"
+           "pasos": [
+            {
+             "der": "ac, bd, ad y bc son reales porque el producto de reales es real.",
+             "color": "azul"
+            },
+            {
+             "der": "ac − bd ∈ ℝ porque la resta de reales es real.",
+             "color": "azul"
+            },
+            {
+             "der": "ad + bc ∈ ℝ porque la suma de reales es real.",
+             "color": "azul"
+            }
+           ]
           },
           {
            "texto": "Por lo tanto (a, b) · (c, d) ∈ C. Queda demostrado que · es ley de composición interna en C. Se cumple.",

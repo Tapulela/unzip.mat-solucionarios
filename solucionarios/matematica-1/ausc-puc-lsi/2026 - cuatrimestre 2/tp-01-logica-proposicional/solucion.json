@@ -1611,36 +1611,7 @@
          {
           "texto": "p → r",
           "color": "#1e1e1e"
-         }
-        ],
-        "nVars": 3,
-        "nombres": "p, q, r",
-        "valores": "VF",
-        "primero": "V",
-        "tamTexto": "M",
-        "fuente": "normal",
-        "intermedias": false,
-        "lineasFilas": true,
-        "colorResultado": true,
-        "clasificar": false,
-        "ocultar": false,
-        "mostrarTabla": true,
-        "simplificar": false,
-        "interruptores": false,
-        "titulos": false
-       }
-      },
-      {
-       "texto": "Continuación de la tabla:",
-       "color": "gris",
-       "tam": "S",
-       "unir": true,
-       "continua": "La tabla sigue en la siguiente hoja"
-      },
-      {
-       "generador": "tabla",
-       "op": {
-        "filas": [
+         },
          {
           "texto": "(p → q) ∧ (q → r) → (p → r)",
           "color": "#1971c2"
@@ -2399,36 +2370,7 @@
          {
           "texto": "p ∧ r",
           "color": "#1e1e1e"
-         }
-        ],
-        "nVars": 3,
-        "nombres": "p, q, r",
-        "valores": "VF",
-        "primero": "V",
-        "tamTexto": "M",
-        "fuente": "normal",
-        "intermedias": false,
-        "lineasFilas": true,
-        "colorResultado": true,
-        "clasificar": false,
-        "ocultar": false,
-        "mostrarTabla": true,
-        "simplificar": false,
-        "interruptores": false,
-        "titulos": false
-       }
-      },
-      {
-       "texto": "Continuación de la tabla:",
-       "color": "gris",
-       "tam": "S",
-       "unir": true,
-       "continua": "La tabla sigue en la siguiente hoja"
-      },
-      {
-       "generador": "tabla",
-       "op": {
-        "filas": [
+         },
          {
           "texto": "(p ∧ q) ∨ (p ∧ r)",
           "color": "#1971c2"
@@ -3149,36 +3091,7 @@
          {
           "texto": "p → r",
           "color": "#1e1e1e"
-         }
-        ],
-        "nVars": 3,
-        "nombres": "p, q, r",
-        "valores": "VF",
-        "primero": "V",
-        "tamTexto": "M",
-        "fuente": "normal",
-        "intermedias": false,
-        "lineasFilas": true,
-        "colorResultado": true,
-        "clasificar": false,
-        "ocultar": false,
-        "mostrarTabla": true,
-        "simplificar": false,
-        "interruptores": false,
-        "titulos": false
-       }
-      },
-      {
-       "texto": "Continuación de la tabla:",
-       "color": "gris",
-       "tam": "S",
-       "unir": true,
-       "continua": "La tabla sigue en la siguiente hoja"
-      },
-      {
-       "generador": "tabla",
-       "op": {
-        "filas": [
+         },
          {
           "texto": "[(p → q) ∧ (q → r)] → (p → r)",
           "color": "#1971c2"

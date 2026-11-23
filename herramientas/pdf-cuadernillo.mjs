@@ -5,7 +5,8 @@
 // local (tiene que estar corriendo: node servidor.js o «Iniciar pizarra.bat»),
 // importa el cuadernillo, imprime todas las hojas a PDF (como «Imprimir / PDF»)
 // y le agrega los marcadores y los enlaces del índice y de los QR (como
-// «Agregar marcadores y enlaces a un PDF…»). Las hojas se arman al 100 %.
+// «Agregar marcadores y enlaces a un PDF…»). Las hojas se arman con la escala de
+// estilo.escala del cuadernillo (0.8 = 80 %; por defecto 1, o sea 100 %).
 // No toca los tableros guardados del navegador de siempre.
 // Variables: PIZARRA_URL (por defecto http://127.0.0.1:3000) y CHROME (ruta del navegador).
 import fs from "node:fs";
@@ -79,8 +80,9 @@ try {
   await cdp("Page.enable");
   await cdp("Page.navigate", { url: PIZARRA + "/" });
   await cargar();
-  // hojas al 100 % (como la pizarra de siempre), y sin el puente del servidor MCP
-  await js(`localStorage.setItem("pizarra-hojas", JSON.stringify(Object.assign(JSON.parse(localStorage.getItem("pizarra-hojas") || "{}"), { impresion: 1 }))); true`);
+  // hojas con la escala del cuadernillo (por defecto 100 %), y sin el puente del servidor MCP
+  const escala = (cuadernillo.estilo && cuadernillo.estilo.escala) || 1;
+  await js(`localStorage.setItem("pizarra-hojas", JSON.stringify(Object.assign(JSON.parse(localStorage.getItem("pizarra-hojas") || "{}"), { impresion: ${escala} }))); true`);
   await cdp("Page.navigate", { url: PIZARRA + "/" });
   await cargar();
 

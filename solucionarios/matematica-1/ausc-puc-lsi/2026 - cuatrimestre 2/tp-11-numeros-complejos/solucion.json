@@ -7976,7 +7976,10 @@
        "texto": "Parte real a = √3 y parte imaginaria b = √3."
       },
       {
-       "texto": "El par (√3, √3) es el complejo √3 + √3 i. Como a > 0 y b > 0, está en el primer cuadrante y φ = α."
+       "texto": "El par (√3, √3) es el complejo √3 + √3 i."
+      },
+      {
+       "texto": "Como a > 0 y b > 0, z está en el primer cuadrante y φ = α."
       },
       {
        "pasos": [

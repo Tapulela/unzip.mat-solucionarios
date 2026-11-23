@@ -15,6 +15,7 @@
   "estado": "borrador"
  },
  "estilo": {
+  "escala": 0.8,
   "fuente": "normal",
   "tam": "M",
   "notas": true,
