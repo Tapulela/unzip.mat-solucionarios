@@ -419,6 +419,11 @@ texto «Reemplazando la factorización, la inecuación queda:».
   por ejemplo, «no está definida la clase de equivalencia porque la relación no es de
   equivalencia, ya que no cumple la propiedad simétrica», o «no se puede probar que ∗
   es distributiva porque los dos miembros son distintos».
+- **Una consigna mal redactada se dice, antes de interpretarla.** Aunque la corrección
+  sea evidente, primero va en la respuesta (en azul, no como nota) que la consigna está
+  mal escrita y por qué, con la definición que no se respeta. Por ejemplo, en «x² ∈ 1»:
+  ∈ relaciona un elemento con un conjunto, y 1 es un número, así que la expresión no
+  tiene sentido. Recién después se dice cómo se interpreta («x² = 1») y se resuelve.
 
 ## Conjuntos por extensión en varios renglones
 

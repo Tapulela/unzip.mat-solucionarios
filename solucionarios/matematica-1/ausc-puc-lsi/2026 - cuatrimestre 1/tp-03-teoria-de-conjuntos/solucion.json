@@ -1,0 +1,5129 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — T.P. 3: Teoría de conjuntos",
+ "subtitulo": "Año 2026 · Cuatrimestre 1",
+ "cabecera": "Matemática 1\nT.P. 3 - Teoría de conjuntos - Año 2026 - Cuatrimestre 1",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "TP 3",
+  "fuente": "Guía de Trabajos Prácticos: Teoría de Conjuntos, Matemática I, FCEQyN-UNaM, primer cuatrimestre 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "marcador": true,
+   "enunciado": "Define por extensión cada uno de los siguientes conjuntos, usando la notación «…» cuando sea necesario:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: para escribir los resultados, a los conjuntos de los ítems a, b, c, d y e los llamamos A, B, C, D y E.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "{x | x es entero y −3 < x < 4}",
+     "bloques": [
+      {
+       "texto": "Son los enteros mayores que −3 y menores que 4. Ni el −3 ni el 4 están, porque las desigualdades son estrictas.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {−2, −1, 0, 1, 2, 3}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "{x | x es entero positivo y x es un múltiplo de 3}",
+     "bloques": [
+      {
+       "texto": "Son los números 3 · 1, 3 · 2, 3 · 3, 3 · 4… Como son infinitos, se escriben los primeros y «…».",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {3, 6, 9, 12, 15, …}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "{x | (3x − 1)(x + 2) = 0}",
+     "bloques": [
+      {
+       "texto": "Un producto es igual a 0 cuando alguno de sus factores es 0, así que 3x − 1 = 0 o x + 2 = 0.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "notas": "arriba",
+       "pasos": [
+        {
+         "izq": "3x − 1",
+         "der": "0"
+        },
+        {
+         "izq": [
+          "3x − 1 ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "der": [
+          "0 ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 1 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "3x",
+         "der": "1"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "3x",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "der": [
+          {
+           "frac": [
+            "1",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por 3 en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "der": [
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "alLado": true,
+       "notas": "arriba",
+       "pasos": [
+        {
+         "izq": "x + 2",
+         "der": "0"
+        },
+        {
+         "izq": [
+          "x + 2 ",
+          {
+           "t": "− 2",
+           "color": "suma"
+          }
+         ],
+         "der": [
+          "0 ",
+          {
+           "t": "− 2",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 2 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "x",
+         "der": "−2"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "C = {−2, ",
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          "}"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{x | x es entero y (3x − 1)(x + 2) = 0}",
+     "bloques": [
+      {
+       "texto": "Las soluciones de (3x − 1)(x + 2) = 0 son 1/3 y −2 (ítem 1.c). De las dos, solo −2 es un número entero.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "D = {−2}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "{x | 2x es entero positivo}",
+     "bloques": [
+      {
+       "texto": "2x tiene que valer 1, 2, 3, 4, 5…, así que x vale la mitad de cada uno de esos números.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "E = {",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          ", 1, ",
+          {
+           "frac": [
+            "3",
+            "2"
+           ]
+          },
+          ", 2, ",
+          {
+           "frac": [
+            "5",
+            "2"
+           ]
+          },
+          ", 3, …}"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "marcador": true,
+   "enunciado": "Describe por extensión cada uno de los siguientes conjuntos o escribe ∅ si son vacíos:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: a los conjuntos de los ítems a, b, c, d, e y f los llamamos A, B, C, D, E y F. En la materia ℕ = {1, 2, 3, …}.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "{n | n ∈ ℕ y n² = 9}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "n²",
+         "der": "9"
+        },
+        {
+         "izq": [
+          {
+           "raiz": "n²"
+          }
+         ],
+         "der": [
+          {
+           "raiz": "9"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "|n|",
+         "der": "3",
+         "nota": "√(n²) = |n|",
+         "llave": true
+        },
+        {
+         "rama": "n₁",
+         "der": "3"
+        },
+        {
+         "rama": "n₂",
+         "der": "−3"
+        }
+       ]
+      },
+      {
+       "texto": "−3 ∉ ℕ, así que solo queda el 3.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {3}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "{x | x ∈ ℝ y x² = 9}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "x²",
+         "der": "9"
+        },
+        {
+         "izq": [
+          {
+           "raiz": "x²"
+          }
+         ],
+         "der": [
+          {
+           "raiz": "9"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "|x|",
+         "der": "3",
+         "nota": "√(x²) = |x|",
+         "llave": true
+        },
+        {
+         "rama": "x₁",
+         "der": "3"
+        },
+        {
+         "rama": "x₂",
+         "der": "−3"
+        }
+       ]
+      },
+      {
+       "texto": "Los dos son números reales.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {−3, 3}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "{n | n ∈ ℤ y 3 < |n| < 7}",
+     "bloques": [
+      {
+       "texto": "Si n es entero, |n| también es entero. Con 3 < |n| < 7, |n| vale 4, 5 o 6. Cada valor de |n| sale de dos enteros, uno positivo y otro negativo (|−4| = |4| = 4).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "C = {−6, −5, −4, 4, 5, 6}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{x | x ∈ ℝ, x < 1 y x ≥ 2}",
+     "bloques": [
+      {
+       "texto": "Ningún número real es menor que 1 y a la vez mayor o igual que 2, porque todo número mayor o igual que 2 también es mayor que 1.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "D = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "{x | x ∈ ℚ, x² = 3}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "x²",
+         "der": "3"
+        },
+        {
+         "izq": [
+          {
+           "raiz": "x²"
+          }
+         ],
+         "der": [
+          {
+           "raiz": "3"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "|x|",
+         "der": "√3",
+         "nota": "√(x²) = |x|",
+         "llave": true
+        },
+        {
+         "rama": "x₁",
+         "der": "√3"
+        },
+        {
+         "rama": "x₂",
+         "der": "−√3"
+        }
+       ]
+      },
+      {
+       "texto": "√3 y −√3 son números irracionales (no se pueden escribir como una fracción), así que no son elementos de ℚ.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "E = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "{3n + 1 | n ∈ ℕ y n ≤ 6}",
+     "bloques": [
+      {
+       "texto": "n toma los valores 1, 2, 3, 4, 5 y 6, y para cada uno se calcula 3n + 1:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "n",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+           ],
+           [
+            "3n + 1",
+            "4",
+            "7",
+            "10",
+            "13",
+            "16",
+            "19"
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "F = {4, 7, 10, 13, 16, 19}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "marcador": true,
+   "enunciado": "Sea X = {0, 1, 2}. Lista los elementos de cada uno de los siguientes conjuntos:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: a los conjuntos de los ítems a, b, c, d y e los llamamos A, B, C, D y E. Un elemento que aparece varias veces se escribe una sola vez.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "{z | z = 2x y x ∈ X}",
+     "bloques": [
+      {
+       "texto": "Para cada x de X se calcula z = 2x:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "x",
+            "0",
+            "1",
+            "2"
+           ],
+           [
+            "z = 2x",
+            "0",
+            "2",
+            "4"
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {0, 2, 4}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "{z | z = x + y donde x e y son elementos de X}",
+     "bloques": [
+      {
+       "texto": "Se suman todos los pares de elementos de X. En la tabla, x está en la columna de la izquierda e y en la fila de arriba:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "+",
+            "0",
+            "1",
+            "2"
+           ],
+           [
+            "0",
+            "0",
+            "1",
+            "2"
+           ],
+           [
+            "1",
+            "1",
+            "2",
+            "3"
+           ],
+           [
+            "2",
+            "2",
+            "3",
+            "4"
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {0, 1, 2, 3, 4}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "{z | z ∈ X o −z ∈ X}",
+     "bloques": [
+      {
+       "texto": "z ∈ X para z = 0, 1 y 2.",
+       "color": "azul"
+      },
+      {
+       "texto": "−z ∈ X para z = 0, −1 y −2, porque −0 = 0, −(−1) = 1 y −(−2) = 2.",
+       "color": "azul"
+      },
+      {
+       "texto": "Con «o» alcanza con que se cumpla una de las dos condiciones.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "C = {−2, −1, 0, 1, 2}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{z | x = z + y donde x e y son elementos de X}",
+     "bloques": [
+      {
+       "texto": "Se despeja z de la ecuación:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "x",
+         "der": "z + y"
+        },
+        {
+         "izq": [
+          "x ",
+          {
+           "t": "− y",
+           "color": "suma"
+          }
+         ],
+         "der": [
+          "z + y ",
+          {
+           "t": "− y",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar y en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "x − y",
+         "der": "z"
+        }
+       ]
+      },
+      {
+       "texto": "z es la resta x − y. En la tabla, x está en la columna de la izquierda e y en la fila de arriba:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "x − y",
+            "0",
+            "1",
+            "2"
+           ],
+           [
+            "0",
+            "0",
+            "−1",
+            "−2"
+           ],
+           [
+            "1",
+            "1",
+            "0",
+            "−1"
+           ],
+           [
+            "2",
+            "2",
+            "1",
+            "0"
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "D = {−2, −1, 0, 1, 2}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "{z | z es entero y z² ∈ X}",
+     "bloques": [
+      {
+       "texto": "z² tiene que valer 0, 1 o 2.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "izq": "z² = 0",
+         "rel": "⇒",
+         "der": "z = 0"
+        },
+        {
+         "izq": "z² = 1",
+         "rel": "⇒",
+         "der": "z = 1 o z = −1"
+        },
+        {
+         "izq": "z² = 2",
+         "rel": "⇒",
+         "der": "z = √2 o z = −√2, que no son enteros"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "E = {−1, 0, 1}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "marcador": true,
+   "enunciado": "Determina la cardinalidad de cada uno de los siguientes conjuntos:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: a los conjuntos de los ítems a, b, c, d y e los llamamos A, B, C, D y E. La cardinalidad de A es la cantidad de elementos de A, y se escribe |A|.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "{x | x es entero y 1/8 < x < 17/2}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "frac": [
+            "1",
+            "8"
+           ]
+          },
+          " < x < ",
+          {
+           "frac": [
+            "17",
+            "2"
+           ]
+          }
+         ]
+        },
+        {
+         "der": [
+          {
+           "t": "0,125",
+           "color": "producto"
+          },
+          " < x < ",
+          {
+           "t": "8,5",
+           "color": "producto"
+          }
+         ],
+         "nota": "Escribir las fracciones como decimales",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Los enteros mayores que 0,125 y menores que 8,5 son del 1 al 8.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {1, 2, 3, 4, 5, 6, 7, 8}",
+         "color": "azul"
+        },
+        {
+         "der": "|A| = 8",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "{x | x ∈ ℝ y √x es entero}",
+     "bloques": [
+      {
+       "texto": "√x solo es un número real si x ≥ 0, y en ese caso √x ≥ 0.",
+       "color": "azul"
+      },
+      {
+       "texto": "√x es entero cuando x es el cuadrado de un entero no negativo, porque",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "√0 = 0,  √1 = 1,  √4 = 2,  √9 = 3,  √16 = 4, …",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {0, 1, 4, 9, 16, …}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Hay un elemento por cada entero no negativo, así que B tiene infinitos elementos.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B es un conjunto infinito",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "{x | x ∈ ℝ, x² = 1 o 2x² = 1}",
+     "bloques": [
+      {
+       "texto": "Se resuelven las dos ecuaciones. Con «o», x es elemento si cumple alguna de las dos.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "notas": "arriba",
+       "pasos": [
+        {
+         "izq": "x²",
+         "der": "1"
+        },
+        {
+         "izq": [
+          {
+           "raiz": "x²"
+          }
+         ],
+         "der": [
+          {
+           "raiz": "1"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "|x|",
+         "der": "1",
+         "nota": "√(x²) = |x|",
+         "llave": true
+        },
+        {
+         "rama": "x₁",
+         "der": "1"
+        },
+        {
+         "rama": "x₂",
+         "der": "−1"
+        }
+       ]
+      },
+      {
+       "alLado": true,
+       "notas": "arriba",
+       "pasos": [
+        {
+         "izq": "2x²",
+         "der": "1"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "2x²",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "der": [
+          {
+           "frac": [
+            "1",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por 2 en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x²",
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ]
+        },
+        {
+         "izq": [
+          {
+           "raiz": "x²"
+          }
+         ],
+         "der": [
+          {
+           "raiz": {
+            "frac": [
+             "1",
+             "2"
+            ]
+           }
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "|x|",
+         "der": [
+          {
+           "raiz": {
+            "frac": [
+             "1",
+             "2"
+            ]
+           }
+          }
+         ],
+         "nota": "√(x²) = |x|",
+         "llave": true
+        },
+        {
+         "rama": "x₃",
+         "der": [
+          {
+           "raiz": {
+            "frac": [
+             "1",
+             "2"
+            ]
+           }
+          }
+         ]
+        },
+        {
+         "rama": "x₄",
+         "der": [
+          "− ",
+          {
+           "raiz": {
+            "frac": [
+             "1",
+             "2"
+            ]
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Los cuatro números son distintos.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "C = {−1, − ",
+          {
+           "raiz": {
+            "frac": [
+             "1",
+             "2"
+            ]
+           }
+          },
+          ", ",
+          {
+           "raiz": {
+            "frac": [
+             "1",
+             "2"
+            ]
+           }
+          },
+          ", 1}"
+         ],
+         "color": "azul"
+        },
+        {
+         "der": "|C| = 4",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{a, b, c, {a, b, c}}",
+     "bloques": [
+      {
+       "texto": "Sus elementos son a, b, c y {a, b, c}. El conjunto {a, b, c} cuenta como un solo elemento de D, aunque adentro tenga tres.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "|D| = 4",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "{a, {b, c}, {a, b, c}}",
+     "bloques": [
+      {
+       "texto": "Sus elementos son a, {b, c} y {a, b, c}.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "|E| = 3",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "marcador": true,
+   "enunciado": "Defina por extensión los siguientes subconjuntos de ℕ:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: a los conjuntos de los ítems a, b, c, d y e los llamamos A, B, C, D y E. En la materia ℕ = {1, 2, 3, …}.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "{x | x + 1 es par y x < 19/3}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": [
+          "x < ",
+          {
+           "frac": [
+            "19",
+            "3"
+           ]
+          }
+         ]
+        },
+        {
+         "der": [
+          "x < ",
+          {
+           "t": "6,33…",
+           "color": "producto"
+          }
+         ],
+         "nota": "Dividir 19 por 3",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Los naturales menores que 6,33… son 1, 2, 3, 4, 5 y 6. x + 1 es par cuando x es impar, así que quedan 1, 3 y 5.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {1, 3, 5}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "{x | x + 1 es impar y x < 22/3}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": [
+          "x < ",
+          {
+           "frac": [
+            "22",
+            "3"
+           ]
+          }
+         ]
+        },
+        {
+         "der": [
+          "x < ",
+          {
+           "t": "7,33…",
+           "color": "producto"
+          }
+         ],
+         "nota": "Dividir 22 por 3",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Los naturales menores que 7,33… son del 1 al 7. x + 1 es impar cuando x es par, así que quedan 2, 4 y 6.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {2, 4, 6}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "{2x − 1 | x ∈ ℕ y x < 32/5}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": [
+          "x < ",
+          {
+           "frac": [
+            "32",
+            "5"
+           ]
+          }
+         ]
+        },
+        {
+         "der": [
+          "x < ",
+          {
+           "t": "6,4",
+           "color": "producto"
+          }
+         ],
+         "nota": "Dividir 32 por 5",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "x toma los valores del 1 al 6, y para cada uno se calcula 2x − 1:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "x",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+           ],
+           [
+            "2x − 1",
+            "1",
+            "3",
+            "5",
+            "7",
+            "9",
+            "11"
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "C = {1, 3, 5, 7, 9, 11}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "{3x − 1 | x ∈ ℕ y 5 ≤ x ≤ 8}",
+     "bloques": [
+      {
+       "texto": "x toma los valores 5, 6, 7 y 8, y para cada uno se calcula 3x − 1:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": {
+          "tabla": [
+           [
+            "x",
+            "5",
+            "6",
+            "7",
+            "8"
+           ],
+           [
+            "3x − 1",
+            "14",
+            "17",
+            "20",
+            "23"
+           ]
+          ],
+          "lineas": true,
+          "alinear": "centro"
+         }
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "D = {14, 17, 20, 23}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "{n | n ∈ ℕ y 2n + 3 < 15}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "2n + 3",
+         "rel": "<",
+         "der": "15"
+        },
+        {
+         "izq": [
+          "2n + 3 ",
+          {
+           "t": "− 3",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "15 ",
+          {
+           "t": "− 3",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 3 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "2n",
+         "rel": "<",
+         "der": "12"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "2n",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            "12",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por 2 en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "n",
+         "rel": "<",
+         "der": "6"
+        }
+       ]
+      },
+      {
+       "texto": "Los naturales menores que 6 son del 1 al 5.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "E = {1, 2, 3, 4, 5}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "marcador": true,
+   "enunciado": "Para cada uno de los siguientes pares de conjuntos A y B definir por extensión A y B y decir si A ⊆ B, B ⊆ A o ninguna de las anteriores.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}. A ⊆ B quiere decir que todo elemento de A es elemento de B. Para ver que no se cumple, alcanza con un elemento de A que no esté en B.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A = {x ∈ ℕ | x es par y x² ≤ 149}\nB = {x ∈ ℕ | x + 1 es impar y x ≤ 10}",
+     "bloques": [
+      {
+       "texto": "Los cuadrados de los pares son 2² = 4, 4² = 16, 6² = 36, 8² = 64, 10² = 100, 12² = 144 y 14² = 196. Hasta el 12 son menores o iguales que 149, y desde el 14 ya son mayores.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {2, 4, 6, 8, 10, 12}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "x + 1 es impar cuando x es par.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {2, 4, 6, 8, 10}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Todo elemento de B está en A. En cambio, 12 ∈ A y 12 ∉ B, así que A ⊄ B.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B ⊆ A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A = {x ∈ ℕ | x es par y x² ≤ 130}\nB = {x ∈ ℕ | x + 1 es par y x ≤ 12}",
+     "bloques": [
+      {
+       "texto": "Los cuadrados de los pares son 2² = 4, 4² = 16, 6² = 36, 8² = 64, 10² = 100 y 12² = 144. Hasta el 10 son menores o iguales que 130, y desde el 12 ya son mayores.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {2, 4, 6, 8, 10}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "x + 1 es par cuando x es impar.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {1, 3, 5, 7, 9, 11}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "2 ∈ A y 2 ∉ B, así que A ⊄ B. 1 ∈ B y 1 ∉ A, así que B ⊄ A. No tienen elementos en común.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Ninguna de las anteriores, A ⊄ B y B ⊄ A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "A = {x ∈ ℕ | x es impar y x² ≥ 4 y x² ≤ 141}\nB = {x ∈ ℕ | x − 1 es par y x ≤ 9}",
+     "bloques": [
+      {
+       "texto": "Los cuadrados de los impares son 1² = 1, 3² = 9, 5² = 25, 7² = 49, 9² = 81, 11² = 121 y 13² = 169. El 1 no está porque 1 < 4, y desde el 13 son mayores que 141.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {3, 5, 7, 9, 11}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "x − 1 es par cuando x es impar.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {1, 3, 5, 7, 9}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "11 ∈ A y 11 ∉ B, así que A ⊄ B. 1 ∈ B y 1 ∉ A, así que B ⊄ A.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Ninguna de las anteriores, A ⊄ B y B ⊄ A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "A = {x ∈ ℕ | x es par y x² ≤ 150}\nB = {x ∈ ℕ | x − 1 es impar y x ≤ 11}",
+     "bloques": [
+      {
+       "texto": "Los cuadrados de los pares hasta el 12 son menores o iguales que 150 (12² = 144), y 14² = 196 ya es mayor.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = {2, 4, 6, 8, 10, 12}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "x − 1 es impar cuando x es par.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = {2, 4, 6, 8, 10}",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Todo elemento de B está en A. En cambio, 12 ∈ A y 12 ∉ B, así que A ⊄ B.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B ⊆ A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "marcador": true,
+   "enunciado": "En cada uno de los siguientes casos establece si x ∈ A, x ⊆ A, ambas cosas o ninguna:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: x ∈ A dice que x es uno de los elementos de A. x ⊆ A dice que x es un conjunto y que todos sus elementos están en A.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "x = {1}\nA = {1, 2, 3}",
+     "bloques": [
+      {
+       "texto": "{1} ∉ A porque los elementos de A son 1, 2 y 3, y ninguno es el conjunto {1}.",
+       "color": "azul"
+      },
+      {
+       "texto": "{1} ⊆ A porque su único elemento, 1, está en A.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Solo x ⊆ A (x ∉ A)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "x = {1}\nA = {{1}, {2}, {3}}",
+     "bloques": [
+      {
+       "texto": "{1} ∈ A porque {1} es uno de los tres elementos de A.",
+       "color": "azul"
+      },
+      {
+       "texto": "{1} ⊄ A porque 1 ∉ A (los elementos de A son conjuntos).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Solo x ∈ A (x ⊄ A)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "x = {1}\nA = {1, 2, {1, 2}}",
+     "bloques": [
+      {
+       "texto": "{1} ∉ A porque los elementos de A son 1, 2 y {1, 2}, y ninguno es {1}.",
+       "color": "azul"
+      },
+      {
+       "texto": "{1} ⊆ A porque 1 ∈ A.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Solo x ⊆ A (x ∉ A)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "x = {1, 2}\nA = {1, 2, {1, 2}}",
+     "bloques": [
+      {
+       "texto": "{1, 2} ∈ A porque {1, 2} es el tercer elemento de A.",
+       "color": "azul"
+      },
+      {
+       "texto": "{1, 2} ⊆ A porque 1 ∈ A y 2 ∈ A.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Ambas cosas, x ∈ A y x ⊆ A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "x = {1}\nA = {{1, 2, 3}}",
+     "bloques": [
+      {
+       "texto": "{1} ∉ A porque el único elemento de A es {1, 2, 3}, que es distinto de {1}.",
+       "color": "azul"
+      },
+      {
+       "texto": "{1} ⊄ A porque 1 ∉ A.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Ninguna, x ∉ A y x ⊄ A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "x = 1\nA = {{1}, {2}, {3}}",
+     "bloques": [
+      {
+       "texto": "1 ∉ A porque los elementos de A son {1}, {2} y {3}, y 1 no es ninguno de ellos (1 ≠ {1}).",
+       "color": "azul"
+      },
+      {
+       "texto": "1 ⊄ A porque 1 es un número y no un conjunto, así que no puede ser subconjunto de A.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Ninguna, x ∉ A y x ⊄ A",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "marcador": true,
+   "enunciado": "En cada uno de los siguientes casos, muestra que A ⊆ B, es decir, que todo elemento de A es un elemento de B.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A = {x | 2x² + 5x = 3}\nB = {x | 2x² + 17x + 27 = 18/x}",
+     "bloques": [
+      {
+       "texto": "Primero se buscan los elementos de A resolviendo su ecuación.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "2x² + 5x",
+         "der": "3"
+        },
+        {
+         "izq": [
+          "2x² + 5x ",
+          {
+           "t": "− 3",
+           "color": "suma"
+          }
+         ],
+         "der": [
+          "3 ",
+          {
+           "t": "− 3",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 3 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "2x² + 5x − 3",
+         "der": "0"
+        }
+       ]
+      },
+      {
+       "texto": "Es una ecuación de segundo grado. Se resuelve con la fórmula cuadrática.",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "a = ",
+          {
+           "t": "2",
+           "color": "a"
+          },
+          "    b = ",
+          {
+           "t": "5",
+           "color": "b"
+          },
+          "    c = ",
+          {
+           "t": "−3",
+           "color": "c"
+          }
+         ]
+        },
+        {
+         "izq": "x₁,₂",
+         "der": {
+          "frac": [
+           [
+            "−",
+            {
+             "t": "5",
+             "color": "b"
+            },
+            " ± ",
+            {
+             "raiz": [
+              {
+               "t": "5",
+               "color": "b"
+              },
+              "² − 4 · ",
+              {
+               "t": "2",
+               "color": "a"
+              },
+              " · (",
+              {
+               "t": "−3",
+               "color": "c"
+              },
+              ")"
+             ]
+            }
+           ],
+           [
+            "2 · ",
+            {
+             "t": "2",
+             "color": "a"
+            }
+           ]
+          ]
+         },
+         "nota": [
+          "Fórmula cuadrática:",
+          "x = (−b ± √(b² − 4ac)) / (2a)"
+         ]
+        },
+        {
+         "izq": "x₁,₂",
+         "der": {
+          "frac": [
+           [
+            "−5 ± ",
+            {
+             "raiz": {
+              "t": "25 + 24",
+              "color": "producto"
+             }
+            }
+           ],
+           {
+            "t": "4",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Resolver la potencia y los productos",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x₁,₂",
+         "der": {
+          "frac": [
+           [
+            "−5 ± ",
+            {
+             "raiz": {
+              "t": "49",
+              "color": "suma"
+             }
+            }
+           ],
+           "4"
+          ]
+         },
+         "nota": "Resolver la suma",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "x₁,₂",
+         "der": {
+          "frac": [
+           [
+            "−5 ± ",
+            {
+             "t": "7",
+             "color": "producto"
+            }
+           ],
+           "4"
+          ]
+         },
+         "nota": "√49 = 7",
+         "notaColor": "producto",
+         "llave": true
+        },
+        {
+         "rama": "x₁",
+         "der": [
+          {
+           "frac": [
+            "−5 + 7",
+            "4"
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "2",
+            "4"
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ],
+         "nota": "Calcular las dos raíces"
+        },
+        {
+         "rama": "x₂",
+         "der": [
+          {
+           "frac": [
+            "−5 − 7",
+            "4"
+           ]
+          },
+          " = ",
+          {
+           "frac": [
+            "−12",
+            "4"
+           ]
+          },
+          " = −3"
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "A = {−3, ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          "}"
+         ],
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ahora se muestra que cada elemento de A cumple la ecuación de B. En B se divide por x, así que x ≠ 0, y los dos elementos de A son distintos de 0.",
+       "color": "azul"
+      },
+      {
+       "seccion": "Para x = 1/2",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "der": [
+            "2 · (",
+            {
+             "frac": [
+              "1",
+              "2"
+             ]
+            },
+            ")² + 17 · ",
+            {
+             "frac": [
+              "1",
+              "2"
+             ]
+            },
+            " + 27"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": [
+            "2 · ",
+            {
+             "frac": [
+              "1",
+              "4"
+             ]
+            },
+            " + ",
+            {
+             "frac": [
+              "17",
+              "2"
+             ]
+            },
+            " + 27"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "frac": [
+              "1",
+              "2"
+             ]
+            },
+            " + ",
+            {
+             "frac": [
+              "17",
+              "2"
+             ]
+            },
+            " + 27"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "frac": [
+              "18",
+              "2"
+             ]
+            },
+            " + 27"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": "9 + 27"
+          },
+          {
+           "rel": "=",
+           "der": "36"
+          }
+         ]
+        },
+        {
+         "alLado": true,
+         "pasos": [
+          {
+           "der": [
+            {
+             "frac": [
+              "18",
+              {
+               "frac": [
+                "1",
+                "2"
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "rel": "=",
+           "der": "18 · 2"
+          },
+          {
+           "rel": "=",
+           "der": "36"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "der": [
+            "36 = 36 ",
+            {
+             "marca": "ok"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Para x = −3",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "der": "2 · (−3)² + 17 · (−3) + 27"
+          },
+          {
+           "rel": "=",
+           "der": "2 · 9 − 51 + 27"
+          },
+          {
+           "rel": "=",
+           "der": "18 − 51 + 27"
+          },
+          {
+           "rel": "=",
+           "der": "−6"
+          }
+         ]
+        },
+        {
+         "alLado": true,
+         "pasos": [
+          {
+           "der": [
+            {
+             "frac": [
+              "18",
+              "−3"
+             ]
+            }
+           ]
+          },
+          {
+           "rel": "=",
+           "der": "−6"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "der": [
+            "−6 = −6 ",
+            {
+             "marca": "ok"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Los dos elementos de A cumplen la ecuación de B, así que son elementos de B. Por lo tanto, A ⊆ B.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A ⊆ B",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: B tiene un elemento más, −6, porque 2x³ + 17x² + 27x − 18 = (2x² + 5x − 3)(x + 6). No hace falta para mostrar que A ⊆ B, pero muestra que A ≠ B.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A = {x | x es un entero positivo y x es par}\nB = {x | x es un entero positivo y x² es par}",
+     "bloques": [
+      {
+       "notas": "arriba",
+       "pasos": [
+        {
+         "der": "Sea x ∈ A."
+        },
+        {
+         "izq": "x ∈ A",
+         "rel": "⇒",
+         "der": "x es entero positivo y x = 2k, con k ∈ ℤ",
+         "nota": "Definición de A y de número par"
+        },
+        {
+         "rel": "⇒",
+         "der": [
+          "x² = ",
+          {
+           "t": "(2k)²",
+           "color": "producto"
+          }
+         ],
+         "nota": "Elevar x = 2k al cuadrado",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "⇒",
+         "der": "x² = 4k²"
+        },
+        {
+         "rel": "⇒",
+         "der": [
+          "x² = ",
+          {
+           "t": "2 · (2k²)",
+           "color": "producto"
+          },
+          ", con 2k² ∈ ℤ"
+         ],
+         "nota": "Escribir 4 = 2 · 2 (2k² es entero porque k lo es)",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "⇒",
+         "der": "x² es par y x es entero positivo",
+         "nota": "Definición de número par"
+        },
+        {
+         "rel": "⇒",
+         "der": "x ∈ B",
+         "nota": "Definición de B"
+        }
+       ]
+      },
+      {
+       "texto": "Todo elemento de A es elemento de B, por lo tanto A ⊆ B.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A ⊆ B",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "A = {x | x es un entero y x es un múltiplo de 6}\nB = {x | x es entero y x es múltiplo de 3}",
+     "bloques": [
+      {
+       "notas": "arriba",
+       "pasos": [
+        {
+         "der": "Sea x ∈ A."
+        },
+        {
+         "izq": "x ∈ A",
+         "rel": "⇒",
+         "der": "x = 6k, con k ∈ ℤ",
+         "nota": "Definición de A"
+        },
+        {
+         "rel": "⇒",
+         "der": [
+          "x = ",
+          {
+           "t": "3 · 2",
+           "color": "producto"
+          },
+          " · k"
+         ],
+         "nota": "Escribir 6 = 3 · 2",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "⇒",
+         "der": "x = 3 · (2k), con 2k ∈ ℤ",
+         "nota": "2k es entero porque k es entero"
+        },
+        {
+         "rel": "⇒",
+         "der": "x es entero y x es múltiplo de 3",
+         "nota": "Definición de múltiplo"
+        },
+        {
+         "rel": "⇒",
+         "der": "x ∈ B",
+         "nota": "Definición de B"
+        }
+       ]
+      },
+      {
+       "texto": "Todo elemento de A es elemento de B, por lo tanto A ⊆ B.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A ⊆ B",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 9,
+   "marcador": true,
+   "enunciado": "Dados los conjuntos:\nA = {1, 2}\nB = {2, 3, 4} y\nC = {2}.\n¿Cuántos subconjuntos tiene (A ∩ B ∩ C)?",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "izq": "A ∩ B ∩ C",
+       "der": "(A ∩ B) ∩ C"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "(",
+        {
+         "t": "{1, 2}",
+         "color": "producto"
+        },
+        " ∩ ",
+        {
+         "t": "{2, 3, 4}",
+         "color": "producto"
+        },
+        ") ∩ ",
+        {
+         "t": "{2}",
+         "color": "producto"
+        }
+       ],
+       "nota": "Reemplazar",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "{2} ∩ {2}",
+       "nota": "El 2 es el único elemento común a A y B"
+      },
+      {
+       "rel": "=",
+       "der": "{2}"
+      },
+      {
+       "seccion": true,
+       "der": "A ∩ B ∩ C = {2}",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Un conjunto con n elementos tiene 2ⁿ subconjuntos. A ∩ B ∩ C tiene un elemento, así que tiene 2¹ = 2 subconjuntos, que son ∅ y {2}.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "A ∩ B ∩ C tiene 2 subconjuntos, que son ∅ y {2}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 10,
+   "marcador": true,
+   "enunciado": "Sean los conjuntos:\nA = {1, 2}\nB = {2, 3, 4}\nC = {1, 5}\nD = {1, 4}\nE = {1}\n¿Cuáles de todos ellos es subconjunto de todos los demás?",
+   "bloques": [
+    {
+     "texto": "Si un conjunto es subconjunto de todos los demás, también es subconjunto de E = {1}. Los únicos subconjuntos de E son ∅ y {1}, y de la lista solo E es uno de ellos. Entonces el único candidato es E.",
+     "color": "azul"
+    },
+    {
+     "texto": "E ⊆ A, E ⊆ C y E ⊆ D, porque 1 está en A, en C y en D.",
+     "color": "azul"
+    },
+    {
+     "texto": "E ⊄ B, porque 1 ∉ B.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "Ninguno es subconjunto de todos los demás",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 11,
+   "marcador": true,
+   "enunciado": "Sea el conjunto, A = {x | x ∈ ℕ, x < 5} ¿Cuántos subconjuntos podemos construir a partir de A?",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "der": "A = {1, 2, 3, 4}",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "A tiene 4 elementos. Un conjunto con n elementos tiene 2ⁿ subconjuntos.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "|P(A)|",
+       "der": "2⁴"
+      },
+      {
+       "rel": "=",
+       "der": "16"
+      },
+      {
+       "seccion": true,
+       "der": "|P(A)| = 16",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Se pueden construir 16 subconjuntos de A.",
+     "color": "azul"
+    }
+   ]
+  },
+  {
+   "numero": 12,
+   "marcador": true,
+   "enunciado": "Describe por extensión el conjunto de partes de cada uno de los siguientes conjuntos y calcula su cardinal:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: el conjunto de partes P(A) es el conjunto de todos los subconjuntos de A, incluidos ∅ y A. Si A tiene n elementos, |P(A)| = 2ⁿ. Los subconjuntos se ordenan por cantidad de elementos, de menor a mayor.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A = {1}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "P(A)",
+         "der": "{∅, {1}}",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "|P(A)| = 2¹ = 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "B = {a, b}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "P(B)",
+         "der": "{∅, {a}, {b}, {a, b}}",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "|P(B)| = 2² = 4",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "S = {1, 2, 3}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "P(S)",
+         "der": "{∅, {1}, {2}, {3},",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": " {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "|P(S)| = 2³ = 8",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "C = {1, a, x, w}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "P(C)",
+         "der": "{∅, {1}, {a}, {x}, {w},",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": " {1, a}, {1, x}, {1, w}, {a, x}, {a, w}, {x, w},",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": " {1, a, x}, {1, a, w}, {1, x, w}, {a, x, w},",
+         "color": "azul"
+        },
+        {
+         "rel": "",
+         "der": " {1, a, x, w}}",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "|P(C)| = 2⁴ = 16",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 13,
+   "marcador": true,
+   "enunciado": "Dado el conjunto A = {t, a, d}, represente al conjunto potencia de A?",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: el conjunto potencia de A es el conjunto de partes P(A). Los subconjuntos se ordenan por cantidad de elementos, de menor a mayor.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "P(A)",
+       "der": "{∅, {t}, {a}, {d},",
+       "color": "azul"
+      },
+      {
+       "rel": "",
+       "der": " {t, a}, {t, d}, {a, d}, {t, a, d}}",
+       "color": "azul"
+      },
+      {
+       "seccion": true,
+       "der": "|P(A)| = 2³ = 8",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "A tiene 3 elementos, así que P(A) tiene 2³ = 8 elementos.",
+     "color": "azul"
+    }
+   ]
+  },
+  {
+   "numero": 14,
+   "marcador": true,
+   "enunciado": "Dados los conjuntos:\nH = {x ∈ ℤ | x − 2 = 0},\nI = {x ∈ ℤ | 2x − 6 = 0},\nJ = {x ∈ ℤ | 2 ≤ x ≤ 3}\nEntonces es verdadero que:",
+   "bloques": [
+    {
+     "texto": "Primero se escribe cada conjunto por extensión.",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "x − 2",
+       "der": "0"
+      },
+      {
+       "izq": [
+        "x − 2 ",
+        {
+         "t": "+ 2",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "0 ",
+        {
+         "t": "+ 2",
+         "color": "suma"
+        }
+       ],
+       "nota": "Sumar 2 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "x",
+       "der": "2"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "izq": "2x − 6",
+       "der": "0"
+      },
+      {
+       "izq": [
+        "2x − 6 ",
+        {
+         "t": "+ 6",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "0 ",
+        {
+         "t": "+ 6",
+         "color": "suma"
+        }
+       ],
+       "nota": "Sumar 6 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "2x",
+       "der": "6"
+      },
+      {
+       "izq": [
+        {
+         "frac": [
+          "2x",
+          {
+           "t": "2",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "der": [
+        {
+         "frac": [
+          "6",
+          {
+           "t": "2",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "nota": "Dividir por 2 en los dos miembros",
+       "notaColor": "producto"
+      },
+      {
+       "izq": "x",
+       "der": "3"
+      }
+     ]
+    },
+    {
+     "texto": "2 y 3 son enteros. Los enteros entre 2 y 3, incluidos los dos, son 2 y 3.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "H = {2}",
+       "color": "azul"
+      },
+      {
+       "der": "I = {3}",
+       "color": "azul"
+      },
+      {
+       "der": "J = {2, 3}",
+       "color": "azul"
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "La cardinalidad de H e I es la misma",
+     "bloques": [
+      {
+       "texto": "Verdadera, porque H y I tienen un elemento cada uno.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "|H| = |I| = 1",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "H ∪ I = J",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "H ∪ I",
+         "der": "{2} ∪ {3}"
+        },
+        {
+         "rel": "=",
+         "der": "{2, 3}"
+        },
+        {
+         "rel": "=",
+         "der": "J"
+        }
+       ]
+      },
+      {
+       "texto": "Verdadera.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "H ∪ I = J",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "H ∩ I = J",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "H ∩ I",
+         "der": "{2} ∩ {3}"
+        },
+        {
+         "rel": "=",
+         "der": "∅",
+         "nota": "No tienen elementos en común"
+        }
+       ]
+      },
+      {
+       "texto": "Falsa, porque ∅ ≠ {2, 3}.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "H ∩ I ≠ J",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 15,
+   "marcador": true,
+   "enunciado": "Si x toma el valor −1 o 1, ¿Cuál de las siguientes alternativas representa pares de conjuntos iguales?",
+   "bloques": [
+    {
+     "texto": "La consigna está mal redactada. En «x² ∈ 1» se usa el símbolo ∈ (pertenece) entre dos elementos, x² y 1. Pero ∈ está definido solo para relacionar un elemento con un conjunto, y 1 no es un conjunto sino un número. Por eso, así escrito, «x² ∈ 1» no tiene sentido.",
+     "color": "azul"
+    },
+    {
+     "texto": "Para poder resolver el ejercicio, se interpreta «x² ∈ 1» como x² = 1 (que es lo mismo que x² ∈ {1}), y cada conjunto escrito con una ecuación es el de los valores de x que la cumplen. Así, «x toma el valor −1 o 1» son las soluciones de x² = 1.",
+     "color": "azul"
+    },
+    {
+     "texto": "Nota para el estudiante: dos conjuntos son iguales si tienen los mismos elementos.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A = {x / x² ∈ 1}; A′ = {x / x² ∈ 1}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "x²",
+         "der": "1"
+        },
+        {
+         "izq": [
+          {
+           "raiz": "x²"
+          }
+         ],
+         "der": [
+          {
+           "raiz": "1"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "|x|",
+         "der": "1",
+         "nota": "√(x²) = |x|",
+         "llave": true
+        },
+        {
+         "rama": "x₁",
+         "der": "1"
+        },
+        {
+         "rama": "x₂",
+         "der": "−1"
+        }
+       ]
+      },
+      {
+       "texto": "A y A′ tienen la misma condición, así que A = {−1, 1} y A′ = {−1, 1}.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A = A′",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "B = {1, −1}; B′ = {2x² − 1 = 1}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "2x² − 1",
+         "der": "1"
+        },
+        {
+         "izq": [
+          "2x² − 1 ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "der": [
+          "1 ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 1 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "2x²",
+         "der": "2"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "2x²",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "der": [
+          {
+           "frac": [
+            "2",
+            {
+             "t": "2",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Dividir por 2 en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x²",
+         "der": "1"
+        },
+        {
+         "izq": [
+          {
+           "raiz": "x²"
+          }
+         ],
+         "der": [
+          {
+           "raiz": "1"
+          }
+         ],
+         "nota": "Raíz cuadrada en los dos miembros",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "|x|",
+         "der": "1",
+         "nota": "√(x²) = |x|",
+         "llave": true
+        },
+        {
+         "rama": "x₁",
+         "der": "1"
+        },
+        {
+         "rama": "x₂",
+         "der": "−1"
+        }
+       ]
+      },
+      {
+       "texto": "B′ = {−1, 1}, que tiene los mismos elementos que B.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "B = B′",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "C = {0, 1}; C′ = {x/(1 − x)² = 0}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "frac": [
+            "x",
+            "(1 − x)²"
+           ]
+          },
+          " = 0"
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Una fracción vale 0 cuando el numerador es 0 y el denominador no es 0. Entonces x = 0, y (1 − 0)² = 1 ≠ 0. El 1 no cumple la ecuación, porque con x = 1 el denominador vale (1 − 1)² = 0 y no se puede dividir por 0.",
+       "color": "azul"
+      },
+      {
+       "texto": "C′ = {0}, pero 1 ∈ C y 1 ∉ C′.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "C ≠ C′",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 16,
+   "marcador": true,
+   "enunciado": "Si A = {1, 2, 3, 4, 5} y B = {3, 5}. Determine el conjunto B − A.",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "izq": "B − A",
+       "der": "{x | x ∈ B ∧ x ∉ A}"
+      },
+      {
+       "rel": "=",
+       "der": "∅",
+       "nota": "3 ∈ A y 5 ∈ A"
+      },
+      {
+       "seccion": true,
+       "der": "B − A = ∅",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Todos los elementos de B están en A (B ⊆ A), así que no queda ninguno.",
+     "color": "azul"
+    }
+   ]
+  },
+  {
+   "numero": 17,
+   "marcador": true,
+   "enunciado": "Si A = {a, b, c, d, e}, B = {b, c, e} y C = {a, e}, entonces ¿Cuál es el conjunto (A ∩ B) − C?",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "izq": "A ∩ B",
+       "der": "{a, b, c, d, e} ∩ {b, c, e}"
+      },
+      {
+       "rel": "=",
+       "der": "{b, c, e}",
+       "nota": "Elementos que están en A y en B"
+      },
+      {
+       "seccion": true,
+       "izq": "(A ∩ B) − C",
+       "der": [
+        "{b, c, e} − ",
+        {
+         "t": "{a, e}",
+         "color": "producto"
+        }
+       ]
+      },
+      {
+       "rel": "=",
+       "der": "{b, c}",
+       "nota": "Sacar e, que está en C"
+      },
+      {
+       "seccion": true,
+       "der": "(A ∩ B) − C = {b, c}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 18,
+   "marcador": true,
+   "enunciado": "Sean los conjuntos:\nA = {x ∈ ℤ | x = 3n − 1, y n ∈ ℕ, n < 14}\nB = {x ∈ ℤ | x = 5n/2, y n ∈ ℕ, n ≤ 13}\nEntonces A − B = ?",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "texto": "En A, n toma los valores del 1 al 13, y para cada uno se calcula 3n − 1:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "der": {
+        "tabla": [
+         [
+          "n",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+         ],
+         [
+          "3n − 1",
+          "2",
+          "5",
+          "8",
+          "11",
+          "14",
+          "17",
+          "20",
+          "23",
+          "26",
+          "29",
+          "32",
+          "35",
+          "38"
+         ]
+        ],
+        "lineas": true,
+        "alinear": "centro"
+       }
+      }
+     ],
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "der": "A = {2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38}",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "En B, x tiene que ser entero. 5n/2 es entero solo si n es par, porque si n es impar, 5n también es impar y no se puede dividir por 2. Los pares hasta el 13 son 2, 4, 6, 8, 10 y 12:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "der": {
+        "tabla": [
+         [
+          "n",
+          "2",
+          "4",
+          "6",
+          "8",
+          "10",
+          "12"
+         ],
+         [
+          "5n/2",
+          "5",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30"
+         ]
+        ],
+        "lineas": true,
+        "alinear": "centro"
+       }
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "B = {5, 10, 15, 20, 25, 30}",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "A − B tiene los elementos de A que no están en B. De A se sacan el 5 y el 20, que también están en B.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "A − B",
+       "der": "{x | x ∈ A ∧ x ∉ B}"
+      },
+      {
+       "rel": "=",
+       "der": "{2, 8, 11, 14, 17, 23, 26, 29, 32, 35, 38}",
+       "nota": "Sacar 5 y 20"
+      },
+      {
+       "seccion": true,
+       "der": "A − B = {2, 8, 11, 14, 17, 23, 26, 29, 32, 35, 38}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 19,
+   "marcador": true,
+   "enunciado": "Dados los conjuntos:\nA = {1, 2, 3, 4},\nB = {2, 4, 5},\nC = {3, 5, 7}.\nSeñale qué operación deberá efectuarse para que el resultado sea el conjunto {3, 5}.",
+   "bloques": [
+    {
+     "texto": "3 y 5 son elementos de C que están en A o en B (3 ∈ A y 5 ∈ B), y 7 no está ni en A ni en B. Por eso se une A con B y el resultado se interseca con C.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "(A ∪ B) ∩ C",
+       "der": [
+        "(",
+        {
+         "t": "{1, 2, 3, 4}",
+         "color": "producto"
+        },
+        " ∪ ",
+        {
+         "t": "{2, 4, 5}",
+         "color": "producto"
+        },
+        ") ∩ ",
+        {
+         "t": "{3, 5, 7}",
+         "color": "producto"
+        }
+       ]
+      },
+      {
+       "rel": "=",
+       "der": "{1, 2, 3, 4, 5} ∩ {3, 5, 7}",
+       "nota": "Resolver la unión"
+      },
+      {
+       "rel": "=",
+       "der": "{3, 5}",
+       "nota": "Elementos comunes"
+      },
+      {
+       "seccion": true,
+       "der": "(A ∪ B) ∩ C = {3, 5}",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 20,
+   "marcador": true,
+   "enunciado": "Dados los conjuntos:\nA = {x ∈ ℕ | x < 3},\nB = {x ∈ ℕ | x + 1 = 3}.\nEntonces ellos verifican que:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "x + 1",
+       "der": "3"
+      },
+      {
+       "izq": [
+        "x + 1 ",
+        {
+         "t": "− 1",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "3 ",
+        {
+         "t": "− 1",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 1 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "x",
+       "der": "2"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "A = {1, 2}",
+       "color": "azul"
+      },
+      {
+       "der": "B = {2}",
+       "color": "azul"
+      },
+      {
+       "der": "A ∩ B = {2}",
+       "color": "azul"
+      },
+      {
+       "der": "A ∪ B = {1, 2}",
+       "color": "azul"
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A ∩ B = 2",
+     "bloques": [
+      {
+       "texto": "Falsa, porque A ∩ B es un conjunto, {2}, y no el número 2.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A ∩ B = {1, 2}",
+     "bloques": [
+      {
+       "texto": "Falsa, porque 1 ∉ B, así que 1 ∉ A ∩ B.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "A ∪ B = {1, 2, 3}",
+     "bloques": [
+      {
+       "texto": "Falsa, porque 3 no está ni en A ni en B (A ∪ B = {1, 2}).",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "A ∩ B = {2}",
+     "bloques": [
+      {
+       "texto": "Verdadera, porque el 2 es el único elemento común a A y B.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "A ∩ B = {2}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 21,
+   "marcador": true,
+   "enunciado": "Sean los conjuntos:\nP = {x ∈ ℕ | x es divisor de 12}\nQ = {x ∈ ℕ | x es divisor de 24}\n¿Cuál de las siguientes alternativas es incorrecta?",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "der": "P = {1, 2, 3, 4, 6, 12}",
+       "color": "azul"
+      },
+      {
+       "der": "Q = {1, 2, 3, 4, 6, 8, 12, 24}",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Todo divisor de 12 es divisor de 24, porque 24 = 12 · 2. Por eso P ⊆ Q.",
+     "color": "azul"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "P ∪ Q = {1, 2, 3, 4, 6, 8, 12, 24}",
+     "bloques": [
+      {
+       "texto": "Correcta, porque como P ⊆ Q, P ∪ Q = Q.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "P ∩ Q = {1, 2, 3, 4, 6, 12}",
+     "bloques": [
+      {
+       "texto": "Correcta, porque como P ⊆ Q, P ∩ Q = P.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "P ⊆ Q",
+     "bloques": [
+      {
+       "texto": "Correcta, porque todo elemento de P está en Q.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "P − Q = {8, 24}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "P − Q",
+         "der": "{x | x ∈ P ∧ x ∉ Q}"
+        },
+        {
+         "rel": "=",
+         "der": "∅",
+         "nota": "Todo elemento de P está en Q"
+        }
+       ]
+      },
+      {
+       "texto": "Incorrecta, porque P − Q = ∅. Además, 8 ∉ P y 24 ∉ P.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "(Q − P) ∪ (P − Q) = {8, 24}",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "(Q − P) ∪ (P − Q)",
+         "der": [
+          "{8, 24} ∪ ",
+          {
+           "t": "∅",
+           "color": "producto"
+          }
+         ]
+        },
+        {
+         "rel": "=",
+         "der": "{8, 24}",
+         "nota": "Ley de identidad"
+        }
+       ]
+      },
+      {
+       "texto": "Correcta.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 22,
+   "marcador": true,
+   "enunciado": "Dados los conjuntos:\nA = {x ∈ ℕ | x es múltiplo de 2} y\nB = {x ∈ ℕ | x es múltiplo de 3},\nentonces se puede afirmar que:",
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "der": "A = {2, 4, 6, 8, 10, 12, …}",
+       "color": "azul"
+      },
+      {
+       "der": "B = {3, 6, 9, 12, 15, …}",
+       "color": "azul"
+      },
+      {
+       "der": "A ∪ B = {2, 3, 4, 6, 8, 9, 10, 12, …}",
+       "color": "azul"
+      },
+      {
+       "der": "A ∩ B = {6, 12, 18, 24, 30, …}",
+       "color": "azul"
+      },
+      {
+       "der": "A − B = {2, 4, 8, 10, 14, 16, …}",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Un número es múltiplo de 2 y de 3 a la vez cuando es múltiplo de 6, así que A ∩ B es el conjunto de los múltiplos de 6.",
+     "color": "azul"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A ∪ B = {múltiplos de 5}",
+     "bloques": [
+      {
+       "texto": "Falsa, porque 2 ∈ A ∪ B y 2 no es múltiplo de 5.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A ∩ B = {múltiplos de 5}",
+     "bloques": [
+      {
+       "texto": "Falsa, porque 6 ∈ A ∩ B y 6 no es múltiplo de 5.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "A ∪ B = {múltiplos de 6}",
+     "bloques": [
+      {
+       "texto": "Falsa, porque 2 ∈ A ∪ B y 2 no es múltiplo de 6.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "A ∩ B = {6, 12, 18, 24}",
+     "bloques": [
+      {
+       "texto": "Falsa, porque A ∩ B es infinito. Por ejemplo, 30 ∈ A ∩ B (30 = 2 · 15 = 3 · 10) y 30 ∉ {6, 12, 18, 24}.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "A − B = {−1}",
+     "bloques": [
+      {
+       "texto": "Falsa, porque −1 ∉ ℕ, así que no puede estar en A. Además, A − B = {2, 4, 8, 10, …} tiene infinitos elementos.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 23,
+   "marcador": true,
+   "enunciado": "Si U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} es el conjunto universal y\nA = {1, 4, 7, 10},\nB = {1, 2, 3, 4, 5},\nC = {2, 4, 6, 8},\ndefina por extensión los siguientes conjuntos:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A ∪ B",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "A ∪ B",
+         "der": "{1, 4, 7, 10} ∪ {1, 2, 3, 4, 5}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 2, 3, 4, 5, 7, 10}",
+         "nota": "Elementos de A o de B"
+        },
+        {
+         "seccion": true,
+         "der": "A ∪ B = {1, 2, 3, 4, 5, 7, 10}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A − B",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "A − B",
+         "der": "{x ∈ U | x ∈ A ∧ x ∉ B}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 4, 7, 10} − {1, 2, 3, 4, 5}",
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "{7, 10}",
+         "nota": "Sacar 1 y 4, que están en B"
+        },
+        {
+         "seccion": true,
+         "der": "A − B = {7, 10}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Aᶜ",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "Aᶜ",
+         "der": "{x ∈ U | x ∉ A}"
+        },
+        {
+         "rel": "=",
+         "der": "{2, 3, 5, 6, 8, 9}",
+         "nota": "Elementos de U que no están en A"
+        },
+        {
+         "seccion": true,
+         "der": "Aᶜ = {2, 3, 5, 6, 8, 9}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Uᶜ",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "Uᶜ",
+         "der": "{x ∈ U | x ∉ U}"
+        },
+        {
+         "rel": "=",
+         "der": "∅",
+         "nota": "Ningún elemento está y no está en U"
+        },
+        {
+         "seccion": true,
+         "der": "Uᶜ = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "B ∩ U",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "B ∩ U",
+         "der": "B"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 2, 3, 4, 5}",
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "B ∩ U = {1, 2, 3, 4, 5}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: B ∩ U = B es la ley de identidad, porque todos los elementos de B están en U.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "Uᶜ ∩ (C − A)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "C − A",
+         "der": "{2, 4, 6, 8} − {1, 4, 7, 10}"
+        },
+        {
+         "rel": "=",
+         "der": "{2, 6, 8}",
+         "nota": "Sacar 4, que está en A"
+        },
+        {
+         "seccion": true,
+         "izq": "Uᶜ ∩ (C − A)",
+         "der": [
+          {
+           "t": "∅",
+           "color": "producto"
+          },
+          " ∩ ",
+          {
+           "t": "{2, 6, 8}",
+           "color": "producto"
+          }
+         ]
+        },
+        {
+         "rel": "=",
+         "der": "∅",
+         "nota": "Ley de dominación"
+        },
+        {
+         "seccion": true,
+         "der": "Uᶜ ∩ (C − A) = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: Uᶜ = ∅ está calculado en el ítem 23.d.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "g",
+     "enunciado": "(A ∩ B)ᶜ ∪ C",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "A ∩ B",
+         "der": "{1, 4, 7, 10} ∩ {1, 2, 3, 4, 5}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 4}",
+         "nota": "Elementos comunes"
+        },
+        {
+         "seccion": true,
+         "izq": "(A ∩ B)ᶜ",
+         "der": "{x ∈ U | x ∉ A ∩ B}"
+        },
+        {
+         "rel": "=",
+         "der": "{2, 3, 5, 6, 7, 8, 9, 10}",
+         "nota": "Sacar 1 y 4 de U"
+        },
+        {
+         "seccion": true,
+         "izq": "(A ∩ B)ᶜ ∪ C",
+         "der": "{2, 3, 5, 6, 7, 8, 9, 10} ∪ {2, 4, 6, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{2, 3, 4, 5, 6, 7, 8, 9, 10}",
+         "nota": "Agregar el 4"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∩ B)ᶜ ∪ C = {2, 3, 4, 5, 6, 7, 8, 9, 10}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "h",
+     "enunciado": "B ∩ C",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "B ∩ C",
+         "der": "{1, 2, 3, 4, 5} ∩ {2, 4, 6, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{2, 4}",
+         "nota": "Elementos comunes"
+        },
+        {
+         "seccion": true,
+         "der": "B ∩ C = {2, 4}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "i",
+     "enunciado": "A ∪ ∅",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "A ∪ ∅",
+         "der": "A"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 4, 7, 10}",
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "seccion": true,
+         "der": "A ∪ ∅ = {1, 4, 7, 10}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: A ∪ ∅ = A es la ley de identidad.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "j",
+     "enunciado": "A ∩ (B ∪ C)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "B ∪ C",
+         "der": "{1, 2, 3, 4, 5} ∪ {2, 4, 6, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 2, 3, 4, 5, 6, 8}",
+         "nota": "Elementos de B o de C"
+        },
+        {
+         "seccion": true,
+         "izq": "A ∩ (B ∪ C)",
+         "der": "{1, 4, 7, 10} ∩ {1, 2, 3, 4, 5, 6, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 4}",
+         "nota": "Elementos comunes"
+        },
+        {
+         "seccion": true,
+         "der": "A ∩ (B ∪ C) = {1, 4}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "k",
+     "enunciado": "(A ∩ B) ∪ C",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "(A ∩ B) ∪ C",
+         "der": "{1, 4} ∪ {2, 4, 6, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 2, 4, 6, 8}",
+         "nota": "Elementos de uno o del otro"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∩ B) ∪ C = {1, 2, 4, 6, 8}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: A ∩ B = {1, 4} está calculado en el ítem 23.g.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "l",
+     "enunciado": "(A ∩ B) − C",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "(A ∩ B) − C",
+         "der": "{1, 4} − {2, 4, 6, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{1}",
+         "nota": "Sacar 4, que está en C"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∩ B) − C = {1}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "m",
+     "enunciado": "(A ∪ B) − (C − B)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "C − B",
+         "der": "{2, 4, 6, 8} − {1, 2, 3, 4, 5}"
+        },
+        {
+         "rel": "=",
+         "der": "{6, 8}",
+         "nota": "Sacar 2 y 4, que están en B"
+        },
+        {
+         "seccion": true,
+         "izq": "(A ∪ B) − (C − B)",
+         "der": "{1, 2, 3, 4, 5, 7, 10} − {6, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 2, 3, 4, 5, 7, 10}",
+         "nota": "6 y 8 no están en A ∪ B"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∪ B) − (C − B) = {1, 2, 3, 4, 5, 7, 10}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: A ∪ B está calculado en el ítem 23.a.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 24,
+   "marcador": true,
+   "enunciado": "Sea U = {1, 2, 3, 4, 5, …, 12},\nA = {1, 3, 5, 7, 9, 11},\nB = {2, 3, 5, 7, 11},\nC = {2, 3, 6, 12} y\nD = {2, 4, 8}.\nDetermine los conjuntos",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "A ∪ B",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "A ∪ B",
+         "der": "{1, 3, 5, 7, 9, 11} ∪ {2, 3, 5, 7, 11}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 2, 3, 5, 7, 9, 11}",
+         "nota": "Elementos de A o de B"
+        },
+        {
+         "seccion": true,
+         "der": "A ∪ B = {1, 2, 3, 5, 7, 9, 11}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "A ∩ C",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "A ∩ C",
+         "der": "{1, 3, 5, 7, 9, 11} ∩ {2, 3, 6, 12}"
+        },
+        {
+         "rel": "=",
+         "der": "{3}",
+         "nota": "Elementos comunes"
+        },
+        {
+         "seccion": true,
+         "der": "A ∩ C = {3}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "(A ∪ B) ∩ Cᶜ",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "Cᶜ",
+         "der": "{x ∈ U | x ∉ C}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 4, 5, 7, 8, 9, 10, 11}",
+         "nota": "Sacar 2, 3, 6 y 12 de U"
+        },
+        {
+         "seccion": true,
+         "izq": "(A ∪ B) ∩ Cᶜ",
+         "der": "{1, 2, 3, 5, 7, 9, 11} ∩ {1, 4, 5, 7, 8, 9, 10, 11}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 5, 7, 9, 11}",
+         "nota": "Elementos comunes"
+        },
+        {
+         "seccion": true,
+         "der": "(A ∪ B) ∩ Cᶜ = {1, 5, 7, 9, 11}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: A ∪ B está calculado en el ítem 24.a.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "A − B",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "A − B",
+         "der": "{x ∈ U | x ∈ A ∧ x ∉ B}"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 3, 5, 7, 9, 11} − {2, 3, 5, 7, 11}",
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "{1, 9}",
+         "nota": "Sacar 3, 5, 7 y 11, que están en B"
+        },
+        {
+         "seccion": true,
+         "der": "A − B = {1, 9}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "C − D",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "C − D",
+         "der": "{x ∈ U | x ∈ C ∧ x ∉ D}"
+        },
+        {
+         "rel": "=",
+         "der": "{2, 3, 6, 12} − {2, 4, 8}",
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "{3, 6, 12}",
+         "nota": "Sacar 2, que está en D"
+        },
+        {
+         "seccion": true,
+         "der": "C − D = {3, 6, 12}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "(B − D) ∪ (D − B)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "B − D",
+         "der": "{2, 3, 5, 7, 11} − {2, 4, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{3, 5, 7, 11}",
+         "nota": "Sacar 2, que está en D"
+        },
+        {
+         "seccion": true,
+         "izq": "D − B",
+         "der": "{2, 4, 8} − {2, 3, 5, 7, 11}"
+        },
+        {
+         "rel": "=",
+         "der": "{4, 8}",
+         "nota": "Sacar 2, que está en B"
+        },
+        {
+         "seccion": true,
+         "izq": "(B − D) ∪ (D − B)",
+         "der": "{3, 5, 7, 11} ∪ {4, 8}"
+        },
+        {
+         "rel": "=",
+         "der": "{3, 4, 5, 7, 8, 11}"
+        },
+        {
+         "seccion": true,
+         "der": "(B − D) ∪ (D − B) = {3, 4, 5, 7, 8, 11}",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 25,
+   "marcador": true,
+   "enunciado": "De un total de 60 alumnos de un colegio:\n• 15 estudian francés solamente,\n• 11 estudian francés e inglés,\n• 12 estudian alemán solamente,\n• 8 estudian francés y alemán;\n• 10 estudian inglés solamente,\n• 5 estudian inglés y alemán, y\n• 3 los tres idiomas\nDetermina:",
+   "bloques": [
+    {
+     "texto": "Llamamos F, I y A a los conjuntos de alumnos que estudian francés, inglés y alemán. «11 estudian francés e inglés» cuenta a todos los que estudian esos dos idiomas, también a los 3 que estudian los tres. Lo mismo con francés y alemán, y con inglés y alemán.",
+     "color": "azul"
+    },
+    {
+     "texto": "Las zonas sin dato son x (francés e inglés, no alemán), y (francés y alemán, no inglés), z (inglés y alemán, no francés) y n (ningún idioma).",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "generador": "venn",
+     "op": {
+      "nombres": "F, I, A",
+      "filas": [
+       {
+        "texto": "U = 60",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "solo F = 15",
+        "color": "#e03131"
+       },
+       {
+        "texto": "solo I = 10",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "solo A = 12",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "|F ∩ I| = 11",
+        "color": "#9c36b5"
+       },
+       {
+        "texto": "|F ∩ A| = 8",
+        "color": "#0c8599"
+       },
+       {
+        "texto": "|I ∩ A| = 5",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "los tres = 3",
+        "color": "#e03131"
+       },
+       {
+        "texto": "F ∩ I − A = x",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "F ∩ A − I = y",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "I ∩ A − F = z",
+        "color": "#9c36b5"
+       },
+       {
+        "texto": "ninguno = n",
+        "color": "#0c8599"
+       }
+      ],
+      "variables": "x, y, z, n",
+      "mostrar": "planteo",
+      "tamano": "chico",
+      "tamTexto": "M",
+      "cardinales": "no",
+      "trazos": "distintos",
+      "colores": false,
+      "datos": false,
+      "referencias": false,
+      "ecuaciones": false,
+      "pasos": false,
+      "textos": "debajo",
+      "titulos": false
+     }
+    },
+    {
+     "texto": "Francés e inglés. |F ∩ I| es x más los 3 que estudian los tres idiomas.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "11",
+       "der": "x + 3"
+      },
+      {
+       "izq": [
+        "11 ",
+        {
+         "t": "− 3",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "x + 3 ",
+        {
+         "t": "− 3",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 3 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "8",
+       "der": "x"
+      }
+     ]
+    },
+    {
+     "texto": "Francés y alemán. |F ∩ A| es y más los 3 que estudian los tres idiomas.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "8",
+       "der": "y + 3"
+      },
+      {
+       "izq": [
+        "8 ",
+        {
+         "t": "− 3",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "y + 3 ",
+        {
+         "t": "− 3",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 3 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "5",
+       "der": "y"
+      }
+     ]
+    },
+    {
+     "texto": "Inglés y alemán. |I ∩ A| es z más los 3 que estudian los tres idiomas.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "5",
+       "der": "z + 3"
+      },
+      {
+       "izq": [
+        "5 ",
+        {
+         "t": "− 3",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "z + 3 ",
+        {
+         "t": "− 3",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 3 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "2",
+       "der": "z"
+      }
+     ]
+    },
+    {
+     "texto": "Ningún idioma. Es el total menos los que estudian algún idioma.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "n",
+       "der": "60 − (15 + 10 + 12 + x + y + z + 3)"
+      },
+      {
+       "rel": "=",
+       "der": [
+        "60 − (15 + 10 + 12 + ",
+        {
+         "t": "8",
+         "color": "producto"
+        },
+        " + ",
+        {
+         "t": "5",
+         "color": "producto"
+        },
+        " + ",
+        {
+         "t": "2",
+         "color": "producto"
+        },
+        " + 3)"
+       ],
+       "nota": "Reemplazar x, y, z",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": "60 − 55"
+      },
+      {
+       "rel": "=",
+       "der": "5"
+      }
+     ]
+    },
+    {
+     "texto": "El diagrama resuelto queda así:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "generador": "venn",
+     "op": {
+      "nombres": "F, I, A",
+      "filas": [
+       {
+        "texto": "U = 60",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "solo F = 15",
+        "color": "#e03131"
+       },
+       {
+        "texto": "solo I = 10",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "solo A = 12",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "|F ∩ I| = 11",
+        "color": "#9c36b5"
+       },
+       {
+        "texto": "|F ∩ A| = 8",
+        "color": "#0c8599"
+       },
+       {
+        "texto": "|I ∩ A| = 5",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "los tres = 3",
+        "color": "#e03131"
+       },
+       {
+        "texto": "F ∩ I − A = x",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "F ∩ A − I = y",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "I ∩ A − F = z",
+        "color": "#9c36b5"
+       },
+       {
+        "texto": "ninguno = n",
+        "color": "#0c8599"
+       }
+      ],
+      "variables": "x, y, z, n",
+      "mostrar": "resuelto",
+      "tamano": "chico",
+      "tamTexto": "M",
+      "cardinales": "no",
+      "trazos": "distintos",
+      "colores": false,
+      "datos": false,
+      "referencias": false,
+      "ecuaciones": false,
+      "pasos": false,
+      "variableYValor": true,
+      "textos": "debajo",
+      "titulos": false
+     }
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "¿Cuántos no estudian ningún idioma?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "n = 5",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "5 alumnos no estudian ningún idioma.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "¿Cuántos estudian alemán?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "|A|",
+         "der": "solo A + y + z + los tres"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "12",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "5",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "2",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "3",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "22"
+        },
+        {
+         "seccion": true,
+         "der": "|A| = 22",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "22 alumnos estudian alemán.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "¿Cuántos estudian alemán e inglés solamente?",
+     "bloques": [
+      {
+       "texto": "Son los de la zona z, que estudian inglés y alemán pero no francés.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "z = 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "2 alumnos estudian alemán e inglés solamente.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "¿Cuántos estudian francés?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "|F|",
+         "der": "solo F + x + y + los tres"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "15",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "8",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "5",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "3",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "31"
+        },
+        {
+         "seccion": true,
+         "der": "|F| = 31",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "31 alumnos estudian francés.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 26,
+   "marcador": true,
+   "enunciado": "En una propuesta sobre preferencias de los canales T.V., 7, 9, 13 se obtuvo la siguiente información:\n55 Encuestados ven el canal 7\n15 solo ven el canal 7 y el canal 9\n33 Ven el canal 7 y el canal 13\n3 Solo ven el canal 13\n25 Ven los tres canales\n46 Ven el canal 9\n6 No ven T.V.\n2 Solo ven el canal 13 y el canal 9\nSeñale:",
+   "bloques": [
+    {
+     "texto": "Llamamos S, N y T a los conjuntos de personas que ven el canal 7 (siete), el 9 (nueve) y el 13 (trece). «33 ven el canal 7 y el canal 13» cuenta también a los 25 que ven los tres. En cambio, «solo ven el canal 7 y el canal 9» son los que ven esos dos y no el 13.",
+     "color": "azul"
+    },
+    {
+     "texto": "Las zonas sin dato son x (solo el 7), y (solo el 9) y z (el 7 y el 13, no el 9).",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "generador": "venn",
+     "op": {
+      "nombres": "S, N, T",
+      "filas": [
+       {
+        "texto": "|S| = 55",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "|N| = 46",
+        "color": "#e03131"
+       },
+       {
+        "texto": "|S ∩ T| = 33",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "S ∩ N − T = 15",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "N ∩ T − S = 2",
+        "color": "#9c36b5"
+       },
+       {
+        "texto": "solo T = 3",
+        "color": "#0c8599"
+       },
+       {
+        "texto": "los tres = 25",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "ninguno = 6",
+        "color": "#e03131"
+       },
+       {
+        "texto": "solo S = x",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "solo N = y",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "S ∩ T − N = z",
+        "color": "#9c36b5"
+       }
+      ],
+      "variables": "x, y, z",
+      "mostrar": "planteo",
+      "tamano": "chico",
+      "tamTexto": "M",
+      "cardinales": "no",
+      "trazos": "distintos",
+      "colores": false,
+      "datos": false,
+      "referencias": false,
+      "ecuaciones": false,
+      "pasos": false,
+      "textos": "debajo",
+      "titulos": false
+     }
+    },
+    {
+     "texto": "El canal 7 y el 13. |S ∩ T| es z más los 25 que ven los tres canales.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "33",
+       "der": "z + 25"
+      },
+      {
+       "izq": [
+        "33 ",
+        {
+         "t": "− 25",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "z + 25 ",
+        {
+         "t": "− 25",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 25 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "8",
+       "der": "z"
+      }
+     ]
+    },
+    {
+     "texto": "Solo el canal 7. |S| es la suma de todas las zonas de S.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "55",
+       "der": "x + 15 + z + 25"
+      },
+      {
+       "izq": "55",
+       "der": [
+        "x + 15 + ",
+        {
+         "t": "8",
+         "color": "producto"
+        },
+        " + 25"
+       ],
+       "nota": "Reemplazar z = 8",
+       "notaColor": "producto"
+      },
+      {
+       "izq": "55",
+       "der": "x + 48"
+      },
+      {
+       "izq": [
+        "55 ",
+        {
+         "t": "− 48",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "x + 48 ",
+        {
+         "t": "− 48",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 48 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "7",
+       "der": "x"
+      }
+     ]
+    },
+    {
+     "texto": "Solo el canal 9. |N| es la suma de todas las zonas de N.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "izq": "46",
+       "der": "y + 15 + 2 + 25"
+      },
+      {
+       "izq": "46",
+       "der": "y + 42"
+      },
+      {
+       "izq": [
+        "46 ",
+        {
+         "t": "− 42",
+         "color": "suma"
+        }
+       ],
+       "der": [
+        "y + 42 ",
+        {
+         "t": "− 42",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 42 en los dos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "4",
+       "der": "y"
+      }
+     ]
+    },
+    {
+     "texto": "El diagrama resuelto queda así:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "generador": "venn",
+     "op": {
+      "nombres": "S, N, T",
+      "filas": [
+       {
+        "texto": "|S| = 55",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "|N| = 46",
+        "color": "#e03131"
+       },
+       {
+        "texto": "|S ∩ T| = 33",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "S ∩ N − T = 15",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "N ∩ T − S = 2",
+        "color": "#9c36b5"
+       },
+       {
+        "texto": "solo T = 3",
+        "color": "#0c8599"
+       },
+       {
+        "texto": "los tres = 25",
+        "color": "#1971c2"
+       },
+       {
+        "texto": "ninguno = 6",
+        "color": "#e03131"
+       },
+       {
+        "texto": "solo S = x",
+        "color": "#2f9e44"
+       },
+       {
+        "texto": "solo N = y",
+        "color": "#f08c00"
+       },
+       {
+        "texto": "S ∩ T − N = z",
+        "color": "#9c36b5"
+       }
+      ],
+      "variables": "x, y, z",
+      "mostrar": "resuelto",
+      "tamano": "chico",
+      "tamTexto": "M",
+      "cardinales": "no",
+      "trazos": "distintos",
+      "colores": false,
+      "datos": false,
+      "referencias": false,
+      "ecuaciones": false,
+      "pasos": false,
+      "variableYValor": true,
+      "textos": "debajo",
+      "titulos": false
+     }
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "La cantidad de personas encuestadas",
+     "bloques": [
+      {
+       "texto": "Se suman todas las zonas del diagrama, también la de los que no ven T.V.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "izq": "|U|",
+         "der": "x + y + solo T + 15 + z + 2 + 25 + 6"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "7",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "4",
+           "color": "producto"
+          },
+          " + 3 + 15 + ",
+          {
+           "t": "8",
+           "color": "producto"
+          },
+          " + 2 + 25 + 6"
+         ],
+         "nota": "Reemplazar x, y, z",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "70"
+        },
+        {
+         "seccion": true,
+         "der": "|U| = 70",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Se encuestaron 70 personas.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "La cantidad de personas que ven solo el canal 9",
+     "bloques": [
+      {
+       "texto": "Son los de la zona y.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "y = 4",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "4 personas ven solo el canal 9.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
