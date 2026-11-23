@@ -141,7 +141,21 @@ export function revisar(sol, opc = {}) {
         for (const k of ["lado", "ancho"]) if (b[k] !== undefined && !(typeof b[k] === "number" && b[k] > 0)) av(`${rb}.${k}`, "tendría que ser un número positivo");
         return;
       }
-      err(rb, "bloque sin «texto», «pasos», «generador», «seccion», «qr», «salto» ni «espacio»");
+      if (b.triangulos !== undefined) {
+        if (!Array.isArray(b.triangulos) || !b.triangulos.length) { err(rb + ".triangulos", "tiene que ser una lista de triángulos y textos"); return; }
+        b.triangulos.forEach((t, j) => {
+          const rt = `${rb}.triangulos[${j}]`;
+          if (typeof t === "string") { texto(t, rt); return; }
+          const a = t && t.angulos;
+          if (!Array.isArray(a) || a.length !== 3 || !a.every((v) => typeof v === "number" && v > 0) || Math.abs(a[0] + a[1] + a[2] - 180) > 0.01)
+            err(rt + ".angulos", "tienen que ser tres números positivos que sumen 180");
+          if (t && t.nombre !== undefined) texto(String(t.nombre), rt + ".nombre");
+        });
+        if (b.alto !== undefined && !(typeof b.alto === "number" && b.alto > 0)) av(rb + ".alto", "tendría que ser un número positivo");
+        color(b.color, rb + ".color");
+        return;
+      }
+      err(rb, "bloque sin «texto», «pasos», «generador», «seccion», «qr», «triangulos», «salto» ni «espacio»");
     });
   };
 

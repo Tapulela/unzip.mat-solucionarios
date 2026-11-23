@@ -36,7 +36,7 @@
    "titulo": "Solucionario de los trabajos prácticos",
    "subtitulo": "Año 2026 · Cuatrimestre 2",
    "lineas": [
-    "Trabajos prácticos 1 a 11, resueltos paso a paso"
+    "Trabajos prácticos 1 a 11 y supuestos teóricos, resueltos paso a paso"
    ],
    "pie": "AUSC - PUC - LSI"
   },
@@ -108,7 +108,7 @@
    "tipo": "texto",
    "titulo": "Introducción",
    "bloques": [
-    "Cada trabajo práctico empieza en una hoja nueva y lleva su propia cabecera. En cada ejercicio se copia primero la consigna y debajo va la respuesta, paso a paso.",
+    "Cada trabajo práctico empieza en una hoja nueva y lleva su propia cabecera. En cada ejercicio se copia primero la consigna y debajo va la respuesta, paso a paso. Después de los trabajos prácticos, en la sección «Supuestos teóricos», van resueltos los supuestos teóricos de cada tema, en el mismo orden.",
     {
      "seccion": "Cómo leer las resoluciones",
      "bloques": [
@@ -121,7 +121,7 @@
     {
      "seccion": "Cómo encontrar un ejercicio",
      "bloques": [
-      "En el índice («Contenido») están los trabajos prácticos y sus ejercicios con el número de hoja. En el PDF, cada renglón del índice es un enlace a su hoja, y el panel de marcadores del lector lleva a cada parte, trabajo práctico y ejercicio."
+      "En el índice («Contenido») están los trabajos prácticos, los supuestos teóricos y sus ejercicios con el número de hoja. En el PDF, cada renglón del índice es un enlace a su hoja, y el panel de marcadores del lector lleva a cada parte, trabajo práctico, supuesto teórico y ejercicio."
      ]
     }
    ],
@@ -174,6 +174,47 @@
   {
    "ruta": "tp-11-numeros-complejos/solucion.json",
    "marcador": "T.P. 11: Números complejos"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Supuestos teóricos",
+   "bloques": [
+    "Esta sección reúne las resoluciones de los supuestos teóricos de la materia. No llevan número: hay uno por tema y van en el mismo orden que los trabajos prácticos.",
+    "Cada supuesto teórico empieza en una hoja nueva y lleva su propia cabecera; se resuelven con los mismos criterios que los trabajos prácticos.",
+    {
+     "espacio": 1
+    },
+    {
+     "seccion": "Temas",
+     "bloques": [
+      "•  Teoría de conjuntos",
+      "•  Relaciones binarias",
+      "•  Estructuras algebraicas",
+      "•  Números naturales y enteros",
+      "•  Números reales"
+     ]
+    }
+   ]
+  },
+  {
+   "ruta": "supuestos-teoricos-teoria-de-conjuntos/solucion.json",
+   "marcador": "Supuestos teóricos: Teoría de conjuntos"
+  },
+  {
+   "ruta": "supuestos-teoricos-relaciones-binarias/solucion.json",
+   "marcador": "Supuestos teóricos: Relaciones binarias"
+  },
+  {
+   "ruta": "supuestos-teoricos-estructuras-algebraicas/solucion.json",
+   "marcador": "Supuestos teóricos: Estructuras algebraicas"
+  },
+  {
+   "ruta": "supuestos-teoricos-naturales-y-enteros/solucion.json",
+   "marcador": "Supuestos teóricos: Números naturales y enteros"
+  },
+  {
+   "ruta": "supuestos-teoricos-numeros-reales/solucion.json",
+   "marcador": "Supuestos teóricos: Números reales"
   }
  ]
 }
