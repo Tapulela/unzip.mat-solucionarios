@@ -212,12 +212,11 @@
        "color": "azul"
       },
       {
-       "texto": "R₁ = {(a, b) | a ≤ b}",
-       "color": "azul",
-       "unir": true
-      },
-      {
        "pasos": [
+        {
+         "der": "R₁ = {(a, b) | a ≤ b}",
+         "color": "azul"
+        },
         {
          "rel": "",
          "der": [
@@ -272,12 +271,11 @@
        "entero": true
       },
       {
-       "texto": "R₂ = {(a, b) | a > b}",
-       "color": "azul",
-       "unir": true
-      },
-      {
        "pasos": [
+        {
+         "der": "R₂ = {(a, b) | a > b}",
+         "color": "azul"
+        },
         {
          "rel": "",
          "der": [
@@ -329,15 +327,15 @@
          ]
         }
        ],
-       "entero": true
-      },
-      {
-       "texto": "R₃ = {(a, b) | a = b ∨ a = −b}",
-       "color": "azul",
-       "unir": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
+        {
+         "der": "R₃ = {(a, b) | a = b ∨ a = −b}",
+         "color": "azul"
+        },
         {
          "rel": "",
          "der": [
@@ -392,12 +390,11 @@
        "entero": true
       },
       {
-       "texto": "R₄ = {(a, b) | a = b}",
-       "color": "azul",
-       "unir": true
-      },
-      {
        "pasos": [
+        {
+         "der": "R₄ = {(a, b) | a = b}",
+         "color": "azul"
+        },
         {
          "rel": "",
          "der": [
@@ -449,15 +446,15 @@
          ]
         }
        ],
-       "entero": true
-      },
-      {
-       "texto": "R₅ = {(a, b) | a = b + 1}",
-       "color": "azul",
-       "unir": true
+       "entero": true,
+       "alLado": true
       },
       {
        "pasos": [
+        {
+         "der": "R₅ = {(a, b) | a = b + 1}",
+         "color": "azul"
+        },
         {
          "rel": "",
          "der": [
@@ -512,12 +509,11 @@
        "entero": true
       },
       {
-       "texto": "R₆ = {(a, b) | a + b ≤ 3}",
-       "color": "azul",
-       "unir": true
-      },
-      {
        "pasos": [
+        {
+         "der": "R₆ = {(a, b) | a + b ≤ 3}",
+         "color": "azul"
+        },
         {
          "rel": "",
          "der": [
@@ -569,7 +565,8 @@
          ]
         }
        ],
-       "entero": true
+       "entero": true,
+       "alLado": true
       },
       {
        "texto": "Resumen en una tabla (∈ si el par está en la relación, ∉ si no está):",
@@ -653,44 +650,29 @@
          "der": "(1, 1) está en R₁, R₃, R₄ y R₆.",
          "color": "azul",
          "caja": "azul"
-        }
-       ]
-      },
-      {
-       "pasos": [
+        },
         {
          "der": "(1, 2) está en R₁ y R₆.",
          "color": "azul",
          "caja": "azul"
-        }
-       ]
-      },
-      {
-       "pasos": [
+        },
         {
          "der": "(2, 1) está en R₂, R₅ y R₆.",
          "color": "azul",
          "caja": "azul"
-        }
-       ]
-      },
-      {
-       "pasos": [
+        },
         {
          "der": "(1, −1) está en R₂, R₃ y R₆.",
          "color": "azul",
          "caja": "azul"
-        }
-       ]
-      },
-      {
-       "pasos": [
+        },
         {
          "der": "(2, 2) está en R₁, R₃ y R₄.",
          "color": "azul",
          "caja": "azul"
         }
-       ]
+       ],
+       "alLado": "centro"
       }
      ],
      "marcador": "4.a: Pares que contiene cada relación"
