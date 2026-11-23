@@ -997,26 +997,26 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ e = a"
+           "izq": "a ∗ e",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "frac": [
               "ae",
               "2"
              ]
-            },
-            " = a"
+            }
            ],
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "frac": [
               "ae",
@@ -1026,8 +1026,11 @@
             {
              "t": " · 2",
              "color": "producto"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " · 2",
              "color": "producto"
@@ -1037,12 +1040,12 @@
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "ae = 2a"
+           "izq": "ae",
+           "rel": "=",
+           "der": "2a"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "frac": [
               "ae",
@@ -1051,8 +1054,10 @@
                "color": "producto"
               }
              ]
-            },
-            " = ",
+            }
+           ],
+           "rel": "=",
+           "der": [
             {
              "frac": [
               "2a",
@@ -1067,8 +1072,9 @@
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "e = 2"
+           "izq": "e",
+           "rel": "=",
+           "der": "2"
           }
          ],
          "entero": true
@@ -1085,26 +1091,26 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "e ∗ a = a"
+           "izq": "e ∗ a",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "frac": [
               "ea",
               "2"
              ]
-            },
-            " = a"
+            }
            ],
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "frac": [
               "ea",
@@ -1114,8 +1120,11 @@
             {
              "t": " · 2",
              "color": "producto"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " · 2",
              "color": "producto"
@@ -1125,12 +1134,12 @@
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "ea = 2a"
+           "izq": "ea",
+           "rel": "=",
+           "der": "2a"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "frac": [
               "ea",
@@ -1139,8 +1148,10 @@
                "color": "producto"
               }
              ]
-            },
-            " = ",
+            }
+           ],
+           "rel": "=",
+           "der": [
             {
              "frac": [
               "2a",
@@ -1155,8 +1166,9 @@
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "e = 2"
+           "izq": "e",
+           "rel": "=",
+           "der": "2"
           }
          ],
          "entero": true
@@ -1221,24 +1233,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ e = a"
+           "izq": "a ∗ e",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "a + e + 4 = a",
+           "izq": "a + e + 4",
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a + e + 4",
             {
              "t": " − a − 4",
              "color": "suma"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " − a − 4",
              "color": "suma"
@@ -1248,8 +1264,9 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "e = −4"
+           "izq": "e",
+           "rel": "=",
+           "der": "−4"
           }
          ],
          "entero": true
@@ -1266,24 +1283,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "e ∗ a = a"
+           "izq": "e ∗ a",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "e + a + 4 = a",
+           "izq": "e + a + 4",
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "e + a + 4",
             {
              "t": " − a − 4",
              "color": "suma"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " − a − 4",
              "color": "suma"
@@ -1293,8 +1314,9 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "e = −4"
+           "izq": "e",
+           "rel": "=",
+           "der": "−4"
           }
          ],
          "entero": true
@@ -1359,31 +1381,33 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "x ∗ e = x"
+           "izq": "x ∗ e",
+           "rel": "=",
+           "der": "x"
           },
           {
-           "rel": "",
-           "der": "xe + e = x",
+           "izq": "xe + e",
+           "rel": "=",
+           "der": "x",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "t": "e(x + 1)",
              "color": "producto"
-            },
-            " = x"
+            }
            ],
+           "rel": "=",
+           "der": "x",
            "nota": "Sacar factor común e",
            "notaColor": "producto"
           },
           {
-           "rel": "",
+           "izq": "e",
+           "rel": "=",
            "der": [
-            "e = ",
             {
              "frac": [
               "x",
@@ -2055,24 +2079,28 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": "x ∗ e = x"
+             "izq": "x ∗ e",
+             "rel": "=",
+             "der": "x"
             },
             {
-             "rel": "",
-             "der": "x² + e² = x",
+             "izq": "x² + e²",
+             "rel": "=",
+             "der": "x",
              "nota": "Definición de ∗",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "x² + e²",
               {
                "t": " − x²",
                "color": "suma"
-              },
-              " = x",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "x",
               {
                "t": " − x²",
                "color": "suma"
@@ -2082,8 +2110,9 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "e² = x − x²"
+             "izq": "e²",
+             "rel": "=",
+             "der": "x − x²"
             }
            ],
            "entero": true
@@ -2506,24 +2535,28 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": "x ∗ e = x"
+             "izq": "x ∗ e",
+             "rel": "=",
+             "der": "x"
             },
             {
-             "rel": "",
-             "der": "x + e + xe = x",
+             "izq": "x + e + xe",
+             "rel": "=",
+             "der": "x",
              "nota": "Definición de ∗",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "x + e + xe",
               {
                "t": " − x",
                "color": "suma"
-              },
-              " = x",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "x",
               {
                "t": " − x",
                "color": "suma"
@@ -2533,24 +2566,26 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "e + xe = 0"
+             "izq": "e + xe",
+             "rel": "=",
+             "der": "0"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               {
                "t": "e(1 + x)",
                "color": "producto"
-              },
-              " = 0"
+              }
              ],
+             "rel": "=",
+             "der": "0",
              "nota": "Sacar factor común e",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": "e = 0",
+             "izq": "e",
+             "rel": "=",
+             "der": "0",
              "nota": "Dividir por 1 + x ≠ 0",
              "notaColor": "producto"
             }
@@ -2610,24 +2645,28 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": "x ∗ x' = 0"
+             "izq": "x ∗ x'",
+             "rel": "=",
+             "der": "0"
             },
             {
-             "rel": "",
-             "der": "x + x' + xx' = 0",
+             "izq": "x + x' + xx'",
+             "rel": "=",
+             "der": "0",
              "nota": "Definición de ∗",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "x + x' + xx'",
               {
                "t": " − x",
                "color": "suma"
-              },
-              " = 0",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "0",
               {
                "t": " − x",
                "color": "suma"
@@ -2637,25 +2676,26 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "x' + xx' = −x"
+             "izq": "x' + xx'",
+             "rel": "=",
+             "der": "−x"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               {
                "t": "x'(1 + x)",
                "color": "producto"
-              },
-              " = −x"
+              }
              ],
+             "rel": "=",
+             "der": "−x",
              "nota": "Sacar factor común x'",
              "notaColor": "producto"
             },
             {
-             "rel": "",
+             "izq": "x'",
+             "rel": "=",
              "der": [
-              "x' = ",
               {
                "frac": [
                 "−x",
@@ -2679,21 +2719,22 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": [
+             "izq": [
               {
                "frac": [
                 "−x",
                 "1 + x"
                ]
-              },
-              " = −1"
-             ]
+              }
+             ],
+             "rel": "=",
+             "der": "−1"
             },
             {
-             "rel": "",
+             "izq": "−x",
+             "rel": "=",
              "der": [
-              "−x = −1",
+              "−1",
               {
                "t": " · (1 + x)",
                "color": "producto"
@@ -2703,20 +2744,23 @@
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": "−x = −1 − x",
+             "izq": "−x",
+             "rel": "=",
+             "der": "−1 − x",
              "nota": "Propiedad distributiva",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "−x",
               {
                "t": " + x",
                "color": "suma"
-              },
-              " = −1 − x",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "−1 − x",
               {
                "t": " + x",
                "color": "suma"
@@ -2726,8 +2770,9 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "0 = −1"
+             "izq": "0",
+             "rel": "=",
+             "der": "−1"
             }
            ],
            "entero": true
@@ -3133,24 +3178,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ e = a"
+           "izq": "a ∗ e",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "a + e − ae = a",
+           "izq": "a + e − ae",
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a + e − ae",
             {
              "t": " − a",
              "color": "suma"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " − a",
              "color": "suma"
@@ -3160,24 +3209,26 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "e − ae = 0"
+           "izq": "e − ae",
+           "rel": "=",
+           "der": "0"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "t": "e(1 − a)",
              "color": "producto"
-            },
-            " = 0"
+            }
            ],
+           "rel": "=",
+           "der": "0",
            "nota": "Sacar factor común e",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "e = 0",
+           "izq": "e",
+           "rel": "=",
+           "der": "0",
            "nota": "Dividir por 1 − a (si a ≠ 1)",
            "notaColor": "producto"
           }
@@ -3260,24 +3311,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ a' = 0"
+           "izq": "a ∗ a'",
+           "rel": "=",
+           "der": "0"
           },
           {
-           "rel": "",
-           "der": "a + a' − aa' = 0",
+           "izq": "a + a' − aa'",
+           "rel": "=",
+           "der": "0",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a + a' − aa'",
             {
              "t": " − a",
              "color": "suma"
-            },
-            " = 0",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "0",
             {
              "t": " − a",
              "color": "suma"
@@ -3287,25 +3342,26 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "a' − aa' = −a"
+           "izq": "a' − aa'",
+           "rel": "=",
+           "der": "−a"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             {
              "t": "a'(1 − a)",
              "color": "producto"
-            },
-            " = −a"
+            }
            ],
+           "rel": "=",
+           "der": "−a",
            "nota": "Sacar factor común a'",
            "notaColor": "producto"
           },
           {
-           "rel": "",
+           "izq": "a'",
+           "rel": "=",
            "der": [
-            "a' = ",
             {
              "frac": [
               "−a",
@@ -3320,9 +3376,9 @@
            "notaColor": "producto"
           },
           {
-           "rel": "",
+           "izq": "a'",
+           "rel": "=",
            "der": [
-            "a' = ",
             {
              "frac": [
               {
@@ -3734,24 +3790,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ e = a"
+           "izq": "a ∗ e",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "a + e² = a",
+           "izq": "a + e²",
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a + e²",
             {
              "t": " − a",
              "color": "suma"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " − a",
              "color": "suma"
@@ -3761,12 +3821,14 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "e² = 0"
+           "izq": "e²",
+           "rel": "=",
+           "der": "0"
           },
           {
-           "rel": "",
-           "der": "e = 0",
+           "izq": "e",
+           "rel": "=",
+           "der": "0",
            "nota": "Raíz cuadrada"
           }
          ],
@@ -3784,24 +3846,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "e ∗ a = a"
+           "izq": "e ∗ a",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "e + a² = a",
+           "izq": "e + a²",
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "e + a²",
             {
              "t": " − a²",
              "color": "suma"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " − a²",
              "color": "suma"
@@ -3811,8 +3877,9 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "e = a − a²"
+           "izq": "e",
+           "rel": "=",
+           "der": "a − a²"
           }
          ],
          "entero": true
@@ -4195,12 +4262,14 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "(a, b) ⊕ (x, y) = (a, b)"
+           "izq": "(a, b) ⊕ (x, y)",
+           "rel": "=",
+           "der": "(a, b)"
           },
           {
-           "rel": "",
-           "der": "(ax, ay + b) = (a, b)",
+           "izq": "(ax, ay + b)",
+           "rel": "=",
+           "der": "(a, b)",
            "nota": "Definición de ⊕",
            "notaColor": "producto"
           },
@@ -4215,13 +4284,15 @@
            "nota": "Igualar componente a componente"
           },
           {
-           "rel": "",
-           "der": "x = 1",
+           "izq": "x",
+           "rel": "=",
+           "der": "1",
            "nota": "ax = a para todo a"
           },
           {
-           "rel": "",
-           "der": "y = 0",
+           "izq": "y",
+           "rel": "=",
+           "der": "0",
            "nota": "ay = 0 para todo a"
           }
          ],
@@ -4239,12 +4310,14 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "(x, y) ⊕ (a, b) = (a, b)"
+           "izq": "(x, y) ⊕ (a, b)",
+           "rel": "=",
+           "der": "(a, b)"
           },
           {
-           "rel": "",
-           "der": "(xa, xb + y) = (a, b)",
+           "izq": "(xa, xb + y)",
+           "rel": "=",
+           "der": "(a, b)",
            "nota": "Definición de ⊕",
            "notaColor": "producto"
           },
@@ -4259,8 +4332,9 @@
            "nota": "Igualar componente a componente"
           },
           {
-           "rel": "",
-           "der": "x = 1",
+           "izq": "x",
+           "rel": "=",
+           "der": "1",
            "nota": "xa = a para todo a"
           },
           {
@@ -4270,8 +4344,9 @@
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "y = 0",
+           "izq": "y",
+           "rel": "=",
+           "der": "0",
            "nota": "Restar b en los dos miembros",
            "notaColor": "suma"
           }
@@ -4331,12 +4406,14 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "(a, b) ⊕ (x, y) = (1, 0)"
+           "izq": "(a, b) ⊕ (x, y)",
+           "rel": "=",
+           "der": "(1, 0)"
           },
           {
-           "rel": "",
-           "der": "(ax, ay + b) = (1, 0)",
+           "izq": "(ax, ay + b)",
+           "rel": "=",
+           "der": "(1, 0)",
            "nota": "Definición de ⊕",
            "notaColor": "producto"
           },
@@ -4351,9 +4428,9 @@
            "nota": "Igualar componente a componente"
           },
           {
-           "rel": "",
+           "izq": "x",
+           "rel": "=",
            "der": [
-            "x = ",
             {
              "frac": [
               "1",
@@ -4368,17 +4445,17 @@
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
-            "ay = −b"
-           ],
+           "izq": "ay",
+           "rel": "=",
+           "der": "−b",
            "nota": "Restar b en los dos miembros",
            "notaColor": "suma"
           },
           {
-           "rel": "",
+           "izq": "y",
+           "rel": "=",
            "der": [
-            "y = − ",
+            "− ",
             {
              "frac": [
               "b",
@@ -4849,24 +4926,28 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "a ∗ a' = 0"
+         "izq": "a ∗ a'",
+         "rel": "=",
+         "der": "0"
         },
         {
-         "rel": "",
-         "der": "a + a' + 2aa' = 0",
+         "izq": "a + a' + 2aa'",
+         "rel": "=",
+         "der": "0",
          "nota": "Definición de ∗",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "a + a' + 2aa'",
           {
            "t": " − a",
            "color": "suma"
-          },
-          " = 0",
+          }
+         ],
+         "rel": "=",
+         "der": [
+          "0",
           {
            "t": " − a",
            "color": "suma"
@@ -4876,25 +4957,26 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "a' + 2aa' = −a"
+         "izq": "a' + 2aa'",
+         "rel": "=",
+         "der": "−a"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "a'(1 + 2a)",
            "color": "producto"
-          },
-          " = −a"
+          }
          ],
+         "rel": "=",
+         "der": "−a",
          "nota": "Sacar factor común a'",
          "notaColor": "producto"
         },
         {
-         "rel": "",
+         "izq": "a'",
+         "rel": "=",
          "der": [
-          "a' = ",
           {
            "frac": [
             "−a",
@@ -5440,30 +5522,35 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ⊙ e = a"
+           "izq": "a ⊙ e",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "∛(a³ + e³) = a",
+           "izq": "∛(a³ + e³)",
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ⊙",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "a³ + e³ = a³",
+           "izq": "a³ + e³",
+           "rel": "=",
+           "der": "a³",
            "nota": "Elevar al cubo los dos miembros",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a³ + e³",
             {
              "t": " − a³",
              "color": "suma"
-            },
-            " = a³",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a³",
             {
              "t": " − a³",
              "color": "suma"
@@ -5473,12 +5560,14 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "e³ = 0"
+           "izq": "e³",
+           "rel": "=",
+           "der": "0"
           },
           {
-           "rel": "",
-           "der": "e = 0",
+           "izq": "e",
+           "rel": "=",
+           "der": "0",
            "nota": "Raíz cúbica"
           }
          ],
@@ -5537,30 +5626,35 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ⊙ a' = 0"
+           "izq": "a ⊙ a'",
+           "rel": "=",
+           "der": "0"
           },
           {
-           "rel": "",
-           "der": "∛(a³ + a'³) = 0",
+           "izq": "∛(a³ + a'³)",
+           "rel": "=",
+           "der": "0",
            "nota": "Definición de ⊙",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": "a³ + a'³ = 0",
+           "izq": "a³ + a'³",
+           "rel": "=",
+           "der": "0",
            "nota": "Elevar al cubo los dos miembros",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a³ + a'³",
             {
              "t": " − a³",
              "color": "suma"
-            },
-            " = 0",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "0",
             {
              "t": " − a³",
              "color": "suma"
@@ -5570,12 +5664,14 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "a'³ = −a³"
+           "izq": "a'³",
+           "rel": "=",
+           "der": "−a³"
           },
           {
-           "rel": "",
-           "der": "a' = −a",
+           "izq": "a'",
+           "rel": "=",
+           "der": "−a",
            "nota": "Raíz cúbica"
           }
          ],
@@ -5628,22 +5724,24 @@
        ]
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "marca": "ok"
         },
-        " Existencia de elemento neutro (e = 0)"
-       ]
+        " Existencia de elemento neutro (e"
+       ],
+       "rel": "=",
+       "der": "0)"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "marca": "ok"
         },
-        " Existencia de elemento inverso (a' = −a)"
-       ]
+        " Existencia de elemento inverso (a'"
+       ],
+       "rel": "=",
+       "der": "−a)"
       }
      ],
      "entero": true
@@ -6060,24 +6158,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ e = a"
+           "izq": "a ∗ e",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "a + e − 2 = a",
+           "izq": "a + e − 2",
+           "rel": "=",
+           "der": "a",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a + e − 2",
             {
              "t": " − a + 2",
              "color": "suma"
-            },
-            " = a",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "a",
             {
              "t": " − a + 2",
              "color": "suma"
@@ -6087,8 +6189,9 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "e = 2"
+           "izq": "e",
+           "rel": "=",
+           "der": "2"
           }
          ],
          "entero": true
@@ -6146,24 +6249,28 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ a' = 2"
+           "izq": "a ∗ a'",
+           "rel": "=",
+           "der": "2"
           },
           {
-           "rel": "",
-           "der": "a + a' − 2 = 2",
+           "izq": "a + a' − 2",
+           "rel": "=",
+           "der": "2",
            "nota": "Definición de ∗",
            "notaColor": "producto"
           },
           {
-           "rel": "",
-           "der": [
+           "izq": [
             "a + a' − 2",
             {
              "t": " − a + 2",
              "color": "suma"
-            },
-            " = 2",
+            }
+           ],
+           "rel": "=",
+           "der": [
+            "2",
             {
              "t": " − a + 2",
              "color": "suma"
@@ -6173,8 +6280,9 @@
            "notaColor": "suma"
           },
           {
-           "rel": "",
-           "der": "a' = 4 − a"
+           "izq": "a'",
+           "rel": "=",
+           "der": "4 − a"
           }
          ],
          "entero": true
@@ -6226,22 +6334,24 @@
        ]
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "marca": "ok"
         },
-        " Existencia de elemento neutro (e = 2)"
-       ]
+        " Existencia de elemento neutro (e"
+       ],
+       "rel": "=",
+       "der": "2)"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "marca": "ok"
         },
-        " Existencia de elemento inverso (a' = 4 − a)"
-       ]
+        " Existencia de elemento inverso (a'"
+       ],
+       "rel": "=",
+       "der": "4 − a)"
       }
      ],
      "entero": true
@@ -6570,16 +6680,19 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "a ∗ a = a"
+           "izq": "a ∗ a",
+           "rel": "=",
+           "der": "a"
           },
           {
-           "rel": "",
-           "der": "b ∗ a = b"
+           "izq": "b ∗ a",
+           "rel": "=",
+           "der": "b"
           },
           {
-           "rel": "",
-           "der": "c ∗ a = c"
+           "izq": "c ∗ a",
+           "rel": "=",
+           "der": "c"
           }
          ],
          "entero": true
@@ -7480,24 +7593,28 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": "a ∗ e = a"
+             "izq": "a ∗ e",
+             "rel": "=",
+             "der": "a"
             },
             {
-             "rel": "",
-             "der": "a + e + 1 = a",
+             "izq": "a + e + 1",
+             "rel": "=",
+             "der": "a",
              "nota": "Definición de ∗",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "a + e + 1",
               {
                "t": " − a − 1",
                "color": "suma"
-              },
-              " = a",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "a",
               {
                "t": " − a − 1",
                "color": "suma"
@@ -7507,8 +7624,9 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "e = −1"
+             "izq": "e",
+             "rel": "=",
+             "der": "−1"
             }
            ],
            "entero": true
@@ -7566,24 +7684,28 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": "a ∗ a' = −1"
+             "izq": "a ∗ a'",
+             "rel": "=",
+             "der": "−1"
             },
             {
-             "rel": "",
-             "der": "a + a' + 1 = −1",
+             "izq": "a + a' + 1",
+             "rel": "=",
+             "der": "−1",
              "nota": "Definición de ∗",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "a + a' + 1",
               {
                "t": " − a − 1",
                "color": "suma"
-              },
-              " = −1",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "−1",
               {
                "t": " − a − 1",
                "color": "suma"
@@ -7593,8 +7715,9 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "a' = −2 − a"
+             "izq": "a'",
+             "rel": "=",
+             "der": "−2 − a"
             }
            ],
            "entero": true
@@ -7646,22 +7769,24 @@
          ]
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "marca": "ok"
           },
-          " Existencia de elemento neutro (e = −1)"
-         ]
+          " Existencia de elemento neutro (e"
+         ],
+         "rel": "=",
+         "der": "−1)"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "marca": "ok"
           },
-          " Existencia de elemento inverso (a' = −2 − a)"
-         ]
+          " Existencia de elemento inverso (a'"
+         ],
+         "rel": "=",
+         "der": "−2 − a)"
         }
        ],
        "entero": true
@@ -7971,24 +8096,28 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": "a ∘ e = a"
+             "izq": "a ∘ e",
+             "rel": "=",
+             "der": "a"
             },
             {
-             "rel": "",
-             "der": "a + e + ae = a",
+             "izq": "a + e + ae",
+             "rel": "=",
+             "der": "a",
              "nota": "Definición de ∘",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "a + e + ae",
               {
                "t": " − a",
                "color": "suma"
-              },
-              " = a",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "a",
               {
                "t": " − a",
                "color": "suma"
@@ -7998,24 +8127,26 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "e + ae = 0"
+             "izq": "e + ae",
+             "rel": "=",
+             "der": "0"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               {
                "t": "e(1 + a)",
                "color": "producto"
-              },
-              " = 0"
+              }
              ],
+             "rel": "=",
+             "der": "0",
              "nota": "Sacar factor común e",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": "e = 0",
+             "izq": "e",
+             "rel": "=",
+             "der": "0",
              "nota": "Dividir por 1 + a (si a ≠ −1)",
              "notaColor": "producto"
             }
@@ -8098,24 +8229,28 @@
           {
            "pasos": [
             {
-             "rel": "",
-             "der": "a ∘ a' = 0"
+             "izq": "a ∘ a'",
+             "rel": "=",
+             "der": "0"
             },
             {
-             "rel": "",
-             "der": "a + a' + aa' = 0",
+             "izq": "a + a' + aa'",
+             "rel": "=",
+             "der": "0",
              "nota": "Definición de ∘",
              "notaColor": "producto"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               "a + a' + aa'",
               {
                "t": " − a",
                "color": "suma"
-              },
-              " = 0",
+              }
+             ],
+             "rel": "=",
+             "der": [
+              "0",
               {
                "t": " − a",
                "color": "suma"
@@ -8125,25 +8260,26 @@
              "notaColor": "suma"
             },
             {
-             "rel": "",
-             "der": "a' + aa' = −a"
+             "izq": "a' + aa'",
+             "rel": "=",
+             "der": "−a"
             },
             {
-             "rel": "",
-             "der": [
+             "izq": [
               {
                "t": "a'(1 + a)",
                "color": "producto"
-              },
-              " = −a"
+              }
              ],
+             "rel": "=",
+             "der": "−a",
              "nota": "Sacar factor común a'",
              "notaColor": "producto"
             },
             {
-             "rel": "",
+             "izq": "a'",
+             "rel": "=",
              "der": [
-              "a' = ",
               {
                "frac": [
                 "−a",
@@ -10039,12 +10175,14 @@
         {
          "pasos": [
           {
-           "rel": "",
-           "der": "ac + ae − bd − bf = ac + ae − bd − bf"
+           "izq": "ac + ae − bd − bf",
+           "rel": "=",
+           "der": "ac + ae − bd − bf"
           },
           {
-           "rel": "",
-           "der": "ad + af + bc + be = ad + af + bc + be"
+           "izq": "ad + af + bc + be",
+           "rel": "=",
+           "der": "ad + af + bc + be"
           }
          ],
          "entero": true
@@ -10184,26 +10322,28 @@
          }
         },
         {
-         "rel": "",
-         "der": "a²c + b²c = 0",
+         "izq": "a²c + b²c",
+         "rel": "=",
+         "der": "0",
          "nota": "Sumar las dos ecuaciones",
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "(a² + b²)c",
            "color": "producto"
-          },
-          " = 0"
+          }
          ],
+         "rel": "=",
+         "der": "0",
          "nota": "Sacar factor común c",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "c = 0",
+         "izq": "c",
+         "rel": "=",
+         "der": "0",
          "nota": "Dividir por a² + b² ≠ 0",
          "notaColor": "producto"
         }
@@ -10227,26 +10367,28 @@
          }
         },
         {
-         "rel": "",
-         "der": "a²d + b²d = 0",
+         "izq": "a²d + b²d",
+         "rel": "=",
+         "der": "0",
          "nota": "Sumar las dos ecuaciones",
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "(a² + b²)d",
            "color": "producto"
-          },
-          " = 0"
+          }
          ],
+         "rel": "=",
+         "der": "0",
          "nota": "Sacar factor común d",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "d = 0",
+         "izq": "d",
+         "rel": "=",
+         "der": "0",
          "nota": "Dividir por a² + b² ≠ 0",
          "notaColor": "producto"
         }

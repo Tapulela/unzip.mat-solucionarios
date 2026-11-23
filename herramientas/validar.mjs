@@ -75,7 +75,7 @@ export function revisar(sol, opc = {}) {
       if (!["izq", "rel", "der", "nota", "notaColor", "color", "caja", "llave", "rama", "marcar", "seccion", "libre"].includes(k)) av(r, `campo desconocido «${k}» (se ignora)`);
     }
     const der = items(l.der, r + ".der");
-    if (l.izq) texto(String(l.izq), r + ".izq");
+    if (l.izq) typeof l.izq === "object" ? items(l.izq, r + ".izq") : texto(String(l.izq), r + ".izq");
     if (l.nota) (Array.isArray(l.nota) ? l.nota : [l.nota]).forEach((n) => texto(String(n), r + ".nota"));
     color(l.notaColor, r + ".notaColor"); color(l.color, r + ".color");
     if (l.caja && l.caja !== true) color(l.caja, r + ".caja");

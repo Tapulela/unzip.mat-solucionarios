@@ -505,9 +505,25 @@ vuelve a una columna.
 - **El primer renglón es la operación igualada a su reemplazo**: «z₁ + z₂ = (4 + 5i) +
   (3 − 2i)», sin nota (el reemplazo se ve en el mismo renglón), y los pasos siguen
   abajo con «= …». En el JSON, la operación va en `izq` y el reemplazo en `der`; si la
-  operación lleva una fracción dibujada (no entra en `izq`), va toda en `der`:
-  `[{ "frac": ["z₁", "z₃"] }, " = ", { "frac": [...] }]`. No se hace cuando el primer
-  renglón ya son números (no hay nada que reemplazar).
+  operación lleva una fracción dibujada, `izq` también puede ser una lista de items:
+  `"izq": [{ "frac": ["z₁", "z₃"] }]`. No se hace cuando el primer renglón ya son
+  números (no hay nada que reemplazar).
+- **Una ecuación o inecuación que se va trabajando se alinea en la relación**: cada
+  renglón es una igualdad (o desigualdad) completa y los «=» (o «<», «≥»…) quedan uno
+  debajo del otro, con el miembro izquierdo pegado al signo:
+
+  ```
+    m(a) = m(b)
+      2a = 2b
+      2a   2b
+      ── = ──
+       2    2
+       a = b
+  ```
+
+  En el JSON, cada renglón lleva el miembro izquierdo en `izq` (un texto o una lista
+  de items, con sus colores y fracciones), la relación en `rel` y el derecho en `der`.
+  No se escribe la ecuación entera en `der`, ni se alinea a mano con espacios.
 
 - **Nunca más de un paso por renglón**, en todos los temas: ni cadenas como
   «(1 ∗ 1) ∗ 0 = 2 ∗ 0 = 4», ni dentro de un párrafo de texto. Cada igualdad del

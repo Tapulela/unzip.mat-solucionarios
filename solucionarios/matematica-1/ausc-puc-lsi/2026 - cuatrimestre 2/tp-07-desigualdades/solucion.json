@@ -1355,18 +1355,21 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "3x − 1 < −2x + 4"
+         "izq": "3x − 1",
+         "rel": "<",
+         "der": "−2x + 4"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "3x − 1 ",
           {
            "t": "+ 2x",
            "color": "suma"
-          },
-          " < −2x + 4 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−2x + 4 ",
           {
            "t": "+ 2x",
            "color": "suma"
@@ -1376,18 +1379,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "5x − 1 < 4"
+         "izq": "5x − 1",
+         "rel": "<",
+         "der": "4"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "5x − 1 ",
           {
            "t": "+ 1",
            "color": "suma"
-          },
-          " < 4 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "4 ",
           {
            "t": "+ 1",
            "color": "suma"
@@ -1397,12 +1403,12 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "5x < 5"
+         "izq": "5x",
+         "rel": "<",
+         "der": "5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "5x",
@@ -1411,8 +1417,10 @@
              "color": "producto"
             }
            ]
-          },
-          " < ",
+          }
+         ],
+         "rel": "<",
+         "der": [
           {
            "frac": [
             "5",
@@ -1430,8 +1438,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x < 1"
+         "izq": "x",
+         "rel": "<",
+         "der": "1"
         }
        ]
       },
@@ -1475,18 +1484,21 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "2x + 9 > 3x + 5"
+         "izq": "2x + 9",
+         "rel": ">",
+         "der": "3x + 5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "2x + 9 ",
           {
            "t": "− 2x",
            "color": "suma"
-          },
-          " > 3x + 5 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "3x + 5 ",
           {
            "t": "− 2x",
            "color": "suma"
@@ -1496,18 +1508,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "9 > x + 5"
+         "izq": "9",
+         "rel": ">",
+         "der": "x + 5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "9 ",
           {
            "t": "− 5",
            "color": "suma"
-          },
-          " > x + 5 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "x + 5 ",
           {
            "t": "− 5",
            "color": "suma"
@@ -1517,12 +1532,14 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "4 > x"
+         "izq": "4",
+         "rel": ">",
+         "der": "x"
         },
         {
-         "rel": "",
-         "der": "x < 4",
+         "izq": "x",
+         "rel": "<",
+         "der": "4",
          "nota": "Leer la desigualdad al revés"
         }
        ]
@@ -1567,12 +1584,12 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "2(x − 3) + 5(x − 1) ≥ −4"
+         "izq": "2(x − 3) + 5(x − 1)",
+         "rel": "≥",
+         "der": "−4"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "2x − 6",
            "color": "producto"
@@ -1581,25 +1598,29 @@
           {
            "t": "5x − 5",
            "color": "producto"
-          },
-          " ≥ −4"
+          }
          ],
+         "rel": "≥",
+         "der": "−4",
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "7x − 11 ≥ −4"
+         "izq": "7x − 11",
+         "rel": "≥",
+         "der": "−4"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "7x − 11 ",
           {
            "t": "+ 11",
            "color": "suma"
-          },
-          " ≥ −4 ",
+          }
+         ],
+         "rel": "≥",
+         "der": [
+          "−4 ",
           {
            "t": "+ 11",
            "color": "suma"
@@ -1609,12 +1630,12 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "7x ≥ 7"
+         "izq": "7x",
+         "rel": "≥",
+         "der": "7"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "7x",
@@ -1623,8 +1644,10 @@
              "color": "producto"
             }
            ]
-          },
-          " ≥ ",
+          }
+         ],
+         "rel": "≥",
+         "der": [
           {
            "frac": [
             "7",
@@ -1642,8 +1665,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x ≥ 1"
+         "izq": "x",
+         "rel": "≥",
+         "der": "1"
         }
        ]
       },
@@ -1687,17 +1711,20 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "12(x + 2) + 5 < 3(4x + 1) + 3"
+         "izq": "12(x + 2) + 5",
+         "rel": "<",
+         "der": "3(4x + 1) + 3"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "12x + 24",
            "color": "producto"
           },
-          " + 5 < ",
+          " + 5"
+         ],
+         "rel": "<",
+         "der": [
           {
            "t": "12x + 3",
            "color": "producto"
@@ -1708,18 +1735,21 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "12x + 29 < 12x + 6"
+         "izq": "12x + 29",
+         "rel": "<",
+         "der": "12x + 6"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "12x + 29 ",
           {
            "t": "− 12x",
            "color": "suma"
-          },
-          " < 12x + 6 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "12x + 6 ",
           {
            "t": "− 12x",
            "color": "suma"
@@ -1729,8 +1759,9 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "29 < 6"
+         "izq": "29",
+         "rel": "<",
+         "der": "6"
         }
        ]
       },
@@ -1756,12 +1787,12 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "5(x − 2) − 4(2x + 1) < −3x + 3"
+         "izq": "5(x − 2) − 4(2x + 1)",
+         "rel": "<",
+         "der": "−3x + 3"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "5x − 10",
            "color": "producto"
@@ -1770,25 +1801,29 @@
           {
            "t": "− 8x − 4",
            "color": "producto"
-          },
-          " < −3x + 3"
+          }
          ],
+         "rel": "<",
+         "der": "−3x + 3",
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "−3x − 14 < −3x + 3"
+         "izq": "−3x − 14",
+         "rel": "<",
+         "der": "−3x + 3"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "−3x − 14 ",
           {
            "t": "+ 3x",
            "color": "suma"
-          },
-          " < −3x + 3 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−3x + 3 ",
           {
            "t": "+ 3x",
            "color": "suma"
@@ -1798,8 +1833,9 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "−14 < 3"
+         "izq": "−14",
+         "rel": "<",
+         "der": "3"
         }
        ]
       },
@@ -1847,30 +1883,33 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "x(x − 1) > x² + 3x + 1"
+         "izq": "x(x − 1)",
+         "rel": ">",
+         "der": "x² + 3x + 1"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "x² − x",
            "color": "producto"
-          },
-          " > x² + 3x + 1"
+          }
          ],
+         "rel": ">",
+         "der": "x² + 3x + 1",
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "x² − x ",
           {
            "t": "− x²",
            "color": "suma"
-          },
-          " > x² + 3x + 1 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "x² + 3x + 1 ",
           {
            "t": "− x²",
            "color": "suma"
@@ -1880,18 +1919,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "−x > 3x + 1"
+         "izq": "−x",
+         "rel": ">",
+         "der": "3x + 1"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "−x ",
           {
            "t": "− 3x",
            "color": "suma"
-          },
-          " > 3x + 1 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "3x + 1 ",
           {
            "t": "− 3x",
            "color": "suma"
@@ -1901,8 +1943,9 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "−4x > 1"
+         "izq": "−4x",
+         "rel": ">",
+         "der": "1"
         },
         {
          "rel": "",
@@ -1939,9 +1982,10 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
+         "izq": "x",
+         "rel": "<",
          "der": [
-          "x < −",
+          "−",
           {
            "frac": [
             "1",
@@ -2001,17 +2045,19 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "(x + 2)(x + 3) < (x − 1)(x + 5)"
+         "izq": "(x + 2)(x + 3)",
+         "rel": "<",
+         "der": "(x − 1)(x + 5)"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "x² + 3x + 2x + 6",
            "color": "producto"
-          },
-          " < ",
+          }
+         ],
+         "rel": "<",
+         "der": [
           {
            "t": "x² + 5x − x − 5",
            "color": "producto"
@@ -2021,18 +2067,21 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x² + 5x + 6 < x² + 4x − 5"
+         "izq": "x² + 5x + 6",
+         "rel": "<",
+         "der": "x² + 4x − 5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "x² + 5x + 6 ",
           {
            "t": "− x²",
            "color": "suma"
-          },
-          " < x² + 4x − 5 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "x² + 4x − 5 ",
           {
            "t": "− x²",
            "color": "suma"
@@ -2042,18 +2091,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "5x + 6 < 4x − 5"
+         "izq": "5x + 6",
+         "rel": "<",
+         "der": "4x − 5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "5x + 6 ",
           {
            "t": "− 4x",
            "color": "suma"
-          },
-          " < 4x − 5 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "4x − 5 ",
           {
            "t": "− 4x",
            "color": "suma"
@@ -2063,18 +2115,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "x + 6 < −5"
+         "izq": "x + 6",
+         "rel": "<",
+         "der": "−5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "x + 6 ",
           {
            "t": "− 6",
            "color": "suma"
-          },
-          " < −5 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−5 ",
           {
            "t": "− 6",
            "color": "suma"
@@ -2084,8 +2139,9 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "x < −11"
+         "izq": "x",
+         "rel": "<",
+         "der": "−11"
         }
        ]
       },
@@ -2129,12 +2185,12 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "2(x + 3) + 3(x − 1) > 2(x + 2)"
+         "izq": "2(x + 3) + 3(x − 1)",
+         "rel": ">",
+         "der": "2(x + 2)"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "2x + 6",
            "color": "producto"
@@ -2143,8 +2199,10 @@
           {
            "t": "3x − 3",
            "color": "producto"
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "2x + 4",
            "color": "producto"
@@ -2154,18 +2212,21 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "5x + 3 > 2x + 4"
+         "izq": "5x + 3",
+         "rel": ">",
+         "der": "2x + 4"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "5x + 3 ",
           {
            "t": "− 2x",
            "color": "suma"
-          },
-          " > 2x + 4 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "2x + 4 ",
           {
            "t": "− 2x",
            "color": "suma"
@@ -2175,18 +2236,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "3x + 3 > 4"
+         "izq": "3x + 3",
+         "rel": ">",
+         "der": "4"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "3x + 3 ",
           {
            "t": "− 3",
            "color": "suma"
-          },
-          " > 4 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "4 ",
           {
            "t": "− 3",
            "color": "suma"
@@ -2196,12 +2260,12 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "3x > 1"
+         "izq": "3x",
+         "rel": ">",
+         "der": "1"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "3x",
@@ -2210,8 +2274,10 @@
              "color": "producto"
             }
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "frac": [
             "1",
@@ -2229,9 +2295,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
+         "izq": "x",
+         "rel": ">",
          "der": [
-          "x > ",
           {
            "frac": [
             "1",
@@ -2305,8 +2371,7 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "x − 1",
@@ -2319,13 +2384,13 @@
             "x − 4",
             "3"
            ]
-          },
-          " < 1"
-         ]
+          }
+         ],
+         "rel": "<",
+         "der": "1"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "6·",
            "color": "producto"
@@ -2346,8 +2411,10 @@
             "x − 4",
             "3"
            ]
-          },
-          " < ",
+          }
+         ],
+         "rel": "<",
+         "der": [
           {
            "t": "6·",
            "color": "producto"
@@ -2361,8 +2428,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "3",
            "color": "producto"
@@ -2372,14 +2438,15 @@
            "t": "2",
            "color": "producto"
           },
-          "(x − 4) < 6"
+          "(x − 4)"
          ],
+         "rel": "<",
+         "der": "6",
          "nota": "Simplificar cada término",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "3x − 3",
            "color": "producto"
@@ -2388,25 +2455,29 @@
           {
            "t": "− 2x + 8",
            "color": "producto"
-          },
-          " < 6"
+          }
          ],
+         "rel": "<",
+         "der": "6",
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x + 5 < 6"
+         "izq": "x + 5",
+         "rel": "<",
+         "der": "6"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "x + 5 ",
           {
            "t": "− 5",
            "color": "suma"
-          },
-          " < 6 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "6 ",
           {
            "t": "− 5",
            "color": "suma"
@@ -2416,8 +2487,9 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "x < 1"
+         "izq": "x",
+         "rel": "<",
+         "der": "1"
         }
        ]
       },
@@ -2461,8 +2533,7 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "x",
@@ -2475,8 +2546,11 @@
             "x",
             "2"
            ]
-          },
-          " > 5 − ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "5 − ",
           {
            "frac": [
             "x",
@@ -2486,8 +2560,7 @@
          ]
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "6·",
            "color": "producto"
@@ -2508,8 +2581,10 @@
             "x",
             "2"
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "6·",
            "color": "producto"
@@ -2533,8 +2608,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "2x",
            "color": "producto"
@@ -2543,8 +2617,10 @@
           {
            "t": "3x",
            "color": "producto"
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "30",
            "color": "producto"
@@ -2559,18 +2635,21 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "5x > 30 − x"
+         "izq": "5x",
+         "rel": ">",
+         "der": "30 − x"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "5x ",
           {
            "t": "+ x",
            "color": "suma"
-          },
-          " > 30 − x ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "30 − x ",
           {
            "t": "+ x",
            "color": "suma"
@@ -2580,12 +2659,12 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "6x > 30"
+         "izq": "6x",
+         "rel": ">",
+         "der": "30"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "6x",
@@ -2594,8 +2673,10 @@
              "color": "producto"
             }
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "frac": [
             "30",
@@ -2613,8 +2694,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x > 5"
+         "izq": "x",
+         "rel": ">",
+         "der": "5"
         }
        ]
       },
@@ -2658,8 +2740,7 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "2x − 4",
@@ -2672,8 +2753,10 @@
             "3x + 1",
             "3"
            ]
-          },
-          " < ",
+          }
+         ],
+         "rel": "<",
+         "der": [
           {
            "frac": [
             "2x − 5",
@@ -2683,8 +2766,7 @@
          ]
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "12·",
            "color": "producto"
@@ -2705,8 +2787,10 @@
             "3x + 1",
             "3"
            ]
-          },
-          " < ",
+          }
+         ],
+         "rel": "<",
+         "der": [
           {
            "t": "12·",
            "color": "producto"
@@ -2725,8 +2809,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "4",
            "color": "producto"
@@ -2736,14 +2819,15 @@
            "t": "4",
            "color": "producto"
           },
-          "(3x + 1) < 2x − 5"
+          "(3x + 1)"
          ],
+         "rel": "<",
+         "der": "2x − 5",
          "nota": "Simplificar cada término",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "8x − 16",
            "color": "producto"
@@ -2752,25 +2836,29 @@
           {
            "t": "12x + 4",
            "color": "producto"
-          },
-          " < 2x − 5"
+          }
          ],
+         "rel": "<",
+         "der": "2x − 5",
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "20x − 12 < 2x − 5"
+         "izq": "20x − 12",
+         "rel": "<",
+         "der": "2x − 5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "20x − 12 ",
           {
            "t": "− 2x",
            "color": "suma"
-          },
-          " < 2x − 5 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "2x − 5 ",
           {
            "t": "− 2x",
            "color": "suma"
@@ -2780,18 +2868,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "18x − 12 < −5"
+         "izq": "18x − 12",
+         "rel": "<",
+         "der": "−5"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "18x − 12 ",
           {
            "t": "+ 12",
            "color": "suma"
-          },
-          " < −5 ",
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−5 ",
           {
            "t": "+ 12",
            "color": "suma"
@@ -2801,12 +2892,12 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "18x < 7"
+         "izq": "18x",
+         "rel": "<",
+         "der": "7"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "18x",
@@ -2815,8 +2906,10 @@
              "color": "producto"
             }
            ]
-          },
-          " < ",
+          }
+         ],
+         "rel": "<",
+         "der": [
           {
            "frac": [
             "7",
@@ -2834,9 +2927,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
+         "izq": "x",
+         "rel": "<",
          "der": [
-          "x < ",
           {
            "frac": [
             "7",
@@ -2896,8 +2989,7 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "x",
@@ -2910,13 +3002,13 @@
             "x + 1",
             "7"
            ]
-          },
-          " > x − 2"
-         ]
+          }
+         ],
+         "rel": ">",
+         "der": "x − 2"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "14·",
            "color": "producto"
@@ -2937,8 +3029,10 @@
             "x + 1",
             "7"
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "14·",
            "color": "producto"
@@ -2957,8 +3051,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "7x",
            "color": "producto"
@@ -2968,7 +3061,10 @@
            "t": "2",
            "color": "producto"
           },
-          "(x + 1) > ",
+          "(x + 1)"
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "14x",
            "color": "producto"
@@ -2983,31 +3079,34 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "7x + ",
           {
            "t": "2x + 2",
            "color": "producto"
-          },
-          " > 14x − 28"
+          }
          ],
+         "rel": ">",
+         "der": "14x − 28",
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "9x + 2 > 14x − 28"
+         "izq": "9x + 2",
+         "rel": ">",
+         "der": "14x − 28"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "9x + 2 ",
           {
            "t": "− 14x",
            "color": "suma"
-          },
-          " > 14x − 28 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "14x − 28 ",
           {
            "t": "− 14x",
            "color": "suma"
@@ -3017,18 +3116,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "−5x + 2 > −28"
+         "izq": "−5x + 2",
+         "rel": ">",
+         "der": "−28"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "−5x + 2 ",
           {
            "t": "− 2",
            "color": "suma"
-          },
-          " > −28 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "−28 ",
           {
            "t": "− 2",
            "color": "suma"
@@ -3038,8 +3140,9 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "−5x > −30"
+         "izq": "−5x",
+         "rel": ">",
+         "der": "−30"
         },
         {
          "rel": "",
@@ -3076,8 +3179,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x < 6"
+         "izq": "x",
+         "rel": "<",
+         "der": "6"
         }
        ]
       },
@@ -3121,8 +3225,7 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "5x − 2",
@@ -3135,8 +3238,10 @@
             "x − 8",
             "4"
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "frac": [
             "x + 14",
@@ -3147,8 +3252,7 @@
          ]
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "12·",
            "color": "producto"
@@ -3169,8 +3273,10 @@
             "x − 8",
             "4"
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "12·",
            "color": "producto"
@@ -3195,8 +3301,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "4",
            "color": "producto"
@@ -3206,7 +3311,10 @@
            "t": "3",
            "color": "producto"
           },
-          "(x − 8) > ",
+          "(x − 8)"
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "6",
            "color": "producto"
@@ -3221,8 +3329,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "20x − 8",
            "color": "producto"
@@ -3231,8 +3338,10 @@
           {
            "t": "− 3x + 24",
            "color": "producto"
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "6x + 84",
            "color": "producto"
@@ -3243,18 +3352,21 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "17x + 16 > 6x + 60"
+         "izq": "17x + 16",
+         "rel": ">",
+         "der": "6x + 60"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "17x + 16 ",
           {
            "t": "− 6x",
            "color": "suma"
-          },
-          " > 6x + 60 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "6x + 60 ",
           {
            "t": "− 6x",
            "color": "suma"
@@ -3264,18 +3376,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "11x + 16 > 60"
+         "izq": "11x + 16",
+         "rel": ">",
+         "der": "60"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "11x + 16 ",
           {
            "t": "− 16",
            "color": "suma"
-          },
-          " > 60 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "60 ",
           {
            "t": "− 16",
            "color": "suma"
@@ -3285,12 +3400,12 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "11x > 44"
+         "izq": "11x",
+         "rel": ">",
+         "der": "44"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "11x",
@@ -3299,8 +3414,10 @@
              "color": "producto"
             }
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "frac": [
             "44",
@@ -3318,8 +3435,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x > 4"
+         "izq": "x",
+         "rel": ">",
+         "der": "4"
         }
        ]
       },
@@ -3363,8 +3481,7 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             "x + 4",
@@ -3377,8 +3494,11 @@
             "x − 4",
             "5"
            ]
-          },
-          " > 2 + ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "2 + ",
           {
            "frac": [
             "3x − 1",
@@ -3388,8 +3508,7 @@
          ]
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "15·",
            "color": "producto"
@@ -3410,8 +3529,10 @@
             "x − 4",
             "5"
            ]
-          },
-          " > ",
+          }
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "15·",
            "color": "producto"
@@ -3435,8 +3556,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "5",
            "color": "producto"
@@ -3446,7 +3566,10 @@
            "t": "3",
            "color": "producto"
           },
-          "(x − 4) > ",
+          "(x − 4)"
+         ],
+         "rel": ">",
+         "der": [
           {
            "t": "30",
            "color": "producto"
@@ -3457,8 +3580,7 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "5x + 20",
            "color": "producto"
@@ -3467,25 +3589,29 @@
           {
            "t": "− 3x + 12",
            "color": "producto"
-          },
-          " > 30 + 3x − 1"
+          }
          ],
+         "rel": ">",
+         "der": "30 + 3x − 1",
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "2x + 32 > 3x + 29"
+         "izq": "2x + 32",
+         "rel": ">",
+         "der": "3x + 29"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "2x + 32 ",
           {
            "t": "− 3x",
            "color": "suma"
-          },
-          " > 3x + 29 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "3x + 29 ",
           {
            "t": "− 3x",
            "color": "suma"
@@ -3495,18 +3621,21 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "−x + 32 > 29"
+         "izq": "−x + 32",
+         "rel": ">",
+         "der": "29"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "−x + 32 ",
           {
            "t": "− 32",
            "color": "suma"
-          },
-          " > 29 ",
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "29 ",
           {
            "t": "− 32",
            "color": "suma"
@@ -3516,8 +3645,9 @@
          "notaColor": "suma"
         },
         {
-         "rel": "",
-         "der": "−x > −3"
+         "izq": "−x",
+         "rel": ">",
+         "der": "−3"
         },
         {
          "rel": "",
@@ -3554,8 +3684,9 @@
          "notaColor": "producto"
         },
         {
-         "rel": "",
-         "der": "x < 3"
+         "izq": "x",
+         "rel": "<",
+         "der": "3"
         }
        ]
       },
@@ -3624,18 +3755,21 @@
     {
      "pasos": [
       {
-       "rel": "",
-       "der": "3x > 1500 + x"
+       "izq": "3x",
+       "rel": ">",
+       "der": "1500 + x"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         "3x ",
         {
          "t": "− x",
          "color": "suma"
-        },
-        " > 1500 + x ",
+        }
+       ],
+       "rel": ">",
+       "der": [
+        "1500 + x ",
         {
          "t": "− x",
          "color": "suma"
@@ -3645,12 +3779,12 @@
        "notaColor": "suma"
       },
       {
-       "rel": "",
-       "der": "2x > 1500"
+       "izq": "2x",
+       "rel": ">",
+       "der": "1500"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "frac": [
           "2x",
@@ -3659,8 +3793,10 @@
            "color": "producto"
           }
          ]
-        },
-        " > ",
+        }
+       ],
+       "rel": ">",
+       "der": [
         {
          "frac": [
           "1500",
@@ -3678,8 +3814,9 @@
        "notaColor": "producto"
       },
       {
-       "rel": "",
-       "der": "x > 750"
+       "izq": "x",
+       "rel": ">",
+       "der": "750"
       }
      ]
     },
@@ -3714,32 +3851,31 @@
     {
      "pasos": [
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "frac": [
           "3,75 + 4,5 + x",
           "3"
          ]
-        },
-        " ≥ 5"
-       ]
+        }
+       ],
+       "rel": "≥",
+       "der": "5"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "frac": [
           "8,25 + x",
           "3"
          ]
-        },
-        " ≥ 5"
-       ]
+        }
+       ],
+       "rel": "≥",
+       "der": "5"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "frac": [
           "8,25 + x",
@@ -3749,8 +3885,11 @@
         {
          "t": " · 3",
          "color": "producto"
-        },
-        " ≥ 5 ",
+        }
+       ],
+       "rel": "≥",
+       "der": [
+        "5 ",
         {
          "t": "· 3",
          "color": "producto"
@@ -3760,18 +3899,21 @@
        "notaColor": "producto"
       },
       {
-       "rel": "",
-       "der": "8,25 + x ≥ 15"
+       "izq": "8,25 + x",
+       "rel": "≥",
+       "der": "15"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         "8,25 + x ",
         {
          "t": "− 8,25",
          "color": "suma"
-        },
-        " ≥ 15 ",
+        }
+       ],
+       "rel": "≥",
+       "der": [
+        "15 ",
         {
          "t": "− 8,25",
          "color": "suma"
@@ -3781,8 +3923,9 @@
        "notaColor": "suma"
       },
       {
-       "rel": "",
-       "der": "x ≥ 6,75"
+       "izq": "x",
+       "rel": "≥",
+       "der": "6,75"
       }
      ]
     },

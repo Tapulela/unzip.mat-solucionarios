@@ -286,12 +286,12 @@
     {
      "pasos": [
       {
-       "rel": "",
-       "der": "          2ⁿ = 16"
+       "izq": "2ⁿ",
+       "rel": "=",
+       "der": "16"
       },
       {
-       "rel": "",
-       "der": [
+       "izq": [
         {
          "t": "log₂(",
          "color": "producto"
@@ -300,8 +300,10 @@
         {
          "t": ")",
          "color": "producto"
-        },
-        " = ",
+        }
+       ],
+       "rel": "=",
+       "der": [
         {
          "t": "log₂(",
          "color": "producto"
@@ -316,15 +318,15 @@
        "notaColor": "producto"
       },
       {
-       "rel": "",
-       "der": [
-        "            ",
+       "izq": [
+        "",
         {
          "t": "n",
          "color": "producto"
-        },
-        " = log₂(16)"
+        }
        ],
+       "rel": "=",
+       "der": "log₂(16)",
        "nota": [
         "log₂ es la inversa de 2ˣ:",
         "log₂(2ⁿ) = n"
@@ -332,9 +334,9 @@
        "notaColor": "producto"
       },
       {
-       "rel": "",
+       "izq": "n",
+       "rel": "=",
        "der": [
-        "            n = ",
         {
          "t": "4",
          "color": "producto"

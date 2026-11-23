@@ -93,9 +93,9 @@
      "enunciado": "A = ∅ y\nB = {x ∈ ℝ : x² + 1 = 0}",
      "bloques": [
       { "pasos": [
-        { "rel": "", "der": "    x² + 1 = 0" },
-        { "rel": "", "der": [ "x² + 1 ", { "t": "− 1", "color": "suma" }, " = 0 ", { "t": "− 1", "color": "suma" } ], "nota": "Restar 1 en los dos miembros", "notaColor": "suma" },
-        { "rel": "", "der": "         x² = −1" }
+        { "izq": "x² + 1", "rel": "=", "der": "0" },
+        { "izq": [ "x² + 1 ", { "t": "− 1", "color": "suma" } ], "rel": "=", "der": [ "0 ", { "t": "− 1", "color": "suma" } ], "nota": "Restar 1 en los dos miembros", "notaColor": "suma" },
+        { "izq": "x²", "rel": "=", "der": "−1" }
       ] },
       { "texto": "Ningún número real elevado al cuadrado da negativo (x² ≥ 0), así que la ecuación no tiene solución real y B = ∅.", "color": "azul" },
       { "pasos": [ { "der": "A = B = ∅", "color": "azul", "caja": "azul" } ] }

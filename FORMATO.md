@@ -106,7 +106,7 @@ se encarga la pizarra.
 
 | Campo | Qué es |
 |---|---|
-| `izq` | Lo que va a la izquierda de la relación (`P(x)`, `x₁,₂`). Los `=` de un bloque quedan alineados. |
+| `izq` | Lo que va a la izquierda de la relación (`P(x)`, `x₁,₂`): un texto o, como `der`, un item o una lista de items (con colores y fracciones). Los `=` de un bloque quedan alineados y cada `izq` va pegado a su `=` (alineado a la derecha). |
 | `rel` | La relación (`=`, `<`, `⇔`…). Si hay `izq` y falta `rel`, es `=`. Con `rel` y sin `izq` sale un renglón que sigue al anterior: `  = …`. Sin las dos, el renglón empieza en el margen. |
 | `der` | La expresión: un item o una lista de items. Un renglón que es solo un texto o una lista vale como `der`. |
 | `nota` | Qué se hace en **este** paso: un texto o una lista de renglones. Se dibuja a la derecha del renglón **anterior** (o arriba de este renglón, con `"notas": "arriba"`), o sea, se anuncia antes de hacerlo. El primer renglón de un bloque no lleva nota: es la expresión de partida. |

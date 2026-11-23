@@ -54,18 +54,19 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "x·1 = 0"
+         "izq": "x·1",
+         "rel": "=",
+         "der": "0"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "x",
            "color": "producto"
-          },
-          " = 0"
+          }
          ],
+         "rel": "=",
+         "der": "0",
          "nota": "Identidad: x·1 = x",
          "notaColor": "producto"
         }
@@ -94,18 +95,19 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "x + x = 0"
+         "izq": "x + x",
+         "rel": "=",
+         "der": "0"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "x",
            "color": "producto"
-          },
-          " = 0"
+          }
          ],
+         "rel": "=",
+         "der": "0",
          "nota": "Idempotencia: x + x = x",
          "notaColor": "producto"
         }
@@ -134,18 +136,19 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "x·1 = x"
+         "izq": "x·1",
+         "rel": "=",
+         "der": "x"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "x",
            "color": "producto"
-          },
-          " = x"
+          }
          ],
+         "rel": "=",
+         "der": "x",
          "nota": "Identidad: x·1 = x",
          "notaColor": "producto"
         }
@@ -174,18 +177,19 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": "x·x' = 1"
+         "izq": "x·x'",
+         "rel": "=",
+         "der": "1"
         },
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "t": "0",
            "color": "producto"
-          },
-          " = 1"
+          }
          ],
+         "rel": "=",
+         "der": "1",
          "nota": "Complemento: x·x' = 0",
          "notaColor": "producto"
         }
