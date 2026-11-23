@@ -129,11 +129,19 @@
         {
          "pasos": [
           {
-           "der": "ab ∈ ℤ porque el producto de enteros es entero.",
+           "der": "→ a y b son enteros, por hipótesis.",
            "color": "azul"
           },
           {
-           "der": "ab + 3 ∈ ℤ porque la suma de enteros es entera.",
+           "der": "→ ab va a ser entero, dado que el producto de enteros es entero.",
+           "color": "azul"
+          },
+          {
+           "der": "→ 3 es entero.",
+           "color": "azul"
+          },
+          {
+           "der": "→ ab + 3 también será entero, porque la suma de enteros también es entera.",
            "color": "azul"
           }
          ]
@@ -391,11 +399,15 @@
         {
          "pasos": [
           {
-           "der": "a + b ∈ ℤ porque la suma de enteros es entera.",
+           "der": "→ a y b son enteros, por hipótesis.",
            "color": "azul"
           },
           {
-           "der": "(a + b) · (a + b) ∈ ℤ porque el producto de enteros es entero.",
+           "der": "→ a + b va a ser entero, dado que la suma de enteros es entera.",
+           "color": "azul"
+          },
+          {
+           "der": "→ (a + b) · (a + b) también será entero, porque el producto de enteros es entero.",
            "color": "azul"
           }
          ]
@@ -1772,11 +1784,19 @@
           {
            "pasos": [
             {
-             "der": "x² = x · x ∈ ℝ e y² = y · y ∈ ℝ porque el producto de reales es real.",
+             "der": "→ x e y son reales, por hipótesis.",
              "color": "azul"
             },
             {
-             "der": "x² + y² ∈ ℝ porque la suma de reales es real.",
+             "der": "→ x² = x · x va a ser real, dado que el producto de reales es real.",
+             "color": "azul"
+            },
+            {
+             "der": "→ y² = y · y también será real, porque el producto de reales es real.",
+             "color": "azul"
+            },
+            {
+             "der": "→ x² + y² también será real, porque la suma de reales es real.",
              "color": "azul"
             }
            ]
@@ -2289,8 +2309,24 @@
            ]
           },
           {
-           "texto": "x + y + xy ∈ ℚ porque el producto y la suma de racionales son racionales.",
-           "color": "azul"
+           "pasos": [
+            {
+             "der": "→ x e y son racionales, por hipótesis.",
+             "color": "azul"
+            },
+            {
+             "der": "→ xy va a ser racional, dado que el producto de racionales es racional.",
+             "color": "azul"
+            },
+            {
+             "der": "→ x + y también será racional, porque la suma de racionales es racional.",
+             "color": "azul"
+            },
+            {
+             "der": "→ x + y + xy también será racional, porque la suma de racionales también es racional.",
+             "color": "azul"
+            }
+           ]
           },
           {
            "texto": "Falta ver que es distinto de −1. Para eso se escribe x ∗ y de otra forma:",
@@ -2336,16 +2372,24 @@
            "entero": true
           },
           {
-           "texto": "x + 1 ≠ 0 porque x ≠ −1, e y + 1 ≠ 0 porque y ≠ −1.",
-           "color": "azul"
-          },
-          {
-           "texto": "(x + 1)(y + 1) ≠ 0 porque el producto de dos números distintos de cero es distinto de cero.",
-           "color": "azul"
-          },
-          {
-           "texto": "(x + 1)(y + 1) − 1 ≠ −1 porque (x + 1)(y + 1) ≠ 0.",
-           "color": "azul"
+           "pasos": [
+            {
+             "der": "→ x + 1 ≠ 0, dado que x ≠ −1.",
+             "color": "azul"
+            },
+            {
+             "der": "→ y + 1 ≠ 0, dado que y ≠ −1.",
+             "color": "azul"
+            },
+            {
+             "der": "→ (x + 1)(y + 1) ≠ 0, porque el producto de dos números distintos de cero es distinto de cero.",
+             "color": "azul"
+            },
+            {
+             "der": "→ (x + 1)(y + 1) − 1 ≠ −1, porque (x + 1)(y + 1) ≠ 0.",
+             "color": "azul"
+            }
+           ]
           },
           {
            "texto": "Por lo tanto x ∗ y ∈ ℚ y x ∗ y ≠ −1, es decir, x ∗ y ∈ ℚ − {−1}. Queda demostrado que ∗ es ley de composición interna en ℚ − {−1}. Se cumple.",
@@ -5110,7 +5154,7 @@
   },
   {
    "numero": 11,
-   "enunciado": "Sea ℝ el conjunto de los números reales, se define la siguiente operación entre elementos de ℝ: a ⊙ b = ∛(a³ + b³)\nComprobar que (ℝ, ⊙) tiene estructura de grupo conmutativo.",
+   "enunciado": "Sea ℝ el conjunto de los números reales, se define la siguiente operación entre elementos de ℝ: a ⊙ b = √[3](a³ + b³)\nComprobar que (ℝ, ⊙) tiene estructura de grupo conmutativo.",
    "bloques": [
     {
      "texto": "Nota para el estudiante: un grupo conmutativo (grupo abeliano) es un grupo, o sea L.C.I., asociativa, con neutro y con inverso para todo elemento, en el que además la operación es conmutativa.",
@@ -5161,7 +5205,14 @@
        "pasos": [
         {
          "rel": "",
-         "der": "∀a, b: a ∈ ℝ ∧ b ∈ ℝ → ∛(a³ + b³) ∈ ℝ",
+         "der": [
+          "∀a, b: a ∈ ℝ ∧ b ∈ ℝ → ",
+          {
+           "raiz": "a³ + b³",
+           "indice": "3"
+          },
+          " ∈ ℝ"
+         ],
          "color": "azul"
         }
        ],
@@ -5182,7 +5233,14 @@
            "color": "azul"
           },
           {
-           "der": "Tesis:  ∛(a³ + b³) ∈ ℝ",
+           "der": [
+            "Tesis:  ",
+            {
+             "raiz": "a³ + b³",
+             "indice": "3"
+            },
+            " ∈ ℝ"
+           ],
            "color": "azul"
           }
          ]
@@ -5195,7 +5253,10 @@
           },
           {
            "rel": "=",
-           "der": "∛(a³ + b³)",
+           "der": {
+            "raiz": "a³ + b³",
+            "indice": "3"
+           },
            "nota": "Definición de ⊙",
            "notaColor": "producto"
           }
@@ -5205,15 +5266,30 @@
         {
          "pasos": [
           {
-           "der": "a³ ∈ ℝ y b³ ∈ ℝ porque el producto de reales es real.",
+           "der": "→ a y b son reales, por hipótesis.",
            "color": "azul"
           },
           {
-           "der": "a³ + b³ ∈ ℝ porque la suma de reales es real.",
+           "der": "→ a³ = a · a · a va a ser real, dado que el producto de reales es real.",
            "color": "azul"
           },
           {
-           "der": "∛(a³ + b³) ∈ ℝ porque todo número real tiene raíz cúbica real.",
+           "der": "→ b³ = b · b · b también será real, porque el producto de reales es real.",
+           "color": "azul"
+          },
+          {
+           "der": "→ a³ + b³ también será real, porque la suma de reales es real.",
+           "color": "azul"
+          },
+          {
+           "der": [
+            "→ ",
+            {
+             "raiz": "a³ + b³",
+             "indice": "3"
+            },
+            " también será real, porque todo número real tiene raíz cúbica real."
+           ],
            "color": "azul"
           }
          ]
@@ -5275,7 +5351,11 @@
            "der": [
             "a ⊙ ",
             {
-             "t": "∛(b³ + c³)",
+             "raiz": {
+              "t": "b³ + c³",
+              "color": "producto"
+             },
+             "indice": "3",
              "color": "producto"
             }
            ],
@@ -5284,28 +5364,44 @@
           },
           {
            "rel": "=",
-           "der": [
-            "∛(a³ + ",
-            {
-             "t": "(∛(b³ + c³))³",
-             "color": "producto"
-            },
-            ")"
-           ],
+           "der": {
+            "raiz": [
+             "a³ + ",
+             {
+              "t": "(",
+              "color": "producto"
+             },
+             {
+              "raiz": {
+               "t": "b³ + c³",
+               "color": "producto"
+              },
+              "indice": "3",
+              "color": "producto"
+             },
+             {
+              "t": ")³",
+              "color": "producto"
+             }
+            ],
+            "indice": "3"
+           },
            "nota": "Definición de ⊙",
            "notaColor": "producto"
           },
           {
            "rel": "=",
-           "der": [
-            "∛(a³ + ",
-            {
-             "t": "b³ + c³",
-             "color": "producto"
-            },
-            ")"
-           ],
-           "nota": "(∛x)³ = x",
+           "der": {
+            "raiz": [
+             "a³ + ",
+             {
+              "t": "b³ + c³",
+              "color": "producto"
+             }
+            ],
+            "indice": "3"
+           },
+           "nota": "(√[3]x)³ = x",
            "notaColor": "producto"
           }
          ],
@@ -5327,7 +5423,11 @@
            "rel": "=",
            "der": [
             {
-             "t": "∛(a³ + b³)",
+             "raiz": {
+              "t": "a³ + b³",
+              "color": "producto"
+             },
+             "indice": "3",
              "color": "producto"
             },
             " ⊙ c"
@@ -5337,28 +5437,44 @@
           },
           {
            "rel": "=",
-           "der": [
-            "∛(",
-            {
-             "t": "(∛(a³ + b³))³",
-             "color": "producto"
-            },
-            " + c³)"
-           ],
+           "der": {
+            "raiz": [
+             {
+              "t": "(",
+              "color": "producto"
+             },
+             {
+              "raiz": {
+               "t": "a³ + b³",
+               "color": "producto"
+              },
+              "indice": "3",
+              "color": "producto"
+             },
+             {
+              "t": ")³",
+              "color": "producto"
+             },
+             " + c³"
+            ],
+            "indice": "3"
+           },
            "nota": "Definición de ⊙",
            "notaColor": "producto"
           },
           {
            "rel": "=",
-           "der": [
-            "∛(",
-            {
-             "t": "a³ + b³",
-             "color": "producto"
-            },
-            " + c³)"
-           ],
-           "nota": "(∛x)³ = x",
+           "der": {
+            "raiz": [
+             {
+              "t": "a³ + b³",
+              "color": "producto"
+             },
+             " + c³"
+            ],
+            "indice": "3"
+           },
+           "nota": "(√[3]x)³ = x",
            "notaColor": "producto"
           }
          ],
@@ -5372,7 +5488,17 @@
        "pasos": [
         {
          "rel": "",
-         "der": "∛(a³ + b³ + c³) = ∛(a³ + b³ + c³)"
+         "der": [
+          {
+           "raiz": "a³ + b³ + c³",
+           "indice": "3"
+          },
+          " = ",
+          {
+           "raiz": "a³ + b³ + c³",
+           "indice": "3"
+          }
+         ]
         }
        ],
        "entero": true
@@ -5429,7 +5555,10 @@
           },
           {
            "rel": "=",
-           "der": "∛(a³ + b³)",
+           "der": {
+            "raiz": "a³ + b³",
+            "indice": "3"
+           },
            "nota": "Definición de ⊙",
            "notaColor": "producto"
           }
@@ -5450,13 +5579,19 @@
           },
           {
            "rel": "=",
-           "der": "∛(b³ + a³)",
+           "der": {
+            "raiz": "b³ + a³",
+            "indice": "3"
+           },
            "nota": "Definición de ⊙",
            "notaColor": "producto"
           },
           {
            "rel": "=",
-           "der": "∛(a³ + b³)",
+           "der": {
+            "raiz": "a³ + b³",
+            "indice": "3"
+           },
            "nota": "Conmutatividad de la suma"
           }
          ],
@@ -5470,7 +5605,17 @@
        "pasos": [
         {
          "rel": "",
-         "der": "∛(a³ + b³) = ∛(a³ + b³)"
+         "der": [
+          {
+           "raiz": "a³ + b³",
+           "indice": "3"
+          },
+          " = ",
+          {
+           "raiz": "a³ + b³",
+           "indice": "3"
+          }
+         ]
         }
        ],
        "entero": true
@@ -5527,7 +5672,10 @@
            "der": "a"
           },
           {
-           "izq": "∛(a³ + e³)",
+           "izq": {
+            "raiz": "a³ + e³",
+            "indice": "3"
+           },
            "rel": "=",
            "der": "a",
            "nota": "Definición de ⊙",
@@ -5631,7 +5779,10 @@
            "der": "0"
           },
           {
-           "izq": "∛(a³ + a'³)",
+           "izq": {
+            "raiz": "a³ + a'³",
+            "indice": "3"
+           },
            "rel": "=",
            "der": "0",
            "nota": "Definición de ⊙",
@@ -5850,11 +6001,19 @@
         {
          "pasos": [
           {
-           "der": "a + b ∈ ℤ porque la suma de enteros es entera.",
+           "der": "→ a y b son enteros, por hipótesis.",
            "color": "azul"
           },
           {
-           "der": "a + b − 2 ∈ ℤ porque la resta de enteros es entera.",
+           "der": "→ a + b va a ser entero, dado que la suma de enteros es entera.",
+           "color": "azul"
+          },
+          {
+           "der": "→ 2 es entero.",
+           "color": "azul"
+          },
+          {
+           "der": "→ a + b − 2 también será entero, porque la resta de enteros es entera.",
            "color": "azul"
           }
          ]
@@ -7290,11 +7449,19 @@
           {
            "pasos": [
             {
-             "der": "a + b ∈ ℤ porque la suma de enteros es entera.",
+             "der": "→ a y b son enteros, por hipótesis.",
              "color": "azul"
             },
             {
-             "der": "a + b + 1 ∈ ℤ porque la suma de enteros es entera.",
+             "der": "→ a + b va a ser entero, dado que la suma de enteros es entera.",
+             "color": "azul"
+            },
+            {
+             "der": "→ 1 es entero.",
+             "color": "azul"
+            },
+            {
+             "der": "→ a + b + 1 también será entero, porque la suma de enteros también es entera.",
              "color": "azul"
             }
            ]
@@ -7899,11 +8066,19 @@
           {
            "pasos": [
             {
-             "der": "ab ∈ ℤ porque el producto de enteros es entero.",
+             "der": "→ a y b son enteros, por hipótesis.",
              "color": "azul"
             },
             {
-             "der": "a + b + ab ∈ ℤ porque la suma de enteros es entera.",
+             "der": "→ ab va a ser entero, dado que el producto de enteros es entero.",
+             "color": "azul"
+            },
+            {
+             "der": "→ a + b también será entero, porque la suma de enteros es entera.",
+             "color": "azul"
+            },
+            {
+             "der": "→ a + b + ab también será entero, porque la suma de enteros también es entera.",
              "color": "azul"
             }
            ]
@@ -8859,11 +9034,19 @@
           {
            "pasos": [
             {
-             "der": "ab ∈ ℤ porque el producto de enteros es entero.",
+             "der": "→ a y b son enteros, por hipótesis.",
              "color": "azul"
             },
             {
-             "der": "2ab = 2 · ab ∈ ℤ porque el producto de enteros es entero.",
+             "der": "→ ab va a ser entero, dado que el producto de enteros es entero.",
+             "color": "azul"
+            },
+            {
+             "der": "→ 2 es entero.",
+             "color": "azul"
+            },
+            {
+             "der": "→ 2ab = 2 · ab también será entero, porque el producto de enteros es entero.",
              "color": "azul"
             }
            ]
@@ -9775,15 +9958,19 @@
           {
            "pasos": [
             {
-             "der": "ac, bd, ad y bc son reales porque el producto de reales es real.",
+             "der": "→ a, b, c y d son reales, por hipótesis.",
              "color": "azul"
             },
             {
-             "der": "ac − bd ∈ ℝ porque la resta de reales es real.",
+             "der": "→ ac, bd, ad y bc van a ser reales, dado que el producto de reales es real.",
              "color": "azul"
             },
             {
-             "der": "ad + bc ∈ ℝ porque la suma de reales es real.",
+             "der": "→ ac − bd también será real, porque la resta de reales es real.",
+             "color": "azul"
+            },
+            {
+             "der": "→ ad + bc también será real, porque la suma de reales es real.",
              "color": "azul"
             }
            ]

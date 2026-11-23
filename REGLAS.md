@@ -350,10 +350,13 @@ texto «Reemplazando la factorización, la inecuación queda:».
        de −1»;
      - «Hipótesis:» y «Tesis:», cada una en su renglón;
      - el desarrollo de a ∗ b, con la definición en la nota;
-     - **una justificación por renglón**, de adentro hacia afuera, cada una con la
-       propiedad que la sostiene: «ab ∈ ℤ porque el producto de enteros es entero.»,
-       «ab + 3 ∈ ℤ porque la suma de enteros es entera.» No se juntan en una sola
-       oración ni se resumen («sumas y productos de enteros dan enteros»);
+     - **una inferencia simple por renglón, con «→» adelante**, que construye la
+       expresión paso a paso de adentro hacia afuera, desde la hipótesis hasta la
+       expresión completa, cada una con la propiedad que la sostiene:
+       «→ a y b son enteros, por hipótesis.», «→ ab va a ser entero, dado que el
+       producto de enteros es entero.», «→ 3 es entero.», «→ ab + 3 también será
+       entero, porque la suma de enteros también es entera.» No se juntan en una
+       sola oración ni se resumen («sumas y productos de enteros dan enteros»);
      - la conclusión: «Por lo tanto a ∗ b ∈ ℤ. Queda demostrado que ∗ es ley de
        composición interna en ℤ.» (dentro de un estudio de estructura, con «Se
        cumple.» al final).
@@ -565,6 +568,13 @@ vuelve a una columna.
   igualdad.
 - **Un signo delante de una fracción dibujada lleva un espacio** (`"− "` antes del
   item `frac`): pegado a la raya de fracción queda feo.
+- **Todo paréntesis abarca toda la expresión que encierra** (en todos los TPs). Si
+  adentro hay una fracción, una raíz u otro item más alto que el renglón, los
+  paréntesis (o corchetes) se dibujan del alto del contenido, y el exponente que va
+  pegado al cierre («(7/3)²») queda arriba, a la altura de su borde. La pizarra lo hace
+  sola: en el JSON los paréntesis se escriben como texto, en la misma lista de items
+  que la fracción (`["(", {"frac": ["1", "3"]}, " + 2)"]`), nunca dentro del
+  numerador o del denominador para que la fracción parezca encerrada.
 - **Las cuentas simples no llevan nota** (sumar o restar números, «Sumar 3 + 9 + 5»). Sí
   la llevan si la nota agrega una interpretación («Sumar todas las zonas», «Restar del
   total»).
