@@ -1832,7 +1832,7 @@
    "enunciado": "Simplifique la expresión de modo que A, B y C aparezcan a lo sumo una vez:",
    "bloques": [
     {
-     "texto": "Nota para el estudiante: se trabaja sobre la expresión completa, con una ley por paso. Como las expresiones son largas, cada ley se escribe arriba del renglón donde se aplica.",
+     "texto": "Nota para el estudiante: se trabaja sobre la expresión completa, con una ley por paso.",
      "color": "gris",
      "tam": "S"
     }
@@ -1996,8 +1996,7 @@
          "color": "azul",
          "caja": "azul"
         }
-       ],
-       "notas": "arriba"
+       ]
       },
       {
        "texto": "Nota para el estudiante: en (A ∩ C) ∪ Bᶜ cada conjunto aparece una sola vez.",
@@ -2135,8 +2134,7 @@
          "color": "azul",
          "caja": "azul"
         }
-       ],
-       "notas": "arriba"
+       ]
       },
       {
        "texto": "Nota para el estudiante: en ∅ no aparece ningún conjunto, así que se cumple «a lo sumo una vez». El resultado dice que la expresión es vacía para cualquier A, B y C.",
