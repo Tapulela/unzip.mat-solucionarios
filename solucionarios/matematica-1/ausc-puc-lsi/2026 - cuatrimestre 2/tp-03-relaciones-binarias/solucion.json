@@ -5751,13 +5751,13 @@
      ]
     },
     {
-     "texto": "Para ser de orden o de equivalencia tiene que ser reflexiva y transitiva, y no es reflexiva ni transitiva.",
+     "texto": "Para ser de equivalencia o de orden amplio tiene que ser reflexiva y transitiva, y R no es reflexiva ni transitiva. Para ser de orden estricto tiene que ser arreflexiva, asimétrica y transitiva, y R no es transitiva.",
      "color": "azul"
     },
     {
      "pasos": [
       {
-       "der": "R no es de orden ni de equivalencia.",
+       "der": "R no es de equivalencia ni de orden (ni amplio ni estricto).",
        "color": "azul",
        "caja": "azul"
       }
@@ -6510,13 +6510,13 @@
      ]
     },
     {
-     "texto": "Es reflexiva, antisimétrica y transitiva, pero no es simétrica.",
+     "texto": "Es reflexiva, antisimétrica y transitiva, pero no es simétrica. Es un orden amplio porque es reflexiva, y parcial porque hay elementos que no se pueden comparar, por ejemplo 1 y 3, porque (1, 3) ∉ R y (3, 1) ∉ R.",
      "color": "azul"
     },
     {
      "pasos": [
       {
-       "der": "R es una relación de orden (parcial).",
+       "der": "R es una relación de orden amplio y parcial.",
        "color": "azul",
        "caja": "azul"
       }
@@ -7153,13 +7153,13 @@
      ]
     },
     {
-     "texto": "Para ser de orden o de equivalencia tiene que ser reflexiva y transitiva, y no es reflexiva ni transitiva.",
+     "texto": "Para ser de equivalencia o de orden amplio tiene que ser reflexiva y transitiva, y R no es reflexiva ni transitiva. Para ser de orden estricto tiene que ser arreflexiva, asimétrica y transitiva, y R no es arreflexiva ni transitiva.",
      "color": "azul"
     },
     {
      "pasos": [
       {
-       "der": "R no es de orden ni de equivalencia.",
+       "der": "R no es de equivalencia ni de orden (ni amplio ni estricto).",
        "color": "azul",
        "caja": "azul"
       }
@@ -7908,13 +7908,13 @@
      ]
     },
     {
-     "texto": "Para ser de orden o de equivalencia tiene que ser reflexiva y transitiva, y no es reflexiva.",
+     "texto": "Para ser de equivalencia o de orden amplio tiene que ser reflexiva, y R no es reflexiva. Para ser de orden estricto tiene que ser arreflexiva, asimétrica y transitiva, y R no es arreflexiva ni asimétrica.",
      "color": "azul"
     },
     {
      "pasos": [
       {
-       "der": "R no es de orden ni de equivalencia.",
+       "der": "R no es de equivalencia ni de orden (ni amplio ni estricto).",
        "color": "azul",
        "caja": "azul"
       }
@@ -8547,7 +8547,7 @@
        ]
       },
       {
-       "texto": "Es reflexiva, simétrica y transitiva.",
+       "texto": "Es reflexiva, simétrica y transitiva. No es de orden amplio porque no es antisimétrica, ni de orden estricto porque es reflexiva.",
        "color": "azul"
       },
       {
@@ -9542,13 +9542,13 @@
        ]
       },
       {
-       "texto": "Para ser de orden o de equivalencia tiene que ser reflexiva y transitiva, y no es reflexiva ni transitiva.",
+       "texto": "Para ser de equivalencia o de orden amplio tiene que ser reflexiva y transitiva, y R no es reflexiva ni transitiva. Para ser de orden estricto tiene que ser arreflexiva, asimétrica y transitiva, y R no es transitiva.",
        "color": "azul"
       },
       {
        "pasos": [
         {
-         "der": "R no es de orden ni de equivalencia.",
+         "der": "R no es de equivalencia ni de orden (ni amplio ni estricto).",
          "color": "azul",
          "caja": "azul"
         }

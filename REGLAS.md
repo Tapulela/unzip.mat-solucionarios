@@ -266,6 +266,12 @@ texto «Reemplazando la factorización, la inecuación queda:».
   correspondiente (si R es reflexiva, no se analiza si es arreflexiva), salvo que la
   consigna la pida.
 - Se dice **arreflexiva**, nunca «irreflexiva».
+- **Toda relación de orden lleva su tipo**: cada vez que se dice que una relación es (o
+  no es) de orden, se aclara si es de orden **amplio** (reflexiva, antisimétrica y
+  transitiva) o **estricto** (arreflexiva, asimétrica y transitiva), también en los
+  recuadros de resultado: «R es una relación de orden amplio», nunca «de orden» solo.
+  Si la consigna pregunta por «una relación de orden» sin decir cuál, se analizan los
+  dos tipos.
 - **Análisis de una propiedad**: título «Análisis de la propiedad simétrica», después
   «Definición general:» con la fórmula en el mismo renglón
   («∀x, y ∈ A: (x, y) ∈ R → (y, x) ∈ R», con R genérica), y «Definición aplicada:» con
