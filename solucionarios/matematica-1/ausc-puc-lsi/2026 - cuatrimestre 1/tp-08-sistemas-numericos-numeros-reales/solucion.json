@@ -55,6 +55,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
@@ -91,6 +92,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
@@ -127,6 +129,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
@@ -163,6 +166,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
@@ -204,6 +208,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
@@ -240,6 +245,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
@@ -276,6 +282,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
@@ -312,6 +319,7 @@
           "bloques": [
             {
               "generador": "factorizacion",
+              "partir": true,
               "op": {
                 "filas": [
                   {
