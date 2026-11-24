@@ -248,8 +248,52 @@ Un ejemplo completo está en
 
 Un `cuadernillo.json` junta en un solo juego de hojas, listo para imprimir y encuadernar,
 una carátula, partes de texto, un índice y los trabajos prácticos ya resueltos, en orden.
-Cada parte empieza en una hoja nueva. El de Matemática 1 está en
+Cada parte empieza en una hoja nueva. Hay uno por cursada, por ejemplo
 [`solucionarios/matematica-1/ausc-puc-lsi/2026 - cuatrimestre 2/cuadernillo.json`](solucionarios/matematica-1/ausc-puc-lsi/2026%20-%20cuatrimestre%202/cuadernillo.json).
+
+### Banco de trabajos prácticos
+
+Un trabajo práctico que se repite igual en varias cursadas está **una sola vez**, en el
+banco de su materia, y cada cuadernillo lo trae por su ruta. Una corrección se hace en
+un solo archivo y llega a todos los cuadernillos que lo usan.
+
+```
+solucionarios/matematica-1/ausc-puc-lsi/
+  tps/numeros-complejos/solucion.json         ← sin número ni cursada
+  tps/estructuras-algebraicas-a/solucion.json ← dos versiones distintas del mismo tema
+  tps/estructuras-algebraicas-b/solucion.json
+  2026 - cuatrimestre 1/cuadernillo.json      ← { "ruta": "../tps/numeros-complejos/solucion.json", "rotulo": "T.P. 10" }
+  2026 - cuatrimestre 2/cuadernillo.json      ← { "ruta": "../tps/numeros-complejos/solucion.json", "rotulo": "T.P. 11" }
+```
+
+- **Qué es el mismo TP:** el mismo enunciado, con los mismos ejercicios, ítems y datos.
+  Si cambia cualquier cosa (un número, un ítem, un ejercicio de más), es otra versión
+  y va en otra carpeta. No se comparten ejercicios sueltos entre versiones.
+- **Nombres de las carpetas:** el tema, sin fecha (los TP se van cargando de la cursada
+  más nueva a la más vieja, así que no se sabe cuál fue la primera). Si hay más de una
+  versión de un tema, todas llevan letra: `-a`, `-b`…
+- **La solución no sabe en qué cursada se da:** lleva `tema` («Números complejos»), y
+  `temaCabecera` si en la cabecera va otro texto; un `titulo` y una `cabecera`
+  genéricos (sin número ni cuatrimestre), que se usan si se dibuja sola, y
+  `meta.tp` con el tema.
+- **Lo que depende de la cursada lo pone el cuadernillo:** `plantillas` (en la raíz)
+  y, en cada parte, `rotulo` y, si hace falta, `bloques` con una aclaración de esa
+  cursada.
+
+```json
+"plantillas": {
+  "titulo": "Solucionario Matemática 1 — {rotulo}: {tema}",
+  "subtitulo": "Año 2026 · Cuatrimestre 2",
+  "cabecera": "Matemática 1\n{rotulo} - {temaCabecera} - Año 2026 - Cuatrimestre 2",
+  "marcador": "{rotulo}: {tema}"
+}
+```
+
+`node herramientas/validar.mjs` (sin rutas) avisa si dos soluciones tienen el mismo
+enunciado, y si un TP del banco no tiene `tema`.
+
+- **Las correcciones van al `solucion.json`.** Lo que se corrige a mano en la pizarra
+  queda solo en ese dibujo y no llega a los otros cuadernillos.
 
 ```json
 {
@@ -259,12 +303,13 @@ Cada parte empieza en una hoja nueva. El de Matemática 1 está en
   "pie": "Hoja {n} de {total}",
   "meta": { "...": "como en una solución" },
   "estilo": { "margenes": { "sup": 10, "inf": 10, "ext": 10, "lomo": 15 }, "dobleFaz": true, "partesEnImpar": true },
+  "plantillas": { "titulo": "…{rotulo}: {tema}", "subtitulo": "…", "cabecera": "…", "marcador": "{rotulo}: {tema}" },
   "partes": [
     { "tipo": "caratula", "antetitulo": "Matemática 1", "titulo": "Solucionario…", "subtitulo": "Año 2026", "lineas": ["…"], "pie": "…" },
     { "tipo": "texto", "titulo": "Introducción", "bloques": [ ... ] },
     { "tipo": "indice", "titulo": "Contenido", "niveles": 2 },
     { "tipo": "texto", "titulo": "A tener en cuenta", "bloques": [ ... ] },
-    { "ruta": "tp-01-logica-proposicional/solucion.json", "marcador": "T.P. 1: Lógica proposicional" }
+    { "ruta": "../tps/logica-proposicional-a/solucion.json", "rotulo": "T.P. 1" }
   ]
 }
 ```
@@ -279,6 +324,9 @@ Cada parte empieza en una hoja nueva. El de Matemática 1 está en
 | `indice` | Los marcadores de las partes que van en el índice, hasta el nivel `niveles` (por defecto 2: partes y trabajos prácticos en el nivel 1, ejercicios en el 2), con línea de puntos y número de hoja. No incluye la carátula ni a sí mismo. |
 | `solucion` | Un trabajo práctico: `ruta` (su `solucion.json`, relativa a la carpeta del cuadernillo) o `solucion` (el objeto). Lleva **su propia cabecera** (`cabecera` de la solución, o `cabecera` de la parte), que vale desde su primera hoja. Su `titulo`, `estilo` y numeración son los de la solución. |
 | `partes[].marcador` | Título del marcador de la parte (nivel 1). Si falta, el título de la parte; en una solución conviene uno corto («T.P. 1: Lógica proposicional»). `false`: sin marcador. |
+| `plantillas` | Los textos que dependen de la cursada, para las partes con `rotulo` (ver «Banco de trabajos prácticos»): `titulo`, `subtitulo`, `cabecera` y `marcador`, con `{rotulo}`, `{tema}` y `{temaCabecera}`. |
+| `partes[].rotulo` | Solo en una solución: cómo se llama el TP en esta cursada («T.P. 10», «Supuestos teóricos»). Con `rotulo`, el título, el subtítulo, la cabecera y el marcador salen de `plantillas`. La parte puede cambiar cualquiera de esos textos (`titulo`, `subtitulo`, `cabecera`, `marcador`) o el `tema` y el `temaCabecera` de la solución. |
+| `partes[].bloques` | Solo en una solución con `rotulo`: bloques que van antes de los de la solución, para lo que vale solo en esta cursada («en el PDF figura como T.P. 6»). |
 | `partes[].marcadores` | Solo en una solución: plantillas de los marcadores de sus ejercicios e ítems (nivel 2 y 3). `{rotulo}` es el rótulo sin los dos puntos («Ejercicio 4», «4.a») y `{enunciado}`, el primer renglón de la consigna. Por defecto `{ "ejercicio": "{rotulo}" }`: todos los ejercicios con marcador, aunque la solución no lo tenga. Por ejemplo, `{ "ejercicio": "{rotulo}: {enunciado}", "item": "{rotulo}" }`. |
 | `partes[].enIndice` | `false` para que una parte no figure en el índice (sigue teniendo marcador). |
 | `partes[].sinCabecera` | `true`: las hojas de la parte no llevan cabecera, pie ni número (por ejemplo, la hoja de enlaces del reverso de la carátula). |

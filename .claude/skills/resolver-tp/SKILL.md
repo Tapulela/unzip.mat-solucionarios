@@ -25,12 +25,22 @@ sirve para otras resoluciones, agrégalo ahí.
 1. **Leer el enunciado completo.** Si es un PDF o una foto, transcribe cada ejercicio con
    cuidado: exponentes, signos, fracciones. Si algo no se lee bien, pregúntalo; no lo
    adivines.
-2. **Ubicar la carpeta**:
-   `solucionarios/<materia>/<institucion>/<año> - cuatrimestre <n>/<tp>/solucion.json`,
-   con nombres en minúsculas, sin tildes y con guiones
-   (`matematica-1/utn-frba/2026 - cuatrimestre 2/tp-03-factorizacion`). La materia se
-   dicta una vez por cuatrimestre: la carpeta del año lleva el cuatrimestre.
-   Si no sabes la materia, la institución, el año o el cuatrimestre, pregunta.
+2. **Buscarlo en el banco antes de resolverlo.** Cada TP está una sola vez, en
+   `solucionarios/<materia>/<institucion>/tps/<tema>/solucion.json`, sin número ni
+   cursada (ver «Banco de trabajos prácticos» en `FORMATO.md`). Compara el enunciado
+   con los del banco del mismo tema:
+   - **idéntico** (los mismos ejercicios, ítems y datos): no se resuelve de nuevo; solo
+     se agrega la parte en el `cuadernillo.json` de la cursada, con su `rotulo`;
+   - **con cualquier diferencia** (un dato, un ítem, un ejercicio de más): es otra
+     versión, en una carpeta nueva del banco. Si ya hay una del mismo tema, las dos
+     llevan letra (`estructuras-algebraicas-a`, `-b`; al renombrar la que no tenía, se
+     actualizan las rutas de los cuadernillos).
+   La carpeta va en minúsculas, sin tildes y con guiones. La solución lleva `tema`
+   (y `temaCabecera` si en la cabecera va otro texto), un `titulo` y una `cabecera`
+   genéricos, sin número ni cuatrimestre, y `meta.tp` con el tema. Lo que vale para una
+   sola cursada (por ejemplo, «en el PDF figura como T.P. 6») va en los `bloques` de la
+   parte del cuadernillo, no en la solución. Si no sabes la materia, la institución,
+   el año, el cuatrimestre o el número del TP en esa cursada, pregunta.
 3. **Resolver cada ejercicio** como lo explicaría un docente en el pizarrón, para chicos
    que están aprendiendo:
    - una operación por renglón; con fracciones, primero el denominador común;
@@ -64,10 +74,15 @@ sirve para otras resoluciones, agrégalo ahí.
    hoja, notas que se pisan, una fracción o una llave cortada entre dos hojas, un
    desarrollo difícil de seguir. Corrige el JSON y vuelve a dibujar; la versión nueva
    reemplaza a la anterior. Si la pizarra no está abierta, sigue sin este paso y avisa.
-8. **Guardar** con `guardar_solucion` o escribiendo el archivo.
+8. **Guardar** con `guardar_solucion` o escribiendo el archivo en el banco, y agregar la
+   parte al `cuadernillo.json` de la cursada (`ruta` al banco y `rotulo`, «T.P. 10»). Si
+   la cursada todavía no tiene cuadernillo, se crea copiando el de otra cursada.
+   Valida con `node herramientas/validar.mjs` (sin rutas): avisa si dos TP del banco
+   tienen el mismo enunciado.
 9. **Contarle al usuario** qué ejercicios quedaron resueltos, cuáles verificaste y cómo,
-   y qué conviene revisar. Recuérdale que lo corrija en la pizarra y guarde junto al
-   JSON el `.excalidraw` y el PDF exportado desde el panel de Hojas A4.
+   y qué conviene revisar. Recuérdale que las correcciones se pasan al `solucion.json`
+   del banco (lo que se corrige a mano en la pizarra queda solo en ese dibujo, y no
+   llega a las otras cursadas).
 
 ## Reglas
 

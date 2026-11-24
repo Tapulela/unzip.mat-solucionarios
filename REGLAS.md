@@ -437,6 +437,12 @@ texto «Reemplazando la factorización, la inecuación queda:».
   mal escrita y por qué, con la definición que no se respeta. Por ejemplo, en «x² ∈ 1»:
   ∈ relaciona un elemento con un conjunto, y 1 es un número, así que la expresión no
   tiene sentido. Recién después se dice cómo se interpreta («x² = 1») y se resuelve.
+- **Se resuelve lo que está escrito, aunque la consigna garantice que se cumple.** Si
+  una consigna pide demostrar un «teorema» o una proposición «verdadera» y, tal como
+  está escrita, no se cumple (por ejemplo, «A·A = 0», donde se perdió la barra del
+  complemento), se dice en la respuesta que no se cumple y se muestra con un
+  contraejemplo. El estudiante tiene que aprender a leer y cuestionar lo que está
+  escrito. No se resuelve la versión «que se quiso escribir».
 
 ## Conjuntos por extensión en varios renglones
 
@@ -623,6 +629,18 @@ vuelve a una columna.
   total»).
 - El complemento se plantea también por comprensión, negando la condición:
   Bᶜ = {x ∈ ℝ : ¬(1 ≤ x)} = {x ∈ ℝ : 1 > x}.
+
+## Dibujos de la consigna
+
+- **Ningún dibujo se saltea.** Si la consigna trae un dibujo (un circuito, una
+  compuerta, un diagrama, un gráfico), se reproduce en la resolución, lo más parecido
+  posible al original: con el generador de la pizarra que corresponda (`boole`,
+  `tabla` con interruptores, `funcion`, `venn`…), con las mismas entradas, compuertas y
+  conexiones. No se reemplaza por una descripción con palabras.
+- **Si no se puede replicar**, en última instancia se usa una foto (o un recorte) del
+  dibujo de la consigna, en el lugar donde iría. El formato de la solución todavía no
+  tiene un bloque de imagen: hasta que lo tenga, se deja el lugar con un bloque
+  `espacio` y la foto se pega a mano en la pizarra, y se avisa al entregar el borrador.
 
 ## Circuitos
 

@@ -11,12 +11,12 @@ exporta a PDF.
 
 ```
 solucionarios/
-  <materia>/<institucion>/<año> - cuatrimestre <n>/<tp>/
-    solucion.json       ← la resolución (lo que se edita y se revisa)
-    solucion.excalidraw ← cómo quedó en la pizarra, con las correcciones a mano
-    solucion.pdf        ← lista para imprimir
+  <materia>/<institucion>/tps/<tema>/
+    solucion.json       ← la resolución, una sola copia aunque el TP se dé en
+                          varias cursadas (lo que se edita y se revisa)
   <materia>/<institucion>/<año> - cuatrimestre <n>/cuadernillo.json
-                        ← todos los TP juntos: carátula, índice, cabecera por TP
+                        ← los TP de esa cursada, por ruta: carátula, índice,
+                          número de cada TP y cabecera con el cuatrimestre
 FORMATO.md              ← cómo se escribe un solucion.json (y un cuadernillo)
 herramientas/validar.mjs
 herramientas/armar-cuadernillo.mjs ← arma el cuadernillo para importarlo

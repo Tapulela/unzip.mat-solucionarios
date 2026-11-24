@@ -1,0 +1,4490 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — Desigualdades",
+ "tema": "Desigualdades",
+ "temaCabecera": "Sistemas numéricos: desigualdades",
+ "cabecera": "Matemática 1\nSistemas numéricos: desigualdades",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Desigualdades",
+  "fuente": "Trabajo Práctico: Desigualdades (sistemas numéricos), Matemática I, segunda cursada 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "marcador": true,
+   "enunciado": "Describa el subconjunto de números reales representado por cada desigualdad.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "x ≤ 2",
+     "bloques": [
+      {
+       "texto": "Son todos los números reales menores o iguales que 2. El 2 está incluido.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x ≤ 2  ⇔  x ∈ (−∞, 2]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "−2 < x ≤ 3",
+     "bloques": [
+      {
+       "texto": "Son todos los números reales mayores que −2 y menores o iguales que 3. El −2 no está incluido y el 3 sí.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "−2 < x ≤ 3  ⇔  x ∈ (−2, 3]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: un corchete [ ] indica que el extremo está incluido (≤ o ≥) y un paréntesis ( ), que no lo está (< o >). En ∞ y −∞ siempre va paréntesis, porque no son números.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "marcador": true,
+   "enunciado": "Describa el subconjunto de números reales representado por cada desigualdad y haga su representación gráfica, como en el ejemplo anterior.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: en la recta, un punto lleno indica que el extremo está incluido y un punto vacío, que no lo está.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "x ≤ 5",
+     "bloques": [
+      {
+       "texto": "Todos los números reales menores o iguales que 5.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x ≤ 5  ⇔  x ∈ (−∞, 5]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 5]",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "x ≥ −2",
+     "bloques": [
+      {
+       "texto": "Todos los números reales mayores o iguales que −2.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x ≥ −2  ⇔  x ∈ [−2, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "[−2, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "−2 < x < 2",
+     "bloques": [
+      {
+       "texto": "Todos los números reales mayores que −2 y menores que 2 (sin los extremos).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "−2 < x < 2  ⇔  x ∈ (−2, 2)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−2, 2)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "0 ≤ x ≤ 5",
+     "bloques": [
+      {
+       "texto": "Todos los números reales mayores o iguales que 0 y menores o iguales que 5 (con los dos extremos).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "0 ≤ x ≤ 5  ⇔  x ∈ [0, 5]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "[0, 5]",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "−1 ≤ x < 0",
+     "bloques": [
+      {
+       "texto": "Todos los números reales mayores o iguales que −1 y menores que 0 (el −1 está y el 0 no).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "−1 ≤ x < 0  ⇔  x ∈ [−1, 0)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "[−1, 0)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "0 < x ≤ 6",
+     "bloques": [
+      {
+       "texto": "Todos los números reales mayores que 0 y menores o iguales que 6 (el 0 no está y el 6 sí).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "0 < x ≤ 6  ⇔  x ∈ (0, 6]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(0, 6]",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "marcador": true,
+   "enunciado": "Grafique cada conjunto.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(1, 3) ∩ [2, 7]",
+     "bloques": [
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(1, 3)",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "[2, 7]",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "interseccion",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": true,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: la línea azul es el primer intervalo, la roja el segundo y la de abajo, el resultado de la intersección (lo que está en los dos).",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Los números que están en los dos intervalos van desde 2 (incluido, porque está en [2, 7]) hasta 3 (sin incluir, porque no está en (1, 3)).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(1, 3) ∩ [2, 7] = [2, 3)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "(1, 3) ∪ [2, 7]",
+     "bloques": [
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(1, 3)",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "[2, 7]",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": true,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: la línea azul es el primer intervalo, la roja el segundo y la de abajo, el resultado de la unión (lo que está en uno, en el otro o en ambos).",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Los números que están en alguno de los dos intervalos van desde 1 (sin incluir) hasta 7 (incluido).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(1, 3) ∪ [2, 7] = (1, 7]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "marcador": true,
+   "enunciado": "La unión de dos intervalos consta de los números que están en un intervalo o en el otro (o en ambos). Por lo tanto,\n(1, 3) ∪ [2, 7] = {x | 1 < x < 3 o 2 ≤ x ≤ 7}\n(1, 3) ∪ [2, 7] = {x | 1 < x ≤ 7} = (1, 7]",
+   "bloques": [
+    {
+     "texto": "Este ejercicio explica el resultado del ejercicio 3.b. Las dos condiciones se pueden juntar en una sola:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "rel": "",
+       "der": "(1, 3) ∪ [2, 7] = {x | 1 < x < 3 o 2 ≤ x ≤ 7}"
+      },
+      {
+       "rel": "",
+       "der": "(1, 3) ∪ [2, 7] = {x | 1 < x ≤ 7}",
+       "nota": [
+        "Se superponen entre 2 y 3:",
+        "se juntan en uno solo"
+       ],
+       "notaColor": "suma"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "(1, 3) ∪ [2, 7] = (1, 7]",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: si los dos intervalos no se superpusieran (por ejemplo (1, 2) ∪ (5, 7)), la unión no se podría escribir como un solo intervalo.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "marcador": true,
+   "enunciado": "Exprese la desigualdad con notación de intervalos, y después grafique el intervalo.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "x ≤ −1",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "x ≤ −1  ⇔  x ∈ (−∞, −1]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, −1]",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "−2 < x ≤ 1",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "−2 < x ≤ 1  ⇔  x ∈ (−2, 1]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−2, 1]",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "x > −5",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "x > −5  ⇔  x ∈ (−5, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−5, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "−5 < x < 2",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "−5 < x < 2  ⇔  x ∈ (−5, 2)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−5, 2)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "marcador": true,
+   "enunciado": "Grafique los siguientes conjuntos.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(−2, 0] ∪ (−1, 1)",
+     "bloques": [
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−2, 0]",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "(−1, 1)",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": true,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: la línea azul es el primer intervalo, la roja el segundo y la de abajo, el resultado de la unión (lo que está en uno, en el otro o en ambos).",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Se superponen entre −1 y 0. La unión va desde −2 (sin incluir) hasta 1 (sin incluir).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(−2, 0] ∪ (−1, 1) = (−2, 1)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "[−4, 6] ∪ [0, 8)",
+     "bloques": [
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "[−4, 6]",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "[0, 8)",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": true,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: la línea azul es el primer intervalo, la roja el segundo y la de abajo, el resultado de la unión (lo que está en uno, en el otro o en ambos).",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Se superponen entre 0 y 6. La unión va desde −4 (incluido) hasta 8 (sin incluir).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "[−4, 6] ∪ [0, 8) = [−4, 8)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "(−∞, 6] ∩ (2, 10)",
+     "bloques": [
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 6]",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "(2, 10)",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "interseccion",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": true,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: la línea azul es el primer intervalo, la roja el segundo y la de abajo, el resultado de la intersección (lo que está en los dos).",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Lo común va desde 2 (sin incluir, porque no está en (2, 10)) hasta 6 (incluido, porque está en los dos).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "(−∞, 6] ∩ (2, 10) = (2, 6]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "[−4, 6] ∩ [0, 8)",
+     "bloques": [
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "[−4, 6]",
+          "color": "#1971c2"
+         },
+         {
+          "texto": "[0, 8)",
+          "color": "#e03131"
+         }
+        ],
+        "operacion": "interseccion",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": true,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      },
+      {
+       "texto": "Nota para el estudiante: la línea azul es el primer intervalo, la roja el segundo y la de abajo, el resultado de la intersección (lo que está en los dos).",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Lo común va desde 0 hasta 6, los dos incluidos porque están en los dos intervalos.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "[−4, 6] ∩ [0, 8) = [0, 6]",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "marcador": true,
+   "enunciado": "Evalúe cada una de las siguientes expresiones.",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: el valor absoluto de un número es su distancia al 0: |a| = a si a ≥ 0, y |a| = −a si a < 0. Nunca es negativo. Se resuelven primero las barras de adentro.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "|25|",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "|25|"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "25",
+          "color": "producto"
+         },
+         "nota": "25 ≥ 0: queda igual",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "|25| = 25",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "|−1/2|",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "|−",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          "|"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "1",
+            "color": "producto"
+           },
+           {
+            "t": "2",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Negativo: se le cambia el signo",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "|−",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          "| = ",
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ],
+     "alLado": true
+    },
+    {
+     "numero": "c",
+     "enunciado": "||−6| − |−3||",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "||−6| − |−3||"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "|",
+          {
+           "t": "6",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "3",
+           "color": "producto"
+          },
+          "|"
+         ],
+         "nota": "|−6| = 6 y |−3| = 3",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "|3|"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "3",
+          "color": "producto"
+         },
+         "nota": "|3| = 3",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "||−6| − |−3|| = 3",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "|3 − |−5||",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "|3 − |−5||"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "|3 − ",
+          {
+           "t": "5",
+           "color": "producto"
+          },
+          "|"
+         ],
+         "nota": "|−5| = 5",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "|−2|"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "2",
+          "color": "producto"
+         },
+         "nota": "|−2| = 2",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "|3 − |−5|| = 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ],
+     "alLado": true
+    },
+    {
+     "numero": "e",
+     "enunciado": "|15 · (−3)|",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "|15 · (−3)|"
+        },
+        {
+         "rel": "=",
+         "der": "|−45|"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "45",
+          "color": "producto"
+         },
+         "nota": "|−45| = 45",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "|15 · (−3)| = 45",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "|−1| − 1",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "|−1| − 1"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "1",
+           "color": "producto"
+          },
+          " − 1"
+         ],
+         "nota": "|−1| = 1",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "0"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "|−1| − 1 = 0",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ],
+     "alLado": true
+    },
+    {
+     "numero": "g",
+     "enunciado": "|(16 − 5)/(5 − 16)|",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "|",
+          {
+           "frac": [
+            "16 − 5",
+            "5 − 16"
+           ]
+          },
+          "|"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          "|",
+          {
+           "frac": [
+            "11",
+            "−11"
+           ]
+          },
+          "|"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": "|−1|"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "1",
+          "color": "producto"
+         },
+         "nota": "|−1| = 1",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "|",
+          {
+           "frac": [
+            "16 − 5",
+            "5 − 16"
+           ]
+          },
+          "| = 1"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "h",
+     "enunciado": "|1/3 · (−7)|",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          "|",
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          " · (−7)|"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          "|−",
+          {
+           "frac": [
+            "7",
+            "3"
+           ]
+          },
+          "|"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "7",
+            "color": "producto"
+           },
+           {
+            "t": "3",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Negativo: se le cambia el signo",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "|",
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          " · (−7)| = ",
+          {
+           "frac": [
+            "7",
+            "3"
+           ]
+          }
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ],
+     "alLado": true
+    },
+    {
+     "numero": "i",
+     "enunciado": "−3 − |3 − |−3||",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "−3 − |3 − |−3||"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "−3 − |3 − ",
+          {
+           "t": "3",
+           "color": "producto"
+          },
+          "|"
+         ],
+         "nota": "|−3| = 3",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "−3 − |0|"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "−3 − ",
+          {
+           "t": "0",
+           "color": "producto"
+          }
+         ],
+         "nota": "|0| = 0",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "−3"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "−3 − |3 − |−3|| = −3",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "marcador": true,
+   "enunciado": "Resolver las siguientes inecuaciones y representar la solución en la recta real:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: se despeja x como en una ecuación. Sumar o restar lo mismo en los dos miembros no cambia la desigualdad; multiplicar o dividir por un número positivo, tampoco; multiplicar o dividir por un número negativo la invierte (< pasa a >).",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "3x − 1 < −2x + 4",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "3x − 1",
+         "rel": "<",
+         "der": "−2x + 4"
+        },
+        {
+         "izq": [
+          "3x − 1 ",
+          {
+           "t": "+ 2x",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−2x + 4 ",
+          {
+           "t": "+ 2x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 2x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "5x − 1",
+         "rel": "<",
+         "der": "4"
+        },
+        {
+         "izq": [
+          "5x − 1 ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "4 ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 1 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "5x",
+         "rel": "<",
+         "der": "5"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "5x",
+            {
+             "t": "5",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            "5",
+            {
+             "t": "5",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir ambos miembros",
+          "por 5"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": "1"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 1)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 1)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "2x + 9 > 3x + 5",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "2x + 9",
+         "rel": ">",
+         "der": "3x + 5"
+        },
+        {
+         "izq": [
+          "2x + 9 ",
+          {
+           "t": "− 2x",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "3x + 5 ",
+          {
+           "t": "− 2x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 2x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "9",
+         "rel": ">",
+         "der": "x + 5"
+        },
+        {
+         "izq": [
+          "9 ",
+          {
+           "t": "− 5",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "x + 5 ",
+          {
+           "t": "− 5",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 5 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "4",
+         "rel": ">",
+         "der": "x"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": "4",
+         "nota": "Leer la desigualdad al revés"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 4)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 4)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "2(x − 3) + 5(x − 1) ≥ −4",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "2(x − 3) + 5(x − 1)",
+         "rel": "≥",
+         "der": "−4"
+        },
+        {
+         "izq": [
+          {
+           "t": "2x − 6",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "5x − 5",
+           "color": "producto"
+          }
+         ],
+         "rel": "≥",
+         "der": "−4",
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "7x − 11",
+         "rel": "≥",
+         "der": "−4"
+        },
+        {
+         "izq": [
+          "7x − 11 ",
+          {
+           "t": "+ 11",
+           "color": "suma"
+          }
+         ],
+         "rel": "≥",
+         "der": [
+          "−4 ",
+          {
+           "t": "+ 11",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 11 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "7x",
+         "rel": "≥",
+         "der": "7"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "7x",
+            {
+             "t": "7",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": "≥",
+         "der": [
+          {
+           "frac": [
+            "7",
+            {
+             "t": "7",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir ambos miembros",
+          "por 7"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": "≥",
+         "der": "1"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = [1, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "[1, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "12(x + 2) + 5 < 3(4x + 1) + 3",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "12(x + 2) + 5",
+         "rel": "<",
+         "der": "3(4x + 1) + 3"
+        },
+        {
+         "izq": [
+          {
+           "t": "12x + 24",
+           "color": "producto"
+          },
+          " + 5"
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "t": "12x + 3",
+           "color": "producto"
+          },
+          " + 3"
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "12x + 29",
+         "rel": "<",
+         "der": "12x + 6"
+        },
+        {
+         "izq": [
+          "12x + 29 ",
+          {
+           "t": "− 12x",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "12x + 6 ",
+          {
+           "t": "− 12x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 12x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "29",
+         "rel": "<",
+         "der": "6"
+        }
+       ]
+      },
+      {
+       "texto": "Desaparece la x y queda 29 < 6, que es falso para cualquier valor de x. La inecuación no tiene solución.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = ∅",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "5(x − 2) − 4(2x + 1) < −3x + 3",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "5(x − 2) − 4(2x + 1)",
+         "rel": "<",
+         "der": "−3x + 3"
+        },
+        {
+         "izq": [
+          {
+           "t": "5x − 10",
+           "color": "producto"
+          },
+          " ",
+          {
+           "t": "− 8x − 4",
+           "color": "producto"
+          }
+         ],
+         "rel": "<",
+         "der": "−3x + 3",
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "−3x − 14",
+         "rel": "<",
+         "der": "−3x + 3"
+        },
+        {
+         "izq": [
+          "−3x − 14 ",
+          {
+           "t": "+ 3x",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−3x + 3 ",
+          {
+           "t": "+ 3x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 3x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "−14",
+         "rel": "<",
+         "der": "3"
+        }
+       ]
+      },
+      {
+       "texto": "Desaparece la x y queda −14 < 3, que es verdadero para cualquier valor de x. La solución son todos los números reales.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = ℝ = (−∞, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "x(x − 1) > x² + 3x + 1",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "x(x − 1)",
+         "rel": ">",
+         "der": "x² + 3x + 1"
+        },
+        {
+         "izq": [
+          {
+           "t": "x² − x",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": "x² + 3x + 1",
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          "x² − x ",
+          {
+           "t": "− x²",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "x² + 3x + 1 ",
+          {
+           "t": "− x²",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar x² ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "−x",
+         "rel": ">",
+         "der": "3x + 1"
+        },
+        {
+         "izq": [
+          "−x ",
+          {
+           "t": "− 3x",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "3x + 1 ",
+          {
+           "t": "− 3x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 3x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "−4x",
+         "rel": ">",
+         "der": "1"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "−4x",
+            {
+             "t": "−4",
+             "color": "producto"
+            }
+           ]
+          },
+          " ",
+          {
+           "t": "<",
+           "color": "producto"
+          },
+          " ",
+          {
+           "frac": [
+            "1",
+            {
+             "t": "−4",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir por −4 (negativo):",
+          "se invierte la desigualdad"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": [
+          "−",
+          {
+           "frac": [
+            "1",
+            "4"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "S = (−∞, −",
+          {
+           "frac": [
+            "1",
+            "4"
+           ]
+          },
+          ")"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, −1/4)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "g",
+     "enunciado": "(x + 2)(x + 3) < (x − 1)(x + 5)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "(x + 2)(x + 3)",
+         "rel": "<",
+         "der": "(x − 1)(x + 5)"
+        },
+        {
+         "izq": [
+          {
+           "t": "x² + 3x + 2x + 6",
+           "color": "producto"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "t": "x² + 5x − x − 5",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x² + 5x + 6",
+         "rel": "<",
+         "der": "x² + 4x − 5"
+        },
+        {
+         "izq": [
+          "x² + 5x + 6 ",
+          {
+           "t": "− x²",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "x² + 4x − 5 ",
+          {
+           "t": "− x²",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar x² ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "5x + 6",
+         "rel": "<",
+         "der": "4x − 5"
+        },
+        {
+         "izq": [
+          "5x + 6 ",
+          {
+           "t": "− 4x",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "4x − 5 ",
+          {
+           "t": "− 4x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 4x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "x + 6",
+         "rel": "<",
+         "der": "−5"
+        },
+        {
+         "izq": [
+          "x + 6 ",
+          {
+           "t": "− 6",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−5 ",
+          {
+           "t": "− 6",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 6 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": "−11"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, −11)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, −11)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "h",
+     "enunciado": "2(x + 3) + 3(x − 1) > 2(x + 2)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "2(x + 3) + 3(x − 1)",
+         "rel": ">",
+         "der": "2(x + 2)"
+        },
+        {
+         "izq": [
+          {
+           "t": "2x + 6",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "3x − 3",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "2x + 4",
+           "color": "producto"
+          }
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "5x + 3",
+         "rel": ">",
+         "der": "2x + 4"
+        },
+        {
+         "izq": [
+          "5x + 3 ",
+          {
+           "t": "− 2x",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "2x + 4 ",
+          {
+           "t": "− 2x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 2x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "3x + 3",
+         "rel": ">",
+         "der": "4"
+        },
+        {
+         "izq": [
+          "3x + 3 ",
+          {
+           "t": "− 3",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "4 ",
+          {
+           "t": "− 3",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 3 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "3x",
+         "rel": ">",
+         "der": "1"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "3x",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "frac": [
+            "1",
+            {
+             "t": "3",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir ambos miembros",
+          "por 3"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": ">",
+         "der": [
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "S = (",
+          {
+           "frac": [
+            "1",
+            "3"
+           ]
+          },
+          ", ∞)"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(1/3, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 9,
+   "marcador": true,
+   "enunciado": "Resolver las siguientes inecuaciones, quitando previamente los denominadores:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: para quitar los denominadores se multiplican los dos miembros por el mínimo común múltiplo (m.c.m.) de los denominadores. Como es positivo, la desigualdad no cambia. Se multiplica cada término por separado y se simplifica.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(x − 1)/2 − (x − 4)/3 < 1",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "x − 1",
+            "2"
+           ]
+          },
+          " − ",
+          {
+           "frac": [
+            "x − 4",
+            "3"
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": "1"
+        },
+        {
+         "izq": [
+          {
+           "t": "6·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x − 1",
+            "2"
+           ]
+          },
+          " − ",
+          {
+           "t": "6·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x − 4",
+            "3"
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "t": "6·",
+           "color": "producto"
+          },
+          "1"
+         ],
+         "nota": [
+          "Multiplicar ambos miembros",
+          "por m.c.m.(2, 3) = 6"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "3",
+           "color": "producto"
+          },
+          "(x − 1) − ",
+          {
+           "t": "2",
+           "color": "producto"
+          },
+          "(x − 4)"
+         ],
+         "rel": "<",
+         "der": "6",
+         "nota": "Simplificar cada término",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "3x − 3",
+           "color": "producto"
+          },
+          " ",
+          {
+           "t": "− 2x + 8",
+           "color": "producto"
+          }
+         ],
+         "rel": "<",
+         "der": "6",
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x + 5",
+         "rel": "<",
+         "der": "6"
+        },
+        {
+         "izq": [
+          "x + 5 ",
+          {
+           "t": "− 5",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "6 ",
+          {
+           "t": "− 5",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 5 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": "1"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 1)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 1)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "x/3 + x/2 > 5 − x/6",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "x",
+            "3"
+           ]
+          },
+          " + ",
+          {
+           "frac": [
+            "x",
+            "2"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "5 − ",
+          {
+           "frac": [
+            "x",
+            "6"
+           ]
+          }
+         ]
+        },
+        {
+         "izq": [
+          {
+           "t": "6·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x",
+            "3"
+           ]
+          },
+          " + ",
+          {
+           "t": "6·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x",
+            "2"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "6·",
+           "color": "producto"
+          },
+          "5 − ",
+          {
+           "t": "6·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x",
+            "6"
+           ]
+          }
+         ],
+         "nota": [
+          "Multiplicar ambos miembros",
+          "por m.c.m.(3, 2, 6) = 6"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "2x",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "3x",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "30",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "x",
+           "color": "producto"
+          }
+         ],
+         "nota": "Simplificar cada término",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "5x",
+         "rel": ">",
+         "der": "30 − x"
+        },
+        {
+         "izq": [
+          "5x ",
+          {
+           "t": "+ x",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "30 − x ",
+          {
+           "t": "+ x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "6x",
+         "rel": ">",
+         "der": "30"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "6x",
+            {
+             "t": "6",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "frac": [
+            "30",
+            {
+             "t": "6",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir ambos miembros",
+          "por 6"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": ">",
+         "der": "5"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (5, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(5, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "(2x − 4)/3 + (3x + 1)/3 < (2x − 5)/12",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "2x − 4",
+            "3"
+           ]
+          },
+          " + ",
+          {
+           "frac": [
+            "3x + 1",
+            "3"
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            "2x − 5",
+            "12"
+           ]
+          }
+         ]
+        },
+        {
+         "izq": [
+          {
+           "t": "12·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "2x − 4",
+            "3"
+           ]
+          },
+          " + ",
+          {
+           "t": "12·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "3x + 1",
+            "3"
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "t": "12·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "2x − 5",
+            "12"
+           ]
+          }
+         ],
+         "nota": [
+          "Multiplicar ambos miembros",
+          "por m.c.m.(3, 12) = 12"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "4",
+           "color": "producto"
+          },
+          "(2x − 4) + ",
+          {
+           "t": "4",
+           "color": "producto"
+          },
+          "(3x + 1)"
+         ],
+         "rel": "<",
+         "der": "2x − 5",
+         "nota": "Simplificar cada término",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "8x − 16",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "12x + 4",
+           "color": "producto"
+          }
+         ],
+         "rel": "<",
+         "der": "2x − 5",
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "20x − 12",
+         "rel": "<",
+         "der": "2x − 5"
+        },
+        {
+         "izq": [
+          "20x − 12 ",
+          {
+           "t": "− 2x",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "2x − 5 ",
+          {
+           "t": "− 2x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 2x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "18x − 12",
+         "rel": "<",
+         "der": "−5"
+        },
+        {
+         "izq": [
+          "18x − 12 ",
+          {
+           "t": "+ 12",
+           "color": "suma"
+          }
+         ],
+         "rel": "<",
+         "der": [
+          "−5 ",
+          {
+           "t": "+ 12",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 12 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "18x",
+         "rel": "<",
+         "der": "7"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "18x",
+            {
+             "t": "18",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            "7",
+            {
+             "t": "18",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir ambos miembros",
+          "por 18"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": [
+          {
+           "frac": [
+            "7",
+            "18"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          "S = (−∞, ",
+          {
+           "frac": [
+            "7",
+            "18"
+           ]
+          },
+          ")"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 7/18)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "x/2 + (x + 1)/7 > x − 2",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "x",
+            "2"
+           ]
+          },
+          " + ",
+          {
+           "frac": [
+            "x + 1",
+            "7"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": "x − 2"
+        },
+        {
+         "izq": [
+          {
+           "t": "14·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x",
+            "2"
+           ]
+          },
+          " + ",
+          {
+           "t": "14·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x + 1",
+            "7"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "14·",
+           "color": "producto"
+          },
+          "x − ",
+          {
+           "t": "14·",
+           "color": "producto"
+          },
+          "2"
+         ],
+         "nota": [
+          "Multiplicar ambos miembros",
+          "por m.c.m.(2, 7) = 14"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "7x",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "2",
+           "color": "producto"
+          },
+          "(x + 1)"
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "14x",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "28",
+           "color": "producto"
+          }
+         ],
+         "nota": "Simplificar cada término",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          "7x + ",
+          {
+           "t": "2x + 2",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": "14x − 28",
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "9x + 2",
+         "rel": ">",
+         "der": "14x − 28"
+        },
+        {
+         "izq": [
+          "9x + 2 ",
+          {
+           "t": "− 14x",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "14x − 28 ",
+          {
+           "t": "− 14x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 14x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "−5x + 2",
+         "rel": ">",
+         "der": "−28"
+        },
+        {
+         "izq": [
+          "−5x + 2 ",
+          {
+           "t": "− 2",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "−28 ",
+          {
+           "t": "− 2",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 2 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "−5x",
+         "rel": ">",
+         "der": "−30"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "−5x",
+            {
+             "t": "−5",
+             "color": "producto"
+            }
+           ]
+          },
+          " ",
+          {
+           "t": "<",
+           "color": "producto"
+          },
+          " ",
+          {
+           "frac": [
+            "−30",
+            {
+             "t": "−5",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir por −5 (negativo):",
+          "se invierte la desigualdad"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": "6"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 6)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 6)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "(5x − 2)/3 − (x − 8)/4 > (x + 14)/2 − 2",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "5x − 2",
+            "3"
+           ]
+          },
+          " − ",
+          {
+           "frac": [
+            "x − 8",
+            "4"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "frac": [
+            "x + 14",
+            "2"
+           ]
+          },
+          " − 2"
+         ]
+        },
+        {
+         "izq": [
+          {
+           "t": "12·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "5x − 2",
+            "3"
+           ]
+          },
+          " − ",
+          {
+           "t": "12·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x − 8",
+            "4"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "12·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x + 14",
+            "2"
+           ]
+          },
+          " − ",
+          {
+           "t": "12·",
+           "color": "producto"
+          },
+          "2"
+         ],
+         "nota": [
+          "Multiplicar ambos miembros",
+          "por m.c.m.(3, 4, 2) = 12"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "4",
+           "color": "producto"
+          },
+          "(5x − 2) − ",
+          {
+           "t": "3",
+           "color": "producto"
+          },
+          "(x − 8)"
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "6",
+           "color": "producto"
+          },
+          "(x + 14) − ",
+          {
+           "t": "24",
+           "color": "producto"
+          }
+         ],
+         "nota": "Simplificar cada término",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "20x − 8",
+           "color": "producto"
+          },
+          " ",
+          {
+           "t": "− 3x + 24",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "6x + 84",
+           "color": "producto"
+          },
+          " − 24"
+         ],
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "17x + 16",
+         "rel": ">",
+         "der": "6x + 60"
+        },
+        {
+         "izq": [
+          "17x + 16 ",
+          {
+           "t": "− 6x",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "6x + 60 ",
+          {
+           "t": "− 6x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 6x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "11x + 16",
+         "rel": ">",
+         "der": "60"
+        },
+        {
+         "izq": [
+          "11x + 16 ",
+          {
+           "t": "− 16",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "60 ",
+          {
+           "t": "− 16",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 16 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "11x",
+         "rel": ">",
+         "der": "44"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "11x",
+            {
+             "t": "11",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "frac": [
+            "44",
+            {
+             "t": "11",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir ambos miembros",
+          "por 11"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": ">",
+         "der": "4"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (4, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(4, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "(x + 4)/3 − (x − 4)/5 > 2 + (3x − 1)/15",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "x + 4",
+            "3"
+           ]
+          },
+          " − ",
+          {
+           "frac": [
+            "x − 4",
+            "5"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "2 + ",
+          {
+           "frac": [
+            "3x − 1",
+            "15"
+           ]
+          }
+         ]
+        },
+        {
+         "izq": [
+          {
+           "t": "15·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x + 4",
+            "3"
+           ]
+          },
+          " − ",
+          {
+           "t": "15·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "x − 4",
+            "5"
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "15·",
+           "color": "producto"
+          },
+          "2 + ",
+          {
+           "t": "15·",
+           "color": "producto"
+          },
+          {
+           "frac": [
+            "3x − 1",
+            "15"
+           ]
+          }
+         ],
+         "nota": [
+          "Multiplicar ambos miembros",
+          "por m.c.m.(3, 5, 15) = 15"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "5",
+           "color": "producto"
+          },
+          "(x + 4) − ",
+          {
+           "t": "3",
+           "color": "producto"
+          },
+          "(x − 4)"
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "30",
+           "color": "producto"
+          },
+          " + 3x − 1"
+         ],
+         "nota": "Simplificar cada término",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "5x + 20",
+           "color": "producto"
+          },
+          " ",
+          {
+           "t": "− 3x + 12",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": "30 + 3x − 1",
+         "nota": "Propiedad distributiva",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "2x + 32",
+         "rel": ">",
+         "der": "3x + 29"
+        },
+        {
+         "izq": [
+          "2x + 32 ",
+          {
+           "t": "− 3x",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "3x + 29 ",
+          {
+           "t": "− 3x",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 3x ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "−x + 32",
+         "rel": ">",
+         "der": "29"
+        },
+        {
+         "izq": [
+          "−x + 32 ",
+          {
+           "t": "− 32",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "29 ",
+          {
+           "t": "− 32",
+           "color": "suma"
+          }
+         ],
+         "nota": "Restar 32 ambos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "−x",
+         "rel": ">",
+         "der": "−3"
+        },
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "−x",
+            {
+             "t": "−1",
+             "color": "producto"
+            }
+           ]
+          },
+          " ",
+          {
+           "t": "<",
+           "color": "producto"
+          },
+          " ",
+          {
+           "frac": [
+            "−3",
+            {
+             "t": "−1",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": [
+          "Dividir por −1 (negativo):",
+          "se invierte la desigualdad"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "x",
+         "rel": "<",
+         "der": "3"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 3)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 3)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 10,
+   "marcador": true,
+   "enunciado": "Un empresario paga a un vendedor un sueldo fijo de 1500 € más 1 € por artículo vendido. Otro vendedor, más emprendedor, no tiene sueldo fijo, pero pacta cobrar 3 € por cada unidad que logre vender. ¿A partir de qué número de productos vendidos cobrará más el segundo empleado?",
+   "bloques": [
+    {
+     "texto": "Sea x la cantidad de productos vendidos.",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "Primer vendedor",
+       "der": "1500 + x"
+      },
+      {
+       "izq": "Segundo vendedor",
+       "der": "3x"
+      }
+     ]
+    },
+    {
+     "texto": "El segundo cobra más cuando:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "3x",
+       "rel": ">",
+       "der": "1500 + x"
+      },
+      {
+       "izq": [
+        "3x ",
+        {
+         "t": "− x",
+         "color": "suma"
+        }
+       ],
+       "rel": ">",
+       "der": [
+        "1500 + x ",
+        {
+         "t": "− x",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar x ambos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "2x",
+       "rel": ">",
+       "der": "1500"
+      },
+      {
+       "izq": [
+        {
+         "frac": [
+          "2x",
+          {
+           "t": "2",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "rel": ">",
+       "der": [
+        {
+         "frac": [
+          "1500",
+          {
+           "t": "2",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "nota": [
+        "Dividir ambos miembros",
+        "por 2"
+       ],
+       "notaColor": "producto"
+      },
+      {
+       "izq": "x",
+       "rel": ">",
+       "der": "750"
+      }
+     ]
+    },
+    {
+     "texto": "Con 750 productos los dos cobran lo mismo (1500 + 750 = 3 · 750 = 2250 €). Como x es un número natural, el primero que cumple x > 750 es 751.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "A partir de 751 productos vendidos cobra más el segundo empleado",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Verificación: con 751 productos, el primero cobra 1500 + 751 = 2251 € y el segundo, 3 · 751 = 2253 €."
+    }
+   ]
+  },
+  {
+   "numero": 11,
+   "marcador": true,
+   "enunciado": "Un alumno ha obtenido un 3,75 en el primer examen de la evaluación, y un 4,5 en el segundo. Hallar qué nota deberá sacar como mínimo en el tercer y último examen, que hace media con los anteriores, para poder aprobar. (NOTA: se considera aprobado si la media es al menos un 5)",
+   "bloques": [
+    {
+     "texto": "Sea x la nota del tercer examen. La media de los tres tiene que ser mayor o igual que 5:",
+     "color": "azul",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": [
+        {
+         "frac": [
+          "3,75 + 4,5 + x",
+          "3"
+         ]
+        }
+       ],
+       "rel": "≥",
+       "der": "5"
+      },
+      {
+       "izq": [
+        {
+         "frac": [
+          "8,25 + x",
+          "3"
+         ]
+        }
+       ],
+       "rel": "≥",
+       "der": "5"
+      },
+      {
+       "izq": [
+        {
+         "frac": [
+          "8,25 + x",
+          "3"
+         ]
+        },
+        {
+         "t": " · 3",
+         "color": "producto"
+        }
+       ],
+       "rel": "≥",
+       "der": [
+        "5 ",
+        {
+         "t": "· 3",
+         "color": "producto"
+        }
+       ],
+       "nota": "Multiplicar ambos miembros por 3",
+       "notaColor": "producto"
+      },
+      {
+       "izq": "8,25 + x",
+       "rel": "≥",
+       "der": "15"
+      },
+      {
+       "izq": [
+        "8,25 + x ",
+        {
+         "t": "− 8,25",
+         "color": "suma"
+        }
+       ],
+       "rel": "≥",
+       "der": [
+        "15 ",
+        {
+         "t": "− 8,25",
+         "color": "suma"
+        }
+       ],
+       "nota": "Restar 8,25 ambos miembros",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "x",
+       "rel": "≥",
+       "der": "6,75"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "Necesita sacar como mínimo 6,75 en el tercer examen",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Verificación: (3,75 + 4,5 + 6,75) ÷ 3 = 15 ÷ 3 = 5."
+    }
+   ]
+  },
+  {
+   "numero": 12,
+   "marcador": true,
+   "enunciado": "Resolver las siguientes inecuaciones y representar la solución en la recta real:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: primero se factoriza el polinomio con sus raíces (por descomposición cuando se puede; si no, con la fórmula cuadrática) y después se usa la regla de los signos: un producto es positivo si los dos factores tienen el mismo signo y es negativo si tienen signos distintos.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "1",
+     "enunciado": "x² − 6x + 8 ≥ 0",
+     "bloques": [
+      {
+       "generador": "inecuaciones2",
+       "op": {
+        "filas": [
+         {
+          "texto": "x² − 6x + 8 ≥ 0",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 2] ∪ [4, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 2] ∪ [4, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "2",
+     "enunciado": "x² − 2x − 3 < 0",
+     "bloques": [
+      {
+       "texto": "Para factorizar x² − 2x − 3 se aplica descomposición: el término lineal se arma con a y c (b = a + c, −2 = 1 + (−3)):",
+       "unir": true,
+       "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "der": "x² − 2x − 3"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "x² ",
+          {
+           "t": "+ (1 + (−3))x",
+           "color": "suma"
+          },
+          " − 3"
+         ],
+         "nota": "Escribir −2x como (1 + (−3))x",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "x² ",
+          {
+           "t": "+ x − 3x",
+           "color": "suma"
+          },
+          " − 3"
+         ],
+         "nota": "Aplicar la propiedad distributiva",
+         "notaColor": "suma"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "x(x + 1)",
+           "color": "producto"
+          },
+          " − 3x − 3"
+         ],
+         "nota": "Sacar factor común x",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          "x(x + 1) ",
+          {
+           "t": "− 3(x + 1)",
+           "color": "producto"
+          }
+         ],
+         "nota": "Sacar factor común −3",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "(x + 1)",
+           "color": "producto"
+          },
+          "(x − 3)"
+         ],
+         "nota": "Sacar factor común (x + 1)",
+         "notaColor": "producto",
+         "caja": "azul"
+        }
+       ],
+       "tam": "S"
+      },
+      {
+       "texto": "Nota para el estudiante: también se puede factorizar con la fórmula cuadrática o completando el cuadrado. Verificación: (x + 1)(x − 3) = x² − 3x + x − 3 = x² − 2x − 3.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Reemplazando la factorización, la inecuación queda:",
+       "unir": true,
+       "tam": "S"
+      },
+      {
+       "generador": "inecuaciones2",
+       "op": {
+        "filas": [
+         {
+          "texto": "(x + 1)(x − 3) < 0",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−1, 3)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−1, 3)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "3",
+     "enunciado": "x² − 5x + 6 > 0",
+     "bloques": [
+      {
+       "generador": "inecuaciones2",
+       "op": {
+        "filas": [
+         {
+          "texto": "x² − 5x + 6 > 0",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 2) ∪ (3, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 2) ∪ (3, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 13,
+   "marcador": true,
+   "enunciado": "Resolver las siguientes inecuaciones con cocientes",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: un cociente es positivo si el numerador y el denominador tienen el mismo signo, y negativo si tienen signos distintos. El denominador nunca puede ser 0, así que sus raíces nunca entran en la solución. Si del otro lado no hay un 0, primero se pasa todo a un miembro y se hace una sola fracción.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "(x − 1)/(x − 4) > 0",
+     "bloques": [
+      {
+       "generador": "racionales",
+       "op": {
+        "filas": [
+         {
+          "texto": "(x − 1)/(x − 4) > 0",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, 1) ∪ (4, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, 1) ∪ (4, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "5/(x + 3) < 0",
+     "bloques": [
+      {
+       "generador": "racionales",
+       "op": {
+        "filas": [
+         {
+          "texto": "5/(x + 3) < 0",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, −3)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, −3)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "5/x ≥ 0",
+     "bloques": [
+      {
+       "generador": "racionales",
+       "op": {
+        "filas": [
+         {
+          "texto": "5/x ≥ 0",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (0, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(0, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "(2x − 3)/(x + 1) ≥ 1",
+     "bloques": [
+      {
+       "generador": "racionales",
+       "op": {
+        "filas": [
+         {
+          "texto": "(2x − 3)/(x + 1) ≥ 1",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = (−∞, −1) ∪ [4, ∞)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "(−∞, −1) ∪ [4, ∞)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       }
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "(5x − 8)/(x − 3) ≤ 4",
+     "bloques": [
+      {
+       "generador": "racionales",
+       "op": {
+        "filas": [
+         {
+          "texto": "(5x − 8)/(x − 3) ≤ 4",
+          "color": "#1971c2"
+         }
+        ],
+        "notas": false,
+        "recta": true,
+        "estiloRecta": "lineas",
+        "colorLineas": true,
+        "tamTexto": "S",
+        "fuente": "normal"
+       }
+      },
+      {
+       "pasos": [
+        {
+         "der": "S = [−4, 3)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "generador": "recta",
+       "op": {
+        "filas": [
+         {
+          "texto": "[−4, 3)",
+          "color": "#1971c2"
+         }
+        ],
+        "operacion": "union",
+        "estilo": "lineas",
+        "mostrarUnion": false,
+        "mostrarResultado": false,
+        "titulos": false,
+        "referencia": false,
+        "largo": "corta",
+        "tamExtremos": "M",
+        "margenIzq": 10,
+        "margenDer": 10
+       },
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

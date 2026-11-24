@@ -29,6 +29,12 @@
   "continuacion": true,
   "partesEnImpar": true
  },
+ "plantillas": {
+  "titulo": "Solucionario Matemática 1 — {rotulo}: {tema}",
+  "subtitulo": "Año 2026 · Cuatrimestre 2",
+  "cabecera": "Matemática 1\n{rotulo} - {temaCabecera} - Año 2026 - Cuatrimestre 2",
+  "marcador": "{rotulo}: {tema}"
+ },
  "partes": [
   {
    "tipo": "caratula",
@@ -128,52 +134,52 @@
    "impar": false
   },
   {
-   "ruta": "tp-01-logica-proposicional/solucion.json",
-   "marcador": "T.P. 1: Lógica proposicional"
+   "ruta": "../tps/logica-proposicional-a/solucion.json",
+   "rotulo": "T.P. 1"
   },
   {
-   "ruta": "tp-02-teoria-de-conjuntos/solucion.json",
-   "marcador": "T.P. 2: Teoría de conjuntos"
+   "ruta": "../tps/teoria-de-conjuntos-a/solucion.json",
+   "rotulo": "T.P. 2"
   },
   {
-   "ruta": "tp-03-relaciones-binarias/solucion.json",
-   "marcador": "T.P. 3: Relaciones binarias"
+   "ruta": "../tps/relaciones-binarias-a/solucion.json",
+   "rotulo": "T.P. 3"
   },
   {
-   "ruta": "tp-04-estructuras-algebraicas/solucion.json",
-   "marcador": "T.P. 4: Estructuras algebraicas"
+   "ruta": "../tps/estructuras-algebraicas-a/solucion.json",
+   "rotulo": "T.P. 4"
   },
   {
-   "ruta": "tp-05-algebra-de-boole/solucion.json",
-   "marcador": "T.P. 5: Álgebra de Boole"
+   "ruta": "../tps/algebra-de-boole-a/solucion.json",
+   "rotulo": "T.P. 5"
   },
   {
-   "ruta": "tp-06-campos-numericos/solucion.json",
-   "marcador": "T.P. 6: Campos numéricos",
+   "ruta": "../tps/campos-numericos/solucion.json",
+   "rotulo": "T.P. 6",
    "marcadores": {
     "ejercicio": "{rotulo}: {enunciado}",
     "item": "{rotulo}"
    }
   },
   {
-   "ruta": "tp-07-desigualdades/solucion.json",
-   "marcador": "T.P. 7: Desigualdades"
+   "ruta": "../tps/desigualdades/solucion.json",
+   "rotulo": "T.P. 7"
   },
   {
-   "ruta": "tp-08-sucesiones-aritmeticas-y-geometricas/solucion.json",
-   "marcador": "T.P. 8: Sucesiones aritméticas y geométricas"
+   "ruta": "../tps/sucesiones-aritmeticas-y-geometricas/solucion.json",
+   "rotulo": "T.P. 8"
   },
   {
-   "ruta": "tp-09-combinatoria/solucion.json",
-   "marcador": "T.P. 9: Combinatoria"
+   "ruta": "../tps/combinatoria/solucion.json",
+   "rotulo": "T.P. 9"
   },
   {
-   "ruta": "tp-10-funciones/solucion.json",
-   "marcador": "T.P. 10: Funciones"
+   "ruta": "../tps/funciones/solucion.json",
+   "rotulo": "T.P. 10"
   },
   {
-   "ruta": "tp-11-numeros-complejos/solucion.json",
-   "marcador": "T.P. 11: Números complejos"
+   "ruta": "../tps/numeros-complejos/solucion.json",
+   "rotulo": "T.P. 11"
   },
   {
    "tipo": "texto",
@@ -197,24 +203,24 @@
    ]
   },
   {
-   "ruta": "supuestos-teoricos-teoria-de-conjuntos/solucion.json",
-   "marcador": "Supuestos teóricos: Teoría de conjuntos"
+   "ruta": "../tps/supuestos-teoricos-teoria-de-conjuntos/solucion.json",
+   "rotulo": "Supuestos teóricos"
   },
   {
-   "ruta": "supuestos-teoricos-relaciones-binarias/solucion.json",
-   "marcador": "Supuestos teóricos: Relaciones binarias"
+   "ruta": "../tps/supuestos-teoricos-relaciones-binarias/solucion.json",
+   "rotulo": "Supuestos teóricos"
   },
   {
-   "ruta": "supuestos-teoricos-estructuras-algebraicas/solucion.json",
-   "marcador": "Supuestos teóricos: Estructuras algebraicas"
+   "ruta": "../tps/supuestos-teoricos-estructuras-algebraicas/solucion.json",
+   "rotulo": "Supuestos teóricos"
   },
   {
-   "ruta": "supuestos-teoricos-naturales-y-enteros/solucion.json",
-   "marcador": "Supuestos teóricos: Números naturales y enteros"
+   "ruta": "../tps/supuestos-teoricos-naturales-y-enteros/solucion.json",
+   "rotulo": "Supuestos teóricos"
   },
   {
-   "ruta": "supuestos-teoricos-numeros-reales/solucion.json",
-   "marcador": "Supuestos teóricos: Números reales"
+   "ruta": "../tps/supuestos-teoricos-numeros-reales/solucion.json",
+   "rotulo": "Supuestos teóricos"
   }
  ]
 }

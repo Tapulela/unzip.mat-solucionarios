@@ -221,14 +221,47 @@ export const FORMATO_CUADERNILLO = "unzip.mat/cuadernillo@1";
 const TIPOS_PARTE = ["caratula", "texto", "indice", "solucion"];
 const tipoParte = (p) => p.tipo || (p.solucion || p.ruta ? "solucion" : "texto");
 
-// el cuadernillo con cada «ruta» reemplazada por su solución (lo que lee la pizarra)
+// Cada trabajo práctico está una sola vez, en el banco (tps/), sin número ni
+// cursada: lleva su «tema» (y «temaCabecera», si en la cabecera va otro texto).
+// Lo que depende de la cursada lo pone el cuadernillo: la parte trae el «rotulo»
+// («T.P. 11») y el cuadernillo, las «plantillas» del título, el subtítulo, la
+// cabecera y el marcador, con {rotulo}, {tema} y {temaCabecera}. La parte puede
+// cambiar cualquiera de esos textos («titulo», «subtitulo», «cabecera», «tema»,
+// «temaCabecera») y agregar «bloques» antes de los de la solución (una aclaración
+// que vale solo para esa cursada).
+const CAMPOS_PLANTILLA = ["titulo", "subtitulo", "cabecera", "marcador"];
+const CAMPOS_PARTE_SOLUCION = ["rotulo", "tema", "temaCabecera", "titulo", "subtitulo", "bloques"];
+
+export function aplicarCursada(sol, p, plantillas = {}) {
+  if (p.rotulo === undefined) return { sol, marcador: p.marcador };
+  const tema = p.tema ?? sol.tema ?? "";
+  const datos = { rotulo: p.rotulo, tema, temaCabecera: p.temaCabecera ?? sol.temaCabecera ?? tema };
+  const llenar = (s) => s.replace(/\{(rotulo|tema|temaCabecera)\}/g, (_, k) => datos[k]);
+  const texto = (k) => p[k] ?? (typeof plantillas[k] === "string" ? llenar(plantillas[k]) : undefined);
+  const out = { ...sol };
+  for (const k of ["titulo", "subtitulo", "cabecera"]) { const v = texto(k); if (v !== undefined) out[k] = v; }
+  if (Array.isArray(p.bloques) && p.bloques.length) out.bloques = [...p.bloques, ...(sol.bloques || [])];
+  out.meta = { ...(sol.meta || {}), tp: p.rotulo };
+  return { sol: out, marcador: texto("marcador") };
+}
+
+// el cuadernillo con cada «ruta» reemplazada por su solución, ya con los textos
+// de la cursada (lo que lee la pizarra)
 export function completarCuadernillo(c, carpeta) {
-  return { ...c, partes: (c.partes || []).map((p) => {
-    if (!p || typeof p !== "object" || p.solucion || !p.ruta) return p;
-    const abs = path.resolve(carpeta, p.ruta);
-    if (!fs.existsSync(abs)) throw new Error(`No existe ${p.ruta} (desde ${carpeta})`);
-    const { ruta, ...resto } = p;
-    return { tipo: "solucion", ...resto, solucion: JSON.parse(fs.readFileSync(abs, "utf8")) };
+  const { plantillas, ...resto } = c;
+  return { ...resto, partes: (c.partes || []).map((p) => {
+    if (!p || typeof p !== "object" || !(p.solucion || p.ruta)) return p;
+    let sol = p.solucion;
+    if (!sol) {
+      const abs = path.resolve(carpeta, p.ruta);
+      if (!fs.existsSync(abs)) throw new Error(`No existe ${p.ruta} (desde ${carpeta})`);
+      sol = JSON.parse(fs.readFileSync(abs, "utf8"));
+    }
+    const cursada = aplicarCursada(sol, p, plantillas);
+    const parte = Object.fromEntries(Object.entries(p).filter(([k]) => k !== "ruta" && !CAMPOS_PARTE_SOLUCION.includes(k)));
+    if (p.rotulo !== undefined) delete parte.cabecera; // ya está en la solución
+    if (cursada.marcador !== undefined) parte.marcador = cursada.marcador;
+    return { tipo: "solucion", ...parte, solucion: cursada.sol };
   }) };
 }
 
@@ -242,8 +275,17 @@ export function revisarCuadernillo(c, carpeta) {
   const est = c.estilo || {};
   if (est.partesEnImpar !== undefined && typeof est.partesEnImpar !== "boolean") av("estilo.partesEnImpar", "tendría que ser true o false");
   if (est.escala !== undefined && !(typeof est.escala === "number" && est.escala >= 0.5 && est.escala <= 1)) av("estilo.escala", "tendría que ser un número de 0.5 a 1 (0.8 = hojas al 80 %)");
+  if (c.plantillas !== undefined) {
+    const pl = c.plantillas;
+    if (!pl || typeof pl !== "object" || Array.isArray(pl)) err("plantillas", "es un objeto { titulo, subtitulo, cabecera, marcador }");
+    else for (const k of Object.keys(pl)) {
+      if (!CAMPOS_PLANTILLA.includes(k)) av(`plantillas.${k}`, `campo desconocido (valen ${CAMPOS_PLANTILLA.join(", ")})`);
+      else if (typeof pl[k] !== "string") err(`plantillas.${k}`, "tiene que ser un texto");
+    }
+  }
   if (!Array.isArray(c.partes) || !c.partes.length) { err("partes", "falta la lista de partes"); return { errores, avisos }; }
   let indices = 0;
+  const rutasVistas = new Map();
   c.partes.forEach((p, i) => {
     const r = `partes[${i}]`;
     if (!p || typeof p !== "object") { err(r, "parte inválida"); return; }
@@ -275,6 +317,19 @@ export function revisarCuadernillo(c, carpeta) {
       try { sol = JSON.parse(fs.readFileSync(abs, "utf8")); } catch (e) { err(r + ".ruta", `${p.ruta} no es un JSON válido`); return; }
     }
     if (!sol) { err(r, "falta «solucion» o «ruta»"); return; }
+    if (p.ruta) {
+      const abs = path.resolve(carpeta || ".", p.ruta);
+      if (rutasVistas.has(abs)) av(r + ".ruta", `el mismo trabajo práctico ya está en ${rutasVistas.get(abs)}`);
+      else rutasVistas.set(abs, r);
+    }
+    for (const k of ["rotulo", "tema", "temaCabecera", "titulo", "subtitulo"]) if (p[k] !== undefined && typeof p[k] !== "string") err(`${r}.${k}`, "tiene que ser un texto");
+    if (p.bloques !== undefined && !Array.isArray(p.bloques)) err(r + ".bloques", "es una lista de bloques");
+    else if (p.bloques) {
+      const v = revisar({ titulo: "-", bloques: p.bloques, estilo: est }, { parte: true });
+      v.errores.forEach((e) => errores.push(`${r}.${e}`)); v.avisos.forEach((a) => avisos.push(`${r}.${a}`));
+    }
+    if (p.rotulo !== undefined && !(p.tema ?? sol.tema)) av(r, "la solución no tiene «tema» (las plantillas lo usan)");
+    if (p.rotulo === undefined && (p.tema || p.temaCabecera || p.titulo || p.subtitulo)) av(r, "«tema», «titulo» y «subtitulo» de la parte solo se usan con «rotulo»");
     if (p.marcadores !== undefined) {
       const mk = p.marcadores;
       if (!mk || typeof mk !== "object" || Array.isArray(mk)) err(r + ".marcadores", "es un objeto { ejercicio, item } con plantillas como «{rotulo}»");
@@ -302,16 +357,31 @@ export function buscar(dir) {
 
 export const GENERADORES_VALIDOS = GENERADORES;
 
+// los enunciados de los ejercicios y de los ítems, sin espacios de más: dos
+// trabajos prácticos con la misma huella son el mismo
+export function huellaEnunciado(sol) {
+  if (!Array.isArray(sol?.ejercicios) || !sol.ejercicios.length) return "";
+  return sol.ejercicios.map((e) => [e.enunciado || "", ...(e.items || []).map((it) => it.enunciado || "")].join("\n"))
+    .join("\n\n").replace(/\s+/g, " ").trim();
+}
+
 // solo cuando se ejecuta como programa (no cuando lo importa el servidor MCP)
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const raiz = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
   const rutas = process.argv.slice(2).length ? process.argv.slice(2) : buscar(path.join(raiz, "solucionarios"));
   let hayErrores = false;
+  const enunciados = new Map(); // trabajos prácticos repetidos: tiene que haber una sola copia
   for (const ruta of rutas) {
     let sol;
     try { sol = JSON.parse(fs.readFileSync(ruta, "utf8")); }
     catch (e) { console.log(`✗ ${ruta}\n    error: no es un JSON válido (${e.message})`); hayErrores = true; continue; }
     const { errores, avisos } = Array.isArray(sol.partes) ? revisarCuadernillo(sol, path.dirname(path.resolve(ruta))) : revisar(sol);
+    if (!Array.isArray(sol.partes)) {
+      if (path.resolve(ruta).split(path.sep).includes("tps") && !sol.tema) avisos.push("tema: falta (un trabajo práctico del banco lo necesita para el título y la cabecera de cada cursada)");
+      const firma = huellaEnunciado(sol);
+      if (firma && enunciados.has(firma)) avisos.push(`tiene el mismo enunciado que ${enunciados.get(firma)}: tendría que haber una sola copia (ver FORMATO.md, «Banco de trabajos prácticos»)`);
+      else if (firma) enunciados.set(firma, ruta);
+    }
     console.log(`${errores.length ? "✗" : "✓"} ${ruta}${avisos.length ? ` (${avisos.length} avisos)` : ""}`);
     errores.forEach((e) => console.log("    error: " + e));
     avisos.forEach((a) => console.log("    aviso: " + a));

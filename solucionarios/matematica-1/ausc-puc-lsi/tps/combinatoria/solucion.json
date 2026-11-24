@@ -1,0 +1,2844 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — Combinatoria",
+ "tema": "Combinatoria",
+ "temaCabecera": "Sistemas numéricos: combinatoria",
+ "cabecera": "Matemática 1\nSistemas numéricos: combinatoria",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Combinatoria",
+  "fuente": "Trabajo Práctico: Combinatoria (sistemas numéricos), Matemática I, segunda cursada 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "marcador": true,
+   "enunciado": "Calculá:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: n! (n factorial) es el producto de todos los naturales desde n hasta 1. Por ejemplo, 4! = 4 · 3 · 2 · 1. En este ejercicio solo se calculan factoriales, por eso no se analiza el orden ni la repetición.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "4! + 3!",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "4! + 3!"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "4 · 3 · 2 · 1",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "3 · 2 · 1",
+           "color": "producto"
+          }
+         ],
+         "nota": "Desarrollar cada factorial",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "24",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "6",
+           "color": "producto"
+          }
+         ]
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "30",
+          "color": "suma"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "4! + 3! = 30",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "6! − 4!",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "6! − 4!"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "6 · 5 · 4 · 3 · 2 · 1",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "4 · 3 · 2 · 1",
+           "color": "producto"
+          }
+         ],
+         "nota": "Desarrollar cada factorial",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "720",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "24",
+           "color": "producto"
+          }
+         ]
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "696",
+          "color": "suma"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "6! − 4! = 696",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "5! − (2! · 3!)",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "5! − (2! · 3!)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "5 · 4 · 3 · 2 · 1",
+           "color": "producto"
+          },
+          " − (",
+          {
+           "t": "2 · 1",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "3 · 2 · 1",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Desarrollar cada factorial",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "120",
+           "color": "producto"
+          },
+          " − (",
+          {
+           "t": "2",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "6",
+           "color": "producto"
+          },
+          ")"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          "120 − ",
+          {
+           "t": "12",
+           "color": "producto"
+          }
+         ],
+         "nota": "Resolver el paréntesis",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "108",
+          "color": "suma"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "5! − (2! · 3!) = 108",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "0! + 1!",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: por definición 0! = 1. Así las fórmulas de combinatoria valen también cuando no se elige ningún elemento.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "0! + 1!"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "1",
+           "color": "producto"
+          },
+          " + ",
+          {
+           "t": "1",
+           "color": "producto"
+          }
+         ],
+         "nota": [
+          "0! = 1 por definición",
+          "y 1! = 1"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "2",
+          "color": "suma"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "0! + 1! = 2",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "marcador": true,
+   "enunciado": "Decí si es Permutación (P), Arreglo (A) o Combinación (C):",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: para decidir se hacen tres preguntas. ¿Importa el orden? ¿Hay elementos repetidos? ¿Se usan todos los elementos? Si se usan todos y importa el orden es una permutación (P), y si además hay elementos repetidos es una permutación con repetición. Si se eligen algunos e importa el orden es un arreglo (A). Si se eligen algunos y no importa el orden es una combinación (C).",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Ordenar 5 fotos en la pared",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque cada foto ocupa un lugar distinto en la pared y si se cambian dos fotos de lugar queda otra forma de ordenarlas.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque las 5 fotos son distintas y cada una se cuelga una sola vez.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? Sí, se ordenan las 5 fotos.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: permutación sin repetición de 5 elementos (P₅), porque importa el orden, no hay repetidos y se usan todos los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Permutación (P)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Elegir 2 delegados de 20 alumnos",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? No, porque los dos delegados tienen el mismo cargo. Elegir a Ana y a Luis es lo mismo que elegir a Luis y a Ana.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque un alumno no puede ser elegido dos veces.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 2 de los 20 alumnos.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: combinación sin repetición de 20 elementos tomados de a 2 (C₂₀,₂), porque no importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Combinación (C)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Formar número de 3 cifras con dígitos 1-6 sin repetir",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque 123 y 321 son números distintos.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque la consigna dice «sin repetir».",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 3 de los 6 dígitos.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: arreglo sin repetición de 6 elementos tomados de a 3 (A₆,₃), porque importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Arreglo (A)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Anagrama de la palabra SOL",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque SOL y LOS son anagramas distintos.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque las letras S, O y L son distintas.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? Sí, cada anagrama usa las 3 letras.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: permutación sin repetición de 3 elementos (P₃), porque importa el orden, no hay repetidos y se usan todos los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Permutación (P)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Elegir 1º y 2º premio entre 10 rifas",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque no es lo mismo ganar el 1º premio que el 2º.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque una misma rifa no puede ganar los dos premios.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 2 de las 10 rifas.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: arreglo sin repetición de 10 elementos tomados de a 2 (A₁₀,₂), porque importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Arreglo (A)",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "marcador": "Ejercicio 3: Permutaciones",
+   "enunciado": "Resolvé:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "¿De cuántas formas se pueden sentar 6 personas en fila?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque cada persona ocupa un asiento distinto y si dos personas cambian de lugar queda otra forma de sentarse.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque las 6 personas son distintas.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? Sí, se sientan las 6 personas.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: permutación sin repetición de 6 elementos (P₆), porque importa el orden, no hay repetidos y se usan todos los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "P₆",
+         "der": "6!"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "6 · 5 · 4 · 3 · 2 · 1",
+          "color": "producto"
+         },
+         "nota": "Desarrollar 6!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "720",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "P₆ = 720",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Se pueden sentar de 720 formas.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "¿Cuántos anagramas tiene CASA? ¿y PAPA?",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: si una letra se repite, al cambiar de lugar las letras iguales se obtiene la misma palabra. Por eso se divide por el factorial de la cantidad de veces que se repite cada letra (permutación con repetición).",
+       "color": "gris",
+       "tam": "S",
+       "unir": true
+      },
+      {
+       "seccion": "Anagramas de CASA",
+       "bloques": [
+        {
+         "seccion": "Análisis: ¿qué herramienta se usa?",
+         "bloques": [
+          {
+           "texto": "¿Importa el orden? Sí, porque CASA y SACA son anagramas distintos.",
+           "color": "azul"
+          },
+          {
+           "texto": "¿Hay elementos repetidos? Sí, CASA tiene 4 letras y la A se repite 2 veces.",
+           "color": "azul"
+          },
+          {
+           "texto": "¿Se usan todos los elementos? Sí, cada anagrama usa las 4 letras.",
+           "color": "azul"
+          },
+          {
+           "texto": "Herramienta: permutación con repetición de 4 elementos, donde uno se repite 2 veces, porque importa el orden, hay repetidos y se usan todos los elementos.",
+           "color": "azul"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": {
+            "frac": [
+             "4!",
+             "2!"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             {
+              "t": "4 · 3 · 2!",
+              "color": "producto"
+             },
+             "2!"
+            ]
+           },
+           "nota": "Desarrollar 4! hasta 2!",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "4 · 3",
+            "color": "producto"
+           },
+           "nota": "Simplificar 2!",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "12",
+            "color": "producto"
+           }
+          }
+         ],
+         "entero": true
+        },
+        {
+         "pasos": [
+          {
+           "der": "CASA tiene 12 anagramas",
+           "color": "azul",
+           "caja": "azul"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      },
+      {
+       "seccion": "Anagramas de PAPA",
+       "bloques": [
+        {
+         "seccion": "Análisis: ¿qué herramienta se usa?",
+         "bloques": [
+          {
+           "texto": "¿Importa el orden? Sí, porque PAPA y PAAP son anagramas distintos.",
+           "color": "azul"
+          },
+          {
+           "texto": "¿Hay elementos repetidos? Sí, PAPA tiene 4 letras, la P se repite 2 veces y la A se repite 2 veces.",
+           "color": "azul"
+          },
+          {
+           "texto": "¿Se usan todos los elementos? Sí, cada anagrama usa las 4 letras.",
+           "color": "azul"
+          },
+          {
+           "texto": "Herramienta: permutación con repetición de 4 elementos, donde dos se repiten 2 veces cada uno, porque importa el orden, hay repetidos y se usan todos los elementos.",
+           "color": "azul"
+          }
+         ]
+        },
+        {
+         "pasos": [
+          {
+           "rel": "",
+           "der": {
+            "frac": [
+             "4!",
+             "2! · 2!"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             {
+              "t": "4 · 3 · 2 · 1",
+              "color": "producto"
+             },
+             {
+              "t": "2 · 1 · 2 · 1",
+              "color": "producto"
+             }
+            ]
+           },
+           "nota": "Desarrollar los factoriales",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             {
+              "t": "24",
+              "color": "producto"
+             },
+             {
+              "t": "4",
+              "color": "producto"
+             }
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "6",
+            "color": "producto"
+           }
+          }
+         ],
+         "entero": true
+        },
+        {
+         "pasos": [
+          {
+           "der": "PAPA tiene 6 anagramas",
+           "color": "azul",
+           "caja": "azul"
+          }
+         ],
+         "entero": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "¿De cuántas formas pueden ordenarse 3 libros de matemática y 2 de historia si los de matemática deben ir juntos?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque cada libro ocupa un lugar en el estante y si se cambian dos libros de lugar queda otro orden.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque los 5 libros son distintos.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? Sí, se ordenan los 5 libros.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: permutación sin repetición, dos veces. Una para ordenar el bloque de matemática con los libros de historia y otra para ordenar los libros dentro del bloque. Las dos se multiplican por el principio de multiplicación.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Como los 3 libros de matemática van juntos, se los piensa como un solo bloque. Quedan 3 objetos para ordenar (el bloque y los 2 libros de historia), que se ordenan de P₃ = 3! formas. Además, dentro del bloque los 3 libros de matemática se ordenan de P₃ = 3! formas. Por el principio de multiplicación:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "3! · 3!"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "6",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "6",
+           "color": "producto"
+          }
+         ],
+         "nota": "Calcular cada factorial",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "36",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "3! · 3! = 36",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Se pueden ordenar de 36 formas.",
+       "color": "azul",
+       "alLado": "centro"
+      },
+      {
+       "texto": "Nota para el estudiante: se supone que todos los libros son distintos.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "marcador": "Ejercicio 4: Arreglos",
+   "enunciado": "Aplicar fórmula: resolver",
+   "bloques": [
+    {
+     "texto": "Fórmula de los arreglos sin repetición de m elementos tomados de a n:",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "Aₘ,ₙ",
+       "der": {
+        "frac": [
+         "m!",
+         "(m − n)!"
+        ]
+       }
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Nota para el estudiante: en un arreglo se eligen n elementos de los m que hay, sin repetir, e importa el orden.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "¿Cuántos números de 3 cifras sin repetir se pueden formar con 1, 2, 3, 4, 5?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque 123 y 321 son números distintos.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque la consigna dice «sin repetir».",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 3 de los 5 dígitos.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: arreglo sin repetición de 5 elementos tomados de a 3 (A₅,₃), porque importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A₅,₃",
+         "der": {
+          "frac": [
+           "5!",
+           [
+            "(",
+            {
+             "t": "5 − 3",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "5!",
+           {
+            "t": "2!",
+            "color": "suma"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "5 · 4 · 3 · 2!",
+            "color": "producto"
+           },
+           "2!"
+          ]
+         },
+         "nota": "Desarrollar 5! hasta 2!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "5 · 4 · 3",
+          "color": "producto"
+         },
+         "nota": "Simplificar 2!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "20",
+           "color": "producto"
+          },
+          " · 3"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "60",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "A₅,₃ = 60",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Se pueden formar 60 números.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Podio olímpico entre 8 corredores. ¿Cuántos podios posibles?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque no es lo mismo salir 1º (oro) que 2º (plata) o 3º (bronce).",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque un corredor no puede ocupar dos lugares del podio.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, el podio tiene 3 lugares para 8 corredores.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: arreglo sin repetición de 8 elementos tomados de a 3 (A₈,₃), porque importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A₈,₃",
+         "der": {
+          "frac": [
+           "8!",
+           [
+            "(",
+            {
+             "t": "8 − 3",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "8!",
+           {
+            "t": "5!",
+            "color": "suma"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "8 · 7 · 6 · 5!",
+            "color": "producto"
+           },
+           "5!"
+          ]
+         },
+         "nota": "Desarrollar 8! hasta 5!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "8 · 7 · 6",
+          "color": "producto"
+         },
+         "nota": "Simplificar 5!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "56",
+           "color": "producto"
+          },
+          " · 6"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "336",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "A₈,₃ = 336",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Hay 336 podios posibles.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Contraseña de 4 letras distintas de 26 letras. ¿Cuántas contraseñas?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque ABCD y DCBA son contraseñas distintas.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque la consigna pide 4 letras distintas.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 4 de las 26 letras.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: arreglo sin repetición de 26 elementos tomados de a 4 (A₂₆,₄), porque importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "A₂₆,₄",
+         "der": {
+          "frac": [
+           "26!",
+           [
+            "(",
+            {
+             "t": "26 − 4",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "26!",
+           {
+            "t": "22!",
+            "color": "suma"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "26 · 25 · 24 · 23 · 22!",
+            "color": "producto"
+           },
+           "22!"
+          ]
+         },
+         "nota": "Desarrollar 26! hasta 22!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "26 · 25 · 24 · 23",
+          "color": "producto"
+         },
+         "nota": "Simplificar 22!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "650",
+           "color": "producto"
+          },
+          " · 24 · 23"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "15.600",
+           "color": "producto"
+          },
+          " · 23"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "358.800",
+           "color": "producto"
+          }
+         ]
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "A₂₆,₄ = 358.800",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Hay 358.800 contraseñas posibles.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "marcador": "Ejercicio 5: Combinaciones",
+   "enunciado": "Aplicar fórmula: resolver",
+   "bloques": [
+    {
+     "texto": "Fórmula de las combinaciones sin repetición de m elementos tomados de a n:",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "Cₘ,ₙ",
+       "der": {
+        "frac": [
+         "m!",
+         "n! · (m − n)!"
+        ]
+       }
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Nota para el estudiante: en una combinación se eligen n elementos de los m que hay, sin repetir, y no importa el orden.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "De 7 alumnos elegir 3 para un trabajo. ¿Cuántos grupos?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? No, porque el grupo formado por Ana, Luis y Sol es el mismo que el formado por Sol, Ana y Luis.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque un alumno no puede estar dos veces en el mismo grupo.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 3 de los 7 alumnos.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: combinación sin repetición de 7 elementos tomados de a 3 (C₇,₃), porque no importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "C₇,₃",
+         "der": {
+          "frac": [
+           "7!",
+           [
+            "3! · (",
+            {
+             "t": "7 − 3",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "7!",
+           [
+            "3! · ",
+            {
+             "t": "4!",
+             "color": "suma"
+            }
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "7 · 6 · 5 · 4!",
+            "color": "producto"
+           },
+           "3! · 4!"
+          ]
+         },
+         "nota": "Desarrollar 7! hasta 4!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "7 · 6 · 5",
+           {
+            "t": "3!",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar 4!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "7 · 6 · 5",
+           {
+            "t": "3 · 2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar 3!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "210",
+            "color": "producto"
+           },
+           {
+            "t": "6",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "35",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₇,₃ = 35",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Se pueden formar 35 grupos.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "En un torneo de 6 equipos, cada uno juega contra todos 1 vez. ¿Cuántos partidos?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? No, porque A contra B es el mismo partido que B contra A.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque un equipo no juega contra sí mismo.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, cada partido es un par de equipos elegido entre los 6.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: combinación sin repetición de 6 elementos tomados de a 2 (C₆,₂), porque no importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "C₆,₂",
+         "der": {
+          "frac": [
+           "6!",
+           [
+            "2! · (",
+            {
+             "t": "6 − 2",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "6!",
+           [
+            "2! · ",
+            {
+             "t": "4!",
+             "color": "suma"
+            }
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "6 · 5 · 4!",
+            "color": "producto"
+           },
+           "2! · 4!"
+          ]
+         },
+         "nota": "Desarrollar 6! hasta 4!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "6 · 5",
+           {
+            "t": "2!",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar 4!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "6 · 5",
+           {
+            "t": "2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar 2!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "30",
+            "color": "producto"
+           },
+           {
+            "t": "2",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "15",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₆,₂ = 15",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Se juegan 15 partidos.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "De 10 preguntas elegir 6 para examen. ¿Cuántas formas?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? No, porque lo que importa es qué preguntas entran en el examen y no en qué orden se eligen.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque una pregunta no se puede elegir dos veces.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 6 de las 10 preguntas.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: combinación sin repetición de 10 elementos tomados de a 6 (C₁₀,₆), porque no importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "C₁₀,₆",
+         "der": {
+          "frac": [
+           "10!",
+           [
+            "6! · (",
+            {
+             "t": "10 − 6",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "10!",
+           [
+            "6! · ",
+            {
+             "t": "4!",
+             "color": "suma"
+            }
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "10 · 9 · 8 · 7 · 6!",
+            "color": "producto"
+           },
+           "6! · 4!"
+          ]
+         },
+         "nota": "Desarrollar 10! hasta 6!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "10 · 9 · 8 · 7",
+           {
+            "t": "4!",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar 6!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "10 · 9 · 8 · 7",
+           {
+            "t": "4 · 3 · 2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar 4!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "5.040",
+            "color": "producto"
+           },
+           {
+            "t": "24",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "210",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₁₀,₆ = 210",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Hay 210 formas de elegir las preguntas.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "marcador": "Ejercicio 6: Comités",
+   "enunciado": "En un aula de 20: 12 varones y 8 mujeres. Se elige comité de 3.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "¿Cuántos comités totales?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? No, porque en un comité todos tienen el mismo lugar. El comité de Ana, Luis y Sol es el mismo que el de Sol, Ana y Luis.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque una persona no puede estar dos veces en el mismo comité.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 3 de los 20 alumnos.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: combinación sin repetición de 20 elementos tomados de a 3 (C₂₀,₃), porque no importa el orden, no hay repetidos y se elige una parte de los elementos.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "C₂₀,₃",
+         "der": {
+          "frac": [
+           "20!",
+           [
+            "3! · (",
+            {
+             "t": "20 − 3",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "20!",
+           [
+            "3! · ",
+            {
+             "t": "17!",
+             "color": "suma"
+            }
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "20 · 19 · 18 · 17!",
+            "color": "producto"
+           },
+           "3! · 17!"
+          ]
+         },
+         "nota": "Desarrollar 20! hasta 17!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "20 · 19 · 18",
+           {
+            "t": "3!",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar 17!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "20 · 19 · 18",
+           {
+            "t": "3 · 2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar 3!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "6.840",
+            "color": "producto"
+           },
+           {
+            "t": "6",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "1.140",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₂₀,₃ = 1.140",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Hay 1.140 comités posibles.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "¿Cuántos con 2 varones y 1 mujer?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? No, porque en un comité todos tienen el mismo lugar. El comité de Ana, Luis y Sol es el mismo que el de Sol, Ana y Luis.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque una persona no puede estar dos veces en el mismo comité.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 2 de los 12 varones y 1 de las 8 mujeres.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: combinación sin repetición dos veces, C₁₂,₂ para los varones y C₈,₁ para las mujeres. Como cada elección de varones se junta con cada elección de mujer, los resultados se multiplican (principio de multiplicación).",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Formas de elegir 2 varones de los 12:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "C₁₂,₂",
+         "der": {
+          "frac": [
+           "12!",
+           [
+            "2! · (",
+            {
+             "t": "12 − 2",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "12!",
+           [
+            "2! · ",
+            {
+             "t": "10!",
+             "color": "suma"
+            }
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "12 · 11 · 10!",
+            "color": "producto"
+           },
+           "2! · 10!"
+          ]
+         },
+         "nota": "Desarrollar 12! hasta 10!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "12 · 11",
+           {
+            "t": "2!",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar 10!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "12 · 11",
+           {
+            "t": "2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar 2!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "132",
+            "color": "producto"
+           },
+           {
+            "t": "2",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "66",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₁₂,₂ = 66",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Formas de elegir 1 mujer de las 8:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "C₈,₁",
+         "der": {
+          "frac": [
+           "8!",
+           [
+            "1! · (",
+            {
+             "t": "8 − 1",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "8!",
+           [
+            "1! · ",
+            {
+             "t": "7!",
+             "color": "suma"
+            }
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "8 · 7!",
+            "color": "producto"
+           },
+           "1! · 7!"
+          ]
+         },
+         "nota": "Desarrollar 8! hasta 7!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "8",
+           {
+            "t": "1!",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar 7!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "8",
+           {
+            "t": "1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "1! = 1",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "8",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₈,₁ = 8",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Por el principio de multiplicación:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "C₁₂,₂ · C₈,₁"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "66",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "8",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar los valores calculados",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "528",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₁₂,₂ · C₈,₁ = 528",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Hay 528 comités con 2 varones y 1 mujer.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "¿Cuántos con al menos 1 mujer?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? No, porque en un comité todos tienen el mismo lugar. El comité de Ana, Luis y Sol es el mismo que el de Sol, Ana y Luis.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? No, porque una persona no puede estar dos veces en el mismo comité.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? No, se eligen 3 de los 20 alumnos.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: combinación sin repetición. «Al menos 1 mujer» es lo contrario de «ninguna mujer», o sea, de un comité de 3 varones. Entonces a los comités totales (C₂₀,₃) se les restan los comités formados solo por varones (C₁₂,₃).",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Comités de 3 varones (se eligen 3 de los 12):",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "C₁₂,₃",
+         "der": {
+          "frac": [
+           "12!",
+           [
+            "3! · (",
+            {
+             "t": "12 − 3",
+             "color": "suma"
+            },
+            ")!"
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "12!",
+           [
+            "3! · ",
+            {
+             "t": "9!",
+             "color": "suma"
+            }
+           ]
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "12 · 11 · 10 · 9!",
+            "color": "producto"
+           },
+           "3! · 9!"
+          ]
+         },
+         "nota": "Desarrollar 12! hasta 9!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "12 · 11 · 10",
+           {
+            "t": "3!",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar 9!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           "12 · 11 · 10",
+           {
+            "t": "3 · 2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar 3!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "1.320",
+            "color": "producto"
+           },
+           {
+            "t": "6",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "220",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₁₂,₃ = 220",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Comités con al menos 1 mujer:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "C₂₀,₃ − C₁₂,₃"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "1.140",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "220",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar los valores calculados",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "920",
+          "color": "suma"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "C₂₀,₃ − C₁₂,₃ = 920",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "Hay 920 comités con al menos 1 mujer.",
+       "color": "azul",
+       "alLado": "centro"
+      },
+      {
+       "texto": "Nota para el estudiante: también se puede sumar caso por caso. Con 1 mujer hay 528 comités, con 2 mujeres hay C₈,₂ · C₁₂,₁ = 28 · 12 = 336 y con 3 mujeres hay C₈,₃ = 56. La suma 528 + 336 + 56 da 920, lo mismo que antes.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "marcador": "Ejercicio 7: MISIONES",
+   "enunciado": "Con la palabra MISIONES:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: la consigna marca que hay 2 S, pero también hay 2 I. Hay que dividir por las dos repeticiones.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "¿Cuántos anagramas totales? (2 S)",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque al cambiar letras de lugar se forman anagramas distintos.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? Sí, MISIONES tiene 8 letras (M, I, S, I, O, N, E, S), la S se repite 2 veces y la I se repite 2 veces.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? Sí, cada anagrama usa las 8 letras.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: permutación con repetición de 8 elementos, donde dos se repiten 2 veces cada uno, porque importa el orden, hay repetidos y se usan todos los elementos. Por eso se divide 8! por 2! · 2!.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": {
+          "frac": [
+           "8!",
+           "2! · 2!"
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "8 · 7 · 6 · 5 · 4 · 3 · 2 · 1",
+            "color": "producto"
+           },
+           {
+            "t": "2 · 1 · 2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar los factoriales",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "40.320",
+            "color": "producto"
+           },
+           {
+            "t": "4",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "10.080",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Anagramas de MISIONES = 10.080",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "MISIONES tiene 10.080 anagramas.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "¿Cuántos empiezan con M?",
+     "bloques": [
+      {
+       "seccion": "Análisis: ¿qué herramienta se usa?",
+       "bloques": [
+        {
+         "texto": "¿Importa el orden? Sí, porque al cambiar letras de lugar se forman anagramas distintos.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Hay elementos repetidos? Sí. La M queda fija en el primer lugar y se ordenan las otras 7 letras (I, S, I, O, N, E, S), donde la I y la S se repiten 2 veces cada una.",
+         "color": "azul"
+        },
+        {
+         "texto": "¿Se usan todos los elementos? Sí, se ordenan las 7 letras que quedan después de la M.",
+         "color": "azul"
+        },
+        {
+         "texto": "Herramienta: permutación con repetición de 7 elementos, donde dos se repiten 2 veces cada uno, porque importa el orden, hay repetidos y se usan todos los elementos que quedan. Por eso se divide 7! por 2! · 2!.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": {
+          "frac": [
+           "7!",
+           "2! · 2!"
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "7 · 6 · 5 · 4 · 3 · 2 · 1",
+            "color": "producto"
+           },
+           {
+            "t": "2 · 1 · 2 · 1",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Desarrollar los factoriales",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "frac": [
+           {
+            "t": "5.040",
+            "color": "producto"
+           },
+           {
+            "t": "4",
+            "color": "producto"
+           }
+          ]
+         }
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "1.260",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "Anagramas que empiezan con M = 1.260",
+         "color": "azul",
+         "caja": "azul"
+        }
+       ],
+       "entero": true
+      },
+      {
+       "texto": "1.260 anagramas empiezan con M.",
+       "color": "azul",
+       "alLado": "centro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "marcador": "Ejercicio 8: Personas que no pueden estar juntas",
+   "enunciado": "¿De cuántas formas se pueden ordenar 5 personas en fila si 2 no pueden estar juntas?",
+   "bloques": [
+    {
+     "seccion": "Análisis: ¿qué herramienta se usa?",
+     "bloques": [
+      {
+       "texto": "¿Importa el orden? Sí, porque si dos personas cambian de lugar en la fila queda otra forma de ordenarlas.",
+       "color": "azul"
+      },
+      {
+       "texto": "¿Hay elementos repetidos? No, porque las 5 personas son distintas.",
+       "color": "azul"
+      },
+      {
+       "texto": "¿Se usan todos los elementos? Sí, se ordenan las 5 personas.",
+       "color": "azul"
+      },
+      {
+       "texto": "Herramienta: permutación sin repetición. Es más fácil contar al revés: a todas las formas de ordenar las 5 personas (P₅) se les restan las formas en que esas 2 personas quedan juntas.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "seccion": "Todas las formas de ordenar 5 personas",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "P₅",
+         "der": "5!"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "5 · 4 · 3 · 2 · 1",
+          "color": "producto"
+         },
+         "nota": "Desarrollar 5!",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "120",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Formas en que las 2 personas quedan juntas",
+     "bloques": [
+      {
+       "texto": "Las 2 personas se piensan como un solo bloque. Quedan 4 objetos para ordenar (el bloque y las otras 3 personas), que se ordenan de P₄ = 4! formas. Dentro del bloque las 2 personas se ordenan de P₂ = 2! formas. Por el principio de multiplicación:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "4! · 2!"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "24",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "2",
+           "color": "producto"
+          }
+         ],
+         "nota": "Calcular cada factorial",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "48",
+          "color": "producto"
+         }
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "seccion": "Formas en que las 2 personas no están juntas",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": "5! − 4! · 2!"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "120",
+           "color": "producto"
+          },
+          " − ",
+          {
+           "t": "48",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar los valores calculados",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": {
+          "t": "72",
+          "color": "suma"
+         }
+        }
+       ],
+       "entero": true
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "der": "5! − 4! · 2! = 72",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Se pueden ordenar de 72 formas.",
+     "color": "azul",
+     "alLado": "centro"
+    }
+   ]
+  },
+  {
+   "numero": 9,
+   "marcador": "Ejercicio 9: Heladería",
+   "enunciado": "En una heladería hay 10 gustos. Querés 3 bochas distintas sin importar orden. ¿Cuántas combinaciones?",
+   "bloques": [
+    {
+     "seccion": "Análisis: ¿qué herramienta se usa?",
+     "bloques": [
+      {
+       "texto": "¿Importa el orden? No, la consigna dice «sin importar orden». Frutilla, chocolate y vainilla es el mismo helado que vainilla, chocolate y frutilla.",
+       "color": "azul"
+      },
+      {
+       "texto": "¿Hay elementos repetidos? No, porque la consigna pide 3 bochas distintas, o sea, no se repite ningún gusto.",
+       "color": "azul"
+      },
+      {
+       "texto": "¿Se usan todos los elementos? No, se eligen 3 de los 10 gustos.",
+       "color": "azul"
+      },
+      {
+       "texto": "Herramienta: combinación sin repetición de 10 elementos tomados de a 3 (C₁₀,₃), porque no importa el orden, no hay repetidos y se elige una parte de los elementos.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "pasos": [
+      {
+       "izq": "C₁₀,₃",
+       "der": {
+        "frac": [
+         "10!",
+         [
+          "3! · (",
+          {
+           "t": "10 − 3",
+           "color": "suma"
+          },
+          ")!"
+         ]
+        ]
+       }
+      },
+      {
+       "rel": "=",
+       "der": {
+        "frac": [
+         "10!",
+         [
+          "3! · ",
+          {
+           "t": "7!",
+           "color": "suma"
+          }
+         ]
+        ]
+       }
+      },
+      {
+       "rel": "=",
+       "der": {
+        "frac": [
+         {
+          "t": "10 · 9 · 8 · 7!",
+          "color": "producto"
+         },
+         "3! · 7!"
+        ]
+       },
+       "nota": "Desarrollar 10! hasta 7!",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": {
+        "frac": [
+         "10 · 9 · 8",
+         {
+          "t": "3!",
+          "color": "producto"
+         }
+        ]
+       },
+       "nota": "Simplificar 7!",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": {
+        "frac": [
+         "10 · 9 · 8",
+         {
+          "t": "3 · 2 · 1",
+          "color": "producto"
+         }
+        ]
+       },
+       "nota": "Desarrollar 3!",
+       "notaColor": "producto"
+      },
+      {
+       "rel": "=",
+       "der": {
+        "frac": [
+         {
+          "t": "720",
+          "color": "producto"
+         },
+         {
+          "t": "6",
+          "color": "producto"
+         }
+        ]
+       }
+      },
+      {
+       "rel": "=",
+       "der": {
+        "t": "120",
+        "color": "producto"
+       }
+      }
+     ],
+     "entero": true
+    },
+    {
+     "pasos": [
+      {
+       "der": "C₁₀,₃ = 120",
+       "color": "azul",
+       "caja": "azul"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Hay 120 combinaciones posibles.",
+     "color": "azul",
+     "alLado": "centro"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "formato": "unzip.mat/cuadernillo@1",
+ "titulo": "Solucionario Matemática 1 — Año 2026 · Cuatrimestre 1",
+ "cabecera": "Matemática 1\nSolucionario de los trabajos prácticos - Año 2026 - Cuatrimestre 1",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Cuadernillo completo",
+  "fuente": "Trabajos prácticos de Matemática I, primer cuatrimestre 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "escala": 0.8,
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true,
+  "partesEnImpar": true
+ },
+ "plantillas": {
+  "titulo": "Solucionario Matemática 1 — {rotulo}: {tema}",
+  "subtitulo": "Año 2026 · Cuatrimestre 1",
+  "cabecera": "Matemática 1\n{rotulo} - {temaCabecera} - Año 2026 - Cuatrimestre 1",
+  "marcador": "{rotulo}: {tema}"
+ },
+ "partes": [
+  {
+   "tipo": "caratula",
+   "antetitulo": "Matemática 1",
+   "titulo": "Solucionario de los trabajos prácticos",
+   "subtitulo": "Año 2026 · Cuatrimestre 1",
+   "lineas": [
+    "Trabajos prácticos 1 a 10 y supuestos teóricos, resueltos paso a paso"
+   ],
+   "pie": "AUSC - PUC - LSI"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Enlaces",
+   "sinCabecera": true,
+   "impar": false,
+   "enIndice": false,
+   "bloques": [
+    {
+     "texto": "Los proyectos con los que se armó este cuadernillo. En el PDF, cada código también se puede tocar.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "espacio": 1
+    },
+    {
+     "qr": "https://github.com/Tapulela/unzip.mat-solucionarios",
+     "titulo": "Repositorio del solucionario"
+    },
+    {
+     "espacio": 1
+    },
+    {
+     "qr": "https://tapulela.github.io/unzip.mat/",
+     "titulo": "Pizarra unzip.mat en línea"
+    },
+    {
+     "qr": "https://github.com/Tapulela/unzip.mat",
+     "titulo": "Repositorio de la pizarra",
+     "alLado": true
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Presentación",
+   "bloques": [
+    "En matemática no alcanza con llegar al resultado correcto: también importa cómo se escribe, cómo se justifica cada paso y qué se considera una respuesta completa. Cada cátedra tiene sus criterios, y conocerlos es parte de aprobar la materia.",
+    "Este cuadernillo reúne las resoluciones de los trabajos prácticos de Matemática 1 siguiendo los criterios de evaluación vigentes al momento de escribirlo. La idea es que sirva como guía para resolver los ejercicios de la forma en que se los espera en la cursada y en los exámenes.",
+    "Algunas cosas a tener en cuenta:",
+    "•  No es un material oficial de la cátedra.",
+    "•  Puede contener errores. Se agradece el aviso de cualquier error o sugerencia.",
+    "•  Los criterios pueden cambiar de un cuatrimestre a otro. Ante una duda, vale lo que indique el docente del curso.",
+    "•  Se aprovecha más si cada ejercicio se intenta resolver primero sin ayuda y la respuesta se consulta después.",
+    "Mientras no exista un solucionario oficial, se espera que este trabajo sirva de apoyo.",
+    {
+     "espacio": 1
+    },
+    "De estudiantes para estudiantes."
+   ],
+   "enIndice": false
+  },
+  {
+   "tipo": "indice",
+   "titulo": "Contenido",
+   "niveles": 3,
+   "impar": false,
+   "compacto": true
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Introducción",
+   "bloques": [
+    "Cada trabajo práctico empieza en una hoja nueva y lleva su propia cabecera. En cada ejercicio se copia primero la consigna y debajo va la respuesta, paso a paso. Después de los trabajos prácticos, en la sección «Supuestos teóricos», van resueltos los supuestos teóricos de cada tema, en el mismo orden.",
+    {
+     "seccion": "Cómo leer las resoluciones",
+     "bloques": [
+      "Cada paso se anuncia antes de hacerlo: la nota a la derecha de un renglón dice qué se hace para llegar al renglón siguiente.",
+      "Las cuentas se hacen de a una. Lo que cambia en un paso va en color, y su nota en el mismo color: verde para sumar o restar, violeta para multiplicar, dividir, sacar factor común o reemplazar.",
+      "Las respuestas van en azul y el resultado final, en un recuadro.",
+      "Las explicaciones de apoyo van en gris, más chicas, y empiezan con «Nota para el estudiante:»."
+     ]
+    },
+    {
+     "seccion": "Cómo encontrar un ejercicio",
+     "bloques": [
+      "En el índice («Contenido») están los trabajos prácticos, los supuestos teóricos y sus ejercicios con el número de hoja. En el PDF, cada renglón del índice es un enlace a su hoja, y el panel de marcadores del lector lleva a cada parte, trabajo práctico, supuesto teórico y ejercicio."
+     ]
+    }
+   ],
+   "impar": false
+  },
+  {
+   "ruta": "../tps/logica-proposicional-b/solucion.json",
+   "rotulo": "T.P. 1"
+  },
+  {
+   "ruta": "../tps/logica-proposicional-2/solucion.json",
+   "rotulo": "T.P. 2"
+  },
+  {
+   "ruta": "../tps/teoria-de-conjuntos-b/solucion.json",
+   "rotulo": "T.P. 3"
+  },
+  {
+   "ruta": "../tps/relaciones-binarias-b/solucion.json",
+   "rotulo": "T.P. 4"
+  },
+  {
+   "ruta": "../tps/estructuras-algebraicas-b/solucion.json",
+   "rotulo": "T.P. 5"
+  },
+  {
+   "ruta": "../tps/algebra-de-boole-b/solucion.json",
+   "rotulo": "T.P. 6"
+  },
+  {
+   "ruta": "../tps/sistemas-numericos-n-y-z/solucion.json",
+   "rotulo": "T.P. 7",
+   "bloques": [
+    {
+     "texto": "Aclaración: en el enunciado de la cátedra este trabajo práctico figura como «Trabajo Práctico 6». Se optó por llamarlo T.P. 7 porque en el primer cuatrimestre de 2026 el número 6 está repetido: ya hay otro T.P. 6 (Álgebra de Boole).",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "ruta": "../tps/numeros-reales/solucion.json",
+   "rotulo": "T.P. 8",
+   "bloques": [
+    {
+     "texto": "Aclaración: en el enunciado de la cátedra este trabajo práctico figura como «Trabajo Práctico 7: Números Reales». Se optó por llamarlo T.P. 8 porque en el primer cuatrimestre de 2026 el número 7 ya corresponde a Sistemas numéricos ℕ y ℤ.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "ruta": "../tps/progresiones-y-combinatoria/solucion.json",
+   "rotulo": "T.P. 9",
+   "bloques": [
+    {
+     "texto": "Aclaración: en el enunciado de la cátedra este trabajo práctico figura como «Trabajo Práctico 8: Progresiones y combinatoria». Se optó por llamarlo T.P. 9 porque en el primer cuatrimestre de 2026 el número 8 ya corresponde a Números reales.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "ruta": "../tps/numeros-complejos/solucion.json",
+   "rotulo": "T.P. 10"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Supuestos teóricos",
+   "bloques": [
+    "Esta sección reúne las resoluciones de los supuestos teóricos de la materia. No llevan número: hay uno por tema y van en el mismo orden que los trabajos prácticos.",
+    "Cada supuesto teórico empieza en una hoja nueva y lleva su propia cabecera; se resuelven con los mismos criterios que los trabajos prácticos.",
+    {
+     "espacio": 1
+    },
+    {
+     "seccion": "Temas",
+     "bloques": [
+      "•  Teoría de conjuntos",
+      "•  Relaciones binarias",
+      "•  Estructuras algebraicas",
+      "•  Números naturales y enteros",
+      "•  Números reales"
+     ]
+    }
+   ]
+  },
+  {
+   "ruta": "../tps/supuestos-teoricos-teoria-de-conjuntos/solucion.json",
+   "rotulo": "Supuestos teóricos"
+  },
+  {
+   "ruta": "../tps/supuestos-teoricos-relaciones-binarias/solucion.json",
+   "rotulo": "Supuestos teóricos"
+  },
+  {
+   "ruta": "../tps/supuestos-teoricos-estructuras-algebraicas/solucion.json",
+   "rotulo": "Supuestos teóricos"
+  },
+  {
+   "ruta": "../tps/supuestos-teoricos-naturales-y-enteros/solucion.json",
+   "rotulo": "Supuestos teóricos"
+  },
+  {
+   "ruta": "../tps/supuestos-teoricos-numeros-reales/solucion.json",
+   "rotulo": "Supuestos teóricos"
+  }
+ ]
+}

@@ -1,0 +1,1397 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Solucionario Matemática 1 — Lógica proposicional",
+ "tema": "Lógica proposicional",
+ "cabecera": "Matemática 1\nLógica proposicional",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Lógica proposicional",
+  "fuente": "TP: Lógica proposicional, Matemática I AUSC-LSI-PUC, primer cuatrimestre 2026",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "marcador": true,
+   "enunciado": "Indique cual (es) de los siguientes enunciados son proposiciones:",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: una proposición es un enunciado del que se puede decir si es verdadero o falso (pero no las dos cosas). Las preguntas, las órdenes y las exclamaciones no son proposiciones.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "8 + 9 = 19 − 2",
+     "bloques": [
+      {
+       "texto": "Es proposición y es una proposición simple. Es verdadera, porque 8 + 9 = 17 y 19 − 2 = 17.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "¡Estudie lógica proposicional!",
+     "bloques": [
+      {
+       "texto": "No es proposición por ser una orden (exclamación).",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Los hombres pueden vivir sin agua",
+     "bloques": [
+      {
+       "texto": "Es proposición y es una proposición simple. Es falsa.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "2 · 7 = 13 + 1 y 6 − 16 = 2 · 5",
+     "bloques": [
+      {
+       "texto": "Es proposición y es una proposición compuesta (conjunción).",
+       "color": "azul"
+      },
+      {
+       "texto": "Es falsa, porque 2 · 7 = 14 y 13 + 1 = 14 es verdadera, pero 6 − 16 = −10 y 2 · 5 = 10, así que la segunda es falsa.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "¿El silencio es fundamental para dormir?",
+     "bloques": [
+      {
+       "texto": "No es proposición por ser una pregunta.",
+       "color": "azul"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "marcador": true,
+   "enunciado": "Escriba en forma simbólica los siguientes enunciados:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si las exportaciones disminuyen entonces bajarán las utilidades",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: las exportaciones disminuyen",
+         "color": "azul"
+        },
+        {
+         "der": "    q: bajarán las utilidades",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "p → q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«si…, entonces…» es →"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Los precios son altos si y sólo sí los costos aumentan",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: los precios son altos",
+         "color": "azul"
+        },
+        {
+         "der": "    q: los costos aumentan",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "p ↔ q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«si y sólo si» es ↔"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Si la producción aumenta entonces bajarán los precios",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: la producción aumenta",
+         "color": "azul"
+        },
+        {
+         "der": "    q: bajarán los precios",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "p → q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«si…, entonces…» es →"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si aumenta la demanda esto implica que aumenta la oferta y viceversa",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: aumenta la demanda",
+         "color": "azul"
+        },
+        {
+         "der": "    q: aumenta la oferta",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "(p → q) ∧ (q → p)"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": [
+          "«y viceversa»: también",
+          "q implica p"
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: (p → q) ∧ (q → p) es la definición del bicondicional p ↔ q.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Si la contaminación aumenta entonces existirá restricción vehicular adicional",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: la contaminación aumenta",
+         "color": "azul"
+        },
+        {
+         "der": "    q: existirá restricción vehicular adicional",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "p → q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«si…, entonces…» es →"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "marcador": true,
+   "enunciado": "Halle el valor de verdad de las siguientes proposiciones:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Rio de Janeiro es la capital del Brasil y Guyana se encuentra ubicada en América del Sur.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: Río de Janeiro es la capital del Brasil",
+         "color": "azul"
+        },
+        {
+         "der": "    q: Guyana se encuentra ubicada en América del Sur",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Valores de verdad:",
+         "color": "azul"
+        },
+        {
+         "der": "    p = F, porque la capital del Brasil es Brasilia",
+         "color": "azul"
+        },
+        {
+         "der": "    q = V",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "p ∧ q"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": "∧ es V sólo si las dos son V"
+        },
+        {
+         "der": "p ∧ q = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Si 3 > 1, entonces 1 > 2 ó 4 < 8",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: 3 > 1",
+         "color": "azul"
+        },
+        {
+         "der": "    q: 1 > 2",
+         "color": "azul"
+        },
+        {
+         "der": "    r: 4 < 8",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Valores de verdad:",
+         "color": "azul"
+        },
+        {
+         "der": "    p = V",
+         "color": "azul"
+        },
+        {
+         "der": "    q = F",
+         "color": "azul"
+        },
+        {
+         "der": "    r = V",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "p → (q ∨ r)"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " → (",
+          {
+           "t": "F",
+           "color": "producto"
+          },
+          " ∨ ",
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          ")"
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V → V",
+         "nota": [
+          "Resolver el paréntesis:",
+          "∨ es V si alguna es V"
+         ]
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "→ es F sólo si es V → F"
+        },
+        {
+         "der": "p → (q ∨ r) = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "48 es un número par y 75 es un número impar",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: 48 es un número par",
+         "color": "azul"
+        },
+        {
+         "der": "    q: 75 es un número impar",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Valores de verdad:",
+         "color": "azul"
+        },
+        {
+         "der": "    p = V, porque 48 = 2 · 24",
+         "color": "azul"
+        },
+        {
+         "der": "    q = V, porque 75 = 2 · 37 + 1",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "p ∧ q"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " ∧ ",
+          {
+           "t": "V",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "V",
+         "nota": "∧ es V sólo si las dos son V"
+        },
+        {
+         "der": "p ∧ q = V",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si Brasil limita con el Paraguay, entonces Brasil limita con Chile.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: Brasil limita con el Paraguay",
+         "color": "azul"
+        },
+        {
+         "der": "    q: Brasil limita con Chile",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Valores de verdad:",
+         "color": "azul"
+        },
+        {
+         "der": "    p = V",
+         "color": "azul"
+        },
+        {
+         "der": "    q = F, porque Chile no limita con Brasil",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "p → q"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "t": "V",
+           "color": "producto"
+          },
+          " → ",
+          {
+           "t": "F",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": "F",
+         "nota": "→ es F sólo si es V → F"
+        },
+        {
+         "der": "p → q = F",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "marcador": true,
+   "enunciado": "Formalice las siguientes proposiciones",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si ella no viene entonces nos vamos al club",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: ella viene",
+         "color": "azul"
+        },
+        {
+         "der": "    q: nos vamos al club",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "¬p → q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«no viene» es ¬p"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "Si trabajas y estudias te preparas mejor para el futuro",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: trabajas",
+         "color": "azul"
+        },
+        {
+         "der": "    q: estudias",
+         "color": "azul"
+        },
+        {
+         "der": "    r: te preparas mejor para el futuro",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "(p ∧ q) → r"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«si…, (entonces)…» es →"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Si dominas las asignaturas y te relacionas bien con todas las personas de la Facultad entonces no has perdido el tiempo",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: dominas las asignaturas",
+         "color": "azul"
+        },
+        {
+         "der": "    q: te relacionas bien con todas las personas de la Facultad",
+         "color": "azul"
+        },
+        {
+         "der": "    r: has perdido el tiempo",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "(p ∧ q) → ¬r"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«no has perdido» es ¬r"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si tengo muchos exámenes que preparar y he descansado un poco al mediodía, trabajo hasta las doce de la noche. Pero hoy no trabajo hasta las doce. Por tanto, será que no he descansado al mediodía",
+     "bloques": [
+      {
+       "texto": "Es un argumento: dos premisas y una conclusión («por tanto»).",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: tengo muchos exámenes que preparar",
+         "color": "azul"
+        },
+        {
+         "der": "    q: he descansado un poco al mediodía",
+         "color": "azul"
+        },
+        {
+         "der": "    r: trabajo hasta las doce de la noche",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Premisas:  (p ∧ q) → r,   ¬r",
+         "color": "azul"
+        },
+        {
+         "der": "Conclusión:  ¬q",
+         "color": "azul"
+        },
+        {
+         "der": [
+          "Forma:  ",
+          "{[(p ∧ q) → r] ∧ ¬r} → ¬q"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: la forma de un argumento es [premisas] → conclusión, con las premisas unidas por ∧.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Si te cuesta entender las cosas, pero te esfuerzas diariamente, seguro que no suspendes",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: te cuesta entender las cosas",
+         "color": "azul"
+        },
+        {
+         "der": "    q: te esfuerzas diariamente",
+         "color": "azul"
+        },
+        {
+         "der": "    r: suspendes",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "(p ∧ q) → ¬r"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«pero» se traduce como ∧"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "f",
+     "enunciado": "Estudio Matemática si y solo si estudio programación, o si no estudio Programación entonces estudio Matemática",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: estudio Matemática",
+         "color": "azul"
+        },
+        {
+         "der": "    q: estudio Programación",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "(p ↔ q) ∨ (¬q → p)"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": [
+          "«si y solo si» es ↔,",
+          "«o» es ∨"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "g",
+     "enunciado": "Roberto estudia o trabaja pero si no estudia entonces trabaja. En consecuencia, Roberto no trabaja hoy no es lunes.",
+     "bloques": [
+      {
+       "texto": "La consigna está mal escrita: en la conclusión «Roberto no trabaja hoy no es lunes» falta un conector entre «Roberto no trabaja» y «hoy no es lunes», así que no es una oración. Se interpreta como «Roberto no trabaja si hoy no es lunes».",
+       "color": "azul"
+      },
+      {
+       "texto": "Es un argumento: la conclusión viene después de «en consecuencia».",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: Roberto estudia",
+         "color": "azul"
+        },
+        {
+         "der": "    q: Roberto trabaja",
+         "color": "azul"
+        },
+        {
+         "der": "    r: hoy es lunes",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": "Premisas:  (p ∨ q) ∧ (¬p → q)",
+         "color": "azul"
+        },
+        {
+         "der": "Conclusión:  ¬r → ¬q",
+         "color": "azul"
+        },
+        {
+         "der": [
+          "Forma:  ",
+          "[(p ∨ q) ∧ (¬p → q)] → (¬r → ¬q)"
+         ],
+         "color": "azul",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: «pero» une las dos partes de la premisa con ∧, y «A si B» se escribe B → A.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "h",
+     "enunciado": "No vi la película, pero leí la novela",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: vi la película",
+         "color": "azul"
+        },
+        {
+         "der": "    q: leí la novela",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "¬p ∧ q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«pero» se traduce como ∧"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "marcador": true,
+   "enunciado": "Simboliza:",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si p, entonces q:",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "p → q",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "No es el caso que p y q:",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "¬(p ∧ q)",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: la negación alcanza a todo «p y q».",
+       "color": "gris",
+       "tam": "S"
+      }
+     ],
+     "alLado": true
+    },
+    {
+     "numero": "c",
+     "enunciado": "p solamente si q y no-r",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "p → (q ∧ ¬r)",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: «A solamente si B» quiere decir que B es condición necesaria de A: A → B.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "p o no-q:",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "p ∨ ¬q",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "Si p y q, entonces no-r o s:",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "(p ∧ q) → (¬r ∨ s)",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "marcador": true,
+   "enunciado": "Expresar mediante fórmulas proposicionales las siguientes afirmaciones. En cada caso indíquese el significado que se asigna a las variables proposicionales (p, q, etc.) utilizadas.",
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "Si el sol brilla hoy, entonces no brillará mañana.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: el sol brilla hoy",
+         "color": "azul"
+        },
+        {
+         "der": "    q: el sol brillará mañana",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "p → ¬q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«no brillará» es ¬q"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "O Roberto tiene celos de Caro no está de buen humor hoy.",
+     "bloques": [
+      {
+       "texto": "La consigna está mal escrita: empieza con «O» y falta el segundo «o» antes de «no está», así que no es una oración. Se interpreta como «O Roberto tiene celos de Caro o no está de buen humor hoy».",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: Roberto tiene celos de Caro",
+         "color": "azul"
+        },
+        {
+         "der": "    q: Roberto está de buen humor hoy",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "p ⊻ ¬q"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«O… o…» es disyunción excluyente"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "Cuando la presión atmosférica baja, entonces llueve o nieva.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: la presión atmosférica baja",
+         "color": "azul"
+        },
+        {
+         "der": "    q: llueve",
+         "color": "azul"
+        },
+        {
+         "der": "    r: nieva",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "p → (q ∨ r)"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": "«cuando…, entonces…» es →"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "Si has leído los apuntes y has hecho los ejercicios, estás preparado para el examen. En caso contrario, tienes un problema.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: has leído los apuntes",
+         "color": "azul"
+        },
+        {
+         "der": "    q: has hecho los ejercicios",
+         "color": "azul"
+        },
+        {
+         "der": "    r: estás preparado para el examen",
+         "color": "azul"
+        },
+        {
+         "der": "    s: tienes un problema",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "[(p ∧ q) → r] ∧ [¬(p ∧ q) → s]"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": [
+          "«en caso contrario»: si no",
+          "pasa p ∧ q"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "No habrá cura para el cáncer salvo que se determine su causa y se encuentre un nuevo medicamento.",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "der": "Proposiciones simples:",
+         "color": "azul"
+        },
+        {
+         "der": "    p: habrá cura para el cáncer",
+         "color": "azul"
+        },
+        {
+         "der": "    q: se determina su causa",
+         "color": "azul"
+        },
+        {
+         "der": "    r: se encuentra un nuevo medicamento",
+         "color": "azul"
+        },
+        {
+         "seccion": true,
+         "der": [
+          "Proposición compuesta:  ",
+          "¬(q ∧ r) → ¬p"
+         ],
+         "color": "azul",
+         "caja": "azul",
+         "nota": [
+          "«A salvo que B»: si no",
+          "pasa B, entonces A"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "marcador": true,
+   "enunciado": "Sean las proposiciones:\np: la computación es fácil\nq: los ASC deben saber computación\nEntonces, traduzca a lenguaje verbal las proposiciones siguientes y ¿Cuál(es) a su juicio representa(n) una expresión aceptable en el sentido cotidiano?",
+   "bloques": [
+    {
+     "texto": "Nota para el estudiante: ∼ es la negación (¬) y ⇒ es el condicional (→). En el sentido cotidiano, q es verdadera: los ASC deben saber computación. Por eso no es aceptable una expresión que diga que no deben saberla.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "enunciado": "p ∧ q",
+     "bloques": [
+      {
+       "texto": "La computación es fácil y los ASC deben saber computación.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "marca": "ok"
+          },
+          "  Es aceptable, porque afirma q."
+         ],
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "enunciado": "∼(p ∨ q)",
+     "bloques": [
+      {
+       "texto": "No es cierto que la computación sea fácil o que los ASC deban saber computación.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∼(p ∨ q)"
+        },
+        {
+         "rel": "≡",
+         "der": "∼p ∧ ∼q",
+         "nota": "Ley de De Morgan: ∼(a ∨ b) ≡ ∼a ∧ ∼b",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Es decir: la computación no es fácil y los ASC no deben saber computación.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "marca": "mal"
+          },
+          "  No es aceptable, porque niega q."
+         ],
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "enunciado": "∼(q ∨ ∼p)",
+     "bloques": [
+      {
+       "texto": "No es cierto que los ASC deban saber computación o que la computación no sea fácil.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∼(q ∨ ∼p)"
+        },
+        {
+         "rel": "≡",
+         "der": "∼q ∧ ∼∼p",
+         "nota": "Ley de De Morgan: ∼(a ∨ b) ≡ ∼a ∧ ∼b",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": "∼q ∧ p",
+         "nota": "Ley de involución: ∼∼a ≡ a",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Es decir: los ASC no deben saber computación y la computación es fácil.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "marca": "mal"
+          },
+          "  No es aceptable, porque niega q."
+         ],
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "enunciado": "∼(p ∨ ∼q)",
+     "bloques": [
+      {
+       "texto": "No es cierto que la computación sea fácil o que los ASC no deban saber computación.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "∼(p ∨ ∼q)"
+        },
+        {
+         "rel": "≡",
+         "der": "∼p ∧ ∼∼q",
+         "nota": "Ley de De Morgan: ∼(a ∨ b) ≡ ∼a ∧ ∼b",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "≡",
+         "der": "∼p ∧ q",
+         "nota": "Ley de involución: ∼∼a ≡ a",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Es decir: la computación no es fácil y los ASC deben saber computación.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "marca": "ok"
+          },
+          "  Es aceptable, porque afirma q."
+         ],
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "e",
+     "enunciado": "p ⇒ q",
+     "bloques": [
+      {
+       "texto": "Si la computación es fácil, entonces los ASC deben saber computación.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": [
+          {
+           "marca": "ok"
+          },
+          "  Es aceptable: con q verdadera, el condicional es verdadero."
+         ],
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Conclusión del ejercicio:",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Son aceptables a, d y e",
+         "caja": "azul",
+         "color": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
