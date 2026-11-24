@@ -35,6 +35,13 @@
   "dobleFaz": true,
   "continuacion": true
  },
+ "bloques": [
+  {
+   "texto": "Aclaración: en el enunciado de la cátedra este trabajo práctico figura como «Trabajo Práctico 6». Se optó por llamarlo T.P. 7 porque en el primer cuatrimestre de 2026 el número 6 está repetido: ya hay otro T.P. 6 (Álgebra de Boole).",
+   "color": "gris",
+   "tam": "S"
+  }
+ ],
  "ejercicios": [
   {
    "numero": 1,
