@@ -54,7 +54,7 @@
    "enIndice": false,
    "bloques": [
     {
-     "texto": "Los proyectos con los que se armó este cuadernillo. En el PDF, cada código también se puede tocar.",
+     "texto": "La versión digital de este cuadernillo y los proyectos con los que se armó. En el PDF, cada código también se puede tocar.",
      "color": "gris",
      "tam": "S"
     },
@@ -62,8 +62,13 @@
      "espacio": 1
     },
     {
+     "qr": "https://github.com/Tapulela/unzip.mat-solucionarios/releases/download/cuadernillo-matematica-1-2026-c1/Solucionario-Matematica-1-2026-C1.pdf",
+     "titulo": "Cuadernillo en PDF (última versión)"
+    },
+    {
      "qr": "https://github.com/Tapulela/unzip.mat-solucionarios",
-     "titulo": "Repositorio del solucionario"
+     "titulo": "Repositorio del solucionario",
+     "alLado": true
     },
     {
      "espacio": 1
