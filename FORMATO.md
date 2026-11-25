@@ -65,7 +65,7 @@ se encarga la pizarra.
   (el título es el rótulo y el enunciado, por ejemplo «Unidad 1: Lógica
   proposicional», o el título de la sección), un texto (el título) o
   `{ "titulo": "...", "nivel": 2 }`, con nivel de 1 a 3 (por defecto, 1 en un
-  ejercicio, 2 en un ítem y en una sección, el nivel de anidamiento). Se dibuja en
+  ejercicio y 2 en un ítem; una sección queda un nivel más abajo que el ejercicio, el ítem o la sección que la contiene). Se dibuja en
   violeta en el margen y no se imprime. El PDF que guarda «Imprimir / PDF» no trae
   los marcadores: se agregan después con «Agregar marcadores a un PDF», en el panel
   de Hojas A4.
@@ -321,12 +321,14 @@ enunciado, y si un TP del banco no tiene `tema`.
 | `partes[].tipo` | `caratula`, `texto`, `indice` o `solucion` (si falta: `solucion` si trae `ruta` o `solucion`, si no `texto`). |
 | `caratula` | `antetitulo`, `titulo`, `subtitulo`, `lineas` (lista) y `pie` (abajo de todo), centrados. La hoja no lleva cabecera, pie ni número. |
 | `texto` | `titulo` (con el mismo encabezado que una solución), `subtitulo` y `bloques` (los mismos bloques de los ejercicios). |
-| `indice` | Los marcadores de las partes que van en el índice, hasta el nivel `niveles` (por defecto 2: partes y trabajos prácticos en el nivel 1, ejercicios en el 2), con línea de puntos y número de hoja. No incluye la carátula ni a sí mismo. |
+| `indice` | Los marcadores de las partes que van en el índice, hasta el nivel `niveles` (por defecto 2: partes y trabajos prácticos en el nivel 1, ejercicios en el 2), con línea de puntos y número de hoja. No incluye la carátula ni a sí mismo. Con `"soloEjercicios": true` muestra solo las partes y los ejercicios, estos con su rótulo («Ejercicio 4») y sin ítems ni secciones, aunque los marcadores del PDF tengan más detalle. |
 | `solucion` | Un trabajo práctico: `ruta` (su `solucion.json`, relativa a la carpeta del cuadernillo) o `solucion` (el objeto). Lleva **su propia cabecera** (`cabecera` de la solución, o `cabecera` de la parte), que vale desde su primera hoja. Su `titulo`, `estilo` y numeración son los de la solución. |
 | `partes[].marcador` | Título del marcador de la parte (nivel 1). Si falta, el título de la parte; en una solución conviene uno corto («T.P. 1: Lógica proposicional»). `false`: sin marcador. |
+| `partes[].nivel` | `2`: el marcador de la parte queda adentro del de la parte anterior de nivel 1, y sus ejercicios un nivel más abajo (por ejemplo, cada tema de los supuestos teóricos adentro de «Supuestos teóricos»). Por defecto 1. |
 | `plantillas` | Los textos que dependen de la cursada, para las partes con `rotulo` (ver «Banco de trabajos prácticos»): `titulo`, `subtitulo`, `cabecera` y `marcador`, con `{rotulo}`, `{tema}` y `{temaCabecera}`. |
-| `partes[].rotulo` | Solo en una solución: cómo se llama el TP en esta cursada («T.P. 10», «Supuestos teóricos»). Con `rotulo`, el título, el subtítulo, la cabecera y el marcador salen de `plantillas`. La parte puede cambiar cualquiera de esos textos (`titulo`, `subtitulo`, `cabecera`, `marcador`) o el `tema` y el `temaCabecera` de la solución. |
+| `partes[].rotulo` | Solo en una solución: cómo se llama el TP en esta cursada («T.P. 10», «Supuestos teóricos»). Con `rotulo`, el título, el subtítulo, la cabecera y el marcador salen de `plantillas`. La parte puede cambiar cualquiera de esos textos (`titulo`, `subtitulo`, `cabecera`, `marcador`, también con `{rotulo}`, `{tema}` y `{temaCabecera}`) o el `tema` y el `temaCabecera` de la solución. |
 | `partes[].bloques` | Solo en una solución con `rotulo`: bloques que van antes de los de la solución, para lo que vale solo en esta cursada («en el PDF figura como T.P. 6»). |
+| `marcadores` | Las plantillas de los marcadores de los ejercicios e ítems de todas las soluciones que no traen `marcadores` propios (como `partes[].marcadores`). |
 | `partes[].marcadores` | Solo en una solución: plantillas de los marcadores de sus ejercicios e ítems (nivel 2 y 3). `{rotulo}` es el rótulo sin los dos puntos («Ejercicio 4», «4.a») y `{enunciado}`, el primer renglón de la consigna. Por defecto `{ "ejercicio": "{rotulo}" }`: todos los ejercicios con marcador, aunque la solución no lo tenga. Por ejemplo, `{ "ejercicio": "{rotulo}: {enunciado}", "item": "{rotulo}" }`. |
 | `partes[].enIndice` | `false` para que una parte no figure en el índice (sigue teniendo marcador). |
 | `partes[].sinCabecera` | `true`: las hojas de la parte no llevan cabecera, pie ni número (por ejemplo, la hoja de enlaces del reverso de la carátula). |

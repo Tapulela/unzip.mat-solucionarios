@@ -237,7 +237,7 @@ export function aplicarCursada(sol, p, plantillas = {}) {
   const tema = p.tema ?? sol.tema ?? "";
   const datos = { rotulo: p.rotulo, tema, temaCabecera: p.temaCabecera ?? sol.temaCabecera ?? tema };
   const llenar = (s) => s.replace(/\{(rotulo|tema|temaCabecera)\}/g, (_, k) => datos[k]);
-  const texto = (k) => p[k] ?? (typeof plantillas[k] === "string" ? llenar(plantillas[k]) : undefined);
+  const texto = (k) => typeof p[k] === "string" ? llenar(p[k]) : p[k] ?? (typeof plantillas[k] === "string" ? llenar(plantillas[k]) : undefined);
   const out = { ...sol };
   for (const k of ["titulo", "subtitulo", "cabecera"]) { const v = texto(k); if (v !== undefined) out[k] = v; }
   if (Array.isArray(p.bloques) && p.bloques.length) out.bloques = [...p.bloques, ...(sol.bloques || [])];
@@ -283,6 +283,13 @@ export function revisarCuadernillo(c, carpeta) {
       else if (typeof pl[k] !== "string") err(`plantillas.${k}`, "tiene que ser un texto");
     }
   }
+  const revisarMarcadores = (mk, r) => {
+    if (!mk || typeof mk !== "object" || Array.isArray(mk)) { err(r, "es un objeto { ejercicio, item } con plantillas como «{rotulo}»"); return; }
+    for (const k of Object.keys(mk)) {
+      if (!["ejercicio", "item"].includes(k) || typeof mk[k] !== "string") err(r + "." + k, "solo valen «ejercicio» e «item», con un texto");
+    }
+  };
+  if (c.marcadores !== undefined) revisarMarcadores(c.marcadores, "marcadores");
   if (!Array.isArray(c.partes) || !c.partes.length) { err("partes", "falta la lista de partes"); return { errores, avisos }; }
   let indices = 0;
   const rutasVistas = new Map();
@@ -293,6 +300,7 @@ export function revisarCuadernillo(c, carpeta) {
     if (!TIPOS_PARTE.includes(tipo)) { err(r + ".tipo", `tiene que ser ${TIPOS_PARTE.join(", ")}`); return; }
     if (p.cabecera !== undefined && typeof p.cabecera !== "string") err(r + ".cabecera", "tiene que ser un texto");
     if (p.marcador !== undefined && typeof p.marcador !== "boolean" && typeof p.marcador !== "string") err(r + ".marcador", "es true, false o un texto");
+    if (p.nivel !== undefined && ![1, 2].includes(p.nivel)) err(r + ".nivel", "tiene que ser 1 o 2");
     for (const k of ["enIndice", "sinCabecera", "impar"]) if (p[k] !== undefined && typeof p[k] !== "boolean") av(`${r}.${k}`, "tendría que ser true o false");
     if (tipo === "caratula") {
       if (!p.titulo) av(r, "una carátula sin título");
@@ -301,7 +309,9 @@ export function revisarCuadernillo(c, carpeta) {
     }
     if (tipo === "indice") {
       indices++;
-      if (p.niveles !== undefined && ![1, 2, 3, 4].includes(p.niveles)) av(r + ".niveles", "tendría que ser 1, 2, 3 o 4");
+      if (p.niveles !== undefined && ![1, 2, 3, 4, 5].includes(p.niveles)) av(r + ".niveles", "tendría que ser de 1 a 5");
+      if (p.soloEjercicios !== undefined && typeof p.soloEjercicios !== "boolean") av(r + ".soloEjercicios", "tendría que ser true o false");
+      if (p.soloEjercicios && p.niveles !== undefined) av(r + ".niveles", "con «soloEjercicios» no se usa");
       return;
     }
     if (tipo === "texto") {
@@ -330,13 +340,7 @@ export function revisarCuadernillo(c, carpeta) {
     }
     if (p.rotulo !== undefined && !(p.tema ?? sol.tema)) av(r, "la solución no tiene «tema» (las plantillas lo usan)");
     if (p.rotulo === undefined && (p.tema || p.temaCabecera || p.titulo || p.subtitulo)) av(r, "«tema», «titulo» y «subtitulo» de la parte solo se usan con «rotulo»");
-    if (p.marcadores !== undefined) {
-      const mk = p.marcadores;
-      if (!mk || typeof mk !== "object" || Array.isArray(mk)) err(r + ".marcadores", "es un objeto { ejercicio, item } con plantillas como «{rotulo}»");
-      else for (const k of Object.keys(mk)) {
-        if (!["ejercicio", "item"].includes(k) || typeof mk[k] !== "string") err(`${r}.marcadores.${k}`, "solo valen «ejercicio» e «item», con un texto");
-      }
-    }
+    if (p.marcadores !== undefined) revisarMarcadores(p.marcadores, r + ".marcadores");
     // los avisos de estilo de cada trabajo práctico salen al validar su solucion.json
     revisar(sol).errores.forEach((e) => errores.push(`${r}.solucion.${e}`));
   });

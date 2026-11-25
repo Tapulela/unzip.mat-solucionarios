@@ -35,6 +35,10 @@
   "cabecera": "Matemática 1\n{rotulo} - {temaCabecera} - Año 2026 - Cuatrimestre 1",
   "marcador": "{rotulo}: {tema}"
  },
+ "marcadores": {
+  "ejercicio": "{rotulo}",
+  "item": "{rotulo}: {enunciado}"
+ },
  "partes": [
   {
    "tipo": "caratula",
@@ -106,9 +110,9 @@
   {
    "tipo": "indice",
    "titulo": "Contenido",
-   "niveles": 3,
    "impar": false,
-   "compacto": true
+   "compacto": true,
+   "soloEjercicios": true
   },
   {
    "tipo": "texto",
@@ -127,7 +131,7 @@
     {
      "seccion": "Cómo encontrar un ejercicio",
      "bloques": [
-      "En el índice («Contenido») están los trabajos prácticos, los supuestos teóricos y sus ejercicios con el número de hoja. En el PDF, cada renglón del índice es un enlace a su hoja, y el panel de marcadores del lector lleva a cada parte, trabajo práctico, supuesto teórico y ejercicio."
+      "En el índice («Contenido») están los trabajos prácticos, los supuestos teóricos y sus ejercicios con el número de hoja. En el PDF, cada renglón del índice es un enlace a su hoja, y el panel de marcadores del lector tiene más detalle: lleva a cada parte, trabajo práctico, supuesto teórico, ejercicio y también a cada ítem de un ejercicio."
      ]
     }
    ],
@@ -217,23 +221,33 @@
   },
   {
    "ruta": "../tps/supuestos-teoricos-teoria-de-conjuntos/solucion.json",
-   "rotulo": "Supuestos teóricos"
+   "rotulo": "Supuestos teóricos",
+   "nivel": 2,
+   "marcador": "{tema}"
   },
   {
    "ruta": "../tps/supuestos-teoricos-relaciones-binarias/solucion.json",
-   "rotulo": "Supuestos teóricos"
+   "rotulo": "Supuestos teóricos",
+   "nivel": 2,
+   "marcador": "{tema}"
   },
   {
    "ruta": "../tps/supuestos-teoricos-estructuras-algebraicas/solucion.json",
-   "rotulo": "Supuestos teóricos"
+   "rotulo": "Supuestos teóricos",
+   "nivel": 2,
+   "marcador": "{tema}"
   },
   {
    "ruta": "../tps/supuestos-teoricos-naturales-y-enteros/solucion.json",
-   "rotulo": "Supuestos teóricos"
+   "rotulo": "Supuestos teóricos",
+   "nivel": 2,
+   "marcador": "{tema}"
   },
   {
    "ruta": "../tps/supuestos-teoricos-numeros-reales/solucion.json",
-   "rotulo": "Supuestos teóricos"
+   "rotulo": "Supuestos teóricos",
+   "nivel": 2,
+   "marcador": "{tema}"
   }
  ]
 }
