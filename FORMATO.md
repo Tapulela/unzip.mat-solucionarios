@@ -367,7 +367,8 @@ a PDF y le agrega los marcadores y los enlaces. Tarda unos minutos con todos los
 **Publicarlo.** El QR del cuadernillo apunta a la release `cuadernillo-matematica-1-2026-c2`
 del repositorio, archivo `Solucionario-Matematica-1-2026-C2.pdf`. Para publicar una versión
 nueva se reemplaza ese archivo en la misma release (`gh release upload … --clobber`): así el
-QR impreso sigue llevando a la última versión.
+QR impreso sigue llevando a la última versión. No se crean releases aparte por versión: hay una
+sola release por cuadernillo, con el número de versión en el título y los cambios en sus notas.
 
 **PDF con índice y marcadores, a mano.** «Imprimir / PDF» (los números de hoja del índice se
 actualizan solos antes de imprimir, por si se agregaron hojas a mano) y después, en el
