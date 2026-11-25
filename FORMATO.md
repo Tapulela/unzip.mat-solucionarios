@@ -350,8 +350,9 @@ copian adentro antes de importarlo:
 node herramientas/armar-cuadernillo.mjs "solucionarios/…/cuadernillo.json"
 ```
 
-valida y escribe al lado `cuadernillo.armado.json` (no va al repositorio), que se importa
-con «Importar solución (.json)». Con el servidor MCP alcanza con
+valida y escribe al lado `cuadernillo.armado.json`, que se importa con «Importar solución
+(.json)». El armado va al repositorio: cada vez que cambia un TP se vuelve a armar y se
+commitea junto con el cambio, así la copia que se descarga del repositorio está al día. Con el servidor MCP alcanza con
 `dibujar_en_pizarra` y la ruta del `cuadernillo.json`.
 
 **PDF automático.** Con la pizarra local abierta (su servidor, no hace falta el navegador):

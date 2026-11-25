@@ -78,7 +78,9 @@ sirve para otras resoluciones, agrégalo ahí.
    parte al `cuadernillo.json` de la cursada (`ruta` al banco y `rotulo`, «T.P. 10»). Si
    la cursada todavía no tiene cuadernillo, se crea copiando el de otra cursada.
    Valida con `node herramientas/validar.mjs` (sin rutas): avisa si dos TP del banco
-   tienen el mismo enunciado.
+   tienen el mismo enunciado. Después vuelve a armar los cuadernillos con
+   `node herramientas/armar-cuadernillo.mjs` (sin rutas): el `cuadernillo.armado.json`
+   de cada cursada va al repositorio y se commitea junto con el cambio.
 9. **Contarle al usuario** qué ejercicios quedaron resueltos, cuáles verificaste y cómo,
    y qué conviene revisar. Recuérdale que las correcciones se pasan al `solucion.json`
    del banco (lo que se corrige a mano en la pizarra queda solo en ese dibujo, y no

@@ -1,6 +1,5 @@
 .DS_Store
 Thumbs.db
 node_modules/
-*.armado.json
 cuadernillo.pdf
 solucionarios/**/Solucionario-*.pdf
