@@ -600,6 +600,7 @@
       },
       {
        "seccion": "Anagramas de CASA",
+       "marcador": true,
        "bloques": [
         {
          "seccion": "Análisis: ¿qué herramienta se usa?",
@@ -680,6 +681,7 @@
       },
       {
        "seccion": "Anagramas de PAPA",
+       "marcador": true,
        "bloques": [
         {
          "seccion": "Análisis: ¿qué herramienta se usa?",
@@ -2574,6 +2576,7 @@
     },
     {
      "seccion": "Todas las formas de ordenar 5 personas",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -2604,6 +2607,7 @@
     },
     {
      "seccion": "Formas en que las 2 personas quedan juntas",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Las 2 personas se piensan como un solo bloque. Quedan 4 objetos para ordenar (el bloque y las otras 3 personas), que se ordenan de P₄ = 4! formas. Dentro del bloque las 2 personas se ordenan de P₂ = 2! formas. Por el principio de multiplicación:",
@@ -2645,6 +2649,7 @@
     },
     {
      "seccion": "Formas en que las 2 personas no están juntas",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [

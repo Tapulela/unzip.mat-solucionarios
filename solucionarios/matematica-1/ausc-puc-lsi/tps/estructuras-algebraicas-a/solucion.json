@@ -1726,9 +1726,11 @@
     },
     {
      "seccion": "Primera parte: (ℝ, ∗) con x ∗ y = x² + y²",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la ley de composición interna",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -1842,6 +1844,7 @@
       },
       {
        "seccion": "Análisis de la propiedad asociativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -1995,6 +1998,7 @@
       },
       {
        "seccion": "Análisis de la propiedad conmutativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -2091,6 +2095,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento neutro",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -2186,6 +2191,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento inverso",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Como no existe elemento neutro, el elemento inverso no está definido. No se cumple.",
@@ -2266,9 +2272,11 @@
     },
     {
      "seccion": "Segunda parte: (ℚ − {−1}, ∗) con x ∗ y = x + y + xy",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la ley de composición interna",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -2432,6 +2440,7 @@
       },
       {
        "seccion": "Análisis de la propiedad asociativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -2473,6 +2482,7 @@
       },
       {
        "seccion": "Análisis de la propiedad conmutativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -2571,6 +2581,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento neutro",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -2681,6 +2692,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento inverso",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -2948,6 +2960,7 @@
     },
     {
      "seccion": "Análisis de la propiedad asociativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -3118,6 +3131,7 @@
     },
     {
      "seccion": "Análisis de la propiedad conmutativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -3214,6 +3228,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento neutro",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -3347,6 +3362,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento inverso",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -3584,6 +3600,7 @@
    "bloques": [
     {
      "seccion": "Análisis de la propiedad asociativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -3730,6 +3747,7 @@
     },
     {
      "seccion": "Análisis de la propiedad conmutativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -3826,6 +3844,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento neutro",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -3969,6 +3988,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento inverso",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Como no existe elemento neutro, el elemento inverso no está definido. No se cumple.",
@@ -4040,6 +4060,7 @@
    "bloques": [
     {
      "seccion": "Análisis de la propiedad asociativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -4196,6 +4217,7 @@
     },
     {
      "seccion": "Análisis de la propiedad conmutativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -4294,6 +4316,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento neutro",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -4438,6 +4461,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento inverso",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -5194,6 +5218,7 @@
     },
     {
      "seccion": "Análisis de la ley de composición interna",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -5335,6 +5360,7 @@
     },
     {
      "seccion": "Análisis de la propiedad asociativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -5542,6 +5568,7 @@
     },
     {
      "seccion": "Análisis de la propiedad conmutativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -5659,6 +5686,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento neutro",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -5766,6 +5794,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento inverso",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -5946,6 +5975,7 @@
    "bloques": [
     {
      "seccion": "Análisis de la ley de composición interna",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6059,6 +6089,7 @@
     },
     {
      "seccion": "Análisis de la propiedad asociativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6206,6 +6237,7 @@
     },
     {
      "seccion": "Análisis de la propiedad conmutativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6309,6 +6341,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento neutro",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6400,6 +6433,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento inverso",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6610,6 +6644,7 @@
     },
     {
      "seccion": "Análisis de la propiedad asociativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6765,6 +6800,7 @@
     },
     {
      "seccion": "Análisis de la propiedad conmutativa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6827,6 +6863,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento neutro",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -6901,6 +6938,7 @@
     },
     {
      "seccion": "Análisis de la existencia de elemento inverso",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición general:",
@@ -7394,6 +7432,7 @@
      "bloques": [
       {
        "seccion": "Análisis de la ley de composición interna",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -7507,6 +7546,7 @@
       },
       {
        "seccion": "Análisis de la propiedad asociativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -7654,6 +7694,7 @@
       },
       {
        "seccion": "Análisis de la propiedad conmutativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -7752,6 +7793,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento neutro",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -7843,6 +7885,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento inverso",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -8011,6 +8054,7 @@
      "bloques": [
       {
        "seccion": "Análisis de la ley de composición interna",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -8124,6 +8168,7 @@
       },
       {
        "seccion": "Análisis de la propiedad asociativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -8165,6 +8210,7 @@
       },
       {
        "seccion": "Análisis de la propiedad conmutativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -8263,6 +8309,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento neutro",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -8396,6 +8443,7 @@
       },
       {
        "seccion": "Análisis de la existencia de elemento inverso",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -8967,6 +9015,7 @@
     },
     {
      "seccion": "Primera parte: (ℤ, +) es un grupo abeliano",
+     "marcador": true,
      "bloques": [
       {
        "texto": "La suma usual de enteros es ley de composición interna, asociativa y conmutativa, su neutro es 0 y el inverso de a es −a. Se cumple.",
@@ -8976,9 +9025,11 @@
     },
     {
      "seccion": "Segunda parte: (ℤ, ⊕) es un semigrupo",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la ley de composición interna",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -9092,6 +9143,7 @@
       },
       {
        "seccion": "Análisis de la propiedad asociativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -9229,9 +9281,11 @@
     },
     {
      "seccion": "Tercera parte: ⊕ es distributiva con respecto de +",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la propiedad distributiva por izquierda",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -9344,6 +9398,7 @@
       },
       {
        "seccion": "Análisis de la propiedad distributiva por derecha",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -9545,6 +9600,7 @@
     },
     {
      "seccion": "Primera parte: (ℤ, ∘) es un grupo abeliano",
+     "marcador": true,
      "bloques": [
       {
        "texto": "∘ es la operación ∗ del ejercicio 15.a, donde se probó que es L.C.I., asociativa y conmutativa, con neutro −1 y con inverso −2 − x para todo x. Se cumple.",
@@ -9554,6 +9610,7 @@
     },
     {
      "seccion": "Segunda parte: (ℤ, ∗) es un semigrupo",
+     "marcador": true,
      "bloques": [
       {
        "texto": "∗ es la operación ∘ del ejercicio 15.b, donde se probó que es L.C.I., asociativa y conmutativa. Se cumple.",
@@ -9563,9 +9620,11 @@
     },
     {
      "seccion": "Tercera parte: ∗ es distributiva con respecto de ∘",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la propiedad distributiva por izquierda",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -9734,9 +9793,11 @@
     },
     {
      "seccion": "Cuarta parte: ∗ tiene neutro",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la existencia de elemento neutro",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -9879,6 +9940,7 @@
     },
     {
      "seccion": "Primera parte: (C, +) es un grupo abeliano",
+     "marcador": true,
      "bloques": [
       {
        "texto": "La suma se hace componente a componente con la suma de ℝ, así que es L.C.I., asociativa y conmutativa. El neutro es (0, 0) y el inverso de (a, b) es (−a, −b). Se cumple.",
@@ -9888,9 +9950,11 @@
     },
     {
      "seccion": "Segunda parte: (C, ·) es un semigrupo",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la ley de composición interna",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -10016,6 +10080,7 @@
       },
       {
        "seccion": "Análisis de la propiedad asociativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -10164,6 +10229,7 @@
       },
       {
        "seccion": "Análisis de la propiedad conmutativa",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -10264,9 +10330,11 @@
     },
     {
      "seccion": "Tercera parte: · es distributiva con respecto de +",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "Análisis de la propiedad distributiva por izquierda",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general:",
@@ -10466,6 +10534,7 @@
     },
     {
      "seccion": "¿Es de integridad?",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Nota para el estudiante: un dominio de integridad es un anillo abeliano con unidad y sin divisores de cero: si x · y = (0, 0), entonces x = (0, 0) o y = (0, 0).",

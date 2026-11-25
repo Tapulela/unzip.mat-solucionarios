@@ -755,6 +755,7 @@
       },
       {
        "seccion": "Suma de los 10 primeros términos",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Primero se calcula a₁₀ con el término general:"
@@ -926,6 +927,7 @@
       },
       {
        "seccion": "Suma de los 10 primeros términos",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -1043,6 +1045,7 @@
     },
     {
      "seccion": "Diferencia d",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1163,6 +1166,7 @@
     },
     {
      "seccion": "Suma de los 5 primeros términos",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1261,6 +1265,7 @@
     },
     {
      "seccion": "Razón r",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1308,6 +1313,7 @@
     },
     {
      "seccion": "Quinto término",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1375,6 +1381,7 @@
     },
     {
      "seccion": "Suma de los 4 primeros términos",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1504,6 +1511,7 @@
     },
     {
      "seccion": "Lo que se guarda el mes 12",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1575,6 +1583,7 @@
     },
     {
      "seccion": "Total ahorrado en el año",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1956,6 +1965,7 @@
     },
     {
      "seccion": "Asientos de la fila 15",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -2018,6 +2028,7 @@
     },
     {
      "seccion": "Total de asientos",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [

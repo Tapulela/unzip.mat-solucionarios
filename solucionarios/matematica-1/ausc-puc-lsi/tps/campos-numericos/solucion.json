@@ -134,6 +134,7 @@
       },
       {
        "seccion": "Fracción generatriz de 5,222…",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -165,6 +166,7 @@
       },
       {
        "seccion": "Fracción generatriz de 3,333…",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -207,6 +209,7 @@
       },
       {
        "seccion": "35%",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -242,6 +245,7 @@
       },
       {
        "seccion": "√8",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -271,6 +275,7 @@
       },
       {
        "seccion": "√(−4)",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -294,6 +299,7 @@
       },
       {
        "seccion": "7 dividido 0",
+       "marcador": true,
        "bloques": [
         {
          "texto": "No existe ningún número que multiplicado por 0 dé 7, así que la división por 0 no está definida y 7/0 no pertenece a ningún campo numérico."
@@ -799,6 +805,7 @@
       },
       {
        "seccion": "Precio de un cucurucho",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -851,6 +858,7 @@
       },
       {
        "seccion": "Precio de un vasito",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -904,6 +912,7 @@
       },
       {
        "seccion": "Lo que pagó Carla",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -1079,6 +1088,7 @@
       },
       {
        "seccion": "Caramelos de frutilla",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -1103,6 +1113,7 @@
       },
       {
        "seccion": "Caramelos de limón",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -1123,6 +1134,7 @@
       },
       {
        "seccion": "Caramelos de naranja",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -1166,6 +1178,7 @@
       },
       {
        "seccion": "Paquetitos de 5",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -1201,9 +1214,11 @@
       },
       {
        "seccion": "792 y 702",
+       "marcador": true,
        "bloques": [
         {
          "seccion": "Máximo común divisor",
+         "marcador": true,
          "bloques": [
           {
            "pasos": [
@@ -1247,6 +1262,7 @@
         },
         {
          "seccion": "Identidad de Bézout",
+         "marcador": true,
          "bloques": [
           {
            "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
@@ -1428,9 +1444,11 @@
       },
       {
        "seccion": "2024 y 1196",
+       "marcador": true,
        "bloques": [
         {
          "seccion": "Máximo común divisor",
+         "marcador": true,
          "bloques": [
           {
            "pasos": [
@@ -1474,6 +1492,7 @@
         },
         {
          "seccion": "Identidad de Bézout",
+         "marcador": true,
          "bloques": [
           {
            "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
@@ -1668,9 +1687,11 @@
       },
       {
        "seccion": "4524 y 3002",
+       "marcador": true,
        "bloques": [
         {
          "seccion": "Máximo común divisor",
+         "marcador": true,
          "bloques": [
           {
            "pasos": [
@@ -1724,6 +1745,7 @@
         },
         {
          "seccion": "Identidad de Bézout",
+         "marcador": true,
          "bloques": [
           {
            "texto": "Se despeja el resto de cada división, de arriba hacia abajo:",
@@ -2082,6 +2104,7 @@
       },
       {
        "seccion": "MCD(3234, 2024)",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -2128,6 +2151,7 @@
       },
       {
        "seccion": "Identidad de Bézout",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Se despeja el resto de cada división:",
@@ -2375,6 +2399,7 @@
       },
       {
        "seccion": "Una solución particular",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -2414,6 +2439,7 @@
       },
       {
        "seccion": "Solución general",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Se divide cada coeficiente por el MCD: 2024 dividido 22 es 92 y 3234 dividido 22 es 147. Para cada t entero:"
@@ -2442,6 +2468,7 @@
       },
       {
        "seccion": "Cantidades posibles (N ≥ 0 y M ≥ 0)",
+       "marcador": true,
        "bloques": [
         {
          "texto": "M ≥ 0:"
@@ -2608,6 +2635,7 @@
       },
       {
        "seccion": "Cantidad de equipos",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -3752,6 +3780,7 @@
       },
       {
        "seccion": "Primer término",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -3839,6 +3868,7 @@
       },
       {
        "seccion": "Segundo término",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -3884,6 +3914,7 @@
       },
       {
        "seccion": "Tercer término",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -3931,6 +3962,7 @@
       },
       {
        "seccion": "Suma de los términos",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -4053,6 +4085,7 @@
       },
       {
        "seccion": "a)",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Hay que probar que, para todo n ∈ ℕ:",
@@ -4904,6 +4937,7 @@
       },
       {
        "seccion": "b)",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Hay que probar que, para todo n ∈ ℕ:",
@@ -5337,6 +5371,7 @@
       },
       {
        "seccion": "c)",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Hay que probar que, para todo n ∈ ℕ:",
@@ -6049,6 +6084,7 @@
           },
           {
            "seccion": true,
+           "marcador": true,
            "der": "Forma factorizada: a(k − k₁)(k − k₂)"
           },
           {

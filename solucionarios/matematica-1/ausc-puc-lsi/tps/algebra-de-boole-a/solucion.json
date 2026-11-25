@@ -1234,6 +1234,7 @@
     },
     {
      "seccion": "Ecuación lógica",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Se lee el circuito de izquierda a derecha, compuerta por compuerta:",
@@ -1282,6 +1283,7 @@
     },
     {
      "seccion": "Tabla de verdad",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -1445,6 +1447,7 @@
     },
     {
      "seccion": "Ecuación lógica",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Se lee el circuito de izquierda a derecha, compuerta por compuerta:",
@@ -1481,6 +1484,7 @@
     },
     {
      "seccion": "Tabla de verdad",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [

@@ -46,6 +46,7 @@
     },
     {
      "seccion": "Análisis de la inyectividad",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición: m es inyectiva si ∀a, b ∈ ℝ: m(a) = m(b) → a = b."
@@ -119,6 +120,7 @@
     },
     {
      "seccion": "Análisis de la sobreyectividad",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición: m es sobreyectiva si ∀y ∈ ℝ, ∃x ∈ ℝ tal que m(x) = y."
@@ -246,6 +248,7 @@
     },
     {
      "seccion": "Análisis de la inyectividad",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición: f es inyectiva si ∀a, b ∈ ℝ: f(a) = f(b) → a = b."
@@ -314,6 +317,7 @@
     },
     {
      "seccion": "Análisis de la sobreyectividad",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Definición: f es sobreyectiva si ∀y ∈ ℝ, ∃x ∈ ℝ tal que f(x) = y."
@@ -425,6 +429,7 @@
    "bloques": [
     {
      "seccion": "Cálculo de la inversa",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Se escribe y = f(x), se intercambian x e y, y se despeja y."
@@ -579,6 +584,7 @@
     },
     {
      "seccion": "Gráfico de f y de f⁻¹",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Nota para el estudiante: los gráficos de f y de f⁻¹ son simétricos respecto de la recta y = x (en gris). El punto (0, 3) de f se refleja en el punto (3, 0) de f⁻¹.",
@@ -633,6 +639,7 @@
     },
     {
      "seccion": "Verificación con la función compuesta",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Si f⁻¹ es la inversa de f, entonces (f ∘ f⁻¹)(x) = x y (f⁻¹ ∘ f)(x) = x."
@@ -835,6 +842,7 @@
    "bloques": [
     {
      "seccion": "Cálculo de f(−x)",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -895,6 +903,7 @@
     },
     {
      "seccion": "Cálculo de −f(x)",
+     "marcador": true,
      "bloques": [
       {
        "pasos": [
@@ -928,9 +937,11 @@
     },
     {
      "seccion": "Paridad",
+     "marcador": true,
      "bloques": [
       {
        "seccion": "¿Es par?",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general de función par:",
@@ -1114,6 +1125,7 @@
       },
       {
        "seccion": "¿Es impar?",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general de función impar:",
@@ -1285,6 +1297,7 @@
     },
     {
      "seccion": "Intervalos de crecimiento y decrecimiento",
+     "marcador": true,
      "bloques": [
       {
        "texto": "f es una parábola con a = 1, b = 1 y c = −2. Como a = 1 > 0, abre hacia arriba: decrece hasta el vértice y crece desde el vértice."
@@ -1542,6 +1555,7 @@
     },
     {
      "seccion": "Rango e imagen",
+     "marcador": true,
      "bloques": [
       {
        "texto": "El dominio es ℝ, porque f es un polinomio."
@@ -1983,6 +1997,7 @@
    "bloques": [
     {
      "seccion": "Dominio",
+     "marcador": true,
      "bloques": [
       {
        "texto": "La raíz cuadrada solo está definida en ℝ si el radicando es mayor o igual que 0:"
@@ -2069,6 +2084,7 @@
     },
     {
      "seccion": "Rango",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Para hallar el rango se busca el dominio de la relación inversa: se despeja x en función de y, y se ve para qué valores de y existe x (dentro del dominio de f).",
@@ -2519,6 +2535,7 @@
     },
     {
      "seccion": "Dominio",
+     "marcador": true,
      "bloques": [
       {
        "texto": "El dominio es la unión de los intervalos de las tres secciones:"
@@ -2551,12 +2568,14 @@
     },
     {
      "seccion": "Rango",
+     "marcador": true,
      "bloques": [
       {
        "texto": "Se busca el dominio de la relación inversa en cada sección: se despeja x en función de y y se reemplaza en la condición de x de la sección."
       },
       {
        "seccion": "Sección x², con −2 ≤ x < 0",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Como y = x², y ≥ 0:",
@@ -2725,6 +2744,7 @@
       },
       {
        "seccion": "Sección x − 1, con 0 ≤ x ≤ 2",
+       "marcador": true,
        "bloques": [
         {
          "pasos": [
@@ -2817,6 +2837,7 @@
       },
       {
        "seccion": "Sección √x, con 2 < x ≤ 4",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Como y = √x, y ≥ 0:",
@@ -3221,6 +3242,7 @@
      "bloques": [
       {
        "seccion": "¿Es par?",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general de función par:",
@@ -3447,6 +3469,7 @@
       },
       {
        "seccion": "¿Es impar?",
+       "marcador": true,
        "bloques": [
         {
          "texto": "Definición general de función impar:",
