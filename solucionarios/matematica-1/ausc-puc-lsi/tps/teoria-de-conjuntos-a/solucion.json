@@ -111,7 +111,7 @@
     },
     {
      "numero": "e",
-     "enunciado": "A = {−2, 0, 1, −1, 2, 3} y\nB = {x ∈ ℝ : x es un número entero\ny −5/2 ≤ x < √9}",
+     "enunciado": ["A = {−2, 0, 1, −1, 2, 3} y","B = {x ∈ ℝ : x es un número entero",["y − ",{"frac":["5","2"]}," ≤ x < √9}"]],
      "bloques": [
       { "pasos": [
         { "der": [ "− ", { "frac": ["5", "2"] }, " ≤ x < √9" ] },
@@ -316,7 +316,7 @@
     },
     {
      "numero": "b",
-     "enunciado": "A = {x ∈ ℝ : −1 < x ≤ 1/4};\nB = {z ∈ ℝ : −1 < z < 0 ó 0 < z < 3}.",
+     "enunciado": [["A = {x ∈ ℝ : −1 < x ≤ ",{"frac":["1","4"]},"};"],"B = {z ∈ ℝ : −1 < z < 0 ó 0 < z < 3}."],
      "bloques": [
       { "pasos": [
         { "izq": "A", "der": [ "(−1, ", { "frac": ["1", "4"] }, "]" ] },

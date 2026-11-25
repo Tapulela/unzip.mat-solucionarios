@@ -1061,7 +1061,18 @@
     {
       "numero": 8,
       "marcador": "Ejercicio 8: Tres números en progresión aritmética",
-      "enunciado": "Calcula tres números en progresión aritmética, que suman 27 y siendo la suma de sus cuadrados es 511/2.",
+      "enunciado": [
+        [
+          "Calcula tres números en progresión aritmética, que suman 27 y siendo la suma de sus cuadrados es ",
+          {
+            "frac": [
+              "511",
+              "2"
+            ]
+          },
+          "."
+        ]
+      ],
       "bloques": [
         {
           "texto": "Tres números en progresión aritmética se pueden escribir como a − d, a y a + d (el del medio y la diferencia)."
@@ -2325,7 +2336,32 @@
     {
       "numero": 13,
       "marcador": "Ejercicio 13: Suma de 1, 1/2, 1/4, 1/8, …",
-      "enunciado": "Calcular la suma de los términos de la progresión geométrica decreciente ilimitada: 1, 1/2, 1/4, 1/8, …",
+      "enunciado": [
+        [
+          "Calcular la suma de los términos de la progresión geométrica decreciente ilimitada: 1, ",
+          {
+            "frac": [
+              "1",
+              "2"
+            ]
+          },
+          ", ",
+          {
+            "frac": [
+              "1",
+              "4"
+            ]
+          },
+          ", ",
+          {
+            "frac": [
+              "1",
+              "8"
+            ]
+          },
+          ", …"
+        ]
+      ],
       "bloques": [
         {
           "texto": "Es una progresión geométrica con a₁ = 1. La razón es el cociente entre un término y el anterior:",
@@ -2367,21 +2403,6 @@
         {
           "texto": "Como |r| < 1, la suma de todos los términos es un número:",
           "unir": true
-        },
-        {
-          "pasos": [
-            {
-              "izq": "S",
-              "der": [
-                {
-                  "frac": [
-                    "a₁",
-                    "1 − r"
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "pasos": [

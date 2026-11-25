@@ -346,7 +346,18 @@
   },
   {
    "numero": 2,
-   "enunciado": "¿Se puede determinar cuántos números racionales hay entre 1/5 y 2?",
+   "enunciado": [
+    [
+     "¿Se puede determinar cuántos números racionales hay entre ",
+     {
+      "frac": [
+       "1",
+       "5"
+      ]
+     },
+     " y 2?"
+    ]
+   ],
    "bloques": [
     {
      "texto": "No se puede dar una cantidad: entre 1/5 y 2 hay infinitos números racionales, por la propiedad de densidad de ℚ.",
@@ -620,7 +631,17 @@
    "items": [
     {
      "numero": "1",
-     "enunciado": "(1/a) · a = 1 para todo a real.",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "1",
+         "a"
+        ]
+       },
+       " · a = 1 para todo a real."
+      ]
+     ],
      "bloques": [
       {
        "texto": "La afirmación es falsa. Lo demostramos con un contraejemplo: a = 0.",
@@ -652,7 +673,18 @@
     },
     {
      "numero": "2",
-     "enunciado": "Existe un número real x para el cual √5/π + x = 0.",
+     "enunciado": [
+      [
+       "Existe un número real x para el cual ",
+       {
+        "frac": [
+         "√5",
+         "π"
+        ]
+       },
+       " + x = 0."
+      ]
+     ],
      "bloques": [
       {
        "texto": "La afirmación es verdadera. √5/π es un número real (es el cociente de dos reales y π ≠ 0), así que tiene opuesto. Se despeja x:",

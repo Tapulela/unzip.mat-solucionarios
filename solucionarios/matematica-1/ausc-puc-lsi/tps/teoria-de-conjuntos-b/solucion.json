@@ -829,7 +829,25 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "{x | x es entero y 1/8 < x < 17/2}",
+     "enunciado": [
+      [
+       "{x | x es entero y ",
+       {
+        "frac": [
+         "1",
+         "8"
+        ]
+       },
+       " < x < ",
+       {
+        "frac": [
+         "17",
+         "2"
+        ]
+       },
+       "}"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -1177,7 +1195,18 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "{x | x + 1 es par y x < 19/3}",
+     "enunciado": [
+      [
+       "{x | x + 1 es par y x < ",
+       {
+        "frac": [
+         "19",
+         "3"
+        ]
+       },
+       "}"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -1222,7 +1251,18 @@
     },
     {
      "numero": "b",
-     "enunciado": "{x | x + 1 es impar y x < 22/3}",
+     "enunciado": [
+      [
+       "{x | x + 1 es impar y x < ",
+       {
+        "frac": [
+         "22",
+         "3"
+        ]
+       },
+       "}"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -1267,7 +1307,18 @@
     },
     {
      "numero": "c",
-     "enunciado": "{2x − 1 | x ∈ ℕ y x < 32/5}",
+     "enunciado": [
+      [
+       "{2x − 1 | x ∈ ℕ y x < ",
+       {
+        "frac": [
+         "32",
+         "5"
+        ]
+       },
+       "}"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -1818,7 +1869,19 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "A = {x | 2x² + 5x = 3}\nB = {x | 2x² + 17x + 27 = 18/x}",
+     "enunciado": [
+      "A = {x | 2x² + 5x = 3}",
+      [
+       "B = {x | 2x² + 17x + 27 = ",
+       {
+        "frac": [
+         "18",
+         "x"
+        ]
+       },
+       "}"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Primero se buscan los elementos de A resolviendo su ecuación.",
@@ -3189,7 +3252,21 @@
   {
    "numero": 18,
    "marcador": true,
-   "enunciado": "Sean los conjuntos:\nA = {x ∈ ℤ | x = 3n − 1, y n ∈ ℕ, n < 14}\nB = {x ∈ ℤ | x = 5n/2, y n ∈ ℕ, n ≤ 13}\nEntonces A − B = ?",
+   "enunciado": [
+    "Sean los conjuntos:",
+    "A = {x ∈ ℤ | x = 3n − 1, y n ∈ ℕ, n < 14}",
+    [
+     "B = {x ∈ ℤ | x = ",
+     {
+      "frac": [
+       "5n",
+       "2"
+      ]
+     },
+     ", y n ∈ ℕ, n ≤ 13}"
+    ],
+    "Entonces A − B = ?"
+   ],
    "bloques": [
     {
      "texto": "Nota para el estudiante: en la materia ℕ = {1, 2, 3, …}.",

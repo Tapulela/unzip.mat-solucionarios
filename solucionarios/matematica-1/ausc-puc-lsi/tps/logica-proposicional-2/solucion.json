@@ -2817,15 +2817,12 @@
         },
         {
          "der": "q = V",
+         "caja": "azul",
+         "color": "azul",
          "nota": [
           "⊻ es V si valen",
           "distinto, y p = F"
          ]
-        },
-        {
-         "der": "q = V",
-         "caja": "azul",
-         "color": "azul"
         }
        ]
       },
@@ -3765,7 +3762,17 @@
     },
     {
      "numero": "f",
-     "enunciado": "∃x ∈ ℝ / x⁻¹ = 1/x",
+     "enunciado": [
+      [
+       "∃x ∈ ℝ / x⁻¹ = ",
+       {
+        "frac": [
+         "1",
+         "x"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "La proposición es verdadera. Para probar que existe, alcanza con un valor de x que la cumpla:",
@@ -3844,7 +3851,18 @@
     },
     {
      "numero": "g",
-     "enunciado": "∀x ∈ ℝ / (x² − 4)/(x + 2) = x − 2",
+     "enunciado": [
+      [
+       "∀x ∈ ℝ / ",
+       {
+        "frac": [
+         "x² − 4",
+         "x + 2"
+        ]
+       },
+       " = x − 2"
+      ]
+     ],
      "bloques": [
       {
        "texto": "La proposición es falsa. Se demuestra con un contraejemplo:",

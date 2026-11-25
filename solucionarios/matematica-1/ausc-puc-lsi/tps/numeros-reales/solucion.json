@@ -3188,7 +3188,23 @@
         {
           "numero": "a",
           "marcador": "4.a: 1/2 + 3x < −4x + 1/3",
-          "enunciado": "1/2 + 3x < −4x + 1/3",
+          "enunciado": [
+            [
+              {
+                "frac": [
+                  "1",
+                  "2"
+                ]
+              },
+              " + 3x < −4x + ",
+              {
+                "frac": [
+                  "1",
+                  "3"
+                ]
+              }
+            ]
+          ],
           "bloques": [
             {
               "pasos": [
@@ -3465,7 +3481,17 @@
         {
           "numero": "b",
           "marcador": "4.b: (2x − 1)/(x + 2) < 5",
-          "enunciado": "(2x − 1)/(x + 2) < 5",
+          "enunciado": [
+            [
+              {
+                "frac": [
+                  "2x − 1",
+                  "x + 2"
+                ]
+              },
+              " < 5"
+            ]
+          ],
           "bloques": [
             {
               "generador": "racionales",
@@ -4309,7 +4335,19 @@
     {
       "numero": 10,
       "marcador": "Ejercicio 10: |x/2 − 1| ≥ 5x + 1",
-      "enunciado": "Resolver la siguiente desigualdad:\n|x/2 − 1| ≥ 5x + 1",
+      "enunciado": [
+        "Resolver la siguiente desigualdad:",
+        [
+          "|",
+          {
+            "frac": [
+              "x",
+              "2"
+            ]
+          },
+          " − 1| ≥ 5x + 1"
+        ]
+      ],
       "bloques": [
         {
           "texto": "Se separa en los dos casos de la definición de valor absoluto, según el signo de lo de adentro del valor absoluto: |E| = E si E ≥ 0, y |E| = −E si E < 0. En cada caso se resuelve la condición y la inecuación, y se intersecan."
@@ -4914,7 +4952,17 @@
         {
           "numero": "a",
           "marcador": "11.a: 1/(x + 4) > 0",
-          "enunciado": "1/(x + 4) > 0",
+          "enunciado": [
+            [
+              {
+                "frac": [
+                  "1",
+                  "x + 4"
+                ]
+              },
+              " > 0"
+            ]
+          ],
           "bloques": [
             {
               "generador": "racionales",
@@ -4969,7 +5017,17 @@
         {
           "numero": "b",
           "marcador": "11.b: (4 − x)/x + 6 > 14",
-          "enunciado": "(4 − x)/x + 6 > 14",
+          "enunciado": [
+            [
+              {
+                "frac": [
+                  "4 − x",
+                  "x"
+                ]
+              },
+              " + 6 > 14"
+            ]
+          ],
           "bloques": [
             {
               "pasos": [
@@ -5091,7 +5149,30 @@
         {
           "numero": "c",
           "marcador": "11.c: 4/(x − 3) < 1/2 − 3/(3 − x)",
-          "enunciado": "4/(x − 3) < 1/2 − 3/(3 − x)",
+          "enunciado": [
+            [
+              {
+                "frac": [
+                  "4",
+                  "x − 3"
+                ]
+              },
+              " < ",
+              {
+                "frac": [
+                  "1",
+                  "2"
+                ]
+              },
+              " − ",
+              {
+                "frac": [
+                  "3",
+                  "3 − x"
+                ]
+              }
+            ]
+          ],
           "bloques": [
             {
               "texto": "Restricción: x − 3 ≠ 0 y 3 − x ≠ 0, es decir, x ≠ 3."
@@ -5293,29 +5374,6 @@
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "pasos": [
-                {
-                  "izq": [
-                    {
-                      "frac": [
-                        "1",
-                        "x − 3"
-                      ]
-                    }
-                  ],
-                  "rel": "<",
-                  "der": [
-                    {
-                      "frac": [
-                        "1",
-                        "2"
-                      ]
-                    }
-                  ]
                 },
                 {
                   "izq": [
@@ -5498,7 +5556,23 @@
         {
           "numero": "d",
           "marcador": "11.d: 3/(x + 2) < 2/(x − 3)",
-          "enunciado": "3/(x + 2) < 2/(x − 3)",
+          "enunciado": [
+            [
+              {
+                "frac": [
+                  "3",
+                  "x + 2"
+                ]
+              },
+              " < ",
+              {
+                "frac": [
+                  "2",
+                  "x − 3"
+                ]
+              }
+            ]
+          ],
           "bloques": [
             {
               "texto": "Restricción: x + 2 ≠ 0 y x − 3 ≠ 0, es decir, x ≠ −2 y x ≠ 3."
@@ -5737,7 +5811,23 @@
         {
           "numero": "e",
           "marcador": "11.e: x/8 < 2/x",
-          "enunciado": "x/8 < 2/x",
+          "enunciado": [
+            [
+              {
+                "frac": [
+                  "x",
+                  "8"
+                ]
+              },
+              " < ",
+              {
+                "frac": [
+                  "2",
+                  "x"
+                ]
+              }
+            ]
+          ],
           "bloques": [
             {
               "texto": "Restricción: x ≠ 0."
@@ -6635,7 +6725,18 @@
         {
           "numero": "d",
           "marcador": "12.d: Ciudad A (11/16) y ciudad B (65 %)",
-          "enunciado": "En una ciudad A votan al partido colorado 11/16 de la población, mientras que en la ciudad B lo hace el 65 %. ¿Qué ciudad vota proporcionalmente más a dicho partido?",
+          "enunciado": [
+            [
+              "En una ciudad A votan al partido colorado ",
+              {
+                "frac": [
+                  "11",
+                  "16"
+                ]
+              },
+              " de la población, mientras que en la ciudad B lo hace el 65 %. ¿Qué ciudad vota proporcionalmente más a dicho partido?"
+            ]
+          ],
           "bloques": [
             {
               "texto": "Se escriben las dos proporciones como fracciones:"
@@ -6758,7 +6859,25 @@
         {
           "numero": "e",
           "marcador": "12.e: Botellas de 2/5 l y de 3/4 l",
-          "enunciado": "Con una cuba de vino se han llenado 480 botellas de 2/5 de litro. ¿Cuántas botellas de 3/4 de litro se llenarán con una cuba igual a la anterior?",
+          "enunciado": [
+            [
+              "Con una cuba de vino se han llenado 480 botellas de ",
+              {
+                "frac": [
+                  "2",
+                  "5"
+                ]
+              },
+              " de litro. ¿Cuántas botellas de ",
+              {
+                "frac": [
+                  "3",
+                  "4"
+                ]
+              },
+              " de litro se llenarán con una cuba igual a la anterior?"
+            ]
+          ],
           "bloques": [
             {
               "texto": "Capacidad de la cuba:"
@@ -6863,7 +6982,25 @@
         {
           "numero": "f",
           "marcador": "12.f: Tres socios y $ 10.000",
-          "enunciado": "Tres socios invierten sus ahorros en un negocio. El primero aporta 1/3 del capital, el segundo 2/5 y el tercero el resto. Al cabo de tres meses reparten beneficios de $ 10.000. ¿Cuánto corresponde a cada uno?",
+          "enunciado": [
+            [
+              "Tres socios invierten sus ahorros en un negocio. El primero aporta ",
+              {
+                "frac": [
+                  "1",
+                  "3"
+                ]
+              },
+              " del capital, el segundo ",
+              {
+                "frac": [
+                  "2",
+                  "5"
+                ]
+              },
+              " y el tercero el resto. Al cabo de tres meses reparten beneficios de $ 10.000. ¿Cuánto corresponde a cada uno?"
+            ]
+          ],
           "bloques": [
             {
               "texto": "Parte del capital que aporta el tercero:"

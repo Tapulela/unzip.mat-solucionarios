@@ -68,7 +68,18 @@
     },
     {
      "numero": "b",
-     "enunciado": "{1/n | n es primo}",
+     "enunciado": [
+      [
+       "{",
+       {
+        "frac": [
+         "1",
+         "n"
+        ]
+       },
+       " | n es primo}"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Se toman los primeros primos, 2, 3, 5, 7 y 11, y se calcula 1/n para cada uno.",

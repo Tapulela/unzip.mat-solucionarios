@@ -891,7 +891,17 @@
     },
     {
      "numero": "e",
-     "enunciado": "el inverso de 2 es −1/2",
+     "enunciado": [
+      [
+       "el inverso de 2 es − ",
+       {
+        "frac": [
+         "1",
+         "2"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [

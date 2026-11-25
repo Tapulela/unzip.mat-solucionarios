@@ -1915,7 +1915,18 @@
   {
    "numero": 5,
    "marcador": true,
-   "enunciado": "Encontrar el dominio de la función siguiente:\nh(x) = (x² + 5)/(x − 1)",
+   "enunciado": [
+    "Encontrar el dominio de la función siguiente:",
+    [
+     "h(x) = ",
+     {
+      "frac": [
+       "x² + 5",
+       "x − 1"
+      ]
+     }
+    ]
+   ],
    "bloques": [
     {
      "texto": "Un cociente no está definido cuando el denominador vale 0. El numerador x² + 5 está definido para todo x."
@@ -2357,7 +2368,17 @@
     },
     {
      "numero": "c",
-     "enunciado": "y = 6/(x(x + 9))",
+     "enunciado": [
+      [
+       "y = ",
+       {
+        "frac": [
+         "6",
+         "x(x + 9)"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "El denominador no puede valer 0. Un producto es distinto de 0 cuando cada factor es distinto de 0:"
@@ -3036,7 +3057,17 @@
     },
     {
      "numero": "b",
-     "enunciado": "g(x) = 3x/(x² + 1)",
+     "enunciado": [
+      [
+       "g(x) = ",
+       {
+        "frac": [
+         "3x",
+         "x² + 1"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -3176,7 +3207,17 @@
     },
     {
      "numero": "c",
-     "enunciado": "h(x) = (x² + 2)/(x − 7)",
+     "enunciado": [
+      [
+       "h(x) = ",
+       {
+        "frac": [
+         "x² + 2",
+         "x − 7"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "seccion": "¿Es par?",
@@ -3890,7 +3931,20 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "y = 3 − 2x,  si x ≤ 2\ny = −1,  si 2 < x ≤ 3\ny = (x + 1)/2,  si x > 3",
+     "enunciado": [
+      "y = 3 − 2x,  si x ≤ 2",
+      "y = −1,  si 2 < x ≤ 3",
+      [
+       "y = ",
+       {
+        "frac": [
+         "x + 1",
+         "2"
+        ]
+       },
+       ",  si x > 3"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Valores en los extremos de cada sección (● incluido, ○ excluido):"
@@ -3994,7 +4048,20 @@
     },
     {
      "numero": "b",
-     "enunciado": "y = −x/3,  si x ≤ 0\ny = √x,  si 0 < x ≤ 4\ny = 2,  si x > 4",
+     "enunciado": [
+      [
+       "y = − ",
+       {
+        "frac": [
+         "x",
+         "3"
+        ]
+       },
+       ",  si x ≤ 0"
+      ],
+      "y = √x,  si 0 < x ≤ 4",
+      "y = 2,  si x > 4"
+     ],
      "bloques": [
       {
        "texto": "Valores en los extremos de cada sección (● incluido, ○ excluido):"

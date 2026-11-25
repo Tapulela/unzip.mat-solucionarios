@@ -13089,20 +13089,6 @@
        ]
       },
       {
-       "texto": "En resumen:",
-       "color": "azul",
-       "unir": true
-      },
-      {
-       "pasos": [
-        {
-         "der": "R es transitiva.",
-         "color": "azul",
-         "caja": "azul"
-        }
-       ]
-      },
-      {
        "pasos": [
         {
          "der": "R no es reflexiva, arreflexiva, simétrica, asimétrica ni antisimétrica.",

@@ -75,6 +75,12 @@ se encarga la pizarra.
   se parten. No se aplica a ítems con secciones o con gráficos de un generador.
 - `enunciado` es texto común y se corta en renglones solo. Conviene citar lo justo, o
   reescribirlo con tus palabras (ver «Derechos» en el README).
+- Si la consigna tiene fracciones, `enunciado` es una lista de renglones: cada uno es un
+  texto (un párrafo) o una lista de items, como `der` (textos, `frac`, `raiz`), que se
+  corta en renglones en los espacios y se dibuja con las fracciones expandidas. Por
+  ejemplo `[[{ "frac": ["4", "x − 3"] }, " < ", { "frac": ["1", "2"] }]]`, o
+  `["Encontrar el dominio de:", ["h(x) = ", { "frac": ["x² + 5", "x − 1"] }]]`. Para
+  los marcadores y el índice se escribe en una línea (4/(x − 3) < 1/2).
 - Un ejercicio puede tener `bloques` propios, `items`, o las dos cosas (primero van sus
   bloques y después los ítems).
 
@@ -117,6 +123,8 @@ se encarga la pizarra.
 | `llave` | Llave debajo del renglón, de la que salen los renglones `rama` que le siguen. |
 | `rama` | Etiqueta de una bifurcación: `"x₁"` dibuja `→ x₁ = …` colgando de la llave. |
 | `marcar` | `{ "de": 0, "a": 1, "texto": ["Aplicar diferencia de cuadrados:", "u² − v² = (u − v)(u + v)"], "color": "producto" }`: llave bajo los items `de`..`a` de `der` (índices desde 0; tienen que ser textos) y una flecha al renglón siguiente con la explicación. |
+| `arriba` | `[{ "de": 0, "a": 2, "texto": "k términos", "color": "suma" }, …]`: llaves por encima de los items `de`..`a` de `der` (índices desde 0; tienen que ser textos), con el texto arriba. En inducción, «k términos» y «término k + 1». |
+| `libre` | En un renglón sin `izq` ni `rel`: no corre las notas de los demás renglones a la derecha (para un renglón largo, como la igualdad del paso 3 de una inducción). |
 | `seccion` | Corta la alineación de los `=`: lo que sigue se alinea aparte y queda un poco separado. |
 
 ### Items (lo que va en `der`)

@@ -891,7 +891,18 @@
     },
     {
      "numero": "b",
-     "enunciado": "|−1/2|",
+     "enunciado": [
+      [
+       "|− ",
+       {
+        "frac": [
+         "1",
+         "2"
+        ]
+       },
+       "|"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -1136,7 +1147,18 @@
     },
     {
      "numero": "g",
-     "enunciado": "|(16 − 5)/(5 − 16)|",
+     "enunciado": [
+      [
+       "|",
+       {
+        "frac": [
+         "16 − 5",
+         "5 − 16"
+        ]
+       },
+       "|"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -1203,7 +1225,18 @@
     },
     {
      "numero": "h",
-     "enunciado": "|1/3 · (−7)|",
+     "enunciado": [
+      [
+       "|",
+       {
+        "frac": [
+         "1",
+         "3"
+        ]
+       },
+       " · (−7)|"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -2367,7 +2400,24 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "(x − 1)/2 − (x − 4)/3 < 1",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "x − 1",
+         "2"
+        ]
+       },
+       " − ",
+       {
+        "frac": [
+         "x − 4",
+         "3"
+        ]
+       },
+       " < 1"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -2529,7 +2579,30 @@
     },
     {
      "numero": "b",
-     "enunciado": "x/3 + x/2 > 5 − x/6",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "x",
+         "3"
+        ]
+       },
+       " + ",
+       {
+        "frac": [
+         "x",
+         "2"
+        ]
+       },
+       " > 5 − ",
+       {
+        "frac": [
+         "x",
+         "6"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -2736,7 +2809,30 @@
     },
     {
      "numero": "c",
-     "enunciado": "(2x − 4)/3 + (3x + 1)/3 < (2x − 5)/12",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "2x − 4",
+         "3"
+        ]
+       },
+       " + ",
+       {
+        "frac": [
+         "3x + 1",
+         "3"
+        ]
+       },
+       " < ",
+       {
+        "frac": [
+         "2x − 5",
+         "12"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -2985,7 +3081,24 @@
     },
     {
      "numero": "d",
-     "enunciado": "x/2 + (x + 1)/7 > x − 2",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "x",
+         "2"
+        ]
+       },
+       " + ",
+       {
+        "frac": [
+         "x + 1",
+         "7"
+        ]
+       },
+       " > x − 2"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -3221,7 +3334,31 @@
     },
     {
      "numero": "e",
-     "enunciado": "(5x − 2)/3 − (x − 8)/4 > (x + 14)/2 − 2",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "5x − 2",
+         "3"
+        ]
+       },
+       " − ",
+       {
+        "frac": [
+         "x − 8",
+         "4"
+        ]
+       },
+       " > ",
+       {
+        "frac": [
+         "x + 14",
+         "2"
+        ]
+       },
+       " − 2"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -3477,7 +3614,30 @@
     },
     {
      "numero": "f",
-     "enunciado": "(x + 4)/3 − (x − 4)/5 > 2 + (3x − 1)/15",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "x + 4",
+         "3"
+        ]
+       },
+       " − ",
+       {
+        "frac": [
+         "x − 4",
+         "5"
+        ]
+       },
+       " > 2 + ",
+       {
+        "frac": [
+         "3x − 1",
+         "15"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -4218,7 +4378,17 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "(x − 1)/(x − 4) > 0",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "x − 1",
+         "x − 4"
+        ]
+       },
+       " > 0"
+      ]
+     ],
      "bloques": [
       {
        "generador": "racionales",
@@ -4271,7 +4441,17 @@
     },
     {
      "numero": "b",
-     "enunciado": "5/(x + 3) < 0",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "5",
+         "x + 3"
+        ]
+       },
+       " < 0"
+      ]
+     ],
      "bloques": [
       {
        "generador": "racionales",
@@ -4325,7 +4505,17 @@
     },
     {
      "numero": "c",
-     "enunciado": "5/x ≥ 0",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "5",
+         "x"
+        ]
+       },
+       " ≥ 0"
+      ]
+     ],
      "bloques": [
       {
        "generador": "racionales",
@@ -4379,7 +4569,17 @@
     },
     {
      "numero": "d",
-     "enunciado": "(2x − 3)/(x + 1) ≥ 1",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "2x − 3",
+         "x + 1"
+        ]
+       },
+       " ≥ 1"
+      ]
+     ],
      "bloques": [
       {
        "generador": "racionales",
@@ -4432,7 +4632,17 @@
     },
     {
      "numero": "e",
-     "enunciado": "(5x − 8)/(x − 3) ≤ 4",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "5x − 8",
+         "x − 3"
+        ]
+       },
+       " ≤ 4"
+      ]
+     ],
      "bloques": [
       {
        "generador": "racionales",

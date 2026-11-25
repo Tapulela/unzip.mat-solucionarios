@@ -166,7 +166,18 @@
     },
     {
      "numero": "b",
-     "enunciado": "∗ definida en ℤ − {0} tal que x ∗ y = x/y + 5",
+     "enunciado": [
+      [
+       "∗ definida en ℤ − {0} tal que x ∗ y = ",
+       {
+        "frac": [
+         "x",
+         "y"
+        ]
+       },
+       " + 5"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Definición general:",
@@ -432,7 +443,17 @@
     },
     {
      "numero": "d",
-     "enunciado": "∗ definida en ℤ tal que a ∗ b = (a + b − 2)/3",
+     "enunciado": [
+      [
+       "∗ definida en ℤ tal que a ∗ b = ",
+       {
+        "frac": [
+         "a + b − 2",
+         "3"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "Definición general:",
@@ -969,7 +990,17 @@
     },
     {
      "numero": "b",
-     "enunciado": "∗ definida en ℚ⁺ tal que a ∗ b = ab/2",
+     "enunciado": [
+      [
+       "∗ definida en ℚ⁺ tal que a ∗ b = ",
+       {
+        "frac": [
+         "ab",
+         "2"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "Definición general:",

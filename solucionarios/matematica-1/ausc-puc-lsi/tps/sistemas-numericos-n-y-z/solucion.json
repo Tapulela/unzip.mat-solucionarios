@@ -4235,48 +4235,67 @@
          }
         },
         {
-         "rel": "",
          "der": [
-          "1 + 3 + … + (2k − 1) + (2",
+          "1 + 3 + … + (2k − 1)",
+          " + ",
+          "(2",
           {
            "t": "(k + 1)",
            "color": "producto"
           },
-          " − 1) = ",
+          " − 1)",
+          " = ",
           {
            "t": "(k + 1)",
            "color": "producto"
           },
           "²"
-         ]
-        }
-       ],
-       "unir": true
-      },
-      {
-       "pasos": [
-        {
-         "rel": "",
-         "der": [
-          "1 + 3 + … + (2k − 1)",
-          " + (2(k + 1) − 1)"
-         ]
+         ],
+         "libre": true,
+         "nota": "Reemplazar n = k + 1",
+         "notaColor": "producto",
+         "arriba": [
+          {
+           "de": 0,
+           "a": 0,
+           "texto": "k términos",
+           "color": "suma"
+          },
+          {
+           "de": 2,
+           "a": 4,
+           "texto": "término k + 1",
+           "color": "suma"
+          }
+         ],
+         "marcar": {
+          "de": 0,
+          "a": 0,
+          "texto": [
+           "Aplicar hipótesis de inducción"
+          ],
+          "color": "#e8590c"
+         }
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "t": "k²",
            "color": "#e8590c"
           },
           " + (2(k + 1) − 1)"
          ],
-         "nota": "Aplicar la hipótesis de inducción",
-         "notaColor": "#e8590c"
-        },
-        {
          "rel": "=",
          "der": [
+          {
+           "t": "(k + 1)",
+           "color": "producto"
+          },
+          "²"
+         ]
+        },
+        {
+         "izq": [
           "k² + (",
           {
            "t": "2k + 2",
@@ -4284,17 +4303,32 @@
           },
           " − 1)"
          ],
+         "rel": "=",
+         "der": [
+          {
+           "t": "(k + 1)",
+           "color": "producto"
+          },
+          "²"
+         ],
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           "k² + ",
           {
            "t": "2k + 1",
            "color": "suma"
           }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "t": "(k + 1)",
+           "color": "producto"
+          },
+          "²"
          ],
          "nota": "Resolver el paréntesis",
          "notaColor": "suma"
@@ -4365,22 +4399,36 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           "k² + ",
           {
            "t": "2k + 1",
            "color": "suma"
           }
-         ]
-        },
-        {
+         ],
          "rel": "=",
          "der": [
           {
-           "t": "(k + 1)²",
+           "t": "(k + 1)",
            "color": "producto"
           },
+          "²"
+         ]
+        },
+        {
+         "izq": [
+          {
+           "t": "(k + 1)²",
+           "color": "producto"
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "t": "(k + 1)",
+           "color": "producto"
+          },
+          "²",
           " ",
           {
            "marca": "ok"
@@ -4572,15 +4620,14 @@
          }
         }
        ],
-       "unir": true,
-       "entero": true
+       "unir": true
       },
       {
        "pasos": [
         {
-         "rel": "",
          "der": [
-          "1 · 5¹ + … + k · 5ᵏ + ",
+          "1 · 5¹ + 2 · 5² + … + k · 5ᵏ",
+          " + ",
           {
            "t": "(k + 1)",
            "color": "producto"
@@ -4599,32 +4646,38 @@
               "t": "(k + 1)",
               "color": "producto"
              },
-             " − 1) · 5",
-             {
-              "t": "ᵏ⁺²",
-              "color": "producto"
-             }
+             " − 1) · 5ᵏ⁺²"
             ],
             "16"
            ]
           }
-         ]
-        }
-       ],
-       "tam": "S"
-      },
-      {
-       "pasos": [
-        {
-         "rel": "",
-         "der": [
-          "1 · 5¹ + … + k · 5ᵏ",
-          " + (k + 1) · 5ᵏ⁺¹"
-         ]
+         ],
+         "libre": true,
+         "arriba": [
+          {
+           "de": 0,
+           "a": 0,
+           "texto": "k términos",
+           "color": "suma"
+          },
+          {
+           "de": 2,
+           "a": 4,
+           "texto": "término k + 1",
+           "color": "suma"
+          }
+         ],
+         "marcar": {
+          "de": 0,
+          "a": 0,
+          "texto": [
+           "Aplicar hipótesis de inducción"
+          ],
+          "color": "#e8590c"
+         }
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             {
@@ -4639,12 +4692,25 @@
           },
           " + (k + 1) · 5ᵏ⁺¹"
          ],
-         "nota": "Aplicar la hipótesis de inducción",
-         "notaColor": "#e8590c"
-        },
-        {
          "rel": "=",
          "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ]
+        },
+        {
+         "izq": [
           {
            "frac": [
             "5 + (4k − 1) · 5ᵏ⁺¹",
@@ -4668,12 +4734,27 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": "Llevar a común denominador 16",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4688,6 +4769,22 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": [
           "Sumar las fracciones",
           "(igual denominador)"
@@ -4695,8 +4792,7 @@
          "notaColor": "suma"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4711,12 +4807,27 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": "Sacar factor común 5ᵏ⁺¹",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4731,12 +4842,27 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4751,12 +4877,27 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": "Agrupar términos semejantes",
          "notaColor": "suma"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4771,12 +4912,27 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": "Sacar factor común 5",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4790,12 +4946,27 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": "Propiedad conmutativa",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4809,12 +4980,27 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
+          }
+         ],
          "nota": "Producto de potencias de igual base",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -4827,6 +5013,22 @@
             ],
             "16"
            ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             "5 + (4",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " − 1) · 5ᵏ⁺²"
+            ],
+            "16"
+           ]
           },
           " ",
           {
@@ -4836,7 +5038,8 @@
          "nota": "Escribir 4k + 3 = 4(k + 1) − 1",
          "notaColor": "producto"
         }
-       ]
+       ],
+       "tam": "S"
       },
       {
        "texto": "Vale para n = k + 1: por inducción, vale para todo n ∈ ℕ.",
@@ -5042,12 +5245,19 @@
          }
         },
         {
-         "rel": "",
          "der": [
+          " ",
           {
            "frac": [
             "1",
             "2"
+           ]
+          },
+          " · ",
+          {
+           "frac": [
+            "2",
+            "3"
            ]
           },
           " · … · ",
@@ -5057,7 +5267,9 @@
             "k + 1"
            ]
           },
+          " ",
           " · ",
+          " ",
           {
            "frac": [
             {
@@ -5073,6 +5285,7 @@
             ]
            ]
           },
+          " ",
           " = ",
           {
            "frac": [
@@ -5086,41 +5299,35 @@
             ]
            ]
           }
-         ]
-        }
-       ],
-       "entero": true
-      },
-      {
-       "pasos": [
-        {
-         "rel": "",
-         "der": [
+         ],
+         "libre": true,
+         "nota": "Reemplazar n = k + 1",
+         "notaColor": "producto",
+         "arriba": [
           {
-           "frac": [
-            "1",
-            "2"
-           ]
+           "de": 0,
+           "a": 6,
+           "texto": "k términos",
+           "color": "suma"
           },
-          " · … · ",
           {
-           "frac": [
-            "k",
-            "k + 1"
-           ]
-          },
-          " · ",
-          {
-           "frac": [
-            "k + 1",
-            "k + 2"
-           ]
+           "de": 8,
+           "a": 10,
+           "texto": "término k + 1",
+           "color": "suma"
           }
-         ]
+         ],
+         "marcar": {
+          "de": 0,
+          "a": 6,
+          "texto": [
+           "Aplicar hipótesis de inducción"
+          ],
+          "color": "#e8590c"
+         }
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             {
@@ -5137,16 +5344,65 @@
           {
            "frac": [
             "k + 1",
-            "k + 2"
+            "(k + 1) + 1"
            ]
           }
          ],
-         "nota": "Aplicar la hipótesis de inducción",
-         "notaColor": "#e8590c"
-        },
-        {
          "rel": "=",
          "der": [
+          {
+           "frac": [
+            "1",
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ]
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "k + 1"
+           ]
+          },
+          " · ",
+          {
+           "frac": [
+            "k + 1",
+            {
+             "t": "k + 2",
+             "color": "suma"
+            }
+           ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            "1",
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
+         "nota": "Resolver la suma",
+         "notaColor": "suma"
+        },
+        {
+         "izq": [
           {
            "frac": [
             {
@@ -5160,12 +5416,26 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            "1",
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
          "nota": "Multiplicar las fracciones",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             "1",
@@ -5173,12 +5443,26 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            "1",
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
          "nota": "Simplificar k + 1 (k + 1 ≠ 0)",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             "1",
@@ -5187,6 +5471,21 @@
               "t": "(k + 1) + 1",
               "color": "suma"
              }
+            ]
+           ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            "1",
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
             ]
            ]
           },
@@ -5375,15 +5674,14 @@
          }
         }
        ],
-       "unir": true,
-       "entero": true
+       "unir": true
       },
       {
        "pasos": [
         {
-         "rel": "",
          "der": [
-          "1 · 2 + … + k(k + 1) + ",
+          "1 · 2 + 2 · 3 + … + k(k + 1)",
+          " + ",
           {
            "t": "(k + 1)",
            "color": "producto"
@@ -5393,7 +5691,73 @@
            "t": "(k + 1)",
            "color": "producto"
           },
-          " + 1) = ",
+          " + 1)",
+          " = ",
+          {
+           "frac": [
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             "(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1)(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 2)"
+            ],
+            "3"
+           ]
+          }
+         ],
+         "libre": true,
+         "arriba": [
+          {
+           "de": 0,
+           "a": 0,
+           "texto": "k términos",
+           "color": "suma"
+          },
+          {
+           "de": 2,
+           "a": 5,
+           "texto": "término k + 1",
+           "color": "suma"
+          }
+         ],
+         "marcar": {
+          "de": 0,
+          "a": 0,
+          "texto": [
+           "Aplicar hipótesis de inducción"
+          ],
+          "color": "#e8590c"
+         }
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            {
+             "t": "k(k + 1)(k + 2)",
+             "color": "#e8590c"
+            },
+            {
+             "t": "3",
+             "color": "#e8590c"
+            }
+           ]
+          },
+          " + (k + 1)((k + 1) + 1)"
+         ],
+         "rel": "=",
+         "der": [
           {
            "frac": [
             [
@@ -5417,42 +5781,52 @@
            ]
           }
          ]
-        }
-       ],
-       "tam": "S"
-      },
-      {
-       "pasos": [
-        {
-         "rel": "",
-         "der": [
-          "1 · 2 + … + k(k + 1)",
-          " + (k + 1)(k + 2)"
-         ]
         },
         {
+         "izq": [
+          {
+           "frac": [
+            "k(k + 1)(k + 2)",
+            "3"
+           ]
+          },
+          " + (k + 1)(",
+          {
+           "t": "k + 2",
+           "color": "suma"
+          },
+          ")"
+         ],
          "rel": "=",
          "der": [
           {
            "frac": [
-            {
-             "t": "k(k + 1)(k + 2)",
-             "color": "#e8590c"
-            },
-            {
-             "t": "3",
-             "color": "#e8590c"
-            }
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             "(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1)(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 2)"
+            ],
+            "3"
            ]
-          },
-          " + (k + 1)(k + 2)"
+          }
          ],
-         "nota": "Aplicar la hipótesis de inducción",
-         "notaColor": "#e8590c"
+         "nota": "Resolver la suma",
+         "notaColor": "suma"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             "k(k + 1)(k + 2)",
@@ -5476,16 +5850,65 @@
            ]
           }
          ],
-         "nota": "Llevar a común denominador 3",
-         "notaColor": "producto"
-        },
-        {
          "rel": "=",
          "der": [
           {
            "frac": [
             [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             "(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1)(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 2)"
+            ],
+            "3"
+           ]
+          }
+         ],
+         "nota": "Llevar a común denominador 3",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            [
              "k(k + 1)(k + 2) + 3(k + 1)(k + 2)"
+            ],
+            "3"
+           ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             "(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1)(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 2)"
             ],
             "3"
            ]
@@ -5498,8 +5921,7 @@
          "notaColor": "suma"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -5513,20 +5935,63 @@
            ]
           }
          ],
-         "nota": "Sacar factor común (k + 1)(k + 2)",
-         "notaColor": "producto"
-        },
-        {
          "rel": "=",
          "der": [
           {
            "frac": [
             [
-             "(k + 1)(k + 2)",
              {
-              "t": "((k + 1) + 2)",
-              "color": "suma"
-             }
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             "(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1)(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 2)"
+            ],
+            "3"
+           ]
+          }
+         ],
+         "nota": "Sacar factor común (k + 1)(k + 2)",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "(k + 1)((k + 1) + 1)((k + 1) + 2)",
+            "3"
+           ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             "(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1)(",
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 2)"
             ],
             "3"
            ]
@@ -5536,10 +6001,14 @@
            "marca": "ok"
           }
          ],
-         "nota": "Escribir k + 3 = (k + 1) + 2",
-         "notaColor": "suma"
+         "nota": [
+          "Escribir k + 2 = (k + 1) + 1",
+          "y k + 3 = (k + 1) + 2"
+         ],
+         "notaColor": "producto"
         }
-       ]
+       ],
+       "tam": "S"
       },
       {
        "texto": "Vale para n = k + 1: por inducción, vale para todo n ∈ ℕ.",
@@ -5758,28 +6227,36 @@
          }
         }
        ],
-       "unir": true,
-       "entero": true
+       "unir": true
       },
       {
        "pasos": [
         {
-         "rel": "",
          "der": [
+          " ",
           {
            "frac": [
             "1",
             "1 · 2"
            ]
           },
+          " + ",
+          {
+           "frac": [
+            "1",
+            "2 · 3"
+           ]
+          },
           " + … + ",
           {
            "frac": [
             "1",
-            "k(k + 1)"
+            "k · (k + 1)"
            ]
           },
+          " ",
           " + ",
+          " ",
           {
            "frac": [
             "1",
@@ -5788,7 +6265,7 @@
               "t": "(k + 1)",
               "color": "producto"
              },
-             "(",
+             " · (",
              {
               "t": "(k + 1)",
               "color": "producto"
@@ -5797,6 +6274,7 @@
             ]
            ]
           },
+          " ",
           " = ",
           {
            "frac": [
@@ -5813,41 +6291,33 @@
             ]
            ]
           }
-         ]
-        }
-       ],
-       "tam": "S"
-      },
-      {
-       "pasos": [
-        {
-         "rel": "",
-         "der": [
+         ],
+         "libre": true,
+         "arriba": [
           {
-           "frac": [
-            "1",
-            "1 · 2"
-           ]
+           "de": 0,
+           "a": 6,
+           "texto": "k términos",
+           "color": "suma"
           },
-          " + … + ",
           {
-           "frac": [
-            "1",
-            "k(k + 1)"
-           ]
-          },
-          " + ",
-          {
-           "frac": [
-            "1",
-            "(k + 1)(k + 2)"
-           ]
+           "de": 8,
+           "a": 10,
+           "texto": "término k + 1",
+           "color": "suma"
           }
-         ]
+         ],
+         "marcar": {
+          "de": 0,
+          "a": 6,
+          "texto": [
+           "Aplicar hipótesis de inducción"
+          ],
+          "color": "#e8590c"
+         }
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             {
@@ -5864,16 +6334,75 @@
           {
            "frac": [
             "1",
-            "(k + 1)(k + 2)"
+            "(k + 1) · ((k + 1) + 1)"
            ]
           }
          ],
-         "nota": "Aplicar la hipótesis de inducción",
-         "notaColor": "#e8590c"
-        },
-        {
          "rel": "=",
          "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ]
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "k",
+            "k + 1"
+           ]
+          },
+          " + ",
+          {
+           "frac": [
+            "1",
+            [
+             "(k + 1)(",
+             {
+              "t": "k + 2",
+              "color": "suma"
+             },
+             ")"
+            ]
+           ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
+         "nota": "Resolver la suma",
+         "notaColor": "suma"
+        },
+        {
+         "izq": [
           {
            "frac": [
             [
@@ -5900,6 +6429,24 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
          "nota": [
           "Llevar a común denominador",
           "(k + 1)(k + 2)"
@@ -5907,12 +6454,29 @@
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             "k(k + 2) + 1",
             "(k + 1)(k + 2)"
+           ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
            ]
           }
          ],
@@ -5923,8 +6487,7 @@
          "notaColor": "suma"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -5938,10 +6501,29 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
          "nota": "Propiedad distributiva",
          "notaColor": "producto"
         }
-       ]
+       ],
+       "tam": "S"
       },
       {
        "texto": "Para factorizar k² + 2k + 1 se aplica trinomio cuadrado perfecto:",
@@ -6007,8 +6589,7 @@
       {
        "pasos": [
         {
-         "rel": "",
-         "der": [
+         "izq": [
           {
            "frac": [
             [
@@ -6020,11 +6601,28 @@
             "(k + 1)(k + 2)"
            ]
           }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
          ]
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             {
@@ -6035,12 +6633,29 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
          "nota": "Reemplazar la factorización",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             "k + 1",
@@ -6048,12 +6663,29 @@
            ]
           }
          ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
+           ]
+          }
+         ],
          "nota": "Simplificar k + 1 (k + 1 ≠ 0)",
          "notaColor": "producto"
         },
         {
-         "rel": "=",
-         "der": [
+         "izq": [
           {
            "frac": [
             "k + 1",
@@ -6061,6 +6693,24 @@
              "t": "(k + 1) + 1",
              "color": "suma"
             }
+           ]
+          }
+         ],
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "k + 1",
+             "color": "producto"
+            },
+            [
+             {
+              "t": "(k + 1)",
+              "color": "producto"
+             },
+             " + 1"
+            ]
            ]
           },
           " ",
@@ -6071,7 +6721,8 @@
          "nota": "Escribir k + 2 = (k + 1) + 1",
          "notaColor": "suma"
         }
-       ]
+       ],
+       "tam": "S"
       },
       {
        "texto": "Vale para n = k + 1: por inducción, vale para todo n ∈ ℕ.",

@@ -72,7 +72,7 @@ export function revisar(sol, opc = {}) {
     if (typeof l === "string" || Array.isArray(l)) l = { der: l };
     if (!l || typeof l !== "object") { err(r, "renglón inválido"); return; }
     for (const k of Object.keys(l)) {
-      if (!["izq", "rel", "der", "nota", "notaColor", "color", "caja", "llave", "rama", "marcar", "seccion", "libre"].includes(k)) av(r, `campo desconocido «${k}» (se ignora)`);
+      if (!["izq", "rel", "der", "nota", "notaColor", "color", "caja", "llave", "rama", "marcar", "arriba", "seccion", "libre"].includes(k)) av(r, `campo desconocido «${k}» (se ignora)`);
     }
     const der = items(l.der, r + ".der");
     if (l.izq) typeof l.izq === "object" ? items(l.izq, r + ".izq") : texto(String(l.izq), r + ".izq");
@@ -86,6 +86,16 @@ export function revisar(sol, opc = {}) {
       const de = l.marcar.de | 0, a = l.marcar.a === undefined ? de : l.marcar.a | 0;
       if (!der[de] || !der[a] || der[de].t === undefined || der[a].t === undefined) err(r + ".marcar", "«de» y «a» tienen que ser índices de textos de «der»");
       color(l.marcar.color, r + ".marcar.color");
+    }
+    if (l.arriba !== undefined) {
+      if (!Array.isArray(l.arriba)) err(r + ".arriba", "es una lista de { de, a, texto, color }");
+      else l.arriba.forEach((s, k) => {
+        const de = s.de | 0, a = s.a === undefined ? de : s.a | 0;
+        if (!der[de] || !der[a] || der[de].t === undefined || der[a].t === undefined || der[de].t === "" || der[a].t === "")
+          err(`${r}.arriba[${k}]`, "«de» y «a» tienen que ser índices de textos (no vacíos) de «der»");
+        if (s.texto !== undefined) texto(String(s.texto), `${r}.arriba[${k}].texto`);
+        color(s.color, `${r}.arriba[${k}].color`);
+      });
     }
   };
   // marcador del PDF: true, un texto (el título) o { titulo, nivel } con nivel 1 a 3
@@ -194,15 +204,24 @@ export function revisar(sol, opc = {}) {
     if (typeof nu !== "object" || Array.isArray(nu)) err("estilo.numeracion", "es un objeto { ejercicio, item }");
     else for (const k of ["ejercicio", "item"]) if (nu[k] !== undefined && typeof nu[k] !== "string") err(`estilo.numeracion.${k}`, "tiene que ser un texto, por ejemplo «Ejercicio {n}:»");
   }
+  // el enunciado: un texto o una lista de renglones (textos y expresiones con fracciones)
+  const enunciado = (e, r) => {
+    if (e === undefined) return;
+    if (typeof e === "string") { texto(e, r + ".enunciado"); return; }
+    if (!Array.isArray(e)) { err(r + ".enunciado", "es un texto o una lista de renglones (textos y expresiones)"); return; }
+    e.forEach((x, k) => (typeof x === "string" ? texto(x, `${r}.enunciado[${k}]`) : items(x, `${r}.enunciado[${k}]`)));
+  };
   // bloques sueltos antes de los ejercicios (el texto de una introducción)
   if (sol.bloques !== undefined) bloques(sol.bloques, "raíz");
   if (!Array.isArray(sol.ejercicios)) { if (!opc.parte) err("ejercicios", "falta la lista de ejercicios"); }
   else sol.ejercicios.forEach((ej, i) => {
     const r = `ejercicios[${i}]`;
-    if (!ej.enunciado) av(r, "falta el enunciado");
+    if (!ej.enunciado || (Array.isArray(ej.enunciado) && !ej.enunciado.length)) av(r, "falta el enunciado");
+    enunciado(ej.enunciado, r);
     marcador(ej.marcador, r);
     bloques(ej.bloques, r);
     (ej.items || []).forEach((it, j) => {
+      enunciado(it.enunciado, `${r}.items[${j}]`);
       marcador(it.marcador, `${r}.items[${j}]`); bloques(it.bloques, `${r}.items[${j}]`);
       if (it.alLado !== undefined && typeof it.alLado !== "boolean") av(`${r}.items[${j}].alLado`, "tendría que ser true o false");
       if (it.alLado && j === 0) av(`${r}.items[${j}].alLado`, "el primer ítem no tiene un ítem anterior al que ponerse al lado");
@@ -361,11 +380,26 @@ export function buscar(dir) {
 
 export const GENERADORES_VALIDOS = GENERADORES;
 
+// un enunciado en una línea (las fracciones dibujadas como a/b), como lo escribe
+// la pizarra en los marcadores
+const textoPlano = (x) => {
+  if (x === null || x === undefined) return "";
+  if (typeof x === "string" || typeof x === "number") return String(x);
+  if (Array.isArray(x)) return x.map(textoPlano).join("");
+  if (typeof x.t === "string") return x.t;
+  const envolver = (s) => (s = s.trim(), /^[\w.,²³¹⁰⁴-⁹₀-₉′]+$/.test(s) ? s : `(${s})`);
+  if (Array.isArray(x.frac)) return envolver(textoPlano(x.frac[0])) + "/" + envolver(textoPlano(x.frac[1]));
+  if (x.raiz !== undefined) return "√" + envolver(textoPlano(x.raiz));
+  if (Array.isArray(x.sistema)) return x.sistema.map(textoPlano).join("; ");
+  return "";
+};
+export const enunciadoPlano = (e) => (Array.isArray(e) ? e.map((r) => (typeof r === "string" ? r : textoPlano(r))).join("\n") : String(e || ""));
+
 // los enunciados de los ejercicios y de los ítems, sin espacios de más: dos
 // trabajos prácticos con la misma huella son el mismo
 export function huellaEnunciado(sol) {
   if (!Array.isArray(sol?.ejercicios) || !sol.ejercicios.length) return "";
-  return sol.ejercicios.map((e) => [e.enunciado || "", ...(e.items || []).map((it) => it.enunciado || "")].join("\n"))
+  return sol.ejercicios.map((e) => [enunciadoPlano(e.enunciado), ...(e.items || []).map((it) => enunciadoPlano(it.enunciado))].join("\n"))
     .join("\n\n").replace(/\s+/g, " ").trim();
 }
 

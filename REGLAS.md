@@ -11,6 +11,14 @@ documento.
   y debajo, la respuesta. Nunca la respuesta sola.
 - El texto de la consigna se copia del trabajo práctico tal cual (es material del
   docente que pide el solucionario), salvo que sea muy largo.
+- **La consigna se escribe expandida, como en el trabajo práctico**: las fracciones
+  dibujadas (con su raya, en varios renglones), nunca en una línea con barras y
+  paréntesis. «4/(x − 3) < 1/2 − 3/(3 − x)» se escribe con tres fracciones dibujadas;
+  lo mismo un «2/5 de litro» dentro de un problema. En el JSON, `enunciado` es una
+  lista de renglones: un texto, o una lista de items con `frac` (ver «Ejercicios» en
+  [FORMATO.md](FORMATO.md)). Las raíces escritas con √ ya se dibujan solas. La barra
+  que no es una fracción queda como está: «tal que» ({x / …}, ∃x ∈ ℝ / …), «y/o» y el
+  conjunto cociente ((ℝ × ℝ)/R).
 - **Las respuestas van en azul** (`"color": "azul"`): los textos de respuesta, las
   proposiciones simples de una traducción y el resultado en recuadro.
 - Las explicaciones de apoyo (qué es una tautología, por qué se eligió un método,
@@ -213,12 +221,29 @@ Se usa este `estilo` en todas las resoluciones:
   que existen otros, nombrándolos: tabla de verdad, simplificación con las leyes del
   álgebra proposicional, razonamiento deductivo, mostrar que el bicondicional es una
   tautología. Si conviene, se dice por qué se eligió ese.
-- **Inducción, paso 3**: la primera expresión del paso 3 es la igualdad completa para
-  n = k + 1, con el objetivo escrito como miembro derecho («1 + … + (k + 1)² =
-  (k + 1)(k + 2)(2k + 3)/6»), no un «Objetivo: …» aparte. Si no entra a lo ancho, ese
-  renglón va más chico (un bloque de pasos con `"tam": "S"`, y el título «Paso 3» con
-  `"unir": true` para que no quede separado). Después se desarrolla el miembro
-  izquierdo, aplicando la hipótesis de inducción, hasta llegar al derecho.
+- **Inducción, paso 3**, como en el pizarrón:
+  1. Título «Paso 3: Probar para n = k + 1» y, en la nota, «Reemplazar n = k + 1».
+  2. La igualdad completa para n = k + 1, con el objetivo como miembro derecho, en un
+     renglón con `"libre": true` (así no corre las notas de los demás). Lo que se
+     reemplazó por k + 1 va en violeta. Encima, con `arriba`, una llave verde sobre
+     los primeros k términos, «k términos», y otra sobre el último, «término k + 1».
+     Debajo de los k términos, con `marcar` en naranja (#e8590c), la llave con la
+     flecha «Aplicar hipótesis de inducción»: aplicar la hipótesis es un paso propio,
+     señalado con la flecha, no una nota.
+  3. El renglón al que llega la flecha: lo que vale la suma según la hipótesis, en
+     naranja, más el término k + 1 tal como se escribió, «=» y el mismo miembro
+     derecho.
+  4. Desde ahí, cada renglón es la igualdad completa: se trabaja solo el miembro
+     izquierdo (un paso por renglón, con su nota) y el derecho se copia igual, con los
+     «=» alineados, hasta que los dos miembros son iguales y se marca ✓. Si hace falta,
+     el último paso escribe lo que quedó en la forma del miembro derecho («Escribir
+     k + 2 = (k + 1) + 1»).
+  En el JSON, los items que marcan `arriba` y `marcar` tienen que ser textos: si los
+  términos empiezan o terminan con una fracción, se pone delante o detrás un texto con
+  un espacio fino (" "). Si los renglones no entran a lo ancho, el desarrollo va
+  en `"tam": "S"` y el título en un bloque aparte, con `"unir": true`. Al repartir en
+  hojas, el título, la igualdad, sus llaves y la flecha no se separan del renglón al
+  que llega la flecha (la pizarra lo hace sola).
 - **Inducción, factorizar un polinomio de segundo grado**: si en el paso 3 aparece un
   polinomio de segundo grado que hay que factorizar (2k² + 3k + 1, k² + 4k + 4…), la
   factorización se hace como parte de la resolución, no se da hecha ni se deja para una
@@ -582,6 +607,13 @@ vuelve a una columna.
   de items, con sus colores y fracciones), la relación en `rel` y el derecho en `der`.
   No se escribe la ecuación entera en `der`, ni se alinea a mano con espacios.
 
+- **Una expresión no se escribe dos veces seguidas.** Si un bloque de pasos termina en
+  una expresión, el siguiente no vuelve a empezar con la misma (ni con un texto en el
+  medio, como «Se resuelve el cociente:»): el desarrollo sigue en el mismo bloque. Lo
+  mismo un recuadro de resultado que ya está escrito («En resumen:» y otra vez el
+  recuadro) o un paso que deja la expresión igual. La única repetición es el renglón
+  que se retoma después de cortar un desarrollo para hacer otra cosa (una
+  factorización): ahí se repite para que se vea dónde sigue.
 - **Nunca más de un paso por renglón**, en todos los temas: ni cadenas como
   «(1 ∗ 1) ∗ 0 = 2 ∗ 0 = 4», ni dentro de un párrafo de texto. Cada igualdad del
   desarrollo va en su propio renglón de `pasos`, con su nota.

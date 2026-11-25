@@ -3463,7 +3463,24 @@
     },
     {
      "numero": "b",
-     "enunciado": "(5 + 4i)/(5 + 6i) − (1/61) i · (3 − 2i)",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "5 + 4i",
+         "5 + 6i"
+        ]
+       },
+       " − ",
+       {
+        "frac": [
+         "1",
+         "61"
+        ]
+       },
+       " i · (3 − 2i)"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Nota para el estudiante: el cociente y el producto se resuelven antes que la resta.",
@@ -3863,7 +3880,22 @@
   {
    "numero": 5,
    "marcador": true,
-   "enunciado": "Dados los números complejos:\nz₁ = −3 + 4i\nz₂ = 5 − 2i\nz₃ = 3/2\nz₄ = 7i\nCalcular las siguientes operaciones:",
+   "enunciado": [
+    "Dados los números complejos:",
+    "z₁ = −3 + 4i",
+    "z₂ = 5 − 2i",
+    [
+     "z₃ = ",
+     {
+      "frac": [
+       "3",
+       "2"
+      ]
+     }
+    ],
+    "z₄ = 7i",
+    "Calcular las siguientes operaciones:"
+   ],
    "bloques": [
     {
      "texto": "Nota para el estudiante: conj(w) es el conjugado de w, que en el trabajo práctico se escribe con una barra arriba: si w = a + bi, su conjugado es a − bi.",
@@ -5074,7 +5106,16 @@
     },
     {
      "numero": "i",
-     "enunciado": "z₁ / z₂",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₁",
+         "z₂"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -5268,7 +5309,16 @@
     },
     {
      "numero": "j",
-     "enunciado": "z₁ / (2 · z₃ + z₄)",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₁",
+         "2 · z₃ + z₄"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "Primero el denominador:"
@@ -5667,10 +5717,9 @@
          "izq": "x",
          "rel": "=",
          "der": [
-          "± √4 · ",
+          "± ",
           {
-           "t": "√(−1)",
-           "color": "producto"
+           "raiz": "−4"
           }
          ],
          "nota": "Raíz cuadrada en los dos miembros",
@@ -5789,10 +5838,9 @@
          "izq": "x",
          "rel": "=",
          "der": [
-          "± √9 · ",
+          "± ",
           {
-           "t": "√(−1)",
-           "color": "producto"
+           "raiz": "−9"
           }
          ],
          "nota": "Raíz cuadrada en los dos miembros",
@@ -5935,10 +5983,9 @@
          "izq": "x",
          "rel": "=",
          "der": [
-          "± √10 · ",
+          "± ",
           {
-           "t": "√(−1)",
-           "color": "producto"
+           "raiz": "−10"
           }
          ],
          "nota": "Raíz cuadrada en los dos miembros",
@@ -6033,10 +6080,9 @@
          "izq": "x",
          "rel": "=",
          "der": [
-          "± √5 · ",
+          "± ",
           {
-           "t": "√(−1)",
-           "color": "producto"
+           "raiz": "−5"
           }
          ],
          "nota": "Raíz cuadrada en los dos miembros",
@@ -6362,10 +6408,9 @@
          "izq": "x",
          "rel": "=",
          "der": [
-          "± √25 · ",
+          "± ",
           {
-           "t": "√(−1)",
-           "color": "producto"
+           "raiz": "−25"
           }
          ],
          "nota": "Raíz cuadrada en los dos miembros",
@@ -7243,7 +7288,17 @@
     },
     {
      "numero": "f",
-     "enunciado": "(5/3) i",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "5",
+         "3"
+        ]
+       },
+       " i"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Parte real a = 0 y parte imaginaria b = 5/3."
@@ -8799,7 +8854,16 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "z₂ / z₁",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₂",
+         "z₁"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -8982,7 +9046,16 @@
     },
     {
      "numero": "b",
-     "enunciado": "z₁ / z₃",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₁",
+         "z₃"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -9175,7 +9248,16 @@
     },
     {
      "numero": "c",
-     "enunciado": "z₃ / z₂",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₃",
+         "z₂"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -9360,7 +9442,16 @@
     },
     {
      "numero": "d",
-     "enunciado": "z₂ / z₃",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₂",
+         "z₃"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -9523,7 +9614,16 @@
     },
     {
      "numero": "e",
-     "enunciado": "z̄₃ / z̄₂",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z̄₃",
+         "z̄₂"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "Primero los conjugados:"
@@ -9727,7 +9827,16 @@
     },
     {
      "numero": "f",
-     "enunciado": "1 / z₁",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "1",
+         "z₁"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -9886,7 +9995,25 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "√3 · (cos π/6 + i sen π/6)",
+     "enunciado": [
+      [
+       "√3 · (cos ",
+       {
+        "frac": [
+         "π",
+         "6"
+        ]
+       },
+       " + i sen ",
+       {
+        "frac": [
+         "π",
+         "6"
+        ]
+       },
+       ")"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -10026,7 +10153,25 @@
     },
     {
      "numero": "b",
-     "enunciado": "3 · (cos π/2 + i sen π/2)",
+     "enunciado": [
+      [
+       "3 · (cos ",
+       {
+        "frac": [
+         "π",
+         "2"
+        ]
+       },
+       " + i sen ",
+       {
+        "frac": [
+         "π",
+         "2"
+        ]
+       },
+       ")"
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -10096,7 +10241,25 @@
     },
     {
      "numero": "c",
-     "enunciado": "1 con subíndice 3π/4 (ρ = 1 y φ = 3π/4)",
+     "enunciado": [
+      [
+       "1 con subíndice ",
+       {
+        "frac": [
+         "3π",
+         "4"
+        ]
+       },
+       " (ρ = 1 y φ = ",
+       {
+        "frac": [
+         "3π",
+         "4"
+        ]
+       },
+       ")"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Es la forma polar con ρ = 1 y φ = 3π/4. Se pasa a la forma trigonométrica:"
@@ -10225,7 +10388,25 @@
     },
     {
      "numero": "d",
-     "enunciado": "√2 con subíndice π/3 (ρ = √2 y φ = π/3)",
+     "enunciado": [
+      [
+       "√2 con subíndice ",
+       {
+        "frac": [
+         "π",
+         "3"
+        ]
+       },
+       " (ρ = √2 y φ = ",
+       {
+        "frac": [
+         "π",
+         "3"
+        ]
+       },
+       ")"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Es la forma polar con ρ = √2 y φ = π/3. Se pasa a la forma trigonométrica:"
@@ -10371,7 +10552,29 @@
   {
    "numero": 14,
    "marcador": true,
-   "enunciado": "Dados los números complejos:\nz₁ = 2 − i\nz₂ = 4 con subíndice π (ρ = 4 y φ = π)\nz₃ = cos π/4 + i sen π/4\nz₄ = 1 − √3\nrealizar las operaciones que se indican a continuación expresando los resultados en forma binómica:",
+   "enunciado": [
+    "Dados los números complejos:",
+    "z₁ = 2 − i",
+    "z₂ = 4 con subíndice π (ρ = 4 y φ = π)",
+    [
+     "z₃ = cos ",
+     {
+      "frac": [
+       "π",
+       "4"
+      ]
+     },
+     " + i sen ",
+     {
+      "frac": [
+       "π",
+       "4"
+      ]
+     }
+    ],
+    "z₄ = 1 − √3",
+    "realizar las operaciones que se indican a continuación expresando los resultados en forma binómica:"
+   ],
    "bloques": [
     {
      "texto": "Primero se pasan z₂ y z₃ a la forma binómica:"
@@ -10844,7 +11047,16 @@
     },
     {
      "numero": "e",
-     "enunciado": "z₂ / z₃",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₂",
+         "z₃"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "Conviene dividir en forma polar: z₂ = [4; π] y z₃ = [1; π/4]. Se dividen los módulos y se restan los argumentos."
@@ -11210,7 +11422,14 @@
     },
     {
      "numero": "h",
-     "enunciado": "∛z₃",
+     "enunciado": [
+      [
+       {
+        "raiz": "z₃",
+        "indice": "3"
+       }
+      ]
+     ],
      "bloques": [
       {
        "texto": "Por De Moivre, las raíces cúbicas de z₃ = [1; π/4] tienen módulo ∛1 = 1 y argumentos (π/4 + 2kπ) / 3, con k = 0, 1 y 2."
@@ -11485,7 +11704,29 @@
   {
    "numero": 15,
    "marcador": true,
-   "enunciado": "Realizar las siguientes operaciones con los números complejos que se dan a continuación y expresar sus resultados en forma rectangular y polar, donde:\nz₁ = 3 + 2i\nz₂ = 4 − 3i\nz₃ = −2 − 7i\nz₄ = 1/3 + (4/7) i",
+   "enunciado": [
+    "Realizar las siguientes operaciones con los números complejos que se dan a continuación y expresar sus resultados en forma rectangular y polar, donde:",
+    "z₁ = 3 + 2i",
+    "z₂ = 4 − 3i",
+    "z₃ = −2 − 7i",
+    [
+     "z₄ = ",
+     {
+      "frac": [
+       "1",
+       "3"
+      ]
+     },
+     " + ",
+     {
+      "frac": [
+       "4",
+       "7"
+      ]
+     },
+     " i"
+    ]
+   ],
    "bloques": [
     {
      "texto": "Nota para el estudiante: en la forma polar, el módulo y el argumento se dan aproximados con dos decimales y el argumento en grados, entre 0° y 360°.",
@@ -12474,7 +12715,16 @@
     },
     {
      "numero": "e",
-     "enunciado": "z₁ / z₃",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₁",
+         "z₃"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -12814,7 +13064,17 @@
     },
     {
      "numero": "f",
-     "enunciado": "z₃ / z₄ + z₁",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₃",
+         "z₄"
+        ]
+       },
+       " + z₁"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Nota para el estudiante: el cociente se resuelve antes que la suma.",
@@ -13595,7 +13855,24 @@
   {
    "numero": 16,
    "marcador": true,
-   "enunciado": "Realice las siguientes operaciones con los números complejos que se dan a continuación y expresar sus resultados en forma rectangular y polar, donde:\nz₁ = 3 − 2i\nz₂ = 4 + 5i\nz₃ = 6 + 2i\nz₄ = 1 − 5i\nz₅ = −2 − i\nz₆ = −1/8 + 3i",
+   "enunciado": [
+    "Realice las siguientes operaciones con los números complejos que se dan a continuación y expresar sus resultados en forma rectangular y polar, donde:",
+    "z₁ = 3 − 2i",
+    "z₂ = 4 + 5i",
+    "z₃ = 6 + 2i",
+    "z₄ = 1 − 5i",
+    "z₅ = −2 − i",
+    [
+     "z₆ = − ",
+     {
+      "frac": [
+       "1",
+       "8"
+      ]
+     },
+     " + 3i"
+    ]
+   ],
    "bloques": [
     {
      "texto": "Nota para el estudiante: en la forma polar, el módulo y el argumento se dan aproximados con dos decimales y el argumento en grados, entre 0° y 360°.",
@@ -13606,7 +13883,16 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "z₁ / z₃",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₁",
+         "z₃"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -14967,7 +15253,16 @@
     },
     {
      "numero": "g",
-     "enunciado": "z₆ / z₄",
+     "enunciado": [
+      [
+       {
+        "frac": [
+         "z₆",
+         "z₄"
+        ]
+       }
+      ]
+     ],
      "bloques": [
       {
        "pasos": [
@@ -15610,7 +15905,25 @@
     },
     {
      "numero": "c",
-     "enunciado": "z = (4/7 + (4/9) i)⁶",
+     "enunciado": [
+      [
+       "z = (",
+       {
+        "frac": [
+         "4",
+         "7"
+        ]
+       },
+       " + ",
+       {
+        "frac": [
+         "4",
+         "9"
+        ]
+       },
+       " i)⁶"
+      ]
+     ],
      "bloques": [
       {
        "texto": "Conviene usar De Moivre: se pasa la base a forma polar, se eleva el módulo a la sexta y se multiplica el argumento por 6."
@@ -15822,7 +16135,15 @@
    "items": [
     {
      "numero": "a",
-     "enunciado": "z = ∛(5 + 9i)",
+     "enunciado": [
+      [
+       "z = ",
+       {
+        "raiz": "5 + 9i",
+        "indice": "3"
+       }
+      ]
+     ],
      "bloques": [
       {
        "generador": "raicesC",
@@ -15856,7 +16177,23 @@
     },
     {
      "numero": "b",
-     "enunciado": "z = ⁴√(3/7 − 6i)",
+     "enunciado": [
+      [
+       "z = ",
+       {
+        "raiz": [
+         {
+          "frac": [
+           "3",
+           "7"
+          ]
+         },
+         " − 6i"
+        ],
+        "indice": "4"
+       }
+      ]
+     ],
      "bloques": [
       {
        "generador": "raicesC",
@@ -15890,7 +16227,15 @@
     },
     {
      "numero": "c",
-     "enunciado": "z = ⁴√(8 + 7i)",
+     "enunciado": [
+      [
+       "z = ",
+       {
+        "raiz": "8 + 7i",
+        "indice": "4"
+       }
+      ]
+     ],
      "bloques": [
       {
        "generador": "raicesC",
@@ -16659,25 +17004,6 @@
            ]
           }
          ]
-        }
-       ]
-      },
-      {
-       "texto": "Se resuelve el cociente:"
-      },
-      {
-       "pasos": [
-        {
-         "rel": "=",
-         "der": [
-          {
-           "frac": [
-            "−1 + i",
-            "−1 − i"
-           ]
-          }
-         ],
-         "izq": "z"
         },
         {
          "rel": "=",
