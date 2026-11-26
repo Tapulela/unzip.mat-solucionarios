@@ -688,11 +688,6 @@
      "enunciado": "¿En qué mes superará los 100.000 seguidores?",
      "bloques": [
       {
-       "texto": "Nota para el estudiante: la consigna pasa del ítem b al d (no tiene ítem c); se respeta la letra del examen.",
-       "color": "gris",
-       "tam": "S"
-      },
-      {
        "texto": "Se busca el primer n con aₙ > 100.000:",
        "color": "azul",
        "unir": true
@@ -1536,7 +1531,7 @@
        ]
       },
       {
-       "texto": "Nota para el estudiante: a veces el resultado queda en ℕ (5 − 2 = 3 ∈ ℕ), pero para ser cerrada tiene que quedar siempre. Si el sustraendo es mayor o igual que el minuendo, el resultado no es natural.",
+       "texto": "Nota para el estudiante: 5 − 2 = 3 ∈ ℕ, pero tiene que quedar en ℕ siempre.",
        "color": "gris",
        "tam": "S"
       }
@@ -1588,7 +1583,7 @@
        ]
       },
       {
-       "texto": "Nota para el estudiante: además, la división por 0 no está definida (por ejemplo, 3 dividido 0), así que ni siquiera se puede dividir cualquier par de enteros. Un ejemplo en que sí queda en ℤ es 6 dividido 2 = 3.",
+       "texto": "Nota para el estudiante: además, la división por 0 no está definida.",
        "color": "gris",
        "tam": "S"
       }
@@ -1781,7 +1776,7 @@
      "enunciado": "Todo número real es racional.",
      "bloques": [
       {
-       "texto": "Este ítem no pregunta por una operación: es una afirmación sobre los conjuntos ℝ y ℚ. Se analiza si es verdadera.",
+       "texto": "Este ítem no pregunta por una operación: es una afirmación sobre ℝ y ℚ.",
        "color": "azul"
       },
       {
@@ -1799,20 +1794,33 @@
          "der": "x = √2 ⇒ √2 ∈ ℝ → √2 ∈ ℚ"
         },
         {
-         "der": "√2 ∈ ℝ es verdadero"
-        },
-        {
          "der": [
-          "√2 ∈ ℚ es falso  ",
+          "Queda ",
+          {
+           "t": "V",
+           "color": "verde"
+          },
+          " → ",
+          {
+           "t": "F",
+           "color": "rojo"
+          },
+          ", que es ",
+          {
+           "t": "F",
+           "color": "rojo"
+          },
+          " ",
           {
            "marca": "mal"
           }
          ]
         }
-       ]
+       ],
+       "entero": true
       },
       {
-       "texto": "√2 es irracional (no se puede escribir como cociente de dos enteros). Para x = √2 la proposición es falsa (V → F es F), por lo tanto no todo número real es racional; sí vale la recíproca: todo racional es real.",
+       "texto": "√2 es irracional, por lo tanto no todo número real es racional.",
        "color": "azul"
       },
       {
