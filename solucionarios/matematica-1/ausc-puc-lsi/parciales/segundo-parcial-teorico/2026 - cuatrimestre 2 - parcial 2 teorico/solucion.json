@@ -395,14 +395,31 @@
        ]
       },
       {
-       "texto": "Término general de una progresión geométrica:",
+       "texto": "Término general de una progresión geométrica, conociendo dos términos aₖ y aₙ:",
        "unir": true
       },
       {
        "pasos": [
         {
          "izq": "aₙ",
-         "der": "a₁ · rⁿ⁻¹"
+         "der": "aₖ · rⁿ⁻ᵏ"
+        },
+        {
+         "izq": "aₙ",
+         "der": [
+          "a",
+          {
+           "t": "₁",
+           "color": "producto"
+          },
+          " · rⁿ⁻",
+          {
+           "t": "¹",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar k = 1",
+         "notaColor": "producto"
         },
         {
          "izq": "aₙ",
@@ -441,14 +458,53 @@
       {
        "pasos": [
         {
-         "izq": "a₆",
-         "der": [
-          "600 · 3",
+         "izq": "aₙ",
+         "der": "aₖ · rⁿ⁻ᵏ"
+        },
+        {
+         "izq": [
+          "a",
           {
-           "t": "⁶⁻¹",
+           "t": "₆",
            "color": "producto"
           }
-         ]
+         ],
+         "der": [
+          "a",
+          {
+           "t": "₁",
+           "color": "producto"
+          },
+          " · r",
+          {
+           "t": "⁶",
+           "color": "producto"
+          },
+          "⁻",
+          {
+           "t": "¹",
+           "color": "producto"
+          }
+         ],
+         "nota": "Reemplazar n = 6 y k = 1",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "a₆",
+         "der": [
+          {
+           "t": "600",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "3",
+           "color": "producto"
+          },
+          "⁶⁻¹"
+         ],
+         "nota": "Reemplazar a₁ = 600 y r = 3",
+         "notaColor": "producto"
         },
         {
          "izq": "a₆",

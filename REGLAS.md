@@ -200,6 +200,21 @@ Se usa este `estilo` en todas las resoluciones:
   es verdadera porque es la ley de complemento, y «A ∩ A′ = U» es falsa porque la ley de
   complemento establece que A ∩ A′ = ∅. No hace falta demostración ni contraejemplo.
 
+## Sucesiones (progresiones aritméticas y geométricas)
+
+- **Primero la fórmula general con dos términos cualesquiera, aₖ y aₙ**, y recién
+  después se reemplazan k y n por los términos del ejercicio. Nunca se empieza por la
+  fórmula ya escrita con a₁:
+  - geométrica: aₙ = aₖ · rⁿ⁻ᵏ;
+  - aritmética: aₙ = aₖ + (n − k) · d.
+- Para calcular un término (a₆ conociendo a₁), tres renglones antes de las cuentas:
+  la fórmula general «aₙ = aₖ · rⁿ⁻ᵏ»; «a₆ = a₁ · r⁶⁻¹», con la nota «Reemplazar n = 6
+  y k = 1» (en violeta los índices que se reemplazan); y «a₆ = 600 · 3⁶⁻¹», con la nota
+  «Reemplazar a₁ = 600 y r = 3». Lo mismo para el término general: «aₙ = a₁ · rⁿ⁻¹»
+  sale de reemplazar k = 1 en la fórmula general.
+- Si los dos términos conocidos no son el primero (a₂ = 6 y a₅ = 48), la misma fórmula
+  general se usa con k = 2 y n = 5 para despejar la razón (o la diferencia).
+
 ## Ecuaciones exponenciales
 
 - Para despejar una incógnita del exponente (2ⁿ = 16) se aplica en los dos miembros la
