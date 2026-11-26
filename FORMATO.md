@@ -139,7 +139,9 @@ se encarga la pizarra.
 | sistema | `{ "sistema": [fila, fila] }`, con una llave a la izquierda |
 | tabla | `{ "tabla": [[celda, celda], [celda, celda]] }`. Con `"lineas": true` lleva marco y grilla (cada celda deja a lo sumo un carácter de margen a cada lado), con una línea más gruesa después de la primera fila y de la primera columna (tabla de doble entrada). Las celdas van alineadas a la derecha; `"alinear"` cambia eso: `"izq"`, `"centro"` o `"der"` para toda la tabla, o una lista con una por columna (`["der", "centro", "centro"]`). `"columnasFijas": 3` corre la línea gruesa vertical después de las tres primeras columnas (las de las variables en una tabla de verdad). |
 
-Las potencias y los subíndices se escriben con caracteres Unicode: `x² x³ xⁿ x₁ x₂`. Los
+Las potencias y los subíndices se escriben con caracteres Unicode: `x² x³ xⁿ x₁ x₂`. Un
+subíndice pegado a un superíndice (o al revés) se dibuja apilado, el superíndice justo
+encima del subíndice, como en combinatoria: `V₃⁴`, `V₃ᵏ⁺¹`, `x₁²`. Los
 signos van con sus caracteres: `−` (menos), `·`, `±`, `≤`, `≥`, `≠`, `∈`, `∪`, `∩`, `⇔`,
 `⇒`, `∞`, `π`, `Δ`.
 
