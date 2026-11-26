@@ -1,0 +1,1775 @@
+{
+ "formato": "unzip.mat/solucion@1",
+ "titulo": "Matemática 1 — Segundo parcial teórico",
+ "subtitulo": "Resolución · Año 2026 · Cuatrimestre 2 · 25/11/2026",
+ "tema": "Segundo parcial teórico",
+ "cabecera": "Matemática 1\nSegundo parcial teórico - 25/11/2026 - Año 2026 - Cuatrimestre 2",
+ "pie": "Hoja {n} de {total}",
+ "meta": {
+  "materia": "Matemática 1",
+  "institucion": "AUSC-PUC-LSI",
+  "anio": 2026,
+  "tp": "Segundo parcial teórico",
+  "fuente": "Foto del examen tomado el 25/11/2026 (consigna.png, en esta carpeta)",
+  "autores": [
+   "unzip.mat"
+  ],
+  "estado": "borrador"
+ },
+ "estilo": {
+  "fuente": "normal",
+  "tam": "M",
+  "notas": true,
+  "fuenteEnunciado": "codigo",
+  "tamEnunciado": 22,
+  "numeracion": {
+   "ejercicio": "Ejercicio {n}:",
+   "item": "{n}.{i}"
+  },
+  "sangriaEnunciado": 24,
+  "margenes": {
+   "sup": 10,
+   "inf": 10,
+   "ext": 10,
+   "lomo": 15
+  },
+  "dobleFaz": true,
+  "continuacion": true
+ },
+ "ejercicios": [
+  {
+   "numero": 1,
+   "marcador": "Ejercicio 1: z · z̄ = |z|²",
+   "enunciado": "Demuestre z · z̄ = |z|² y ejemplifique. ¿El resultado es ℂ? Explique.",
+   "bloques": [
+    {
+     "seccion": "Demostración",
+     "marcador": true,
+     "bloques": [
+      {
+       "texto": "Hipótesis: z = a + bi, con a, b ∈ ℝ. Su conjugado es z̄ = a − bi y su módulo es |z| = √(a² + b²).",
+       "color": "azul"
+      },
+      {
+       "texto": "Tesis: z · z̄ = |z|²",
+       "color": "azul"
+      },
+      {
+       "seccion": "Miembro izquierdo",
+       "bloques": [
+        {
+         "notas": "arriba",
+         "pasos": [
+          {
+           "izq": "z · z̄",
+           "der": "(a + bi) · (a − bi)"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "a · a − a · bi + bi · a − bi · bi",
+            "color": "producto"
+           },
+           "nota": "Propiedad distributiva",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "t": "a²",
+             "color": "producto"
+            },
+            " − ",
+            {
+             "t": "abi",
+             "color": "producto"
+            },
+            " + ",
+            {
+             "t": "abi",
+             "color": "producto"
+            },
+            " − ",
+            {
+             "t": "b²i²",
+             "color": "producto"
+            }
+           ],
+           "nota": "Resolver los productos",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "a² − b²i²"
+           ],
+           "nota": "Cancelar − abi + abi",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "a² − b² · ",
+            {
+             "t": "(−1)",
+             "color": "producto"
+            }
+           ],
+           "nota": "Reemplazar i² = −1",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "a² ",
+            {
+             "t": "+ b²",
+             "color": "producto"
+            }
+           ],
+           "nota": "Resolver el producto",
+           "notaColor": "producto"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Miembro derecho",
+       "alLado": true,
+       "bloques": [
+        {
+         "notas": "arriba",
+         "pasos": [
+          {
+           "izq": "|z|²",
+           "der": [
+            "(",
+            {
+             "raiz": "a² + b²"
+            },
+            ")²"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "a² + b²",
+            "color": "producto"
+           },
+           "nota": [
+            "La raíz y el cuadrado se",
+            "cancelan (a² + b² ≥ 0)"
+           ],
+           "notaColor": "producto"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "a² + b²",
+         "rel": "=",
+         "der": [
+          "a² + b² ",
+          {
+           "marca": "ok"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Los dos miembros son iguales. Por lo tanto z · z̄ = |z|² para todo z ∈ ℂ.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "seccion": "Ejemplo",
+     "marcador": true,
+     "bloques": [
+      {
+       "texto": "Sea z = 3 + 4i. Su conjugado es z̄ = 3 − 4i.",
+       "color": "azul"
+      },
+      {
+       "seccion": "Miembro izquierdo",
+       "bloques": [
+        {
+         "notas": "arriba",
+         "pasos": [
+          {
+           "izq": "z · z̄",
+           "der": "(3 + 4i) · (3 − 4i)"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "9 − 12i + 12i − 16i²",
+            "color": "producto"
+           },
+           "nota": "Propiedad distributiva",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": "9 − 16i²",
+           "nota": "Cancelar − 12i + 12i",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "9 − 16 · ",
+            {
+             "t": "(−1)",
+             "color": "producto"
+            }
+           ],
+           "nota": "Reemplazar i² = −1",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "9 ",
+            {
+             "t": "+ 16",
+             "color": "producto"
+            }
+           ],
+           "nota": "Resolver el producto",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": "25"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Miembro derecho",
+       "alLado": true,
+       "bloques": [
+        {
+         "notas": "arriba",
+         "pasos": [
+          {
+           "izq": "|z|²",
+           "der": [
+            "(",
+            {
+             "raiz": "3² + 4²"
+            },
+            ")²"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": [
+            "(",
+            {
+             "raiz": "9 + 16"
+            },
+            ")²"
+           ],
+           "nota": "Resolver las potencias",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "(",
+            {
+             "raiz": "25"
+            },
+            ")²"
+           ]
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "25",
+            "color": "producto"
+           },
+           "nota": [
+            "La raíz y el cuadrado",
+            "se cancelan"
+           ],
+           "notaColor": "producto"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "25",
+         "rel": "=",
+         "der": [
+          "25 ",
+          {
+           "marca": "ok"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "(3 + 4i) · (3 − 4i) = |3 + 4i|² = 25",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "seccion": "¿El resultado es ℂ?",
+     "marcador": true,
+     "bloques": [
+      {
+       "texto": "El resultado z · z̄ = a² + b² es siempre un número real y mayor o igual que 0, porque a y b son reales y sus cuadrados no son negativos.",
+       "color": "azul"
+      },
+      {
+       "texto": "Como ℝ ⊂ ℂ, también es un número complejo, pero con la parte imaginaria igual a 0: a² + b² = (a² + b²) + 0i. En el ejemplo, 25 = 25 + 0i.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "z · z̄ ∈ ℝ (y z · z̄ ≥ 0) para todo z ∈ ℂ",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: multiplicar un número complejo por su conjugado siempre «borra» la parte imaginaria. Por eso se usa para dividir complejos: se multiplica arriba y abajo por el conjugado del denominador y el denominador queda real.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "marcador": "Ejercicio 2: Seguidores (progresión geométrica)",
+   "enunciado": "Un youtuber de Posadas empieza con 200 seguidores. Cada mes, su cantidad de seguidores se triplica.",
+   "bloques": [
+    {
+     "seccion": "Planteo",
+     "marcador": true,
+     "bloques": [
+      {
+       "texto": "Cada mes la cantidad se multiplica por 3: es una progresión geométrica de razón r = 3. Llamamos aₙ a los seguidores al terminar el mes n.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "izq": "a₁",
+         "der": [
+          "200 · ",
+          {
+           "t": "3",
+           "color": "producto"
+          }
+         ]
+        },
+        {
+         "izq": "a₁",
+         "der": "600",
+         "nota": "Resolver el producto",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Término general de una progresión geométrica:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "aₙ",
+         "der": "a₁ · rⁿ⁻¹"
+        },
+        {
+         "izq": "aₙ",
+         "der": [
+          {
+           "t": "600",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "t": "3",
+           "color": "producto"
+          },
+          "ⁿ⁻¹"
+         ],
+         "nota": "Reemplazar a₁ = 600 y r = 3",
+         "notaColor": "producto",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: los 200 seguidores del principio son los del mes 0, antes de empezar a triplicarse. Por eso el primer término de la progresión es a₁ = 600.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "marcador": "2.a: Seguidores al cabo de 6 meses",
+     "enunciado": "¿Cuántos seguidores tendrá al cabo de 6 meses?",
+     "bloques": [
+      {
+       "pasos": [
+        {
+         "izq": "a₆",
+         "der": [
+          "600 · 3",
+          {
+           "t": "⁶⁻¹",
+           "color": "producto"
+          }
+         ]
+        },
+        {
+         "izq": "a₆",
+         "der": [
+          "600 · 3",
+          {
+           "t": "⁵",
+           "color": "suma"
+          }
+         ],
+         "nota": "Resolver el exponente",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "a₆",
+         "der": [
+          "600 · ",
+          {
+           "t": "243",
+           "color": "producto"
+          }
+         ],
+         "nota": "Resolver la potencia",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "a₆",
+         "der": {
+          "t": "145.800",
+          "color": "producto"
+         },
+         "nota": "Resolver el producto",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Al cabo de 6 meses tendrá a₆ = 145.800 seguidores",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "marcador": "2.b: Seguidores acumulados en 6 meses",
+     "enunciado": "¿Cuántos seguidores acumuló en total durante esos 6 meses? Es decir, la suma de los seguidores de cada mes.",
+     "bloques": [
+      {
+       "texto": "Suma de los n primeros términos de una progresión geométrica:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "Sₙ",
+         "der": [
+          "a₁ · ",
+          {
+           "frac": [
+            "rⁿ − 1",
+            "r − 1"
+           ]
+          }
+         ]
+        },
+        {
+         "izq": "S₆",
+         "der": [
+          {
+           "t": "600",
+           "color": "producto"
+          },
+          " · ",
+          {
+           "frac": [
+            [
+             {
+              "t": "3",
+              "color": "producto"
+             },
+             "⁶ − 1"
+            ],
+            [
+             {
+              "t": "3",
+              "color": "producto"
+             },
+             " − 1"
+            ]
+           ]
+          }
+         ],
+         "nota": "Reemplazar a₁ = 600, r = 3 y n = 6",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "S₆",
+         "der": [
+          "600 · ",
+          {
+           "frac": [
+            [
+             {
+              "t": "729",
+              "color": "producto"
+             },
+             " − 1"
+            ],
+            "3 − 1"
+           ]
+          }
+         ],
+         "nota": "Resolver la potencia",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "S₆",
+         "der": [
+          "600 · ",
+          {
+           "frac": [
+            {
+             "t": "728",
+             "color": "suma"
+            },
+            {
+             "t": "2",
+             "color": "suma"
+            }
+           ]
+          }
+         ],
+         "nota": "Resolver las restas",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "S₆",
+         "der": [
+          "600 · ",
+          {
+           "t": "364",
+           "color": "producto"
+          }
+         ],
+         "nota": "Resolver la división",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "S₆",
+         "der": {
+          "t": "218.400",
+          "color": "producto"
+         },
+         "nota": "Resolver el producto",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "En los 6 meses acumuló S₆ = 218.400 seguidores",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: se puede comprobar sumando mes por mes: 600 + 1.800 + 5.400 + 16.200 + 48.600 + 145.800 = 218.400.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "marcador": "2.d: Mes en que supera los 100.000",
+     "enunciado": "¿En qué mes superará los 100.000 seguidores?",
+     "bloques": [
+      {
+       "texto": "Nota para el estudiante: la consigna pasa del ítem b al d (no tiene ítem c); se respeta la letra del examen.",
+       "color": "gris",
+       "tam": "S"
+      },
+      {
+       "texto": "Se busca el primer n con aₙ > 100.000:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "aₙ",
+         "rel": ">",
+         "der": "100.000"
+        },
+        {
+         "izq": [
+          {
+           "t": "600 · 3ⁿ⁻¹",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": "100.000",
+         "nota": "Reemplazar aₙ = 600 · 3ⁿ⁻¹",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "frac": [
+            "600 · 3ⁿ⁻¹",
+            {
+             "t": "600",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "rel": ">",
+         "der": {
+          "frac": [
+           "100.000",
+           {
+            "t": "600",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": [
+          "Dividir por 600 los dos miembros",
+          "(es positivo: la desigualdad",
+          "no cambia)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": "3ⁿ⁻¹",
+         "rel": ">",
+         "der": {
+          "frac": [
+           {
+            "t": "500",
+            "color": "producto"
+           },
+           {
+            "t": "3",
+            "color": "producto"
+           }
+          ]
+         },
+         "nota": "Simplificar",
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "log₃",
+           "color": "producto"
+          },
+          "(3ⁿ⁻¹)"
+         ],
+         "rel": ">",
+         "der": [
+          {
+           "t": "log₃",
+           "color": "producto"
+          },
+          "(",
+          {
+           "frac": [
+            "500",
+            "3"
+           ]
+          },
+          ")"
+         ],
+         "nota": [
+          "Aplicar log₃ en los dos miembros",
+          "(es creciente: la desigualdad",
+          "no cambia)"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          {
+           "t": "n − 1",
+           "color": "producto"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "log₃(",
+          {
+           "frac": [
+            "500",
+            "3"
+           ]
+          },
+          ")"
+         ],
+         "nota": "log₃(3ⁿ⁻¹) = n − 1",
+         "notaColor": "producto"
+        },
+        {
+         "izq": "n − 1",
+         "rel": ">",
+         "der": {
+          "t": "4,657…",
+          "color": "producto"
+         },
+         "nota": [
+          "Calcular con cambio de base:",
+          "log(500/3) dividido log 3"
+         ],
+         "notaColor": "producto"
+        },
+        {
+         "izq": [
+          "n − 1 ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "rel": ">",
+         "der": [
+          "4,657… ",
+          {
+           "t": "+ 1",
+           "color": "suma"
+          }
+         ],
+         "nota": "Sumar 1 en los dos miembros",
+         "notaColor": "suma"
+        },
+        {
+         "izq": "n",
+         "rel": ">",
+         "der": "5,657…"
+        }
+       ]
+      },
+      {
+       "texto": "n es un número natural de meses, así que el primero mayor que 5,657… es n = 6.",
+       "color": "azul"
+      },
+      {
+       "texto": "Comprobación:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "a₅",
+         "der": "600 · 3⁴"
+        },
+        {
+         "rel": "=",
+         "der": "48.600 < 100.000"
+        },
+        {
+         "izq": "a₆",
+         "der": "600 · 3⁵",
+         "seccion": true
+        },
+        {
+         "rel": "=",
+         "der": [
+          "145.800 > 100.000 ",
+          {
+           "marca": "ok"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "Supera los 100.000 seguidores en el mes 6",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "marcador": "Ejercicio 3: V₃⁴ + 3V₂⁴ = V₃⁵ y su generalización",
+   "enunciado": "Demostrar que V₃⁴ + 3V₂⁴ = V₃⁵. Generalice para k.",
+   "bloques": [
+    {
+     "texto": "Vₙᵐ son las variaciones (arreglos) sin repetición de m elementos tomados de a n:",
+     "unir": true
+    },
+    {
+     "pasos": [
+      {
+       "izq": "Vₙᵐ",
+       "der": {
+        "frac": [
+         "m!",
+         "(m − n)!"
+        ]
+       }
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "Nota para el estudiante: en el T.P. de combinatoria se escriben Aₘ,ₙ (arreglos). Vₙᵐ es lo mismo: se eligen n de los m elementos, sin repetir, e importa el orden.",
+     "color": "gris",
+     "tam": "S"
+    },
+    {
+     "seccion": "Demostración de V₃⁴ + 3V₂⁴ = V₃⁵",
+     "marcador": true,
+     "bloques": [
+      {
+       "seccion": "Miembro izquierdo",
+       "bloques": [
+        {
+         "notas": "arriba",
+         "pasos": [
+          {
+           "izq": "V₃⁴ + 3V₂⁴",
+           "der": [
+            {
+             "frac": [
+              "4!",
+              "(4 − 3)!"
+             ]
+            },
+            " + 3 · ",
+            {
+             "frac": [
+              "4!",
+              "(4 − 2)!"
+             ]
+            }
+           ]
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "frac": [
+              "4!",
+              {
+               "t": "1!",
+               "color": "suma"
+              }
+             ]
+            },
+            " + 3 · ",
+            {
+             "frac": [
+              "4!",
+              {
+               "t": "2!",
+               "color": "suma"
+              }
+             ]
+            }
+           ],
+           "nota": "Resolver los paréntesis",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "frac": [
+              {
+               "t": "24",
+               "color": "producto"
+              },
+              {
+               "t": "1",
+               "color": "producto"
+              }
+             ]
+            },
+            " + 3 · ",
+            {
+             "frac": [
+              {
+               "t": "24",
+               "color": "producto"
+              },
+              {
+               "t": "2",
+               "color": "producto"
+              }
+             ]
+            }
+           ],
+           "nota": "Resolver los factoriales",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "t": "24",
+             "color": "producto"
+            },
+            " + 3 · ",
+            {
+             "t": "12",
+             "color": "producto"
+            }
+           ],
+           "nota": "Resolver las divisiones",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "24 + ",
+            {
+             "t": "36",
+             "color": "producto"
+            }
+           ],
+           "nota": "Resolver el producto",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": "60"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Miembro derecho",
+       "alLado": true,
+       "bloques": [
+        {
+         "notas": "arriba",
+         "pasos": [
+          {
+           "izq": "V₃⁵",
+           "der": {
+            "frac": [
+             "5!",
+             "(5 − 3)!"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             "5!",
+             {
+              "t": "2!",
+              "color": "suma"
+             }
+            ]
+           },
+           "nota": "Resolver el paréntesis",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             {
+              "t": "120",
+              "color": "producto"
+             },
+             {
+              "t": "2",
+              "color": "producto"
+             }
+            ]
+           },
+           "nota": "Resolver los factoriales",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "60",
+            "color": "producto"
+           },
+           "nota": "Resolver la división",
+           "notaColor": "producto"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "60",
+         "rel": "=",
+         "der": [
+          "60 ",
+          {
+           "marca": "ok"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "Los dos miembros son iguales, por lo tanto V₃⁴ + 3V₂⁴ = V₃⁵.",
+       "color": "azul"
+      }
+     ]
+    },
+    {
+     "seccion": "Generalización para k",
+     "marcador": true,
+     "bloques": [
+      {
+       "texto": "Se reemplaza 4 por k y 5 por k + 1. Para que V₃ᵏ esté definido, k ∈ ℕ y k ≥ 3:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "V₃ᵏ + 3V₂ᵏ = V₃ᵏ⁺¹",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "seccion": "Miembro izquierdo",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "izq": "V₃ᵏ + 3V₂ᵏ",
+           "der": [
+            {
+             "frac": [
+              "k!",
+              "(k − 3)!"
+             ]
+            },
+            " + 3 · ",
+            {
+             "frac": [
+              "k!",
+              "(k − 2)!"
+             ]
+            }
+           ]
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "frac": [
+              [
+               {
+                "t": "k(k − 1)(k − 2)",
+                "color": "producto"
+               },
+               "(k − 3)!"
+              ],
+              "(k − 3)!"
+             ]
+            },
+            " + 3 · ",
+            {
+             "frac": [
+              [
+               {
+                "t": "k(k − 1)",
+                "color": "producto"
+               },
+               "(k − 2)!"
+              ],
+              "(k − 2)!"
+             ]
+            }
+           ],
+           "nota": [
+            "Desarrollar k! hasta",
+            "(k − 3)! y hasta (k − 2)!"
+           ],
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "t": "k(k − 1)(k − 2)",
+             "color": "producto"
+            },
+            " + 3 · ",
+            {
+             "t": "k(k − 1)",
+             "color": "producto"
+            }
+           ],
+           "nota": "Simplificar",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            {
+             "t": "k(k − 1)",
+             "color": "producto"
+            },
+            " · [(k − 2) + 3]"
+           ],
+           "nota": "Sacar factor común k(k − 1)",
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": [
+            "k(k − 1)",
+            {
+             "t": "(k + 1)",
+             "color": "suma"
+            }
+           ],
+           "nota": "Resolver el corchete",
+           "notaColor": "suma"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "seccion": "Miembro derecho",
+       "bloques": [
+        {
+         "pasos": [
+          {
+           "izq": "V₃ᵏ⁺¹",
+           "der": {
+            "frac": [
+             "(k + 1)!",
+             "(k + 1 − 3)!"
+            ]
+           }
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             "(k + 1)!",
+             {
+              "t": "(k − 2)!",
+              "color": "suma"
+             }
+            ]
+           },
+           "nota": "Resolver el paréntesis",
+           "notaColor": "suma"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             [
+              {
+               "t": "(k + 1)k(k − 1)",
+               "color": "producto"
+              },
+              "(k − 2)!"
+             ],
+             "(k − 2)!"
+            ]
+           },
+           "nota": [
+            "Desarrollar (k + 1)!",
+            "hasta (k − 2)!"
+           ],
+           "notaColor": "producto"
+          },
+          {
+           "rel": "=",
+           "der": {
+            "t": "(k + 1)k(k − 1)",
+            "color": "producto"
+           },
+           "nota": "Simplificar",
+           "notaColor": "producto"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "izq": "k(k − 1)(k + 1)",
+         "rel": "=",
+         "der": "(k + 1)k(k − 1)"
+        },
+        {
+         "izq": "k(k − 1)(k + 1)",
+         "rel": "=",
+         "der": [
+          {
+           "t": "k(k − 1)(k + 1)",
+           "color": "producto"
+          },
+          " ",
+          {
+           "marca": "ok"
+          }
+         ],
+         "nota": "Propiedad conmutativa",
+         "notaColor": "producto"
+        }
+       ]
+      },
+      {
+       "texto": "Los dos miembros son iguales:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "V₃ᵏ + 3V₂ᵏ = V₃ᵏ⁺¹ para todo k ∈ ℕ con k ≥ 3",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: con k = 4 se obtiene la igualdad de la primera parte (V₃⁴ + 3V₂⁴ = V₃⁵). Con k = 5, por ejemplo, 60 + 3 · 20 = 120 = V₃⁶.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "marcador": "Ejercicio 4: Inducción 1 · 1! + … + n · n! = (n − 1)! − 1",
+   "enunciado": [
+    "Demostrar por inducción que para todo n ≥ 1 es",
+    "1 · 1! + 2 · 2! + ⋯ + n · n! = (n − 1)! − 1"
+   ],
+   "bloques": [
+    {
+     "pasos": [
+      {
+       "der": {
+        "t": "Paso 1: Probar para n = 1",
+        "color": "azul"
+       }
+      },
+      {
+       "izq": [
+        {
+         "t": "1",
+         "color": "producto"
+        },
+        " · ",
+        {
+         "t": "1",
+         "color": "producto"
+        },
+        "!"
+       ],
+       "rel": "=",
+       "der": [
+        "(",
+        {
+         "t": "1",
+         "color": "producto"
+        },
+        " − 1)! − 1"
+       ],
+       "nota": "Reemplazar n = 1",
+       "notaColor": "producto"
+      },
+      {
+       "izq": [
+        "1 · ",
+        {
+         "t": "1",
+         "color": "producto"
+        }
+       ],
+       "rel": "=",
+       "der": "(1 − 1)! − 1",
+       "nota": "1! = 1",
+       "notaColor": "producto"
+      },
+      {
+       "izq": [
+        {
+         "t": "1",
+         "color": "producto"
+        }
+       ],
+       "rel": "=",
+       "der": "(1 − 1)! − 1",
+       "nota": "Resolver el producto",
+       "notaColor": "producto"
+      },
+      {
+       "izq": "1",
+       "rel": "=",
+       "der": [
+        {
+         "t": "0",
+         "color": "suma"
+        },
+        "! − 1"
+       ],
+       "nota": "Resolver el paréntesis",
+       "notaColor": "suma"
+      },
+      {
+       "izq": "1",
+       "rel": "=",
+       "der": [
+        {
+         "t": "1",
+         "color": "producto"
+        },
+        " − 1"
+       ],
+       "nota": "0! = 1 (por definición)",
+       "notaColor": "producto"
+      },
+      {
+       "izq": "1",
+       "rel": "≠",
+       "der": [
+        {
+         "t": "0",
+         "color": "suma"
+        },
+        " ",
+        {
+         "marca": "mal"
+        }
+       ],
+       "nota": "Resolver la resta",
+       "notaColor": "suma"
+      }
+     ],
+     "entero": true
+    },
+    {
+     "texto": "La igualdad no se cumple para n = 1: el miembro izquierdo vale 1 y el derecho vale 0. Como la consigna dice «para todo n ≥ 1», n = 1 es un contraejemplo.",
+     "color": "azul"
+    },
+    {
+     "pasos": [
+      {
+       "der": "La igualdad, tal como está escrita, es falsa: no se puede demostrar por inducción",
+       "caja": "azul"
+      }
+     ]
+    },
+    {
+     "texto": "Nota para el estudiante: si el paso 1 no se cumple, la propiedad no vale para todo n ≥ 1 y no hace falta seguir con los pasos 2 y 3. Antes de demostrar algo por inducción conviene probarlo con un valor chico de n.",
+     "color": "gris",
+     "tam": "S"
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "marcador": "Ejercicio 5: Operaciones cerradas",
+   "enunciado": "Analizá si la operación es cerrada en ese conjunto. Es decir, si opero dos elementos del conjunto, ¿el resultado queda dentro? Explique, ejemplifique.",
+   "bloques": [
+    {
+     "texto": "Una operación ∗ es cerrada en un conjunto A si ∀a, b: a ∈ A ∧ b ∈ A → a ∗ b ∈ A. Para mostrar que no lo es alcanza con un contraejemplo; para mostrar que sí lo es, hay que demostrarlo.",
+     "color": "azul"
+    }
+   ],
+   "items": [
+    {
+     "numero": "a",
+     "marcador": "5.a: La resta en ℕ",
+     "enunciado": "¿La resta es cerrada en ℕ?",
+     "bloques": [
+      {
+       "texto": "Definición aplicada: ∀a, b: a ∈ ℕ ∧ b ∈ ℕ → a − b ∈ ℕ",
+       "color": "azul"
+      },
+      {
+       "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, a = 2 y b = 5:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": "2 − 5",
+         "der": "−3"
+        },
+        {
+         "der": [
+          "2 ∈ ℕ y 5 ∈ ℕ, pero −3 ∉ ℕ ",
+          {
+           "marca": "mal"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "La resta no es cerrada en ℕ",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: a veces el resultado queda en ℕ (5 − 2 = 3 ∈ ℕ), pero para ser cerrada tiene que quedar siempre. Si el sustraendo es mayor o igual que el minuendo, el resultado no es natural.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "b",
+     "marcador": "5.b: La división en ℤ",
+     "enunciado": "¿La división es cerrada en ℤ?",
+     "bloques": [
+      {
+       "texto": "Definición aplicada: ∀a, b: a ∈ ℤ ∧ b ∈ ℤ → a dividido b ∈ ℤ",
+       "color": "azul"
+      },
+      {
+       "texto": "La propiedad no se cumple. Lo demostramos con un contraejemplo, a = 1 y b = 2:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "izq": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          }
+         ],
+         "der": "0,5"
+        },
+        {
+         "der": [
+          "1 ∈ ℤ y 2 ∈ ℤ, pero 0,5 ∉ ℤ ",
+          {
+           "marca": "mal"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "La división no es cerrada en ℤ",
+         "caja": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Nota para el estudiante: además, la división por 0 no está definida (por ejemplo, 3 dividido 0), así que ni siquiera se puede dividir cualquier par de enteros. Un ejemplo en que sí queda en ℤ es 6 dividido 2 = 3.",
+       "color": "gris",
+       "tam": "S"
+      }
+     ]
+    },
+    {
+     "numero": "c",
+     "marcador": "5.c: La suma en ℚ",
+     "enunciado": "¿La suma es cerrada en ℚ?",
+     "bloques": [
+      {
+       "texto": "Definición aplicada: ∀x, y: x ∈ ℚ ∧ y ∈ ℚ → x + y ∈ ℚ",
+       "color": "azul"
+      },
+      {
+       "texto": "La propiedad se cumple y debe demostrarse.",
+       "color": "azul"
+      },
+      {
+       "seccion": "Demostración",
+       "bloques": [
+        {
+         "texto": "Demostrar que la suma es cerrada en ℚ equivale a demostrar que la suma de dos racionales se puede escribir como un cociente de enteros con denominador distinto de 0.",
+         "color": "azul"
+        },
+        {
+         "texto": "Hipótesis: x = a/b e y = c/d, con a, b, c, d ∈ ℤ, b ≠ 0 y d ≠ 0.",
+         "color": "azul"
+        },
+        {
+         "texto": "Tesis: x + y ∈ ℚ",
+         "color": "azul"
+        },
+        {
+         "pasos": [
+          {
+           "izq": "x + y",
+           "der": [
+            {
+             "frac": [
+              "a",
+              "b"
+             ]
+            },
+            " + ",
+            {
+             "frac": [
+              "c",
+              "d"
+             ]
+            }
+           ]
+          },
+          {
+           "rel": "=",
+           "der": {
+            "frac": [
+             {
+              "t": "a · d + c · b",
+              "color": "producto"
+             },
+             {
+              "t": "b · d",
+              "color": "producto"
+             }
+            ]
+           },
+           "nota": "Sumar con denominador común b · d",
+           "notaColor": "producto"
+          }
+         ]
+        },
+        {
+         "texto": "→ a, b, c y d son enteros, por hipótesis.",
+         "color": "azul"
+        },
+        {
+         "texto": "→ a · d y c · b son enteros, dado que el producto de enteros es entero.",
+         "color": "azul"
+        },
+        {
+         "texto": "→ a · d + c · b es entero, porque la suma de enteros es entera.",
+         "color": "azul"
+        },
+        {
+         "texto": "→ b · d es entero, porque el producto de enteros es entero.",
+         "color": "azul"
+        },
+        {
+         "texto": "→ b · d ≠ 0, porque b ≠ 0 y d ≠ 0 (un producto vale 0 solo si algún factor vale 0).",
+         "color": "azul"
+        },
+        {
+         "texto": "Por lo tanto x + y es un cociente de enteros con denominador distinto de 0, es decir, x + y ∈ ℚ. Queda demostrado que la suma es cerrada en ℚ.",
+         "color": "azul"
+        }
+       ]
+      },
+      {
+       "texto": "Ejemplo:",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "rel": "",
+         "der": [
+          {
+           "frac": [
+            "1",
+            "2"
+           ]
+          },
+          " + ",
+          {
+           "frac": [
+            "2",
+            "3"
+           ]
+          }
+         ]
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "3",
+             "color": "producto"
+            },
+            {
+             "t": "6",
+             "color": "producto"
+            }
+           ]
+          },
+          " + ",
+          {
+           "frac": [
+            {
+             "t": "4",
+             "color": "producto"
+            },
+            {
+             "t": "6",
+             "color": "producto"
+            }
+           ]
+          }
+         ],
+         "nota": "Denominador común 6",
+         "notaColor": "producto"
+        },
+        {
+         "rel": "=",
+         "der": [
+          {
+           "frac": [
+            {
+             "t": "7",
+             "color": "suma"
+            },
+            "6"
+           ]
+          },
+          " ∈ ℚ ",
+          {
+           "marca": "ok"
+          }
+         ],
+         "nota": "Sumar los numeradores",
+         "notaColor": "suma"
+        }
+       ]
+      },
+      {
+       "pasos": [
+        {
+         "der": "La suma es cerrada en ℚ",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "numero": "d",
+     "marcador": "5.d: Todo número real es racional",
+     "enunciado": "Todo número real es racional.",
+     "bloques": [
+      {
+       "texto": "Este ítem no pregunta por una operación: es una afirmación sobre los conjuntos ℝ y ℚ. Se analiza si es verdadera.",
+       "color": "azul"
+      },
+      {
+       "texto": "Definición aplicada: ∀x: x ∈ ℝ → x ∈ ℚ",
+       "color": "azul"
+      },
+      {
+       "texto": "La afirmación es falsa. Lo demostramos con un contraejemplo, x = √2:",
+       "color": "azul",
+       "unir": true
+      },
+      {
+       "pasos": [
+        {
+         "der": "x = √2 ⇒ √2 ∈ ℝ → √2 ∈ ℚ"
+        },
+        {
+         "der": "√2 ∈ ℝ es verdadero"
+        },
+        {
+         "der": [
+          "√2 ∈ ℚ es falso  ",
+          {
+           "marca": "mal"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "texto": "√2 es irracional (no se puede escribir como cociente de dos enteros). Para x = √2 la proposición es falsa (V → F es F), por lo tanto no todo número real es racional; sí vale la recíproca: todo racional es real.",
+       "color": "azul"
+      },
+      {
+       "pasos": [
+        {
+         "der": "Es falso: ℚ ⊂ ℝ, pero ℝ ⊄ ℚ",
+         "caja": "azul"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -100,6 +100,10 @@ sirve para otras resoluciones, agrégalo ahí.
   conservando los datos. No copies logos ni el formato del PDF original. Nada de nombres
   de alumnos.
 - **Exámenes**: pregunta si ya pasó la fecha del examen. Si no pasó, no lo agregues al
-  repositorio.
+  repositorio. Un parcial no va al banco de TP: va en
+  `solucionarios/<materia>/<institucion>/parciales/<tipo>/<año> - cuatrimestre <n> - parcial <n> <tipo>[ - <variante>]/`
+  (tipos: primer o segundo parcial práctico, teórico o práctico teórico), con la foto o
+  el archivo del examen como `consigna.png` (registro documental, siempre) y su
+  `solucion.json`; después se suma al índice de `parciales/README.md` con «[Resuelto]».
 - **Git**: trabaja en una rama (`tp/<materia>-<tp>`). No hagas commit, push ni pull
   request sin que el usuario lo pida.

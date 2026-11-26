@@ -14,6 +14,9 @@ solucionarios/
   <materia>/<institucion>/tps/<tema>/
     solucion.json       ← la resolución, una sola copia aunque el TP se dé en
                           varias cursadas (lo que se edita y se revisa)
+  <materia>/<institucion>/parciales/<tipo>/<año> - cuatrimestre <n> - parcial <n> <tipo>/
+    consigna.png        ← la foto del examen (registro documental)
+    solucion.json       ← su resolución (índice en parciales/README.md)
   <materia>/<institucion>/<año> - cuatrimestre <n>/cuadernillo.json
                         ← los TP de esa cursada, por ruta: carátula, índice,
                           número de cada TP y cabecera con el cuatrimestre
